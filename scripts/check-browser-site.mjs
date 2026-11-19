@@ -57,6 +57,39 @@ async function verify(lang){
  finally{await context.close()}
 }
 for(const lang of languages)await verify(lang);
+async function checkHomeLanguage(locale, choice, expected){
+ const context=await browser.newContext({locale});
+ if(choice){
+  await context.addInitScript(value=>localStorage.setItem('islaviva-language-choice',value),choice);
+ }
+ const page=await context.newPage();
+ try{
+  const navigated=await page.goto(BASE+'/',{waitUntil:'domcontentloaded',timeout:35000});
+  await page.waitForURL(home(expected),{timeout:15000});
+  if((await page.locator('html').getAttribute('lang'))!==expected)throw Error('Wrong language after redirect');
+  console.log('OK root browser locale='+locale+', chosen='+(choice||'none')+' => '+expected);
+ }catch(e){failures++;console.error('FAIL root locale '+locale+' preference '+(choice||'none')+': '+e.message)}
+ finally{await context.close()}
+}
+await checkHomeLanguage('de-DE',null,'de');
+await checkHomeLanguage('en-US',null,'en');
+await checkHomeLanguage('fr-FR',null,'fr');
+await checkHomeLanguage('es-DO',null,'es');
+await checkHomeLanguage('it-IT',null,'es');
+await checkHomeLanguage('de-DE','fr','fr');
+await checkHomeLanguage('en-US','es','es');
+// Explicit locale links must override browser language and saved choices.
+{
+ const context=await browser.newContext({locale:'de-DE'});
+ await context.addInitScript(()=>localStorage.setItem('islaviva-language-choice','en'));
+ const page=await context.newPage();
+ try{
+  await page.goto(BASE+'/fr/',{waitUntil:'domcontentloaded',timeout:35000});
+  if(new URL(page.url()).pathname!=='/fr/'||(await page.locator('html').getAttribute('lang'))!=='fr')throw Error('Direct French link was overridden');
+  console.log('OK direct /fr/ link retains French despite saved English and German browser');
+ }catch(e){failures++;console.error('FAIL direct locale: '+e.message)}
+ finally{await context.close()}
+}
 await browser.close();
-console.log('Browser results: '+(languages.length-failures)+'/'+languages.length+' language homepages passed');
+console.log('Browser regression failures: '+failures+' (five homepage checks and eight language routing checks)');
 if(failures)process.exitCode=1;
