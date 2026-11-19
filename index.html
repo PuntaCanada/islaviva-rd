@@ -281,6 +281,18 @@ en:{prefix:'Forecast',unavailable:'Weather forecast unavailable',source:'Data: M
 fr:{prefix:'Prévision',unavailable:'Prévisions météo indisponibles',source:'Données : MET Norway',degree:'°C',alert:'Alertes officielles : INDOMET'},
 ht:{prefix:'Previzyon',unavailable:'Previzyon meteyo pa disponib',source:'Done: MET Norway',degree:'°C',alert:'Avètisman ofisyèl: INDOMET'}
 };
+// Only visitors geographically located in the US see Fahrenheit.
+// A failed/unavailable country check always keeps Celsius.
+let visitorCountry='OTHER';
+async function detectVisitorCountry(){
+ try{
+  const response=await fetch('/api/visitor-country',{cache:'no-store'});
+  if(!response.ok)return;
+  const data=await response.json();
+  visitorCountry=data?.country==='US'?'US':'OTHER';
+ }catch(e){visitorCountry='OTHER'}
+ renderIslandWeather();
+}
 let islandWeather=null;
 function renderIslandWeather(){
  const el=document.getElementById('weather-summary');
@@ -328,7 +340,10 @@ function renderIslandWeather(){
  const isNight=phase==='night'||symbol.includes('_night');
  const icons={thunder:'⛈️',rain:'🌧️',showers:'🌦️',fog:'🌫️',cloud:'☁️',partly:isNight?'☁️':'⛅',clear:isNight?'🌙':'☀️'};
  icon.textContent=icons[key]||fallbackIcon;
- tempElement.textContent=Number(w.temperature_c).toLocaleString(lang,{maximumFractionDigits:1})+' °C';
+ const celsius=Number(w.temperature_c);
+ const useFahrenheit=visitorCountry==='US';
+ const shown=useFahrenheit?(celsius*9/5+32):celsius;
+ tempElement.textContent=shown.toLocaleString(lang,{maximumFractionDigits:1})+(useFahrenheit?' °F':' °C');
  el.textContent=labels[key];
  const wind=Number(w.wind_mps);
  details.textContent=labels.at+': '+clock+':00'+(Number.isFinite(wind)?' · '+labels.wind+': '+Math.round(wind*3.6)+' km/h':'');
@@ -558,6 +573,7 @@ document.getElementById('news-source').addEventListener('change',e=>{newsSource=
 
 render();
 loadIslandWeather();
+detectVisitorCountry();
 loadAutoNews();
 loadRoadNotices();
 loadLocalBulletins();
