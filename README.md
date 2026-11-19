@@ -32,3 +32,21 @@ The GitHub workflow `Check five-language guides` runs on relevant HTML/script ch
 **Current scope:** the homepage and both local guides each have five unique URLs with localized HTML, self-canonical links and reciprocal hreflang. The four localized homepages preserve the original full interactive homepage, with their main static copy translated in HTML and the remaining components rendered by the existing client-side translation code. Some dynamic or asynchronous news/service content can still depend on JavaScript and source-language data. This is not a guarantee of indexing or complete translation of every external data source.
 
 Homepage URLs: `/`, `/de/`, `/en/`, `/fr/`, `/ht/`. All 15 localized URLs are in `sitemap.xml`. New homepage content must be added to all four static HTML homepages and verified across all five languages; keep relative data URLs rooted at `/data/` in subdirectory homepages.
+
+## Single-source homepage workflow
+
+The homepage now uses **one JavaScript runtime** (`assets/home-app.js`) and **one stylesheet** (`assets/home.css`) for all five languages. The Spanish homepage (`index.html`) is the canonical HTML layout source.
+
+The localized homepage content and SEO head tags live in `home-locales.json`. The four language homepages (`de/index.html`, `en/index.html`, `fr/index.html`, `ht/index.html`) are **generated artifacts**, not files to edit by hand.
+
+To regenerate them locally:
+```sh
+node scripts/build-homepages.mjs
+node scripts/build-homepages.mjs --check
+node scripts/check-home-runtime.mjs
+node scripts/check-localized-seo.mjs
+```
+
+A GitHub Action (`Sync localized homepages`) regenerates and commits the four translated files on pushes to `main` that change `index.html`, `home-locales.json`, or the generator itself. The sync job needs repository GitHub Actions write permissions. The separate `Check five-language guides` workflow builds the localized files in its runner before validating them. A GitHub Actions run does not itself confirm that Cloudflare has deployed the new version.
+
+**When extending the homepage:** update `index.html` as the shared layout; add or revise the corresponding entries for all four languages in `home-locales.json`; update common behavior in `assets/home-app.js` and styles in `assets/home.css`. Never create per-language copies of new JavaScript or CSS. New translatable static text should use `data-t` or `data-t-html`; the generator fails on missing locale entries. The root data-fetch paths must remain absolute, such as `/data/weather.json`.
