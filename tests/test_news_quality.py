@@ -51,7 +51,7 @@ class NewsQualityTests(unittest.TestCase):
             feed_categories=["Tecnología", "Innovación"],
         ), "Gaming y tecnología")
         self.assertEqual(category_for(
-            "Los Toros ganaron en un juego histórico", "Actualidad",
+            "Los Toros vencen en un juego histórico", "Actualidad",
             summary="Los fanáticos compararon el evento con un videojuego.",
         ), "Deportes")
         self.assertEqual(category_for(
