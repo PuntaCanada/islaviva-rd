@@ -18,7 +18,7 @@ async function verify(lang){
   const temp=await page.locator('#weather-temp').innerText();
   const renderedLang=await page.locator('html').getAttribute('lang');
   if(renderedLang!==lang)throw Error('Wrong rendered language '+renderedLang);
-  if((await page.locator('#news-grid article').count())<1)throw Error('News preview cards missing');
+  if((await page.locator('#news-grid .story').count())<1)throw Error('News cards missing (neither preview nor live entries)');
   if((await page.locator('#compras .iv-brand').count())!==3)throw Error('Expected exactly three merchant cards');
   await page.locator('#city').selectOption('Punta Cana');
   await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Punta Cana');
