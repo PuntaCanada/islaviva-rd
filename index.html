@@ -319,8 +319,11 @@ function renderLocalPulse(){
    return '<div class="pulse-notice"><small>🗓️ '+esc(date)+' · '+esc(x.source)+(lang!=='es'&&!x.translations?.[lang]?' · ES':'')+'</small><b>'+esc(headline)+'</b>'+(safe?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">↗ '+esc(noticesUi.view)+'</a>':'')+'</div>';
   }).join('');
   const noMatch=kind==='power'||kind==='water'||kind==='events';
-  const label=relevant.length?noticesUi.status:(kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.none);
-  const cta=kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.view;
+  const actionLabels={
+   es:{power:'Consultar mi circuito',water:'Consultar avisos INAPA'},de:{power:'Stromkreis direkt prüfen',water:'INAPA-Hinweise prüfen'},en:{power:'Check my power circuit',water:'Check INAPA notices'},fr:{power:'Vérifier mon circuit',water:'Voir les avis INAPA'},ht:{power:'Tcheke sikwi kouran mwen',water:'Tcheke avi INAPA'}
+  }[lang]||{power:'Consultar mi circuito',water:'Consultar avisos INAPA'};
+  const label=relevant.length?noticesUi.status:(kind==='power'?actionLabels.power:kind==='water'?actionLabels.water:kind==='events'?noticesUi.events:noticesUi.roads);
+  const cta=kind==='power'?actionLabels.power:kind==='water'?actionLabels.water:kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.view;
   return '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption'+(!relevant.length?' pulse-caption-muted':'')+'">'+esc(label)+'</span><p>'+esc(desc)+'</p>'+brief+archivedHTML+'<a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(cta)+' ↗</a></article>';
  }).join('');
 }
