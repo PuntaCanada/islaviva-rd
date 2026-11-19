@@ -1,0 +1,14 @@
+{
+  "valid_from": "2026-11-14",
+  "valid_until": "2026-11-20",
+  "unit": "RD$ per US gallon",
+  "regular": 317.5,
+  "premium": 362.1,
+  "diesel_regular": 270.8,
+  "glp": 135.2,
+  "source": "combustibles.do (MICM published weekly figures)",
+  "source_url": "https://combustibles.do/precios-semanales/2026/11/semana-46/",
+  "all_url": "https://combustibles.do/",
+  "last_verified": "2026-11-19",
+  "note": "One-time cited price snapshot. No automatic scraping. Hide amounts after validity end."
+}
