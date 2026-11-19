@@ -394,6 +394,39 @@ function renderRegionalSources(){
  container.innerHTML=[...local,...services].map(([emoji,title,desc,url,type])=>'<a class="regional-source-card" href="'+esc(url)+'" target="_blank" rel="noopener noreferrer"><span class="regional-source-emoji" aria-hidden="true">'+emoji+'</span><span class="regional-source-type">'+esc(type)+'</span><strong>'+esc(title)+'</strong><span class="regional-source-desc">'+esc(desc)+'</span><span class="regional-source-action">'+esc(t.go)+'</span></a>').join('');
 }
 
+
+const cityWelcomeLabels={
+ es:{title:'Elige tu ciudad',desc:'Personaliza noticias, clima y servicios de tu región. Puedes cambiar de ciudad cuando quieras.',later:'Ahora no · Mostrar Higüey por defecto',privacy:'Tu selección se guarda solo en este navegador. No usamos tu ubicación.'},
+ de:{title:'Wähle deine Stadt',desc:'Passe Nachrichten, Wetter und Dienstleistungen an deine Region an. Du kannst die Stadt jederzeit ändern.',later:'Jetzt nicht · Vorläufig Higüey anzeigen',privacy:'Deine Auswahl wird nur in diesem Browser gespeichert. Wir verwenden deinen Standort nicht.'},
+ en:{title:'Choose your city',desc:'Personalize news, weather and services for your area. You can change cities at any time.',later:'Not now · Show Higüey for now',privacy:'Your choice is saved only in this browser. We do not use your location.'},
+ fr:{title:'Choisissez votre ville',desc:'Adaptez actualités, météo et services à votre région. Vous pouvez changer de ville à tout moment.',later:'Pas maintenant · Afficher Higüey provisoirement',privacy:'Votre choix reste dans ce navigateur. Nous n’utilisons pas votre position.'},
+ ht:{title:'Chwazi vil ou',desc:'Chwazi nouvèl, meteyo ak sèvis ki pou zòn ou. Ou ka chanje vil la nenpòt lè.',later:'Pa kounye a · Montre Higüey pou kounye a',privacy:'Chwa ou rete nan navigatè sa a sèlman. Nou pa sèvi ak kote ou ye a.'}
+};
+function initCityWelcome(){
+ const backdrop=document.getElementById('city-welcome');if(!backdrop)return;
+ let saved='';try{saved=localStorage.getItem('islaviva-city')||''}catch(e){}
+ if(validCities.includes(saved))return;
+ const t=cityWelcomeLabels[lang]||cityWelcomeLabels.es;
+ document.getElementById('city-welcome-title').textContent=t.title;
+ document.getElementById('city-welcome-description').textContent=t.desc;
+ document.getElementById('city-welcome-later').textContent=t.later;
+ document.getElementById('city-welcome-privacy').textContent=t.privacy;
+ const choices=document.getElementById('city-welcome-options');
+ choices.innerHTML=validCities.map(value=>'<button class="city-welcome-choice" type="button" data-city-choice="'+esc(value)+'">'+(value==='Punta Cana'?'Punta Cana / Bávaro':esc(value))+'</button>').join('');
+ const close=()=>{backdrop.hidden=true;document.body.classList.remove('city-welcome-open')};
+ choices.addEventListener('click',event=>{
+  const button=event.target.closest('[data-city-choice]');
+  if(!button||!validCities.includes(button.dataset.cityChoice))return;
+  city=button.dataset.cityChoice;
+  try{localStorage.setItem('islaviva-city',city)}catch(e){}
+  close();render();
+ });
+ document.getElementById('city-welcome-later').addEventListener('click',close);
+ backdrop.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();close()}});
+ backdrop.hidden=false;document.body.classList.add('city-welcome-open');
+ choices.querySelector('button')?.focus();
+}
+
 function render(){renderCareer();renderWaze();renderFuelPrices();renderShopping();renderPartners();renderExtras();renderLocalPulse();renderRegionalSources();renderNewsletter();renderIslandWeather();document.documentElement.lang=lang;/* Keep localized <title> from server-rendered HTML for SEO. */document.querySelectorAll('[data-t]').forEach(e=>e.textContent=tr(e.dataset.t));document.querySelectorAll('[data-t-html]').forEach(e=>e.innerHTML=tr(e.dataset.tHtml));document.querySelector('#city-status').textContent=city;document.querySelector('#language').value=lang;document.querySelector('#city').value=city;document.querySelector('#today').textContent=new Intl.DateTimeFormat(lang,{day:'numeric',month:'long',year:'numeric',timeZone:'America/Santo_Domingo'}).format(new Date());document.querySelector('#news-grid').innerHTML=news.map((n,i)=>`<article class="story ${!i?'featured':''}" tabindex="0" role="button" data-news="${i}"><div class="story-img" style="background-image:linear-gradient(0deg,#092f3022,#092f3000),url('${n.image}')"></div><div class="story-content"><span class="tag">${n.emoji} ${n.tag[idx()]}</span><h3>${n.title[idx()]}</h3><p>${n.desc[idx()]}</p><span class="source">${n.source} ↗</span></div></article>`).join('');document.querySelectorAll('[data-news]').forEach(e=>{e.addEventListener('click',()=>showNews(+e.dataset.news));e.addEventListener('keydown',ev=>{if(ev.key==='Enter')showNews(+e.dataset.news)})});if(window.islaRenderNews)window.islaRenderNews();document.querySelector('#servicegrid').innerHTML=services.map((s,i)=>`<button class="service" data-service="${i}"><span class="arrow">↗</span><span class="serviceicon">${s.icon}</span><b>${s.title[idx()]}</b><small>${s.desc[idx()]}</small></button>`).join('');document.querySelectorAll('[data-service]').forEach(e=>e.addEventListener('click',()=>showService(+e.dataset.service)));document.querySelector('#travelgrid').innerHTML=destinations.map((d,i)=>`<div class="destination" tabindex="0" role="button" data-dest="${i}" style="background-image:url('${d.image}')"><span class="dest-arrow">↗</span><div><small>${d.category[idx()]}</small><h3>${d.name}</h3><p>${d.desc[idx()]}</p></div></div>`).join('');document.querySelectorAll('[data-dest]').forEach(e=>{e.addEventListener('click',()=>showDest(+e.dataset.dest));e.addEventListener('keydown',ev=>{if(ev.key==='Enter')showDest(+e.dataset.dest)})})}
 function dialog(kicker,title,body){document.querySelector('#dialog-kicker').textContent=kicker;document.querySelector('#dialog-title').textContent=title;document.querySelector('#dialog-content').innerHTML=body;document.querySelector('#overlay').classList.add('visible');document.body.style.overflow='hidden';document.querySelector('#close').focus()}
 function link(url,label){return `<a class="resource" href="${url}" target="_blank" rel="noopener noreferrer">${esc(label||tr('external'))}</a>`}
@@ -741,6 +774,7 @@ document.getElementById('news-category').addEventListener('change',e=>{newsCateg
 document.getElementById('news-source').addEventListener('change',e=>{newsSource=e.target.value;renderNewsPortal()});
 
 render();
+initCityWelcome();
 loadIslandWeather();
 detectVisitorCountry();
 loadAutoNews();
