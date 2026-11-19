@@ -10,22 +10,27 @@ async function verify(lang){
  const context=await browser.newContext({locale:lang==='ht'?'fr-FR':lang==='es'?'es-DO':lang==='en'?'en-US':lang==='de'?'de-DE':'fr-FR'});
  const page=await context.newPage();
  const errors=[];
+ let stage='loading';
  page.on('pageerror',e=>errors.push(e.message));
  try{
+  stage="loading homepage";
   const response=await page.goto(home(lang),{waitUntil:'domcontentloaded',timeout:35000});
   if(await page.locator('#city-welcome').count())throw Error('Unexpected blocking city welcome modal');
   const quick=page.locator('#city-quick-select');
   await quick.waitFor({timeout:10000});
   const quickLabel=await quick.innerText();
   if(!quickLabel.includes('📍'))throw Error('No optional city shortcut in header');
+  stage="clicking city shortcut";
   await quick.click();
   await page.waitForTimeout(500);
   const focusDetails=await page.evaluate(()=>({active:document.activeElement?.id||'',cityExists:!!document.getElementById('city'),lang:document.documentElement.lang,pathname:location.pathname}));
   if(focusDetails.active!=='city')throw Error('City shortcut focus failed: '+JSON.stringify(focusDetails)+'; page errors: '+errors.join('; '));
   if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!==null)throw Error('Browsing without city choice should not store a preference');
+  stage="choosing Higüey";
   await page.locator('#city').selectOption('Higüey');
   if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!=='Higüey')throw Error('Chosen city was not saved');
   if(response?.status()!==200)throw Error('Homepage returned HTTP '+response?.status());
+  stage="waiting for weather";
   await page.waitForFunction(()=>document.querySelector('#weather-temp')?.textContent?.includes('°C')||document.querySelector('#weather-temp')?.textContent?.includes('°F'),{timeout:20000});
   const temp=await page.locator('#weather-temp').innerText();
   const renderedLang=await page.locator('html').getAttribute('lang');
@@ -36,11 +41,13 @@ async function verify(lang){
   await page.waitForFunction(()=>document.querySelectorAll('#regional-sources-grid .regional-source-card').length>=3);
   if(!(await page.locator('#regional-sources-grid').innerHTML()).includes('ayuntamientohiguey.gob.do'))throw Error('Missing Higüey municipal sources');
   if((await page.locator('#regional-sources-grid .regional-source-card').count())!==5)throw Error('Higüey should display two local and three national sources');
+  stage="selecting Punta Cana";
   await page.locator('#city').selectOption('Punta Cana');
   await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Punta Cana');
   await page.waitForFunction(()=>document.querySelector('#regional-sources-grid')?.textContent?.includes('') && [...document.querySelectorAll('#regional-sources-grid a')].some(a=>a.href.includes('avpc.gob.do')));
   if((await page.locator('#regional-sources-grid .regional-source-card').count())!==5)throw Error('Punta Cana should display two local and three national sources');
   if((await page.locator('#regional-sources-grid a[href*="ayuntamientohiguey.gob.do"]').count())!==0)throw Error('Higüey-only authority shown for Punta Cana');
+  stage="selecting Santiago";
   await page.locator('#city').selectOption('Santiago');
   await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Santiago');
   if((await page.locator('#regional-sources-grid .regional-source-card').count())!==3)throw Error('Other cities should only display national authority links');
@@ -55,7 +62,17 @@ async function verify(lang){
    if((await page.locator('html').getAttribute('lang'))!=='de')throw Error('Language switch did not preserve German');
    console.log('OK language navigation es → de');
   }
- }catch(e){failures++;console.error('FAIL',lang,e.message)}
+ }catch(e){
+  failures++;
+  const snapshot=await page.evaluate(()=>({
+    path:location.pathname,
+    city:document.querySelector('#city-status')?.textContent,
+    temperature:document.querySelector('#weather-temp')?.textContent,
+    regionalCards:document.querySelectorAll('#regional-sources-grid .regional-source-card').length,
+    newsCards:document.querySelectorAll('#news-grid .story').length
+  })).catch(()=>({}));
+  console.error('FAIL',lang,'stage='+stage,e.message,'state='+JSON.stringify(snapshot),'browserErrors='+errors.join('; '));
+ }
  finally{await context.close()}
 }
 for(const lang of languages)await verify(lang);
