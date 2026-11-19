@@ -19,8 +19,9 @@ async function verify(lang){
   if(await page.locator('#city-welcome').count())throw Error('Unexpected blocking city welcome modal');
   // Direct flag buttons plus three languages in the secondary picker.
   if((await page.locator('[data-set-language="es"]').count())!==1||(await page.locator('[data-set-language="en"]').count())!==1)throw Error('Missing visible Spanish/English flag shortcuts');
-  if((await page.locator('#language option').count())!==4)throw Error('Additional language picker should contain placeholder and three languages');
-  for(const flag of ['de','fr','ht'])if((await page.locator('#language option[value="'+flag+'"]').count())!==1)throw Error('Missing secondary language '+flag);
+  if((await page.locator('#language .language-more-list [data-set-language]').count())!==3)throw Error('Additional language menu must contain exactly three languages');
+  for(const language of ['de','fr','ht'])if((await page.locator('#language [data-set-language="'+language+'"] img[src="/assets/flags/'+language+'.svg"]').count())!==1)throw Error('Missing menu flag '+language);
+  await page.waitForFunction(()=>[...document.querySelectorAll('.language-flag')].every(img=>img.complete&&img.naturalWidth>0),null,{timeout:12000});
   const quick=page.locator('#city-quick-select');
   await quick.waitFor({timeout:10000});
   await quick.click();
@@ -76,7 +77,13 @@ async function verify(lang){
   if(errors.length)throw Error('Uncaught browser errors: '+errors.slice(0,3).join('; '));
   console.log('OK',lang,'weather',temp,'news, merchant cards, city choice, guide link');
   if(lang==='es'){
-   await page.locator('#language').selectOption('de');
+   await page.locator('[data-set-language="en"]').click();
+   await page.waitForURL(BASE+'/en/',{timeout:15000});
+   if((await page.locator('html').getAttribute('lang'))!=='en')throw Error('Direct English flag failed');
+   await page.locator('[data-set-language="es"]').click();
+   await page.waitForURL(BASE+'/',{timeout:15000});
+   await page.locator('#language summary').click();
+   await page.locator('#language [data-set-language="de"]').click();
    await page.waitForURL(BASE+'/de/',{timeout:15000});
    if((await page.locator('html').getAttribute('lang'))!=='de')throw Error('Language switch did not preserve German');
    console.log('OK language navigation es → de');
