@@ -10,6 +10,26 @@ import re
 import unicodedata
 from urllib.parse import urlsplit, urlunsplit, parse_qsl, urlencode
 
+# Prefer strong gaming/technology signals to generic economy, culture or sports words.
+# Plain "juego" is intentionally excluded: it also means a sporting match.
+GAMING_TITLE_RE = re.compile(
+    r"\b(?:gta\s*(?:vi|6|v|5)|grand\s+theft\s+auto|rockstar\s+games|"
+    r"videojuegos?|gaming|gamers?|esports?|e\s*sports?|"
+    r"playstation(?:\s*[3456])?|xbox|nintendo|steam\s+deck|"
+    r"ps[3456]\b|consolas?\s+de\s+videojuegos?|"
+    r"inteligencia\s+artificial|ciberseguridad|"
+    r"smartphones?|telefonos?\s+inteligentes?)\b"
+)
+GAMING_CONTEXT_RE = re.compile(
+    r"\b(?:gta\s*(?:vi|6|v|5)|grand\s+theft\s+auto|"
+    r"videojuegos?|gaming|esports?|playstation|xbox|nintendo|"
+    r"ciberseguridad|inteligencia\s+artificial)\b"
+)
+GAMING_FEED_RE = re.compile(
+    r"\b(?:videojuegos?|gaming|tecnologia|tecnologico|informatica|"
+    r"software|hardware|consolas?|electronica|ciberseguridad)\b"
+)
+
 TOPIC_RULES = (
     ("Deportes", (
         r"\b(?:deporte(?:s)?|beisbol|pelota|lidom|jonron(?:es)?|home run|grand slam|"
@@ -62,8 +82,26 @@ def normalize(text):
     value = "".join(ch for ch in value if unicodedata.category(ch) != "Mn")
     return re.sub(r"\s+", " ", re.sub(r"[^\w\s]", " ", value)).strip()
 
-def category_for(title, default="Actualidad"):
+def category_for(title, default="Actualidad", summary="", feed_categories=None):
+    """Classify headline metadata only; never download or copy article bodies.
+
+    Strong title signals can override a broad feed label. RSS summaries and
+    publisher tags only contribute with topic-specific evidence; generic terms
+    such as "juego" do not turn sports news into gaming news.
+    """
     t = normalize(title)
+    if GAMING_TITLE_RE.search(t):
+        return "Gaming y tecnología"
+    metadata = normalize(summary[:700])
+    tags = normalize(" ".join(feed_categories or [])[:300])
+    if GAMING_CONTEXT_RE.search(metadata) or GAMING_FEED_RE.search(tags):
+        # Require a topic cue in the headline OR a corroborated, explicit feed
+        # tag. Avoid classifying a sports article by one casual summary mention.
+        if (re.search(r"\b(?:juegos?\s+(?:de\s+)?video|lanzamiento|"
+                      r"consolas?|gta|tecnologia|tecnologico|digital|"
+                      r"informatic[oa]|software|hardware)\b", t)
+                or GAMING_FEED_RE.search(tags)):
+            return "Gaming y tecnología"
     for topic, expressions in TOPIC_REGEX:
         if any(exp.search(t) for exp in expressions):
             return topic
