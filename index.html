@@ -226,7 +226,7 @@ function renderLocalPulse(){
   ['🎉',t.events,t.eventsDesc,eventsUrl,false,'events']
  ];
  document.getElementById('pulse-grid').innerHTML=cards.map(([icon,title,desc,url,internal,kind])=>{
-  const relevant=localBulletins.filter(x=>x.kind===kind&&(!x.regions?.length||x.regions.includes(city))).slice(0,2);
+  const relevant=localBulletins.filter(x=>x.kind===kind&&Array.isArray(x.regions)&&x.regions.includes(city)).slice(0,2);
   const brief=relevant.map(x=>{
    let safe=false;try{safe=new URL(x.url).protocol==='https:';}catch(e){}
    const date=x.published?new Date(x.published).toLocaleDateString(lang,{day:'numeric',month:'short',timeZone:'America/Santo_Domingo'}):'';
@@ -561,4 +561,6 @@ loadIslandWeather();
 loadAutoNews();
 loadRoadNotices();
 loadLocalBulletins();
+// Refresh the Dominican-local day/night appearance while the tab remains open.
+setInterval(renderIslandWeather,5*60*1000);
 </script></body></html>
