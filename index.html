@@ -127,6 +127,9 @@ function renderRoadNotices(){
  const section=document.getElementById('road-notices');
  if(!section)return;
  const t=roadCopy[lang]||roadCopy.es;
+ const desc={es:'Avisos y noticias directamente aquí, con lugar, fecha y fuente. No confirma cierres activos.',de:'Meldungen direkt hier mit Ort, Datum und Quelle. Keine bestätigten Live-Sperrungen.',en:'Published notices right here, with location, date and source. Not live closure confirmation.',fr:'Avis publiés ici avec lieu, date et source. Pas de confirmation en temps réel.',ht:'Avi yo dirèkteman isit la ak kote, dat ak sous. Pa konfimasyon an dirèk.'};
+ document.querySelector('[data-x="roadDesc"]').textContent=desc[lang]||desc.es;
+ document.querySelector('[data-x="roadStatus"]').textContent=t.status;
  const button=document.getElementById('road-toggle-scope');
  button.textContent=roadAllRegions?t.local:t.all;
  if(!roadNoticesData){section.innerHTML='<p class="road-muted">'+esc(t.loading)+'</p>';return}
