@@ -71,6 +71,13 @@
 .news-preference input{accent-color:#08735e;width:16px;height:16px;margin:0;cursor:pointer}
 .news-preferences *:focus-visible{outline:3px solid #3c9d80;outline-offset:2px}
 @media(max-width:600px){#news-grid .story h3{font-size:21px}#news-grid .story.featured h3{font-size:24px}.news-preferences{padding:15px}.news-preferences-head{flex-wrap:wrap}}
+
+/* Prominent and easy-to-read news category labels */
+#news-grid .story-meta .tag{display:inline-flex;align-items:center;font:800 14px/1.25 Manrope,sans-serif;letter-spacing:.45px;text-transform:uppercase;color:#145a49;background:#e4f4ea;border:1px solid #b9dec9;border-radius:9px;padding:8px 11px;max-width:100%;overflow-wrap:anywhere}
+#news-grid .story.featured .story-meta .tag{font-size:15px;padding:9px 12px;background:#d9f0e3}
+#news-grid .story-meta{align-items:flex-start;flex-wrap:wrap;gap:8px}
+#news-grid .story-local{font-size:12px;padding:7px 9px}
+@media(max-width:600px){#news-grid .story-meta .tag{font-size:14px}#news-grid .story.featured .story-meta .tag{font-size:15px}}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
