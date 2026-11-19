@@ -19,7 +19,7 @@ class SearchDiscoveryTests(unittest.TestCase):
    rel=url.removeprefix(BASE)
    target=ROOT/rel
    # Cloudflare Pages serves /de/ using the de/index.html directory index.
-   self.assertTrue((target/"index.html").is_file() if rel.endswith("/") else target.is_file(),url)
+   self.assertTrue((target/"index.html").is_file() if (not rel or rel.endswith("/")) else target.is_file(),url)
  def test_robots_points_to_sitemap(self):
   robots=(ROOT/"robots.txt").read_text(encoding="utf-8")
   self.assertIn("Sitemap: "+BASE+"sitemap.xml",robots)
