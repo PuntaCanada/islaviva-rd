@@ -17,7 +17,9 @@ class SearchDiscoveryTests(unittest.TestCase):
   for url in urls:
    self.assertTrue(url.startswith(BASE))
    rel=url.removeprefix(BASE)
-   self.assertTrue((ROOT/(rel or "index.html")).is_file(),url)
+   target=ROOT/rel
+   # Cloudflare Pages serves /de/ using the de/index.html directory index.
+   self.assertTrue((target/"index.html").is_file() if rel.endswith("/") else target.is_file(),url)
  def test_robots_points_to_sitemap(self):
   robots=(ROOT/"robots.txt").read_text(encoding="utf-8")
   self.assertIn("Sitemap: "+BASE+"sitemap.xml",robots)
@@ -32,8 +34,10 @@ class SearchDiscoveryTests(unittest.TestCase):
   token="google62b1133f7c042e9b.html"
   self.assertEqual((ROOT/token).read_text(encoding="utf-8").strip(),"google-site-verification: "+token)
   homepage=(ROOT/"index.html").read_text(encoding="utf-8")
+  shared=(ROOT/"assets/home-app.js").read_text(encoding="utf-8")
+  self.assertIn('src="/assets/home-app.js"',homepage)
   for address in ("https://rdtrabaja.do/","https://empleos.prodominicana.gob.do/","https://aws.amazon.com/training/digital/"):
-   self.assertIn(address,homepage)
+   self.assertIn(address,shared)
   self.assertIn("id=\"career-grid\"",homepage)
   self.assertIn("https://www.datos.gov.do/dataset/precios-de-los-combustibles",homepage)
  def test_historical_incident_never_claims_active_outage(self):
