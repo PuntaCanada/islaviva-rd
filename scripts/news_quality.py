@@ -94,14 +94,18 @@ def category_for(title, default="Actualidad", summary="", feed_categories=None):
         return "Gaming y tecnología"
     metadata = normalize(summary[:700])
     tags = normalize(" ".join(feed_categories or [])[:300])
-    if GAMING_CONTEXT_RE.search(metadata) or GAMING_FEED_RE.search(tags):
-        # Require a topic cue in the headline OR a corroborated, explicit feed
-        # tag. Avoid classifying a sports article by one casual summary mention.
-        if (re.search(r"\b(?:juegos?\s+(?:de\s+)?video|lanzamiento|"
-                      r"consolas?|gta|tecnologia|tecnologico|digital|"
-                      r"informatic[oa]|software|hardware)\b", t)
-                or GAMING_FEED_RE.search(tags)):
-            return "Gaming y tecnología"
+    headline_context = re.search(
+        r"\b(?:juegos?\s+(?:de\s+)?video|lanzamiento|consolas?|"
+        r"tecnologia|tecnologico|digital|informatic[oa]|"
+        r"software|hardware|programacion|aplicaciones?)\b", t
+    )
+    # A specific RSS summary can establish the topic when the title also
+    # provides context. A generic "Tecnología" feed tag alone cannot:
+    # market/IPO news about technology companies stays Economía.
+    if GAMING_CONTEXT_RE.search(metadata) and headline_context:
+        return "Gaming y tecnología"
+    if GAMING_FEED_RE.search(tags) and headline_context:
+        return "Gaming y tecnología"
     for topic, expressions in TOPIC_REGEX:
         if any(exp.search(t) for exp in expressions):
             return topic
