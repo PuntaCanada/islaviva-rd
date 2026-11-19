@@ -20,8 +20,19 @@ async function verify(lang){
   if(renderedLang!==lang)throw Error('Wrong rendered language '+renderedLang);
   if((await page.locator('#news-grid .story').count())<1)throw Error('News cards missing (neither preview nor live entries)');
   if((await page.locator('#compras .iv-brand').count())!==3)throw Error('Expected exactly three merchant cards');
+  // Local links must reflect the selected municipality, with no invented live status.
+  await page.waitForFunction(()=>document.querySelectorAll('#regional-sources-grid .regional-source-card').length>=3);
+  if(!(await page.locator('#regional-sources-grid').innerHTML()).includes('ayuntamientohiguey.gob.do'))throw Error('Missing Higüey municipal sources');
+  if((await page.locator('#regional-sources-grid .regional-source-card').count())!==5)throw Error('Higüey should display two local and three national sources');
   await page.locator('#city').selectOption('Punta Cana');
   await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Punta Cana');
+  await page.waitForFunction(()=>document.querySelector('#regional-sources-grid')?.textContent?.includes('') && [...document.querySelectorAll('#regional-sources-grid a')].some(a=>a.href.includes('avpc.gob.do')));
+  if((await page.locator('#regional-sources-grid .regional-source-card').count())!==5)throw Error('Punta Cana should display two local and three national sources');
+  if((await page.locator('#regional-sources-grid a[href*="ayuntamientohiguey.gob.do"]').count())!==0)throw Error('Higüey-only authority shown for Punta Cana');
+  await page.locator('#city').selectOption('Santiago');
+  await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Santiago');
+  if((await page.locator('#regional-sources-grid .regional-source-card').count())!==3)throw Error('Other cities should only display national authority links');
+  await page.locator('#city').selectOption('Punta Cana');
   await page.waitForFunction(()=>document.querySelector('#weather-temp')?.textContent?.includes('°'));
   if(!(await page.locator('#shopping-guide-link').getAttribute('href'))?.includes((lang==='es'?'/':'/'+lang+'/')+'ofertas-supermercados-rd.html'))throw Error('Wrong localized shopping link');
   if(errors.length)throw Error('Uncaught browser errors: '+errors.slice(0,3).join('; '));
