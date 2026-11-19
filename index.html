@@ -185,7 +185,7 @@ function newsInterest(n){
  const known={deportes:'sport',turismo:'tourism',vivienda:'economy',economia:'economy',politica:'politics',cultura:'culture',medioambiente:'nature',regionales:'local'};
  if(known[cat])return known[cat];
  const t=(n.title||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
- if(/\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|escogido|licey|aguilas cibae|estrellas orientales|gigantes del cibao|toros del este|toros vencen|toros derrotan|leones del escogido)\b/.test(t))return 'sport';
+ if(/\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|escogido|licey|aguilas cibae|estrellas orientales|gigantes del cibao|toros del este|toros (?:se sacuden|vencen|derrotan|ganan)|leones del escogido)\b/.test(t))return 'sport';
  if(/\b(turismo|turistas?|hotel(?:es)?|playa|aeropuerto|aerolinea|crucero|visitantes|vacaciones|resort)\b/.test(t))return 'tourism';
  if(/\b(economia|economico|empresa|mercado|finanza|financiero|deuda|inflacion|dolar|precio|comercio|exportacion|importacion|empleo|banco central)\b/.test(t))return 'economy';
  if(/\b(politica|politico|presidente|gobierno|diputad[oa]s?|congreso|senado|senador|eleccion|partido|ministro|ministerio)\b/.test(t))return 'politics';
