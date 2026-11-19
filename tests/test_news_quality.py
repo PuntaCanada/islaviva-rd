@@ -28,6 +28,33 @@ class NewsQualityTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertEqual(category_for(title, default), expected)
 
+    def test_gaming_and_technology_metadata(self):
+        # Specific game names and unambiguous title signals override generic feed.
+        cases = [
+            ("GTA VI, el mayor videojuego de la historia", "Actualidad", "Gaming y tecnología"),
+            ("GTA VI: cómo un videojuego puede convertirse en un fenómeno económico", "Economía", "Gaming y tecnología"),
+            ("Rockstar Games revela novedades de Grand Theft Auto", "Cultura", "Gaming y tecnología"),
+            ("PlayStation anuncia nueva consola", "Actualidad", "Gaming y tecnología"),
+            ("Ciberseguridad para usuarios de telefonos inteligentes", "Actualidad", "Gaming y tecnología"),
+            ("Los Toros vencen el juego decisivo", "Actualidad", "Deportes"),
+            ("El juego político en el Congreso", "Actualidad", "Política"),
+        ]
+        for title, default, expected in cases:
+            with self.subTest(title=title):
+                self.assertEqual(category_for(title, default), expected)
+        self.assertEqual(category_for(
+            "Nuevo lanzamiento digital anunciado", "Actualidad",
+            summary="La compañía lanzará su videojuego esta semana.",
+        ), "Gaming y tecnología")
+        self.assertEqual(category_for(
+            "Lanzamiento de nuevo producto", "Actualidad",
+            feed_categories=["Tecnología", "Innovación"],
+        ), "Gaming y tecnología")
+        self.assertEqual(category_for(
+            "Los Toros ganaron en un juego histórico", "Actualidad",
+            summary="Los fanáticos compararon el evento con un videojuego.",
+        ), "Deportes")
+
     def test_regions_require_explicit_place(self):
         self.assertEqual(region_mentions("Obras en Higüey y Bávaro"), ["Higüey", "Punta Cana"])
         self.assertEqual(region_mentions("Gobierno se reúne en Santo Domingo"), ["Santo Domingo"])
