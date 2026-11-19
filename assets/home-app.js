@@ -406,19 +406,74 @@ function updateCityQuickSelect(){
  button.textContent='📍 '+label;
  button.setAttribute('aria-label',(cityQuickLabels[lang]||cityQuickLabels.es)+': '+(hasChoice?city:''));
 }
-document.getElementById('city-quick-select')?.addEventListener('click',()=>{
- const picker=document.getElementById('city');
- picker.scrollIntoView({behavior:'smooth',block:'center'});
- picker.focus({preventScroll:true});
+const cityChooserUi={
+ es:{title:'Elige tu ciudad',desc:'Noticias, clima y servicios para tu zona.',hint:'Se guarda solo en tu navegador. Puedes cambiarla cuando quieras.',change:'✎ Cambiar',close:'Cerrar'},
+ de:{title:'Wähle deinen Ort',desc:'Nachrichten, Wetter und Dienste für deine Region.',hint:'Wird nur in diesem Browser gespeichert. Du kannst den Ort jederzeit ändern.',change:'✎ Ändern',close:'Schließen'},
+ en:{title:'Choose your city',desc:'News, weather and services for your area.',hint:'Saved in this browser only. Change your city whenever you like.',change:'✎ Change',close:'Close'},
+ fr:{title:'Choisissez votre ville',desc:'Actualités, météo et services pour votre région.',hint:'Enregistré dans ce navigateur uniquement. Modifiable à tout moment.',change:'✎ Modifier',close:'Fermer'},
+ ht:{title:'Chwazi vil ou',desc:'Nouvèl, meteyo ak sèvis pou zòn ou.',hint:'Nou sere chwa ou nan navigatè sa a sèlman. Ou ka chanje vil la nenpòt lè.',change:'✎ Chanje',close:'Fèmen'}
+};
+function updateCityAccess(){
+ const t=cityChooserUi[lang]||cityChooserUi.es;
+ const weather=document.getElementById('weather-city-change');
+ if(weather){weather.textContent=t.change;weather.setAttribute('aria-label',t.change+' '+city)}
+ document.querySelectorAll('.location-change-button').forEach(button=>{
+  button.textContent='📍 '+(city==='Punta Cana'?'Punta Cana / Bávaro':city)+' '+t.change;
+  button.setAttribute('aria-label',t.change+' '+city);
+ });
+ document.querySelectorAll('[data-set-language]').forEach(button=>{
+  const selected=button.dataset.setLanguage===lang;
+  button.classList.toggle('active',selected);
+  button.setAttribute('aria-pressed',String(selected));
+ });
+ const more=document.getElementById('language');
+ if(more){more.value=['de','fr','ht'].includes(lang)?lang:'';more.setAttribute('aria-label',lang==='de'?'Weitere Sprachen':lang==='en'?'More languages':lang==='fr'?'Autres langues':lang==='ht'?'Lòt lang':'Más idiomas')}
+}
+const cityChooser=document.getElementById('city-chooser');
+function closeCityChooser(){
+ if(!cityChooser)return;
+ cityChooser.hidden=true;
+ document.body.classList.remove('city-chooser-open');
+}
+function openCityChooser(){
+ if(!cityChooser)return;
+ const t=cityChooserUi[lang]||cityChooserUi.es;
+ document.getElementById('city-chooser-title').textContent=t.title;
+ document.getElementById('city-chooser-description').textContent=t.desc;
+ document.getElementById('city-chooser-hint').textContent=t.hint;
+ document.getElementById('city-chooser-close').setAttribute('aria-label',t.close);
+ document.getElementById('city-chooser-grid').innerHTML=validCities.map(value=>
+  '<button type="button" class="city-chooser-option'+(value===city?' selected':'')+'" data-choose-city="'+esc(value)+'" aria-pressed="'+(value===city)+'">'+(value===city?'✓ ':'')+(value==='Punta Cana'?'Punta Cana / Bávaro':esc(value))+'</button>'
+ ).join('');
+ cityChooser.hidden=false;
+ document.body.classList.add('city-chooser-open');
+ document.querySelector('#city-chooser-grid .selected')?.focus();
+}
+document.querySelectorAll('[data-city-open]').forEach(button=>button.addEventListener('click',openCityChooser));
+document.getElementById('city-chooser-close')?.addEventListener('click',closeCityChooser);
+cityChooser?.querySelector('[data-city-close]')?.addEventListener('click',closeCityChooser);
+document.getElementById('city-chooser-grid')?.addEventListener('click',e=>{
+ const button=e.target.closest('[data-choose-city]');if(!button||!validCities.includes(button.dataset.chooseCity))return;
+ city=button.dataset.chooseCity;
+ try{localStorage.setItem('islaviva-city',city)}catch(e){}
+ closeCityChooser();
+ render();
 });
-function render(){updateCityQuickSelect();renderCareer();renderWaze();renderFuelPrices();renderShopping();renderPartners();renderExtras();renderLocalPulse();renderRegionalSources();renderNewsletter();renderIslandWeather();document.documentElement.lang=lang;/* Keep localized <title> from server-rendered HTML for SEO. */document.querySelectorAll('[data-t]').forEach(e=>e.textContent=tr(e.dataset.t));document.querySelectorAll('[data-t-html]').forEach(e=>e.innerHTML=tr(e.dataset.tHtml));document.querySelector('#city-status').textContent=city;document.querySelector('#language').value=lang;document.querySelector('#city').value=city;document.querySelector('#today').textContent=new Intl.DateTimeFormat(lang,{day:'numeric',month:'long',year:'numeric',timeZone:'America/Santo_Domingo'}).format(new Date());document.querySelector('#news-grid').innerHTML=news.map((n,i)=>`<article class="story ${!i?'featured':''}" tabindex="0" role="button" data-news="${i}"><div class="story-img" style="background-image:linear-gradient(0deg,#092f3022,#092f3000),url('${n.image}')"></div><div class="story-content"><span class="tag">${n.emoji} ${n.tag[idx()]}</span><h3>${n.title[idx()]}</h3><p>${n.desc[idx()]}</p><span class="source">${n.source} ↗</span></div></article>`).join('');document.querySelectorAll('[data-news]').forEach(e=>{e.addEventListener('click',()=>showNews(+e.dataset.news));e.addEventListener('keydown',ev=>{if(ev.key==='Enter')showNews(+e.dataset.news)})});if(window.islaRenderNews)window.islaRenderNews();document.querySelector('#servicegrid').innerHTML=services.map((s,i)=>`<button class="service" data-service="${i}"><span class="arrow">↗</span><span class="serviceicon">${s.icon}</span><b>${s.title[idx()]}</b><small>${s.desc[idx()]}</small></button>`).join('');document.querySelectorAll('[data-service]').forEach(e=>e.addEventListener('click',()=>showService(+e.dataset.service)));document.querySelector('#travelgrid').innerHTML=destinations.map((d,i)=>`<div class="destination" tabindex="0" role="button" data-dest="${i}" style="background-image:url('${d.image}')"><span class="dest-arrow">↗</span><div><small>${d.category[idx()]}</small><h3>${d.name}</h3><p>${d.desc[idx()]}</p></div></div>`).join('');document.querySelectorAll('[data-dest]').forEach(e=>{e.addEventListener('click',()=>showDest(+e.dataset.dest));e.addEventListener('keydown',ev=>{if(ev.key==='Enter')showDest(+e.dataset.dest)})})}
+document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!cityChooser?.hidden)closeCityChooser()});
+function render(){updateCityQuickSelect();updateCityAccess();renderCareer();renderWaze();renderFuelPrices();renderShopping();renderPartners();renderExtras();renderLocalPulse();renderRegionalSources();renderNewsletter();renderIslandWeather();document.documentElement.lang=lang;/* Keep localized <title> from server-rendered HTML for SEO. */document.querySelectorAll('[data-t]').forEach(e=>e.textContent=tr(e.dataset.t));document.querySelectorAll('[data-t-html]').forEach(e=>e.innerHTML=tr(e.dataset.tHtml));document.querySelector('#city-status').textContent=city;document.querySelector('#city').value=city;document.querySelector('#today').textContent=new Intl.DateTimeFormat(lang,{day:'numeric',month:'long',year:'numeric',timeZone:'America/Santo_Domingo'}).format(new Date());document.querySelector('#news-grid').innerHTML=news.map((n,i)=>`<article class="story ${!i?'featured':''}" tabindex="0" role="button" data-news="${i}"><div class="story-img" style="background-image:linear-gradient(0deg,#092f3022,#092f3000),url('${n.image}')"></div><div class="story-content"><span class="tag">${n.emoji} ${n.tag[idx()]}</span><h3>${n.title[idx()]}</h3><p>${n.desc[idx()]}</p><span class="source">${n.source} ↗</span></div></article>`).join('');document.querySelectorAll('[data-news]').forEach(e=>{e.addEventListener('click',()=>showNews(+e.dataset.news));e.addEventListener('keydown',ev=>{if(ev.key==='Enter')showNews(+e.dataset.news)})});if(window.islaRenderNews)window.islaRenderNews();document.querySelector('#servicegrid').innerHTML=services.map((s,i)=>`<button class="service" data-service="${i}"><span class="arrow">↗</span><span class="serviceicon">${s.icon}</span><b>${s.title[idx()]}</b><small>${s.desc[idx()]}</small></button>`).join('');document.querySelectorAll('[data-service]').forEach(e=>e.addEventListener('click',()=>showService(+e.dataset.service)));document.querySelector('#travelgrid').innerHTML=destinations.map((d,i)=>`<div class="destination" tabindex="0" role="button" data-dest="${i}" style="background-image:url('${d.image}')"><span class="dest-arrow">↗</span><div><small>${d.category[idx()]}</small><h3>${d.name}</h3><p>${d.desc[idx()]}</p></div></div>`).join('');document.querySelectorAll('[data-dest]').forEach(e=>{e.addEventListener('click',()=>showDest(+e.dataset.dest));e.addEventListener('keydown',ev=>{if(ev.key==='Enter')showDest(+e.dataset.dest)})})}
 function dialog(kicker,title,body){document.querySelector('#dialog-kicker').textContent=kicker;document.querySelector('#dialog-title').textContent=title;document.querySelector('#dialog-content').innerHTML=body;document.querySelector('#overlay').classList.add('visible');document.body.style.overflow='hidden';document.querySelector('#close').focus()}
 function link(url,label){return `<a class="resource" href="${url}" target="_blank" rel="noopener noreferrer">${esc(label||tr('external'))}</a>`}
 function showNews(i){const n=news[i];dialog(n.tag[idx()],n.title[idx()],`<p>${esc(n.desc[idx()])}</p><p class="demo-notice">${tr('demo')}</p>${link(n.url,n.source+' ↗')}`)}
 function showService(i){const s=services[i];let extras='';if(s.id==='trash'&&city==='Higüey')extras=link('https://ayuntamientohiguey.gob.do/rutas-y-frecuencias/',lang==='de'?'Offizieller Müllabfuhrplan Higüey ↗':'Rutas oficiales de Higüey ↗');if(s.id==='repair')extras=link('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('reparación electrodomésticos '+city),'Google Maps ↗');if(s.id==='schools')extras=link('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('colegios '+city),'Google Maps ↗');if(s.id==='water')extras=link('https://www.google.com/maps/search/?api=1&query='+encodeURIComponent('agua botellones '+city),'Google Maps ↗');if(s.url)extras+=link(s.url);dialog(tr('pilot')+' · '+city,s.title[idx()],`<p>${esc(s.desc[idx()])}. ${tr('serviceinfo')}</p><p class="demo-notice">${tr('demo')} · ${esc(city)}</p>${extras}`)}
 function showDest(i){let d=destinations[i];dialog(tr('trips'),d.name,`<p>${esc(d.desc[idx()])}</p><p>${lang==='de'?'Entdecke zuverlässige Informationen zum Reiseziel. Ausflüge und Buchungspartner werden erst nach Prüfung ergänzt.':lang==='es'?'Descubre información oficial del destino. Las excursiones y reservas se incorporarán tras verificar los socios.':lang==='fr'?'Découvrez les informations officielles sur cette destination. Les réservations viendront après vérification des partenaires.':'Explore official travel information. Tour bookings will follow after partner verification.'}</p>${link(d.url)}`)}
 function showSearch(){dialog(tr('search'),tr('search'),`<div class="searchwrap"><input id="searchInput" placeholder="${tr('searchplaceholder')}" aria-label="${tr('search')}"><button id="searchSubmit">${tr('searchgo')}</button></div><div id="searchResult"></div>`);const search=()=>{let q=document.querySelector('#searchInput').value.toLocaleLowerCase();let matches=services.filter(s=>s.title.join(' ').toLocaleLowerCase().includes(q)||s.desc.join(' ').toLocaleLowerCase().includes(q));let travel=destinations.filter(d=>d.name.toLocaleLowerCase().includes(q));let rows=matches.map(s=>`<p>• ${esc(s.title[idx()])}</p>`).concat(travel.map(d=>`<p>• ${esc(d.name)}</p>`));document.querySelector('#searchResult').innerHTML=rows.length?rows.join(''):`<p>${tr('noresult')}</p>`};document.querySelector('#searchSubmit').onclick=search;document.querySelector('#searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')search()});document.querySelector('#searchInput').focus()}
-document.querySelector('#language').addEventListener('change',e=>{const next=e.target.value;try{localStorage.setItem('islaviva-language',next);localStorage.setItem('islaviva-language-choice',next)}catch(e){}location.assign(next==='es'?'/':'/'+next+'/')});document.querySelector('#city').addEventListener('change',e=>{city=e.target.value;localStorage.setItem('islaviva-city',city);render()});document.querySelector('#searchBtn').addEventListener('click',showSearch);document.querySelector('#close').addEventListener('click',closeDialog);document.querySelector('#overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeDialog()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDialog()});function closeDialog(){document.querySelector('#overlay').classList.remove('visible');document.body.style.overflow=''}
+function setSiteLanguage(next){
+ if(!['es','de','en','fr','ht'].includes(next))return;
+ try{localStorage.setItem('islaviva-language',next);localStorage.setItem('islaviva-language-choice',next)}catch(e){}
+ location.assign(next==='es'?'/':'/'+next+'/');
+}
+document.querySelectorAll('[data-set-language]').forEach(button=>button.addEventListener('click',()=>setSiteLanguage(button.dataset.setLanguage)));
+document.querySelector('#language').addEventListener('change',e=>setSiteLanguage(e.target.value));document.querySelector('#city').addEventListener('change',e=>{city=e.target.value;localStorage.setItem('islaviva-city',city);render()});document.querySelector('#searchBtn').addEventListener('click',showSearch);document.querySelector('#close').addEventListener('click',closeDialog);document.querySelector('#overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeDialog()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDialog()});function closeDialog(){document.querySelector('#overlay').classList.remove('visible');document.body.style.overflow=''}
 
 const weatherLabels={
 es:{prefix:'Pronóstico',unavailable:'Pronóstico no disponible',source:'Datos: MET Norway',degree:'°C',alert:'Avisos oficiales: INDOMET'},
