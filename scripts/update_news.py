@@ -137,6 +137,8 @@ else:
                     batch[idx]["translations"]=languages
                 accounting["characters"]+=budget_cost
         USAGE_FILE.write_text(json.dumps(accounting,indent=2)+"\n",encoding="utf-8")
+    totals={lang:sum(bool(entry.get("translations",{}).get(lang)) for entry in latest) for lang in LANGUAGES}
+    print("Translation coverage by language:", totals, "key configured:", bool(API_KEY))
     data = {"updated": NOW.isoformat(), "source_status": "ok" if latest else "no_recent_articles", "items": latest}
     out.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Successfully fetched {successful_feeds}/{len(FEEDS)} feeds; {len(latest)} recent headlines")
