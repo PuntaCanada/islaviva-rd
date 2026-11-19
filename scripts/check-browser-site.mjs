@@ -13,12 +13,16 @@ async function verify(lang){
  page.on('pageerror',e=>errors.push(e.message));
  try{
   const response=await page.goto(home(lang),{waitUntil:'domcontentloaded',timeout:35000});
-  await page.locator('#city-welcome:not([hidden])').waitFor({timeout:10000});
-  if((await page.locator('#city-welcome-options button').count())!==7)throw Error('Expected seven first-visit city choices');
-  await page.locator('#city-welcome-options [data-city-choice="Higüey"]').click();
-  await page.locator('#city-welcome').waitFor({state:'hidden',timeout:10000});
-  const savedCity=await page.evaluate(()=>localStorage.getItem('islaviva-city'));
-  if(savedCity!=='Higüey')throw Error('Initial city choice was not saved');
+  if(await page.locator('#city-welcome').count())throw Error('Unexpected blocking city welcome modal');
+  const quick=page.locator('#city-quick-select');
+  await quick.waitFor({timeout:10000});
+  const quickLabel=await quick.innerText();
+  if(!quickLabel.includes('📍'))throw Error('No optional city shortcut in header');
+  await quick.click();
+  await page.waitForFunction(()=>document.activeElement?.id==='city');
+  if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!==null)throw Error('Browsing without city choice should not store a preference');
+  await page.locator('#city').selectOption('Higüey');
+  if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!=='Higüey')throw Error('Chosen city was not saved');
   if(response?.status()!==200)throw Error('Homepage returned HTTP '+response?.status());
   await page.waitForFunction(()=>document.querySelector('#weather-temp')?.textContent?.includes('°C')||document.querySelector('#weather-temp')?.textContent?.includes('°F'),{timeout:20000});
   const temp=await page.locator('#weather-temp').innerText();
