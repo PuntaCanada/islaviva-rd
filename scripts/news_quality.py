@@ -200,7 +200,8 @@ def validate_news(items, now, age_hours=48):
         seen.add(key)
         assert entry["category"] in {
             "Actualidad", "Deportes", "Turismo", "Vivienda", "Economía",
-            "Política", "Cultura", "Medioambiente", "Regionales", "Mundo"
+            "Política", "Cultura", "Medioambiente", "Regionales", "Mundo",
+            "Gaming y tecnología"
         }, "unexpected category"
         assert all(r in REGIONS for r in entry.get("regions", [])), "bad region"
         published = dt.datetime.fromisoformat(entry["published"])
