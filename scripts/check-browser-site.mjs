@@ -16,7 +16,7 @@ async function verify(lang){
   await page.locator('#city-welcome:not([hidden])').waitFor({timeout:10000});
   if((await page.locator('#city-welcome-options button').count())!==7)throw Error('Expected seven first-visit city choices');
   await page.locator('#city-welcome-options [data-city-choice="Higüey"]').click();
-  await page.locator('#city-welcome[hidden]').waitFor();
+  await page.locator('#city-welcome').waitFor({state:'hidden',timeout:10000});
   const savedCity=await page.evaluate(()=>localStorage.getItem('islaviva-city'));
   if(savedCity!=='Higüey')throw Error('Initial city choice was not saved');
   if(response?.status()!==200)throw Error('Homepage returned HTTP '+response?.status());
