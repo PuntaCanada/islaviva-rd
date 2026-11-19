@@ -14,6 +14,7 @@ class NewsQualityTests(unittest.TestCase):
         cases = [
             ("Jonrón de Ángel Ortiz deja tendidas a las Águilas y da victoria al Licey", "Actualidad", "Deportes"),
             ("Los Toros vencen al Escogido con jonrón", "Actualidad", "Deportes"),
+            ("Los Toros se sacuden y derrotan 7-2 a los Leones", "Actualidad", "Deportes"),
             ("Llegan turistas y crecen los hoteles de Punta Cana", "Actualidad", "Turismo"),
             ("Banco Central analiza la inflación", "Actualidad", "Economía"),
             ("Presidente presenta medidas en el Congreso", "Actualidad", "Política"),
