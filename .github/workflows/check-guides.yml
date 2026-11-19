@@ -9,6 +9,10 @@ on:
       - 'scripts/check-guides.mjs'
       - 'scripts/check-localized-seo.mjs'
       - 'scripts/check-home-runtime.mjs'
+      - 'scripts/build-homepages.mjs'
+      - 'home-locales.json'
+      - 'assets/home-app.js'
+      - 'assets/home.css'
       - '.github/workflows/check-guides.yml'
   pull_request:
     paths:
@@ -19,6 +23,10 @@ on:
       - 'scripts/check-guides.mjs'
       - 'scripts/check-localized-seo.mjs'
       - 'scripts/check-home-runtime.mjs'
+      - 'scripts/build-homepages.mjs'
+      - 'home-locales.json'
+      - 'assets/home-app.js'
+      - 'assets/home.css'
       - '.github/workflows/check-guides.yml'
   workflow_dispatch:
 permissions:
@@ -36,3 +44,4 @@ jobs:
           node scripts/check-guides.mjs
           node scripts/check-localized-seo.mjs
           node scripts/check-home-runtime.mjs
+          node scripts/build-homepages.mjs --check
