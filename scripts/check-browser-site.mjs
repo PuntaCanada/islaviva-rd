@@ -56,6 +56,18 @@ async function verify(lang){
   const renderedLang=await page.locator('html').getAttribute('lang');
   if(renderedLang!==lang)throw Error('Wrong rendered language '+renderedLang);
   if((await page.locator('#news-grid .story').count())<1)throw Error('News cards missing (neither preview nor live entries)');
+  await page.locator('#news-personalize-button').click();
+  const gamingInterest=page.locator('#news-preferences-choices [data-interest="gaming"]');
+  if((await gamingInterest.count())!==1)throw Error('Gaming & Tech news interest missing');
+  if(!(await gamingInterest.isChecked()))throw Error('Gaming & Tech should be enabled by default');
+  await page.locator('#news-personalize-button').click();
+  const gta=page.locator('#news-grid .story').filter({hasText:'GTA VI'});
+  if(await gta.count()){
+   const actual=await gta.first().innerText();
+   const expected={es:'Gaming y tecnología',de:'Gaming & Technik',en:'Gaming & Tech',fr:'Jeux vidéo & tech',ht:'Jwèt videyo & teknoloji'}[lang];
+   if(!actual.includes(expected))throw Error('GTA VI should appear under '+expected);
+  }
+
   if((await page.locator('#compras .iv-brand').count())!==3)throw Error('Expected exactly three merchant cards');
   // Local links must reflect the selected municipality, with no invented live status.
   await page.waitForFunction(()=>document.querySelectorAll('#regional-sources-grid .regional-source-card').length>=3);
