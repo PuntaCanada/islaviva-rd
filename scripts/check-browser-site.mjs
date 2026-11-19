@@ -137,6 +137,25 @@ await checkHomeLanguage('en-US','es','es');
  }catch(e){failures++;console.error('FAIL direct locale: '+e.message)}
  finally{await context.close()}
 }
+// Compact mobile navigation must keep flags, language menu and city changer usable.
+for(const width of [375,320]){
+ const context=await browser.newContext({locale:'es-DO',viewport:{width,height:740},isMobile:true,hasTouch:true});
+ const page=await context.newPage();
+ try{
+  await page.goto(BASE+'/',{waitUntil:'domcontentloaded',timeout:35000});
+  const ids=['[data-set-language="es"]','[data-set-language="en"]','#language summary','#city-quick-select'];
+  for(const selector of ids){
+   const rect=await page.locator(selector).boundingBox();
+   if(!rect||rect.x<0||rect.x+rect.width>width+3)throw Error(selector+' is outside '+width+'px viewport: '+JSON.stringify(rect));
+  }
+  await page.locator('#city-quick-select').click();
+  await page.locator('#city-chooser:not([hidden])').waitFor({timeout:8000});
+  await page.locator('#city-chooser-grid [data-choose-city="Punta Cana"]').click();
+  await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Punta Cana',null,{timeout:8000});
+  console.log('OK mobile '+width+'px: visible flags, language menu, city choice');
+ }catch(e){failures++;console.error('FAIL mobile '+width+'px:',e.message)}
+ finally{await context.close()}
+}
 await browser.close();
 console.log('Browser regression failures: '+failures+' (five homepage checks and eight language routing checks)');
 if(failures)process.exitCode=1;
