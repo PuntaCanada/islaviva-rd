@@ -141,6 +141,10 @@
 .site-partner-card small{display:block;font-size:11px;line-height:1.45;color:#698076;margin-top:3px}
 .site-partner-arrow{margin-left:auto;color:#0d7b63;font-size:19px}
 @media(max-width:740px){.site-partners-grid{grid-template-columns:1fr}.site-partner-card{padding:14px 15px}.site-partners{padding:31px 0}}
+
+.pulse-caption{background:#e3f4e9;color:#1d684e;letter-spacing:0}
+.pulse-caption-muted{background:#eef1ec;color:#647a70}
+.pulse-card{gap:9px}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -231,25 +235,35 @@ function renderLocalPulse(){
  document.getElementById('pulse-title').textContent=t.title;
  document.getElementById('pulse-subtitle').textContent=t.subtitle;
  document.getElementById('pulse-city').textContent='📍 '+city;
- const isHiguey=city==='Higüey';
- const eventsUrl=isHiguey?'https://ayuntamientohiguey.gob.do/category/noticias/':'https://es.godominicanrepublic.com/que-hacer/espectaculos-y-eventos';
+ const eventsUrl=city==='Higüey'?'https://ayuntamientohiguey.gob.do/category/noticias/':'https://es.godominicanrepublic.com/que-hacer/espectaculos-y-eventos';
  const cards=[
   ['⚡',t.power,t.powerDesc,'https://edeeste.com.do/inicio/servicios/estado-de-circuito-y-suministro/',false,'power'],
   ['💧',t.water,t.waterDesc,'https://inapa.gob.do/servicios/sistema-de-monitoreo-del-inapa/',false,'water'],
   ['🚧',t.roads,t.roadsDesc,'#zona-extra',true,'roads'],
   ['🎉',t.events,t.eventsDesc,eventsUrl,false,'events']
  ];
+ const noticesUi={
+  es:{none:'Sin avisos locales recientes en nuestras fuentes',view:'Ver fuente oficial',status:'Aviso publicado, no estado en vivo',events:'Consultar agenda',roads:'Ver avisos de vías'},
+  de:{none:'Keine neuen lokalen Meldungen in unseren Quellen',view:'Offizielle Quelle öffnen',status:'Veröffentlichte Meldung, kein Live-Status',events:'Veranstaltungen ansehen',roads:'Straßenmeldungen ansehen'},
+  en:{none:'No recent local notices in our sources',view:'Open official source',status:'Published notice, not live status',events:'See events',roads:'View road notices'},
+  fr:{none:'Aucun avis local récent dans nos sources',view:'Voir la source officielle',status:'Avis publié, pas de statut en direct',events:'Voir les événements',roads:'Voir les avis routiers'},
+  ht:{none:'Pa gen nouvo avi lokal nan sous nou yo',view:'Louvri sous ofisyèl',status:'Avi pibliye, pa sitiyasyon an dirèk',events:'Gade evènman',roads:'Gade avi wout'}
+ }[lang]||{none:'Sin avisos locales recientes',view:'Ver fuente',status:'Aviso publicado',events:'Eventos',roads:'Vías'};
  document.getElementById('pulse-grid').innerHTML=cards.map(([icon,title,desc,url,internal,kind])=>{
   const relevant=localBulletins.filter(x=>x.kind===kind&&Array.isArray(x.regions)&&x.regions.includes(city)).slice(0,2);
   const brief=relevant.map(x=>{
-   let safe=false;try{safe=new URL(x.url).protocol==='https:';}catch(e){}
+   let safe=false;
+   try{safe=new URL(x.url).protocol==='https:';}catch(e){}
    const date=x.published?new Date(x.published).toLocaleDateString(lang,{day:'numeric',month:'short',timeZone:'America/Santo_Domingo'}):'';
-   return '<div class="pulse-notice"><small>🗓️ '+esc(date)+' · '+esc(x.source)+(lang!=='es'?' · ES':'')+'</small><b>'+esc(x.title)+'</b>'+(safe?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">↗ '+esc(t.read)+'</a>':'')+'</div>';
+   const headline=lang==='es'?x.title:(x.translations?.[lang]||x.title);
+   return '<div class="pulse-notice"><small>🗓️ '+esc(date)+' · '+esc(x.source)+(lang!=='es'&&!x.translations?.[lang]?' · ES':'')+'</small><b>'+esc(headline)+'</b>'+(safe?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">↗ '+esc(noticesUi.view)+'</a>':'')+'</div>';
   }).join('');
-  return '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption">'+esc(t.badge)+'</span><p>'+esc(desc)+'</p>'+brief+'<a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(t.read)+' ↗</a></article>';
+  const noMatch=kind==='power'||kind==='water'||kind==='events';
+  const label=relevant.length?noticesUi.status:(kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.none);
+  const cta=kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.view;
+  return '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption'+(!relevant.length?' pulse-caption-muted':'')+'">'+esc(label)+'</span><p>'+esc(desc)+'</p>'+brief+'<a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(cta)+' ↗</a></article>';
  }).join('');
 }
-
 async function loadLocalBulletins(){
  try{
   const r=await fetch('./data/local_notices.json',{cache:'no-store'});
