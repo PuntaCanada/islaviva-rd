@@ -226,18 +226,7 @@
 .regional-source-action{font-size:12px;font-weight:800;color:#12725b;text-decoration:underline;text-underline-offset:3px}
 .regional-sources-note{margin:16px 0 0;font-size:12px;color:#657a6e;line-height:1.6}
 @media(max-width:540px){.regional-sources-grid{grid-template-columns:1fr}.regional-source-card{padding:16px}}
-
-/* First-visit region preference, accessible without geolocation. */
-.city-welcome-backdrop[hidden]{display:none!important}
-.city-welcome-backdrop{position:fixed;inset:0;z-index:11000;display:flex;align-items:center;justify-content:center;padding:18px;background:rgba(6,29,25,.65);overflow-y:auto}
-body.city-welcome-open{overflow:hidden}
-.city-welcome-panel{width:min(100%,560px);max-height:calc(100vh - 36px);overflow-y:auto;padding:clamp(20px,4vw,32px);border-radius:22px;background:#fff;color:#173f34;box-shadow:0 24px 64px #041a1560;text-align:center}
-.city-welcome-icon{font-size:32px}
-.city-welcome-panel h2{font:800 clamp(24px,4vw,32px)/1.2 Manrope,sans-serif;letter-spacing:-.8px;margin:8px 0}
-.city-welcome-panel p{font:500 14px/1.65 "DM Sans",sans-serif;color:#536b60;margin:0 auto 20px;max-width:460px}
-.city-welcome-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 14px}
-.city-welcome-choice{padding:14px 10px;border-radius:11px;border:1px solid #cbded2;background:#f4faf5;color:#154735;font:800 14px/1.3 "DM Sans",sans-serif;cursor:pointer}
-.city-welcome-choice:hover,.city-welcome-choice:focus-visible{background:#daf0e1;border-color:#3b9671;outline-offset:3px}
-.city-welcome-later{border:0;background:transparent;color:#285d4d;text-decoration:underline;font:700 13px/1.6 "DM Sans",sans-serif;padding:10px;cursor:pointer}
-#city-welcome-privacy{display:block;font:500 11px/1.5 "DM Sans",sans-serif;color:#708278;margin:9px auto 0}
-@media(max-width:420px){.city-welcome-options{grid-template-columns:1fr}.city-welcome-choice{padding:10px}.city-welcome-panel{max-height:calc(100vh - 24px)}}
+/* Voluntary city shortcut, without an interrupting first-visit modal. */
+.city-quick-select{border:1px solid #b9d9c7;border-radius:100px;padding:9px 12px;white-space:nowrap;max-width:215px;overflow:hidden;text-overflow:ellipsis;background:#eaf8ef;color:#195740;font:800 12px/1.3 "DM Sans",sans-serif;cursor:pointer}
+.city-quick-select:hover,.city-quick-select:focus-visible{background:#d7f0e0;border-color:#6cae88}
+@media(max-width:640px){.city-quick-select{padding:8px;max-width:130px;font-size:11px}}
