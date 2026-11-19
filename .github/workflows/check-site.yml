@@ -34,3 +34,17 @@ jobs:
               json.loads(pathlib.Path(file).read_text(encoding="utf-8"))
           PY
           node --check /tmp/isla-site.js
+      - name: Validate US-only weather unit region endpoint and partner links
+        run: |
+          node --input-type=module --check < functions/api/visitor-country.js
+          python - <<'PY'
+          import json,pathlib
+          page=pathlib.Path('index.html').read_text(encoding='utf-8')
+          routes=json.loads(pathlib.Path('_routes.json').read_text(encoding='utf-8'))
+          assert routes['include']==['/api/visitor-country']
+          assert 'visitorCountry===\'US\'' in page
+          assert 'https://comparanetrd.pages.dev/' in page
+          assert 'https://by-maria-beauty-store.pages.dev/' in page
+          assert 'https://github.com/PuntaCanada/recarganet-rd' in page
+          assert 'https://edeeste.com.do/inicio/servicios/estado-de-circuito-y-suministro/' in page
+          PY
