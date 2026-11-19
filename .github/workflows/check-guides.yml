@@ -1,0 +1,27 @@
+name: Check five-language guides
+on:
+  push:
+    paths:
+      - '*.html'
+      - 'guide-i18n.js'
+      - 'scripts/check-guides.mjs'
+      - '.github/workflows/check-guides.yml'
+  pull_request:
+    paths:
+      - '*.html'
+      - 'guide-i18n.js'
+      - 'scripts/check-guides.mjs'
+      - '.github/workflows/check-guides.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  check-guides:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify all content guides are translated
+        run: node scripts/check-guides.mjs
