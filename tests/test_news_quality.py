@@ -54,6 +54,14 @@ class NewsQualityTests(unittest.TestCase):
             "Los Toros ganaron en un juego histórico", "Actualidad",
             summary="Los fanáticos compararon el evento con un videojuego.",
         ), "Deportes")
+        self.assertEqual(category_for(
+            "Oferta pública inicial de Anthropic supera récord histórico",
+            "Economía", feed_categories=["Tecnología"],
+        ), "Economía")
+        self.assertEqual(category_for(
+            "Banco Central evalúa la inflación", "Economía",
+            summary="La entidad usará inteligencia artificial en uno de sus proyectos.",
+        ), "Economía")
 
     def test_regions_require_explicit_place(self):
         self.assertEqual(region_mentions("Obras en Higüey y Bávaro"), ["Higüey", "Punta Cana"])
