@@ -568,7 +568,7 @@ async function loadIslandWeather(){
 }
 let liveNews=[];
 let newsScope='all', newsCategory='all', newsSource='all';
-const NEWS_INTERESTS=['sport','tourism','economy','politics','local','culture','nature','general'];
+const NEWS_INTERESTS=['sport','tourism','economy','politics','local','culture','nature','gaming','general'];
 const NEWS_PREFS_KEY='islaviva-news-interests-v1';
 function getSavedNewsInterests(){
  try{
@@ -579,17 +579,20 @@ function getSavedNewsInterests(){
 let visibleNewsInterests=getSavedNewsInterests();
 function saveNewsInterests(){try{localStorage.setItem(NEWS_PREFS_KEY,JSON.stringify([...visibleNewsInterests]))}catch(e){}}
 const interestUi={
- es:{title:'⚙️ Mis intereses',help:'Desactiva los temas que no quieras ver. Se guarda solo en este navegador.',reset:'Mostrar todo',choices:['⚾ Deportes','🏝️ Turismo','💼 Economía','🏛️ Política','📍 Local','🎭 Cultura','🌿 Medioambiente','📰 Otros'],hidden:'Has ocultado todos los temas. Activa alguno en Mis intereses.'},
- de:{title:'⚙️ Meine Interessen',help:'Blende Themen aus, die dich nicht interessieren. Gespeichert nur in diesem Browser.',reset:'Alles anzeigen',choices:['⚾ Sport','🏝️ Tourismus','💼 Wirtschaft','🏛️ Politik','📍 Regionales','🎭 Kultur','🌿 Umwelt','📰 Sonstiges'],hidden:'Du hast alle Themen ausgeblendet. Aktiviere unter Meine Interessen mindestens eines.'},
- en:{title:'⚙️ My interests',help:'Hide topics you do not want to see. Saved only in this browser.',reset:'Show all',choices:['⚾ Sports','🏝️ Travel','💼 Business','🏛️ Politics','📍 Local','🎭 Culture','🌿 Environment','📰 Other'],hidden:'All topics are hidden. Enable one or more in My interests.'},
- fr:{title:'⚙️ Mes centres d’intérêt',help:'Masquez les thèmes qui ne vous intéressent pas. Enregistré uniquement dans ce navigateur.',reset:'Tout afficher',choices:['⚾ Sport','🏝️ Tourisme','💼 Économie','🏛️ Politique','📍 Local','🎭 Culture','🌿 Environnement','📰 Autres'],hidden:'Tous les sujets sont masqués. Activez-en dans Mes centres d’intérêt.'},
- ht:{title:'⚙️ Sa ki enterese m',help:'Kache sijè ou pa vle wè yo. Preferans yo rete sèlman nan navigatè sa a.',reset:'Montre tout',choices:['⚾ Espò','🏝️ Touris','💼 Ekonomi','🏛️ Politik','📍 Lokal','🎭 Kilti','🌿 Anviwònman','📰 Lòt'],hidden:'Ou kache tout sijè yo. Aktive kèk nan preferans ou.'}
+ es:{title:'⚙️ Mis intereses',help:'Desactiva los temas que no quieras ver. Se guarda solo en este navegador.',reset:'Mostrar todo',choices:['⚾ Deportes','🏝️ Turismo','💼 Economía','🏛️ Política','📍 Local','🎭 Cultura','🌿 Medioambiente','🎮 Gaming y tecnología','📰 Otros'],hidden:'Has ocultado todos los temas. Activa alguno en Mis intereses.'},
+ de:{title:'⚙️ Meine Interessen',help:'Blende Themen aus, die dich nicht interessieren. Gespeichert nur in diesem Browser.',reset:'Alles anzeigen',choices:['⚾ Sport','🏝️ Tourismus','💼 Wirtschaft','🏛️ Politik','📍 Regionales','🎭 Kultur','🌿 Umwelt','🎮 Gaming & Technik','📰 Sonstiges'],hidden:'Du hast alle Themen ausgeblendet. Aktiviere unter Meine Interessen mindestens eines.'},
+ en:{title:'⚙️ My interests',help:'Hide topics you do not want to see. Saved only in this browser.',reset:'Show all',choices:['⚾ Sports','🏝️ Travel','💼 Business','🏛️ Politics','📍 Local','🎭 Culture','🌿 Environment','🎮 Gaming & Tech','📰 Other'],hidden:'All topics are hidden. Enable one or more in My interests.'},
+ fr:{title:'⚙️ Mes centres d’intérêt',help:'Masquez les thèmes qui ne vous intéressent pas. Enregistré uniquement dans ce navigateur.',reset:'Tout afficher',choices:['⚾ Sport','🏝️ Tourisme','💼 Économie','🏛️ Politique','📍 Local','🎭 Culture','🌿 Environnement','🎮 Jeux vidéo & tech','📰 Autres'],hidden:'Tous les sujets sont masqués. Activez-en dans Mes centres d’intérêt.'},
+ ht:{title:'⚙️ Sa ki enterese m',help:'Kache sijè ou pa vle wè yo. Preferans yo rete sèlman nan navigatè sa a.',reset:'Montre tout',choices:['⚾ Espò','🏝️ Touris','💼 Ekonomi','🏛️ Politik','📍 Lokal','🎭 Kilti','🌿 Anviwònman','🎮 Jwèt videyo & teknoloji','📰 Lòt'],hidden:'Ou kache tout sijè yo. Aktive kèk nan preferans ou.'}
 };
 // Conservative classification from original Spanish title; avoid treating every general feed as a local event.
 function newsInterest(n){
  // Server classification is authoritative; legacy cached items still get a fallback.
  const cat=(n.category||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
- const known={deportes:'sport',turismo:'tourism',vivienda:'economy',economia:'economy',politica:'politics',cultura:'culture',medioambiente:'nature',regionales:'local'};
+ // Older cached RSS entries can receive a non-destructive, strong title-only fallback.
+ const gamingTitle=(n.title||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ if(/\b(?:gta\s*(?:vi|6|v|5)|grand\s+theft\s+auto|videojuegos?|gaming|playstation|xbox|nintendo|ciberseguridad|inteligencia\s+artificial)\b/.test(gamingTitle))return 'gaming';
+ const known={'gaming y tecnologia':'gaming',deportes:'sport',turismo:'tourism',vivienda:'economy',economia:'economy',politica:'politics',cultura:'culture',medioambiente:'nature',regionales:'local'};
  if(known[cat])return known[cat];
  const t=(n.title||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
  if(/\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|escogido|licey|aguilas cibae|estrellas orientales|gigantes del cibao|toros del este|toros (?:se sacuden|vencen|derrotan|ganan)|leones del escogido)\b/.test(t))return 'sport';
@@ -627,6 +630,7 @@ const licensedNewsImageSources=new Set([]);
 function newsArtInfo(n){
  const words=((n.title||'')+' '+(n.category||'')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
  const category=(n.category||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ if((n.category==='Gaming y tecnología')||newsInterest(n)==='gaming')return {type:'tech',accent:'#A6D9EC',dark:'#253D65',light:'#72B9C9'};
  if(/beisbol|pelota|lidom|home run|jonron|toros|leones|aguilas|estrellas|gigantes|futbol|deporte|atleta|olimpic/.test(words))return {type:'sport',accent:'#E6AF67',dark:'#234E48',light:'#A1D6B2'};
  if(/huracan|tormenta|lluvia|inundacion|medioambiente|naturaleza|energia solar|medio ambiente/.test(words))return {type:'nature',accent:'#E8D78A',dark:'#225D60',light:'#92C5AE'};
  if(/turismo|hotel|playa|aeropuerto|vuelo|aerolinea|vacaciones|punta cana|bavaro|cap cana/.test(words))return {type:'travel',accent:'#F6C37A',dark:'#0A5964',light:'#8BD1C7'};
@@ -641,6 +645,7 @@ function newsIllustration(n){
  const a=newsArtInfo(n);
  const base='<svg aria-hidden="true" viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sea-'+a.type+'" x2="1" y2="1"><stop stop-color="'+a.dark+'"/><stop offset="1" stop-color="'+a.light+'"/></linearGradient><pattern id="lines-'+a.type+'" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity=".1"/></pattern></defs><rect width="600" height="330" fill="url(#sea-'+a.type+')"/><rect width="600" height="330" fill="url(#lines-'+a.type+')"/><circle cx="475" cy="88" r="97" fill="'+a.accent+'" opacity=".17"/><circle cx="490" cy="91" r="57" fill="'+a.accent+'" opacity=".17"/>';
  const paths={
+  tech:'<rect x="152" y="80" width="290" height="175" rx="16" fill="#D7EDF1"/><rect x="171" y="100" width="251" height="129" rx="7" fill="#275A71"/><path d="M210 159h58m-28-27v54M329 139h65m-65 33h65" stroke="#89D9E1" stroke-width="12" stroke-linecap="round"/><rect x="258" y="255" width="92" height="13" rx="6" fill="#A9CBD4"/><rect x="213" y="271" width="184" height="15" rx="7" fill="#D7EDF1"/>',
   travel:'<circle cx="455" cy="96" r="47" fill="#FFE1A3"/><path d="M0 235Q160 208 301 243T600 232V330H0Z" fill="#2E9F9D"/><path d="M0 267Q148 240 303 276T600 264V330H0Z" fill="#126F84"/><path d="M157 253L191 118M191 118Q213 155 245 151M191 118Q153 142 116 149M191 118Q178 94 162 84M191 118Q217 107 242 95" fill="none" stroke="#EDE4BD" stroke-width="11" stroke-linecap="round"/><path d="M304 113L410 145L326 166L339 146Z" fill="#F3FAF5" opacity=".94"/>',
   sport:'<path d="M0 252Q300 173 600 253V330H0Z" fill="#2B8A67"/><path d="M0 298Q300 216 600 299" fill="none" stroke="#E8E9CB" stroke-width="4"/><path d="M128 254L295 194L475 263" fill="none" stroke="#E8E9CB" stroke-width="5"/><circle cx="310" cy="126" r="77" fill="#F5EBDB"/><path d="M265 64Q337 125 265 189M356 63Q284 126 356 189" stroke="#CD7160" stroke-width="5" stroke-dasharray="11 8" fill="none"/><path d="M88 102L214 212" stroke="#E5B97E" stroke-width="23" stroke-linecap="round"/>',
   nature:'<circle cx="448" cy="91" r="47" fill="#F8D9A4"/><path d="M0 249L152 108L284 244L404 137L600 279V330H0Z" fill="#4E9B8E"/><path d="M0 289L190 183L336 282L507 166L600 227V330H0Z" fill="#1E756A"/><path d="M130 308L180 207L222 308M412 320L468 218L524 320" fill="#B6D6B1" opacity=".8"/><path d="M0 293Q130 268 280 299T600 286" fill="none" stroke="#AEDDE3" stroke-width="17"/>',
@@ -667,13 +672,13 @@ function newsActive(){
   }catch(e){return false}
  });
 }
-function effectiveNewsCategory(n){return newsInterest(n)==='sport'?'Deportes':(n.category||'Actualidad')}
+function effectiveNewsCategory(n){const interest=newsInterest(n);return interest==='gaming'?'Gaming y tecnología':interest==='sport'?'Deportes':(n.category||'Actualidad')}
 const newsCategoryLabels={
- es:{Deportes:'Deportes',Actualidad:'Actualidad',Turismo:'Turismo',Economía:'Economía',Regionales:'Regionales',Política:'Política'},
- de:{Deportes:'Sport',Actualidad:'Aktuelles',Turismo:'Tourismus',Economía:'Wirtschaft',Regionales:'Regionales',Política:'Politik'},
- en:{Deportes:'Sports',Actualidad:'News',Turismo:'Tourism',Economía:'Economy',Regionales:'Regional',Política:'Politics'},
- fr:{Deportes:'Sport',Actualidad:'Actualités',Turismo:'Tourisme',Economía:'Économie',Regionales:'Régional',Política:'Politique'},
- ht:{Deportes:'Espò',Actualidad:'Aktyalite',Turismo:'Touris',Economía:'Ekonomi',Regionales:'Rejyonal',Política:'Politik'}
+ es:{'Gaming y tecnología':'Gaming y tecnología',Deportes:'Deportes',Actualidad:'Actualidad',Turismo:'Turismo',Economía:'Economía',Regionales:'Regionales',Política:'Política'},
+ de:{'Gaming y tecnología':'Gaming & Technik',Deportes:'Sport',Actualidad:'Aktuelles',Turismo:'Tourismus',Economía:'Wirtschaft',Regionales:'Regionales',Política:'Politik'},
+ en:{'Gaming y tecnología':'Gaming & Tech',Deportes:'Sports',Actualidad:'News',Turismo:'Tourism',Economía:'Economy',Regionales:'Regional',Política:'Politics'},
+ fr:{'Gaming y tecnología':'Jeux vidéo & tech',Deportes:'Sport',Actualidad:'Actualités',Turismo:'Tourisme',Economía:'Économie',Regionales:'Régional',Política:'Politique'},
+ ht:{'Gaming y tecnología':'Jwèt videyo & teknoloji',Deportes:'Espò',Actualidad:'Aktyalite',Turismo:'Touris',Economía:'Ekonomi',Regionales:'Rejyonal',Política:'Politik'}
 };
 function newsCategoryLabel(c){return newsCategoryLabels[lang]?.[c]||c}
 function renderNewsPortal(){
