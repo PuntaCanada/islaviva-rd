@@ -12,7 +12,7 @@ import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
-from news_quality import region_mentions, canonical_url
+from news_quality import region_mentions, canonical_url, normalize
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/"data"/"local_notices.json"
 UTC=dt.timezone.utc
@@ -49,7 +49,6 @@ def get_notices(source,kind,url,domain):
   link=(item.findtext("link") or "").strip()
   parsed=urllib.parse.urlsplit(link)
   if not title or parsed.scheme!="https" or parsed.hostname not in (domain,"www."+domain):continue
-  from news_quality import normalize
   if not re.search(TOPICS[kind],normalize(title)):continue
   try:
    published=email.utils.parsedate_to_datetime(item.findtext("pubDate") or "")
