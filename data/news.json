@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:46:25.446642+00:00",
+  "updated": "2026-11-19T08:49:12.104462+00:00",
   "source_status": "ok",
   "items": [
     {
@@ -712,28 +712,6 @@
         "en": "Ángel Ortiz hit a two-run home run in the ninth and Licey left the Águilas at 4-3.",
         "fr": "Ángel Ortiz a frappé un home run de deux points en neuvième manche et Licey a laissé les Águilas à 4-3.",
         "ht": "Ángel Ortiz frape yon home run de kouri nan nevyèm inning nan epi Licey kite Águilas yo 4-3."
-      }
-    },
-    {
-      "title": "Ortiz pega dramático jonrón y el Licey deja en el terreno a las Águilas",
-      "url": "https://eldia.com.do/ortiz-se-viste-de-heroe-en-triunfo-licey-sobre-ac/",
-      "source": "El Día",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. –Ángel Ortiz disparó un dramático cuadrangular en el noveno episodio para virar el marcador y…",
-      "image": "",
-      "published": "2026-11-19T04:08:55+00:00",
-      "translations": {
-        "de": "Ortiz schlägt einen dramatischen Home Run und Licey lässt die Águilas im Feld zurück",
-        "en": "Ortiz hits a dramatic home run and Licey leaves the Águilas in the field",
-        "fr": "Ortiz frappe un home run spectaculaire et Licey laisse les Águilas sur le terrain",
-        "ht": "Ortiz frape yon home run dramatik epi Licey kite Águilas yo nan teren an"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. –Ángel Ortiz schlug im neunten Inning einen dramatischen Home Run, um den Stand zu wenden und...",
-        "en": "This article was originally published in El Día. Santo Domingo. –Ángel Ortiz hit a dramatic home run in the ninth inning to turn the score around and...",
-        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. –Ángel Ortiz a frappé un home run spectaculaire en neuvième manche pour renverser le score et...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo. –Ángel Ortiz frape yon home run dramatik nan nevyèm inning nan pou vire nòt la epi..."
       }
     },
     {
@@ -1592,6 +1570,28 @@
         "en": "In his book Homo Deus: A Brief History of Tomorrow, futurist historian Yuval Noah Harari says that, as machine learning algorithms...",
         "fr": "Dans son livre Homo Deus : Une brève histoire de demain, l’historien futuriste Yuval Noah Harari affirme que, en tant qu’algorithmes d’apprentissage automatique...",
         "ht": "Nan liv li Homo Deus: A Brief History of Tomorrow, istoryen futurist Yuval Noah Harari di ke, kòm algoritm aprantisaj machin..."
+      }
+    },
+    {
+      "title": "El fantasma de la IA sobre artículos de prensa",
+      "url": "https://www.diariolibre.com/opinion/agora/2026/11/18/el-fantasma-de-la-ia-sobre-articulos-de-prensa/3724602",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Un nuevo fantasma recorre la prensa dominicana (a Europa diría K. Marx) y es motivo de amplios comentarios de rechazo tanto por comentaristas de la radio como de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/shutterstock2639330611-269627b3-focus-0.1-0.21-400-300.jpg",
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Der Geist der KI über Nachrichtenartikeln",
+        "en": "The ghost of AI over news articles",
+        "fr": "Le fantôme de l’IA sur les articles d’actualité",
+        "ht": "Fantom AI sou atik nouvèl yo"
+      },
+      "preview_translations": {
+        "de": "Ein neuer Geist verfolgt die dominikanische Presse (nach Europa, würde K. Marx sagen) und ist Gegenstand weit verbreiteter Ablehnungsäußerungen sowohl von Radiokommentatoren und...",
+        "en": "A new ghost haunts the Dominican press (to Europe, K. Marx would say) and is the subject of widespread rejection comments both by radio commentators and...",
+        "fr": "Un nouveau fantôme hante la presse dominicaine (vers l’Europe, dirait K. Marx) et fait l’objet de commentaires de rejet généralisés tant de la part des commentateurs radio que...",
+        "ht": "Yon nouvo fantom ap pèsekite laprès Dominiken an (pou Ewòp, K. Marx ta di) e li se sijè anpil kòmantè rejè pa kòmantatè radyo ak..."
       }
     }
   ]
