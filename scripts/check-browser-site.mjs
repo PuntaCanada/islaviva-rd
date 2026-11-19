@@ -17,19 +17,25 @@ async function verify(lang){
   stage="loading homepage";
   const response=await page.goto(home(lang),{waitUntil:'domcontentloaded',timeout:35000});
   if(await page.locator('#city-welcome').count())throw Error('Unexpected blocking city welcome modal');
+  // Direct flag buttons plus three languages in the secondary picker.
+  if((await page.locator('[data-set-language="es"]').count())!==1||(await page.locator('[data-set-language="en"]').count())!==1)throw Error('Missing visible Spanish/English flag shortcuts');
+  if((await page.locator('#language option').count())!==4)throw Error('Additional language picker should contain placeholder and three languages');
+  for(const flag of ['de','fr','ht'])if((await page.locator('#language option[value="'+flag+'"]').count())!==1)throw Error('Missing secondary language '+flag);
   const quick=page.locator('#city-quick-select');
   await quick.waitFor({timeout:10000});
-  const quickLabel=await quick.innerText();
-  if(!quickLabel.includes('📍'))throw Error('No optional city shortcut in header');
-  stage="clicking city shortcut";
   await quick.click();
-  await page.waitForTimeout(500);
-  const focusDetails=await page.evaluate(()=>({active:document.activeElement?.id||'',cityExists:!!document.getElementById('city'),lang:document.documentElement.lang,pathname:location.pathname}));
-  if(focusDetails.active!=='city')throw Error('City shortcut focus failed: '+JSON.stringify(focusDetails)+'; page errors: '+errors.join('; '));
-  if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!==null)throw Error('Browsing without city choice should not store a preference');
-  stage="choosing Higüey";
-  await page.locator('#city').selectOption('Higüey');
-  if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!=='Higüey')throw Error('Chosen city was not saved');
+  await page.locator('#city-chooser:not([hidden])').waitFor({timeout:8000});
+  if((await page.locator('#city-chooser-grid [data-choose-city]').count())!==7)throw Error('City dialog must show seven supported cities');
+  if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!==null)throw Error('Opening city dialog must not store a city');
+  await page.locator('#city-chooser-grid [data-choose-city="Higüey"]').click();
+  await page.locator('#city-chooser').waitFor({state:'hidden'});
+  if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!=='Higüey')throw Error('Chosen city must be saved');
+  await page.locator('#weather-city-change').click();
+  await page.locator('#city-chooser:not([hidden])').waitFor();
+  await page.locator('#city-chooser-grid [data-choose-city="Punta Cana"]').click();
+  await page.waitForFunction(()=>document.querySelector('#city-status')?.textContent==='Punta Cana',null,{timeout:8000});
+  await page.locator('#weather-city-change').click();
+  await page.locator('#city-chooser-grid [data-choose-city="Higüey"]').click();
   if(response?.status()!==200)throw Error('Homepage returned HTTP '+response?.status());
   stage="waiting for weather";
   const weatherState=await page.evaluate(async()=>{
