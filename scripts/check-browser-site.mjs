@@ -9,6 +9,7 @@ const browser=await chromium.launch({headless:true});
 async function verify(lang){
  const context=await browser.newContext({locale:lang==='ht'?'fr-FR':lang==='es'?'es-DO':lang==='en'?'en-US':lang==='de'?'de-DE':'fr-FR'});
  const page=await context.newPage();
+ page.setDefaultTimeout(8000);
  const errors=[];
  let stage='loading';
  page.on('pageerror',e=>errors.push(e.message));
@@ -82,6 +83,7 @@ async function checkHomeLanguage(locale, choice, expected){
   await context.addInitScript(value=>localStorage.setItem('islaviva-language-choice',value),choice);
  }
  const page=await context.newPage();
+ page.setDefaultTimeout(8000);
  try{
   const navigated=await page.goto(BASE+'/',{waitUntil:'domcontentloaded',timeout:35000});
   await page.waitForURL(home(expected),{timeout:15000});
@@ -102,6 +104,7 @@ await checkHomeLanguage('en-US','es','es');
  const context=await browser.newContext({locale:'de-DE'});
  await context.addInitScript(()=>localStorage.setItem('islaviva-language-choice','en'));
  const page=await context.newPage();
+ page.setDefaultTimeout(8000);
  try{
   await page.goto(BASE+'/fr/',{waitUntil:'domcontentloaded',timeout:35000});
   if(new URL(page.url()).pathname!=='/fr/'||(await page.locator('html').getAttribute('lang'))!=='fr')throw Error('Direct French link was overridden');
