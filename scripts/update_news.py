@@ -84,16 +84,18 @@ if out.exists():
     except (ValueError,KeyError,OSError):
         pass
 def translate_batch(texts):
-    if not API_KEY or not REGION or not texts:
+    if not API_KEY or not texts:
         return {}
     url="https://api.cognitive.microsofttranslator.com/translate?api-version=3.0&from=es"+ "".join("&to="+lang for lang in LANGUAGES)
     data=json.dumps([{"text":t} for t in texts],ensure_ascii=False).encode("utf-8")
-    request=urllib.request.Request(url,data=data,method="POST",headers={
+    headers={
         "Ocp-Apim-Subscription-Key":API_KEY,
-        "Ocp-Apim-Subscription-Region":REGION,
         "Content-Type":"application/json; charset=UTF-8",
         "X-ClientTraceId":str(uuid.uuid4()),
-    })
+    }
+    if REGION and REGION.lower()!="global":
+        headers["Ocp-Apim-Subscription-Region"]=REGION
+    request=urllib.request.Request(url,data=data,method="POST",headers=headers)
     try:
         with urllib.request.urlopen(request,timeout=25) as response:
             result=json.load(response)
@@ -122,7 +124,7 @@ else:
         if entry["url"] in translations_by_url:
             entry["translations"]=translations_by_url[entry["url"]]
     pending=[entry for entry in latest if not entry.get("translations")]
-    if API_KEY and REGION and pending:
+    if API_KEY and pending:
         for start in range(0,len(pending),8):
             batch=pending[start:start+8]
             budget_cost=sum(len(x["title"]) for x in batch)*len(LANGUAGES)
