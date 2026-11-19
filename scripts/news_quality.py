@@ -52,7 +52,7 @@ SPECIAL_TOPIC_RULES = (
     ("Seguridad", re.compile(
         r"\b(?:policia nacional|policial|policias?|delincuencia|"
         r"criminalidad|homicidios?|asesinatos?|feminicidios?|"
-        r"robos?|asaltos?|secuestros?|narcotrafico|"
+        r"robos?|asaltos?|secuestros?|ladrones?|narcotrafico|"
         r"trafico de drogas|detenidos?|arrestados?|"
         r"ministerio publico|investigacion criminal|"
         r"seguridad ciudadana)\b")),
@@ -72,14 +72,14 @@ TOPIC_RULES = (
         r"futbol|baloncesto|balonmano|basket|nba|mlb|olimpi(?:co|ca|cos|cas)|"
         r"maraton|boxeo|tenis|voleibol|atleta(?:s)?|escogido|licey|"
         r"aguilas cibae(?:nas)?|estrellas orientales|gigantes del cibao|"
-        r"toros del este|toros (?:se sacuden|vencen|derrotan|ganan)|leones del escogido|(?:aguilas|estrellas) (?:vencen|derrotan|ganan))\b",
+        r"toros del este|toros (?:se sacuden|vencen|derrotan|ganan)|leones del escogido|(?:aguilas|estrellas) (?:vencen|derrotan|ganan|despiden|logran)|tbs (?:distrito|de san pedro)|judo)\b",
     )),
     ("Turismo", (r"\b(?:turismo|turist(?:a|as|ico|icos)|hoteles?|resort|playas?|"
                  r"aeropuertos?|aerolineas?|cruceros?|vacacion(?:es|al)|visitantes)\b",)),
     ("Vivienda", (r"\b(?:inmuebles?|viviendas?|alquiler(?:es)?|apartamentos?|"
                   r"construccion|urbanizacion|residencial(?:es)?)\b",)),
     ("Economía", (r"\b(?:economia|economico|finanzas?|inflacion|deuda publica|"
-                   r"mercado financiero|exportaciones?|importaciones?|"
+                   r"mercado financiero|oferta publica inicial|desempeno financiero|mision fmi|exportaciones?|importaciones?|"
                    r"precios? de|banco central|empleos?|salarios?|"
                    r"inversion(?:es)?|comercio|empresas?)\b",)),
     ("Medioambiente", (r"\b(?:medioambiente|medio ambiente|ecologia|"
@@ -87,7 +87,7 @@ TOPIC_RULES = (
                          r"contaminacion|bosques?|conservacion)\b",)),
     ("Cultura", (r"\b(?:cultura|festival|concierto|teatro|artista|"
                    r"museo|literatura|exposicion de arte|"
-                   r"musica|cine|patrimonio)\b",)),
+                   r"musica|cine|patrimonio|netflix (?:revela|estrena|anuncia))\b",)),
     ("Política", (r"\b(?:politica|politico|presidente|vicepresident[ea]|"
                     r"senad(?:o|or|ora)|congreso|diputad[oa]s?|"
                     r"eleccion(?:es)?|partido|gobierno|"
