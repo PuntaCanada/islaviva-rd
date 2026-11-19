@@ -9,3 +9,5 @@ Connect this repository to Cloudflare Pages (production branch: `main`; Framewor
 A scheduled GitHub Action retrieves headline metadata from publicly available RSS feeds every three hours. It publishes links, not full third-party articles. The frontend reads `data/news.json`, when available.
 
 **Status:** Prototype. News metadata is not a licensed editorial feed or translated content. Weather, newsletter signup, and local services are not yet connected. Never treat demo cards as verified current information.
+
+<!-- Cloudflare Git integration verification: 2026-11-19 -->
