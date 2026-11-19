@@ -16,16 +16,17 @@ A scheduled GitHub Action retrieves headline metadata from publicly available RS
 
 ## Multilingual content policy (required)
 
-IslaViva RD supports five interface languages: Spanish (`es`), German (`de`), English (`en`), French (`fr`), and Haitian Creole (`ht`).
+IslaViva RD supports five languages: Spanish (`es`), German (`de`), English (`en`), French (`fr`), and Haitian Creole (`ht`).
 
-All new root-level editorial HTML pages must:
-1. Provide Spanish source content in HTML for basic discoverability.
-2. Include the selector `id="guide-language"` with all five language options.
-3. Load the shared script `<script src="/guide-i18n.js" defer></script>` before `</body>`.
-4. Add every visible source-text fragment and its four translations to `guide-i18n.js`.
-5. Honor the existing `islaviva-language` localStorage preference, so the choice carries between the homepage and guides.
-6. Keep canonical metadata, indexability, and navigation back to the homepage.
+For each new editorial guide (for example `new-guide.html`):
+1. Create a Spanish source HTML page at the repository root, including the shared `guide-i18n.js` language picker.
+2. Add every visible Spanish text fragment and four translations to the dictionary in `guide-i18n.js`.
+3. Publish **real, static translated HTML** under `de/new-guide.html`, `en/new-guide.html`, `fr/new-guide.html`, and `ht/new-guide.html`. Do not rely on JavaScript alone to translate the content for search engines.
+4. Give all five pages their own language-appropriate title, meta description, self-referencing canonical, `<html lang>`, and reciprocal `hreflang` links including `x-default` (Spanish).
+5. Link between related guides in the same selected language, and preserve `islaviva-language` on navigation. Keep the homepage linked and usable.
+6. Add all five URLs to `sitemap.xml` with reciprocal `xhtml:link` language alternates; update `lastmod` only after substantive edits.
+7. Run `node scripts/check-guides.mjs` and `node scripts/check-localized-seo.mjs`, and review actual language quality and live deployment.
 
-Run `node scripts/check-guides.mjs` to verify all root content pages; the GitHub workflow `Check five-language guides` also runs on affected pushes and pull requests. It reports failures but does **not** by itself prevent Cloudflare deployment. A new content page is not ready until this check passes and translations are manually reviewed for quality. External merchant names and URLs are not translated.
+The GitHub workflow `Check five-language guides` runs on relevant HTML/script changes. It reports failures but currently does not block the Cloudflare Pages deployment. The root Spanish page must remain crawlable without browser-language-based redirects.
 
-For standalone SEO in each language, distinct localized URLs and `hreflang` tags would be an additional future improvement. Current guide translation runs in the browser and the Spanish source remains the canonical crawled document.
+**Current scope:** the two local guides have indexable five-language versions. The homepage still uses JavaScript localization at its single root URL and is *not* yet separately indexable in five languages. Do not falsely claim whole-site localized SEO until this is expanded.
