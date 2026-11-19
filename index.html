@@ -180,14 +180,18 @@ const interestUi={
 };
 // Conservative classification from original Spanish title; avoid treating every general feed as a local event.
 function newsInterest(n){
- const t=((n.title||'')+' '+(n.category||'')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
- if(/\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|toros|leones|aguilas cibae|estrellas orientales|gigantes del cibao|cibao fc)\b/.test(t))return 'sport';
- if(/\b(turismo|turist[ao]s?|hotel(?:es)?|playa|aeropuerto|aerolinea|crucero|visitantes|vacaciones|resort)\b/.test(t))return 'tourism';
+ // Server classification is authoritative; legacy cached items still get a fallback.
+ const cat=(n.category||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ const known={deportes:'sport',turismo:'tourism',vivienda:'economy',economia:'economy',politica:'politics',cultura:'culture',medioambiente:'nature',regionales:'local'};
+ if(known[cat])return known[cat];
+ const t=(n.title||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ if(/\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|escogido|licey|aguilas cibae|estrellas orientales|gigantes del cibao|toros del este|toros vencen|toros derrotan|leones del escogido)\b/.test(t))return 'sport';
+ if(/\b(turismo|turistas?|hotel(?:es)?|playa|aeropuerto|aerolinea|crucero|visitantes|vacaciones|resort)\b/.test(t))return 'tourism';
  if(/\b(economia|economico|empresa|mercado|finanza|financiero|deuda|inflacion|dolar|precio|comercio|exportacion|importacion|empleo|banco central)\b/.test(t))return 'economy';
  if(/\b(politica|politico|presidente|gobierno|diputad[oa]s?|congreso|senado|senador|eleccion|partido|ministro|ministerio)\b/.test(t))return 'politics';
  if(/\b(cultura|arte|musica|cine|festival|teatro|artista|concierto|literatura|religion|iglesia|basilica)\b/.test(t))return 'culture';
  if(/\b(ambiente|medioambiente|huracan|tormenta|naturaleza|lluvias|inundacion|ecologia|clima)\b/.test(t))return 'nature';
- if(/\b(regionales?|higuey|punta cana|bavaro|veron|santiago|samana|puerto plata|la romana)\b/.test(t)||Array.isArray(n.regions)&&n.regions.length)return 'local';
+ if(Array.isArray(n.regions)&&n.regions.length)return 'local';
  return 'general';
 }
 function renderNewsPreferences(){
@@ -290,8 +294,16 @@ function renderNewsPortal(){
  const selected=valid.filter(n=>(newsScope!=='local'||(Array.isArray(n.regions)&&n.regions.includes(city))) &&
    (newsCategory==='all'||effectiveNewsCategory(n)===newsCategory) &&
    (newsSource==='all'||n.source===newsSource));
+ // Keep a balanced mix of publishers and topics, but raise genuinely local stories
+ // for the visitor's selected city. Never infer local relevance from publisher location.
+ const ranked=[...selected].sort((a,b)=>{
+   const score=n=>((n.regions||[]).includes(city)?16:(n.regions||[]).length?2:0)
+      +(['Punta Cana Post','El Tiempo','Bávaro Digital'].includes(n.source)?1:0);
+   const diff=score(b)-score(a);
+   return diff||Date.parse(b.published)-Date.parse(a.published);
+ });
  const buckets=new Map();
- for(const n of selected){const k=n.source+' / '+effectiveNewsCategory(n);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(n)}
+ for(const n of ranked){const k=n.source+' / '+effectiveNewsCategory(n);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(n)}
  const picked=[];
  while(picked.length<12 && [...buckets.values()].some(g=>g.length)){
   for(const group of buckets.values())if(group.length&&picked.length<12)picked.push(group.shift());
