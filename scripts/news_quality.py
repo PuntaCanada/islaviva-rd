@@ -99,10 +99,25 @@ def is_near_duplicate(left, right):
     sa, sb = set(a), set(b)
     overlap = len(sa & sb) / max(1, len(sa | sb))
     # At least 4 shared meaningful words and very high similarity.
-    return len(sa & sb) >= 4 and (
+    if len(sa & sb) >= 4 and (
         overlap >= .78 or
         (overlap >= .68 and difflib.SequenceMatcher(None, " ".join(a), " ".join(b)).ratio() >= .84)
-    )
+    ):
+        return True
+    # Two publishers may word the *same* baseball event very differently.
+    # Require two same teams and a shared player/event cue, plus nearby dates.
+    # No general suppression of articles merely mentioning the same politician.
+    cues={"jonron", "home", "run"}
+    team_pairs=({"licey","aguilas"},{"licey","escogido"},{"toros","leones"})
+    common=sa & sb
+    if len(common)>=5 and "jonron" in common and any(pair <= common for pair in team_pairs):
+        try:
+            time_a=dt.datetime.fromisoformat(left["published"])
+            time_b=dt.datetime.fromisoformat(right["published"])
+            return abs((time_a-time_b).total_seconds()) <= 12*3600
+        except (KeyError,ValueError,TypeError):
+            pass
+    return False
 
 def quality_rank(entry, preferred_city=None):
     """Deterministic score to break ties and boost meaningful local reports.
