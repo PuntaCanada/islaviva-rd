@@ -11,3 +11,5 @@ A scheduled GitHub Action retrieves headline metadata from publicly available RS
 **Status:** Prototype. News metadata is not a licensed editorial feed or translated content. Weather, newsletter signup, and local services are not yet connected. Never treat demo cards as verified current information.
 
 <!-- Cloudflare Git integration verification: 2026-11-19 -->
+
+<!-- Trigger Cloudflare Pages deployment after enabling Web Analytics: 2026-11-19 -->
