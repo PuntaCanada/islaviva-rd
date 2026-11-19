@@ -58,7 +58,7 @@ def clean_preview(value, limit=165):
     parser=_PreviewParser()
     parser.feed(value or "")
     raw=" ".join(html.unescape("".join(parser.parts)).split())
-    raw=re.sub(r"\\s*(Leer más|Read more|Continuar leyendo)\\s*(»|…|\\.\\.\\.)?\\s*$","",raw,flags=re.I)
+    raw=re.sub(r"\s*(Leer más|Read more|Continuar leyendo)\s*(»|…|\.\.\.)?\s*$","",raw,flags=re.I)
     if len(raw)>limit:
         raw=raw[:limit].rsplit(" ",1)[0].rstrip(".,;: ")+"…"
     return raw if len(raw)>=35 else ""
