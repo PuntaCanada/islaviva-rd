@@ -123,6 +123,11 @@
 .pulse-caption{font-size:10px;font-weight:800;background:#f7edd9;color:#85601c;padding:5px 9px;align-self:flex-start;border-radius:99px}
 @media(max-width:900px){.pulse-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.pulse-grid{grid-template-columns:minmax(0,1fr)}.pulse-card{min-height:150px}}
+
+.pulse-notice{background:#f5faf6;border:1px solid #dcebe1;border-radius:10px;padding:11px 12px;display:flex;flex-direction:column;gap:6px}
+.pulse-notice small{font-size:10px;color:#587668}
+.pulse-notice b{font-size:12px;line-height:1.4;color:#23584a}
+.pulse-notice a{font-size:11px;margin-top:0}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -198,6 +203,7 @@ async function loadRoadNotices(){
 }
 document.getElementById('road-toggle-scope').addEventListener('click',()=>{roadAllRegions=!roadAllRegions;renderRoadNotices()});
 
+let localBulletins=[];
 const pulseTranslations={
  es:{kicker:'TU VIDA LOCAL',title:'Lo importante cerca de ti',subtitle:'Información oficial y avisos publicados. No es un monitor en tiempo real.',badge:'Estado actual no confirmado',read:'Ver avisos oficiales',power:'Electricidad',powerDesc:'Trabajos programados y comunicados de EDEEste; consulta fecha, circuito y vigencia.',water:'Agua potable',waterDesc:'Comunicados de INAPA sobre servicio, averías y obras. Ningún corte actual confirmado aquí.',roads:'Obras y carreteras',roadsDesc:'Avisos publicados de obras, desvíos y restricciones con fuente y fecha, directamente en IslaViva RD.',events:'Eventos',eventsDesc:'Agenda de actividades del Ministerio de Turismo o noticias municipales de Higüey.'},
  de:{kicker:'DEIN ALLTAG',title:'Wichtiges aus deiner Region',subtitle:'Amtliche Informationen und veröffentlichte Hinweise, keine Live-Störungsübersicht.',badge:'Aktueller Status nicht bestätigt',read:'Amtliche Hinweise ansehen',power:'Stromversorgung',powerDesc:'Geplante Arbeiten und Meldungen von EDEEste. Datum, Stromkreis und Gültigkeit prüfen.',water:'Wasserversorgung',waterDesc:'Meldungen von INAPA zu Störungen und Bauarbeiten. Hier ist keine aktuelle Unterbrechung bestätigt.',roads:'Straßen & Baustellen',roadsDesc:'Veröffentlichte Straßenarbeiten, Umleitungen und Einschränkungen mit Quelle und Datum direkt auf IslaViva RD.',events:'Veranstaltungen',eventsDesc:'Veranstaltungskalender der Tourismusbehörde beziehungsweise Mitteilungen der Stadt Higüey.'},
@@ -214,15 +220,35 @@ function renderLocalPulse(){
  const isHiguey=city==='Higüey';
  const eventsUrl=isHiguey?'https://ayuntamientohiguey.gob.do/category/noticias/':'https://es.godominicanrepublic.com/que-hacer/espectaculos-y-eventos';
  const cards=[
-  ['⚡',t.power,t.powerDesc,'https://edeeste.com.do/programa-de-mantenimiento/',false],
-  ['💧',t.water,t.waterDesc,'https://inapa.gob.do/',false],
-  ['🚧',t.roads,t.roadsDesc,'#zona-extra',true],
-  ['🎉',t.events,t.eventsDesc,eventsUrl,false]
+  ['⚡',t.power,t.powerDesc,'https://edeeste.com.do/programa-de-mantenimiento/',false,'power'],
+  ['💧',t.water,t.waterDesc,'https://inapa.gob.do/',false,'water'],
+  ['🚧',t.roads,t.roadsDesc,'#zona-extra',true,'roads'],
+  ['🎉',t.events,t.eventsDesc,eventsUrl,false,'events']
  ];
- document.getElementById('pulse-grid').innerHTML=cards.map(([icon,title,desc,url,internal])=>
-  '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption">'+esc(t.badge)+'</span><p>'+esc(desc)+'</p><a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(t.read)+' ↗</a></article>').join('');
+ document.getElementById('pulse-grid').innerHTML=cards.map(([icon,title,desc,url,internal,kind])=>{
+  const relevant=localBulletins.filter(x=>x.kind===kind&&(!x.regions?.length||x.regions.includes(city))).slice(0,2);
+  const brief=relevant.map(x=>{
+   let safe=false;try{safe=new URL(x.url).protocol==='https:';}catch(e){}
+   const date=x.published?new Date(x.published).toLocaleDateString(lang,{day:'numeric',month:'short',timeZone:'America/Santo_Domingo'}):'';
+   return '<div class="pulse-notice"><small>🗓️ '+esc(date)+' · '+esc(x.source)+(lang!=='es'?' · ES':'')+'</small><b>'+esc(x.title)+'</b>'+(safe?'<a href="'+esc(x.url)+'" target="_blank" rel="noopener noreferrer">↗ '+esc(t.read)+'</a>':'')+'</div>';
+  }).join('');
+  return '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption">'+esc(t.badge)+'</span><p>'+esc(desc)+'</p>'+brief+'<a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(t.read)+' ↗</a></article>';
+ }).join('');
 }
 
+async function loadLocalBulletins(){
+ try{
+  const r=await fetch('./data/local_notices.json',{cache:'no-store'});
+  if(!r.ok)throw Error('local bulletins unavailable');
+  const data=await r.json();
+  if(!Array.isArray(data.items))throw Error('invalid local bulletins');
+  const latest=Date.parse(data.updated||'');
+  // Old cached announcements must not remain as apparent current notices.
+  localBulletins=(Date.now()-latest<30*3600000&&latest<=Date.now()+1800000)?
+    data.items.filter(n=>n.status==='published_unverified'&&Date.now()-Date.parse(n.published)<7*86400000):[];
+ }catch(e){localBulletins=[]}
+ renderLocalPulse();
+}
 let propertyMode='rent';
 function renderExtras(){let t=extraTranslations[lang]||extraTranslations.es;document.querySelectorAll('[data-x]').forEach(el=>el.textContent=t[el.dataset.x]);document.querySelector('#selectedregion').textContent='📍 '+city;document.querySelector('#rentMode').classList.toggle('active',propertyMode==='rent');document.querySelector('#buyMode').classList.toggle('active',propertyMode==='buy');let q=(propertyMode==='rent'?'alquiler apartamento casa ':'venta apartamento casa ')+city+' República Dominicana site:corotos.com.do OR site:supercasas.com';document.querySelector('#propertyGo').href='https://www.google.com/search?q='+encodeURIComponent(q);renderRoadNotices();}
 document.querySelector('#rentMode').addEventListener('click',()=>{propertyMode='rent';renderExtras()});document.querySelector('#buyMode').addEventListener('click',()=>{propertyMode='buy';renderExtras()});
@@ -534,4 +560,5 @@ render();
 loadIslandWeather();
 loadAutoNews();
 loadRoadNotices();
+loadLocalBulletins();
 </script></body></html>
