@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:00:36.538984+00:00",
+  "updated": "2026-11-19T08:04:32.062361+00:00",
   "source_status": "ok",
   "items": [
     {
@@ -7,252 +7,468 @@
       "url": "https://www.diariolibre.com/deportes/olimpismo/2026/11/19/se-levanta-la-sancion-a-bonnat-y-regresa-por-boleto-a-los-angeles/3724983",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-19T01:00:00+00:00"
+      "published": "2026-11-19T01:00:00+00:00",
+      "translations": {
+        "de": "Bonnats Sanktion aufgehoben und er kehrt per Ticket nach Los Angeles zurück",
+        "en": "Bonnat's sanction lifted and he returns by ticket to Los Angeles",
+        "fr": "La sanction de Bonnat est levée et il revient à Los Angeles par ticket",
+        "ht": "Sanksyon Bonnat leve epi li retounen Los Angeles ak tikè"
+      }
     },
     {
       "title": "Lidom: Un paro en MLB congelaría llegada de estrellas",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/19/lidom-un-paro-en-mlb-congelaria-llegada-de-estrellas/3725090",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-19T00:29:00+00:00"
+      "published": "2026-11-19T00:29:00+00:00",
+      "translations": {
+        "de": "Lidom: Ein MLB-Streik würde Star-Neuzugänge einfrieren",
+        "en": "Lidom: An MLB strike would freeze star arrivals",
+        "fr": "Lidom : Une grève MLB gelerait les arrivées de stars",
+        "ht": "Lidom: Yon grèv MLB ta bloke arive zetwal yo"
+      }
     },
     {
       "title": "Así fue cómo consiguió el cambio por Vladimir Guerrero Jr.",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/19/asi-fue-como-consiguio-el-cambio-por-vladimir-guerrero-jr/3725000",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-19T00:15:00+00:00"
+      "published": "2026-11-19T00:15:00+00:00",
+      "translations": {
+        "de": "So bekam er die Änderung für Vladimir Guerrero Jr.",
+        "en": "That's how he got the change for Vladimir Guerrero Jr.",
+        "fr": "C’est ainsi qu’il a obtenu la relève pour Vladimir Guerrero Jr.",
+        "ht": "Se konsa li te jwenn chanjman an pou Vladimir Guerrero Jr."
+      }
     },
     {
       "title": "Lidom: Estrellas vencen a Gigantes y logran su quinto triunfo al hilo",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/19/lidom-estrellas-vencen-a-gigantes-y-logran-su-quinto-triunfo-al-hilo/3725065",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-19T00:02:00+00:00"
+      "published": "2026-11-19T00:02:00+00:00",
+      "translations": {
+        "de": "Lidom: Estrellas besiegen Gigantes und erringen ihren fünften Sieg in Folge",
+        "en": "Lidom: Estrellas defeat Gigantes and achieve their fifth consecutive win",
+        "fr": "Lidom : Estrellas bat Gigantes et remporte sa cinquième victoire consécutive",
+        "ht": "Lidom: Estrellas bat Gigantes epi reyalize senkyèm viktwa youn apre lòt"
+      }
     },
     {
       "title": "Gobierno busca suspender una regla fiscal",
       "url": "https://www.diariolibre.com/economia/macroeconomia/2026/11/19/gobierno-busca-suspender-una-regla-fiscal/3724964",
       "source": "Diario Libre",
       "category": "Economía",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "Die Regierung versucht, eine fiskalische Regel auszusetzen",
+        "en": "Government seeks to suspend a fiscal rule",
+        "fr": "Le gouvernement cherche à suspendre une règle fiscale",
+        "ht": "Gouvènman an ap chèche sispann yon règ fiskal"
+      }
     },
     {
       "title": "Déficit fiscal dominicano supera al de países de Centroamérica",
       "url": "https://www.diariolibre.com/economia/macroeconomia/2026/11/19/deficit-fiscal-dominicano-supera-al-de-paises-de-centroamerica/3724969",
       "source": "Diario Libre",
       "category": "Economía",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "Das dominikanische Haushaltsdefizit übersteigt das der mittelamerikanischen Länder",
+        "en": "Dominican fiscal deficit surpasses that of Central American countries",
+        "fr": "Le déficit fiscal dominicain dépasse celui des pays d’Amérique centrale",
+        "ht": "Defisi fiskal Dominiken depase sa peyi Amerik Santral yo"
+      }
     },
     {
       "title": "David Collado destaca tres nuevos destinos turísticos",
       "url": "https://www.diariolibre.com/economia/turismo/2026/11/19/david-collado-destaca-tres-nuevos-destinos-turisticos/3724932",
       "source": "Diario Libre",
       "category": "Economía",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "David Collado hebt drei neue Touristenziele hervor",
+        "en": "David Collado highlights three new tourist destinations",
+        "fr": "David Collado met en lumière trois nouvelles destinations touristiques",
+        "ht": "David Collado mete aksan sou twa nouvo destinasyon touris"
+      }
     },
     {
       "title": "Modificación presupuesto 2026 en Cámara de Diputados",
       "url": "https://www.diariolibre.com/politica/congreso-nacional/2026/11/19/modificacion-presupuesto-2026-en-camara-de-diputados/3724834",
       "source": "Diario Libre",
       "category": "Política",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "Haushaltsänderung 2026 in der Abgeordnetenkammer",
+        "en": "2026 budget modification in the Chamber of Deputies",
+        "fr": "Modification du budget 2026 à la Chambre des députés",
+        "ht": "Modifikasyon bidjè 2026 nan Chanm Depite yo"
+      }
     },
     {
       "title": "El parque de la Núñez de Cáceres es remozado 19 años después",
       "url": "https://www.diariolibre.com/actualidad/ciudad/2026/11/19/el-parque-de-la-nunez-de-caceres-es-remozado-19-anos-despues/3725135",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "Der Park Núñez de Cáceres wird 19 Jahre später renoviert",
+        "en": "The Núñez de Cáceres park is renovated 19 years later",
+        "fr": "Le parc de Núñez de Cáceres est rénové 19 ans plus tard",
+        "ht": "Pak Núñez de Cáceres la renove 19 ane apre"
+      }
     },
     {
       "title": "Cine dominicano gana peso con presidencia de Ibermedia",
       "url": "https://www.diariolibre.com/revista/cine/2026/11/19/cine-dominicano-gana-peso-con-presidencia-de-ibermedia/3724740",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "Das dominikanische Kino gewinnt mit der Präsidentschaft von Ibermedia an Bedeutung",
+        "en": "Dominican cinema gains prominence with Ibermedia presidency",
+        "fr": "Le cinéma dominicain gagne en importance grâce à la présidence d’Ibermedia",
+        "ht": "Sinema Dominiken ap pran enpòtans ak prezidans Ibermedia"
+      }
     },
     {
       "title": "GTA VI: cómo un videojuego puede convertirse en un fenómeno económico",
       "url": "https://www.diariolibre.com/planeta/tecnologia/2026/11/19/gta-vi-como-un-videojuego-puede-convertirse-en-un-fenomeno-economico/3724573",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "GTA VI: Wie ein Videospiel zu einem wirtschaftlichen Phänomen werden kann",
+        "en": "GTA VI: how a video game can become an economic phenomenon",
+        "fr": "GTA VI : comment un jeu vidéo peut devenir un phénomène économique",
+        "ht": "GTA VI: kijan yon jwèt videyo ka tounen yon fenomèn ekonomik"
+      }
     },
     {
       "title": "Auditoría al programa Supérate por denuncias de oposición",
       "url": "https://www.diariolibre.com/politica/partidos/2026/11/19/auditoria-al-programa-superate-por-denuncias-de-oposicion/3724761",
       "source": "Diario Libre",
       "category": "Política",
-      "published": "2026-11-19T00:01:00+00:00"
+      "published": "2026-11-19T00:01:00+00:00",
+      "translations": {
+        "de": "Prüfung des Supérate-Programms aufgrund von Widerstandsbeschwerden",
+        "en": "Audit of the Supérate program due to opposition complaints",
+        "fr": "Audit du programme Supérate en raison de plaintes d’opposition",
+        "ht": "Odit pwogram Supérate la akoz plent opozisyon"
+      }
     },
     {
       "title": "Xi aboga por una cooperación \"abierta\" durante la cumbre de la APEC",
       "url": "https://www.diariolibre.com/mundo/asia/2026/11/18/xi-aboga-por-una-cooperacion-abierta-durante-la-cumbre-de-la-apec/3725032",
       "source": "Diario Libre",
       "category": "Mundo",
-      "published": "2026-11-18T23:07:00+00:00"
+      "published": "2026-11-18T23:07:00+00:00",
+      "translations": {
+        "de": "Xi setzt sich während des APEC-Gipfels für eine \"offene\" Zusammenarbeit ein",
+        "en": "Xi advocates for \"open\" cooperation during the APEC summit",
+        "fr": "Xi plaide pour une coopération « ouverte » lors du sommet de l’APEC",
+        "ht": "Xi defann koperasyon \"ouvè\" pandan somè APEC la"
+      }
     },
     {
       "title": "Militares salvadoreños en Haití intensifican la lucha contra bandas",
       "url": "https://www.diariolibre.com/mundo/haiti/2026/11/18/militares-salvadorenos-en-haiti-intensifican-la-lucha-contra-bandas/3724982",
       "source": "Diario Libre",
       "category": "Mundo",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Das salvadorianische Militär in Haiti intensiviert den Kampf gegen Banden",
+        "en": "Salvadoran military in Haiti intensify the fight against gangs",
+        "fr": "L’armée salvadorienne en Haïti intensifie la lutte contre les gangs",
+        "ht": "Lame Salvadoren ann Ayiti ap ogmante batay kont gang yo"
+      }
     },
     {
       "title": "Trump Xi Putin se reúnen en trilateral sobre desarme nuclear",
       "url": "https://www.diariolibre.com/mundo/estados-unidos/2026/11/18/trump-xi-putin-se-reunen-en-trilateral-sobre-desarme-nuclear/3725015",
       "source": "Diario Libre",
       "category": "Mundo",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Trump und Xi Putin treffen sich trilateral zum Thema nukleare Abrüstung",
+        "en": "Trump and Xi Putin meet in trilateral on nuclear disarmament",
+        "fr": "Trump et Xi Poutine se rencontrent en trilatéralité sur le désarmement nucléaire",
+        "ht": "Trump ak Xi Putin rankontre nan yon trilateral sou dezameman nikleyè"
+      }
     },
     {
       "title": "cómo se ejerce la representación municipal cuando el debate se tensa",
       "url": "https://www.diariolibre.com/opinion/agora/2026/11/18/como-se-ejerce-la-representacion-municipal-cuando-el-debate-se-tensa/3724371",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Wie kommunale Vertretung ausgeübt wird, wenn die Debatte angespannt wird",
+        "en": "How municipal representation is exercised when the debate becomes tense",
+        "fr": "Comment la représentation municipale est exercée lorsque le débat devient tendu",
+        "ht": "Kijan reprezantasyon minisipal la egzèse lè deba a vin tansyon"
+      }
     },
     {
       "title": "Salvemos Árbol de la Confraternidad",
       "url": "https://www.diariolibre.com/opinion/agora/2026/11/18/salvemos-arbol-de-la-confraternidad/3724375",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Rette den Bruderschaftsbaum",
+        "en": "Save the Brotherhood Tree",
+        "fr": "Sauve l’Arbre de la Confrérie",
+        "ht": "Sove Pye Bwa Frè a"
+      }
     },
     {
       "title": "El peligro de atrofiar la conciencia frente a la IA",
       "url": "https://www.diariolibre.com/opinion/agora/2026/11/18/el-peligro-de-atrofiar-la-conciencia-frente-a-la-ia/3724597",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Die Gefahr, das Bewusstsein angesichts von KI zu atropphyieren",
+        "en": "The danger of atrophying consciousness in the face of AI",
+        "fr": "Le danger d’atrophier la conscience face à l’IA",
+        "ht": "Danje pou atwofiye konsyans devan entèlijans atifisyèl"
+      }
     },
     {
       "title": "El fantasma de la IA sobre artículos de prensa",
       "url": "https://www.diariolibre.com/opinion/agora/2026/11/18/el-fantasma-de-la-ia-sobre-articulos-de-prensa/3724602",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Der Geist der KI über Nachrichtenartikeln",
+        "en": "The ghost of AI over news articles",
+        "fr": "Le fantôme de l’IA sur les articles d’actualité",
+        "ht": "Fantom AI sou atik nouvèl yo"
+      }
     },
     {
       "title": "¿Cómo se encuentra la deuda pública a septiembre de 2026?",
       "url": "https://www.diariolibre.com/economia/finanzas/2026/11/18/como-se-encuentra-la-deuda-publica-a-septiembre-de-2026/3724238",
       "source": "Diario Libre",
       "category": "Economía",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Wie sieht die öffentliche Verschuldung im September 2026 aus?",
+        "en": "How is public debt as of September 2026?",
+        "fr": "Comment en est la dette publique en septembre 2026 ?",
+        "ht": "Kijan dèt piblik la ye depi septanm 2026?"
+      }
     },
     {
       "title": "Aumenta el costo de financiamiento del país",
       "url": "https://www.diariolibre.com/economia/finanzas/2026/11/18/aumenta-el-costo-de-financiamiento-del-pais/3724240",
       "source": "Diario Libre",
       "category": "Economía",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Die Finanzierungskosten des Landes steigen",
+        "en": "The country's financing cost is rising",
+        "fr": "Le coût du financement du pays augmente",
+        "ht": "Kout finansman peyi a ap ogmante"
+      }
     },
     {
       "title": "Pensiones y etiquetas política",
       "url": "https://www.diariolibre.com/economia/finanzas/2026/11/18/pensiones-y-etiquetas-politica/3724232",
       "source": "Diario Libre",
       "category": "Economía",
-      "published": "2026-11-18T23:00:00+00:00"
+      "published": "2026-11-18T23:00:00+00:00",
+      "translations": {
+        "de": "Renten und politische Etiketten",
+        "en": "Pensions and political labels",
+        "fr": "Pensions et étiquettes politiques",
+        "ht": "Pansyon ak etikèt politik"
+      }
     },
     {
       "title": "Ángel Ortiz deja en el terreno a las Águilas con dramático jonrón",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/18/angel-ortiz-deja-en-el-terreno-a-las-aguilas-con-dramatico-jonron/3725017",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-18T22:58:00+00:00"
+      "published": "2026-11-18T22:58:00+00:00",
+      "translations": {
+        "de": "Ángel Ortiz verlässt die Eagles mit einem dramatischen Home Run auf dem Feld",
+        "en": "Ángel Ortiz leaves the Eagles on the field with a dramatic home run",
+        "fr": "Ángel Ortiz quitte les Eagles sur le terrain avec un home run spectaculaire",
+        "ht": "Ángel Ortiz kite Eagles yo sou teren an ak yon home run dramatik"
+      }
     },
     {
       "title": "Aperturan el plenario de la cumbre de líderes de la APEC",
       "url": "https://www.diariolibre.com/mundo/asia/2026/11/18/aperturan-el-plenario-de-la-cumbre-de-lideres-de-la-apec/3725006",
       "source": "Diario Libre",
       "category": "Mundo",
-      "published": "2026-11-18T22:45:00+00:00"
+      "published": "2026-11-18T22:45:00+00:00",
+      "translations": {
+        "de": "Die Plenarsitzung des APEC-Gipfels eröffnet",
+        "en": "The plenary of the APEC leaders' summit opens",
+        "fr": "La plénière du sommet des dirigeants de l’APEC s’ouvre",
+        "ht": "Plenyè somè lidè APEC yo ouvè"
+      }
     },
     {
       "title": "Reyes y De la Cruz impulsan triunfo de Toros 7-2 sobre Leones",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/18/reyes-y-de-la-cruz-impulsan-triunfo-de-toros-7-2-sobre-leones/3725037",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-18T22:42:00+00:00"
+      "published": "2026-11-18T22:42:00+00:00",
+      "translations": {
+        "de": "Reyes und De la Cruz stärken Toros' 7:2-Sieg über Leones",
+        "en": "Reyes and De la Cruz boost Toros' 7-2 win over Leones",
+        "fr": "Reyes et De la Cruz renforcent la victoire 7-2 des Toros contre Leones",
+        "ht": "Reyes ak De la Cruz ranfòse viktwa Toros 7-2 sou Leones"
+      }
     },
     {
       "title": "De comprobar denuncias Supérate aseguran correctivos",
       "url": "https://www.diariolibre.com/politica/gobierno/2026/11/18/de-comprobar-denuncias-superate-aseguran-correctivos/3724946",
       "source": "Diario Libre",
       "category": "Política",
-      "published": "2026-11-18T22:25:00+00:00"
+      "published": "2026-11-18T22:25:00+00:00",
+      "translations": {
+        "de": "Durch die Überprüfung von Beschwerden sind Korrekturmaßnahmen gewährleistet",
+        "en": "From verifying complaints Supérate, corrective measures are assured",
+        "fr": "En vérifiant les plaintes Supérate, les mesures correctives sont assurées",
+        "ht": "Soti nan verifye plent Supérate, mezi korektif yo asire"
+      }
     },
     {
       "title": "Niños en Haití sufren violencia de bandas armadas",
       "url": "https://www.diariolibre.com/mundo/haiti/2026/11/18/ninos-en-haiti-sufren-violencia-de-bandas-armadas/3724995",
       "source": "Diario Libre",
       "category": "Mundo",
-      "published": "2026-11-18T22:18:00+00:00"
+      "published": "2026-11-18T22:18:00+00:00",
+      "translations": {
+        "de": "Kinder in Haiti leiden unter Gewalt durch bewaffnete Banden",
+        "en": "Children in Haiti suffer violence from armed gangs",
+        "fr": "Les enfants en Haïti subissent des violences de la part de bandes armées",
+        "ht": "Timoun nan Ayiti sibi vyolans nan men gang ame"
+      }
     },
     {
       "title": "Iluminan Palacio Consistorial por el Día de Prevención de la Violencia",
       "url": "https://www.diariolibre.com/actualidad/ciudad/2026/11/18/iluminan-palacio-consistorial-por-el-dia-de-prevencion-de-la-violencia/3724981",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T22:10:00+00:00"
+      "published": "2026-11-18T22:10:00+00:00",
+      "translations": {
+        "de": "Rathaus beleuchtet zum Tag der Gewaltprävention",
+        "en": "Town Hall illuminated for the Day of Violence Prevention",
+        "fr": "L’hôtel de ville illuminé pour la Journée de prévention de la violence",
+        "ht": "Sal Vil la limen pou Jou Prevansyon Vyolans lan"
+      }
     },
     {
       "title": "Marineros adquieren a Maikel García y Bryce Miller va a Reales",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/18/marineros-adquieren-a-maikel-garcia-y-bryce-miller-va-a-reales/3724960",
       "source": "Diario Libre",
       "category": "Deportes",
-      "published": "2026-11-18T21:38:00+00:00"
+      "published": "2026-11-18T21:38:00+00:00",
+      "translations": {
+        "de": "Marineros erwerben Maikel García und Bryce Miller geht zu Reales",
+        "en": "Marineros acquire Maikel García and Bryce Miller goes to Reales",
+        "fr": "Les Marineros recrutent Maikel García et Bryce Miller part à Reales",
+        "ht": "Marineros achte Maikel García epi Bryce Miller ale Reales"
+      }
     },
     {
       "title": "Opositores haitianos piden salida del primer ministro",
       "url": "https://www.diariolibre.com/mundo/haiti/2026/11/18/opositores-haitianos-piden-salida-del-primer-ministro/3724942",
       "source": "Diario Libre",
       "category": "Mundo",
-      "published": "2026-11-18T21:09:00+00:00"
+      "published": "2026-11-18T21:09:00+00:00",
+      "translations": {
+        "de": "Haitianische Oppositionsmitglieder fordern den Abgang des Premierministers",
+        "en": "Haitian opposition members call for the prime minister's departure",
+        "fr": "Des membres de l’opposition haïtienne réclament le départ du Premier ministre",
+        "ht": "Manm opozisyon ayisyen yo mande pou premye minis la kite"
+      }
     },
     {
       "title": "Verja fronteriza República Dominicana ante crisis en Haití",
       "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/18/verja-fronteriza-republica-dominicana-ante-crisis-en-haiti/3724933",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T20:57:00+00:00"
+      "published": "2026-11-18T20:57:00+00:00",
+      "translations": {
+        "de": "Grenzzaun der Dominikanischen Republik inmitten der Krise in Haiti",
+        "en": "Dominican Republic border fence amid crisis in Haiti",
+        "fr": "Clôture frontalière de la République dominicaine en pleine crise en Haïti",
+        "ht": "Kloti fwontyè Repiblik Dominikèn nan mitan kriz Ayiti"
+      }
     },
     {
       "title": "ICE deporta dominicanos involucrados en tráfico de sustancias",
       "url": "https://www.diariolibre.com/usa/actualidad/2026/11/18/ice-deporta-dominicanos-involucrados-en-trafico-de-sustancias/3724927",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T20:52:00+00:00"
+      "published": "2026-11-18T20:52:00+00:00",
+      "translations": {
+        "de": "ICE deportiert Dominikaner, die am Drogenhandel beteiligt sind",
+        "en": "ICE deports Dominicans involved in substance trafficking",
+        "fr": "ICE expulse des Dominicains impliqués dans le trafic de substances",
+        "ht": "ICE depòte Dominiken ki enplike nan trafik sibstans"
+      }
     },
     {
       "title": "Ministerio de la Juventud ofrece 23,900 becas en ciencia y tecnología",
       "url": "https://www.diariolibre.com/actualidad/educacion/2026/11/18/ministerio-de-la-juventud-ofrece-23900-becas-en-ciencia-y-tecnologia/3724924",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T20:47:00+00:00"
+      "published": "2026-11-18T20:47:00+00:00",
+      "translations": {
+        "de": "Das Jugendministerium bietet 23.900 Stipendien in Wissenschaft und Technologie an",
+        "en": "Ministry of Youth offers 23,900 scholarships in science and technology",
+        "fr": "Le ministère de la Jeunesse offre 23 900 bourses en sciences et technologies",
+        "ht": "Ministè Jèn yo ofri 23,900 bousdetid nan syans ak teknoloji"
+      }
     },
     {
       "title": "Piden prisión preventiva para mujer acusada de matar hija en Nagua",
       "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/18/piden-prision-preventiva-para-mujer-acusada-de-matar-hija-en-nagua/3724917",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T20:38:00+00:00"
+      "published": "2026-11-18T20:38:00+00:00",
+      "translations": {
+        "de": "Untersuchungshaft beantragt für Frau, die beschuldigt wird, ihre Tochter in Nagua getötet zu haben",
+        "en": "Pretrial detention requested for woman accused of killing daughter in Nagua",
+        "fr": "Détention préventive demandée pour une femme accusée d’avoir tué sa fille à Nagua",
+        "ht": "Detansyon anvan jijman mande pou fanm ki akize pou touye pitit fi nan Nagua"
+      }
     },
     {
       "title": "Veridato lanza plataforma para combatir desinformación y fraudes digitales",
       "url": "https://www.diariolibre.com/actualidad/educacion/2026/11/18/veridato-lanza-plataforma-para-combatir-desinformacion-y-fraudes-digitales/3724915",
       "source": "Diario Libre",
       "category": "Actualidad",
-      "published": "2026-11-18T20:35:00+00:00"
+      "published": "2026-11-18T20:35:00+00:00",
+      "translations": {
+        "de": "Veridato startet Plattform zur Bekämpfung von Fehlinformationen und digitalem Betrug",
+        "en": "Veridato launches platform to combat misinformation and digital fraud",
+        "fr": "Veridato lance une plateforme pour lutter contre la désinformation et la fraude numérique",
+        "ht": "Veridato lanse yon platfòm pou konbat fo enfòmasyon ak fwod dijital"
+      }
     },
     {
       "title": "La Altagracia recibe inversión en infraestructura deportiva",
       "url": "https://www.diariolibre.com/politica/gobierno/2026/11/18/la-altagracia-recibe-inversion-en-infraestructura-deportiva/3724906",
       "source": "Diario Libre",
       "category": "Política",
-      "published": "2026-11-18T20:24:00+00:00"
+      "published": "2026-11-18T20:24:00+00:00",
+      "translations": {
+        "de": "La Altagracia erhält Investitionen in Sportinfrastruktur",
+        "en": "La Altagracia receives investment in sports infrastructure",
+        "fr": "La Altagracia reçoit un investissement dans les infrastructures sportives",
+        "ht": "La Altagracia resevwa envestisman nan enfrastrikti espò"
+      }
     }
   ]
 }
