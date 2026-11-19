@@ -42,6 +42,20 @@ jobs:
           if [ -f data/translation_usage.json ]; then git add data/translation_usage.json; fi
           if ! git diff --cached --quiet; then
             git commit -m "Refresh RSS headline metadata"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            # The website is edited frequently. Another push can land after
+            # rebase and before publish; retry safely without force-pushing.
+            for attempt in 1 2 3 4 5; do
+              if ! git pull --rebase origin main; then
+                echo "Cannot safely rebase the RSS update; manual review required"
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                echo "Published RSS metadata on attempt $attempt"
+                exit 0
+              fi
+              echo "Concurrent update during push ($attempt/5); retrying"
+              sleep 2
+            done
+            echo "RSS publish could not complete after five safe retries"
+            exit 1
           fi
