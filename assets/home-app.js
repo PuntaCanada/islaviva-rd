@@ -427,7 +427,14 @@ function updateCityAccess(){
   button.setAttribute('aria-pressed',String(selected));
  });
  const more=document.getElementById('language');
- if(more){more.value=['de','fr','ht'].includes(lang)?lang:'';more.setAttribute('aria-label',lang==='de'?'Weitere Sprachen':lang==='en'?'More languages':lang==='fr'?'Autres langues':lang==='ht'?'Lòt lang':'Más idiomas')}
+ if(more){
+  const active={de:['de','Deutsch'],fr:['fr','Français'],ht:['ht','Kreyòl']}[lang];
+  const titles={es:'Más',de:'Weitere',en:'More',fr:'Autres',ht:'Lòt'};
+  const label=document.getElementById('language-more-label');
+  if(label)label.innerHTML=active?'<img class="language-flag" src="/assets/flags/'+active[0]+'.svg" alt=""> '+active[1]:'🌐 '+titles[lang];
+  more.setAttribute('aria-label',lang==='de'?'Weitere Sprachen':lang==='en'?'More languages':lang==='fr'?'Autres langues':lang==='ht'?'Lòt lang':'Más idiomas');
+  more.querySelectorAll('[data-set-language]').forEach(button=>button.setAttribute('aria-current',button.dataset.setLanguage===lang?'true':'false'));
+ }
 }
 const cityChooser=document.getElementById('city-chooser');
 function closeCityChooser(){
@@ -473,7 +480,7 @@ function setSiteLanguage(next){
  location.assign(next==='es'?'/':'/'+next+'/');
 }
 document.querySelectorAll('[data-set-language]').forEach(button=>button.addEventListener('click',()=>setSiteLanguage(button.dataset.setLanguage)));
-document.querySelector('#language').addEventListener('change',e=>setSiteLanguage(e.target.value));document.querySelector('#city').addEventListener('change',e=>{city=e.target.value;localStorage.setItem('islaviva-city',city);render()});document.querySelector('#searchBtn').addEventListener('click',showSearch);document.querySelector('#close').addEventListener('click',closeDialog);document.querySelector('#overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeDialog()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDialog()});function closeDialog(){document.querySelector('#overlay').classList.remove('visible');document.body.style.overflow=''}
+document.querySelector('#city').addEventListener('change',e=>{city=e.target.value;localStorage.setItem('islaviva-city',city);render()});document.querySelector('#searchBtn').addEventListener('click',showSearch);document.querySelector('#close').addEventListener('click',closeDialog);document.querySelector('#overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeDialog()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDialog()});function closeDialog(){document.querySelector('#overlay').classList.remove('visible');document.body.style.overflow=''}
 
 const weatherLabels={
 es:{prefix:'Pronóstico',unavailable:'Pronóstico no disponible',source:'Datos: MET Norway',degree:'°C',alert:'Avisos oficiales: INDOMET'},
