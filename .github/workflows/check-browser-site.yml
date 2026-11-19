@@ -1,0 +1,30 @@
+name: Browser regression test IslaViva RD
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/check-browser-site.mjs'
+      - '.github/workflows/check-browser-site.yml'
+  schedule:
+    - cron: '47 6 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: islaviva-browser-test
+  cancel-in-progress: false
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install browser testing tools
+        run: |
+          npm install --no-save playwright
+          npx playwright install --with-deps chromium
+      - name: Test weather, city, shopping, news and language switching
+        run: node scripts/check-browser-site.mjs
