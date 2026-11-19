@@ -949,4 +949,6 @@ loadFuelPrices();
 loadFuelExchangeRate();
 // Refresh the Dominican-local day/night appearance while the tab remains open.
 setInterval(renderIslandWeather,5*60*1000);
+// Pick up newly published forecast data without forcing a page refresh.
+setInterval(loadIslandWeather,30*60*1000);
 </script></body></html>
