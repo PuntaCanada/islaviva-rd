@@ -28,6 +28,14 @@ class SearchDiscoveryTests(unittest.TestCase):
   self.assertIn('application/ld+json',page)
   self.assertIn('/apagones-higuey.html',page)
   self.assertIn('/ofertas-supermercados-rd.html',page)
+ def test_google_html_verification_and_career_links(self):
+  token="google62b1133f7c042e9b.html"
+  self.assertEqual((ROOT/token).read_text(encoding="utf-8").strip(),"google-site-verification: "+token)
+  homepage=(ROOT/"index.html").read_text(encoding="utf-8")
+  for address in ("https://rdtrabaja.do/","https://empleos.prodominicana.gob.do/","https://aws.amazon.com/training/digital/"):
+   self.assertIn(address,homepage)
+  self.assertIn("id=\"career-grid\"",homepage)
+  self.assertIn("https://www.datos.gov.do/dataset/precios-de-los-combustibles",homepage)
  def test_historical_incident_never_claims_active_outage(self):
   content=json.loads((ROOT/"data/local_context.json").read_text(encoding="utf-8"))
   self.assertIsInstance(content["items"],list)
