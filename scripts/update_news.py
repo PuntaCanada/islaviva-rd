@@ -62,12 +62,14 @@ def region_mentions(title, summary):
             found.append(city)
     return found
 def category_for(text, default):
-    t=text.lower()
-    # Only classify explicit subject cues; otherwise keep publisher's feed category.
-    if any(w in t for w in ("turismo","turista","hotel","aerolínea","aeropuerto","vuelo","crucero")): return "Turismo"
-    if any(w in t for w in ("inmueble","vivienda","alquiler","apartamento","construcción")): return "Vivienda"
+    import unicodedata
+    plain="".join(ch for ch in unicodedata.normalize("NFD",text.lower()) if unicodedata.category(ch)!="Mn")
+    # Headline-based topic tagging also applies when a publisher puts sports into Actualidad.
+    if re.search(r"\\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|toros|leones|aguilas cibae|estrellas orientales|gigantes del cibao)\\b",plain):
+        return "Deportes"
+    if any(w in plain for w in ("turismo","turista","hotel","aerolinea","aeropuerto","vuelo","crucero")): return "Turismo"
+    if any(w in plain for w in ("inmueble","vivienda","alquiler","apartamento","construccion")): return "Vivienda"
     return default
-
 
 class _PreviewParser(HTMLParser):
     def __init__(self):
