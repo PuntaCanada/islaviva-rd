@@ -15,6 +15,14 @@ class TransportFuelTests(unittest.TestCase):
   self.assertGreater(d["regular"],0)
   self.assertGreater(d["premium"],d["regular"])
   self.assertIn("no automatic scraping",d["note"].lower())
+ def test_currency_conversion_is_approximate_and_sourced(self):
+  page=(ROOT/"index.html").read_text(encoding="utf-8")
+  self.assertIn("https://open.er-api.com/v6/latest/USD",page)
+  self.assertIn("Rates By Exchange Rate API",page)
+  self.assertIn("fuelUsdDopRate",page)
+  self.assertIn("amount/fuelUsdDopRate",page)
+  self.assertIn("valid_until>=today",page)
+  self.assertIn("fuelUsdDopRate=null",page)
  def test_waze_official_embed_and_click_to_load(self):
   page=(ROOT/"index.html").read_text(encoding="utf-8")
   self.assertIn("https://embed.waze.com/",page)
