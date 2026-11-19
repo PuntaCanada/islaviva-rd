@@ -21,8 +21,16 @@ for(const lang of locales){
  if(!js.includes('function renderIslandWeather()'))fail(file,'weather rendering missing');
  if(!js.includes('function loadIslandWeather()'))fail(file,'weather fetching missing');
  if(!js.includes('loadIslandWeather();'))fail(file,'weather fetching never started');
+ if(!js.includes('setInterval(loadIslandWeather,30*60*1000)'))fail(file,'weather feed is not periodically refreshed');
+ if(!js.includes("const validCities=['Higüey','Punta Cana','Santo Domingo','Santiago','La Romana','Puerto Plata','Samaná']"))fail(file,'saved city validation is missing');
+ if(!js.includes("if(!validCities.includes(city))"))fail(file,'invalid saved city is not reset');
+ const requiredModules=['loadAutoNews();','loadFuelPrices();','loadLocalBulletins();','loadRoadNotices();','renderShopping();','renderWaze();'];
+ for(const mod of requiredModules)if(!js.includes(mod))fail(file,'important feature missing: '+mod);
+ const localFetches=[...js.matchAll(/fetch\(\s*['"]([^'"]+)['"]/g)].map(m=>m[1]).filter(url=>!/^https?:/.test(url));
+ for(const url of localFetches)if(!url.startsWith('/'))fail(file,'relative API or data URL may break across languages: '+url);
+
  if(!html.includes('id="weather-temp"'))fail(file,'temperature display element missing');
- if(!js.includes("fetch('/data/weather.json'")&&!js.includes("fetch('./data/weather.json'"))fail(file,'weather data path missing');
+ if(!js.includes("fetch('/data/weather.json'"))fail(file,'root-relative weather data path missing');
  if(lang!=='es'&&js.includes("fetch('./data/weather.json'"))fail(file,'relative weather path invalid for localized page');
  for(const id of ['city','language','weather-summary','weather-icon','weather-details']){
   if(!html.includes('id="'+id+'"'))fail(file,'required weather or language control missing: '+id);
