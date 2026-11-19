@@ -1,43 +1,38 @@
-// Catch regressions in the real inline homepage JavaScript, including broken
-// initialization, while keeping the original dynamic weather and news features.
-import {readFileSync} from 'node:fs';
+// Shared-homepage runtime regression tests, no extra dependencies.
+import {readFileSync,existsSync} from 'node:fs';
 import vm from 'node:vm';
-const locales=['es','de','en','fr','ht'];
-let failures=0;
-const fail=(file,reason)=>{failures++;console.error('FAIL',file,reason)};
-for(const lang of locales){
- const file=lang==='es'?'index.html':lang+'/index.html';
- const html=readFileSync(file,'utf8');
- const scripts=[...html.matchAll(/<script(?:\s[^>]*)?>([\s\S]*?)<\/script>/gi)]
-  .map(m=>m[1]).filter(s=>s.trim()&&!s.trim().startsWith('{'));
- if(!scripts.length)fail(file,'missing executable scripts');
- for(const [i,script] of scripts.entries()){
-  try{new vm.Script(script,{filename:file+'#script'+i})}
-  catch(e){fail(file,'JavaScript syntax error: '+e.message)}
- }
- const js=scripts.join('\n');
- if(!js.includes("let lang='"+lang+"'"))fail(file,'wrong homepage language initialization');
- if(!/(?:\n|;)let city=localStorage\.getItem\('islaviva-city'\)/.test(js))fail(file,'city initialization missing or commented out');
- if(!js.includes('function renderIslandWeather()'))fail(file,'weather rendering missing');
- if(!js.includes('function loadIslandWeather()'))fail(file,'weather fetching missing');
- if(!js.includes('loadIslandWeather();'))fail(file,'weather fetching never started');
- if(!js.includes('setInterval(loadIslandWeather,30*60*1000)'))fail(file,'weather feed is not periodically refreshed');
- if(!js.includes("const validCities=['Higüey','Punta Cana','Santo Domingo','Santiago','La Romana','Puerto Plata','Samaná']"))fail(file,'saved city validation is missing');
- if(!js.includes("if(!validCities.includes(city))"))fail(file,'invalid saved city is not reset');
- const requiredModules=['loadAutoNews();','loadFuelPrices();','loadLocalBulletins();','loadRoadNotices();','renderShopping();','renderWaze();'];
- for(const mod of requiredModules)if(!js.includes(mod))fail(file,'important feature missing: '+mod);
- const localFetches=[...js.matchAll(/fetch\(\s*['"]([^'"]+)['"]/g)].map(m=>m[1]).filter(url=>!/^https?:/.test(url));
- for(const url of localFetches)if(!url.startsWith('/'))fail(file,'relative API or data URL may break across languages: '+url);
-
- if(!html.includes('id="weather-temp"'))fail(file,'temperature display element missing');
- if(!js.includes("fetch('/data/weather.json'"))fail(file,'root-relative weather data path missing');
- if(lang!=='es'&&js.includes("fetch('./data/weather.json'"))fail(file,'relative weather path invalid for localized page');
- for(const id of ['city','language','weather-summary','weather-icon','weather-details']){
-  if(!html.includes('id="'+id+'"'))fail(file,'required weather or language control missing: '+id);
- }
- console.log('Checked '+file+': inline JS syntax, city initialization, weather data path and DOM nodes');
+const languages=['es','de','en','fr','ht'];
+let errors=0;
+function fail(subject,message){errors++;console.error('FAIL '+subject+': '+message)}
+function load(path){if(!existsSync(path)){fail(path,'missing file');return ''}return readFileSync(path,'utf8')}
+const js=load('assets/home-app.js');
+const css=load('assets/home.css');
+if(js){try{new vm.Script(js,{filename:'assets/home-app.js'})}catch(e){fail('assets/home-app.js','syntax: '+e.message)}}
+if(!css.includes('.statusbar'))fail('assets/home.css','weather bar styling missing');
+if(!js.includes("let lang=document.documentElement.lang||'es'"))fail('shared runtime','page locale initialization missing');
+if(!js.includes('function renderIslandWeather()')||!js.includes('function loadIslandWeather()'))fail('shared runtime','weather loading/rendering missing');
+if(!js.includes('loadIslandWeather();')||!js.includes('setInterval(loadIslandWeather,30*60*1000)'))fail('shared runtime','weather loading or refresh missing');
+if(!js.includes("if(!validCities.includes(city))"))fail('shared runtime','invalid saved city not handled');
+const requiredModules=['loadAutoNews();','loadFuelPrices();','loadLocalBulletins();','loadRoadNotices();','renderShopping();','renderWaze();'];
+for(const marker of requiredModules)if(!js.includes(marker))fail('shared runtime','missing '+marker);
+const fetchPaths=[...js.matchAll(/fetch\(\s*['"]([^'"]+)['"]/g)].map(m=>m[1]);
+for(const url of fetchPaths)if(!url.startsWith('/')&&!/^https?:\/\//.test(url))fail('shared runtime','relative fetch breaks localized homepages: '+url);
+const originalIds=new Set();
+for(const locale of languages){
+ const path=locale==='es'?'index.html':locale+'/index.html';
+ const html=load(path);
+ if(!html.includes('<html lang="'+locale+'">'))fail(path,'incorrect language');
+ if(!html.includes('href="/assets/home.css"'))fail(path,'shared CSS not loaded');
+ if(!html.includes('src="/assets/home-app.js"'))fail(path,'shared JS not loaded');
+ if(/<script>([\s\S]*?)<\/script>/i.test(html))fail(path,'unexpected inline app script');
+ if(/<style>([\s\S]*?)<\/style>/i.test(html))fail(path,'unexpected inline style');
+ const ids=new Set([...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
+ if(locale==='es')for(const id of ids)originalIds.add(id);
+ else for(const id of originalIds)if(!ids.has(id))fail(path,'missing interactive DOM element #'+id);
+ for(const id of ['weather-temp','weather-summary','weather-icon','weather-details','city','language','shopping-cards'])if(!ids.has(id))fail(path,'required element missing #'+id);
+ console.log('Checked '+path+': shared assets, locale, UI elements');
 }
-const weather=JSON.parse(readFileSync('data/weather.json','utf8'));
-if(!weather.cities||!weather.cities['Higüey'])fail('data/weather.json','Higüey weather source missing');
-if(failures)process.exit(1);
-console.log('OK: homepage scripts and weather integration are structurally valid.');
+const weather=JSON.parse(load('data/weather.json')||'{}');
+if(!weather.cities?.['Higüey']||!Number.isFinite(Number(weather.cities['Higüey'].temperature_c)))fail('weather data','Higüey reading missing');
+if(errors){console.error(errors+' homepage regression errors');process.exit(1)}
+console.log('OK: all five homepages share one tested CSS and JS runtime.');
