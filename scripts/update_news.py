@@ -14,6 +14,7 @@ import urllib.parse
 import uuid
 import urllib.request
 import xml.etree.ElementTree as ET
+from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 UTC = dt.timezone.utc
@@ -38,38 +39,6 @@ FEEDS = [
     ("El Tiempo", "https://eltiempo.com.do/feed/", "Regionales", "eltiempo.com.do"),
     ("Bávaro Digital", "https://bavarodigital.net/feed/", "Regionales", "bavarodigital.net"),
 ]
-# Labels are based only on explicit place mentions in headlines or supplied RSS metadata.
-# A location label is NOT a claim that the article applies exclusively to that city.
-REGIONS = {
-    "Higüey": ("higüey", "higuey", "la altagracia"),
-    "Punta Cana": ("punta cana", "bávaro", "bavaro", "verón", "veron", "cap cana"),
-    "Santo Domingo": ("santo domingo", "distrito nacional", "gran santo domingo"),
-    "Santiago": ("santiago de los caballeros", "santiago"),
-    "La Romana": ("la romana",),
-    "Puerto Plata": ("puerto plata",),
-    "Samaná": ("samaná", "samana", "las terrenas", "sánchez, samaná"),
-}
-def region_mentions(title, summary):
-    import re
-    import unicodedata
-    def normalize(value):
-        value = unicodedata.normalize("NFD", value.lower())
-        return "".join(c for c in value if unicodedata.category(c)!="Mn")
-    haystack=" "+normalize(title+" "+summary[:350])+" "
-    found=[]
-    for city,variants in REGIONS.items():
-        if any(re.search(r"(?<!\\w)"+re.escape(normalize(v))+r"(?!\\w)",haystack) for v in variants):
-            found.append(city)
-    return found
-def category_for(text, default):
-    import unicodedata
-    plain="".join(ch for ch in unicodedata.normalize("NFD",text.lower()) if unicodedata.category(ch)!="Mn")
-    # Headline-based topic tagging also applies when a publisher puts sports into Actualidad.
-    if re.search(r"\\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|toros|leones|aguilas cibae|estrellas orientales|gigantes del cibao)\\b",plain):
-        return "Deportes"
-    if any(w in plain for w in ("turismo","turista","hotel","aerolinea","aeropuerto","vuelo","crucero")): return "Turismo"
-    if any(w in plain for w in ("inmueble","vivienda","alquiler","apartamento","construccion")): return "Vivienda"
-    return default
 
 class _PreviewParser(HTMLParser):
     def __init__(self):
@@ -153,13 +122,14 @@ for source, feed_url, category, allowed_domain in FEEDS:
             # Source's headline and summary are for location tagging only; do not republish full body.
             entry = {"title": title, "url": url, "source": source,
                      "category": category_for(title,category),
-                     "regions": region_mentions(title, ""),
+                     "regions": region_mentions(title),
                      "preview": preview,
                      "image": image_url,
                      "published": published.isoformat()}
-            existing = items.get(url)
+            key = canonical_url(url)
+            existing = items.get(key)
             if existing is None or (existing["category"] == "Actualidad" and category != "Actualidad"):
-                items[url] = entry
+                items[key] = entry
     except Exception as exc:
         print(f"RSS feed unavailable: {feed_url}: {type(exc).__name__} {exc}")
 out = ROOT / "data" / "news.json"
@@ -224,15 +194,14 @@ if successful_feeds == 0:
     # Preserve the previous snapshot; the frontend independently refuses to show stale items.
     print("All RSS feeds failed: preserving existing file, no fake updates.")
 else:
-    # Limit domination by a single publisher while retaining freshest items.
-    ordered=sorted(items.values(),key=lambda v: v["published"],reverse=True)
-    per_source={}
-    latest=[]
-    for entry in ordered:
-        if per_source.get(entry["source"],0)>=24:continue
-        latest.append(entry)
-        per_source[entry["source"]]=per_source.get(entry["source"],0)+1
-        if len(latest)>=72:break
+    latest, duplicates_removed = select_stories(items.values(), limit=72, per_source_limit=24)
+    print("Near-duplicate or duplicate URLs removed:", duplicates_removed)
+    # Validate before making any translation API calls or publishing data.
+    validate_news(latest, NOW)
+    source_counts={}
+    for record in latest:
+        source_counts[record["source"]]=source_counts.get(record["source"],0)+1
+    print("Selected publisher distribution:", source_counts)
     # Only translate new stories, reusing existing translations.
     for entry in latest:
         if entry["url"] in translations_by_url:
@@ -269,5 +238,6 @@ else:
     totals={lang:sum(bool(entry.get("translations",{}).get(lang)) for entry in latest) for lang in LANGUAGES}
     print("Translation coverage by language:", totals, "key configured:", bool(API_KEY))
     data = {"updated": NOW.isoformat(), "source_status": "ok" if latest else "no_recent_articles", "items": latest}
+    validate_news(data["items"], NOW)
     out.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Successfully fetched {successful_feeds}/{len(FEEDS)} feeds; {len(latest)} recent headlines")
