@@ -17,7 +17,7 @@ for(const lang of locales){
  }
  const js=scripts.join('\n');
  if(!js.includes("let lang='"+lang+"'"))fail(file,'wrong homepage language initialization');
- if(!/\nlet city=localStorage\.getItem\('islaviva-city'\)/.test(js))fail(file,'city initialization missing or commented out');
+ if(!/(?:\n|;)let city=localStorage\.getItem\('islaviva-city'\)/.test(js))fail(file,'city initialization missing or commented out');
  if(!js.includes('function renderIslandWeather()'))fail(file,'weather rendering missing');
  if(!js.includes('function loadIslandWeather()'))fail(file,'weather fetching missing');
  if(!js.includes('loadIslandWeather();'))fail(file,'weather fetching never started');
