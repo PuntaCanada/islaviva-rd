@@ -361,6 +361,16 @@ const regionalSourceUi={
  fr:{kicker:'SOURCES OFFICIELLES',title:'Informations locales provenant de sources vérifiables',desc:'Accédez directement aux organismes publics. Choisissez votre ville pour voir les liens pertinents.',note:'Ces liens mènent à des sites externes. Ils ne constituent ni des alertes en direct ni une confirmation de service à votre adresse.',municipalNews:'Actualités municipales',municipalNewsDesc:'Consultez les communiqués datés de la collectivité.',municipalServices:'Services municipaux',municipalServicesDesc:'Informations et démarches auprès de la collectivité.',electricity:'État du circuit électrique',electricityDesc:'Vérifiez votre circuit auprès d’EDEEste, selon votre fournisseur.',water:'Eau et assainissement',waterDesc:'Consultez INAPA et vérifiez le service compétent pour votre adresse.',roads:'Circulation et signalements',roadsDesc:'Informations officielles sur les transports et signalements.',go:'Voir la source officielle ↗',national:'Services nationaux',local:'Collectivité locale'},
  ht:{kicker:'SOUS OFISYÈL',title:'Enfòmasyon lokal nan sous ou ka verifye',desc:'Lyen dirèk pou sèvis piblik yo. Chwazi vil ou anlè a pou jwenn lyen ki itil.',note:'Lyen yo mennen sou lòt sit. Yo pa alèt an dirèk epi yo pa konfime sèvis disponib nan adrès ou.',municipalNews:'Nouvèl meri a',municipalNewsDesc:'Gade enfòmasyon ki gen dat nan administrasyon lokal la.',municipalServices:'Sèvis minisipal',municipalServicesDesc:'Enfòmasyon ak sèvis administrasyon lokal la.',electricity:'Eta sikwi kouran',electricityDesc:'Verifye sikwi ou nan EDEEste, selon konpayi ki sèvi zòn ou.',water:'Dlo ak asenisman',waterDesc:'Gade sèvis INAPA epi verifye ki enstitisyon ki sèvi adrès ou.',roads:'Trafik ak rapò sou wout',roadsDesc:'Enfòmasyon ofisyèl sou transpò ak fason pou rapòte pwoblèm.',go:'Louvri sous ofisyèl ↗',national:'Sèvis nasyonal',local:'Administrasyon lokal'}
 };
+// The base render() pass also resolves [data-t] elements; keep these keys in texts.
+for(const locale of ['es','de','en','fr','ht']){
+ const ui=regionalSourceUi[locale];
+ Object.assign(texts[locale],{
+  regionSourcesKicker:ui.kicker,
+  regionSourcesTitle:ui.title,
+  regionSourcesDesc:ui.desc,
+  regionSourcesNote:ui.note
+ });
+}
 function renderRegionalSources(){
  const container=document.getElementById('regional-sources-grid');if(!container)return;
  const t=regionalSourceUi[lang]||regionalSourceUi.es;
