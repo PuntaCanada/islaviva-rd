@@ -406,6 +406,7 @@ function initCityWelcome(){
  const backdrop=document.getElementById('city-welcome');if(!backdrop)return;
  let saved='';try{saved=localStorage.getItem('islaviva-city')||''}catch(e){}
  if(validCities.includes(saved))return;
+ try{if(sessionStorage.getItem('islaviva-city-welcome-later')==='1')return}catch(e){}
  const t=cityWelcomeLabels[lang]||cityWelcomeLabels.es;
  document.getElementById('city-welcome-title').textContent=t.title;
  document.getElementById('city-welcome-description').textContent=t.desc;
@@ -421,7 +422,7 @@ function initCityWelcome(){
   try{localStorage.setItem('islaviva-city',city)}catch(e){}
   close();render();
  });
- document.getElementById('city-welcome-later').addEventListener('click',close);
+ document.getElementById('city-welcome-later').addEventListener('click',()=>{try{sessionStorage.setItem('islaviva-city-welcome-later','1')}catch(e){}close()});
  backdrop.addEventListener('keydown',event=>{if(event.key==='Escape'){event.preventDefault();close()}});
  backdrop.hidden=false;document.body.classList.add('city-welcome-open');
  choices.querySelector('button')?.focus();
