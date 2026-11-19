@@ -19,7 +19,9 @@ async function verify(lang){
   const quickLabel=await quick.innerText();
   if(!quickLabel.includes('📍'))throw Error('No optional city shortcut in header');
   await quick.click();
-  await page.waitForFunction(()=>document.activeElement?.id==='city');
+  await page.waitForTimeout(500);
+  const focusDetails=await page.evaluate(()=>({active:document.activeElement?.id||'',cityExists:!!document.getElementById('city'),lang:document.documentElement.lang,pathname:location.pathname}));
+  if(focusDetails.active!=='city')throw Error('City shortcut focus failed: '+JSON.stringify(focusDetails)+'; page errors: '+errors.join('; '));
   if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!==null)throw Error('Browsing without city choice should not store a preference');
   await page.locator('#city').selectOption('Higüey');
   if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!=='Higüey')throw Error('Chosen city was not saved');
