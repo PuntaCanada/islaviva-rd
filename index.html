@@ -509,7 +509,7 @@ function renderFuelPrices(){
  target.innerHTML=[
   ['regular',t.regular,d.regular],
   ['premium',t.premium,d.premium]
- ].map(([id,label,amount])=>'<div class="fuel-price"><span>'+esc(label)+'</span><strong>'+esc(price(amount))+'</strong><small>'+esc(t.gallon)+'</small>'+(Number.isFinite(fuelUsdDopRate)?'<span class="fuel-usd-price">'+esc(fuelUsdLabel())+' '+esc((amount/fuelUsdDopRate).toLocaleString(lang,{minimumFractionDigits:2,maximumFractionDigits:2}))+' USD</span>':'')+'</div>').join('')
+ ].map(([id,label,amount])=>'<div class="fuel-price"><span>'+esc(label)+'</span><strong>'+esc(price(amount))+'</strong><small>'+esc(t.gallon)+'</small>'+(Number.isFinite(fuelUsdDopRate)?'<span class="fuel-usd-price">'+esc(fuelUsdLabel())+' '+esc((amount/fuelUsdDopRate).toLocaleString(lang,{minimumFractionDigits:2,maximumFractionDigits:2}))+'</span>':'')+'</div>').join('')
  +'<p class="fuel-status">'+esc(t.valid)+' '+esc(new Date(d.valid_until+'T12:00:00Z').toLocaleDateString(lang,{timeZone:'America/Santo_Domingo',day:'2-digit',month:'long',year:'numeric'}))+'</p>'+(Number.isFinite(fuelUsdDopRate)?'<p class="fuel-fx-source">'+esc(fuelUsdRateCaption()+'1 USD ≈ RD$ '+fuelUsdDopRate.toLocaleString(lang,{maximumFractionDigits:2}))+' · '+esc(fuelUsdRateDate)+' · <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">Rates By Exchange Rate API ↗</a></p>':'');
 }
 async function loadFuelPrices(){
