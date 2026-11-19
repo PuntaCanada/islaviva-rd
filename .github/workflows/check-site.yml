@@ -4,6 +4,8 @@ on:
     branches: [main]
     paths:
       - "*.html"
+      - "*/*.html"
+      - "assets/**"
       - "robots.txt"
       - "sitemap.xml"
       - "scripts/**"
@@ -26,32 +28,31 @@ jobs:
         run: python -m py_compile scripts/update_news.py scripts/update_weather.py scripts/news_quality.py scripts/update_roadworks.py scripts/update_local_notices.py tests/test_news_quality.py tests/test_roadworks.py tests/test_transport_fuel.py
       - name: Test news classification, duplicate removal and geographic relevance
         run: python -m unittest discover -s tests -p 'test_*.py' -v
-      - name: Validate website inline JavaScript and cached data
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate shared website JavaScript and cached data
         run: |
+          node --check assets/home-app.js
+          node scripts/build-homepages.mjs --check
+          node scripts/check-home-runtime.mjs
           python - <<'PY'
-          import pathlib, re, json
-          html=pathlib.Path("index.html").read_text(encoding="utf-8")
-          tags=list(re.finditer(r"<script([^>]*)>(.*?)</script>", html, re.S|re.I))
-          scripts=[m.group(2) for m in tags if "application/ld+json" not in m.group(1).lower() and not re.search(r"\bsrc=",m.group(1),re.I)]
-          schemas=[m.group(2) for m in tags if "application/ld+json" in m.group(1).lower()]
-          assert scripts, "Missing inline JS"
-          for schema in schemas: json.loads(schema)
-          pathlib.Path("/tmp/isla-site.js").write_text("\n".join(scripts),encoding="utf-8")
+          import pathlib,json
           for file in ("data/news.json","data/weather.json","data/roadworks.json","data/local_notices.json","data/local_context.json","data/fuel_prices.json"):
               json.loads(pathlib.Path(file).read_text(encoding="utf-8"))
           PY
-          node --check /tmp/isla-site.js
       - name: Validate US-only weather unit region endpoint and partner links
         run: |
           node --input-type=module --check < functions/api/visitor-country.js
           python - <<'PY'
           import json,pathlib
           page=pathlib.Path('index.html').read_text(encoding='utf-8')
+          shared=pathlib.Path('assets/home-app.js').read_text(encoding='utf-8')
           routes=json.loads(pathlib.Path('_routes.json').read_text(encoding='utf-8'))
           assert routes['include']==['/api/visitor-country']
-          assert 'visitorCountry===\'US\'' in page
-          assert 'https://comparanetrd.pages.dev/' in page
-          assert 'https://by-maria-beauty-store.pages.dev/' in page
-          assert 'https://github.com/PuntaCanada/recarganet-rd' in page
-          assert 'https://edeeste.com.do/inicio/servicios/estado-de-circuito-y-suministro/' in page
+          assert 'visitorCountry===\'US\'' in shared
+          assert 'https://comparanetrd.pages.dev/' in shared
+          assert 'https://by-maria-beauty-store.pages.dev/' in shared
+          assert 'https://github.com/PuntaCanada/recarganet-rd' in shared
+          assert 'https://edeeste.com.do/inicio/servicios/estado-de-circuito-y-suministro/' in shared
           PY
