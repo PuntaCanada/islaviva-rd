@@ -19,8 +19,11 @@ UTC=dt.timezone.utc
 NOW=dt.datetime.now(UTC)
 SOURCES=[
  ("EDEEste","power","https://edeeste.com.do/feed/","edeeste.com.do"),
+ ("EDEEste","power","https://edeeste.com.do/category/noticias/feed/","edeeste.com.do"),
  ("INAPA","water","https://inapa.gob.do/feed/","inapa.gob.do"),
- ("Ayuntamiento Higüey","events","https://ayuntamientohiguey.gob.do/feed/","ayuntamientohiguey.gob.do")
+ ("INAPA","water","https://inapa.gob.do/noticias/feed/","inapa.gob.do"),
+ ("Ayuntamiento Higüey","events","https://ayuntamientohiguey.gob.do/feed/","ayuntamientohiguey.gob.do"),
+ ("Ayuntamiento Higüey","events","https://ayuntamientohiguey.gob.do/category/noticias/feed/","ayuntamientohiguey.gob.do")
 ]
 TOPICS={
  "power":r"\b(?:interrupcion|apagones?|averia|mantenimiento|circuitos?|subestacion|suministro electrico)\b",
@@ -60,6 +63,41 @@ def get_notices(source,kind,url,domain):
   notices.append({"kind":kind,"title":title,"preview":preview,"url":link,"source":source,
    "published":published.isoformat(),"regions":regions,"status":"published_unverified"})
  return notices
+def news_source_notices():
+ """Cross-check existing 48h news: only explicit relevant topics and named local areas.
+ A press article is NOT an official outage confirmation.
+ """
+ path=ROOT/"data"/"news.json"
+ try: cached=json.loads(path.read_text(encoding="utf-8"))
+ except (OSError,ValueError):return []
+ results=[]
+ for item in cached.get("items",[]):
+  if not isinstance(item,dict) or not item.get("regions"):continue
+  title=normalize(item.get("title",""))
+  # Only explicit disruption words; do not treat every general infrastructure
+  # investment, repair or announcement as a current outage.
+  if re.search(r"\b(?:apagones?|interrupcion(?:es)?|corte(?:s)? de luz|"
+               r"subestacion|fallas? electricas?|circuitos? fuera de servicio)\b",title):
+   kind="power"
+  elif re.search(r"\b(?:agua potable|acueducto|interrupcion de agua|"
+                 r"falta de agua|averia en (?:la )?red de agua)\b",title):
+   kind="water"
+  else:continue
+  try:
+   published=dt.datetime.fromisoformat(item["published"])
+   if published.tzinfo is None:published=published.replace(tzinfo=UTC)
+   if not dt.timedelta(0)<=NOW-published<=dt.timedelta(days=2):continue
+  except (ValueError,TypeError,KeyError):continue
+  results.append({
+   "kind":kind,"title":item["title"],"preview":item.get("preview",""),
+   "url":item["url"],"source":item["source"],
+   "published":item["published"],"regions":item["regions"],
+   "status":"published_unverified",
+   "translations":item.get("translations",{}),
+   "preview_translations":item.get("preview_translations",{})
+  })
+ return results
+
 def main():
  results=[]
  successes=0
@@ -69,7 +107,8 @@ def main():
    print(s[0],len(rows),"eligible notices")
   except (OSError,ValueError,ET.ParseError,TimeoutError) as exc:
    print("Optional authority feed unavailable",s[0],type(exc).__name__)
- if not successes:
+ results.extend(news_source_notices())
+ if not successes and not results:
   print("All feeds unavailable; preserving previous snapshot")
   return
  results.sort(key=lambda x:x["published"],reverse=True)
