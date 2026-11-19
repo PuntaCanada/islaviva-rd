@@ -39,6 +39,20 @@
 #news-grid .news-image img[style*="opacity: 1"],#news-grid .news-image img[style*="opacity:1"]{opacity:1}
 #news-grid .story:hover .news-image:not(.has-image){background:linear-gradient(112deg,#0b5951,#167e76,#83c49f)}
 @media(max-width:600px){#news-grid .news-image:not(.has-image),#news-grid .story.featured .news-image:not(.has-image){height:68px;min-height:68px}}
+
+/* Original editorial SVG illustrations; captions make clear they are not reportage photos. */
+#news-grid .news-image,#news-grid .news-image:not(.has-image),#news-grid .story.featured .news-image:not(.has-image){height:174px;min-height:174px;display:block;padding:0;position:relative;background:#195b55}
+#news-grid .story.featured .news-image{height:210px;min-height:210px}
+#news-grid .news-image .news-illustration{position:absolute;inset:0;display:block;width:100%;height:100%;overflow:hidden}
+#news-grid .news-image .news-illustration svg{width:100%;height:100%;display:block}
+#news-grid .news-image .news-caption{position:absolute;left:12px;bottom:10px;border-radius:100px;background:#082e2bca;color:white;font-size:10px;line-height:1;padding:7px 10px;font-weight:700;letter-spacing:.15px;z-index:2}
+#news-grid .news-image img{position:absolute;inset:0;z-index:1;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .25s ease,transform .45s ease}
+#news-grid .news-image.has-image img{opacity:1}
+#news-grid .news-image.has-image .news-illustration{visibility:hidden}
+#news-grid .news-image.has-image .news-caption{display:none}
+#news-grid .news-image.has-image .news-photo-credit{display:block;position:absolute;z-index:2;right:12px;bottom:10px;background:#082e2bca;color:white;border-radius:100px;padding:7px 10px;font-size:10px}
+#news-grid .news-image:not(.has-image) .news-photo-credit{display:none}
+@media(max-width:600px){#news-grid .news-image,#news-grid .story.featured .news-image,#news-grid .news-image:not(.has-image),#news-grid .story.featured .news-image:not(.has-image){height:200px;min-height:200px}}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -129,6 +143,41 @@ const newsUi={
  ht:{all:'🌎 Tout RD',local:'📍 Vil mwen',topics:'Tout sijè',sources:'Tout sous',empty:'Pa gen nouvèl resan ki verifye pou filtè sa yo.',localNote:'Se sèlman atik ki mansyone zòn nan klèman; se pa tout nouvèl lokal.',translated:'Tit yo tradui otomatikman. Verifye detay yo nan atik orijinal yo.',original:'Tit orijinal an panyòl, ak lyen sous yo.',read:'Li atik orijinal la',latest:'Mizajou',minutes:'sa gen'}
 };
 const sourceHosts={'diariolibre.com':'Diario Libre','hoy.com.do':'Hoy','eldia.com.do':'El Día','almomento.net':'AlMomento','noticiassin.com':'Noticias SIN','puntacanapost.com':'Punta Cana Post','eltiempo.com.do':'El Tiempo','bavarodigital.net':'Bávaro Digital'};
+// Every illustration is original inline SVG, NOT a photograph of the reported event.
+// Real publisher photos must be explicitly licensed before their source is enabled here.
+const licensedNewsImageSources=new Set([]);
+function newsArtInfo(n){
+ const words=((n.title||'')+' '+(n.category||'')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ const category=(n.category||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ if(/beisbol|pelota|lidom|home run|jonron|toros|leones|aguilas|estrellas|gigantes|futbol|deporte|atleta|olimpic/.test(words))return {type:'sport',accent:'#E6AF67',dark:'#234E48',light:'#A1D6B2'};
+ if(/huracan|tormenta|lluvia|inundacion|medioambiente|naturaleza|energia solar|medio ambiente/.test(words))return {type:'nature',accent:'#E8D78A',dark:'#225D60',light:'#92C5AE'};
+ if(/turismo|hotel|playa|aeropuerto|vuelo|aerolinea|vacaciones|punta cana|bavaro|cap cana/.test(words))return {type:'travel',accent:'#F6C37A',dark:'#0A5964',light:'#8BD1C7'};
+ if(/economia|comercio|empresa|empleo|negocio|precio|mercado|finanzas|peso|dolar|deuda/.test(words))return {type:'business',accent:'#F2C67A',dark:'#2B545D',light:'#B1D3B1'};
+ if(/construccion|vivienda|inmueble|alquiler|carretera|infraestructura|obras/.test(words))return {type:'city',accent:'#EFC392',dark:'#2B5D59',light:'#C0DAC5'};
+ if(/cultura|arte|musica|cine|festival|patrimonio|iglesia|religion/.test(words))return {type:'culture',accent:'#F5B2A2',dark:'#594961',light:'#D4BCD0'};
+ if(/politica|presidente|gobierno|congreso|diputado|senado|eleccion|ministro/.test(words))return {type:'politics',accent:'#F2C890',dark:'#284D69',light:'#9CC4C8'};
+ if(category==='regionales'||/higuey|santiago|samana|puerto plata|la romana/.test(words))return {type:'local',accent:'#F6BF88',dark:'#20595C',light:'#A6D5C2'};
+ return {type:'general',accent:'#D8CA9B',dark:'#194E58',light:'#92C5B7'};
+}
+function newsIllustration(n){
+ const a=newsArtInfo(n);
+ const base='<svg aria-hidden="true" viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sea" x2="1" y2="1"><stop stop-color="'+a.dark+'"/><stop offset="1" stop-color="'+a.light+'"/></linearGradient><pattern id="lines" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity=".1"/></pattern></defs><rect width="600" height="330" fill="url(#sea)"/><rect width="600" height="330" fill="url(#lines)"/><circle cx="475" cy="88" r="97" fill="'+a.accent+'" opacity=".17"/><circle cx="490" cy="91" r="57" fill="'+a.accent+'" opacity=".17"/>';
+ const paths={
+  travel:'<circle cx="455" cy="96" r="47" fill="#FFE1A3"/><path d="M0 235Q160 208 301 243T600 232V330H0Z" fill="#2E9F9D"/><path d="M0 267Q148 240 303 276T600 264V330H0Z" fill="#126F84"/><path d="M157 253L191 118M191 118Q213 155 245 151M191 118Q153 142 116 149M191 118Q178 94 162 84M191 118Q217 107 242 95" fill="none" stroke="#EDE4BD" stroke-width="11" stroke-linecap="round"/><path d="M304 113L410 145L326 166L339 146Z" fill="#F3FAF5" opacity=".94"/>',
+  sport:'<path d="M0 252Q300 173 600 253V330H0Z" fill="#2B8A67"/><path d="M0 298Q300 216 600 299" fill="none" stroke="#E8E9CB" stroke-width="4"/><path d="M128 254L295 194L475 263" fill="none" stroke="#E8E9CB" stroke-width="5"/><circle cx="310" cy="126" r="77" fill="#F5EBDB"/><path d="M265 64Q337 125 265 189M356 63Q284 126 356 189" stroke="#CD7160" stroke-width="5" stroke-dasharray="11 8" fill="none"/><path d="M88 102L214 212" stroke="#E5B97E" stroke-width="23" stroke-linecap="round"/>',
+  nature:'<circle cx="448" cy="91" r="47" fill="#F8D9A4"/><path d="M0 249L152 108L284 244L404 137L600 279V330H0Z" fill="#4E9B8E"/><path d="M0 289L190 183L336 282L507 166L600 227V330H0Z" fill="#1E756A"/><path d="M130 308L180 207L222 308M412 320L468 218L524 320" fill="#B6D6B1" opacity=".8"/><path d="M0 293Q130 268 280 299T600 286" fill="none" stroke="#AEDDE3" stroke-width="17"/>',
+  business:'<path d="M98 304V164H186V304M200 304V103H311V304M325 304V141H422V304M437 304V85H519V304" fill="#E9D6AE" opacity=".85"/><path d="M121 191H150M121 224H150M224 133H279M224 164H279M224 197H279M349 167H400M349 197H400M460 117H496M460 154H496M460 191H496" stroke="#296568" stroke-width="10"/><path d="M90 264L182 216L280 236L388 155L496 181" fill="none" stroke="#F7C16E" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/><path d="M463 166L498 183L485 145" fill="none" stroke="#F7C16E" stroke-width="10"/>',
+  city:'<path d="M42 310V201H122V310M133 310V148H238V310M251 310V177H361V310M380 310V114H503V310M514 310V221H571V310" fill="#D3E5D0" opacity=".85"/><path d="M73 220V239M95 220V239M165 178V204M198 178V204M165 228V255M198 228V255M284 206V226M318 206V226M412 146V172M450 146V172M412 196V222M450 196V222" stroke="#356E68" stroke-width="11"/><path d="M0 310H600" stroke="#F3D39B" stroke-width="15"/>',
+  culture:'<circle cx="437" cy="104" r="83" fill="#F4D1BC" opacity=".75"/><path d="M123 284V135L227 83L330 135V284" fill="#E2D3CE"/><path d="M96 137L226 72L355 137" fill="none" stroke="#F2BC93" stroke-width="21" stroke-linejoin="round"/><path d="M171 284V182Q227 131 282 182V284" fill="#A47A87"/><path d="M0 296H600" stroke="#F3C8A1" stroke-width="16"/><path d="M395 204Q465 149 494 210T568 185" fill="none" stroke="#FFDBAD" stroke-width="12" stroke-linecap="round"/>',
+  politics:'<path d="M123 284H502M156 139H468L312 63Z" fill="#E6D9BF" stroke="#ECD9A2" stroke-width="12" stroke-linejoin="round"/><path d="M186 155V272M249 155V272M312 155V272M375 155V272M439 155V272" stroke="#F5E9D6" stroke-width="29"/><path d="M165 154H458M165 277H458" stroke="#F5E9D6" stroke-width="17"/><path d="M110 304H514" stroke="#E7B887" stroke-width="19"/>',
+  local:'<path d="M0 250Q163 197 299 251T600 242V330H0Z" fill="#4BA98E"/><path d="M0 293Q176 245 301 296T600 281V330H0Z" fill="#247F76"/><path d="M242 100Q242 45 299 45T356 101Q356 145 299 202Q242 145 242 100Z" fill="#F4CF9E"/><circle cx="299" cy="102" r="27" fill="#34766E"/><path d="M112 277L166 191L216 277M385 286L439 200L497 286" stroke="#EED8B1" stroke-width="12" fill="none"/>',
+  general:'<rect x="117" y="81" width="307" height="199" rx="18" fill="#F4EDE0" transform="rotate(-8 117 81)"/><path d="M164 124L362 96M156 157L380 125M151 190L368 157M143 222L328 197" stroke="#749995" stroke-width="13" stroke-linecap="round"/><circle cx="450" cy="203" r="82" fill="#E1C993"/><path d="M415 203H489M452 169V238" stroke="#3C736F" stroke-width="16" stroke-linecap="round"/>'
+ };
+ return base+(paths[a.type]||paths.general)+'</svg>';
+}
+function newsVisualLabel(){
+ return ({es:'Imagen ilustrativa',de:'Symbolbild',en:'Illustration',fr:'Illustration',ht:'Imaj ilistrasyon'})[lang]||'Imagen ilustrativa';
+}
 function newsActive(){
  const now=Date.now();
  return liveNews.filter(n=>{
@@ -180,13 +229,18 @@ function renderNewsPortal(){
    const t=Date.parse(n.published);const hours=Math.max(0,Math.floor((Date.now()-t)/3600000));
    const date=hours<1?new Intl.DateTimeFormat(lang,{hour:'2-digit',minute:'2-digit',timeZone:'America/Santo_Domingo'}).format(new Date(t)):(lang==='es'?'Hace ':lang==='de'?'Vor ':lang==='en'?'':lang==='fr'?'Il y a ':'Sa gen ')+hours+' h';
    const places=Array.isArray(n.regions)?n.regions.filter(x=>typeof x==='string').slice(0,2):[];
+   // Publisher photos are disabled until a valid reuse permission is documented.
+   // Once licensed, enable a named source above. A failed load keeps the SVG.
    let photo='';
-   try{const u=new URL(n.image||'');if(u.protocol==='https:' && !/\\.(svg|gif)(\\?|$)/i.test(u.pathname))photo=u.href;}catch(e){}
-   const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" decoding="async" style="opacity:0" onload="this.style.opacity=\'1\';this.parentNode.classList.add(\'has-image\')" onerror="this.remove()" />':'';
+   if(licensedNewsImageSources.has(n.source)){
+     try{const u=new URL(n.image||'');if(u.protocol==='https:'&& !/\.(svg|gif)$/i.test(u.pathname))photo=u.href;}catch(e){}
+   }
+   const art='<span class="news-illustration">'+newsIllustration(n)+'</span>';
+   const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" decoding="async" onload="this.parentNode.classList.add(\'has-image\')" onerror="this.remove()" />':'';
+   const visualCaption='<span class="news-caption">'+esc(newsVisualLabel())+'</span>';
+
    const teaser=preview?'<div class="news-teaser">'+esc(preview)+'</div>':'';
-   const category=(n.category||'').toLowerCase();
-   const fallbackIcon=/turismo|viaje/.test(category)?'✈️':/deporte/.test(category)?'⚽':/econom|vivienda/.test(category)?'🏙️':/cultura/.test(category)?'🎭':/medioambiente/.test(category)?'🌿':/regionales/.test(category)?'📍':'📰';
-   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+photoMarkup+'<span class="photo-fallback" aria-hidden="true">'+fallbackIcon+'</span>'+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
+   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+art+photoMarkup+visualCaption+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
 
  }).join('');
  const notice=document.querySelector('[data-t="newsdisclaimer"]');
