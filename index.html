@@ -191,7 +191,7 @@
 .fuel-bottom{border-top:1px solid #e6ebe6;padding-top:14px;display:flex;flex-direction:column;gap:8px}
 @media(max-width:900px){.traffic-fuel-grid{grid-template-columns:1fr}}
 @media(max-width:540px){.traffic-panel,.fuel-panel{padding:17px}.waze-container iframe{height:320px}.waze-cover{min-height:260px;padding:22px}.fuel-price strong{font-size:21px}}
-</style></head><body>
+.pulse-archived{background:#fff9ed;border-color:#e8dcc6}.pulse-archived small{color:#885e27}.pulse-archived b{font-size:12px}</style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
 <main id="inicio"><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow" data-t="herokicker">Tu ventana al Caribe</div><h1 data-t-html="heroheadline">Tu isla.<br>Tu historia.<br><em>Tu mundo.</em></h1><p data-t="herobody">Las noticias que importan, los lugares que inspiran y todo lo que necesitas para vivir o viajar por República Dominicana. En tu idioma.</p><div class="heroactions"><a class="btn" href="#actualidad" data-t="readnews">Explorar noticias ↗</a><a class="btn ghost" href="#ciudad" data-t="mycity">Descubrir mi ciudad ↘</a></div><div class="journey" data-t="herofoot">✦ Noticias  ·  ✦ Viajes  ·  ✦ Vida local  ·  ✦ Comunidad</div></div><div class="visual"><div class="hero-photo" role="img" aria-label="Playa tropical"></div><div class="floating float-one"><div class="emoji">📍</div><div><small data-t="floata">HECHO PARA TI</small><b data-t="floatb">Elige tu ciudad</b></div></div><div class="floating float-two"><div class="emoji">🌍</div><div><small>4 IDIOMAS</small><b data-t="floatc">Un país, mil historias</b></div></div></div></div></section>
@@ -270,6 +270,7 @@ async function loadRoadNotices(){
 document.getElementById('road-toggle-scope').addEventListener('click',()=>{roadAllRegions=!roadAllRegions;renderRoadNotices()});
 
 let localBulletins=[];
+let archivedLocalContext=[];
 const pulseTranslations={
  es:{kicker:'TU VIDA LOCAL',title:'Lo importante cerca de ti',subtitle:'Información oficial y avisos publicados. No es un monitor en tiempo real.',badge:'Estado actual no confirmado',read:'Ver avisos oficiales',power:'Electricidad',powerDesc:'Trabajos programados y comunicados de EDEEste; consulta fecha, circuito y vigencia.',water:'Agua potable',waterDesc:'Comunicados de INAPA sobre servicio, averías y obras. Ningún corte actual confirmado aquí.',roads:'Obras y carreteras',roadsDesc:'Avisos publicados de obras, desvíos y restricciones con fuente y fecha, directamente en IslaViva RD.',events:'Eventos',eventsDesc:'Agenda de actividades del Ministerio de Turismo o noticias municipales de Higüey.'},
  de:{kicker:'DEIN ALLTAG',title:'Wichtiges aus deiner Region',subtitle:'Amtliche Informationen und veröffentlichte Hinweise, keine Live-Störungsübersicht.',badge:'Aktueller Status nicht bestätigt',read:'Amtliche Hinweise ansehen',power:'Stromversorgung',powerDesc:'Geplante Arbeiten und Meldungen von EDEEste. Datum, Stromkreis und Gültigkeit prüfen.',water:'Wasserversorgung',waterDesc:'Meldungen von INAPA zu Störungen und Bauarbeiten. Hier ist keine aktuelle Unterbrechung bestätigt.',roads:'Straßen & Baustellen',roadsDesc:'Veröffentlichte Straßenarbeiten, Umleitungen und Einschränkungen mit Quelle und Datum direkt auf IslaViva RD.',events:'Veranstaltungen',eventsDesc:'Veranstaltungskalender der Tourismusbehörde beziehungsweise Mitteilungen der Stadt Higüey.'},
@@ -299,6 +300,15 @@ function renderLocalPulse(){
  }[lang]||{none:'Sin avisos locales recientes',view:'Ver fuente',status:'Aviso publicado',events:'Eventos',roads:'Vías'};
  document.getElementById('pulse-grid').innerHTML=cards.map(([icon,title,desc,url,internal,kind])=>{
   const relevant=localBulletins.filter(x=>x.kind===kind&&Array.isArray(x.regions)&&x.regions.includes(city)).slice(0,2);
+  const historical=kind==='power'&&!relevant.length?archivedLocalContext.filter(x=>x.kind===kind&&Array.isArray(x.regions)&&x.regions.includes(city)).slice(0,1):[];
+  const historicalText={
+   es:'Archivo · No confirma un apagón actual',de:'Ältere Meldung · Kein bestätigter aktueller Ausfall',en:'Past report · Not a confirmed current outage',fr:'Ancien article · Pas de panne actuelle confirmée',ht:'Ansyen rapò · Pa konfimasyon pann kounye a'
+  }[lang]||'Archivo · No confirma un apagón actual';
+  const archivedHTML=historical.map(x=>{
+   const headline=x.translations?.[lang]||x.title;
+   const date=x.date?new Date(x.date+'T12:00:00Z').toLocaleDateString(lang,{day:'numeric',month:'short',year:'numeric',timeZone:'America/Santo_Domingo'}):'';
+   return '<div class="pulse-notice pulse-archived"><small>'+esc(historicalText)+' · '+esc(date)+'</small><b>'+esc(headline)+'</b><a href="'+esc(x.url)+'" rel="noopener noreferrer" target="_blank">'+esc(x.source)+' ↗</a></div>';
+  }).join('');
   const brief=relevant.map(x=>{
    let safe=false;
    try{safe=new URL(x.url).protocol==='https:';}catch(e){}
@@ -309,8 +319,20 @@ function renderLocalPulse(){
   const noMatch=kind==='power'||kind==='water'||kind==='events';
   const label=relevant.length?noticesUi.status:(kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.none);
   const cta=kind==='events'?noticesUi.events:kind==='roads'?noticesUi.roads:noticesUi.view;
-  return '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption'+(!relevant.length?' pulse-caption-muted':'')+'">'+esc(label)+'</span><p>'+esc(desc)+'</p>'+brief+'<a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(cta)+' ↗</a></article>';
+  return '<article class="pulse-card"><span class="pulse-icon" aria-hidden="true">'+icon+'</span><b>'+esc(title)+'</b><span class="pulse-caption'+(!relevant.length?' pulse-caption-muted':'')+'">'+esc(label)+'</span><p>'+esc(desc)+'</p>'+brief+archivedHTML+'<a href="'+esc(url)+'"'+(internal?'':' target="_blank" rel="noopener noreferrer"')+'>'+esc(cta)+' ↗</a></article>';
  }).join('');
+}
+async function loadArchivedLocalContext(){
+ try{
+  const r=await fetch('./data/local_context.json',{cache:'no-store'});
+  if(!r.ok)throw Error('no local context');
+  const d=await r.json();
+  archivedLocalContext=Array.isArray(d.items)?d.items.filter(x=>{
+   const age=Date.now()-Date.parse((x.date||'')+'T12:00:00Z');
+   return x.status==='archived_report'&&age>0&&age<45*86400000&&/^https:\/\//.test(x.url);
+  }):[];
+ }catch(e){archivedLocalContext=[]}
+ renderLocalPulse();
 }
 async function loadLocalBulletins(){
  try{
@@ -783,6 +805,7 @@ detectVisitorCountry();
 loadAutoNews();
 loadRoadNotices();
 loadLocalBulletins();
+loadArchivedLocalContext();
 loadFuelPrices();
 // Refresh the Dominican-local day/night appearance while the tab remains open.
 setInterval(renderIslandWeather,5*60*1000);
