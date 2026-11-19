@@ -116,9 +116,9 @@ async function loadAutoNews(){
     const el=document.querySelector('#news-grid');
     const renderLive=()=>{
       const headings={es:'Leer en la fuente',de:'Originalartikel lesen',en:'Read original article',fr:'Lire la source',ht:'Li atik orijinal la'};
-      const original={es:'EN ESPAÑOL',de:'AUF SPANISCH',en:'IN SPANISH',fr:'EN ESPAGNOL',ht:'AN PANYÒL'};
-      el.innerHTML=mixed.map((n,i)=>`<a class="story ${!i?'featured':''}" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer"><div class="story-content"><span class="tag">📰 ${esc(n.category||'Noticias')} · ${esc(original[lang]||original.es)}</span><h3>${esc(n.title)}</h3><p>${esc(n.source||'Diario Libre')} · ${esc((n.published||'').slice(0,10))}</p><span class="source">${esc(headings[lang]||headings.es)} ↗</span></div></a>`).join('');
-      if(note)note.textContent=messages[lang]||messages.es;
+      const original={es:'EN ESPAÑOL',de:'AUF SPANISCH',en:'IN SPANISH',fr:'EN ESPAGNOL',ht:'AN PANYÒL'};const translatedTag={de:'AUTOMATISCH ÜBERSETZT',en:'AUTO TRANSLATED',fr:'TRADUCTION AUTO',ht:'TRADIKSYON OTOMATIK'};
+      el.innerHTML=mixed.map((n,i)=>`<a class="story ${!i?'featured':''}" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer"><div class="story-content"><span class="tag">📰 ${esc(n.category||'Noticias')} · ${esc((lang!=='es' && n.translations?.[lang])?(translatedTag[lang]||original.es):(original[lang]||original.es))}</span><h3>${esc((lang!=='es' && n.translations && n.translations[lang]) || n.title)}</h3><p>${esc(n.source||'Diario Libre')} · ${esc((n.published||'').slice(0,10))}</p><span class="source">${esc(headings[lang]||headings.es)} ↗</span></div></a>`).join('');
+      if(note){const translated=lang!=='es' && mixed.some(n=>n.translations?.[lang]);note.textContent=translated?({de:'Maschinell übersetzte Schlagzeilen. Bitte den Originalartikel für Einzelheiten lesen.',en:'Machine-translated headlines. Read original articles for details.',fr:'Titres traduits automatiquement. Consultez les articles originaux pour les détails.',ht:'Tit yo tradui otomatikman. Li atik orijinal yo pou plis detay.'}[lang]||messages.es):messages[lang]||messages.es;}
     };
     window.islaRenderNews=renderLive;
     renderLive();
