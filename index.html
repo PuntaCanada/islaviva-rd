@@ -44,6 +44,43 @@ function showDest(i){let d=destinations[i];dialog(tr('trips'),d.name,`<p>${esc(d
 function showSearch(){dialog(tr('search'),tr('search'),`<div class="searchwrap"><input id="searchInput" placeholder="${tr('searchplaceholder')}" aria-label="${tr('search')}"><button id="searchSubmit">${tr('searchgo')}</button></div><div id="searchResult"></div>`);const search=()=>{let q=document.querySelector('#searchInput').value.toLocaleLowerCase();let matches=services.filter(s=>s.title.join(' ').toLocaleLowerCase().includes(q)||s.desc.join(' ').toLocaleLowerCase().includes(q));let travel=destinations.filter(d=>d.name.toLocaleLowerCase().includes(q));let rows=matches.map(s=>`<p>• ${esc(s.title[idx()])}</p>`).concat(travel.map(d=>`<p>• ${esc(d.name)}</p>`));document.querySelector('#searchResult').innerHTML=rows.length?rows.join(''):`<p>${tr('noresult')}</p>`};document.querySelector('#searchSubmit').onclick=search;document.querySelector('#searchInput').addEventListener('keydown',e=>{if(e.key==='Enter')search()});document.querySelector('#searchInput').focus()}
 document.querySelector('#language').addEventListener('change',e=>{lang=e.target.value;localStorage.setItem('islaviva-language',lang);render()});document.querySelector('#city').addEventListener('change',e=>{city=e.target.value;localStorage.setItem('islaviva-city',city);render()});document.querySelector('#searchBtn').addEventListener('click',showSearch);document.querySelector('#close').addEventListener('click',closeDialog);document.querySelector('#overlay').addEventListener('click',e=>{if(e.target.id==='overlay')closeDialog()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDialog()});function closeDialog(){document.querySelector('#overlay').classList.remove('visible');document.body.style.overflow=''}render();
 
-async function loadAutoNews(){try{const r=await fetch('./data/news.json',{cache:'no-store'});if(!r.ok)throw Error('unavailable');const feed=await r.json();if(!Array.isArray(feed.items)||!feed.items.length)return;const valid=feed.items.filter(x=>x.title&&/^https:\/\//.test(x.url||'')).slice(0,6);if(!valid.length)return;const el=document.querySelector('#news-grid');const renderLive=()=>{const headings={es:'Fuente original',de:'Originalquelle',en:'Original source',fr:'Source originale',ht:'Sous orijinal'};el.innerHTML=valid.map((n,i)=>`<a class="story ${!i?'featured':''}" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer"><div class="story-content"><span class="tag">📰 ${esc(n.category||'Noticias')}</span><h3>${esc(n.title)}</h3><p>${esc(n.source||'Medio dominicano')} · ${esc((n.published||'').slice(0,10))}</p><span class="source">${esc(headings[lang]||headings.es)} ↗</span></div></a>`).join('');};window.islaRenderNews=renderLive;renderLive();}catch(e){/* Demo cards clearly remain demo until data is published. */}}
+async function loadAutoNews(){
+  const note=document.querySelector('[data-t="newsdisclaimer"]');
+  const messages={
+    es:'Titulares originales en español, actualizados automáticamente. La traducción de noticias aún no está disponible. Fuente: Diario Libre.',
+    de:'Automatisch aktualisierte Original-Schlagzeilen auf Spanisch. Eine Nachrichtenübersetzung ist noch nicht verfügbar. Quelle: Diario Libre.',
+    en:'Automatically updated original Spanish headlines. News translation is not available yet. Source: Diario Libre.',
+    fr:'Titres originaux en espagnol mis à jour automatiquement. Traduction des actualités pas encore disponible. Source : Diario Libre.',
+    ht:'Tit nouvèl orijinal an panyòl yo mete ajou otomatikman. Tradiksyon nouvèl yo poko disponib. Sous: Diario Libre.'
+  };
+  try{
+    const r=await fetch('./data/news.json',{cache:'no-store'});
+    if(!r.ok)throw new Error('RSS data unavailable');
+    const feed=await r.json();
+    if(!Array.isArray(feed.items))throw new Error('Invalid RSS metadata');
+    const now=Date.now();
+    const valid=feed.items.filter(n=>{
+      const date=Date.parse(n.published||'');
+      try{
+        const url=new URL(n.url);
+        return url.protocol==='https:' && ['diariolibre.com','www.diariolibre.com'].includes(url.hostname)
+          && !!n.title && !!date && date<=now+1800000 && now-date<=48*3600000;
+      }catch(e){return false}
+    }).slice(0,9);
+    if(!valid.length)return;
+    const el=document.querySelector('#news-grid');
+    const renderLive=()=>{
+      const headings={es:'Leer en la fuente',de:'Originalartikel lesen',en:'Read original article',fr:'Lire la source',ht:'Li atik orijinal la'};
+      const original={es:'EN ESPAÑOL',de:'AUF SPANISCH',en:'IN SPANISH',fr:'EN ESPAGNOL',ht:'AN PANYÒL'};
+      el.innerHTML=valid.map((n,i)=>`<a class="story ${!i?'featured':''}" href="${esc(n.url)}" target="_blank" rel="noopener noreferrer"><div class="story-content"><span class="tag">📰 ${esc(n.category||'Noticias')} · ${esc(original[lang]||original.es)}</span><h3>${esc(n.title)}</h3><p>${esc(n.source||'Diario Libre')} · ${esc((n.published||'').slice(0,10))}</p><span class="source">${esc(headings[lang]||headings.es)} ↗</span></div></a>`).join('');
+      if(note)note.textContent=messages[lang]||messages.es;
+    };
+    window.islaRenderNews=renderLive;
+    renderLive();
+  }catch(e){
+    // The existing demo is clearly labeled, never masquerade as live news.
+    console.warn('RSS news temporarily unavailable',e);
+  }
+}
 loadAutoNews();
 </script></body></html>
