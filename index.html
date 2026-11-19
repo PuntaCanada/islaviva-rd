@@ -26,6 +26,19 @@
 #news-grid .news-photo-credit{position:absolute;bottom:8px;right:8px;color:white;font-size:9px;background:#123a3677;padding:4px 8px;border-radius:50px}
 @media(max-width:900px){#news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){#news-grid{grid-template-columns:minmax(0,1fr)}#news-grid .story.featured{grid-column:span 1}#news-grid .news-image,#news-grid .story.featured .news-image{height:200px}}
+
+/* Stable image states: no oversized empty photo panels when the publisher blocks hotlinking */
+#news-grid .news-image:not(.has-image){height:66px;min-height:66px;background:linear-gradient(112deg,#0b4d47 0%,#18796f 50%,#7ab99c 100%);justify-content:flex-start;padding-left:20px}
+#news-grid .story.featured .news-image:not(.has-image){height:78px;min-height:78px}
+#news-grid .news-image:not(.has-image) .photo-fallback{font-size:27px;line-height:1;display:block}
+#news-grid .news-image.has-image{height:172px;padding-left:0}
+#news-grid .story.featured .news-image.has-image{height:213px}
+#news-grid .news-photo-credit{display:none}
+#news-grid .news-image.has-image .news-photo-credit{display:block}
+#news-grid .news-image img{opacity:0;transition:opacity .18s ease,transform .45s ease}
+#news-grid .news-image img[style*="opacity: 1"],#news-grid .news-image img[style*="opacity:1"]{opacity:1}
+#news-grid .story:hover .news-image:not(.has-image){background:linear-gradient(112deg,#0b5951,#167e76,#83c49f)}
+@media(max-width:600px){#news-grid .news-image:not(.has-image),#news-grid .story.featured .news-image:not(.has-image){height:68px;min-height:68px}}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -171,7 +184,9 @@ function renderNewsPortal(){
    try{const u=new URL(n.image||'');if(u.protocol==='https:' && !/\\.(svg|gif)(\\?|$)/i.test(u.pathname))photo=u.href;}catch(e){}
    const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" decoding="async" style="opacity:0" onload="this.style.opacity=\'1\';this.parentNode.classList.add(\'has-image\')" onerror="this.remove()" />':'';
    const teaser=preview?'<div class="news-teaser">'+esc(preview)+'</div>':'';
-   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+photoMarkup+'<span class="photo-fallback" aria-hidden="true">✺</span>'+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
+   const category=(n.category||'').toLowerCase();
+   const fallbackIcon=/turismo|viaje/.test(category)?'✈️':/deporte/.test(category)?'⚽':/econom|vivienda/.test(category)?'🏙️':/cultura/.test(category)?'🎭':/medioambiente/.test(category)?'🌿':/regionales/.test(category)?'📍':'📰';
+   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+photoMarkup+'<span class="photo-fallback" aria-hidden="true">'+fallbackIcon+'</span>'+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
 
  }).join('');
  const notice=document.querySelector('[data-t="newsdisclaimer"]');
