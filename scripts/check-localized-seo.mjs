@@ -56,6 +56,12 @@ for(const lang of languages){
  }
  if(!html.includes('hreflang="x-default" href="'+base+'/"'))error(file,'missing homepage x-default');
  if(!html.includes('meta name="description"'))error(file,'missing homepage description');
+ // Prevent one language homepage from losing existing interactive sections.
+ const spanishHome=readFileSync(join(root,'index.html'),'utf8');
+ const ids=source=>new Set([...source.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]));
+ const spanishIds=ids(spanishHome),localizedIds=ids(html);
+ for(const id of spanishIds)if(!localizedIds.has(id))error(file,'missing homepage element #'+id);
+
 }
 if(failures){console.error(failures+' localized SEO issues');process.exit(1)}
 console.log('OK: 15 localized guide and homepage URLs, canonical, reciprocal hreflang and sitemap.');
