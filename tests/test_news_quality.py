@@ -63,6 +63,34 @@ class NewsQualityTests(unittest.TestCase):
             summary="La entidad usará inteligencia artificial en uno de sus proyectos.",
         ), "Economía")
 
+    def test_new_specific_categories_and_false_positives(self):
+        positive = [
+            ("Ministerio de Salud anuncia campaña de vacunación", "Salud"),
+            ("Hospital de Higüey amplía atención médica", "Salud"),
+            ("NASA anuncia una nueva misión espacial", "Ciencia"),
+            ("Investigación científica revela nuevos datos", "Ciencia"),
+            ("Ministerio de Educación anuncia inicio del año escolar", "Educación"),
+            ("Universidades ofrecen becas universitarias", "Educación"),
+            ("Policía Nacional investiga robos en Santiago", "Seguridad"),
+            ("Ministerio Público investiga un homicidio", "Seguridad"),
+            ("Accidente de tránsito provoca cierre de carretera", "Tránsito"),
+            ("Obras viales generan desvíos de tránsito", "Tránsito"),
+        ]
+        for title, expected in positive:
+            with self.subTest(title=title):
+                self.assertEqual(category_for(title, "Actualidad"), expected)
+        negative = [
+            ("Empresa anuncia estudio de mercado", "Economía"),
+            ("El Congreso debate nueva ley", "Política"),
+            ("Equipo gana la carrera de atletismo", "Deportes"),
+            ("Banco Central analiza la inflación", "Economía"),
+            ("Investigación sobre videojuegos llega a una universidad", "Gaming y tecnología"),
+            ("GTA VI estrena nuevo tráiler", "Gaming y tecnología"),
+        ]
+        for title, expected in negative:
+            with self.subTest(title=title):
+                self.assertEqual(category_for(title, expected), expected)
+
     def test_regions_require_explicit_place(self):
         self.assertEqual(region_mentions("Obras en Higüey y Bávaro"), ["Higüey", "Punta Cana"])
         self.assertEqual(region_mentions("Gobierno se reúne en Santo Domingo"), ["Santo Domingo"])
