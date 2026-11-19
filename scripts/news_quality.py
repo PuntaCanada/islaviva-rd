@@ -30,6 +30,42 @@ GAMING_FEED_RE = re.compile(
     r"software|hardware|consolas?|electronica|ciberseguridad)\b"
 )
 
+# Narrow title rules: avoid ambiguous standalone words such as "clase", "ley",
+# "carrera", "estudio", "caso", "choque" and "trafico" without a road context.
+SPECIAL_TOPIC_RULES = (
+    ("Salud", re.compile(
+        r"\b(?:salud publica|ministerio de salud|hospitales?|clinicas?|"
+        r"vacunas?|vacunacion|dengue|malaria|epidemia|brotes? de (?:virus|dengue|gripe)|"
+        r"enfermedades?|medicamentos?|pacientes?|medicos?|"
+        r"atencion medica|emergencia sanitaria)\b")),
+    ("Ciencia", re.compile(
+        r"\b(?:investigacion cientifica|estudio cientifico|"
+        r"descubrimiento cientifico|cientific[oa]s?|astronomia|"
+        r"telescopio|nasa|observatorio espacial|"
+        r"misiones? espaciales?|laboratorio de investigacion)\b")),
+    ("Educación", re.compile(
+        r"\b(?:educacion|educativo|escuelas?|colegios?|"
+        r"universidades?|universitarios?|estudiantes?|"
+        r"docentes?|profesores?|becas? (?:universitarias?|escolares?)|"
+        r"ministerio de educacion|minerd|ano escolar|"
+        r"centros educativos|alfabetizacion)\b")),
+    ("Seguridad", re.compile(
+        r"\b(?:policia nacional|policial|policias?|delincuencia|"
+        r"criminalidad|homicidios?|asesinatos?|feminicidios?|"
+        r"robos?|asaltos?|secuestros?|narcotrafico|"
+        r"trafico de drogas|detenidos?|arrestados?|"
+        r"ministerio publico|investigacion criminal|"
+        r"seguridad ciudadana)\b")),
+    ("Tránsito", re.compile(
+        r"\b(?:accidentes? de transito|accidentes? viales?|"
+        r"seguridad vial|congestion vehicular|"
+        r"embotellamientos?|tapones? vehiculares?|"
+        r"cierres? (?:de )?(?:calles?|carreteras?|vias?)|"
+        r"desvios? (?:de )?(?:transito|trafico|vehiculos?)|"
+        r"obras? viales?|transito vehicular|"
+        r"circulacion vehicular|carreteras? cerradas?)\b")),
+)
+
 TOPIC_RULES = (
     ("Deportes", (
         r"\b(?:deporte(?:s)?|beisbol|pelota|lidom|jonron(?:es)?|home run|grand slam|"
@@ -92,6 +128,9 @@ def category_for(title, default="Actualidad", summary="", feed_categories=None):
     t = normalize(title)
     if GAMING_TITLE_RE.search(t):
         return "Gaming y tecnología"
+    for topic, expression in SPECIAL_TOPIC_RULES:
+        if expression.search(t):
+            return topic
     metadata = normalize(summary[:700])
     tags = normalize(" ".join(feed_categories or [])[:300])
     headline_context = re.search(
@@ -205,7 +244,8 @@ def validate_news(items, now, age_hours=48):
         assert entry["category"] in {
             "Actualidad", "Deportes", "Turismo", "Vivienda", "Economía",
             "Política", "Cultura", "Medioambiente", "Regionales", "Mundo",
-            "Gaming y tecnología"
+            "Gaming y tecnología", "Salud", "Ciencia", "Educación",
+            "Seguridad", "Tránsito"
         }, "unexpected category"
         assert all(r in REGIONS for r in entry.get("regions", [])), "bad region"
         published = dt.datetime.fromisoformat(entry["published"])
