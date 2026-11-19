@@ -17,16 +17,53 @@ UTC = dt.timezone.utc
 NOW = dt.datetime.now(UTC)
 MAX_AGE = dt.timedelta(hours=48)
 FEEDS = [
-    ("Diario Libre", "https://www.diariolibre.com/rss/portada.xml", "Actualidad"),
-    ("Diario Libre", "https://www.diariolibre.com/rss/actualidad.xml", "Actualidad"),
-    ("Diario Libre", "https://www.diariolibre.com/rss/economia.xml", "Economía"),
-    ("Diario Libre", "https://www.diariolibre.com/rss/deportes.xml", "Deportes"),
-    ("Diario Libre", "https://www.diariolibre.com/rss/politica.xml", "Política"),
-    ("Diario Libre", "https://www.diariolibre.com/rss/mundo.xml", "Mundo"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/portada.xml", "Actualidad", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/actualidad.xml", "Actualidad", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/economia.xml", "Economía", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/deportes.xml", "Deportes", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/politica.xml", "Política", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/mundo.xml", "Mundo", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/planeta.xml", "Medioambiente", "diariolibre.com"),
+    ("Diario Libre", "https://www.diariolibre.com/rss/revista.xml", "Cultura", "diariolibre.com"),
+    # Additional publisher RSS endpoints are best-effort, not guaranteed or licensed content feeds.
+    ("Hoy", "https://hoy.com.do/feed/", "Actualidad", "hoy.com.do"),
+    ("El Día", "https://eldia.com.do/feed/", "Actualidad", "eldia.com.do"),
+    ("AlMomento", "https://almomento.net/feed/", "Actualidad", "almomento.net"),
+    ("Noticias SIN", "https://noticiassin.com/feed/", "Actualidad", "noticiassin.com"),
 ]
+# Labels are based only on explicit place mentions in headlines or supplied RSS metadata.
+# A location label is NOT a claim that the article applies exclusively to that city.
+REGIONS = {
+    "Higüey": ("higüey", "higuey", "la altagracia"),
+    "Punta Cana": ("punta cana", "bávaro", "bavaro", "verón", "veron", "cap cana"),
+    "Santo Domingo": ("santo domingo", "distrito nacional", "gran santo domingo"),
+    "Santiago": ("santiago de los caballeros", "santiago rodríguez", "santiago rodriguez"),
+    "La Romana": ("la romana",),
+    "Puerto Plata": ("puerto plata",),
+    "Samaná": ("samaná", "samana", "las terrenas", "sánchez, samaná"),
+}
+def region_mentions(title, summary):
+    import re
+    import unicodedata
+    def normalize(value):
+        value = unicodedata.normalize("NFD", value.lower())
+        return "".join(c for c in value if unicodedata.category(c)!="Mn")
+    haystack=" "+normalize(title+" "+summary[:350])+" "
+    found=[]
+    for city,variants in REGIONS.items():
+        if any(re.search(r"(?<!\\w)"+re.escape(normalize(v))+r"(?!\\w)",haystack) for v in variants):
+            found.append(city)
+    return found
+def category_for(text, default):
+    t=text.lower()
+    # Only classify explicit subject cues; otherwise keep publisher's feed category.
+    if any(w in t for w in ("turismo","turista","hotel","aerolínea","aeropuerto","vuelo","crucero")): return "Turismo"
+    if any(w in t for w in ("inmueble","vivienda","alquiler","apartamento","construcción")): return "Vivienda"
+    return default
+
 items = {}
 successful_feeds = 0
-for source, feed_url, category in FEEDS:
+for source, feed_url, category, allowed_domain in FEEDS:
     try:
         req = urllib.request.Request(feed_url, headers={
             "User-Agent": "IslaVivaRD/1.0 (RSS news headlines, attribution and source links)",
@@ -42,7 +79,7 @@ for source, feed_url, category in FEEDS:
             title = " ".join((node.findtext("title") or "").split())[:180]
             url = (node.findtext("link") or "").strip()
             p = urllib.parse.urlparse(url)
-            if not title or p.scheme != "https" or p.hostname not in ("diariolibre.com", "www.diariolibre.com"):
+            if not title or p.scheme != "https" or not p.hostname or (p.hostname!=allowed_domain and p.hostname!="www."+allowed_domain):
                 continue
             try:
                 published = email.utils.parsedate_to_datetime(node.findtext("pubDate") or "")
@@ -53,7 +90,12 @@ for source, feed_url, category in FEEDS:
                 continue
             if published > NOW + dt.timedelta(minutes=30) or NOW - published > MAX_AGE:
                 continue
-            entry = {"title": title, "url": url, "source": source, "category": category, "published": published.isoformat()}
+            summary=" ".join((node.findtext("description") or "").split())
+            # Source's headline and summary are for location tagging only; do not republish full body.
+            entry = {"title": title, "url": url, "source": source,
+                     "category": category_for(title,category),
+                     "regions": region_mentions(title, summary),
+                     "published": published.isoformat()}
             existing = items.get(url)
             if existing is None or (existing["category"] == "Actualidad" and category != "Actualidad"):
                 items[url] = entry
@@ -118,7 +160,15 @@ if successful_feeds == 0:
     # Preserve the previous snapshot; the frontend independently refuses to show stale items.
     print("All RSS feeds failed: preserving existing file, no fake updates.")
 else:
-    latest = sorted(items.values(), key=lambda v: v["published"], reverse=True)[:36]
+    # Limit domination by a single publisher while retaining freshest items.
+    ordered=sorted(items.values(),key=lambda v: v["published"],reverse=True)
+    per_source={}
+    latest=[]
+    for entry in ordered:
+        if per_source.get(entry["source"],0)>=24:continue
+        latest.append(entry)
+        per_source[entry["source"]]=per_source.get(entry["source"],0)+1
+        if len(latest)>=72:break
     # Only translate new stories, reusing existing translations.
     for entry in latest:
         if entry["url"] in translations_by_url:
