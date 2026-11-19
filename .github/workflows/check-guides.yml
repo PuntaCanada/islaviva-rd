@@ -8,6 +8,7 @@ on:
       - 'sitemap.xml'
       - 'scripts/check-guides.mjs'
       - 'scripts/check-localized-seo.mjs'
+      - 'scripts/check-home-runtime.mjs'
       - '.github/workflows/check-guides.yml'
   pull_request:
     paths:
@@ -17,6 +18,7 @@ on:
       - 'sitemap.xml'
       - 'scripts/check-guides.mjs'
       - 'scripts/check-localized-seo.mjs'
+      - 'scripts/check-home-runtime.mjs'
       - '.github/workflows/check-guides.yml'
   workflow_dispatch:
 permissions:
@@ -33,3 +35,4 @@ jobs:
         run: |
           node scripts/check-guides.mjs
           node scripts/check-localized-seo.mjs
+          node scripts/check-home-runtime.mjs
