@@ -205,7 +205,11 @@
 .career-card a{font-size:12px;font-weight:800;color:#086b7c;text-decoration:underline;text-underline-offset:3px;align-self:flex-start}
 .career-hint{font-size:11px;line-height:1.6;color:#637981;margin:13px 0 0}
 @media(max-width:850px){.career-grid{grid-template-columns:1fr}.career-card{min-height:155px}}
-.fuel-official-link{font-size:11px!important;color:#526a61!important;text-decoration:underline}.career-section a:focus-visible{outline:3px solid #e9a85f;outline-offset:3px}</style></head><body>
+.fuel-official-link{font-size:11px!important;color:#526a61!important;text-decoration:underline}.career-section a:focus-visible{outline:3px solid #e9a85f;outline-offset:3px}
+.news-local-priority[hidden]{display:none}
+.news-local-priority{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0 20px;border:1px solid #c9e5d4;background:#eaf7ed;border-radius:13px;color:#175a43;padding:12px 15px;font-size:13px;font-weight:800}
+.news-local-priority small{color:#526c5d;font-size:12px;font-weight:600}
+</style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
 <main id="inicio"><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow" data-t="herokicker">Tu ventana al Caribe</div><h1 data-t-html="heroheadline">Tu isla.<br>Tu historia.<br><em>Tu mundo.</em></h1><p data-t="herobody">Las noticias que importan, los lugares que inspiran y todo lo que necesitas para vivir o viajar por República Dominicana. En tu idioma.</p><div class="heroactions"><a class="btn" href="#actualidad" data-t="readnews">Explorar noticias ↗</a><a class="btn ghost" href="#ciudad" data-t="mycity">Descubrir mi ciudad ↘</a></div><div class="journey" data-t="herofoot">✦ Noticias  ·  ✦ Viajes  ·  ✦ Vida local  ·  ✦ Comunidad</div></div><div class="visual"><div class="hero-photo" role="img" aria-label="Playa tropical"></div><div class="floating float-one"><div class="emoji">📍</div><div><small data-t="floata">HECHO PARA TI</small><b data-t="floatb">Elige tu ciudad</b></div></div><div class="floating float-two"><div class="emoji">🌍</div><div><small>4 IDIOMAS</small><b data-t="floatc">Un país, mil historias</b></div></div></div></div></section>
@@ -224,7 +228,7 @@
     <select id="news-source" aria-label="News source"><option value="all">Todas las fuentes</option></select>
     <button type="button" id="news-personalize-button" class="news-preferences-button" aria-expanded="false" aria-controls="news-preferences">⚙️ Mis intereses</button>
   </div>
-</div><div id="news-preferences" class="news-preferences" hidden><div class="news-preferences-head"><div><strong id="news-preferences-title">Mis intereses</strong><p id="news-preferences-help">Elige los temas que quieres ver. Se guarda solo en este navegador.</p></div><button type="button" id="news-preferences-reset" class="news-preferences-reset">Mostrar todo</button></div><div id="news-preferences-choices" class="news-preferences-choices"></div></div><div class="news-grid" id="news-grid"></div><p class="disclaimer" data-t="newsdisclaimer">Vista de demostración: los titulares son secciones editoriales de ejemplo, no noticias de última hora. Abre las fuentes originales para leer noticias actuales.</p></div></section>
+</div><div id="news-preferences" class="news-preferences" hidden><div class="news-preferences-head"><div><strong id="news-preferences-title">Mis intereses</strong><p id="news-preferences-help">Elige los temas que quieres ver. Se guarda solo en este navegador.</p></div><button type="button" id="news-preferences-reset" class="news-preferences-reset">Mostrar todo</button></div><div id="news-preferences-choices" class="news-preferences-choices"></div></div><div id="news-local-priority" class="news-local-priority" hidden></div><div class="news-grid" id="news-grid"></div><p class="disclaimer" data-t="newsdisclaimer">Vista de demostración: los titulares son secciones editoriales de ejemplo, no noticias de última hora. Abre las fuentes originales para leer noticias actuales.</p></div></section>
 <section class="city-area" id="ciudad"><div class="wrap"><div class="citytop"><div><div class="kicker" data-t="citykicker">LA VIDA, MÁS FÁCIL</div><h2 style="font:800 clamp(27px,3.3vw,39px) Manrope;letter-spacing:-1.6px;margin:0" data-t="citytitle">Todo sobre tu ciudad.</h2><p style="color:#6a8177;font-size:14px;max-width:570px;line-height:1.7" data-t="citysub">Lo que necesitas saber, sin buscar en diez sitios diferentes.</p></div><select id="city" class="citypicker" aria-label="Selecciona tu ciudad"><option value="Higüey">📍 Higüey</option><option value="Punta Cana">📍 Punta Cana / Bávaro</option><option value="Santo Domingo">📍 Santo Domingo</option><option value="Santiago">📍 Santiago</option><option value="La Romana">📍 La Romana</option><option value="Puerto Plata">📍 Puerto Plata</option><option value="Samaná">📍 Samaná</option></select></div><div class="servicegrid" id="servicegrid"></div><p class="disclaimer" data-t="localnote">Los servicios están en fase piloto. No mostramos horarios, tarifas o valoraciones sin datos comprobados.</p></div></section>
 <section class="extra-section" id="zona-extra"><div class="wrap"><div class="sectionhead"><div><div class="kicker" data-x="eyebrow">NOVEDAD · TU ZONA</div><h2 data-x="title">Tu próximo hogar. Tu próximo camino.</h2><p data-x="subtitle">Viviendas y avisos de infraestructura adaptados a tu ciudad.</p></div><span class="underlink" id="selectedregion">Higüey</span></div><div class="extra-grid"><article class="extra-card property-card"><div class="extra-top">🏡 <span data-x="propertyTag">VIVIENDA</span></div><h3 data-x="propertyTitle">Encuentra dónde vivir</h3><p data-x="propertyDesc">Explora anuncios de alquiler o venta de fuentes externas para la zona que elijas.</p><div class="extra-pills"><button type="button" class="chip active" id="rentMode" data-x="rent">Alquilar</button><button type="button" class="chip" id="buyMode" data-x="buy">Comprar</button></div><a class="extra-link" id="propertyGo" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=alquiler+Higuey+site%3Acorotos.com.do" data-x="propertyCta">Ver anuncios de mi zona ↗</a><small data-x="propertyNote">Abre búsquedas externas. No tenemos inventario propio ni precios verificados todavía.</small></article><article class="extra-card roads-card"><div class="extra-top">🚧 <span data-x="roadTag">INFRAESTRUCTURA</span></div><h3 data-x="roadTitle">Obras y cierres viales</h3><p data-x="roadDesc">Consulta los comunicados oficiales de obras, desvíos y cierres. Filtra por tu ciudad desde la búsqueda.</p><div class="road-status"><span class="pulse-dot"></span><span data-x="roadStatus">Avisos oficiales, no tráfico en tiempo real</span></div><div id="road-notices" class="road-notices" aria-live="polite"><p class="road-muted">Cargando avisos publicados...</p></div><button id="road-toggle-scope" class="road-toggle-scope" type="button">🌎 Ver toda RD</button><small data-x="roadNote">Las publicaciones pueden estar desactualizadas; verifica fecha y vigencia.</small></article></div></div></section><section class="travel-band" id="viajar"><div class="wrap"><div class="sectionhead"><div><div class="kicker" data-t="travelkicker">VIVE LA EXPERIENCIA</div><h2 data-t="traveltitle">Más allá de la postal.</h2><p data-t="travelsub">Ideas para tu próxima aventura, escapada o fin de semana.</p></div><span class="underlink" data-t="travelcurated">Inspiración para viajar ✦</span></div><div class="travel-grid" id="travelgrid"></div><p class="disclaimer" data-t="affnote">Las recomendaciones turísticas enlazan actualmente a información oficial; no hay reservas ni enlaces de afiliación activos. Los enlaces comerciales futuros se identificarán como publicidad.</p></div></section>
 <section class="featurestrip" id="servicios"><div class="wrap featuregrid"><div><div class="eyebrow" data-t="missionkicker">MÁS QUE NOTICIAS</div><h2 data-t="missiontitle">Información que realmente te sirve.</h2></div><div class="featureitem"><span>🌐</span><div><b data-t="missionone">A tu manera</b><p data-t="missiononedesc">Cuatro idiomas, noticias relevantes y tu ciudad favorita guardada en tu navegador.</p></div></div><div class="featureitem"><span>🤝</span><div><b data-t="missiontwo">Transparente por diseño</b><p data-t="missiontwodesc">Fuentes identificadas, datos verificados y publicidad siempre distinguible.</p></div></div></div></section><section class="section" id="newsletter"><div class="wrap"><div class="newsletter-box"><div><div class="kicker">ISLAVIVA RD · NEWSLETTER</div><h2 id="newsletterTitle">Nouvèl ak enfòmasyon nan lang ou</h2><p id="newsletterText">Newsletter la ap vini. Enskripsyon an poko aktive; nou pap kolekte adrès imel pou kounye a.</p><small id="newsletterSub">Opsyon ki prevwa: nouvèl chak semèn, zòn ou, ak lang ou. Konfimasyon imel obligatwa.</small></div><div class="newsletter-icon">✉</div></div></div></section></main>
@@ -766,20 +770,60 @@ function renderNewsPortal(){
  const selected=valid.filter(n=>(newsScope!=='local'||(Array.isArray(n.regions)&&n.regions.includes(city))) &&
    (newsCategory==='all'||effectiveNewsCategory(n)===newsCategory) &&
    (newsSource==='all'||n.source===newsSource));
- // Keep a balanced mix of publishers and topics, but raise genuinely local stories
- // for the visitor's selected city. Never infer local relevance from publisher location.
+ // Editorial order: city-first, then explicitly named nearby cities, then other RD.
+ // Avoid source round-robin *after* ranking: it formerly pushed local news down.
+ // Only publish already validated, recent (<48h) source-linked feed entries.
+ const nearbyCities={
+  'Higüey':['Punta Cana','La Romana'],
+  'Punta Cana':['Higüey','La Romana'],
+  'La Romana':['Higüey','Punta Cana'],
+  'Santo Domingo':[],
+  'Santiago':[],
+  'Puerto Plata':[],
+  'Samaná':[]
+ };
+ const relevance=n=>{
+  const places=Array.isArray(n.regions)?n.regions:[];
+  if(places.includes(city))return 2;
+  if(places.some(place=>(nearbyCities[city]||[]).includes(place)))return 1;
+  return 0;
+ };
  const ranked=[...selected].sort((a,b)=>{
-   const score=n=>((n.regions||[]).includes(city)?16:(n.regions||[]).length?2:0)
-      +(['Punta Cana Post','El Tiempo','Bávaro Digital'].includes(n.source)?1:0);
-   const diff=score(b)-score(a);
-   return diff||Date.parse(b.published)-Date.parse(a.published);
+  const difference=relevance(b)-relevance(a);
+  return difference||Date.parse(b.published)-Date.parse(a.published);
  });
- const buckets=new Map();
- for(const n of ranked){const k=n.source+' / '+effectiveNewsCategory(n);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(n)}
+ // Maintain some editorial diversity within each region tier, without ever
+ // allowing a national article to displace a currently available city story.
  const picked=[];
- while(picked.length<12 && [...buckets.values()].some(g=>g.length)){
-  for(const group of buckets.values())if(group.length&&picked.length<12)picked.push(group.shift());
+ const countsBySource=new Map();
+ for(const tier of [2,1,0]){
+  const options=ranked.filter(n=>relevance(n)===tier);
+  for(const n of options){
+   if(picked.length>=12)break;
+   if((countsBySource.get(n.source)||0)>=4)continue;
+   picked.push(n);
+   countsBySource.set(n.source,(countsBySource.get(n.source)||0)+1);
+  }
  }
+ // If publisher concentration prevented filling the grid, add remaining
+ // stories in relevance/freshness order, with no duplicates.
+ for(const n of ranked){
+  if(picked.length>=12)break;
+  if(!picked.includes(n))picked.push(n);
+ }
+ const priority=document.getElementById('news-local-priority');
+ const localCount=picked.filter(n=>relevance(n)===2).length;
+ const nearCount=picked.filter(n=>relevance(n)===1).length;
+ const bannerLabels={
+  es:['📍 Noticias de '+city+' primero','También de la zona: '+nearCount],
+  de:['📍 Meldungen aus '+city+' zuerst','Weitere Meldungen aus der Umgebung: '+nearCount],
+  en:['📍 '+city+' news first','More nearby stories: '+nearCount],
+  fr:['📍 Actualités de '+city+' en premier','Autres actualités proches : '+nearCount],
+  ht:['📍 Nouvèl '+city+' an premye','Lòt nouvèl toupre: '+nearCount]
+ };
+ const chosenText=bannerLabels[lang]||bannerLabels.es;
+ priority.hidden=newsScope==='local'||!(localCount||nearCount);
+ if(!priority.hidden)priority.innerHTML='<span>'+esc(chosenText[0])+'</span><small>'+esc(localCount+' · '+chosenText[1])+'</small>';
  const grid=document.getElementById('news-grid');
  if(!picked.length)grid.innerHTML='<div class="news-empty">'+esc(visibleNewsInterests.size?ui.empty:(interestUi[lang]||interestUi.es).hidden)+'</div>';
  else grid.innerHTML=picked.map((n,i)=>{
