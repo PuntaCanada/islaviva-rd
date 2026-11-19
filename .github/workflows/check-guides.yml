@@ -42,6 +42,7 @@ jobs:
       - name: Verify all content guides are translated
         run: |
           node scripts/check-guides.mjs
+          node scripts/build-homepages.mjs
+          node scripts/build-homepages.mjs --check
           node scripts/check-localized-seo.mjs
           node scripts/check-home-runtime.mjs
-          node scripts/build-homepages.mjs --check
