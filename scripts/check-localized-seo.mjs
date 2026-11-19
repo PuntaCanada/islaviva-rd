@@ -35,5 +35,27 @@ for(const page of pages)for(const lang of languages){
  if(!title||title.length<15)error(file,'missing descriptive title');
  console.log('Checked',lang,page);
 }
+
+for(const lang of languages){
+ const file=join(root,lang==='es'?'':lang,'index.html');
+ const publicUrl=base+'/'+(lang==='es'?'':lang+'/');
+ if(!existsSync(file)){error(file,'localized homepage missing');continue}
+ const html=readFileSync(file,'utf8');
+ if(!html.includes('<html lang="'+lang+'">'))error(file,'wrong homepage document language');
+ if(!html.includes('<link rel="canonical" href="'+publicUrl+'">'))error(file,'homepage canonical is not self-referencing');
+ if(!sitemap.includes('<loc>'+publicUrl+'</loc>'))error(file,'homepage missing from sitemap');
+ if(!html.includes('id="language"'))error(file,'missing language picker');
+ if(!html.includes('id="shopping-cards"'))error(file,'shopping section missing');
+ if(lang!=='es'&&html.includes('./data/'))error(file,'relative dynamic data path would break in subfolder');
+ if(lang!=='es'&&!html.includes("let lang='"+lang+"'"))error(file,'homepage does not initialize selected locale');
+ if(lang!=='es'&&!html.includes('href="/'+lang+'/ofertas-supermercados-rd.html"'))error(file,'no localized shopping guide link');
+ for(const target of languages){
+  const url=base+'/'+(target==='es'?'':target+'/');
+  if(!html.includes('hreflang="'+target+'" href="'+url+'"'))error(file,'missing homepage hreflang '+target);
+  if(!sitemap.includes('<xhtml:link rel="alternate" hreflang="'+target+'" href="'+url+'"/>'))error(file,'missing sitemap homepage hreflang '+target);
+ }
+ if(!html.includes('hreflang="x-default" href="'+base+'/"'))error(file,'missing homepage x-default');
+ if(!html.includes('meta name="description"'))error(file,'missing homepage description');
+}
 if(failures){console.error(failures+' localized SEO issues');process.exit(1)}
-console.log('OK: 10 guide URLs, canonical, reciprocal hreflang and sitemap.');
+console.log('OK: 15 localized guide and homepage URLs, canonical, reciprocal hreflang and sitemap.');
