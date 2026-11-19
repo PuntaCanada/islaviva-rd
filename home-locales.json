@@ -51,7 +51,11 @@
         "missiononedesc": "Vier Sprachen, relevante Rubriken und deine Lieblingsstadt im Browser gespeichert.",
         "missiontwo": "Transparent von Anfang an",
         "missiontwodesc": "Klare Quellen, geprüfte Daten und deutlich erkennbare Werbung.",
-        "footerdesc": "Unabhängiger Prototyp. Keine Verbindung zur dominikanischen Regierung. Die Dienste sind eine Konzeptdemonstration."
+        "footerdesc": "Unabhängiger Prototyp. Keine Verbindung zur dominikanischen Regierung. Die Dienste sind eine Konzeptdemonstration.",
+        "regionSourcesKicker": "AMTLICHE QUELLEN",
+        "regionSourcesTitle": "Lokale Informationen aus überprüfbaren Quellen",
+        "regionSourcesDesc": "Direkt zu Behörden und Einrichtungen. Wähle oben deine Stadt, um passende Links zu sehen.",
+        "regionSourcesNote": "Diese Links führen zu externen Seiten. Sie sind keine Live-Warnungen und bestätigen keine Versorgung an deiner Adresse."
       }
     },
     "en": {
@@ -103,7 +107,11 @@
         "missiononedesc": "Four languages, relevant topics, and your favorite city saved in your browser.",
         "missiontwo": "Transparent by design",
         "missiontwodesc": "Clear sources, verified data and distinguishable advertising.",
-        "footerdesc": "Independent prototype. Not affiliated with the Dominican government. Services shown are proof of concept."
+        "footerdesc": "Independent prototype. Not affiliated with the Dominican government. Services shown are proof of concept.",
+        "regionSourcesKicker": "OFFICIAL SOURCES",
+        "regionSourcesTitle": "Local information from verifiable sources",
+        "regionSourcesDesc": "Direct links to public agencies. Select your city above for relevant contacts.",
+        "regionSourcesNote": "Links lead to external websites. They are not live alerts and do not confirm service availability at your address."
       }
     },
     "fr": {
@@ -155,7 +163,11 @@
         "missiononedesc": "Quatre langues, des sujets pertinents et votre ville préférée mémorisée.",
         "missiontwo": "Transparent par nature",
         "missiontwodesc": "Sources identifiées, données vérifiées et publicités clairement indiquées.",
-        "footerdesc": "Prototype indépendant. Non affilié au gouvernement dominicain. Services présentés à titre conceptuel."
+        "footerdesc": "Prototype indépendant. Non affilié au gouvernement dominicain. Services présentés à titre conceptuel.",
+        "regionSourcesKicker": "SOURCES OFFICIELLES",
+        "regionSourcesTitle": "Informations locales provenant de sources vérifiables",
+        "regionSourcesDesc": "Accédez directement aux organismes publics. Choisissez votre ville pour voir les liens pertinents.",
+        "regionSourcesNote": "Ces liens mènent à des sites externes. Ils ne constituent ni des alertes en direct ni une confirmation de service à votre adresse."
       }
     },
     "ht": {
@@ -207,7 +219,11 @@
         "missiononedesc": "Senk lang, sijè ki enterese ou ak vil ou sonje.",
         "missiontwo": "Transparans",
         "missiontwodesc": "Sous klè, done verifye, piblisite ki byen idantifye.",
-        "footerdesc": "Yon pwototip endepandan. Li pa afilye ak gouvènman dominiken an."
+        "footerdesc": "Yon pwototip endepandan. Li pa afilye ak gouvènman dominiken an.",
+        "regionSourcesKicker": "SOUS OFISYÈL",
+        "regionSourcesTitle": "Enfòmasyon lokal nan sous ou ka verifye",
+        "regionSourcesDesc": "Lyen dirèk pou sèvis piblik yo. Chwazi vil ou anlè a pou jwenn lyen ki itil.",
+        "regionSourcesNote": "Lyen yo mennen sou lòt sit. Yo pa alèt an dirèk epi yo pa konfime sèvis disponib nan adrès ou."
       }
     }
   }
