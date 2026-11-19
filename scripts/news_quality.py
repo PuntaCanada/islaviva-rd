@@ -16,7 +16,7 @@ TOPIC_RULES = (
         r"futbol|baloncesto|balonmano|basket|nba|mlb|olimpi(?:co|ca|cos|cas)|"
         r"maraton|boxeo|tenis|voleibol|atleta(?:s)?|escogido|licey|"
         r"aguilas cibae(?:nas)?|estrellas orientales|gigantes del cibao|"
-        r"toros del este|toros vencen|toros derrotan|leones del escogido)\b",
+        r"toros del este|toros (?:se sacuden|vencen|derrotan|ganan)|leones del escogido|(?:aguilas|estrellas) (?:vencen|derrotan|ganan))\b",
     )),
     ("Turismo", (r"\b(?:turismo|turist(?:a|as|ico|icos)|hoteles?|resort|playas?|"
                  r"aeropuertos?|aerolineas?|cruceros?|vacacion(?:es|al)|visitantes)\b",)),
