@@ -56,9 +56,12 @@ def get_notices(source,kind,url,domain):
    published=published.astimezone(UTC)
   except (ValueError,TypeError,IndexError):continue
   if not dt.timedelta(0)<=NOW-published<=dt.timedelta(days=7):continue
-  regions=region_mentions(title)
-  # Do not infer city from publisher location or company area.
   preview=clean(item.findtext("description") or "")
+  # Official RSS titles may omit the affected locality. A named place in the
+  # first part of an item's summary can help locate a notice, but we never
+  # infer that an entire utility service territory is currently affected.
+  regions=region_mentions(title+" "+preview[:170])
+  # Never infer locality merely from a publisher's headquarters.
   notices.append({"kind":kind,"title":title,"preview":preview,"url":link,"source":source,
    "published":published.isoformat(),"regions":regions,"status":"published_unverified"})
  return notices
