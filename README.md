@@ -50,3 +50,14 @@ node scripts/check-localized-seo.mjs
 A GitHub Action (`Sync localized homepages`) regenerates and commits the four translated files on pushes to `main` that change `index.html`, `home-locales.json`, or the generator itself. The sync job needs repository GitHub Actions write permissions. The separate `Check five-language guides` workflow builds the localized files in its runner before validating them. A GitHub Actions run does not itself confirm that Cloudflare has deployed the new version.
 
 **When extending the homepage:** update `index.html` as the shared layout; add or revise the corresponding entries for all four languages in `home-locales.json`; update common behavior in `assets/home-app.js` and styles in `assets/home.css`. Never create per-language copies of new JavaScript or CSS. New translatable static text should use `data-t` or `data-t-html`; the generator fails on missing locale entries. The root data-fetch paths must remain absolute, such as `/data/weather.json`.
+
+## Continuous quality checks
+
+GitHub Actions verifies IslaViva RD at three levels, without third-party monitoring subscriptions:
+
+1. `Check five-language guides` checks generated homepages, translations, sitemap, canonical/hreflang and shared frontend structure on relevant commits.
+2. `Check site and automation code` runs the Python news/SEO/fuel tests, JavaScript checks and feed JSON validation.
+3. `Smoke-test public IslaViva RD website` checks all **15 deployed pages**, assets, canonical/hreflang links and weather/news data by HTTPS **twice daily** (07:23 and 19:23 UTC), and on changes to the smoke-test code.
+4. `Browser regression test IslaViva RD` runs a real headless Chromium browser **once daily** (06:47 UTC), and on changes to the browser-test code. It checks visible temperature, news cards, three merchant cards, city switching, links and language switching.
+
+The scheduled jobs show failures in GitHub Actions; they do **not** automatically message the site owner or guarantee an issue will be fixed. They are not substitutes for manual visual, accessibility, security or external-service checks. GitHub Actions usage is subject to the repository's GitHub billing/usage quotas; avoid claiming unlimited free compute. Public availability may temporarily diverge from the latest repository commit during Cloudflare deployment.
