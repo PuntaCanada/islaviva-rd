@@ -1,6 +1,84 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url><loc>https://islaviva-rd.pages.dev/</loc></url>
-  <url><loc>https://islaviva-rd.pages.dev/apagones-higuey.html</loc><lastmod>2026-11-19</lastmod></url>
-  <url><loc>https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html</loc><lastmod>2026-11-19</lastmod></url>
+  <url><loc>https://islaviva-rd.pages.dev/apagones-higuey.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/de/apagones-higuey.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/en/apagones-higuey.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/fr/apagones-higuey.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/ht/apagones-higuey.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/apagones-higuey.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/apagones-higuey.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/de/ofertas-supermercados-rd.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/en/ofertas-supermercados-rd.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/fr/ofertas-supermercados-rd.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+  </url>
+  <url><loc>https://islaviva-rd.pages.dev/ht/ofertas-supermercados-rd.html</loc><lastmod>2026-11-19</lastmod>
+    <xhtml:link rel="alternate" hreflang="es" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://islaviva-rd.pages.dev/de/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://islaviva-rd.pages.dev/en/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://islaviva-rd.pages.dev/fr/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="ht" href="https://islaviva-rd.pages.dev/ht/ofertas-supermercados-rd.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://islaviva-rd.pages.dev/ofertas-supermercados-rd.html"/>
+  </url>
 </urlset>
