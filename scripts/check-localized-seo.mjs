@@ -46,8 +46,11 @@ for(const lang of languages){
  if(!sitemap.includes('<loc>'+publicUrl+'</loc>'))error(file,'homepage missing from sitemap');
  if(!html.includes('id="language"'))error(file,'missing language picker');
  if(!html.includes('id="shopping-cards"'))error(file,'shopping section missing');
- if(lang!=='es'&&html.includes('./data/'))error(file,'relative dynamic data path would break in subfolder');
- if(lang!=='es'&&!html.includes("let lang='"+lang+"'"))error(file,'homepage does not initialize selected locale');
+ // Data paths are now validated in the common runtime test instead of HTML.
+ if(html.includes('src="./assets/home-app.js"'))error(file,'incorrect relative JS path');
+ // The shared runtime now reads the locale from <html lang>, not inline JS.
+ if(!html.includes('src="/assets/home-app.js"'))error(file,'shared locale runtime missing');
+ if(!html.includes('href="/assets/home.css"'))error(file,'shared homepage stylesheet missing');
  if(lang!=='es'&&!html.includes('href="/'+lang+'/ofertas-supermercados-rd.html"'))error(file,'no localized shopping guide link');
  for(const target of languages){
   const url=base+'/'+(target==='es'?'':target+'/');
