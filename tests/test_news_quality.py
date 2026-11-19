@@ -55,6 +55,16 @@ class NewsQualityTests(unittest.TestCase):
         self.assertIn(distinct, kept)
         self.assertTrue(validate_news(kept, dt.datetime.now(dt.timezone.utc)))
 
+    def test_two_publishers_same_baseball_event(self):
+        now=dt.datetime.now(dt.timezone.utc).isoformat()
+        a={"title":"Jonrón de Ángel Ortiz deja tendidas a las Águilas y da victoria al Licey",
+           "url":"https://noticiassin.com/baseball-ortiz","source":"Noticias SIN","published":now}
+        b={"title":"Ortiz pega dramático jonrón y el Licey deja en el terreno a las Águilas",
+           "url":"https://eldia.com.do/ortiz-licey","source":"El Día","published":now}
+        self.assertTrue(is_near_duplicate(a,b))
+        unrelated={**b,"title":"Licey firma nuevos acuerdos con atletas","url":"https://eldia.com.do/otro"}
+        self.assertFalse(is_near_duplicate(a,unrelated))
+
     def test_preference_for_explicit_locality(self):
         now=dt.datetime.now(dt.timezone.utc).isoformat()
         base={"title":"Prueba","url":"https://example.com/item","source":"El Tiempo",
