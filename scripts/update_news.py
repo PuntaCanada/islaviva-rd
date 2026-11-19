@@ -4,6 +4,9 @@ Never copy third-party article bodies or images.
 """
 import datetime as dt
 import email.utils
+import html
+import re
+from html.parser import HTMLParser
 import json
 import pathlib
 import os
@@ -30,6 +33,10 @@ FEEDS = [
     ("El Día", "https://eldia.com.do/feed/", "Actualidad", "eldia.com.do"),
     ("AlMomento", "https://almomento.net/feed/", "Actualidad", "almomento.net"),
     ("Noticias SIN", "https://noticiassin.com/feed/", "Actualidad", "noticiassin.com"),
+    # Regional publishers (best-effort RSS discovery, never assume availability).
+    ("Punta Cana Post", "https://puntacanapost.com/feed/", "Regionales", "puntacanapost.com"),
+    ("El Tiempo", "https://eltiempo.com.do/feed/", "Regionales", "eltiempo.com.do"),
+    ("Bávaro Digital", "https://bavarodigital.net/feed/", "Regionales", "bavarodigital.net"),
 ]
 # Labels are based only on explicit place mentions in headlines or supplied RSS metadata.
 # A location label is NOT a claim that the article applies exclusively to that city.
@@ -61,6 +68,54 @@ def category_for(text, default):
     if any(w in t for w in ("inmueble","vivienda","alquiler","apartamento","construcción")): return "Vivienda"
     return default
 
+
+class _PreviewParser(HTMLParser):
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.parts=[]
+        self.skip=0
+    def handle_starttag(self, tag, attrs):
+        if tag in ("script","style"): self.skip+=1
+        if tag in ("p","br","div") and not self.skip:self.parts.append(" ")
+    def handle_endtag(self,tag):
+        if tag in ("script","style") and self.skip:self.skip-=1
+        if tag in ("p","div") and not self.skip:self.parts.append(" ")
+    def handle_data(self,data):
+        if not self.skip:self.parts.append(data)
+
+def clean_preview(value, limit=165):
+    parser=_PreviewParser()
+    parser.feed(value or "")
+    raw=" ".join(html.unescape("".join(parser.parts)).split())
+    raw=re.sub(r"\\s*(Leer más|Read more|Continuar leyendo)\\s*(»|…|\\.\\.\\.)?\\s*$","",raw,flags=re.I)
+    if len(raw)>limit:
+        raw=raw[:limit].rsplit(" ",1)[0].rstrip(".,;: ")+"…"
+    return raw if len(raw)>=35 else ""
+
+def safe_image(value):
+    if not value: return ""
+    url=html.unescape(value.strip())
+    parsed=urllib.parse.urlparse(url)
+    if parsed.scheme!="https" or not parsed.hostname or parsed.username or parsed.password or len(url)>900:
+        return ""
+    if parsed.hostname in ("localhost",) or parsed.hostname.endswith((".local",".internal")):return ""
+    if url.lower().split("?")[0].endswith((".svg",".gif")):return ""
+    return url
+
+def rss_image(node):
+    # Publisher RSS image metadata only; images are linked remotely, never rehosted.
+    for child in node:
+        tag=child.tag.rsplit("}",1)[-1].lower()
+        if tag in ("content","thumbnail"):
+            url=safe_image(child.attrib.get("url",""))
+            media_type=child.attrib.get("type","")
+            if url and (not media_type or media_type.startswith("image/")):return url
+        if tag=="enclosure":
+            url=safe_image(child.attrib.get("url",""))
+            if url and child.attrib.get("type","").startswith("image/"):return url
+    # Do not scrape embedded article images without a media RSS declaration.
+    return ""
+
 items = {}
 successful_feeds = 0
 for source, feed_url, category, allowed_domain in FEEDS:
@@ -90,11 +145,15 @@ for source, feed_url, category, allowed_domain in FEEDS:
                 continue
             if published > NOW + dt.timedelta(minutes=30) or NOW - published > MAX_AGE:
                 continue
-            summary=" ".join((node.findtext("description") or "").split())
+            summary=node.findtext("description") or ""
+            preview=clean_preview(summary)
+            image_url=rss_image(node)
             # Source's headline and summary are for location tagging only; do not republish full body.
             entry = {"title": title, "url": url, "source": source,
                      "category": category_for(title,category),
                      "regions": region_mentions(title, ""),
+                     "preview": preview,
+                     "image": image_url,
                      "published": published.isoformat()}
             existing = items.get(url)
             if existing is None or (existing["category"] == "Actualidad" and category != "Actualidad"):
@@ -117,12 +176,15 @@ except (OSError,ValueError):
 if accounting.get("month")!=MONTH:
     accounting={"month":MONTH,"characters":0}
 translations_by_url={}
+previews_by_url={}
 if out.exists():
     try:
         existing=json.loads(out.read_text(encoding="utf-8"))
         for old in existing.get("items",[]):
             if isinstance(old.get("translations"),dict):
                 translations_by_url[old["url"]]=old["translations"]
+            if isinstance(old.get("preview_translations"),dict) and old.get("preview")==next((e.get("preview") for e in items.values() if e["url"]==old["url"]),""):
+                previews_by_url[old["url"]]=old["preview_translations"]
     except (ValueError,KeyError,OSError):
         pass
 def translate_batch(texts):
@@ -173,7 +235,10 @@ else:
     for entry in latest:
         if entry["url"] in translations_by_url:
             entry["translations"]=translations_by_url[entry["url"]]
-    pending=[entry for entry in latest if not entry.get("translations")]
+    for entry in latest:
+        if entry["url"] in previews_by_url:
+            entry["preview_translations"]=previews_by_url[entry["url"]]
+    pending=[entry for entry in latest if len(entry.get("translations",{}))!=len(LANGUAGES)]
     if API_KEY and pending:
         for start in range(0,len(pending),8):
             batch=pending[start:start+8]
@@ -186,6 +251,18 @@ else:
                 for idx,languages in translated.items():
                     batch[idx]["translations"]=languages
                 accounting["characters"]+=budget_cost
+    preview_pending=[entry for entry in latest if entry.get("preview") and len(entry.get("preview_translations",{}))!=len(LANGUAGES)]
+    if API_KEY and preview_pending:
+        for start in range(0,len(preview_pending),8):
+            batch=preview_pending[start:start+8]
+            estimated=sum(len(e["preview"]) for e in batch)*len(LANGUAGES)
+            if accounting["characters"]+estimated>TRANSLATION_BUDGET:break
+            converted=translate_batch([e["preview"] for e in batch])
+            if converted:
+                for idx,values in converted.items():
+                    batch[idx]["preview_translations"]=values
+                accounting["characters"]+=estimated
+    if API_KEY:
         USAGE_FILE.write_text(json.dumps(accounting,indent=2)+"\n",encoding="utf-8")
     totals={lang:sum(bool(entry.get("translations",{}).get(lang)) for entry in latest) for lang in LANGUAGES}
     print("Translation coverage by language:", totals, "key configured:", bool(API_KEY))
