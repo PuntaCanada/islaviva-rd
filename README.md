@@ -29,4 +29,6 @@ For each new editorial guide (for example `new-guide.html`):
 
 The GitHub workflow `Check five-language guides` runs on relevant HTML/script changes. It reports failures but currently does not block the Cloudflare Pages deployment. The root Spanish page must remain crawlable without browser-language-based redirects.
 
-**Current scope:** the two local guides have indexable five-language versions. The homepage still uses JavaScript localization at its single root URL and is *not* yet separately indexable in five languages. Do not falsely claim whole-site localized SEO until this is expanded.
+**Current scope:** the homepage and both local guides each have five unique URLs with localized HTML, self-canonical links and reciprocal hreflang. The four localized homepages preserve the original full interactive homepage, with their main static copy translated in HTML and the remaining components rendered by the existing client-side translation code. Some dynamic or asynchronous news/service content can still depend on JavaScript and source-language data. This is not a guarantee of indexing or complete translation of every external data source.
+
+Homepage URLs: `/`, `/de/`, `/en/`, `/fr/`, `/ht/`. All 15 localized URLs are in `sitemap.xml`. New homepage content must be added to all four static HTML homepages and verified across all five languages; keep relative data URLs rooted at `/data/` in subdirectory homepages.
