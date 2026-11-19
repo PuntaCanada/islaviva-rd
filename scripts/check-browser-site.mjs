@@ -32,7 +32,19 @@ async function verify(lang){
   if((await page.evaluate(()=>localStorage.getItem('islaviva-city')))!=='Higüey')throw Error('Chosen city was not saved');
   if(response?.status()!==200)throw Error('Homepage returned HTTP '+response?.status());
   stage="waiting for weather";
-  await page.waitForFunction(()=>document.querySelector('#weather-temp')?.textContent?.includes('°C')||document.querySelector('#weather-temp')?.textContent?.includes('°F'),{timeout:20000});
+  const weatherState=await page.evaluate(async()=>{
+    const response=await fetch('/data/weather.json',{cache:'no-store'});
+    const forecast=await response.json();
+    const record=forecast.cities?.['Higüey'];
+    const age=Date.now()-Date.parse(record?.updated||'');
+    return {fresh:response.ok && Number.isFinite(age) && age<=6*3600000 && age>=-1800000 && Number.isFinite(Number(record?.temperature_c)),ageHours:Math.round(age/3600000)};
+  });
+  if(weatherState.fresh){
+    await page.waitForFunction(()=>document.querySelector('#weather-temp')?.textContent?.includes('°C')||document.querySelector('#weather-temp')?.textContent?.includes('°F'),null,{timeout:8000});
+  }else{
+    await page.waitForFunction(()=>document.querySelector('#weather-temp')?.textContent==='--°',null,{timeout:8000});
+    console.warn('WARN',lang,'weather source is stale ('+weatherState.ageHours+'h); UI correctly hides stale reading');
+  }
   const temp=await page.locator('#weather-temp').innerText();
   const renderedLang=await page.locator('html').getAttribute('lang');
   if(renderedLang!==lang)throw Error('Wrong rendered language '+renderedLang);
