@@ -268,3 +268,20 @@ body.city-chooser-open{overflow:hidden}
 .language-more-list button{display:flex;align-items:center;gap:9px;width:100%;border:0;border-radius:8px;padding:11px;color:#173e33;background:transparent;font:700 13px/1.3 "DM Sans",sans-serif;text-align:left;cursor:pointer}
 .language-more-list button:hover,.language-more-list button:focus-visible,.language-more-list button[aria-current="true"]{background:#e1f4e7}
 @media(max-width:470px){.language-more-list{right:0;min-width:170px}.language-flag{width:20px;height:14px}.language-more-wrap summary{padding:6px}}
+
+/* Keep language and city choices visible on narrow phones without horizontal clipping. */
+@media(max-width:650px){
+ .mainnav .navinner{flex-wrap:wrap;padding-top:9px;padding-bottom:9px;row-gap:8px}
+ .mainnav .brand{flex:1 1 auto}
+ .mainnav .controls{width:100%;margin-left:0;justify-content:space-between;gap:4px;min-width:0}
+ .mainnav .city-quick-select{flex:1 1 auto;min-width:0;max-width:none;text-align:center}
+ .mainnav .language-controls{flex:0 0 auto}
+ .mainnav .iconbtn{min-width:34px;padding:8px}
+}
+@media(max-width:370px){
+ .mainnav .language-direct{padding:5px 4px}
+ .mainnav .language-direct .language-flag{width:18px;height:12px}
+ .mainnav .language-more-wrap summary{padding:6px 5px;font-size:11px}
+ .mainnav .city-quick-select{font-size:10px;padding:7px 4px}
+ .mainnav .controls{gap:3px}
+}
