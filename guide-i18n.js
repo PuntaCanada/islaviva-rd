@@ -13,5 +13,8 @@ const page=location.pathname.split('/').pop();
 const eligible=['ofertas-supermercados-rd.html','apagones-higuey.html'].includes(page);
 const go=locale=>{try{localStorage.setItem('islaviva-language',locale)}catch(e){}location.assign((locale==='es'?'/':'/'+locale+'/')+page)};
 picker.addEventListener('change',()=>{const next=picker.value;if(eligible)go(next);else render(next)});
-const initial=chosen();if(eligible&&initial!=='es')go(initial);else render(initial);
+// Avoid redirecting search crawlers based solely on browser language.
+let savedLanguage='';try{savedLanguage=localStorage.getItem('islaviva-language')||''}catch(e){}
+const initial=eligible?(savedLanguage&&labels[savedLanguage]?savedLanguage:'es'):chosen();
+if(eligible&&initial!=='es')go(initial);else render(initial);
 })();
