@@ -3,8 +3,12 @@ on:
   push:
     branches: [main]
     paths:
-      - index.html
+      - "*.html"
+      - "robots.txt"
+      - "sitemap.xml"
       - "scripts/**"
+      - "tests/**"
+      - "data/local_context.json"
       - ".github/workflows/check-site.yml"
   workflow_dispatch:
 permissions:
@@ -30,7 +34,7 @@ jobs:
           scripts=re.findall(r"<script[^>]*>(.*?)</script>", html, re.S)
           assert scripts, "Missing inline JS"
           pathlib.Path("/tmp/isla-site.js").write_text("\n".join(scripts),encoding="utf-8")
-          for file in ("data/news.json","data/weather.json","data/roadworks.json","data/local_notices.json","data/fuel_prices.json"):
+          for file in ("data/news.json","data/weather.json","data/roadworks.json","data/local_notices.json","data/local_context.json","data/fuel_prices.json"):
               json.loads(pathlib.Path(file).read_text(encoding="utf-8"))
           PY
           node --check /tmp/isla-site.js
