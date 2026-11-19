@@ -569,11 +569,16 @@ async function loadIslandWeather(){
 let liveNews=[];
 let newsScope='all', newsCategory='all', newsSource='all';
 const NEWS_INTERESTS=['sport','tourism','economy','politics','local','culture','nature','gaming','general'];
-const NEWS_PREFS_KEY='islaviva-news-interests-v1';
+const NEWS_PREFS_KEY='islaviva-news-interests-v2';
 function getSavedNewsInterests(){
  try{
-  const stored=JSON.parse(localStorage.getItem(NEWS_PREFS_KEY)||'null');
-  return Array.isArray(stored)?new Set(stored.filter(v=>NEWS_INTERESTS.includes(v))):new Set(NEWS_INTERESTS);
+  const newStored=JSON.parse(localStorage.getItem(NEWS_PREFS_KEY)||'null');
+  if(Array.isArray(newStored))return new Set(newStored.filter(v=>NEWS_INTERESTS.includes(v)));
+  // Existing visitors opted in before Gaming & Tech was added. Preserve their
+  // previous choices while making the new category visible by default.
+  const oldStored=JSON.parse(localStorage.getItem('islaviva-news-interests-v1')||'null');
+  if(Array.isArray(oldStored))return new Set([...oldStored.filter(v=>NEWS_INTERESTS.includes(v)),'gaming']);
+  return new Set(NEWS_INTERESTS);
  }catch(e){return new Set(NEWS_INTERESTS)}
 }
 let visibleNewsInterests=getSavedNewsInterests();
