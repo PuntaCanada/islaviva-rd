@@ -27,7 +27,7 @@ TOPIC_RULES = (
                    r"precios? de|banco central|empleos?|salarios?|"
                    r"inversion(?:es)?|comercio|empresas?)\b",)),
     ("Medioambiente", (r"\b(?:medioambiente|medio ambiente|ecologia|"
-                         r"huracanes?|tormentas?|inundaciones?|lluvias|"
+                         r"huracan(?:es)?|tormentas?|inundaciones?|lluvias|"
                          r"contaminacion|bosques?|conservacion)\b",)),
     ("Cultura", (r"\b(?:cultura|festival|concierto|teatro|artista|"
                    r"museo|literatura|exposicion de arte|"
