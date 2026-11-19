@@ -118,10 +118,13 @@ for source, feed_url, category, allowed_domain in FEEDS:
                 continue
             summary=node.findtext("description") or ""
             preview=clean_preview(summary)
+            # RSS categories are publisher-provided metadata, not article text.
+            feed_tags=[tag.text.strip() for tag in node.findall("category")
+                       if tag.text and tag.text.strip()][:8]
             image_url=rss_image(node)
             # Source's headline and summary are for location tagging only; do not republish full body.
             entry = {"title": title, "url": url, "source": source,
-                     "category": category_for(title,category),
+                     "category": category_for(title,category,preview,feed_tags),
                      "regions": region_mentions(title),
                      "preview": preview,
                      "image": image_url,
