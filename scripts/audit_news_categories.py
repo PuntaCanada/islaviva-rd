@@ -54,7 +54,7 @@ SOFT_EXCEPTIONS={
  ("Seguridad","Cultura"):re.compile(r"\b(?:drama|pelicula|serie|documental|actriz|actor)\b"),
 }
 ENVIRONMENT_SIGNAL=re.compile(
- r"\b(?:meteorologia|clima|lluvia|aguacero|huracan|tormenta|"
+ r"\b(?:meteorologia|clima|lluvias?|aguaceros?|huracan|tormenta|"
  r"medio ambiente|medioambiente|ecologia|bosque|"
  r"inundacion|cambio climatico|contaminacion|"
  r"energia renovable|biodiversidad|calentamiento global)\b")
