@@ -798,18 +798,18 @@ function renderNewsPortal(){
  const countsBySource=new Map();
  for(const tier of [2,1,0]){
   const options=ranked.filter(n=>relevance(n)===tier);
+  // Prefer a balanced publisher mix, but only *within the same geographic tier*.
   for(const n of options){
    if(picked.length>=12)break;
    if((countsBySource.get(n.source)||0)>=4)continue;
    picked.push(n);
    countsBySource.set(n.source,(countsBySource.get(n.source)||0)+1);
   }
- }
- // If publisher concentration prevented filling the grid, add remaining
- // stories in relevance/freshness order, with no duplicates.
- for(const n of ranked){
-  if(picked.length>=12)break;
-  if(!picked.includes(n))picked.push(n);
+  // Fill all available city articles before showing nearby/national articles.
+  for(const n of options){
+   if(picked.length>=12)break;
+   if(!picked.includes(n))picked.push(n);
+  }
  }
  const priority=document.getElementById('news-local-priority');
  const localCount=picked.filter(n=>relevance(n)===2).length;
