@@ -256,6 +256,15 @@ function newsActive(){
   }catch(e){return false}
  });
 }
+function effectiveNewsCategory(n){return newsInterest(n)==='sport'?'Deportes':(n.category||'Actualidad')}
+const newsCategoryLabels={
+ es:{Deportes:'Deportes',Actualidad:'Actualidad',Turismo:'Turismo',Economía:'Economía',Regionales:'Regionales',Política:'Política'},
+ de:{Deportes:'Sport',Actualidad:'Aktuelles',Turismo:'Tourismus',Economía:'Wirtschaft',Regionales:'Regionales',Política:'Politik'},
+ en:{Deportes:'Sports',Actualidad:'News',Turismo:'Tourism',Economía:'Economy',Regionales:'Regional',Política:'Politics'},
+ fr:{Deportes:'Sport',Actualidad:'Actualités',Turismo:'Tourisme',Economía:'Économie',Regionales:'Régional',Política:'Politique'},
+ ht:{Deportes:'Espò',Actualidad:'Aktyalite',Turismo:'Touris',Economía:'Ekonomi',Regionales:'Rejyonal',Política:'Politik'}
+};
+function newsCategoryLabel(c){return newsCategoryLabels[lang]?.[c]||c}
 function renderNewsPortal(){
  if(!liveNews.length)return;
  const ui=newsUi[lang]||newsUi.es;
@@ -269,20 +278,20 @@ function renderNewsPortal(){
  });
  renderNewsPreferences();
  const valid=newsActive().filter(n=>visibleNewsInterests.has(newsInterest(n)));
- const categories=[...new Set(valid.map(n=>n.category||'Actualidad'))].sort((a,b)=>a.localeCompare(b));
+ const categories=[...new Set(valid.map(n=>effectiveNewsCategory(n)))].sort((a,b)=>a.localeCompare(b));
  const publishers=[...new Set(valid.map(n=>n.source))].sort((a,b)=>a.localeCompare(b));
  const cat=document.getElementById('news-category'),source=document.getElementById('news-source');
  const option=(key,value)=>'<option value="'+esc(value)+'">'+esc(key)+'</option>';
- cat.innerHTML=option(ui.topics,'all')+categories.map(c=>option(c,c)).join('');
+ cat.innerHTML=option(ui.topics,'all')+categories.map(c=>option(newsCategoryLabel(c),c)).join('');
  source.innerHTML=option(ui.sources,'all')+publishers.map(c=>option(c,c)).join('');
  if(!categories.includes(newsCategory))newsCategory='all';
  if(!publishers.includes(newsSource))newsSource='all';
  cat.value=newsCategory;source.value=newsSource;
  const selected=valid.filter(n=>(newsScope!=='local'||(Array.isArray(n.regions)&&n.regions.includes(city))) &&
-   (newsCategory==='all'||n.category===newsCategory) &&
+   (newsCategory==='all'||effectiveNewsCategory(n)===newsCategory) &&
    (newsSource==='all'||n.source===newsSource));
  const buckets=new Map();
- for(const n of selected){const k=n.source+' / '+n.category;if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(n)}
+ for(const n of selected){const k=n.source+' / '+effectiveNewsCategory(n);if(!buckets.has(k))buckets.set(k,[]);buckets.get(k).push(n)}
  const picked=[];
  while(picked.length<12 && [...buckets.values()].some(g=>g.length)){
   for(const group of buckets.values())if(group.length&&picked.length<12)picked.push(group.shift());
@@ -308,7 +317,7 @@ function renderNewsPortal(){
    const visualCaption='<span class="news-caption">'+esc(newsVisualLabel())+'</span>';
 
    const teaser=preview?'<div class="news-teaser">'+esc(preview)+'</div>':'';
-   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+art+photoMarkup+visualCaption+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
+   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+art+photoMarkup+visualCaption+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(newsCategoryLabel(effectiveNewsCategory(n)))+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
 
  }).join('');
  const notice=document.querySelector('[data-t="newsdisclaimer"]');
