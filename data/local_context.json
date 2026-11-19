@@ -1,0 +1,23 @@
+{
+  "updated": "2026-11-19",
+  "items": [
+    {
+      "kind": "power",
+      "regions": [
+        "Higüey"
+      ],
+      "date": "2026-11-03",
+      "status": "archived_report",
+      "title": "EDEEste meldete eine Störung an einem Transformator in Higüey",
+      "translations": {
+        "es": "EDEEste reportó una avería en un transformador de Higüey",
+        "de": "EDEEste meldete eine Störung an einem Transformator in Higüey",
+        "en": "EDEEste reported a transformer failure in Higüey",
+        "fr": "EDEEste a signalé une panne de transformateur à Higüey",
+        "ht": "EDEEste te rapòte yon pann transfòmatè nan Higüey"
+      },
+      "source": "InfoDiario (Bericht über EDEEste)",
+      "url": "https://infodiario.do/edeeste-reporta-apagones-en-santo-domingo-este-e-higuey/"
+    }
+  ]
+}
