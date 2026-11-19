@@ -37,7 +37,7 @@ REGIONS = {
     "Higüey": ("higüey", "higuey", "la altagracia"),
     "Punta Cana": ("punta cana", "bávaro", "bavaro", "verón", "veron", "cap cana"),
     "Santo Domingo": ("santo domingo", "distrito nacional", "gran santo domingo"),
-    "Santiago": ("santiago de los caballeros", "santiago rodríguez", "santiago rodriguez"),
+    "Santiago": ("santiago de los caballeros", "santiago"),
     "La Romana": ("la romana",),
     "Puerto Plata": ("puerto plata",),
     "Samaná": ("samaná", "samana", "las terrenas", "sánchez, samaná"),
@@ -94,7 +94,7 @@ for source, feed_url, category, allowed_domain in FEEDS:
             # Source's headline and summary are for location tagging only; do not republish full body.
             entry = {"title": title, "url": url, "source": source,
                      "category": category_for(title,category),
-                     "regions": region_mentions(title, summary),
+                     "regions": region_mentions(title, ""),
                      "published": published.isoformat()}
             existing = items.get(url)
             if existing is None or (existing["category"] == "Actualidad" and category != "Actualidad"):
