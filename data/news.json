@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:09:37.202534+00:00",
+  "updated": "2026-11-19T08:17:29.136077+00:00",
   "source_status": "ok",
   "items": [
     {
@@ -8,12 +8,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Analizar la incursión del presidente salvadoreño en Haití tiene que partir de una óptica entendible desde el punto de vista de su obligación de preservar la…",
+      "image": "",
       "published": "2026-11-19T08:00:36+00:00",
       "translations": {
         "de": "Bukeles Strategie in Haiti",
         "en": "Bukele's strategy in Haiti",
         "fr": "La stratégie de Bukele en Haïti",
         "ht": "Estrateji Bukele nan Ayiti"
+      },
+      "preview_translations": {
+        "de": "Die Analyse des Einmarsches des salvadorianischen Präsidenten in Haiti muss aus einer verständlichen Perspektive aus der Perspektive seiner Verpflichtung ausgehen, die...",
+        "en": "Analyzing the Salvadoran president's incursion into Haiti must start from an understandable perspective from the point of view of his obligation to preserve the...",
+        "fr": "L’analyse de l’incursion du président salvadorien en Haïti doit partir d’une perspective compréhensible, du point de vue de son obligation de préserver le...",
+        "ht": "Analize envazyon prezidan Salvadoren an nan Ayiti dwe kòmanse soti nan yon pèspektiv ki konprann nan pwen de vi obligasyon li pou prezève..."
       }
     },
     {
@@ -22,12 +30,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.- El bloque de diputados de la Fuerza del Pueblo (FP) cuestionó el segundo presupuesto complementario de 2026, al considerar que incrementa la deuda…",
+      "image": "",
       "published": "2026-11-19T08:00:00+00:00",
       "translations": {
         "de": "FP hinterfragt den Anstieg der Staatsverschuldung und der Ausgaben",
         "en": "FP questions the increase in government debt and spending",
         "fr": "Le FP remet en question l’augmentation de la dette publique et des dépenses publiques",
         "ht": "FP poze kesyon sou ogmantasyon dèt ak depans gouvènman an"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.- Der Abgeordnetenblock von Fuerza del Pueblo (FP) stellte den zweiten Nachtragshaushalt für 2026 in Frage, da er die Schulden erhöhte...",
+        "en": "SANTO DOMINGO.- The bloc of deputies of Fuerza del Pueblo (FP) questioned the second supplementary budget for 2026, considering that it increases the debt...",
+        "fr": "SANTO DOMINGO.- Le bloc des députés de la Fuerza del Pueblo (FP) a remis en question le deuxième budget supplémentaire pour 2026, estimant qu’il augmente la dette...",
+        "ht": "SANTO DOMINGO.- Blòk depite Fuerza del Pueblo (FP) te poze kesyon sou dezyèm bidjè siplemantè pou 2026, konsidere ke li ogmante dèt la..."
       }
     },
     {
@@ -36,12 +52,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.- El vicepresidente del Partido Revolucionario Moderno (PRM), Deligne Ascención, restó importancia a las diferencias públicas entre la vicepresidenta…",
+      "image": "",
       "published": "2026-11-19T07:00:47+00:00",
       "translations": {
         "de": "Ascención verteidigt Raquel Peña und Milagros Ortiz Bosch",
         "en": "Ascención defends Raquel Peña and Milagros Ortiz Bosch",
         "fr": "Ascención défend Raquel Peña et Milagros Ortiz Bosch",
         "ht": "Ascención defann Raquel Peña ak Milagros Ortiz Bosch"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.- Der Vizepräsident der Modernen Revolutionären Partei (PRM), Deligne Ascención, spielte die öffentlichen Differenzen zwischen dem Vizepräsidenten herunter...",
+        "en": "SANTO DOMINGO.- The vice president of the Modern Revolutionary Party (PRM), Deligne Ascención, downplayed the public differences between the vice president...",
+        "fr": "SANTO DOMINGO.- Le vice-président du Parti révolutionnaire moderne (PRM), Deligne Ascención, a minimisé les différends publics entre les vice-présidents...",
+        "ht": "SANTO DOMINGO.- Vis prezidan Pati Revolisyonè Modèn (PRM), Deligne Ascención, te minimize diferans piblik ki genyen ant vis-prezidan yo..."
       }
     },
     {
@@ -50,12 +74,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "POR ALFONSO BENOIT América Latina lleva décadas marcada por la violencia, la delincuencia y la corrupción. Nos han vendido la idea de que combatir estos males es…",
+      "image": "",
       "published": "2026-11-19T07:00:10+00:00",
       "translations": {
         "de": "Bukele, regionaler Effekt",
         "en": "Bukele, regional effect",
         "fr": "Bukele, effet régional",
         "ht": "Bukele, efè rejyonal"
+      },
+      "preview_translations": {
+        "de": "VON ALFONSO BENOIT Lateinamerika ist seit Jahrzehnten von Gewalt, Kriminalität und Korruption geprägt. Uns wurde die Vorstellung verkauft, dass der Kampf gegen diese Übel...",
+        "en": "BY ALFONSO BENOIT Latin America has been marked by violence, crime, and corruption for decades. We have been sold the idea that fighting these evils is...",
+        "fr": "PAR ALFONSO BENOIT L’Amérique latine est marquée par la violence, la criminalité et la corruption depuis des décennies. On nous a vendu l’idée que combattre ces maux est...",
+        "ht": "PA ALFONSO BENOIT Amerik Latin nan make pa vyolans, krim, ak koripsyon pandan plizyè deseni. Yo te vann nou lide ke konbat mechanste sa yo se..."
       }
     },
     {
@@ -64,12 +96,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.- El exprocurador general de la República Francisco Domínguez Brito pidió al presidente Luis Abinader no atribuir a debilidades institucionales las…",
+      "image": "",
       "published": "2026-11-19T06:00:18+00:00",
       "translations": {
         "de": "Domínguez Brito lehnt Erklärungen zu SeNaSa zurück",
         "en": "Domínguez Brito rejects explanations about SeNaSa",
         "fr": "Domínguez Brito rejette les explications concernant SeNaSa",
         "ht": "Domínguez Brito rejte eksplikasyon sou SeNaSa"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.- Der ehemalige Generalstaatsanwalt der Republik, Francisco Domínguez Brito, bat Präsident Luis Abinader, institutionelle Schwächen nicht der ... zuzuschreiben.",
+        "en": "SANTO DOMINGO.- Former Attorney General of the Republic Francisco Domínguez Brito asked President Luis Abinader not to attribute institutional weaknesses to the...",
+        "fr": "SANTO DOMINGO.- L’ancien procureur général de la République Francisco Domínguez Brito a demandé au président Luis Abinader de ne pas attribuer les faiblesses institutionnelles à...",
+        "ht": "SANTO DOMINGO.- Ansyen Avoka Jeneral Repiblik la, Francisco Domínguez Brito, te mande Prezidan Luis Abinader pou pa atribye feblès enstitisyonèl yo..."
       }
     },
     {
@@ -78,12 +118,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "¿Qué ocurriría si pudiéramos viajar a la velocidad de la luz? La imaginación responde con una escena imposible: el espacio y el tiempo se plegarían como un mapa…",
+      "image": "",
       "published": "2026-11-19T06:00:08+00:00",
       "translations": {
         "de": "Eine literarische Reflexion über Zeit, Aufmerksamkeit und selbstlose Liebe",
         "en": "A literary reflection on time, attention, and selfless love",
         "fr": "Une réflexion littéraire sur le temps, l’attention et l’amour désintéressé",
         "ht": "Yon refleksyon literè sou tan, atansyon, ak lanmou san egois"
+      },
+      "preview_translations": {
+        "de": "Was würde passieren, wenn wir mit Lichtgeschwindigkeit reisen könnten? Die Vorstellungskraft reagiert mit einer unmöglichen Szene: Raum und Zeit würden sich wie eine Karte zusammenfalten...",
+        "en": "What would happen if we could travel at the speed of light? Imagination responds with an impossible scene: space and time would fold together like a map...",
+        "fr": "Que se passerait-il si nous pouvions voyager à la vitesse de la lumière ? L’imagination répond par une scène impossible : l’espace et le temps se replieraient ensemble comme une carte...",
+        "ht": "Kisa k ta rive si nou te ka vwayaje nan vitès limyè? Imajinasyo reponn ak yon sèn enposib: espas ak tan ta pliye ansanm tankou yon kat..."
       }
     },
     {
@@ -92,12 +140,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.– Los Tigres del Licey, las Estrellas Orientales y los Toros del Este salieron airosos este miércoles en la continuación del campeonato de béisbol…",
+      "image": "",
       "published": "2026-11-19T06:00:02+00:00",
       "translations": {
         "de": "Licey, Estrellas und Toros triumphieren im dominikanischen Winterbaseball",
         "en": "Licey, Estrellas, and Toros triumph in Dominican winter baseball",
         "fr": "Licey, Estrellas et Toros triomphent dans le baseball hivernal dominicain",
         "ht": "Licey, Estrellas, ak Toros genyen nan bezbòl ivè Dominiken"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.– Die Tigres del Licey, die Estrellas Orientales und die Toros del Este gingen an diesem Mittwoch mit der Fortsetzung der Baseballmeisterschaft als Sieger hervor...",
+        "en": "SANTO DOMINGO.– The Tigres del Licey, the Estrellas Orientales, and the Toros del Este came out victorious this Wednesday in the continuation of the baseball championship...",
+        "fr": "SANTO DOMINGO.– Les Tigres del Licey, les Estrellas Orientales et les Toros del Este sont sortis victorieux ce mercredi dans la poursuite du championnat de baseball...",
+        "ht": "SANTO DOMINGO.– Tigres del Licey, Estrellas Orientales, ak Toros del Este yo sòti viktorye mèkredi sa a nan kontinyasyon chanpyona bezbòl la..."
       }
     },
     {
@@ -106,12 +162,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SAN PEDRO DE MACORÍS.- Las escuadras del Todos Estrellas de Consuelo y Titanes de Miramar vencieron en la continuación de la serie regular del 44 Torneo de…",
+      "image": "",
       "published": "2026-11-19T05:49:58+00:00",
       "translations": {
         "de": "Consuelo und Miramar gewinnen beim 44. TBS in San Pedro de Macorís",
         "en": "Consuelo and Miramar win at the 44th TBS in San Pedro de Macorís",
         "fr": "Consuelo et Miramar gagnent au 44e TBS à San Pedro de Macorís",
         "ht": "Consuelo ak Miramar genyen nan 44yèm TBS nan San Pedro de Macorís"
+      },
+      "preview_translations": {
+        "de": "SAN PEDRO DE MACORÍS.- Die Teams von Omniestrellas de Consuelo und Titanes de Miramar gewannen die Fortsetzung der regulären Serie des 44. Torneo de...",
+        "en": "SAN PEDRO DE MACORÍS.- The teams of Omniestrellas de Consuelo and Titanes de Miramar won the continuation of the regular series of the 44th Torneo de...",
+        "fr": "SAN PEDRO DE MACORÍS.- Les équipes d’Omniestrellas de Consuelo et Titanes de Miramar ont remporté la continuation de la série régulière du 44e Tournoi de...",
+        "ht": "SAN PEDRO DE MACORÍS.- Ekip Omniestrellas de Consuelo ak Titanes de Miramar te genyen kontinyasyon seri regilye 44yèm Torneo de..."
       }
     },
     {
@@ -120,12 +184,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.- La Dirección General de Aduanas (DGA) anunció que mantendrá en US$5,500 el monto de la gracia navideña que permite a los dominicanos residentes en…",
+      "image": "",
       "published": "2026-11-19T05:15:36+00:00",
       "translations": {
         "de": "Der Zoll wird den Betrag des Weihnachtsgrabens bei 5.500 US-Dollar behalten",
         "en": "Customs will maintain the amount of the Christmas grace at US$5,500",
         "fr": "Les douanes maintiendront le montant de la grâce de Noël à 5 500 dollars US",
         "ht": "Ladwàn ap kenbe kantite gras Nwèl la nan US$5,500"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.- Die Generaldirektion für Zoll (DGA) gab bekannt, dass sie den Betrag der Weihnachtsgrab, der Dominikanern mit Wohnsitz in Dominikanern erlaubt, auf 5.500 US-Dollar beibehalten wird...",
+        "en": "SANTO DOMINGO.- The General Directorate of Customs (DGA) announced that it will maintain at US$5,500 the amount of the Christmas grace that allows Dominicans residing in...",
+        "fr": "SANTO DOMINGO.- La Direction générale des douanes (DGA) a annoncé qu’elle maintiendra à 5 500 dollars US le montant de la grâce de Noël qui permet aux Dominicains résidant à...",
+        "ht": "SANTO DOMINGO.- Direksyon Jeneral Ladwàn (DGA) anonse li pral kenbe nan US$5,500 kantite gras Nwèl ki pèmèt Dominiken k ap viv nan..."
       }
     },
     {
@@ -134,12 +206,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "CARACAS, Venezuela.– La Confederación de Béisbol Profesional del Caribe (CBPC) y la Asociación de Béisbol de las Américas (ABAM) firmaron un acuerdo de cooperación…",
+      "image": "",
       "published": "2026-11-19T05:10:54+00:00",
       "translations": {
         "de": "CBPC und ABAM einigen sich darauf, den professionellen Baseball in Amerika zu integrieren",
         "en": "CBPC and ABAM agree to integrate professional baseball in America",
         "fr": "CBPC et ABAM acceptent d’intégrer le baseball professionnel en Amérique",
         "ht": "CBPC ak ABAM dakò pou entegre bezbòl pwofesyonèl nan Amerik"
+      },
+      "preview_translations": {
+        "de": "CARACAS, Venezuela.– Die Karibische Professionelle Baseballkonföderation (CBPC) und die Baseball-Vereinigung der Amerikas (ABAM) haben ein Kooperationsabkommen unterzeichnet...",
+        "en": "CARACAS, Venezuela.– The Caribbean Professional Baseball Confederation (CBPC) and the Baseball Association of the Americas (ABAM) signed a cooperation agreement...",
+        "fr": "CARACAS, Venezuela.– La Confédération professionnelle de baseball des Caraïbes (CBPC) et l’Association de baseball des Amériques (ABAM) ont signé un accord de coopération...",
+        "ht": "CARACAS, Venezyela.– Konfederasyon Pwofesyonèl Bezbòl Karayib la (CBPC) ak Asosyasyon Bezbòl Amerik yo (ABAM) siyen yon akò kolaborasyon..."
       }
     },
     {
@@ -148,12 +228,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "MADRID.- Uno de los jefes de la banda Dominican Don’t Play (DDP) fue apuñalado de gravedad en un parque de Madrid. La víctima, de 27 años, podría ser uno de los…",
+      "image": "",
       "published": "2026-11-19T05:10:32+00:00",
       "translations": {
         "de": "MADRID: Ein dominikanischer Don't Play-Trainer schwer verletzt",
         "en": "MADRID: A Dominican Don't Play manager seriously injured",
         "fr": "MADRID : Un entraîneur dominicain de Don’t Play gravement blessé",
         "ht": "MADRID: Yon manadjè Dominican Don't Play blese grav"
+      },
+      "preview_translations": {
+        "de": "MADRID.- Einer der Anführer der Dominican Don't Play (DDP)-Bande wurde in einem Park in Madrid schwer erstochen. Das Opfer, 27 Jahre alt, könnte eines der...",
+        "en": "MADRID.- One of the leaders of the Dominican Don't Play (DDP) gang was seriously stabbed in a park in Madrid. The victim, 27 years old, could be one of the...",
+        "fr": "MADRID.- L’un des chefs du gang dominicain Don’t Play (DDP) a été grièvement poignardé dans un parc à Madrid. La victime, âgée de 27 ans, pourrait être l’une des...",
+        "ht": "MADRID.- Youn nan lidè gang Dominican Don't Play (DDP) te blese grav ak kout kouto nan yon pak nan Madrid. Viktim nan, 27 an, ta ka youn nan..."
       }
     },
     {
@@ -162,12 +250,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO. Cuatro atletas partieron a Uzbekistán para tomar parte en el Campeonato Mundial Junior de Judo 2026 que se celebrará del 19 al 22 de este mes y que…",
+      "image": "",
       "published": "2026-11-19T05:05:55+00:00",
       "translations": {
         "de": "DR Judo geht zur Usbekistanischen Junioren-Weltmeisterschaft",
         "en": "DR Judo goes to the Uzbekistan Junior World Championship",
         "fr": "DR Judo va au Championnat du monde junior d’Ouzbékistan",
         "ht": "DR Judo ale nan Chanpyona Mondyal Jinyò Ouzbekistan"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO. Vier Athleten sind nach Usbekistan aufgebrochen, um an der Junioren-Weltmeisterschaft im Judo 2026 teilzunehmen, die vom 19. bis 22. dieses Monats stattfindet und die...",
+        "en": "SANTO DOMINGO. Four athletes left for Uzbekistan to take part in the 2026 Junior World Judo Championship, which will be held from the 19th to the 22nd of this month and which...",
+        "fr": "SANTO DOMINGO. Quatre athlètes sont partis pour l’Ouzbékistan afin de participer au Championnat du monde junior de judo 2026, qui se tiendra du 19 au 22 de ce mois-ci et qui...",
+        "ht": "SANTO DOMINGO. Katriyèm atlèt te pati pou Ouzbekistan pou patisipe nan Chanpyona Mondyal Jinyò Judo 2026 la, ki pral fèt soti 19 rive 22 mwa sa a e ki..."
       }
     },
     {
@@ -178,12 +274,20 @@
       "regions": [
         "Punta Cana"
       ],
+      "preview": "PUNTA CANA, República Dominicana.– La República Dominicana será sede, desde este viernes y hasta el domingo 22 de noviembre, del 40.º Congreso Mundial de la…",
+      "image": "",
       "published": "2026-11-19T05:03:57+00:00",
       "translations": {
         "de": "Punta Cana wird den 40. Volleyball-Weltkongress ausrichten",
         "en": "Punta Cana will host the 40th Volleyball World Congress",
         "fr": "Punta Cana accueillera le 40e Congrès mondial de volley-ball",
         "ht": "Punta Cana pral òganize 40yèm Kongrè Mondyal Volebòl la"
+      },
+      "preview_translations": {
+        "de": "PUNTA CANA, Dominikanische Republik.– Die Dominikanische Republik wird von diesem Freitag bis Sonntag, dem 22. November, den 40. Weltkongress der ...",
+        "en": "PUNTA CANA, Dominican Republic.– The Dominican Republic will host, from this Friday until Sunday, November 22, the 40th World Congress of the...",
+        "fr": "PUNTA CANA, République dominicaine.– La République dominicaine accueillera, de ce vendredi jusqu’au dimanche 22 novembre, le 40e Congrès mondial du...",
+        "ht": "PUNTA CANA, Repiblik Dominikèn.– Repiblik Dominikèn ap òganize, soti vandredi sa a jiska dimanch 22 novanm, 40yèm Kongrè Mondyal la..."
       }
     },
     {
@@ -192,12 +296,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.– Una misión del Fondo Monetario Internacional (FMI), encabezada por Michael Perks, se reunió con el presidente ejecutivo del Banco de Reservas…",
+      "image": "",
       "published": "2026-11-19T05:00:57+00:00",
       "translations": {
         "de": "IWF-Mission analysiert die Finanzperformance der Reserve Bank",
         "en": "IMF Mission analyzes Reserve Bank financial performance",
         "fr": "La mission du FMI analyse la performance financière de la Banque de réserve",
         "ht": "Misyon FMI analize pèfòmans finansye Bank Rezèv la"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.– Eine Mission des Internationalen Währungsfonds (IWF) unter der Leitung von Michael Perks traf sich mit dem CEO der Zentralbank...",
+        "en": "SANTO DOMINGO.– A mission from the International Monetary Fund (IMF), led by Michael Perks, met with the CEO of the Reserve Bank...",
+        "fr": "SANTO DOMINGO.– Une mission du Fonds monétaire international (FMI), dirigée par Michael Perks, a rencontré le PDG de la Banque de réserve...",
+        "ht": "SANTO DOMINGO.– Yon misyon Fon Monetè Entènasyonal (FMI), ki Michael Perks te dirije, te rankontre ak PDG Bank Rezèv la..."
       }
     },
     {
@@ -206,12 +318,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "DOHA, Catar.- República Dominicana fue electa por primera vez como miembro del Consejo de la Unión Internacional de Telecomunicaciones (UIT) para el período…",
+      "image": "",
       "published": "2026-11-19T05:00:54+00:00",
       "translations": {
         "de": "CATAR: DR zum ersten Mal in den ITU-Rat gewählt",
         "en": "CATAR: DR elected for the first time to the ITU Council",
         "fr": "CATAR : DR élu pour la première fois au Conseil de l’UIT",
         "ht": "CATAR: DR eli pou premye fwa nan Konsèy ITU a"
+      },
+      "preview_translations": {
+        "de": "DOHA, Katar.- Die Dominikanische Republik wurde erstmals als Mitglied des Rates der Internationalen Telekommunikationsunion (ITU) für die Amtszeit gewählt...",
+        "en": "DOHA, Qatar.- The Dominican Republic was elected for the first time as a member of the Council of the International Telecommunication Union (ITU) for the term...",
+        "fr": "DOHA, Qatar.- La République dominicaine a été élue pour la première fois membre du Conseil de l’Union internationale des télécommunications (UIT) pour ce mandat...",
+        "ht": "DOHA, Katar.- Repiblik Dominikèn te eli pou premye fwa kòm manm Konsèy Inyon Entènasyonal Telekominikasyon (ITU) pou manda a..."
       }
     },
     {
@@ -222,12 +342,20 @@
       "regions": [
         "Higüey"
       ],
+      "preview": "POR NAPOLEON DE LA CRUZ HIGÜEY. – El municipio Higüey representa una oportunidad para diversificar la oferta turística de la región Este de República Dominicana…",
+      "image": "",
       "published": "2026-11-19T05:00:52+00:00",
       "translations": {
         "de": "Higüey: Kultur- und Religionstourismus als Ergänzung",
         "en": "Higüey: Cultural and religious tourism as a complement",
         "fr": "Higüey : tourisme culturel et religieux comme complément",
         "ht": "Higüey: Touris kiltirèl ak relijye kòm yon konpleman"
+      },
+      "preview_translations": {
+        "de": "VON NAPOLEON DE LA CRUZ HIGÜEY. – Die Gemeinde Higüey bietet eine Chance, das touristische Angebot der östlichen Region der Dominikanischen Republik zu diversifizieren...",
+        "en": "BY NAPOLEON DE LA CRUZ HIGÜEY. – The municipality of Higüey represents an opportunity to diversify the tourist offer of the Eastern region of the Dominican Republic...",
+        "fr": "PAR NAPOLÉON DE LA CRUZ HIGÜEY. – La municipalité de Higüey représente une opportunité de diversifier l’offre touristique de la région Est de la République dominicaine...",
+        "ht": "PA NAPOLEON DE LA CRUZ HIGÜEY. – Minisipalite Higüey reprezante yon opòtinite pou divèsifye òf touris nan rejyon lès Repiblik Dominikèn..."
       }
     },
     {
@@ -236,12 +364,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.- El presidente de Avancemos, Carlos Amarante Baret, advirtió que el electorado dominicano prefiere evitar una segunda vuelta y llamó a la oposición a…",
+      "image": "",
       "published": "2026-11-19T05:00:41+00:00",
       "translations": {
         "de": "Amarante Baret stellt die Haltung der PLD zu Allianzen in Frage",
         "en": "Amarante Baret questions the PLD's stance on alliances",
         "fr": "Amarante Baret remet en question la position du PLD sur les alliances",
         "ht": "Amarante Baret poze kesyon sou pozisyon PLD sou alyans yo"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.- Der Präsident von Avancemos, Carlos Amarante Baret, warnte, dass die dominikanische Wählerschaft es vorzieht, eine Stichwahl zu vermeiden, und rief die Opposition auf, ...",
+        "en": "SANTO DOMINGO.- The president of Avancemos, Carlos Amarante Baret, warned that the Dominican electorate prefers to avoid a runoff and called on the opposition to...",
+        "fr": "SANTO DOMINGO. - Le président d’Avancemos, Carlos Amarante Baret, a averti que l’électorat dominicain préfère éviter un second tour et a appelé l’opposition à...",
+        "ht": "SANTO DOMINGO.- Prezidan Avancemos, Carlos Amarante Baret, te avèti ke elektora Dominiken an prefere evite yon dezyèm tou epi li te mande opozisyon an pou..."
       }
     },
     {
@@ -250,12 +386,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.– La República Dominicana registra avances en la supervivencia infantil, la reducción del embarazo adolescente y el mejoramiento de las condiciones de…",
+      "image": "",
       "published": "2026-11-19T05:00:28+00:00",
       "translations": {
         "de": "Die Säuglingssterblichkeit in der DR sinkt auf 22 pro tausend Lebendgeburten",
         "en": "Infant mortality in the DR drops to 22 per thousand live births",
         "fr": "La mortalité infantile en RD chute à 22 pour mille naissances vivantes",
         "ht": "Mòtalite tibebe nan RD bese a 22 pou chak mil nesans vivan"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.– Die Dominikanische Republik macht Fortschritte beim Überleben von Kindern, reduziert Teenagerschwangerschaften und verbessert die Bedingungen von...",
+        "en": "SANTO DOMINGO.– The Dominican Republic is making progress in child survival, reducing teenage pregnancy, and improving conditions of...",
+        "fr": "SANTO DOMINGO.– La République dominicaine progresse dans la survie des enfants, la réduction des grossesses chez les adolescentes et l’amélioration des conditions de...",
+        "ht": "SANTO DOMINGO.– Repiblik Dominikèn ap fè pwogrè nan siviv timoun, diminye gwosès adolesan, epi amelyore kondisyon yo..."
       }
     },
     {
@@ -264,12 +408,20 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "SANTO DOMINGO.– Barrick Pueblo Viejo recibió por segunda ocasión el Sello Igualando RD en categoría Platino, la máxima distinción que otorgan el Ministerio de la…",
+      "image": "",
       "published": "2026-11-19T05:00:26+00:00",
       "translations": {
         "de": "Barrick Pueblo Viejo erhält zum zweiten Mal das Igualando RD-Siegel",
         "en": "Barrick Pueblo Viejo receives the Igualando RD Seal for the second time",
         "fr": "Barrick Pueblo Viejo reçoit pour la deuxième fois le sceau RD d’Igualando",
         "ht": "Barrick Pueblo Viejo resevwa Sèl RD Igualando pou dezyèm fwa"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.– Barrick Pueblo Viejo erhielt zum zweiten Mal das Igualando RD-Siegel in der Kategorie Platin, die höchste Auszeichnung, die vom Ministerium der ...",
+        "en": "SANTO DOMINGO.– Barrick Pueblo Viejo received for the second time the Igualando RD Seal in the Platinum category, the highest distinction awarded by the Ministry of the...",
+        "fr": "SANTO DOMINGO.– Barrick Pueblo Viejo a reçu pour la deuxième fois le Sceau Igualando RD dans la catégorie Platine, la plus haute distinction décernée par le Ministère des...",
+        "ht": "SANTO DOMINGO.– Barrick Pueblo Viejo resevwa pou dezyèm fwa Sèl RD Igualando nan kategori Platinum, pi gwo distenksyon Ministè a..."
       }
     },
     {
@@ -278,12 +430,68 @@
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Por RAFAELA GOMEZ La historia política de la República Dominicana está llamada a dar un paso trascendental: abrir las puertas del Palacio Nacional para que, por…",
+      "image": "",
       "published": "2026-11-19T05:00:21+00:00",
       "translations": {
         "de": "Carolina Mejía und die historische Stunde der dominikanischen Frauen (MEINUNG)",
         "en": "Carolina Mejía and the Historic Hour of Dominican Women (OPINION)",
         "fr": "Carolina Mejía et l’Heure historique des femmes dominicaines (OPINION)",
         "ht": "Carolina Mejía ak Lè Istorik Fanm Dominiken yo (OPINYON)"
+      },
+      "preview_translations": {
+        "de": "Von RAFAELA GOMEZ Die politische Geschichte der Dominikanischen Republik ist zu einem bedeutenden Schritt aufgerufen: die Türen des Nationalpalastes zu öffnen, sodass durch...",
+        "en": "By RAFAELA GOMEZ The political history of the Dominican Republic is called to take a momentous step: to open the doors of the National Palace so that, by...",
+        "fr": "Par RAFAELA GOMEZ L’histoire politique de la République dominicaine est appelée à franchir un pas majeur : ouvrir les portes du Palais National afin que, par...",
+        "ht": "Pa RAFAELA GOMEZ Istwa politik Repiblik Dominikèn nan rele pou pran yon etap enpòtan: louvri pòt Palè Nasyonal la pou, pa..."
+      }
+    },
+    {
+      "title": "Luis Abinader recibirá en Cap Cana a presidentes de Panamá, Bolivia y Honduras",
+      "url": "https://puntacanapost.com/luis-abinader-recibira-en-cap-cana-a-presidentes-de-panama-bolivia-y-honduras/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«Cap Cana se convertirá en punto de encuentro de mandatarios y representantes internacionales, con una agenda que busca discutir el futuro económico, tecnológico y…",
+      "image": "",
+      "published": "2026-11-19T04:57:18+00:00",
+      "translations": {
+        "de": "Luis Abinader wird die Präsidenten von Panama, Bolivien und Honduras in Cap Cana empfangen",
+        "en": "Luis Abinader will receive presidents of Panama, Bolivia, and Honduras in Cap Cana",
+        "fr": "Luis Abinader recevra les présidents du Panama, de la Bolivie et du Honduras à Cap Cana",
+        "ht": "Luis Abinader pral resevwa prezidan Panama, Bolivi, ak Ondiras nan Cap Cana"
+      },
+      "preview_translations": {
+        "de": "\"Cap Cana wird zu einem Treffpunkt für Führungskräfte und internationale Vertreter werden, mit einer Agenda, die darauf abzielt, die wirtschaftlichen, technologischen und...",
+        "en": "\"Cap Cana will become a meeting point for leaders and international representatives, with an agenda aimed at discussing the economic, technological, and...",
+        "fr": "« Cap Cana deviendra un point de rencontre pour les dirigeants et les représentants internationaux, avec un agenda visant à discuter des aspects économiques, technologiques et...",
+        "ht": "\"Cap Cana pral vin yon pwen rankont pou lidè ak reprezantan entènasyonal, ak yon ajanda ki vize diskite sou aspè ekonomik, teknolojik, ak..."
+      }
+    },
+    {
+      "title": "El sol y las lluvias compartirán protagonismo este jueves 19 de noviembre en Punta Cana",
+      "url": "https://puntacanapost.com/el-sol-y-las-lluvias-compartiran-protagonismo-este-jueves-19-de-noviembre-en-punta-cana/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«El sol podría compartir protagonismo con las lluvias este jueves en Punta Cana: aunque las condiciones permitirán disfrutar del ambiente tropical, los chubascos…",
+      "image": "",
+      "published": "2026-11-19T04:47:22+00:00",
+      "translations": {
+        "de": "Die Sonne und der Regen teilen sich diesen Donnerstag, den 19. November, in Punta Cana das Rampenlicht",
+        "en": "The sun and the rain will share the spotlight this Thursday, November 19 in Punta Cana",
+        "fr": "Le soleil et la pluie partageront les projecteurs ce jeudi 19 novembre à Punta Cana",
+        "ht": "Soleil la ak lapli a pral pataje limyè a jedi sa a, 19 novanm nan Punta Cana"
+      },
+      "preview_translations": {
+        "de": "\"Die Sonne könnte sich an diesem Donnerstag in Punta Cana das Rampenlicht mit dem Regen teilen: Auch wenn die Bedingungen es erlauben, die tropische Atmosphäre zu genießen, sind die Schauer...",
+        "en": "\"The sun could share the spotlight with the rain this Thursday in Punta Cana: although the conditions will allow enjoying the tropical atmosphere, the showers...",
+        "fr": "« Le soleil pourrait partager le projecteur avec la pluie ce jeudi à Punta Cana : bien que les conditions permettront de profiter de l’atmosphère tropicale, les averses ...",
+        "ht": "\"Soleil la ta ka pataje limyè a ak lapli jedi sa a nan Punta Cana: menm si kondisyon yo ap pèmèt jwi anbyans twopikal la, lapli yo..."
       }
     },
     {
@@ -292,12 +500,42 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. La Romana. – Félix Reyes conectó cuadrangular de tres carreras, Bryan De la Cruz rompió un empate con sencillo…",
+      "image": "",
       "published": "2026-11-19T04:37:15+00:00",
       "translations": {
         "de": "Die Toros schütteln sich ab und besiegen die Leones mit 7:2",
         "en": "The Toros shake off and defeat the Leones 7-2",
         "fr": "Les Toros se détachent et battent les Leones 7-2",
         "ht": "Toros yo lage epi bat Leones yo 7-2"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. La Romana. – Félix Reyes schlug einen Drei-Run-Homerun, Bryan De la Cruz brach mit einem Single das Unentschieden...",
+        "en": "This article was originally published in El Día. La Romana. – Félix Reyes hit a three-run home run, Bryan De la Cruz broke a tie with a single...",
+        "fr": "Cet article a été initialement publié dans El Día. La Romana. – Félix Reyes a frappé un home run de trois points, Bryan De la Cruz a brisé l’égalité avec un simple...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. La Romana. – Félix Reyes frape yon home run twa kouri, Bryan De la Cruz kase egalite a ak yon sèl..."
+      }
+    },
+    {
+      "title": "Magín Díaz revela que Gobierno destinará 230 mil millones a inversión pública",
+      "url": "https://puntacanapost.com/magin-diaz-revela-que-gobierno-destinara-rd230000-millones-a-inversion-publica/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "«Mientras los combustibles presionan los bolsillos y la crisis internacional amenaza con encarecerlo todo, el Gobierno apuesta por inyectar RD$15,000 millones…",
+      "image": "",
+      "published": "2026-11-19T04:30:38+00:00",
+      "translations": {
+        "de": "Magín Díaz enthüllt, dass die Regierung 230 Milliarden für öffentliche Investitionen bereitstellen wird",
+        "en": "Magín Díaz reveals that the Government will allocate 230 billion to public investment",
+        "fr": "Magín Díaz révèle que le gouvernement allouera 230 milliards à l’investissement public",
+        "ht": "Magín Díaz revele ke Gouvènman an pral aloke 230 milya dola pou envestisman piblik"
+      },
+      "preview_translations": {
+        "de": "\"Während die Treibstoffe die Taschen belasten und die internationale Krise droht, alles teurer zu machen, setzt die Regierung darauf, 15.000 Millionen RD$ zuzupumpen...",
+        "en": "\"While fuels are weighing on pockets and the international crisis threatens to make everything more expensive, the Government is betting on injecting RD$15,000 million...",
+        "fr": "« Alors que les carburants pèsent sur les poches et que la crise internationale menace de rendre tout plus cher, le gouvernement parie sur une injection de 15 000 millions de RD$...",
+        "ht": "\"Pandan gaz yo ap peze sou pòch yo epi kriz entènasyonal la menase fè tout bagay vin pi chè, Gouvènman an ap parye sou enjekte RD$15,000 milyon..."
       }
     },
     {
@@ -306,12 +544,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Edición impresa La publicación Edición impresa 19 de noviembre del 2026 apareció primero en El Día.",
+      "image": "",
       "published": "2026-11-19T04:21:00+00:00",
       "translations": {
         "de": "Printausgabe vom 19. November 2026",
         "en": "Print edition November 19, 2026",
         "fr": "Édition imprimée 19 novembre 2026",
         "ht": "Edisyon enprime 19 novanm 2026"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Printausgabe Die Veröffentlichung Printausgabe vom 19. November 2026 erschien erstmals in El Día.",
+        "en": "This article was originally published in El Día. Print edition The publication Print edition November 19, 2026 first appeared in El Día.",
+        "fr": "Cet article a été initialement publié dans El Día. Édition imprimée La publication L’édition imprimée du 19 novembre 2026 est parue pour la première fois dans El Día.",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Edisyon enprime Piblikasyon an Edisyon enprime 19 novanm 2026 te parèt premye fwa nan El Día."
       }
     },
     {
@@ -320,12 +566,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- A partir del próximo jueves 3 de diciembre, el Gobierno dominicano comenzará el desembolso de…",
+      "image": "",
       "published": "2026-11-19T04:20:00+00:00",
       "translations": {
         "de": "Die Regierung wird ab dem 3. Dezember anfangen, das doppelte Gehalt zu zahlen: Wer wird zuerst bezahlt?",
         "en": "The government will start paying double the salary on December 3: who gets paid first?",
         "fr": "Le gouvernement commencera à payer le double du salaire le 3 décembre : qui est payé en premier ?",
         "ht": "Gouvènman an ap kòmanse peye doub salè a 3 desanm: kiyès ki peye an premye?"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. - Ab dem kommenden Donnerstag, dem 3. Dezember, beginnt die dominikanische Regierung mit der Auszahlung des...",
+        "en": "This article was originally published in El Día. Santo Domingo.- Starting next Thursday, December 3, the Dominican Government will begin disbursing the...",
+        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. - À partir du jeudi prochain 3 décembre, le gouvernement dominicain commencera à distribuer les...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo.- Apati Jedi pwochen, 3 Desanm, Gouvènman Dominiken an pral kòmanse distribye..."
       }
     },
     {
@@ -334,12 +588,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-La formación de profesionales en semiconductores, inteligencia artificial, ciberseguridad…",
+      "image": "",
       "published": "2026-11-19T04:19:00+00:00",
       "translations": {
         "de": "ITLA verpflichtet sich, Techniker in Halbleitern, KI und anderen technologischen Bereichen auszubilden",
         "en": "ITLA is committed to training technicians in semiconductors, AI, and other technological areas",
         "fr": "ITLA s’engage à former des techniciens dans les domaines des semi-conducteurs, de l’IA et d’autres domaines technologiques",
         "ht": "ITLA angaje nan fòmasyon teknisyen nan semi-kondiktè, entèlijans atifisyèl, ak lòt domèn teknolojik"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. – Die Ausbildung von Fachleuten in Halbleitern, künstlicher Intelligenz, Cybersicherheit...",
+        "en": "This article was originally published in El Día. Santo Domingo.-The training of professionals in semiconductors, artificial intelligence, cybersecurity...",
+        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo.- La formation des professionnels en semi-conducteurs, intelligence artificielle, cybersécurité...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo.-Fòmasyon pwofesyonèl nan semi-kondiktè, entèlijans atifisyèl, sekirite enfòmatik..."
       }
     },
     {
@@ -348,12 +610,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-El comercio ilícito no es sólo una amenaza de recaudación o económica. Es un tema de seguridad…",
+      "image": "",
       "published": "2026-11-19T04:18:00+00:00",
       "translations": {
         "de": "Der illegale Handel wird angesichts der Verfolgung durch die Behörden neu erfunden",
         "en": "Illicit trade is reinvented in the face of persecution by the authorities",
         "fr": "Le commerce illicite est réinventé face à la persécution des autorités",
         "ht": "Komès ilegal ap reenvante fas ak pèsekisyon otorite yo"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo.—Illegaler Handel ist nicht nur eine Bedrohung für Einnahmen oder wirtschaftlichen Gewinn. Es ist eine Frage der Sicherheit...",
+        "en": "This article was originally published in El Día. Santo Domingo.—Illicit trade is not just a threat to revenue or economic gain. It is a matter of security...",
+        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo.—Le commerce illicite n’est pas seulement une menace pour les revenus ou le gain économique. C’est une question de sécurité...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo.—Komès ilegal se pa sèlman yon menas pou revni oswa benefis ekonomik. Se yon kesyon sekirite..."
       }
     },
     {
@@ -362,12 +632,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.-A 65 años de uno de los episodios más dolorosos de la historia dominicana, el municipio de Nigua…",
+      "image": "",
       "published": "2026-11-19T04:17:00+00:00",
       "translations": {
         "de": "Nigua ehrt das Andenken an Märtyrer, die die Trujillo-Diktatur herausforderten",
         "en": "Nigua honors the memory of martyrs who challenged the Trujillo dictatorship",
         "fr": "Nigua honore la mémoire des martyrs qui ont défié la dictature de Trujillo",
         "ht": "Nigua onore memwa matir ki te defye diktati Trujillo a"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. SANTO DOMINGO. – 65 Jahre nach einer der schmerzhaftesten Episoden der dominikanischen Geschichte hat die Gemeinde Nigua...",
+        "en": "This article was originally published in El Día. SANTO DOMINGO.-65 years after one of the most painful episodes in Dominican history, the municipality of Nigua...",
+        "fr": "Cet article a été initialement publié dans El Día. SANTO DOMINGO. - 65 ans après l’un des épisodes les plus douloureux de l’histoire dominicaine, la municipalité de Nigua...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. SANTO DOMINGO.-65 ane apre youn nan epizòd ki pi douloure nan istwa Dominikèn, minisipalite Nigua..."
       }
     },
     {
@@ -376,12 +654,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. MIAMI.-La sonda Voyager 1, lanzada en 1977, cumple este miércoles el hito de alcanzar una distancia de un día…",
+      "image": "",
       "published": "2026-11-19T04:16:00+00:00",
       "translations": {
         "de": "Menschliches Artefakt resolviert eine lichtlichte interstellare Reise",
         "en": "Human artifact reaches a light-day interstellar journey",
         "fr": "L’artefact humain atteint un voyage interstellaire en plein jour clair",
         "ht": "Atifakt imen rive nan yon vwayaj entèstelè limyè"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. MIAMI.-Die Voyager-1-Sonde, die 1977 gestartet wurde, erreicht an diesem Mittwoch den Meilenstein, eine Distanz von einem Tag zu erreichen...",
+        "en": "This article was originally published in El Día. MIAMI.-The Voyager 1 probe, launched in 1977, reaches the milestone of reaching a distance of one day this Wednesday...",
+        "fr": "Cet article a été initialement publié dans El Día. MIAMI.-La sonde Voyager 1, lancée en 1977, atteint le cap d’une distance d’une journée ce mercredi...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. MIAMI.-Sond Voyager 1 la, ki te lanse an 1977, rive nan yon etap kote li rive nan yon distans yon sèl jou mèkredi sa a..."
       }
     },
     {
@@ -390,12 +676,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-República Dominicana asumirá por primera vez en su historia la presidencia del Fondo Ibermedia…",
+      "image": "",
       "published": "2026-11-19T04:15:00+00:00",
       "translations": {
         "de": "Die Dominikanische Republik wird alle Mittel verwalten, die das iberoamerikanische Kino finanzieren",
         "en": "The Dominican Republic will manage all the funds that finance Ibero-American cinema",
         "fr": "La République dominicaine gérera tous les fonds qui financent le cinéma ibéro-américain",
         "ht": "Repiblik Dominikèn ap jere tout fon ki finanse sinema Ibero-Ameriken an"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo.-Die Dominikanische Republik wird zum ersten Mal in ihrer Geschichte die Präsidentschaft des Ibermedia-Fonds übernehmen...",
+        "en": "This article was originally published in El Día. Santo Domingo.-The Dominican Republic will assume the presidency of the Ibermedia Fund for the first time in its history...",
+        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo.-La République dominicaine assumera la présidence du Fonds Ibermedia pour la première fois de son histoire...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo.-Repiblik Dominikèn pral pran prezidans Fon Ibermedia a pou premye fwa nan istwa li..."
       }
     },
     {
@@ -404,12 +698,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Ángel Ortiz conectó un jonrón de dos carreras en la novena y el Licey dejó tendidas a las Águilas 4-3.",
+      "image": "",
       "published": "2026-11-19T04:12:50+00:00",
       "translations": {
         "de": "Ángel Ortiz' Home Run bringt die Eagles in Schwierigkeiten und verschafft Licey den Sieg",
         "en": "Ángel Ortiz's home run leaves the Eagles in trouble and gives Licey the win",
         "fr": "Le home run d’Ángel Ortiz met les Eagles en difficulté et donne la victoire à Licey",
         "ht": "Home run Ángel Ortiz la mete Eagles yo nan pwoblèm epi li bay Licey viktwa a"
+      },
+      "preview_translations": {
+        "de": "Ángel Ortiz schlug im neunten Inning einen Zwei-Punkte-Homerun, und Licey ließ die Águilas bei 4-3 zurück.",
+        "en": "Ángel Ortiz hit a two-run home run in the ninth and Licey left the Águilas at 4-3.",
+        "fr": "Ángel Ortiz a frappé un home run de deux points en neuvième manche et Licey a laissé les Águilas à 4-3.",
+        "ht": "Ángel Ortiz frape yon home run de kouri nan nevyèm inning nan epi Licey kite Águilas yo 4-3."
       }
     },
     {
@@ -418,12 +720,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. –Ángel Ortiz disparó un dramático cuadrangular en el noveno episodio para virar el marcador y…",
+      "image": "",
       "published": "2026-11-19T04:08:55+00:00",
       "translations": {
         "de": "Ortiz schlägt einen dramatischen Home Run und Licey lässt die Águilas im Feld zurück",
         "en": "Ortiz hits a dramatic home run and Licey leaves the Águilas in the field",
         "fr": "Ortiz frappe un home run spectaculaire et Licey laisse les Águilas sur le terrain",
         "ht": "Ortiz frape yon home run dramatik epi Licey kite Águilas yo nan teren an"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. –Ángel Ortiz schlug im neunten Inning einen dramatischen Home Run, um den Stand zu wenden und...",
+        "en": "This article was originally published in El Día. Santo Domingo. –Ángel Ortiz hit a dramatic home run in the ninth inning to turn the score around and...",
+        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. –Ángel Ortiz a frappé un home run spectaculaire en neuvième manche pour renverser le score et...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo. –Ángel Ortiz frape yon home run dramatik nan nevyèm inning nan pou vire nòt la epi..."
       }
     },
     {
@@ -432,12 +742,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.-El Sambil Santo Domingo celebró su tradicional Encendido de la Navidad, uno de los eventos más…",
+      "image": "",
       "published": "2026-11-19T04:02:00+00:00",
       "translations": {
         "de": "Sambil begrüßt Weihnachten, inspiriert vom Nordpol",
         "en": "Sambil welcomes Christmas inspired by the North Pole",
         "fr": "Sambil accueille Noël inspiré par le pôle Nord",
         "ht": "Sambil akeyi Nwèl enspire pa Pòl Nò a"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. SANTO DOMINGO. - Sambil Santo Domingo feierte seine traditionelle Weihnachtsbeleuchtung, eine der ...",
+        "en": "This article was originally published in El Día. SANTO DOMINGO.- Sambil Santo Domingo celebrated its traditional Christmas Lighting, one of the most...",
+        "fr": "Cet article a été initialement publié dans El Día. SANTO DOMINGO. - Sambil Santo Domingo a célébré son allumage traditionnel de Noël, l’un des plus de...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. SANTO DOMINGO.- Sambil Santo Domingo te selebre Limyè Nwèl tradisyonèl li a, youn nan pi pi..."
       }
     },
     {
@@ -446,12 +764,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Entre octubre de 2025 y noviembre de 2026, Xi Jinping y Donald Trump establecieron un canal directo que…",
+      "image": "",
       "published": "2026-11-19T04:02:00+00:00",
       "translations": {
         "de": "Xi und Trump, von Busan bis Shenzhen",
         "en": "Xi and Trump, from Busan to Shenzhen",
         "fr": "Xi et Trump, de Busan à Shenzhen",
         "ht": "Xi ak Trump, soti Busan rive Shenzhen"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Zwischen Oktober 2025 und November 2026 haben Xi Jinping und Donald Trump einen direkten Kanal eingerichtet, der...",
+        "en": "This article was originally published in El Día. Between October 2025 and November 2026, Xi Jinping and Donald Trump established a direct channel that...",
+        "fr": "Cet article a été initialement publié dans El Día. Entre octobre 2025 et novembre 2026, Xi Jinping et Donald Trump ont établi un canal direct qui...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Ant oktòb 2025 ak novanm 2026, Xi Jinping ak Donald Trump te etabli yon chanèl dirèk ki..."
       }
     },
     {
@@ -460,12 +786,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Un día como hoy, 19 de noviembre de 1960, murió, a la edad de 74 años, Juan Rodríguez (Juancito) en Venezuela…",
+      "image": "",
       "published": "2026-11-19T04:01:00+00:00",
       "translations": {
         "de": "Juancito",
         "en": "Juancito",
         "fr": "Juancito",
         "ht": "Juancito"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. An einem Tag wie heute, dem 19. November 1960, starb Juan Rodríguez (Juancito) im Alter von 74 Jahren in Venezuela...",
+        "en": "This article was originally published in El Día. On a day like today, November 19, 1960, Juan Rodríguez (Juancito) died at the age of 74 in Venezuela...",
+        "fr": "Cet article a été initialement publié dans El Día. Un jour comme aujourd’hui, le 19 novembre 1960, Juan Rodríguez (Juancito) est décédé à l’âge de 74 ans au Venezuela...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Nan yon jou tankou jodi a, 19 novanm 1960, Juan Rodríguez (Juancito) mouri nan laj 74 an nan Venezyela..."
       }
     },
     {
@@ -474,12 +808,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. El carrusel de la vida La publicación El carrusel de la vida apareció primero en El Día.",
+      "image": "",
       "published": "2026-11-19T04:01:00+00:00",
       "translations": {
         "de": "Das Karussell des Lebens",
         "en": "The carousel of life",
         "fr": "Le carrousel de la vie",
         "ht": "Karousèl lavi a"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Das Karussell des Lebens Die Publikation Das Karussell des Lebens erschien erstmals in El Día.",
+        "en": "This article was originally published in El Día. The Carousel of Life The publication The Carousel of Life first appeared in El Día.",
+        "fr": "Cet article a été initialement publié dans El Día. Le Carousel de la Vie La publication Le Carousel de la Vie est apparue pour la première fois dans El Día.",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Karousèl Lavi a Piblikasyon The Carousel of Life te parèt premye fwa nan El Día."
       }
     },
     {
@@ -488,12 +830,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Dos estadísticas que trascienden el ámbito de la salud muestran notables mejorías, pero no como para que la…",
+      "image": "",
       "published": "2026-11-19T04:01:00+00:00",
       "translations": {
         "de": "Verbesserung, aber wir müssen weitermachen",
         "en": "Improvement, but we must keep going",
         "fr": "Une amélioration, mais nous devons continuer",
         "ht": "Amelyorasyon, men nou dwe kontinye"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Zwei Statistiken, die über den Gesundheitsbereich hinausgehen, zeigen deutliche Verbesserungen, aber nicht genug für die...",
+        "en": "This article was originally published in El Día. Two statistics that go beyond the health field show notable improvements, but not enough for the...",
+        "fr": "Cet article a été initialement publié dans El Día. Deux statistiques qui vont au-delà du domaine de la santé montrent des améliorations notables, mais pas assez pour le...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. De estatistik ki depase domèn sante a montre amelyorasyon enpòtan, men pa ase pou..."
       }
     },
     {
@@ -502,12 +852,20 @@
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Los senadores, por lo visto, han empezado con bastante anticipación las conversaciones en relación con la…",
+      "image": "",
       "published": "2026-11-19T04:01:00+00:00",
       "translations": {
         "de": "Vorfreude",
         "en": "Anticipation",
         "fr": "Anticipation",
         "ht": "Antisipasyon"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Die Senatoren haben offenbar Gespräche über die... begonnen.",
+        "en": "This article was originally published in El Día. The senators, apparently, have started talks about the...",
+        "fr": "Cet article a été initialement publié dans El Día. Les sénateurs, apparemment, ont entamé des discussions sur le...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Senatè yo, sanble, te kòmanse pale sou..."
       }
     },
     {
@@ -516,12 +874,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Las Estrellas vencieron 2-1 a los Gigantes y lograron su quinta victoria consecutiva.",
+      "image": "",
       "published": "2026-11-19T03:43:51+00:00",
       "translations": {
         "de": "Estrellas besiegte Gigantes mit 2:1 und erzielte ihren fünften Sieg in Folge",
         "en": "Estrellas beat Gigantes 2-1 and achieve their fifth consecutive win",
         "fr": "Estrellas a battu Gigantes 2-1 et a signé sa cinquième victoire consécutive",
         "ht": "Estrellas bat Gigantes 2-1 epi reyalize senkyèm viktwa youn apre lòt"
+      },
+      "preview_translations": {
+        "de": "Die Stars besiegten die Giants mit 2:1 und feierten ihren fünften Sieg in Folge.",
+        "en": "The Stars defeated the Giants 2-1 and achieved their fifth consecutive victory.",
+        "fr": "Les Stars ont battu les Giants 2-1 et décroché leur cinquième victoire consécutive.",
+        "ht": "Stars yo bat Giants yo 2-1 epi yo reyalize senkyèm viktwa youn apre lòt."
       }
     },
     {
@@ -530,12 +896,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Toros reaccionan con seis carreras en la octava y derrotan 7-2 al Escogido para cortar una racha de siete derrotas.",
+      "image": "",
       "published": "2026-11-19T03:32:26+00:00",
       "translations": {
         "de": "Toros besiegten Escogido mit 7:2 durch einen Home Run von Félix Reyes und beendeten damit ihre Niederlagenserie",
         "en": "Toros beat Escogido 7-2 with a home run by Félix Reyes and ended their losing streak",
         "fr": "Les Toros ont battu Escogido 7-2 grâce à un home run de Félix Reyes et ont mis fin à leur série de défaites",
         "ht": "Toros bat Escogido 7-2 ak yon home run pa Félix Reyes epi mete fen nan seri defèt yo"
+      },
+      "preview_translations": {
+        "de": "Die Toros antworten mit sechs Runs im achten Inning und besiegen Escogido mit 7:2, um eine sieben Spiele andauernde Niederlagenserie zu beenden.",
+        "en": "Toros respond with six runs in the eighth and defeat Escogido 7-2 to break a seven-game losing streak.",
+        "fr": "Les Toros répliquent avec six points en huitième manche et battent Escogido 7-2 pour mettre fin à une série de sept défaites consécutives.",
+        "ht": "Toros reponn ak sis kouri nan uityèm inning nan epi bat Escogido 7-2 pou kase yon seri sèt defèt youn apre lòt."
       }
     },
     {
@@ -544,12 +918,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Deutsche Bank financió más de US$1,000 millones en obras en RD, algunas ligadas a empresas investigadas por corrupción.",
+      "image": "",
       "published": "2026-11-19T03:24:01+00:00",
       "translations": {
         "de": "Das Leck enthüllt, dass die Deutsche Bank in der DR mehr als 1 Milliarde US-Dollar an umstrittenen Projekten finanziert hat",
         "en": "Leak reveals that Deutsche Bank financed more than US$1 billion in disputed projects in the DR",
         "fr": "La fuite révèle que Deutsche Bank a financé plus d’un milliard de dollars US en projets contestés en RD",
         "ht": "Leak revele ke Deutsche Bank te finanse plis pase US$1 milya nan pwojè ki te konteste nan DR"
+      },
+      "preview_translations": {
+        "de": "Die Deutsche Bank finanzierte Arbeiten im Wert von mehr als 1 Milliarde US-Dollar in der DR, von denen einige mit Unternehmen in Verbindung standen, die wegen Korruption untersucht werden.",
+        "en": "Deutsche Bank financed more than US$1 billion in works in the DRC, some linked to companies under investigation for corruption.",
+        "fr": "Deutsche Bank a financé plus d’un milliard de dollars US en travaux en RDC, certains liés à des entreprises faisant l’objet d’une enquête pour corruption.",
+        "ht": "Deutsche Bank te finanse plis pase 1 milya dola ameriken nan travay nan RDC, kèk te gen rapò ak konpayi ki anba ankèt pou koripsyon."
       }
     },
     {
@@ -558,12 +940,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "El certificado de defunción registra falla cardíaca aguda, edema pulmonar y cerebral, pero no determina la causa de la muerte.",
+      "image": "",
       "published": "2026-11-19T03:08:55+00:00",
       "translations": {
         "de": "Was kann eine akute Herzinsuffizienz verursachen? Die Komplikationen, die im Zusammenhang mit Melisa Medinas Tod festgestellt wurden",
         "en": "What can cause acute heart failure? The complications recorded in Melisa Medina's death",
         "fr": "Qu’est-ce qui peut provoquer une insuffisance cardiaque aiguë ? Les complications enregistrées dans le décès de Melisa Medina",
         "ht": "Kisa ki ka lakòz ensifizans kè grav? Konplikasyon ki te anrejistre nan lanmò Melisa Medina"
+      },
+      "preview_translations": {
+        "de": "Die Sterbeurkunde verzeichnet akute Herzinsuffizienz, Lungen- und Hirnödeme, legt jedoch nicht die Todesursache fest.",
+        "en": "The death certificate records acute heart failure, pulmonary and cerebral edema, but does not determine the cause of death.",
+        "fr": "Le certificat de décès indique une insuffisance cardiaque aiguë, un œdème pulmonaire et cérébral, mais ne détermine pas la cause du décès.",
+        "ht": "Sètifika lanmò a anrejistre ensifizans kè grav, edèm nan poumon ak nan sèvo, men li pa detèmine kòz lanmò a."
       }
     },
     {
@@ -572,12 +962,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Musk admitió sentirse \"tonto\" por gastar cientos de millones en apoyar a republicanos tras sus derrotas electorales.",
+      "image": "",
       "published": "2026-11-19T03:03:20+00:00",
       "translations": {
         "de": "Musk sagt, er fühle sich \"dumm\", 445 Millionen Dollar für US-Wahlen ausgegeben zu haben",
         "en": "Musk says he feels \"stupid\" for spending 445 million dollars on US elections",
         "fr": "Musk dit qu’il se sent « stupide » d’avoir dépensé 445 millions de dollars pour les élections américaines",
         "ht": "Musk di li santi li \"estipid\" paske li depanse 445 milyon dola nan eleksyon Ozetazini"
+      },
+      "preview_translations": {
+        "de": "Musk gab zu, sich \"dumm\" zu fühlen, weil er nach deren Wahlniederlagen Hunderte Millionen für die Unterstützung der Republikaner ausgegeben hatte.",
+        "en": "Musk admitted feeling \"stupid\" for spending hundreds of millions supporting Republicans after their electoral defeats.",
+        "fr": "Musk a admis se sentir « stupide » d’avoir dépensé des centaines de millions pour soutenir les républicains après leurs défaites électorales.",
+        "ht": "Musk te admèt li te santi li \"estipid\" paske li te depanse plizyè santèn milyon dola pou sipòte Repibliken apre defèt elektoral yo."
       }
     },
     {
@@ -586,12 +984,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Tres jóvenes fueron asesinados en dos hechos violentos en zonas rurales de Putumayo, sur de Colombia.",
+      "image": "",
       "published": "2026-11-19T02:53:56+00:00",
       "translations": {
         "de": "Drei junge Menschen werden in einem ländlichen Gebiet im Süden Kolumbiens ermordet",
         "en": "Three young people are murdered in a rural area in southern Colombia",
         "fr": "Trois jeunes sont assassinés dans une zone rurale du sud de la Colombie",
         "ht": "Twa jèn moun mouri nan yon zòn riral nan sid Kolonbi"
+      },
+      "preview_translations": {
+        "de": "Drei junge Menschen wurden bei zwei gewalttätigen Vorfällen in ländlichen Gebieten von Putumayo im Süden Kolumbiens getötet.",
+        "en": "Three young people were killed in two violent incidents in rural areas of Putumayo, southern Colombia.",
+        "fr": "Trois jeunes ont été tués lors de deux incidents violents dans des zones rurales de Putumayo, dans le sud de la Colombie.",
+        "ht": "Twa jèn moun te mouri nan de ensidan vyolan nan zòn riral Putumayo, nan sid Kolonbi."
       }
     },
     {
@@ -600,12 +1006,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Mauricio Báez ganó 79-73 y evitó la consagración de Rafael Barias, aunque sigue abajo 2-3 en la final.",
+      "image": "",
       "published": "2026-11-19T02:35:05+00:00",
       "translations": {
         "de": "Mauricio Báez besiegt Rafael Barias mit 79-73 und hält den Kampf um den TBS Distrito 2026-Titel weiter",
         "en": "Mauricio Báez defeats Rafael Barias 79-73 and maintains the fight for the TBS Distrito 2026 title",
         "fr": "Mauricio Báez bat Rafael Barias 79-73 et maintient la lutte pour le titre TBS Distrito 2026",
         "ht": "Mauricio Báez bat Rafael Barias 79-73 epi li kenbe batay pou TBS Distrito 2026 la"
+      },
+      "preview_translations": {
+        "de": "Mauricio Báez gewann mit 79-73 und verhinderte, dass Rafael Barias den Titel holte, obwohl er im Finale mit 2:3 zurückliegt.",
+        "en": "Mauricio Báez won 79-73 and prevented Rafael Barias from winning the title, although he remains behind 2-3 in the final.",
+        "fr": "Mauricio Báez a gagné 79-73 et a empêché Rafael Barias de remporter le titre, bien qu’il reste en retard 2-3 en finale.",
+        "ht": "Mauricio Báez te genyen 79-73 e li te anpeche Rafael Barias genyen la, menm si li rete dèyè 2-3 nan final la."
       }
     },
     {
@@ -614,12 +1028,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "La manifestación provocó la paralización de la docencia en los centros educativos de los que procedían los maestros, afectando a miles de estudiantes.",
+      "image": "",
       "published": "2026-11-19T02:34:54+00:00",
       "translations": {
         "de": "Lehrermarsch trotz von ADP angekündigter Protestsperre",
         "en": "Teachers march despite protest suspension announced by ADP",
         "fr": "Les enseignants défilent malgré la suspension de protestation annoncée par l’ADP",
         "ht": "Pwofesè yo ap mache malgre sispansyon pwotestasyon ADP te anonse"
+      },
+      "preview_translations": {
+        "de": "Die Demonstration führte zur Aussetzung des Unterrichts in den Bildungszentren, aus denen die Lehrkräfte kamen, was Tausende von Schülern betraf.",
+        "en": "The demonstration caused the suspension of teaching in the educational centers from which the teachers came, affecting thousands of students.",
+        "fr": "La manifestation a entraîné la suspension des cours dans les centres d’enseignement d’où venaient les enseignants, affectant des milliers d’élèves.",
+        "ht": "Manifestasyon an te lakòz sispansyon ansèyman nan sant edikatif kote pwofesè yo te soti, sa ki te afekte plizyè milye elèv."
       }
     },
     {
@@ -628,12 +1050,20 @@
       "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Miles marcharon en Puerto Príncipe para exigir la renuncia del primer ministro y apoyar las operaciones salvadoreñas contra bandas armadas.",
+      "image": "",
       "published": "2026-11-19T02:20:22+00:00",
       "translations": {
         "de": "Haitianische Oppositionsmitglieder fordern den Abgang des Premierministers und bekunden ihre Unterstützung für salvadorianische Truppen",
         "en": "Haitian opposition members call for the prime minister's departure and express support for Salvadoran troops",
         "fr": "Des membres de l’opposition haïtienne appellent au départ du Premier ministre et expriment leur soutien aux troupes salvadoriennes",
         "ht": "Manm opozisyon ayisyen yo mande pou premye minis la kite epi yo eksprime sipò pou twoup Salvadoren yo"
+      },
+      "preview_translations": {
+        "de": "Tausende marschierten in Port-au-Prince, um den Rücktritt des Premierministers zu fordern und salvadorianische Operationen gegen bewaffnete Banden zu unterstützen.",
+        "en": "Thousands marched in Port-au-Prince to demand the prime minister's resignation and support Salvadoran operations against armed gangs.",
+        "fr": "Des milliers de personnes ont défilé à Port-au-Prince pour exiger la démission du Premier ministre et soutenir les opérations salvadoriennes contre les gangs armés.",
+        "ht": "Milye moun te mache nan Pòtoprens pou mande demisyon premye minis la epi sipòte operasyon Salvadoren kont gang ame yo."
       }
     },
     {
@@ -642,6 +1072,8 @@
       "source": "Diario Libre",
       "category": "Deportes",
       "regions": [],
+      "preview": "A Zacarías Bonnat le tomó casi una década levantando miles de kilos de pesa para tocar el cielo de un atleta olímpico. Sin embargo, solo duró 16 meses en el…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/se-levanta-la-sancion-a-bonnat-y-regresa-por-boleto-a-los-angeles-eff15d09-focus-0-0-400-300.jpg",
       "published": "2026-11-19T01:00:00+00:00",
       "translations": {
         "de": "Bonnats Sanktion aufgehoben und er kehrt per Ticket nach Los Angeles zurück",
@@ -651,11 +1083,45 @@
       }
     },
     {
+      "title": "¿Hay motivos para sospechar de ciberataques?",
+      "url": "https://eltiempo.com.do/tecnoinfo/hay-motivos-para-sospechar-de-ciberataques/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Punta Cana. Varias fallas tecnológicas registradas en Estados Unidos han causado preocupación entre las autoridades... La entrada ¿Hay motivos para sospechar de…",
+      "image": "",
+      "published": "2026-11-19T01:00:00+00:00",
+      "translations": {
+        "de": "Gibt es Gründe, Cyberangriffe zu vermuten?",
+        "en": "Are there reasons to suspect cyberattacks?",
+        "fr": "Y a-t-il des raisons de soupçonner des cyberattaques ?",
+        "ht": "Èske gen rezon pou sispèk atak sou entènèt?"
+      }
+    },
+    {
+      "title": "A cuatro décadas de su estreno, «Cuna de lobos» sigue dando de qué hablar",
+      "url": "https://eltiempo.com.do/variedades/a-cuatro-decadas-de-su-estreno-cuna-de-lobos-sigue-dando-de-que-hablar/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "México. A 40 años de su estreno, la famosa telenovela mexicana «Cuna de lobos» sigue... La entrada A cuatro décadas de su estreno, «Cuna de lobos» sigue dando de…",
+      "image": "",
+      "published": "2026-11-19T00:40:00+00:00",
+      "translations": {
+        "de": "Vier Jahrzehnte nach seiner Veröffentlichung sorgt \"Cuna de lobos\" weiterhin für Schlagzeilen",
+        "en": "Four decades after its release, \"Cuna de lobos\" continues to make headlines",
+        "fr": "Quatre décennies après sa sortie, « Cuna de lobos » continue de faire la une des journaux",
+        "ht": "Katriyèm deseni apre li te sòti, \"Cuna de lobos\" kontinye fè nouvèl"
+      }
+    },
+    {
       "title": "Lidom: Un paro en MLB congelaría llegada de estrellas",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/19/lidom-un-paro-en-mlb-congelaria-llegada-de-estrellas/3725090",
       "source": "Diario Libre",
       "category": "Deportes",
       "regions": [],
+      "preview": "¿Jugarán Vladimir Guerrero Jr., Juan Soto y Fernando Tatis Jr. como ha trascendido en los últimos días? Aunque un inminente cierre patronal en las Grandes Ligas…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/lidom-un-paro-en-mlb-congelaria-llegada-de-estrellas-2c729031-focus-0.45-0.56-400-300.jpg",
       "published": "2026-11-19T00:29:00+00:00",
       "translations": {
         "de": "Lidom: Ein MLB-Streik würde Star-Neuzugänge einfrieren",
@@ -670,6 +1136,8 @@
       "source": "Diario Libre",
       "category": "Deportes",
       "regions": [],
+      "preview": "Eran alrededor de las 9:30 de la noche del martes 17. En San Pedro de Macorís, las Estrellas le ganaban 1-0 al Licey, en el cuarto episodio. El vicepresidente de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/asi-fue-como--consiguio-el-cambio-por-vladimir-guerrero-jr-d0120a9f-focus-0.06-0.22-400-300.jpg",
       "published": "2026-11-19T00:15:00+00:00",
       "translations": {
         "de": "So bekam er die Änderung für Vladimir Guerrero Jr.",
@@ -679,11 +1147,29 @@
       }
     },
     {
+      "title": "Dengue: Un mosquito pequeño que puede causar grandes problemas",
+      "url": "https://eltiempo.com.do/variedades/dengue-un-mosquito-pequeno-que-puede-causar-grandes-problemas/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Punta Cana. Con la llegada del calor y las lluvias, aumenta el riesgo de dengue... La entrada Dengue: Un mosquito pequeño que puede causar grandes problemas se…",
+      "image": "",
+      "published": "2026-11-19T00:15:00+00:00",
+      "translations": {
+        "de": "Dengue: Eine kleine Mücke, die große Probleme verursachen kann",
+        "en": "Dengue: A small mosquito that can cause major problems",
+        "fr": "Dengue : Un petit moustique qui peut causer de gros problèmes",
+        "ht": "Dengue: Yon ti moustik ki ka lakoz gwo pwoblèm"
+      }
+    },
+    {
       "title": "Lidom: Estrellas vencen a Gigantes y logran su quinto triunfo al hilo",
       "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/19/lidom-estrellas-vencen-a-gigantes-y-logran-su-quinto-triunfo-al-hilo/3725065",
       "source": "Diario Libre",
       "category": "Deportes",
       "regions": [],
+      "preview": "Las Estrellas Orientales aseguraron este miércoles la serie particular frente a los Gigantes del Cibao al imponerse 2-1 en el estadio Julián Javier, resultado con…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/lidom-estrellas-vencen-a-gigantes-y-logran-su-quinto-triunfo-al-hilo-e25ce74d-focus-0.03-0.29-400-300.jpg",
       "published": "2026-11-19T00:02:00+00:00",
       "translations": {
         "de": "Lidom: Estrellas besiegen Gigantes und erringen ihren fünften Sieg in Folge",
@@ -698,6 +1184,8 @@
       "source": "Diario Libre",
       "category": "Economía",
       "regions": [],
+      "preview": "El Gobierno dominicano procura dejar temporalmente sin efecto uno de los principales mecanismos que estableció para contener el gasto público, después de que, según…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/18112026-almuerzo-gobierno-y-empresarios-estarlin-rosa-14-fa4c88d9-focus-0-0-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "Die Regierung versucht, eine fiskalische Regel auszusetzen",
@@ -712,6 +1200,8 @@
       "source": "Diario Libre",
       "category": "Economía",
       "regions": [],
+      "preview": "La República Dominicana proyecta cerrar 2026 con un déficit fiscal equivalente al 4.2 % del producto interno bruto (PIB), superior a las previsiones disponibles…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/imagen-a1-7467100-7467100-9491d3bf-focus-0-0-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "Das dominikanische Haushaltsdefizit übersteigt das der mittelamerikanischen Länder",
@@ -726,6 +1216,8 @@
       "source": "Diario Libre",
       "category": "Economía",
       "regions": [],
+      "preview": "El ministro de Turismo, David Collado, destacó el desarrollo de tres nuevos destinos turísticos -Miches, Punta Bergantín y Cabo Rojo- entre los principales logros…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/18112026-almuerzo-amchamrd-y-david-collado-luduis-tapia22-aae821c7-focus-0.13-0.28-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "David Collado hebt drei neue Touristenziele hervor",
@@ -740,6 +1232,8 @@
       "source": "Diario Libre",
       "category": "Política",
       "regions": [],
+      "preview": "El proyecto para una segunda modificación al Presupuesto General del Estado de 2026 se someterá este jueves a votación en la Cámara de Diputados, tras agotar un…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/modificacion-presupuesto-2026-en-camara-de-diputados-5fb404ee-focus-0.15-min0.15-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "Haushaltsänderung 2026 in der Abgeordnetenkammer",
@@ -754,6 +1248,8 @@
       "source": "Diario Libre",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Lo que comenzó como un proyecto para transformar una zona ambientalmente degradada en un espacio de recreación ciudadana vuelve a cobrar vida casi dos décadas…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/el-parque-de-la-nunez-de-caceres-es-remozado-19-anos-despues-ef98d51a-focus-0-0-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "Der Park Núñez de Cáceres wird 19 Jahre später renoviert",
@@ -768,6 +1264,8 @@
       "source": "Diario Libre",
       "category": "Cultura",
       "regions": [],
+      "preview": "La elección de República Dominicana para presidir por primera vez el Fondo Ibermedia, después de casi tres décadas de funcionamiento, es un reconocimiento al…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/cine-dominicano-gana-peso-con-presidencia-de-ibermedia-c55032d9-focus-0.01-0.26-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "Das dominikanische Kino gewinnt mit der Präsidentschaft von Ibermedia an Bedeutung",
@@ -782,6 +1280,8 @@
       "source": "Diario Libre",
       "category": "Medioambiente",
       "regions": [],
+      "preview": "Grand Theft Auto VI, mejor conocido como GTA VI, llegará el próximo 19 de noviembre, luego de haber sido anunciado oficialmente en 2023. Su lanzamiento se producirá…",
+      "image": "https://resources.diariolibre.com/images/2023/12/05/screen-shot-2023-12-05-at-8.35.53-am-focus-0-0-400-300.png",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "GTA VI: Wie ein Videospiel zu einem wirtschaftlichen Phänomen werden kann",
@@ -796,6 +1296,8 @@
       "source": "Diario Libre",
       "category": "Política",
       "regions": [],
+      "preview": "Los partidos de oposición sospechan que el Gobierno está utilizando los programas sociales con fines clientelares y proselitistas, por lo que respaldaron la…",
+      "image": "https://resources.diariolibre.com/images/2024/05/27/wasacs-0e673de4-066d-46c6-aee1-7f2c3f2b9ffd-56a65c3b-focus-0-0-400-300.jpg",
       "published": "2026-11-19T00:01:00+00:00",
       "translations": {
         "de": "Prüfung des Supérate-Programms aufgrund von Widerstandsbeschwerden",
@@ -805,11 +1307,29 @@
       }
     },
     {
+      "title": "Doble sueldo traerá alivio económico a miles de hogares dominicanos esta Navidad",
+      "url": "https://eltiempo.com.do/sin-categoria/doble-sueldo-traera-alivio-economico-a-miles-de-hogares-dominicanos-esta-navidad/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "SANTO DOMINGO. – Más de RD$35 mil millones entregará el Gobierno dominicano a partir del... La entrada Doble sueldo traerá alivio económico a miles de hogares…",
+      "image": "",
+      "published": "2026-11-18T23:40:00+00:00",
+      "translations": {
+        "de": "Das doppelte Gehalt wird an Weihnachten Tausenden dominikanischer Haushalte finanzielle Entlastung bringen",
+        "en": "Double salary will bring financial relief to thousands of Dominican households this Christmas",
+        "fr": "Le double salaire apportera un soulagement financier à des milliers de foyers dominicains ce Noël",
+        "ht": "Salè doub ap pote soulajman finansye pou dè milye kay Dominiken Nwèl sa a"
+      }
+    },
+    {
       "title": "Corea del Sur refuerza medidas en examen Suneung",
       "url": "https://www.diariolibre.com/planeta/tecnologia/2026/11/18/corea-del-sur-refuerza-medidas-en-examen-suneung/3725035",
       "source": "Diario Libre",
       "category": "Medioambiente",
       "regions": [],
+      "preview": "Corea del Sur cortó el wifi alrededor de las sedes donde se realiza un examen clave para ingresar a la universidad y ofrece recompensas de hasta 75,000 dólares a…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/corea-del-sur-refuerza-medidas-en-examen-suneung-1d72db07-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:09:00+00:00",
       "translations": {
         "de": "Südkorea verstärkt die unter Überprüfung stehenden Maßnahmen Suneung",
@@ -824,6 +1344,8 @@
       "source": "Diario Libre",
       "category": "Mundo",
       "regions": [],
+      "preview": "El presidente de China, Xi Jinping, abogó este jueves por \"avanzar de forma constante\" en la integración económica de Asia-Pacífico y desarrollar un \"modelo de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/xi-aboga-por-una-cooperacion-abierta-durante-la-cumbre-de-la-apec-9a1ee415-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:07:00+00:00",
       "translations": {
         "de": "Xi setzt sich während des APEC-Gipfels für eine \"offene\" Zusammenarbeit ein",
@@ -838,6 +1360,8 @@
       "source": "Diario Libre",
       "category": "Cultura",
       "regions": [],
+      "preview": "Un cuadro del pintor realista estadounidense Edward Hopper procedente de la colección Thyssen-Bornemisza fue la estrella de la subasta de arte modernista de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/subasta-arte-modernista-edward-hopper-destaca-en-sothebys-6b063bda-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:01:00+00:00",
       "translations": {
         "de": "Art Modernist Auktion: Edward Hopper sticht bei Sotheby's hervor",
@@ -852,6 +1376,8 @@
       "source": "Diario Libre",
       "category": "Mundo",
       "regions": [],
+      "preview": "Un mes después de la desaparición de cuatro militares salvadoreños de la Fuerza de Supresión de Pandillas (GSF, en inglés), la crisis en Haití ha dado un giro con…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/tropas-internacionales-recuperan-territorios-de-pandillas-en-haiti-0e430f36-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:00:00+00:00",
       "translations": {
         "de": "Das salvadorianische Militär in Haiti intensiviert den Kampf gegen Banden",
@@ -866,6 +1392,8 @@
       "source": "Diario Libre",
       "category": "Mundo",
       "regions": [],
+      "preview": "Los presidentes estadounidense, Donald Trump; chino, Xi Jinping, y ruso, Vladímir Putin, mantendrán hoy una inédita reunión trilateral en la ciudad china de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/trump-xi-putin-se-reunen-en-trilateral-sobre-desarme-nuclear-a9b7bb70-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:00:00+00:00",
       "translations": {
         "de": "Trump und Xi Putin treffen sich trilateral zum Thema nukleare Abrüstung",
@@ -880,6 +1408,8 @@
       "source": "Diario Libre",
       "category": "Actualidad",
       "regions": [],
+      "preview": "Como banileja, lamento que una reunión de trabajo de nuestros regidores haya terminado en un altercado entre Mayelin Herrera, del Partido de la Liberación…",
+      "image": "https://resources.diariolibre.com/images/2026/11/19/como-se-ejerce-la-representacion-municipal-cuando-el-debate-se-tensa-f3dcfdf5-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:00:00+00:00",
       "translations": {
         "de": "Wie kommunale Vertretung ausgeübt wird, wenn die Debatte angespannt wird",
@@ -894,6 +1424,8 @@
       "source": "Diario Libre",
       "category": "Actualidad",
       "regions": [],
+      "preview": "En los alrededores del Parque Independencia, al final de la importante vía que lleva igual nombre, en plena ciudad de Santo Domingo, capital de la República…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/trif-16e55074-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:00:00+00:00",
       "translations": {
         "de": "Rette den Bruderschaftsbaum",
@@ -908,68 +1440,14 @@
       "source": "Diario Libre",
       "category": "Actualidad",
       "regions": [],
+      "preview": "En su libro Homo Deus: breve historia del mañana el historiador futurista Yuval Noah Harari dice que, a medida que los algoritmos de aprendizaje automático…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/shutterstock2706777629-3549f86d-focus-0-0-400-300.jpg",
       "published": "2026-11-18T23:00:00+00:00",
       "translations": {
         "de": "Die Gefahr, das Bewusstsein angesichts von KI zu atropphyieren",
         "en": "The danger of atrophying consciousness in the face of AI",
         "fr": "Le danger d’atrophier la conscience face à l’IA",
         "ht": "Danje pou atwofiye konsyans devan entèlijans atifisyèl"
-      }
-    },
-    {
-      "title": "El fantasma de la IA sobre artículos de prensa",
-      "url": "https://www.diariolibre.com/opinion/agora/2026/11/18/el-fantasma-de-la-ia-sobre-articulos-de-prensa/3724602",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "published": "2026-11-18T23:00:00+00:00",
-      "translations": {
-        "de": "Der Geist der KI über Nachrichtenartikeln",
-        "en": "The ghost of AI over news articles",
-        "fr": "Le fantôme de l’IA sur les articles d’actualité",
-        "ht": "Fantom AI sou atik nouvèl yo"
-      }
-    },
-    {
-      "title": "¿Cómo se encuentra la deuda pública a septiembre de 2026?",
-      "url": "https://www.diariolibre.com/economia/finanzas/2026/11/18/como-se-encuentra-la-deuda-publica-a-septiembre-de-2026/3724238",
-      "source": "Diario Libre",
-      "category": "Economía",
-      "regions": [],
-      "published": "2026-11-18T23:00:00+00:00",
-      "translations": {
-        "de": "Wie sieht die öffentliche Verschuldung im September 2026 aus?",
-        "en": "How is public debt as of September 2026?",
-        "fr": "Comment en est la dette publique en septembre 2026 ?",
-        "ht": "Kijan dèt piblik la ye depi septanm 2026?"
-      }
-    },
-    {
-      "title": "Aumenta el costo de financiamiento del país",
-      "url": "https://www.diariolibre.com/economia/finanzas/2026/11/18/aumenta-el-costo-de-financiamiento-del-pais/3724240",
-      "source": "Diario Libre",
-      "category": "Economía",
-      "regions": [],
-      "published": "2026-11-18T23:00:00+00:00",
-      "translations": {
-        "de": "Die Finanzierungskosten des Landes steigen",
-        "en": "The country's financing cost is rising",
-        "fr": "Le coût du financement du pays augmente",
-        "ht": "Kout finansman peyi a ap ogmante"
-      }
-    },
-    {
-      "title": "Pensiones y etiquetas política",
-      "url": "https://www.diariolibre.com/economia/finanzas/2026/11/18/pensiones-y-etiquetas-politica/3724232",
-      "source": "Diario Libre",
-      "category": "Economía",
-      "regions": [],
-      "published": "2026-11-18T23:00:00+00:00",
-      "translations": {
-        "de": "Renten und politische Etiketten",
-        "en": "Pensions and political labels",
-        "fr": "Pensions et étiquettes politiques",
-        "ht": "Pansyon ak etikèt politik"
       }
     }
   ]
