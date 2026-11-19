@@ -6,6 +6,26 @@
 
 .extra-section{padding:82px 0;background:#f4f3ec}.extra-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}.extra-card{border:1px solid #dce5de;border-radius:23px;padding:31px;min-height:330px;display:flex;flex-direction:column;box-shadow:0 14px 40px #113c3210}.property-card{background:linear-gradient(128deg,#f6e9d1,#fffdf7)}.roads-card{background:linear-gradient(128deg,#e5f0ec,#fff)}.extra-top{display:flex;align-items:center;gap:10px;font-size:23px;color:#476459}.extra-top span{font-size:11px;font-weight:800;letter-spacing:2px}.extra-card h3{font:800 clamp(21px,2.4vw,29px) Manrope,sans-serif;letter-spacing:-.6px;margin:19px 0 9px}.extra-card p{color:#5c7169;line-height:1.65;font-size:14px;max-width:470px;margin:0 0 17px}.extra-pills{display:flex;gap:8px;margin:2px 0 20px}.chip{border:1px solid #adc7bc;background:transparent;color:#31594b;padding:9px 18px;border-radius:30px;font-weight:700;font-size:13px}.chip.active{background:#08655d;color:white;border-color:#08655d}.extra-link{display:inline-flex;align-items:center;justify-content:center;min-height:46px;background:#0b625a;color:#fff!important;border-radius:11px;padding:12px 18px;font-weight:700;font-size:13px;align-self:flex-start;margin-top:auto}.extra-link:hover{background:#08443e;transform:translateY(-2px)}.extra-card small{font-size:11px;color:#718079;margin-top:13px;line-height:1.6}.road-status{display:flex;gap:9px;align-items:center;font-size:12px;color:#4f685f;margin-bottom:22px}.pulse-dot{height:8px;width:8px;background:#d49345;border-radius:100%}@media(max-width:720px){.extra-grid{grid-template-columns:1fr}.extra-section{padding:54px 0}.extra-card{padding:24px;min-height:300px}}
 .newsletter-box{background:#e1efe8;border:1px solid #bfdbd0;border-radius:22px;padding:28px;display:flex;align-items:center;justify-content:space-between;gap:20px}.newsletter-box h2{font:800 clamp(21px,3vw,31px)/1.2 Manrope;margin:7px 0}.newsletter-box p{color:#365d53;font-size:14px;max-width:700px}.newsletter-box small{color:#6a8076}.newsletter-icon{font-size:54px;color:#125b53}@media(max-width:600px){.newsletter-icon{display:none}}.news-controls{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin:-1px 0 22px}.news-controls[hidden]{display:none}.news-tabs,.news-filters{display:flex;gap:8px;align-items:center;flex-wrap:wrap}.news-tab{border:1px solid #d4dfd6;background:#fff;border-radius:100px;padding:10px 16px;color:#31574f;font-size:13px;font-weight:800}.news-tab.active{background:#084a46;color:#fff;border-color:#084a46}.news-tab:hover{border-color:#0b7565}.news-filters select{border:1px solid #d4dfd6;border-radius:12px;padding:10px 13px;background:#fff;color:#31574f;max-width:190px}.news-empty{border:1px dashed #b7c9bf;border-radius:16px;background:#f4f8f2;padding:30px;grid-column:1/-1;color:#456159}.story-meta{display:flex;justify-content:space-between;gap:10px;align-items:center}.story-local{font-size:11px;background:#e5f3e9;border-radius:40px;padding:4px 8px;color:#225f4c;font-weight:800}.story.featured{grid-row:span 1}@media(max-width:700px){.news-controls{align-items:stretch}.news-tab{padding:9px 13px}.news-filters{width:100%}.news-filters select{flex:1;min-width:120px}}
+
+/* IslaViva editorial cards: image first, source always visible, graceful no-photo fallback */
+#news-grid{grid-template-columns:minmax(0,1.35fr) repeat(2,minmax(0,1fr));align-items:stretch}
+#news-grid .story{display:flex;flex-direction:column;min-width:0;text-align:left;border:1px solid #e2e8e2;transition:transform .18s,box-shadow .18s}
+#news-grid .story.featured{grid-column:span 1}
+#news-grid .news-image{height:172px;position:relative;overflow:hidden;background:linear-gradient(140deg,#094c47,#127b73 58%,#b8dfb0);display:flex;align-items:center;justify-content:center}
+#news-grid .story.featured .news-image{height:213px}
+#news-grid .news-image img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .45s ease}
+#news-grid .story:hover .news-image img{transform:scale(1.055)}
+#news-grid .news-image .photo-fallback{font-size:39px;color:#eaf5ef;text-shadow:0 2px 15px #153e3b50}
+#news-grid .news-image.has-image .photo-fallback{display:none}
+#news-grid .story-content{flex:1;display:flex;flex-direction:column;padding:18px 19px 20px}
+#news-grid .story h3{font-size:17px;line-height:1.35;margin:12px 0 9px}
+#news-grid .story.featured h3{font-size:21px}
+#news-grid .news-teaser{font-size:13px;line-height:1.6;color:#54695f;min-height:42px;margin:0 0 15px;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:3;overflow:hidden}
+#news-grid .news-byline{font-size:11px;color:#73847b;font-weight:600;margin:0 0 15px}
+#news-grid .story .source{margin-top:auto;color:#0b7367;display:flex;align-items:center;justify-content:space-between}
+#news-grid .news-photo-credit{position:absolute;bottom:8px;right:8px;color:white;font-size:9px;background:#123a3677;padding:4px 8px;border-radius:50px}
+@media(max-width:900px){#news-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){#news-grid{grid-template-columns:minmax(0,1fr)}#news-grid .story.featured{grid-column:span 1}#news-grid .news-image,#news-grid .story.featured .news-image{height:200px}}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -141,12 +161,18 @@ function renderNewsPortal(){
  if(!picked.length)grid.innerHTML='<div class="news-empty">'+esc(ui.empty)+'</div>';
  else grid.innerHTML=picked.map((n,i)=>{
    const title=(lang!=='es'&&n.translations?.[lang])||n.title;
+   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
    const hasTranslation=lang!=='es'&&Boolean(n.translations?.[lang]);
    const translatedLabel={es:'EN ESPAÑOL',de:'ÜBERSETZT',en:'TRANSLATED',fr:'TRADUIT',ht:'TRADUI'};
    const t=Date.parse(n.published);const hours=Math.max(0,Math.floor((Date.now()-t)/3600000));
-   const date=hours<1?new Intl.DateTimeFormat(lang,{hour:'2-digit',minute:'2-digit',timeZone:'America/Santo_Domingo'}).format(new Date(t)): (lang==='es'?'Hace ':lang==='de'?'Vor ':lang==='en'?'':lang==='fr'?'Il y a ':'Sa gen ')+hours+' h';
+   const date=hours<1?new Intl.DateTimeFormat(lang,{hour:'2-digit',minute:'2-digit',timeZone:'America/Santo_Domingo'}).format(new Date(t)):(lang==='es'?'Hace ':lang==='de'?'Vor ':lang==='en'?'':lang==='fr'?'Il y a ':'Sa gen ')+hours+' h';
    const places=Array.isArray(n.regions)?n.regions.filter(x=>typeof x==='string').slice(0,2):[];
-   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3><p>'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' ↗</span></div></a>';
+   let photo='';
+   try{const u=new URL(n.image||'');if(u.protocol==='https:' && !/\\.(svg|gif)(\\?|$)/i.test(u.pathname))photo=u.href;}catch(e){}
+   const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove();this.parentNode.classList.remove(\'has-image\')" />':'';
+   const teaser=preview?'<div class="news-teaser">'+esc(preview)+'</div>':'';
+   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image '+(photo?'has-image':'')+'">'+photoMarkup+'<span class="photo-fallback" aria-hidden="true">✺</span>'+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
+
  }).join('');
  const notice=document.querySelector('[data-t="newsdisclaimer"]');
  if(notice){
