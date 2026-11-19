@@ -19,7 +19,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile updater scripts
-        run: python -m py_compile scripts/update_news.py scripts/update_weather.py
+        run: python -m py_compile scripts/update_news.py scripts/update_weather.py scripts/news_quality.py tests/test_news_quality.py
+      - name: Test news classification, duplicate removal and geographic relevance
+        run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Validate website inline JavaScript and cached data
         run: |
           python - <<'PY'
