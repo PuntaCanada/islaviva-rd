@@ -1,0 +1,30 @@
+{
+  "updated": "2026-11-19T08:50:35.906897+00:00",
+  "items": [
+    {
+      "title": "MOPC anunció restricciones de circulación en el puente La Barquita",
+      "source": "Presidencia RD / MOPC",
+      "url": "https://presidencia.gob.do/noticias/mopc-anuncia-restricciones-de-circulacion-de-vehiculos-pesados-en-el-puente-de-la-barquita",
+      "preview": "Aviso oficial: circulación de vehículos pesados suspendida desde el 20 de octubre hasta nuevo aviso; cierres nocturnos anunciados para vehículos ligeros. Comprueba si sigue vigente antes de viajar.",
+      "translations": {
+        "de": "MOPC kündigte Verkehrsbeschränkungen auf der Brücke La Barquita an",
+        "en": "MOPC announced traffic restrictions on La Barquita bridge",
+        "fr": "Le MOPC a annoncé des restrictions sur le pont La Barquita",
+        "ht": "MOPC te anonse restriksyon sou pon La Barquita"
+      },
+      "preview_translations": {
+        "de": "Amtliche Bekanntmachung: Schwere Fahrzeuge ab 20. Oktober bis auf Weiteres ausgeschlossen; nächtliche Einschränkungen für Pkw angekündigt. Bitte Gültigkeit vor der Fahrt prüfen.",
+        "en": "Official announcement: heavy vehicles restricted from October 20 until further notice; nighttime restrictions announced for light vehicles. Verify current validity before travel.",
+        "fr": "Avis officiel : circulation des poids lourds restreinte depuis le 20 octobre jusqu'à nouvel ordre ; restrictions nocturnes annoncées. Vérifiez avant le trajet.",
+        "ht": "Avi ofisyèl: restriksyon sou machin lou depi 20 oktòb jiska nouvo avi; restriksyon lannuit te anonse. Verifye si sa toujou valab."
+      },
+      "regions": [
+        "Santo Domingo"
+      ],
+      "effective_from": "2026-10-20",
+      "published": null,
+      "kind": "official_announcement",
+      "status": "unverified_current"
+    }
+  ]
+}
