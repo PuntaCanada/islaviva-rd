@@ -8,5 +8,10 @@ function chosen(){let l='es';try{l=localStorage.getItem('islaviva-language')||''
 function render(l){if(!labels[l])l='es';document.documentElement.lang=l;picker.value=l;for(const [node,value] of original){const key=value.trim(),mapped=dictionary[key]?.[l];node.textContent=mapped?value.replace(key,mapped):value}
 const title=document.querySelector('h1');if(title)document.title=title.textContent+' | IslaViva RD';
 try{localStorage.setItem('islaviva-language',l)}catch(e){}}
-picker.addEventListener('change',()=>render(picker.value));render(chosen());
+// Use the independently crawlable language URL for each guide.
+const page=location.pathname.split('/').pop();
+const eligible=['ofertas-supermercados-rd.html','apagones-higuey.html'].includes(page);
+const go=locale=>{try{localStorage.setItem('islaviva-language',locale)}catch(e){}location.assign((locale==='es'?'/':'/'+locale+'/')+page)};
+picker.addEventListener('change',()=>{const next=picker.value;if(eligible)go(next);else render(next)});
+const initial=chosen();if(eligible&&initial!=='es')go(initial);else render(initial);
 })();
