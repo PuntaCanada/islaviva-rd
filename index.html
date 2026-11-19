@@ -169,9 +169,9 @@ function renderNewsPortal(){
    const places=Array.isArray(n.regions)?n.regions.filter(x=>typeof x==='string').slice(0,2):[];
    let photo='';
    try{const u=new URL(n.image||'');if(u.protocol==='https:' && !/\\.(svg|gif)(\\?|$)/i.test(u.pathname))photo=u.href;}catch(e){}
-   const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.remove();this.parentNode.classList.remove(\'has-image\')" />':'';
+   const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" decoding="async" style="opacity:0" onload="this.style.opacity=\'1\';this.parentNode.classList.add(\'has-image\')" onerror="this.remove()" />':'';
    const teaser=preview?'<div class="news-teaser">'+esc(preview)+'</div>':'';
-   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image '+(photo?'has-image':'')+'">'+photoMarkup+'<span class="photo-fallback" aria-hidden="true">✺</span>'+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
+   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+photoMarkup+'<span class="photo-fallback" aria-hidden="true">✺</span>'+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(n.category||'Actualidad')+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
 
  }).join('');
  const notice=document.querySelector('[data-t="newsdisclaimer"]');
