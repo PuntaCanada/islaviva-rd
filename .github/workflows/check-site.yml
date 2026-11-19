@@ -32,7 +32,7 @@ jobs:
           import pathlib, re, json
           html=pathlib.Path("index.html").read_text(encoding="utf-8")
           tags=list(re.finditer(r"<script([^>]*)>(.*?)</script>", html, re.S|re.I))
-          scripts=[m.group(2) for m in tags if "application/ld+json" not in m.group(1).lower() and not re.search(r"\\bsrc=",m.group(1),re.I)]
+          scripts=[m.group(2) for m in tags if "application/ld+json" not in m.group(1).lower() and not re.search(r"\bsrc=",m.group(1),re.I)]
           schemas=[m.group(2) for m in tags if "application/ld+json" in m.group(1).lower()]
           assert scripts, "Missing inline JS"
           for schema in schemas: json.loads(schema)
