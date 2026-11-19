@@ -3,14 +3,18 @@ on:
   push:
     paths:
       - '*.html'
+      - '*/*.html'
       - 'guide-i18n.js'
       - 'scripts/check-guides.mjs'
+      - 'scripts/check-localized-seo.mjs'
       - '.github/workflows/check-guides.yml'
   pull_request:
     paths:
       - '*.html'
+      - '*/*.html'
       - 'guide-i18n.js'
       - 'scripts/check-guides.mjs'
+      - 'scripts/check-localized-seo.mjs'
       - '.github/workflows/check-guides.yml'
   workflow_dispatch:
 permissions:
@@ -24,4 +28,6 @@ jobs:
         with:
           node-version: '22'
       - name: Verify all content guides are translated
-        run: node scripts/check-guides.mjs
+        run: |
+          node scripts/check-guides.mjs
+          node scripts/check-localized-seo.mjs
