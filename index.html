@@ -53,6 +53,24 @@
 #news-grid .news-image.has-image .news-photo-credit{display:block;position:absolute;z-index:2;right:12px;bottom:10px;background:#082e2bca;color:white;border-radius:100px;padding:7px 10px;font-size:10px}
 #news-grid .news-image:not(.has-image) .news-photo-credit{display:none}
 @media(max-width:600px){#news-grid .news-image,#news-grid .story.featured .news-image,#news-grid .news-image:not(.has-image),#news-grid .story.featured .news-image:not(.has-image){height:200px;min-height:200px}}
+
+/* Personal news preferences - no account, cookie ID or backend. */
+#news-grid .story h3{font-size:clamp(20px,1.7vw,23px);line-height:1.32;letter-spacing:-.45px}
+#news-grid .story.featured h3{font-size:clamp(23px,2vw,28px);line-height:1.28}
+.news-preferences-button{border:1px solid #a9cbbd;background:#e8f5ed;color:#185a4a;border-radius:12px;padding:10px 14px;font-size:13px;font-weight:800;cursor:pointer}
+.news-preferences-button:hover,.news-preferences-button[aria-expanded="true"]{background:#d1ebda;border-color:#5ba68a}
+.news-preferences[hidden]{display:none}
+.news-preferences{border:1px solid #cde2d5;border-radius:17px;background:#f4faf5;padding:19px 22px;margin:0 0 22px}
+.news-preferences-head{display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+.news-preferences-head strong{color:#174e42;font-size:17px}
+.news-preferences-head p{color:#557267;font-size:12px;margin:7px 0 0}
+.news-preferences-reset{background:white;border:1px solid #c4dfce;border-radius:99px;color:#1c7255;font-size:12px;font-weight:800;cursor:pointer;padding:9px 13px;white-space:nowrap}
+.news-preferences-choices{display:flex;gap:9px;flex-wrap:wrap;margin-top:16px}
+.news-preference{display:flex;align-items:center;gap:8px;border:1px solid #c5d9cc;background:white;border-radius:99px;padding:9px 13px;cursor:pointer;color:#31594b;font-size:13px;font-weight:700}
+.news-preference:has(input:not(:checked)){color:#7c8f86;opacity:.77;background:#e9eeea}
+.news-preference input{accent-color:#08735e;width:16px;height:16px;margin:0;cursor:pointer}
+.news-preferences *:focus-visible{outline:3px solid #3c9d80;outline-offset:2px}
+@media(max-width:600px){#news-grid .story h3{font-size:21px}#news-grid .story.featured h3{font-size:24px}.news-preferences{padding:15px}.news-preferences-head{flex-wrap:wrap}}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -66,8 +84,9 @@
   <div class="news-filters">
     <select id="news-category" aria-label="News topic"><option value="all">Todos los temas</option></select>
     <select id="news-source" aria-label="News source"><option value="all">Todas las fuentes</option></select>
+    <button type="button" id="news-personalize-button" class="news-preferences-button" aria-expanded="false" aria-controls="news-preferences">⚙️ Mis intereses</button>
   </div>
-</div><div class="news-grid" id="news-grid"></div><p class="disclaimer" data-t="newsdisclaimer">Vista de demostración: los titulares son secciones editoriales de ejemplo, no noticias de última hora. Abre las fuentes originales para leer noticias actuales.</p></div></section>
+</div><div id="news-preferences" class="news-preferences" hidden><div class="news-preferences-head"><div><strong id="news-preferences-title">Mis intereses</strong><p id="news-preferences-help">Elige los temas que quieres ver. Se guarda solo en este navegador.</p></div><button type="button" id="news-preferences-reset" class="news-preferences-reset">Mostrar todo</button></div><div id="news-preferences-choices" class="news-preferences-choices"></div></div><div class="news-grid" id="news-grid"></div><p class="disclaimer" data-t="newsdisclaimer">Vista de demostración: los titulares son secciones editoriales de ejemplo, no noticias de última hora. Abre las fuentes originales para leer noticias actuales.</p></div></section>
 <section class="city-area" id="ciudad"><div class="wrap"><div class="citytop"><div><div class="kicker" data-t="citykicker">LA VIDA, MÁS FÁCIL</div><h2 style="font:800 clamp(27px,3.3vw,39px) Manrope;letter-spacing:-1.6px;margin:0" data-t="citytitle">Todo sobre tu ciudad.</h2><p style="color:#6a8177;font-size:14px;max-width:570px;line-height:1.7" data-t="citysub">Lo que necesitas saber, sin buscar en diez sitios diferentes.</p></div><select id="city" class="citypicker" aria-label="Selecciona tu ciudad"><option value="Higüey">📍 Higüey</option><option value="Punta Cana">📍 Punta Cana / Bávaro</option><option value="Santo Domingo">📍 Santo Domingo</option><option value="Santiago">📍 Santiago</option><option value="La Romana">📍 La Romana</option><option value="Puerto Plata">📍 Puerto Plata</option><option value="Samaná">📍 Samaná</option></select></div><div class="servicegrid" id="servicegrid"></div><p class="disclaimer" data-t="localnote">Los servicios están en fase piloto. No mostramos horarios, tarifas o valoraciones sin datos comprobados.</p></div></section>
 <section class="extra-section" id="zona-extra"><div class="wrap"><div class="sectionhead"><div><div class="kicker" data-x="eyebrow">NOVEDAD · TU ZONA</div><h2 data-x="title">Tu próximo hogar. Tu próximo camino.</h2><p data-x="subtitle">Viviendas y avisos de infraestructura adaptados a tu ciudad.</p></div><span class="underlink" id="selectedregion">Higüey</span></div><div class="extra-grid"><article class="extra-card property-card"><div class="extra-top">🏡 <span data-x="propertyTag">VIVIENDA</span></div><h3 data-x="propertyTitle">Encuentra dónde vivir</h3><p data-x="propertyDesc">Explora anuncios de alquiler o venta de fuentes externas para la zona que elijas.</p><div class="extra-pills"><button type="button" class="chip active" id="rentMode" data-x="rent">Alquilar</button><button type="button" class="chip" id="buyMode" data-x="buy">Comprar</button></div><a class="extra-link" id="propertyGo" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=alquiler+Higuey+site%3Acorotos.com.do" data-x="propertyCta">Ver anuncios de mi zona ↗</a><small data-x="propertyNote">Abre búsquedas externas. No tenemos inventario propio ni precios verificados todavía.</small></article><article class="extra-card roads-card"><div class="extra-top">🚧 <span data-x="roadTag">INFRAESTRUCTURA</span></div><h3 data-x="roadTitle">Obras y cierres viales</h3><p data-x="roadDesc">Consulta los comunicados oficiales de obras, desvíos y cierres. Filtra por tu ciudad desde la búsqueda.</p><div class="road-status"><span class="pulse-dot"></span><span data-x="roadStatus">Avisos oficiales, no tráfico en tiempo real</span></div><a class="extra-link" id="roadGo" target="_blank" rel="noopener noreferrer" href="https://www.google.com/search?q=site%3Amopc.gob.do+Hig%C3%BCey+cierre+obras" data-x="roadCta">Buscar avisos de mi zona ↗</a><small data-x="roadNote">Las publicaciones pueden estar desactualizadas; verifica fecha y vigencia.</small></article></div></div></section><section class="travel-band" id="viajar"><div class="wrap"><div class="sectionhead"><div><div class="kicker" data-t="travelkicker">VIVE LA EXPERIENCIA</div><h2 data-t="traveltitle">Más allá de la postal.</h2><p data-t="travelsub">Ideas para tu próxima aventura, escapada o fin de semana.</p></div><span class="underlink" data-t="travelcurated">Inspiración para viajar ✦</span></div><div class="travel-grid" id="travelgrid"></div><p class="disclaimer" data-t="affnote">Las recomendaciones turísticas enlazan actualmente a información oficial; no hay reservas ni enlaces de afiliación activos. Los enlaces comerciales futuros se identificarán como publicidad.</p></div></section>
 <section class="featurestrip" id="servicios"><div class="wrap featuregrid"><div><div class="eyebrow" data-t="missionkicker">MÁS QUE NOTICIAS</div><h2 data-t="missiontitle">Información que realmente te sirve.</h2></div><div class="featureitem"><span>🌐</span><div><b data-t="missionone">A tu manera</b><p data-t="missiononedesc">Cuatro idiomas, noticias relevantes y tu ciudad favorita guardada en tu navegador.</p></div></div><div class="featureitem"><span>🤝</span><div><b data-t="missiontwo">Transparente por diseño</b><p data-t="missiontwodesc">Fuentes identificadas, datos verificados y publicidad siempre distinguible.</p></div></div></div></section><section class="section" id="newsletter"><div class="wrap"><div class="newsletter-box"><div><div class="kicker">ISLAVIVA RD · NEWSLETTER</div><h2 id="newsletterTitle">Nouvèl ak enfòmasyon nan lang ou</h2><p id="newsletterText">Newsletter la ap vini. Enskripsyon an poko aktive; nou pap kolekte adrès imel pou kounye a.</p><small id="newsletterSub">Opsyon ki prevwa: nouvèl chak semèn, zòn ou, ak lang ou. Konfimasyon imel obligatwa.</small></div><div class="newsletter-icon">✉</div></div></div></section></main>
@@ -135,6 +154,47 @@ async function loadIslandWeather(){
 }
 let liveNews=[];
 let newsScope='all', newsCategory='all', newsSource='all';
+const NEWS_INTERESTS=['sport','tourism','economy','politics','local','culture','nature','general'];
+const NEWS_PREFS_KEY='islaviva-news-interests-v1';
+function getSavedNewsInterests(){
+ try{
+  const stored=JSON.parse(localStorage.getItem(NEWS_PREFS_KEY)||'null');
+  return Array.isArray(stored)?new Set(stored.filter(v=>NEWS_INTERESTS.includes(v))):new Set(NEWS_INTERESTS);
+ }catch(e){return new Set(NEWS_INTERESTS)}
+}
+let visibleNewsInterests=getSavedNewsInterests();
+function saveNewsInterests(){try{localStorage.setItem(NEWS_PREFS_KEY,JSON.stringify([...visibleNewsInterests]))}catch(e){}}
+const interestUi={
+ es:{title:'⚙️ Mis intereses',help:'Desactiva los temas que no quieras ver. Se guarda solo en este navegador.',reset:'Mostrar todo',choices:['⚾ Deportes','🏝️ Turismo','💼 Economía','🏛️ Política','📍 Local','🎭 Cultura','🌿 Medioambiente','📰 Otros'],hidden:'Has ocultado todos los temas. Activa alguno en Mis intereses.'},
+ de:{title:'⚙️ Meine Interessen',help:'Blende Themen aus, die dich nicht interessieren. Gespeichert nur in diesem Browser.',reset:'Alles anzeigen',choices:['⚾ Sport','🏝️ Tourismus','💼 Wirtschaft','🏛️ Politik','📍 Regionales','🎭 Kultur','🌿 Umwelt','📰 Sonstiges'],hidden:'Du hast alle Themen ausgeblendet. Aktiviere unter Meine Interessen mindestens eines.'},
+ en:{title:'⚙️ My interests',help:'Hide topics you do not want to see. Saved only in this browser.',reset:'Show all',choices:['⚾ Sports','🏝️ Travel','💼 Business','🏛️ Politics','📍 Local','🎭 Culture','🌿 Environment','📰 Other'],hidden:'All topics are hidden. Enable one or more in My interests.'},
+ fr:{title:'⚙️ Mes centres d’intérêt',help:'Masquez les thèmes qui ne vous intéressent pas. Enregistré uniquement dans ce navigateur.',reset:'Tout afficher',choices:['⚾ Sport','🏝️ Tourisme','💼 Économie','🏛️ Politique','📍 Local','🎭 Culture','🌿 Environnement','📰 Autres'],hidden:'Tous les sujets sont masqués. Activez-en dans Mes centres d’intérêt.'},
+ ht:{title:'⚙️ Sa ki enterese m',help:'Kache sijè ou pa vle wè yo. Preferans yo rete sèlman nan navigatè sa a.',reset:'Montre tout',choices:['⚾ Espò','🏝️ Touris','💼 Ekonomi','🏛️ Politik','📍 Lokal','🎭 Kilti','🌿 Anviwònman','📰 Lòt'],hidden:'Ou kache tout sijè yo. Aktive kèk nan preferans ou.'}
+};
+// Conservative classification from original Spanish title; avoid treating every general feed as a local event.
+function newsInterest(n){
+ const t=((n.title||'')+' '+(n.category||'')).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
+ if(/\b(deportes?|beisbol|pelota|lidom|home run|jonron|softbol|futbol|baloncesto|basket|nba|mlb|atleta|olimpic[oa]s?|maraton|boxeo|tenis|toros|leones|aguilas cibae|estrellas orientales|gigantes del cibao|cibao fc)\b/.test(t))return 'sport';
+ if(/\b(turismo|turist[ao]s?|hotel(?:es)?|playa|aeropuerto|aerolinea|crucero|visitantes|vacaciones|resort)\b/.test(t))return 'tourism';
+ if(/\b(economia|economico|empresa|mercado|finanza|financiero|deuda|inflacion|dolar|precio|comercio|exportacion|importacion|empleo|banco central)\b/.test(t))return 'economy';
+ if(/\b(politica|politico|presidente|gobierno|diputad[oa]s?|congreso|senado|senador|eleccion|partido|ministro|ministerio)\b/.test(t))return 'politics';
+ if(/\b(cultura|arte|musica|cine|festival|teatro|artista|concierto|literatura|religion|iglesia|basilica)\b/.test(t))return 'culture';
+ if(/\b(ambiente|medioambiente|huracan|tormenta|naturaleza|lluvias|inundacion|ecologia|clima)\b/.test(t))return 'nature';
+ if(/\b(regionales?|higuey|punta cana|bavaro|veron|santiago|samana|puerto plata|la romana)\b/.test(t)||Array.isArray(n.regions)&&n.regions.length)return 'local';
+ return 'general';
+}
+function renderNewsPreferences(){
+ const ui=interestUi[lang]||interestUi.es;
+ const button=document.getElementById('news-personalize-button');
+ if(!button)return;
+ button.textContent=ui.title;
+ document.getElementById('news-preferences-title').textContent=ui.title;
+ document.getElementById('news-preferences-help').textContent=ui.help;
+ document.getElementById('news-preferences-reset').textContent=ui.reset;
+ const panel=document.getElementById('news-preferences-choices');
+ panel.innerHTML=NEWS_INTERESTS.map((key,i)=>'<label class="news-preference"><input type="checkbox" data-interest="'+key+'" '+(visibleNewsInterests.has(key)?'checked':'')+'/><span>'+esc(ui.choices[i])+'</span></label>').join('');
+}
+
 const newsUi={
  es:{all:'🌎 Toda la RD',local:'📍 Mi ciudad',topics:'Todos los temas',sources:'Todas las fuentes',empty:'No hay noticias recientes verificadas para estos filtros.',localNote:'Solo titulares que mencionan explícitamente esta zona; no es una cobertura local completa.',translated:'Titulares traducidos automáticamente. Consulte el artículo original para verificar detalles.',original:'Titulares originales en español. Fuente vinculada en cada noticia.',read:'Leer artículo original',latest:'Actualizado',minutes:'hace'},
  de:{all:'🌎 Ganz RD',local:'📍 Meine Stadt',topics:'Alle Themen',sources:'Alle Quellen',empty:'Keine aktuellen geprüften Meldungen für diese Auswahl.',localNote:'Nur Artikel mit ausdrücklicher Ortsnennung; keine vollständige Lokalberichterstattung.',translated:'Automatisch übersetzte Schlagzeilen. Details bitte im Original prüfen.',original:'Original-Schlagzeilen auf Spanisch. Jede Meldung verlinkt ihre Quelle.',read:'Originalartikel lesen',latest:'Aktualisiert',minutes:'vor'},
@@ -200,7 +260,8 @@ function renderNewsPortal(){
   b.classList.toggle('active',b.dataset.scope===newsScope);
   b.setAttribute('aria-pressed',String(b.dataset.scope===newsScope));
  });
- const valid=newsActive();
+ renderNewsPreferences();
+ const valid=newsActive().filter(n=>visibleNewsInterests.has(newsInterest(n)));
  const categories=[...new Set(valid.map(n=>n.category||'Actualidad'))].sort((a,b)=>a.localeCompare(b));
  const publishers=[...new Set(valid.map(n=>n.source))].sort((a,b)=>a.localeCompare(b));
  const cat=document.getElementById('news-category'),source=document.getElementById('news-source');
@@ -220,7 +281,7 @@ function renderNewsPortal(){
   for(const group of buckets.values())if(group.length&&picked.length<12)picked.push(group.shift());
  }
  const grid=document.getElementById('news-grid');
- if(!picked.length)grid.innerHTML='<div class="news-empty">'+esc(ui.empty)+'</div>';
+ if(!picked.length)grid.innerHTML='<div class="news-empty">'+esc(visibleNewsInterests.size?ui.empty:(interestUi[lang]||interestUi.es).hidden)+'</div>';
  else grid.innerHTML=picked.map((n,i)=>{
    const title=(lang!=='es'&&n.translations?.[lang])||n.title;
    const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
@@ -261,6 +322,21 @@ async function loadAutoNews(){
   renderNewsPortal();
  }catch(error){console.warn('News feed unavailable, demo remains labeled',error)}
 }
+document.getElementById('news-personalize-button').addEventListener('click',()=>{
+ const panel=document.getElementById('news-preferences'),button=document.getElementById('news-personalize-button');
+ panel.hidden=!panel.hidden;button.setAttribute('aria-expanded',String(!panel.hidden));
+});
+document.getElementById('news-preferences-choices').addEventListener('change',e=>{
+ const input=e.target.closest('input[data-interest]');
+ if(!input||!NEWS_INTERESTS.includes(input.dataset.interest))return;
+ if(input.checked)visibleNewsInterests.add(input.dataset.interest);
+ else visibleNewsInterests.delete(input.dataset.interest);
+ saveNewsInterests();renderNewsPortal();
+});
+document.getElementById('news-preferences-reset').addEventListener('click',()=>{
+ visibleNewsInterests=new Set(NEWS_INTERESTS);
+ saveNewsInterests();renderNewsPortal();
+});
 document.getElementById('news-tabs').addEventListener('click',e=>{
  const button=e.target.closest('[data-scope]');if(!button)return;
  newsScope=button.dataset.scope;renderNewsPortal();
