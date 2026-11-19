@@ -282,7 +282,7 @@ function renderRoadNotices(){
 }
 async function loadRoadNotices(){
  try{
-  const result=await fetch('./data/roadworks.json',{cache:'no-store'});
+  const result=await fetch('/data/roadworks.json',{cache:'no-store'});
   if(!result.ok)throw Error('no road reports');
   const data=await result.json();
   if(!Array.isArray(data.items))throw Error('invalid road reports');
@@ -352,7 +352,7 @@ function renderLocalPulse(){
 }
 async function loadArchivedLocalContext(){
  try{
-  const r=await fetch('./data/local_context.json',{cache:'no-store'});
+  const r=await fetch('/data/local_context.json',{cache:'no-store'});
   if(!r.ok)throw Error('no local context');
   const d=await r.json();
   archivedLocalContext=Array.isArray(d.items)?d.items.filter(x=>{
@@ -364,7 +364,7 @@ async function loadArchivedLocalContext(){
 }
 async function loadLocalBulletins(){
  try{
-  const r=await fetch('./data/local_notices.json',{cache:'no-store'});
+  const r=await fetch('/data/local_notices.json',{cache:'no-store'});
   if(!r.ok)throw Error('local bulletins unavailable');
   const data=await r.json();
   if(!Array.isArray(data.items))throw Error('invalid local bulletins');
@@ -521,7 +521,7 @@ function renderFuelPrices(){
 }
 async function loadFuelPrices(){
  try{
-  const response=await fetch('./data/fuel_prices.json',{cache:'no-store'});
+  const response=await fetch('/data/fuel_prices.json',{cache:'no-store'});
   if(!response.ok)throw Error('fuel file unavailable');
   const d=await response.json();
   if(!Number.isFinite(d.regular)||!Number.isFinite(d.premium))throw Error('invalid fuel prices');
@@ -677,7 +677,7 @@ function renderIslandWeather(){
 }
 async function loadIslandWeather(){
  try{
-  const response=await fetch('./data/weather.json',{cache:'no-store'});
+  const response=await fetch('/data/weather.json',{cache:'no-store'});
   if(!response.ok)throw Error('forecast missing');
   const forecast=await response.json();
   if(!forecast || typeof forecast.cities!=='object')throw Error('invalid forecast');
@@ -906,7 +906,7 @@ function renderNewsPortal(){
 }
 async function loadAutoNews(){
  try{
-  const response=await fetch('./data/news.json',{cache:'no-store'});
+  const response=await fetch('/data/news.json',{cache:'no-store'});
   if(!response.ok)throw Error('news data unavailable');
   const feed=await response.json();
   if(!Array.isArray(feed.items))throw Error('news data malformed');
