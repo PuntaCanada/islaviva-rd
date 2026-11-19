@@ -1,7 +1,7 @@
 name: Refresh city weather
 on:
   schedule:
-    - cron: "41 */4 * * *"
+    - cron: "17 */2 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -28,6 +28,18 @@ jobs:
           git add data/weather.json
           if ! git diff --cached --quiet; then
             git commit -m "Update city weather forecasts"
-            git pull --rebase origin main
-            git push origin HEAD:main
+            for attempt in 1 2 3 4 5; do
+              if ! git pull --rebase origin main; then
+                echo "Weather update cannot be safely rebased"
+                exit 1
+              fi
+              if git push origin HEAD:main; then
+                echo "Published fresh weather on attempt $attempt"
+                exit 0
+              fi
+              echo "Concurrent repository update; retrying $attempt/5"
+              sleep 2
+            done
+            echo "Weather publish failed after five retries"
+            exit 1
           fi
