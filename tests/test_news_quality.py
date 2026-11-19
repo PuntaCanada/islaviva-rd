@@ -91,6 +91,21 @@ class NewsQualityTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertEqual(category_for(title, expected), expected)
 
+    def test_regressions_found_in_real_feed_audit(self):
+        examples=[
+            ("Netflix revela el primer adelanto de una serie", "Actualidad", "Cultura"),
+            ("Ladrones entran a residencias en Verón", "Regionales", "Seguridad"),
+            ("Las Águilas despiden a Pipe Urueta", "Actualidad", "Deportes"),
+            ("Estrellas logran quinta victoria seguida", "Actualidad", "Deportes"),
+            ("Judo de RD va a Campeonato Mundial", "Actualidad", "Deportes"),
+            ("Consuelo y Miramar ganan en el 44 TBS de San Pedro", "Actualidad", "Deportes"),
+            ("Oferta pública inicial de Anthropic", "Medioambiente", "Economía"),
+            ("Misión FMI analiza desempeño financiero", "Actualidad", "Economía"),
+        ]
+        for title,source,expected in examples:
+            with self.subTest(title=title):
+                self.assertEqual(category_for(title, source), expected)
+
     def test_regions_require_explicit_place(self):
         self.assertEqual(region_mentions("Obras en Higüey y Bávaro"), ["Higüey", "Punta Cana"])
         self.assertEqual(region_mentions("Gobierno se reúne en Santo Domingo"), ["Santo Domingo"])
