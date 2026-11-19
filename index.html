@@ -209,6 +209,10 @@
 .news-local-priority[hidden]{display:none}
 .news-local-priority{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin:8px 0 20px;border:1px solid #c9e5d4;background:#eaf7ed;border-radius:13px;color:#175a43;padding:12px 15px;font-size:13px;font-weight:800}
 .news-local-priority small{color:#526c5d;font-size:12px;font-weight:600}
+
+.fuel-usd-price{font-size:12px!important;font-weight:800;color:#266b60;border-top:1px solid #d7e6dd;padding-top:8px;margin-top:2px}
+.fuel-fx-source{grid-column:1/-1;font-size:11px;line-height:1.5;color:#6d8274;margin:0}
+.fuel-fx-source a{text-decoration:underline;text-underline-offset:2px;color:#146d59}
 </style></head><body>
 <div class="topline"><div class="wrap"><span>✦ <span data-t="topbar">Un lugar para descubrir, vivir y entender República Dominicana</span></span><span id="today"></span></div></div>
 <header class="mainnav"><div class="wrap navinner"><a class="brand" href="#inicio"><span class="brandmark">✺</span><span><strong>isla<span>viva</span><b style="font-size:14px"> RD</b></strong><small>República Dominicana</small></span></a><nav class="navlinks"><a href="#actualidad" data-t="navnews">Actualidad</a><a href="#ciudad" data-t="navcity">Mi ciudad</a><a href="#viajar" data-t="navtravel">Viajar</a><a href="#servicios" data-t="navlife">Vivir en RD</a></nav><div class="controls"><select class="pillselect" id="language" aria-label="Idioma"><option value="es">🇩🇴 Español</option><option value="de">🇩🇪 Deutsch</option><option value="en">🇬🇧 English</option><option value="fr">🇫🇷 Français</option><option value="ht">🇭🇹 Kreyòl ayisyen</option></select><button class="iconbtn" id="searchBtn" aria-label="Search">⌕</button></div></div></header>
@@ -445,6 +449,45 @@ function renderWaze(){
 }
 document.getElementById('waze-load').addEventListener('click',()=>{wazeLoaded=true;renderWaze()});
 let fuelPricesData=null;
+let fuelUsdDopRate=null;
+let fuelUsdRateDate='';
+const FUEL_FX_KEY='islaviva-usd-dop-fx-v1';
+function fuelUsdLabel(){
+ return ({es:'USD aprox.',de:'ca. USD',en:'approx. USD',fr:'env. USD',ht:'USD apeprè'})[lang]||'USD aprox.';
+}
+function fuelUsdRateCaption(){
+ return ({es:'Cambio orientativo USD/RD$ · ',de:'Unverbindlicher Wechselkurs USD/RD$ · ',en:'Indicative USD/DOP rate · ',fr:'Taux indicatif USD/DOP · ',ht:'To chanj referans USD/RD$ · '})[lang]||'Cambio orientativo USD/RD$ · ';
+}
+async function loadFuelExchangeRate(){
+ try{
+  // The open-access API permits commercial currency conversion with attribution.
+  // Cache one daily rate locally to avoid repeated third-party requests.
+  let cached=null;
+  try{cached=JSON.parse(localStorage.getItem(FUEL_FX_KEY)||'null')}catch(e){}
+  const sameDay=new Date().toISOString().slice(0,10);
+  if(cached&&cached.fetchedDay===sameDay&&Number.isFinite(cached.rate)&&cached.rate>30&&cached.rate<100){
+   fuelUsdDopRate=cached.rate;
+   fuelUsdRateDate=cached.date||sameDay;
+   renderFuelPrices();
+   return;
+  }
+  const response=await fetch('https://open.er-api.com/v6/latest/USD',{cache:'default'});
+  if(!response.ok)throw Error('USD/DOP FX unavailable');
+  const data=await response.json();
+  const rate=Number(data.rates?.DOP);
+  const last=Number(data.time_last_update_unix);
+  if(data.result!=='success'||!Number.isFinite(rate)||rate<=30||rate>=100||
+      !Number.isFinite(last)||Math.abs(Date.now()-last*1000)>72*3600000)throw Error('USD/DOP rate stale or invalid');
+  fuelUsdDopRate=rate;
+  fuelUsdRateDate=new Date(last*1000).toISOString().slice(0,10);
+  try{localStorage.setItem(FUEL_FX_KEY,JSON.stringify({fetchedDay:sameDay,rate,date:fuelUsdRateDate}))}catch(e){}
+ }catch(e){
+  // Do not invent a USD number if current conversion cannot be verified.
+  fuelUsdDopRate=null;
+  fuelUsdRateDate='';
+ }
+ renderFuelPrices();
+}
 function renderFuelPrices(){
  const t=tfTranslations[lang]||tfTranslations.es;
  document.getElementById('fuel-eyebrow').textContent=t.fuelEyebrow;
@@ -466,8 +509,8 @@ function renderFuelPrices(){
  target.innerHTML=[
   ['regular',t.regular,d.regular],
   ['premium',t.premium,d.premium]
- ].map(([id,label,amount])=>'<div class="fuel-price"><span>'+esc(label)+'</span><strong>'+esc(price(amount))+'</strong><small>'+esc(t.gallon)+'</small></div>').join('')
- +'<p class="fuel-status">'+esc(t.valid)+' '+esc(new Date(d.valid_until+'T12:00:00Z').toLocaleDateString(lang,{timeZone:'America/Santo_Domingo',day:'2-digit',month:'long',year:'numeric'}))+'</p>';
+ ].map(([id,label,amount])=>'<div class="fuel-price"><span>'+esc(label)+'</span><strong>'+esc(price(amount))+'</strong><small>'+esc(t.gallon)+'</small>'+(Number.isFinite(fuelUsdDopRate)?'<span class="fuel-usd-price">'+esc(fuelUsdLabel())+' '+esc((amount/fuelUsdDopRate).toLocaleString(lang,{minimumFractionDigits:2,maximumFractionDigits:2}))+' USD</span>':'')+'</div>').join('')
+ +'<p class="fuel-status">'+esc(t.valid)+' '+esc(new Date(d.valid_until+'T12:00:00Z').toLocaleDateString(lang,{timeZone:'America/Santo_Domingo',day:'2-digit',month:'long',year:'numeric'}))+'</p>'+(Number.isFinite(fuelUsdDopRate)?'<p class="fuel-fx-source">'+esc(fuelUsdRateCaption()+'1 USD ≈ RD$ '+fuelUsdDopRate.toLocaleString(lang,{maximumFractionDigits:2}))+' · '+esc(fuelUsdRateDate)+' · <a href="https://www.exchangerate-api.com" target="_blank" rel="noopener noreferrer">Rates By Exchange Rate API ↗</a></p>':'');
 }
 async function loadFuelPrices(){
  try{
@@ -896,6 +939,7 @@ loadRoadNotices();
 loadLocalBulletins();
 loadArchivedLocalContext();
 loadFuelPrices();
+loadFuelExchangeRate();
 // Refresh the Dominican-local day/night appearance while the tab remains open.
 setInterval(renderIslandWeather,5*60*1000);
 </script></body></html>
