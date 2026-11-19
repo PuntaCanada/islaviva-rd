@@ -60,6 +60,18 @@ async function verify(lang){
   const gamingInterest=page.locator('#news-preferences-choices [data-interest="gaming"]');
   if((await gamingInterest.count())!==1)throw Error('Gaming & Tech news interest missing');
   if(!(await gamingInterest.isChecked()))throw Error('Gaming & Tech should be enabled by default');
+  for(const topic of ['health','science','education','safety','traffic']){
+   const checkbox=page.locator('#news-preferences-choices [data-interest="'+topic+'"]');
+   if((await checkbox.count())!==1)throw Error('Missing new news interest '+topic);
+   if(!(await checkbox.isChecked()))throw Error('New interest '+topic+' should be enabled by default');
+  }
+  // User-selected preferences must be saved and respected.
+  const healthCheckbox=page.locator('#news-preferences-choices [data-interest="health"]');
+  await healthCheckbox.uncheck();
+  const stored=await page.evaluate(()=>JSON.parse(localStorage.getItem('islaviva-news-interests-v3')||'null'));
+  if(!Array.isArray(stored)||stored.includes('health')||!stored.includes('science'))throw Error('New interests are not saved correctly');
+  await healthCheckbox.check();
+
   await page.locator('#news-personalize-button').click();
   const gta=page.locator('#news-grid .story').filter({hasText:'GTA VI'});
   if(await gta.count()){
