@@ -32,6 +32,15 @@ GAMING_FEED_RE = re.compile(
 
 # Narrow title rules: avoid ambiguous standalone words such as "clase", "ley",
 # "carrera", "estudio", "caso", "choque" and "trafico" without a road context.
+# Only unambiguous film/series headlines; do not classify general 'juegos'
+# (sports matches) or cinematic descriptions of real crime as entertainment.
+FILM_TITLE_RE = re.compile(
+    r"\\b(?:precuela|secuelas? de (?:la )?pelicula|peliculas?|"
+    r"estreno cinematografico|taquilla|cine|"
+    r"mi pobre angelito|home alone|juegos del hambre|hunger games|"
+    r"actores? (?:de cine|protagoniza)|actrices? (?:de cine|protagoniza))\\b"
+)
+
 SPECIAL_TOPIC_RULES = (
     ("Salud", re.compile(
         r"\b(?:salud publica|ministerio de salud|hospitales?|clinicas?|"
@@ -128,6 +137,8 @@ def category_for(title, default="Actualidad", summary="", feed_categories=None):
     t = normalize(title)
     if GAMING_TITLE_RE.search(t):
         return "Gaming y tecnología"
+    if FILM_TITLE_RE.search(t):
+        return "Cultura"
     for topic, expression in SPECIAL_TOPIC_RULES:
         if expression.search(t):
             return topic
