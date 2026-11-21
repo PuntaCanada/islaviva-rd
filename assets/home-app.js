@@ -31,7 +31,7 @@ function renderRoadNotices(){
    })();
    const title=(lang==='es'?n.title:n.translations?.[lang])||n.title;
    // Never present an un-translated Spanish preview as if it were in the chosen language.
-   const preview=(lang==='es'?n.preview:(safeTranslation?n.preview_translations?.[lang]:''))||'';
+   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
    const region=Array.isArray(n.regions)&&n.regions.length?n.regions.join(' / '):'República Dominicana';
    const date=n.published?new Date(n.published).toLocaleDateString(lang,{year:'numeric',month:'short',day:'numeric',timeZone:'America/Santo_Domingo'}):(n.effective_from||'');
    const status=n.kind==='official_announcement'?t.notice:t.media;
@@ -847,7 +847,7 @@ function renderNewsPortal(){
    const unsafeName=/(my poor angel|mon pauvre ange|mein armer engel|pabunem)/.test(translatedNorm);
    const safeTranslation=Boolean(proposedTitle)&&!unsafeMovie&&!missingPlace&&!unsafeName;
    const title=safeTranslation?proposedTitle:n.title;
-   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
+   const preview=(lang==='es'?n.preview:(safeTranslation?n.preview_translations?.[lang]:''))||'';
    const hasTranslation=lang!=='es'&&safeTranslation;
    const translatedLabel={es:'EN ESPAÑOL',de:'ÜBERSETZT',en:'TRANSLATED',fr:'TRADUIT',ht:'TRADUI'};
    const t=Date.parse(n.published);const hours=Math.max(0,Math.floor((Date.now()-t)/3600000));
