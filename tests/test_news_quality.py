@@ -7,7 +7,7 @@ import unittest
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from news_quality import (category_for, region_mentions, canonical_url,
-                          is_near_duplicate, select_stories, validate_news, quality_rank, cached_title_translations, trustworthy_regions, reliable_title_translation, filter_title_translations)
+                          is_near_duplicate, select_stories, validate_news, quality_rank, cached_title_translations, trustworthy_regions, reliable_title_translation, filter_title_translations, feed_health, news_diagnostics)
 
 class NewsQualityTests(unittest.TestCase):
     def test_subjects(self):
@@ -204,6 +204,26 @@ class NewsQualityTests(unittest.TestCase):
         self.assertEqual(cached_title_translations(
             "Mi pobre angelito", "Mi pobre angelito",
             {"de":"Mein armer Engel", "en":"Home Alone"}), {"en":"Home Alone"})
+
+    def test_feed_health_never_claims_partial_success_is_complete(self):
+        self.assertEqual(feed_health(15, 15, 72), "ok")
+        self.assertEqual(feed_health(7, 15, 72), "partial")
+        self.assertEqual(feed_health(2, 15, 0), "no_recent_articles")
+        self.assertEqual(feed_health(0, 15, 0), "unavailable")
+        with self.assertRaises(ValueError):
+            feed_health(16, 15, 4)
+
+    def test_diagnostics_counts_only_actual_items(self):
+        entries=[
+            {"source":"El Día","image":"","regions":[]},
+            {"source":"El Día","image":"https://example.com/img.jpg","regions":["Higüey"]},
+            {"source":"Diario Libre","image":"","regions":[]},
+        ]
+        self.assertEqual(news_diagnostics(entries, 9, 15), {
+            "feeds_successful":9, "feeds_configured":15,
+            "publishers":{"Diario Libre":1,"El Día":2},
+            "with_image_url":1, "with_region":1,
+        })
 
     def test_cached_news_structure(self):
         data=json.loads((ROOT/"data"/"news.json").read_text(encoding="utf-8"))
