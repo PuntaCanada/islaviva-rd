@@ -1,7 +1,29 @@
 {
-  "updated": "2026-11-21T20:56:24.089345+00:00",
+  "updated": "2026-11-21T21:01:27.151627+00:00",
   "source_status": "ok",
   "items": [
+    {
+      "title": "Paz en liquidación",
+      "url": "https://noticiassin.com/me-lo-dijo-adela/2026/11/21/paz-en-liquidacion-la-estabilidad-dominicana-en-riesgo-2174690/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La estabilidad dominicana se descuida mientras la indignación y la fabricación de enemigos generan audiencia y beneficio.",
+      "image": "",
+      "published": "2026-11-21T20:54:46+00:00",
+      "translations": {
+        "de": "Frieden bei der Liquidation",
+        "en": "Peace in liquidation",
+        "fr": "Paix en liquidation",
+        "ht": "Lapè nan likidasyon"
+      },
+      "preview_translations": {
+        "de": "Die dominikanische Stabilität wird vernachlässigt, während Empörung und die Erfindung von Feinden Publikum und Gewinn generieren.",
+        "en": "Dominican stability is neglected while outrage and the fabrication of enemies generate audience and profit.",
+        "fr": "La stabilité dominicaine est négligée tandis que l’indignation et la fabrication d’ennemis génèrent audience et profit.",
+        "ht": "Estabilite Dominiken neglije pandan kòlè ak fabrikasyon lènmi jenere odyans ak pwofi."
+      }
+    },
     {
       "title": "Turismo entrega isleta reconstruida en Salcedo con inversión de RD$10.2 millones",
       "url": "https://noticiassin.com/pais/turismo/2026/11/21/turismo-entrega-isleta-reconstruida-en-salcedo-por-rd10-2-millones-2174679/",
@@ -399,28 +421,6 @@
       }
     },
     {
-      "title": "Hombre denuncia que agente del DICRIM le dio un martillazo en el rostro en Sabana Grande de Boyá",
-      "url": "https://noticiassin.com/pais/provincias/2026/11/21/hombre-denuncia-martillazo-de-agente-del-dicrim-en-sabana-grande-de-boya-2174649/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Hombre denuncia que un agente del DICRIM le hirió el rostro con un martillo durante un incidente en su casa.",
-      "image": "",
-      "published": "2026-11-21T19:32:01+00:00",
-      "translations": {
-        "de": "Ein Mann berichtet, dass ein DOCRIM-Agent ihm in Sabana Grande de Boyá mit einem Hammerschlag ins Gesicht geschlagen hat",
-        "en": "Man reports that DICRIM agent struck him in the face with a hammer blow in Sabana Grande de Boyá",
-        "fr": "Man rapporte qu’un agent de DICRIM l’a frappé au visage d’un coup de marteau à Sabana Grande de Boyá",
-        "ht": "Man rapòte ke ajan DICRIM te frape l nan figi ak yon kout mato nan Sabana Grande de Boyá"
-      },
-      "preview_translations": {
-        "de": "Ein Mann berichtet, dass ein DICRIM-Agent sich bei einem Vorfall in seinem Haus mit einem Hammer das Gesicht verletzt hat.",
-        "en": "Man reports that a DICRIM agent injured his face with a hammer during an incident at his home.",
-        "fr": "Un homme rapporte qu’un agent DICRIM s’est blessé au visage avec un marteau lors d’un incident à son domicile.",
-        "ht": "Nonm nan rapòte ke yon ajan DICRIM te blese figi li ak yon mato pandan yon ensidan lakay li."
-      }
-    },
-    {
       "title": "PERU: Terremoto de magnitud 6,7 sacude el centro sin daños",
       "url": "https://almomento.net/peru-terremoto-de-magnitud-67-sacude-el-centro-sin-danos/",
       "source": "AlMomento",
@@ -528,6 +528,28 @@
         "en": "WASHINGTON Nov 21 - U.S. President Donald Trump raised this Saturday the possibility of reaching a \"historic\" collaboration with the Party...",
         "fr": "WASHINGTON, 21 nov. - Le président américain Donald Trump a évoqué ce samedi la possibilité de parvenir à une collaboration « historique » avec le Parti...",
         "ht": "WASHINGTON 21 Novanm - Prezidan Etazini Donald Trump te soulve samdi sa a posiblite pou rive nan yon kolaborasyon \"istorik\" ak Pati a..."
+      }
+    },
+    {
+      "title": "Abinader inaugura hospital en Nisibón; invierte 1,200 millones",
+      "url": "https://almomento.net/abinader-inaugura-hospital-en-nisibon-invierte-1200-millones/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "LA ALTAGRACIA.– El presidente Luis Abinader inauguró el Hospital de Las Lagunas de Nisibón, construido y equipado con una inversión superior a RD$1,200 millones…",
+      "image": "",
+      "published": "2026-11-21T19:00:08+00:00",
+      "translations": {
+        "de": "Abinader eröffnet Krankenhaus in Nisibon; investiert 1,2 Milliarden",
+        "en": "Abinader inaugurates hospital in Nisibon; invests 1.2 billion",
+        "fr": "Abinader inaugure un hôpital à Nisibon ; investit 1,2 milliard",
+        "ht": "Abinader inogire lopital nan Nisibon; envesti 1.2 milya dola"
+      },
+      "preview_translations": {
+        "de": "LA ALTAGRACIA.– Präsident Luis Abinader weihte das Krankenhaus von Las Lagunas de Nisibón ein, das mit einer Investition von über 1.200 Millionen RD$ gebaut und ausgestattet wurde...",
+        "en": "LA ALTAGRACIA.– President Luis Abinader inaugurated the Hospital of Las Lagunas de Nisibón, built and equipped with an investment exceeding RD$1,200 million...",
+        "fr": "LA ALTAGRACIA.– Le président Luis Abinader a inauguré l’Hôpital de Las Lagunas de Nisibón, construit et équipé grâce à un investissement dépassant 1 200 millions de RD$...",
+        "ht": "LA ALTAGRACIA.– Prezidan Luis Abinader te inogire Lopital Las Lagunas de Nisibón, bati ak ekipe ak yon envestisman ki depase RD$1,200 milyon..."
       }
     },
     {
@@ -856,6 +878,12 @@
         "en": "How effective is Vasectomy?",
         "fr": "Quelle est l’efficacité de la vasectomie ?",
         "ht": "Ki jan Vasektomi efikas?"
+      },
+      "preview_translations": {
+        "de": "Familienplanung ist keine ausschließliche Verantwortung von Frauen. Jedes Mal, wenn ein Paar entscheidet, wann es Kinder bekommen will oder ob es die Familie erweitern möchte...",
+        "en": "Family planning is not an exclusive responsibility of women. Every time a couple decides when to have children or if they want to expand the family...",
+        "fr": "La planification familiale n’est pas une responsabilité exclusive des femmes. Chaque fois qu’un couple décide quand avoir des enfants ou s’il veut agrandir la famille...",
+        "ht": "Planifikasyon fanmi pa yon responsablite eksklizif fanm. Chak fwa yon koup deside kilè pou gen pitit oswa si yo vle elaji fanmi an..."
       }
     },
     {
@@ -874,6 +902,12 @@
         "en": "Cholitín reveals he was NOT invited to the Public Hearing of the Punta Cana District project",
         "fr": "Cholitín révèle qu’il n’a PAS été invité à l’audience publique du projet du district de Punta Cana",
         "ht": "Cholitín revele li PA t envite nan Odyans Piblik pwojè Distri Punta Cana a"
+      },
+      "preview_translations": {
+        "de": "\"Ich hätte gern an den öffentlichen Anhörungen von gestern teilgenommen, aber leider wurde ich nicht eingeladen\", sagte Cholitín und fragte sich, warum nicht alle eingeladen waren...",
+        "en": "\"I would have liked to participate in yesterday's public hearings, but unfortunately I was not invited,\" Cholitín said, questioning why not everyone was invited...",
+        "fr": "« J’aurais aimé participer aux audiences publiques d’hier, mais malheureusement je n’ai pas été invité », dit Cholitín, se demandant pourquoi tout le monde n’était pas invité...",
+        "ht": "\"Mwen ta renmen patisipe nan odyans piblik yè a, men malerezman yo pa t envite m,\" Cholitín di, li mande poukisa pa tout moun te envite..."
       }
     },
     {
@@ -890,6 +924,12 @@
         "en": "Shohei Ohtani signs a multimillion-dollar deal with New Balance until his retirement",
         "fr": "Shohei Ohtani signe un contrat de plusieurs millions de dollars avec New Balance jusqu’à sa retraite",
         "ht": "Shohei Ohtani siyen yon kontra plizyè milyon dola ak New Balance jiskaske li pran retrèt li"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Miami (USA). - Der japanische Spieler Shohei Ohtani, Spieler der Los Angeles Dodgers, verlängerte seinen Vertrag mit der Firma...",
+        "en": "This article was originally published in El Día. Miami (USA). - Japanese player Shohei Ohtani, Los Angeles Dodgers player, extended his contract with the firm...",
+        "fr": "Cet article a été initialement publié dans El Día. Miami (États-Unis). - Le joueur japonais Shohei Ohtani, joueur des Los Angeles Dodgers, a prolongé son contrat avec la firme...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Miami (USA). - Jwè Japonè Shohei Ohtani, jwè Los Angeles Dodgers, te pwolonje kontra li ak konpayi an..."
       }
     },
     {
@@ -906,6 +946,12 @@
         "en": "Hackers attack FBI and Department of Agriculture systems",
         "fr": "Des hackers attaquent les systèmes du FBI et du Département de l’Agriculture",
         "ht": "Pirat atake sistèm FBI ak Depatman Agrikilti"
+      },
+      "preview_translations": {
+        "de": "WASHINGTON.– Das US-Landwirtschaftsministerium (USDA) und das Federal Bureau of Investigation (FBI) wurden Opfer von Cyberangriffen, laut ...",
+        "en": "WASHINGTON.– The United States Department of Agriculture (USDA) and the Federal Bureau of Investigation (FBI) were victims of cyberattacks, according to...",
+        "fr": "WASHINGTON.– Le Département de l’Agriculture des États-Unis (USDA) et le Federal Bureau of Investigation (FBI) ont été victimes de cyberattaques, selon ...",
+        "ht": "WASHINGTON.– Depatman Agrikilti Etazini (USDA) ak Biwo Envestigasyon Federal (FBI) te viktim atak sou entènèt, daprè ..."
       }
     },
     {
@@ -922,6 +968,12 @@
         "en": "Rafael Nadal is a member of Real Madrid's board of directors",
         "fr": "Rafael Nadal est membre du conseil d’administration du Real Madrid",
         "ht": "Rafael Nadal se yon manm nan konsèy administrasyon Real Madrid"
+      },
+      "preview_translations": {
+        "de": "Tennislegende Rafael Nadal trat an diesem Samstag dem Vorstand von Real Madrid bei, nachdem seine Ernennung auf der Versammlung bestätigt worden war...",
+        "en": "Tennis legend Rafael Nadal joined Real Madrid's board of directors this Saturday, after his appointment was ratified at the assembly...",
+        "fr": "La légende du tennis Rafael Nadal a rejoint le conseil d’administration du Real Madrid ce samedi, après que sa nomination ait été ratifiée lors de l’assemblée...",
+        "ht": "Lejand tenis Rafael Nadal te rantre nan konsèy administrasyon Real Madrid samdi sa a, apre nonmen li te ratifye nan asanble a..."
       }
     },
     {
@@ -940,6 +992,12 @@
         "en": "Business card used by drug delivery companies in Bávaro revealed to the PCP",
         "fr": "Carte de visite utilisée par les entreprises de livraison de médicaments à Bávaro révélée au PCP",
         "ht": "Kat biznis konpayi livrezon medikaman nan Bávaro te itilize bay PCP a"
+      },
+      "preview_translations": {
+        "de": "\"Die Figur Scarface, die in der Fiktion mit Drogenhandel in Verbindung gebracht wird, erscheint nun auf einer Karte, die direkt im Touristenviertel von Punta Cana für seine...",
+        "en": "\"The character Scarface, associated with drug trafficking in the fiction, now appears on a card reported right in the tourist area of Punta Cana for his...",
+        "fr": "« Le personnage Scarface, associé au trafic de drogue dans la fiction, apparaît désormais sur une carte signalée directement dans la zone touristique de Punta Cana pour son...",
+        "ht": "\"Pèsonaj Scarface, ki asosye ak trafik dwòg nan fiksyon an, kounye a parèt sou yon kat ki rapòte dirèkteman nan zòn touris Punta Cana pou..."
       }
     },
     {
@@ -956,6 +1014,12 @@
         "en": "ADP responds to Raquel Peña and attributes the strikes to breaches",
         "fr": "ADP répond à Raquel Peña et attribue les frappes à des violations",
         "ht": "ADP reponn a Raquel Peña epi atribye frap yo a vyolasyon"
+      },
+      "preview_translations": {
+        "de": "Die Dominikanische Lehrervereinigung (ADP) reagierte auf Kritik von Vizepräsidentin Raquel Peña bezüglich der häufigen Unterrichtsunterbrechungen und...",
+        "en": "The Dominican Association of Teachers (ADP) responded to criticism from Vice President Raquel Peña about the frequent teaching stoppages and...",
+        "fr": "L’Association dominicaine des enseignants (ADP) a répondu aux critiques de la vice-présidente Raquel Peña concernant les fréquentes interruptions d’enseignement et...",
+        "ht": "Asosyasyon Pwofesè Dominiken yo (ADP) te reponn kritik Vis Prezidan Raquel Peña sou sispann ansèyman souvan ak..."
       }
     },
     {
@@ -972,6 +1036,12 @@
         "en": "Putin gains international prominence after meeting with Trump and Xi Jinping in China",
         "fr": "Poutine acquiert une notoriété internationale après avoir rencontré Trump et Xi Jinping en Chine",
         "ht": "Putin vin gen enpòtans entènasyonal apre li te rankontre ak Trump ak Xi Jinping nan Lachin"
+      },
+      "preview_translations": {
+        "de": "Punta Cana. Der Präsident Russlands, Wladimir Putin, erlangte durch seine Teilnahme erhebliche internationale Aufmerksamkeit... Der Beitrag Putin gewinnt internationale Bekanntheit...",
+        "en": "Punta Cana. The President of Russia, Vladimir Putin, achieved significant international exposure by participating... The entry Putin gains international prominence...",
+        "fr": "Punta Cana. Le président russe, Vladimir Poutine, a obtenu une visibilité internationale significative en participant... L’entrée de Poutine acquiert une notoriété internationale...",
+        "ht": "Punta Cana. Prezidan Larisi, Vladimir Putin, te jwenn yon gwo ekspoze entènasyonal lè li patisipe... Antre Putin vin gen enpòtans entènasyonal..."
       }
     },
     {
@@ -990,6 +1060,12 @@
         "en": "Man sentenced to 15 years in prison for killing another for defending a woman in Cabeza de Toro, Punta Cana",
         "fr": "Homme condamné à 15 ans de prison pour avoir tué une autre personne pour avoir défendu une femme à Cabeza de Toro, Punta Cana",
         "ht": "Nonm kondane a 15 ane prizon pou touye yon lòt moun paske li t ap defann yon fanm nan Cabeza de Toro, Punta Cana"
+      },
+      "preview_translations": {
+        "de": "CABEZA DE TORO, VERÓN–PUNTA CANA.— Das Kollegialgericht des Gerichtsbezirks La Altagracia verurteilte Víctor Manuel Méndez zu 15 Jahren Haft, nach...",
+        "en": "CABEZA DE TORO, VERÓN–PUNTA CANA.— The Collegiate Court of the Judicial District of La Altagracia sentenced Víctor Manuel Méndez to 15 years in prison, after...",
+        "fr": "CABEZA DE TORO, VERÓN–PUNTA CANA.— Le tribunal collégial du district judiciaire de La Altagracia a condamné Víctor Manuel Méndez à 15 ans de prison, après que...",
+        "ht": "CABEZA DE TORO, VERÓN–PUNTA CANA.— Tribinal Kolèj Distri Jidisyè La Altagracia te kondane Víctor Manuel Méndez a 15 ane prizon, apre sa..."
       }
     },
     {
@@ -1008,6 +1084,12 @@
         "en": "Verón City Council promotes healthy relationships and respect among men during workshop in Macau",
         "fr": "Le conseil municipal de Verón promeut des relations saines et le respect entre les hommes lors d’un atelier à Macao",
         "ht": "Konsèy Vil Verón ankouraje relasyon ki an sante ak respè ant gason pandan atelye nan Macau"
+      },
+      "preview_translations": {
+        "de": "VERÓN–PUNTA CANA.— Der Stadtrat des Stadtbezirks Verón–Punta Cana nahm über seine Genderabteilung an dem Workshop \"Männer: Jenseits der ...",
+        "en": "VERÓN–PUNTA CANA.— The City Council of the Verón–Punta Cana Municipal District, through its Gender Department, participated in the workshop \"Men: Beyond the...",
+        "fr": "VERÓN–PUNTA CANA.— Le Conseil municipal du district municipal de Verón–Punta Cana, par l’intermédiaire de son département du genre, a participé à l’atelier « Les hommes : au-delà del...",
+        "ht": "VERÓN–PUNTA CANA.— Konsèy Vil Distri Minisipal Verón–Punta Cana, atravè Depatman Sèks li a, te patisipe nan atelye \"Gason: Depase ..."
       }
     },
     {
@@ -1024,6 +1106,12 @@
         "en": "The 7 possible disadvantages of turning La Ceiba del Salado into a municipal district",
         "fr": "Les 7 inconvénients possibles de transformer La Ceiba del Salado en district municipal",
         "ht": "7 dezavantaj posib pou tounen La Ceiba del Salado yon distri minisipal"
+      },
+      "preview_translations": {
+        "de": "LA CEIBA DEL SALADO.— Obwohl die Umwandlung von La Ceiba del Salado in einen Gemeindebezirk neue Entwicklungsmöglichkeiten darstellen könnte, legt der Vorschlag auch nahe...",
+        "en": "LA CEIBA DEL SALADO.— Although turning La Ceiba del Salado into a municipal district could represent new development opportunities, the proposal also suggests...",
+        "fr": "LA CEIBA DEL SALADO.— Bien que transformer La Ceiba del Salado en district municipal puisse représenter de nouvelles opportunités de développement, la proposition suggère également...",
+        "ht": "LA CEIBA DEL SALADO.— Malgre vire La Ceiba del Salado an yon distri minisipal ta ka reprezante nouvo opòtinite devlopman, pwopozisyon an sijere tou..."
       }
     },
     {
@@ -1040,6 +1128,12 @@
         "en": "Rafael Barias wins fifth district basketball championship",
         "fr": "Rafael Barias remporte le cinquième championnat de basketball de district",
         "ht": "Rafael Barias ranpòte senkyèm chanpyona baskètbòl distri a"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.– Der Rafael Barias Club wurde Meister des 50. Superior Basketball Turniers des National District (TBS Distrito 2026) nach einem 83-76-Sieg...",
+        "en": "SANTO DOMINGO.– The Rafael Barias club was crowned champion of the 50th Superior Basketball Tournament of the National District (TBS Distrito 2026), after defeating 83-76...",
+        "fr": "SANTO DOMINGO.– Le club Rafael Barias a été couronné champion du 50e Tournoi Supérieur de Basket-ball du District National (TBS Distrito 2026), après une victoire 83-76...",
+        "ht": "SANTO DOMINGO.– Klèb Rafael Barias la te vin chanpyon 50yèm Tounwa Baskètbòl Siperyè Distri Nasyonal la (TBS Distrito 2026), apre li te bat 83-76..."
       }
     },
     {
@@ -1056,6 +1150,12 @@
         "en": "Magnitude 4.8 earthquake shakes areas of eastern DR this Saturday",
         "fr": "Un tremblement de terre de magnitude 4,8 secoue des zones de l’est de la RD ce samedi",
         "ht": "Tranblemanntè ak magnitid 4.8 ap souke zòn nan lès DR samdi sa a"
+      },
+      "preview_translations": {
+        "de": "La Altagracia, Dominikanische Republik.—Ein seismisches Ereignis der Stärke 4,8 erschütterte am Morgen des Samstags, dem 21. November, verschiedene Gebiete im Osten der Republik...",
+        "en": "La Altagracia, Dominican Republic.—A magnitude 4.8 seismic event shook various areas in the east of the Republic on the morning of Saturday, November 21...",
+        "fr": "La Altagracia, République dominicaine.—Un événement sismique de magnitude 4,8 a secoué diverses zones de l’est de la République le matin du samedi 21 novembre...",
+        "ht": "La Altagracia, Repiblik Dominikèn.—Yon evènman sismik ak magnitid 4.8 te souke plizyè zòn nan lès Repiblik la nan maten samdi 21 novanm..."
       }
     },
     {
@@ -1072,6 +1172,12 @@
         "en": "La Ceiba del Salado could become a municipal district, and these would be its advantages",
         "fr": "La Ceiba del Salado pourrait devenir un district municipal, et ce seraient ses avantages",
         "ht": "La Ceiba del Salado ta ka vin yon distri minisipal, e sa yo ta avantaj li yo"
+      },
+      "preview_translations": {
+        "de": "LA CEIBA DEL SALADO.— Die Gemeinde La Ceiba del Salado in Verón–Punta Cana könnte erhebliche Verwaltungsänderungen durchlaufen, falls das Projekt genehmigt wird...",
+        "en": "LA CEIBA DEL SALADO.— The community of La Ceiba del Salado, in Verón–Punta Cana, could undergo significant administrative changes if the project is approved...",
+        "fr": "LA CEIBA DEL SALADO.— La communauté de La Ceiba del Salado, à Verón–Punta Cana, pourrait subir d’importants changements administratifs si le projet est approuvé...",
+        "ht": "LA CEIBA DEL SALADO.— Kominote La Ceiba del Salado, nan Verón–Punta Cana, ta ka sibi gwo chanjman administratif si pwojè a apwouve..."
       }
     },
     {
@@ -1088,6 +1194,12 @@
         "en": "Harry Kane injured, a catastrophe for Bayern",
         "fr": "Harry Kane blessé, une catastrophe pour le Bayern",
         "ht": "Harry Kane blese, yon katastwòf pou Bayern"
+      },
+      "preview_translations": {
+        "de": "Ohne seinen Ballon d'Or-Gewinner von 2026, Harry Kane, für mehrere Monate, durchlebt Bayern München einen Herbst, der an eine Katastrophe grenzt, und muss Lösungen finden...",
+        "en": "Deprived of its 2026 Ballon d'Or winner, Harry Kane, for several months, Bayern Munich is going through an autumn that borders on catastrophe and will have to find solutions...",
+        "fr": "Privé depuis plusieurs mois de son vainqueur du Ballon d’Or 2026, Harry Kane, le Bayern Munich traverse un automne frôlant la catastrophe et devra trouver des solutions...",
+        "ht": "San gayan Ballon d'Or 2026 li a, Harry Kane, pandan plizyè mwa, Bayern Munich ap pase yon otòn ki prèske yon katastwòf e yo pral oblije jwenn solisyon..."
       }
     },
     {
@@ -1107,6 +1219,12 @@
         "en": "Magnitude 4.6 earthquake reported near Higüey that was felt in Punta Cana",
         "fr": "Séisme de magnitude 4,6 signalé près de Higüey, ressenti à Punta Cana",
         "ht": "Tranblemanntè magnitid 4.6 te rapòte toupre Higüey ki te santi nan Punta Cana"
+      },
+      "preview_translations": {
+        "de": "HIGÜEY, LA ALTAGRACIA.— Ein vorläufiges seismisches Ereignis der Magnitude 4,6 wurde am Morgen des Samstags, dem 21. November 2026, gemeldet, mit einem geschätzten Standort...",
+        "en": "HIGÜEY, LA ALTAGRACIA.— A preliminary magnitude 4.6 seismic event was reported on the morning of Saturday, November 21, 2026, with an estimated location...",
+        "fr": "HIGÜEY, LA ALTAGRACIA.— Un événement sismique préliminaire de magnitude 4,6 a été signalé le matin du samedi 21 novembre 2026, avec une localisation estimée...",
+        "ht": "HIGÜEY, LA ALTAGRACIA.— Yon evènman sismik preliminè ak magnitid 4.6 te rapòte nan maten samdi 21 novanm 2026, ak yon kote estime..."
       }
     },
     {
@@ -1123,6 +1241,12 @@
         "en": "User complaints in the Independencia corridor: \"They don't refund\"",
         "fr": "Plaintes des utilisateurs dans le couloir Independencia : « Ils ne remboursent pas »",
         "ht": "Reklamasyon itilizatè nan koridò Independencia a: \"Yo pa remèt lajan an\""
+      },
+      "preview_translations": {
+        "de": "Trotz wiederholter Passagierbeschwerden und der Bemühungen von Diario Libre, anzuprangern, dass die Busse auf dem Independencia-Korridor nicht zurückkehren...",
+        "en": "Despite repeated passenger complaints and the efforts by Diario Libre to denounce that the buses on the Independencia corridor do not return the...",
+        "fr": "Malgré les plaintes répétées des passagers et les efforts de Diario Libre pour dénoncer que les bus du corridor Independencia ne retournent pas le...",
+        "ht": "Malgre plent repete pasaje yo ak efò Diario Libre pou denonse ke bis sou koridò Independencia pa retounen..."
       }
     },
     {
@@ -1139,6 +1263,12 @@
         "en": "How much did the isleta renovated by Tourism cost at the entrance to Salcedo?",
         "fr": "Combien a coûté l’isleta rénovée par le Tourisme à l’entrée de Salcedo ?",
         "ht": "Konbyen isleta Touris te renove a te koute nan antre Salcedo?"
+      },
+      "preview_translations": {
+        "de": "Der Tourismusminister David Collado übergab die rekonstruierte Insel an der Manolo Tavárez Justo-Straße, nahe dem Eingang zur Gemeinde Salcedo...",
+        "en": "The Minister of Tourism, David Collado, handed over the reconstructed islet located on the Manolo Tavárez Justo road, near the entrance to the municipality of Salcedo...",
+        "fr": "Le ministre du Tourisme, David Collado, a remis l’îlot reconstruit situé sur la route Manolo Tavárez Justo, près de l’entrée de la commune de Salcedo...",
+        "ht": "Minis Touris la, David Collado, te remèt ti zile ki te rebati a ki sou wout Manolo Tavárez Justo, toupre antre minisipalite Salcedo..."
       }
     },
     {
@@ -1155,6 +1285,12 @@
         "en": "Pretrial detention requested for those arrested in drug trafficking network",
         "fr": "Détention préventive demandée pour les personnes arrêtées dans le cadre d’un réseau de trafic de drogue",
         "ht": "Detansyon pre-jijman mande pou moun ki arete nan rezo trafik dwòg"
+      },
+      "preview_translations": {
+        "de": "Die Staatsanwaltschaft forderte an diesem Samstag das Justizamt der ständigen Betreuungsdienste des Justizbezirks La Altagracia auf, Haft zu verhängen...",
+        "en": "The Public Prosecutor's Office requested this Saturday that the Judicial Office of Permanent Attention Services of the judicial district of La Altagracia impose imprisonment...",
+        "fr": "Le Parquet a demandé ce samedi que le Bureau judiciaire des services d’attention permanente du district judiciaire de La Altagracia impose une peine d’emprisonnement...",
+        "ht": "Biwo Pwokirè Piblik la te mande samdi sa a pou Biwo Sèvis Atansyon Pèmanan nan distri jidisyè La Altagracia enpoze prizon..."
       }
     },
     {
@@ -1173,6 +1309,12 @@
         "en": "Dominican man arrested for trafficking undocumented Haitians in Verón",
         "fr": "Homme dominicain arrêté pour trafic d’Haïtiens sans papiers à Verón",
         "ht": "Yon nonm Dominiken arete pou trafik Ayisyen san papye nan Verón"
+      },
+      "preview_translations": {
+        "de": "\"Ein Lastwagen, der versuchte, einer Kontrollstelle zu entkommen, wurde inspiziert, wodurch fünf Ausländer ohne Dokumente und ein Fahrer entlarvt wurden, der nun...",
+        "en": "\"A truck that tried to evade a checkpoint ended up under inspection, exposing five foreigners without documents and a driver who now...",
+        "fr": "« Un camion qui tentait d’échapper à un poste de contrôle a été inspecté, exposant cinq étrangers sans papiers et un conducteur qui maintenant...",
+        "ht": "\"Yon kamyon ki te eseye evite yon pwen kontwòl te anba enspeksyon, li te ekspoze senk etranje san dokiman ak yon chofè ki kounye a..."
       }
     },
     {
@@ -1191,6 +1333,12 @@
         "en": "Man arrested for breaking into a hotel in Bávaro at dawn with alleged drugs",
         "fr": "Homme arrêté pour effraction dans un hôtel à Bávaro à l’aube avec des drogues présumées",
         "ht": "Nonm arete pou antre nan yon otèl nan Bávaro nan dimanch maten ak dwòg sipoze"
+      },
+      "preview_translations": {
+        "de": "\"Eine Tasche mit mutmaßlichen Drogen und Armbändern aus verschiedenen Hotels wurde schließlich zum Zentrum einer polizeilichen Intervention in einem der Haupt...",
+        "en": "\"A bag with alleged drugs and bracelets from various hotels ended up becoming the center of a police intervention in one of the main...",
+        "fr": "« Un sac contenant des drogues présumées et des bracelets provenant de divers hôtels est devenu le centre d’une intervention policière dans l’une des principales...",
+        "ht": "\"Yon sak ak dwòg ak braslè ki soti nan plizyè otèl te vin tounen sant yon entèvansyon polis nan youn nan prensipal..."
       }
     },
     {
@@ -1207,6 +1355,12 @@
         "en": "Haitians attack Migration agents with gunfire and stones",
         "fr": "Les Haïtiens attaquent les agents de la migration avec des coups de feu et des pierres",
         "ht": "Ayisyen atake ajan migrasyon yo ak kout zam ak wòch"
+      },
+      "preview_translations": {
+        "de": "PUERTO PLATA.– Mitglieder der Generaldirektion für Migration (DGM) wurden während einer Interdiktionsoperation von einer Gruppe Haitianer mit Schüssen und Steinen angegriffen...",
+        "en": "PUERTO PLATA.– Members of the General Directorate of Migration (DGM) were attacked with gunfire and stones by a group of Haitians during an interdiction operation...",
+        "fr": "PUERTO PLATA.– Des membres de la Direction générale des migrations (DGM) ont été attaqués par des tirs et des pierres par un groupe d’Haïtiens lors d’une opération d’interdiction...",
+        "ht": "PUERTO PLATA.– Manm Direksyon Jeneral Migrasyon (DGM) te sibi atak ak kout zam ak wòch pa yon gwoup Ayisyen pandan yon operasyon entèdiksyon..."
       }
     },
     {
@@ -1223,6 +1377,12 @@
         "en": "DNCD seizes three rifles, a pistol, and drugs in Barahona; alias \"Viguay\" falls",
         "fr": "Le DNCD saisit trois fusils, un pistolet et de la drogue à Barahona ; alias « Viguay » tombe",
         "ht": "DNCD sezi twa fizi, yon pistolè, ak dwòg nan Barahona; non \"Viguay\" tonbe"
+      },
+      "preview_translations": {
+        "de": "BARAHONA.— Agenten der Nationalen Direktion für Drogenkontrolle (DNCD) beschlagnahmten in Zusammenarbeit mit der Staatsanwaltschaft drei AR-15-Gewehre, eine Pistole...",
+        "en": "BARAHONA.— Agents from the National Directorate of Drug Control (DNCD), in coordination with the Public Prosecutor's Office, seized three AR-15 rifles, a pistol...",
+        "fr": "BARAHONA.— Des agents de la Direction nationale du contrôle des drogues (DNCD), en coordination avec le parquet, ont saisi trois fusils AR-15, un pistolet...",
+        "ht": "BARAHONA.— Ajan Direksyon Nasyonal Kontwòl Dwòg (DNCD), an kowòdinasyon ak Biwo Pwokirè Piblik la, te sezi twa zam AR-15, yon pistolè..."
       }
     },
     {
@@ -1239,6 +1399,12 @@
         "en": "Nagua strengthens community care with a free medical day",
         "fr": "Nagua renforce les soins communautaires grâce à une journée médicale gratuite",
         "ht": "Nagua ranfòse swen kominotè ak yon jounen medikal gratis"
+      },
+      "preview_translations": {
+        "de": "Punta Cana. Familien in der Gemeinde Nagua haben eine wichtige Gelegenheit, sich um ... zu kümmern... Der Eingang nach Nagua stärkt die gemeinschaftliche Betreuung mit einem Tag...",
+        "en": "Punta Cana. Families in the municipality of Nagua have an important opportunity to care for... The Nagua entrance strengthens community care with a day...",
+        "fr": "Punta Cana. Les familles de la municipalité de Nagua ont une opportunité importante de prendre soin de... L’entrée de Nagua renforce les soins communautaires avec une journée...",
+        "ht": "Punta Cana. Fanmi nan minisipalite Nagua gen yon opòtinite enpòtan pou pran swen... Antre Nagua a ranfòse swen kominotè ak yon jou..."
       }
     },
     {
@@ -1255,6 +1421,12 @@
         "en": "Violence erupts following the arrest of leader Fausto Isidro Meza",
         "fr": "La violence éclate après l’arrestation du dirigeant Fausto Isidro Meza",
         "ht": "Vyolans pete apre arestasyon lidè Fausto Isidro Meza"
+      },
+      "preview_translations": {
+        "de": "Mexikanische Behörden berichteten diesen Samstag über die Festnahme eines der meistgesuchten Drogenbosse durch die Vereinigten Staaten, was eine Welle der Gewalt auslöste durch...",
+        "en": "Mexican authorities reported this Saturday the arrest of one of the most wanted drug lords by the United States, which unleashed a wave of violence by...",
+        "fr": "Les autorités mexicaines ont rapporté ce samedi l’arrestation de l’un des barons de la drogue les plus recherchés par les États-Unis, qui a déclenché une vague de violence par...",
+        "ht": "Otorite Meksiken yo rapòte samdi sa a arestasyon youn nan chèf dwòg ki pi chache pa Etazini, ki te lage yon vag vyolans pa..."
       }
     },
     {
@@ -1271,6 +1443,12 @@
         "en": "Will the use of the backpack return? Soon plastic covers will cost",
         "fr": "L’utilisation du sac à dos reviendra-t-elle ? Bientôt, les couvertures en plastique coûteront cher",
         "ht": "Èske itilizasyon sakado a ap retounen? Byento kouvèti plastik yo ap koute"
+      },
+      "preview_translations": {
+        "de": "Ab dem 15. Dezember 2026 werden Plastikabdeckungen nicht mehr kostenlos sein und Kosten für die Verbraucher verursachen, als Folge der...",
+        "en": "Starting December 15, 2026, plastic covers will no longer be free and will have a cost for consumers, as a consequence of the...",
+        "fr": "À partir du 15 décembre 2026, les couvertures en plastique ne seront plus gratuites et auront un coût pour les consommateurs, en raison du...",
+        "ht": "Apati 15 desanm 2026, kouvèti plastik pap gratis ankò e sa pral gen yon pri pou konsomatè yo, kòm yon konsekans..."
       }
     },
     {
@@ -1287,6 +1465,12 @@
         "en": "They celebrate the Dominican Culture Night in New York",
         "fr": "Ils célèbrent la Nuit de la culture dominicaine à New York",
         "ht": "Yo selebre Sware Kiltirèl Dominiken an nan New York"
+      },
+      "preview_translations": {
+        "de": "NEW YORK.- Unter dem Motto Kultur, Gemeinschaft und Zukunft feierte die Direktion für dominikanische Kultur im Ausland die Nacht der dominikanischen Kultur – eine Gelegenheit zu...",
+        "en": "NEW YORK.- Under the motto Culture, Community, and Future, the Directorate of Dominican Culture Abroad celebrated the Night of Dominican Culture, an opportunity to...",
+        "fr": "NEW YORK.- Sous la devise Culture, Communauté et Avenir, la Direction de la Culture Dominicaine à l’Étranger a célébré la Nuit de la Culture Dominicaine, une occasion de...",
+        "ht": "NEW YORK.- Anba deviz Kilti, Kominote, ak Lavni, Direksyon Kilti Dominiken Aletranje te selebre Nwit Kilti Dominiken an, yon opòtinite pou..."
       }
     },
     {
@@ -1303,6 +1487,12 @@
         "en": "The sun is predominant this Saturday in the Dominican Republic; there are isolated showers",
         "fr": "Le soleil prédomine ce samedi en République dominicaine ; il y a des averses isolées",
         "ht": "Soleil la domine samdi sa a nan Repiblik Dominikèn; gen lapli izole"
+      },
+      "preview_translations": {
+        "de": "SANTO DOMINGO.- Die Dominikanische Republik wird an diesem Samstag überwiegend sonniges Wetter haben, mit wenig Niederschlag in den Morgenstunden, wegen der...",
+        "en": "SANTO DOMINGO.- The Dominican Republic will have mostly sunny weather this Saturday with little precipitation during the morning hours, due to the...",
+        "fr": "SANTO DOMINGO.- La République dominicaine aura un temps majoritairement ensoleillé ce samedi avec peu de précipitations durant les heures matinales, en raison du...",
+        "ht": "SANTO DOMINGO.- Repiblik Dominikèn ap gen plis solèy samdi sa a ak ti kras lapli pandan lè maten yo, akoz..."
       }
     },
     {
@@ -1319,6 +1509,12 @@
         "en": "Iran displays underground missile city and warns adversaries",
         "fr": "L’Iran expose une ville souterraine de missiles et avertit ses adversaires",
         "ht": "Iran montre yon vil misil anba tè epi avèti advèsè li yo"
+      },
+      "preview_translations": {
+        "de": "TEHERAN.- Irans oberste Militärführer besuchten am vergangenen Freitag, den 21. November, eine neue unterirdische Raketenstadt bei einer Demonstration ihrer...",
+        "en": "TEHRAN.- Iran's top military leaders visited a new underground missile city this Friday, November 21, in a demonstration of their...",
+        "fr": "TÉHÉRAN.- Les principaux dirigeants militaires iraniens ont visité une nouvelle ville souterraine spécialisée dans les missiles ce vendredi 21 novembre, lors d’une manifestation de leurs...",
+        "ht": "TEHRAN.- Pi gwo lidè militè Iran yo te vizite yon nouvo vil misil anba tè vandredi sa a, 21 novanm, nan yon demonstrasyon yo..."
       }
     },
     {
@@ -1335,6 +1531,12 @@
         "en": "Pope Leo XIV promotes greater environmental awareness in the Church",
         "fr": "Le pape Léon XIV promeut une plus grande sensibilisation environnementale au sein de l’Église",
         "ht": "Pap Leo XIV ankouraje plis konsyantizasyon anviwònman nan Legliz la"
+      },
+      "preview_translations": {
+        "de": "Punta Cana. Papst Leo XIV. hat das Engagement der katholischen Kirche für ... bekräftigt. Nach Papst Leo XIV. fördert es ein größeres Umweltbewusstsein in der...",
+        "en": "Punta Cana. Pope Leo XIV has reaffirmed the Catholic Church's commitment to... The post Pope Leo XIV promotes greater environmental awareness in the...",
+        "fr": "Punta Cana. Le pape Léon XIV a réaffirmé l’engagement de l’Église catholique à... L’après-pape Léon XIV promeut une plus grande sensibilisation environnementale dans le...",
+        "ht": "Punta Cana. Pap Leo XIV konfime angajman Legliz Katolik la pou... Apre Pap Leo XIV ankouraje plis konsyans anviwònman nan..."
       }
     },
     {
@@ -1351,6 +1553,12 @@
         "en": "Public Health closed medical center without health authorization",
         "fr": "Centre médical de santé publique fermé sans autorisation sanitaire",
         "ht": "Sant medikal sante piblik fèmen san otorizasyon sante"
+      },
+      "preview_translations": {
+        "de": "Das Gesundheitsministerium schloss ein medizinisches Zentrum im Rafey-Sektor südwestlich von Santiago, weil es nicht über die erforderliche Gesundheitsgenehmigung verfügte...",
+        "en": "The Ministry of Public Health closed a medical center operating in the Rafey sector, southwest of Santiago, for lacking the required health authorization...",
+        "fr": "Le ministère de la Santé Publique a fermé un centre médical opérant dans le secteur de Rafey, au sud-ouest de Santiago, faute de l’autorisation sanitaire requise...",
+        "ht": "Ministè Sante Piblik la te fèmen yon sant medikal ki t ap fonksyone nan sektè Rafey, nan sidwès Santiago, paske li pa t gen otorizasyon sante ki nesesè..."
       }
     },
     {
@@ -1367,6 +1575,12 @@
         "en": "Zelensky responds after criticism over attack on the Crimean Bridge",
         "fr": "Zelensky réagit après les critiques concernant l’attaque contre le pont de Crimée",
         "ht": "Zelensky reponn apre kritik sou atak sou Pon Krim nan"
+      },
+      "preview_translations": {
+        "de": "Der ukrainische Präsident Wolodymyr Selenskyj sagte an diesem Samstag, dass bevor die Streitkräfte seines Landes ihre Angriffe auf die Krimbrücke starteten...",
+        "en": "Ukrainian President Volodymyr Zelensky said this Saturday that before his country's Armed Forces launched their attacks on the Crimean bridge...",
+        "fr": "Le président ukrainien Volodymyr Zelensky a déclaré ce samedi qu’avant que les forces armées de son pays ne lancent leurs attaques contre le pont de Crimée...",
+        "ht": "Prezidan Ikrèn Volodymyr Zelensky te di samdi sa a ke anvan Fòs Ame peyi li a te lanse atak sou pon Krim nan..."
       }
     },
     {
@@ -1383,22 +1597,12 @@
         "en": "Italian jeweler Paolo Bulgari dies at 89",
         "fr": "Le bijoutier italien Paolo Bulgari meurt à 89 ans",
         "ht": "Bijoutye Italyen Paolo Bulgari mouri a laj 89 an"
-      }
-    },
-    {
-      "title": "Solemnidad de Cristo Rey y un Paso por mi Familia",
-      "url": "https://almomento.net/solemnidad-de-cristo-rey-y-un-paso-por-mi-familia/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El próximo domingo 22 de noviembre, la Iglesia celebrará con gran gozo la Solemnidad de Cristo Rey. Es un momento especial que marca el cierre del año litúrgico, en…",
-      "image": "",
-      "published": "2026-11-21T12:28:16+00:00",
-      "translations": {
-        "de": "Feierlichkeit Christi des Königs und eine Passage für meine Familie",
-        "en": "Solemnity of Christ the King and a Passage for My Family",
-        "fr": "Solennité du Christ Roi et un passage pour ma famille",
-        "ht": "Solanèlite Kris Wa a ak yon Pasaj pou Fanmi Mwen"
+      },
+      "preview_translations": {
+        "de": "Paolo Bulgari, der den Familienschmuck zu einem der Symbole des globalen Luxus machte, ist diesen Samstag im Alter von 89 Jahren verstorben, berichtete seine Familie in einer Erklärung. Es...",
+        "en": "Paolo Bulgari, who made the family jewelry one of the symbols of global luxury, passed away this Saturday at the age of 89, his family reported in a statement. Its...",
+        "fr": "Paolo Bulgari, qui a fait de ces bijoux familiaux l’un des symboles du luxe mondial, est décédé ce samedi à l’âge de 89 ans, a rapporté sa famille dans un communiqué. C’est...",
+        "ht": "Paolo Bulgari, ki te fè bijou fanmi an youn nan senbòl liks mondyal, mouri samdi sa a nan laj 89 an, fanmi li rapòte nan yon deklarasyon. Se..."
       }
     }
   ]
