@@ -161,6 +161,13 @@ def category_for(title, default="Actualidad", summary="", feed_categories=None):
             return topic
     return default
 
+def cached_title_translations(previous_title, current_title, translations):
+    """Reuse a machine translation only if its Spanish source title is identical."""
+    if previous_title != current_title or not isinstance(translations, dict):
+        return {}
+    return {key: value for key, value in translations.items()
+            if key in ("de", "en", "fr", "ht") and isinstance(value, str) and value.strip()}
+
 def region_mentions(title):
     t = normalize(title)
     # Explicit city/province mentions only. Bare "Santiago" is ambiguous.
