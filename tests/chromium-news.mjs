@@ -60,6 +60,10 @@ try{
    ensure(await health.count()===1,'RSS health panel missing');
    ensure(await health.getAttribute('data-status')==='partial','RSS partial status hidden');
    ensure((await health.innerText()).includes('3/4') && (await health.innerText()).includes('Hoy'),'RSS counts or failed publisher missing');
+   const coverage=await health.innerText();
+   ensure(coverage.includes('2/4'),'explicit place coverage missing from source status');
+   ensure(coverage.includes('Higüey')&&coverage.includes(': 1'),'selected city count missing');
+
    ensure(await health.getAttribute('role')==='status','RSS source status inaccessible');
    ensure(await page.locator('#news-grid time[datetime]').count()===4,'accessible publication timestamps missing');
    ensure(await page.locator('#news-grid .news-illustration svg').count()===4,'licensed-free SVG fallback missing');
@@ -103,6 +107,7 @@ try{
      }
      ensure(await page.locator('#news-feed-health').getAttribute('data-status')==='partial','feed-health missing in '+locale);
      ensure((await page.locator('#news-feed-health').innerText()).includes('3/4'),'feed statistics missing in '+locale);
+     ensure((await page.locator('#news-feed-health').innerText()).includes('2/4'),'explicit region coverage missing in '+locale);
      ensure(await page.locator('#news-category').getAttribute('aria-label')!==null,'topic filter lacks accessible label');
      ensure(await page.locator('#news-source').getAttribute('aria-label')!==null,'source filter lacks accessible label');
    }
