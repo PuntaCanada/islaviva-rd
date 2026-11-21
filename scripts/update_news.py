@@ -42,6 +42,9 @@ FEEDS = [
     # articles per publisher in the CI candidate audit on 2026-11-21.
     ("Diario 55", "https://diario55.com/feed/", "Regionales", "diario55.com"),
     ("Noticia.do", "https://noticia.do/feed/", "Regionales", "noticia.do"),
+    # Verified: 10 recent RSS items and 10 same-domain HTTPS source links
+    # on GitHub Actions regional-source audit, 2026-11-21.
+    ("Diario Norte RD", "https://diarionorterd.com/feed/", "Regionales", "diarionorterd.com"),
 ]
 
 class _PreviewParser(HTMLParser):
