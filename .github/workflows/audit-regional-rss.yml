@@ -1,0 +1,31 @@
+name: Audit regional RSS candidates (non-production)
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/probe-regional-rss.py'
+      - '.github/workflows/audit-regional-rss.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  candidate-audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check parser with safe offline fixtures
+        run: python scripts/probe-regional-rss.py --selftest
+      - name: Read candidate publisher XML only, do not import articles
+        run: |
+          python scripts/probe-regional-rss.py | tee /tmp/islaviva-candidate-audit.txt
+          {
+            echo '### Regional publisher RSS candidate audit'
+            echo 'Read-only. No candidate has been admitted to production.'
+            echo '~~~'
+            cat /tmp/islaviva-candidate-audit.txt
+            echo '~~~'
+          } >> "$GITHUB_STEP_SUMMARY"
