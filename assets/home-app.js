@@ -675,7 +675,7 @@ function newsActive(){
  const now=Date.now();
  return liveNews.filter(n=>{
   try{
-   const u=new URL(n.url);const host=u.hostname.replace(/^www\\./,'');
+   const u=new URL(n.url);const host=u.hostname.replace(/^www\./,'');
    const t=Date.parse(n.published||'');
    return Boolean(n.title) && u.protocol==='https:' && sourceHosts[host]===n.source &&
       Number.isFinite(t) && t<=now+1800000 && now-t<=48*3600000;
