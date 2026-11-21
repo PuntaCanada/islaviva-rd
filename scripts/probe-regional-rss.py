@@ -20,7 +20,7 @@ CANDIDATES = (
 )
 MAX_SIZE = 1_500_000
 
-def evaluate_rss(data, now=None):
+def evaluate_rss(data, now=None, expected_host=None):
     """Validate XML, publisher article links, and recent published dates."""
     root = ET.fromstring(data)
     tag = root.tag.rsplit("}", 1)[-1].lower()
@@ -53,7 +53,7 @@ def evaluate_rss(data, now=None):
                 if link:
                     break
         parsed = urllib.parse.urlparse(link)
-        if parsed.scheme == "https" and parsed.hostname:
+        if parsed.scheme == "https" and parsed.hostname and (not expected_host or parsed.hostname in (expected_host, "www."+expected_host)):
             valid_links += 1
     if not valid_links:
         raise ValueError("No HTTPS article links")
@@ -75,9 +75,11 @@ def probe(candidate):
             if len(body)>MAX_SIZE:
                 raise ValueError("XML exceeds size limit")
             content_type=response.headers.get("Content-Type","")
-            details=evaluate_rss(body)
+            details=evaluate_rss(body,expected_host=hostname)
             if details["recent_72h"]==0:
                 raise ValueError("No recently dated articles in sampled feed")
+            if details["https_links"] < max(1,details["entries_sampled"]//2):
+                raise ValueError("Too few HTTPS article links on publisher domain")
             return {"source":source,"region":region,"url":url,"status":"candidate_xml_verified","content_type":content_type,**details}
     except Exception as exc:
         return {"source":source,"region":region,"url":url,"status":"not_verified","error":type(exc).__name__+": "+str(exc)[:130]}
@@ -92,6 +94,13 @@ def selftest():
         pass
     else:
         raise AssertionError("HTML falsely accepted as RSS")
+    assert evaluate_rss(rss,now,expected_host="diario55.com")["https_links"]==1
+    try:
+        evaluate_rss(rss,now,expected_host="another.example")
+    except ValueError:
+        pass
+    else:
+        raise AssertionError("Unrelated publisher domains falsely accepted")
     print("PASS: valid dated RSS metadata accepted; HTML refused")
 
 if __name__=="__main__":
