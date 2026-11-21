@@ -7,7 +7,7 @@ import unittest
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from news_quality import (category_for, region_mentions, canonical_url,
-                          is_near_duplicate, select_stories, validate_news, quality_rank)
+                          is_near_duplicate, select_stories, validate_news, quality_rank, cached_title_translations)
 
 class NewsQualityTests(unittest.TestCase):
     def test_subjects(self):
@@ -163,6 +163,12 @@ class NewsQualityTests(unittest.TestCase):
               "category":"Regionales","regions":[],"published":now}
         local={**base,"regions":["Higüey"]}
         self.assertGreater(quality_rank(local, "Higüey"), quality_rank(base, "Higüey"))
+
+    def test_translation_cache_requires_same_source_headline(self):
+        old={"de":"Alter Titel","en":"Old title"}
+        self.assertEqual(cached_title_translations("Noticia original", "Noticia original", old), old)
+        self.assertEqual(cached_title_translations("Noticia original", "Noticia corregida", old), {})
+        self.assertEqual(cached_title_translations("Noticia", "Noticia", {"en":"", "xx":"bad"}), {})
 
     def test_cached_news_structure(self):
         data=json.loads((ROOT/"data"/"news.json").read_text(encoding="utf-8"))

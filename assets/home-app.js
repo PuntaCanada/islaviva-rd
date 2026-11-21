@@ -649,9 +649,11 @@ function newsArtInfo(n){
  if(category==='regionales'||/higuey|santiago|samana|puerto plata|la romana/.test(words))return {type:'local',accent:'#F6BF88',dark:'#20595C',light:'#A6D5C2'};
  return {type:'general',accent:'#D8CA9B',dark:'#194E58',light:'#92C5B7'};
 }
-function newsIllustration(n){
+function newsIllustration(n, instance=0){
  const a=newsArtInfo(n);
- const base='<svg aria-hidden="true" viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sea-'+a.type+'" x2="1" y2="1"><stop stop-color="'+a.dark+'"/><stop offset="1" stop-color="'+a.light+'"/></linearGradient><pattern id="lines-'+a.type+'" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity=".1"/></pattern></defs><rect width="600" height="330" fill="url(#sea-'+a.type+')"/><rect width="600" height="330" fill="url(#lines-'+a.type+')"/><circle cx="475" cy="88" r="97" fill="'+a.accent+'" opacity=".17"/><circle cx="490" cy="91" r="57" fill="'+a.accent+'" opacity=".17"/>';
+ // Unique SVG resource IDs per card prevent gradient collisions.
+ const artId=a.type+'-'+instance;
+ const base='<svg aria-hidden="true" viewBox="0 0 600 330" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sea-'+artId+'" x2="1" y2="1"><stop stop-color="'+a.dark+'"/><stop offset="1" stop-color="'+a.light+'"/></linearGradient><pattern id="lines-'+artId+'" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="#FFFFFF" stroke-opacity=".1"/></pattern></defs><rect width="600" height="330" fill="url(#sea-'+artId+')"/><rect width="600" height="330" fill="url(#lines-'+artId+')"/><circle cx="475" cy="88" r="97" fill="'+a.accent+'" opacity=".17"/><circle cx="490" cy="91" r="57" fill="'+a.accent+'" opacity=".17"/>';
  const paths={
   tech:'<rect x="152" y="80" width="290" height="175" rx="16" fill="#D7EDF1"/><rect x="171" y="100" width="251" height="129" rx="7" fill="#275A71"/><path d="M210 159h58m-28-27v54M329 139h65m-65 33h65" stroke="#89D9E1" stroke-width="12" stroke-linecap="round"/><rect x="258" y="255" width="92" height="13" rx="6" fill="#A9CBD4"/><rect x="213" y="271" width="184" height="15" rx="7" fill="#D7EDF1"/>',
   travel:'<circle cx="455" cy="96" r="47" fill="#FFE1A3"/><path d="M0 235Q160 208 301 243T600 232V330H0Z" fill="#2E9F9D"/><path d="M0 267Q148 240 303 276T600 264V330H0Z" fill="#126F84"/><path d="M157 253L191 118M191 118Q213 155 245 151M191 118Q153 142 116 149M191 118Q178 94 162 84M191 118Q217 107 242 95" fill="none" stroke="#EDE4BD" stroke-width="11" stroke-linecap="round"/><path d="M304 113L410 145L326 166L339 146Z" fill="#F3FAF5" opacity=".94"/>',
@@ -685,11 +687,11 @@ function effectiveNewsCategory(n){
  return ({gaming:'Gaming y tecnología',sport:'Deportes',health:'Salud',science:'Ciencia',education:'Educación',safety:'Seguridad',traffic:'Tránsito'})[interest]||(n.category||'Actualidad');
 }
 const newsCategoryLabels={
- es:{Salud:'Salud',Ciencia:'Ciencia',Educación:'Educación',Seguridad:'Seguridad',Tránsito:'Tránsito','Gaming y tecnología':'Gaming y tecnología',Deportes:'Deportes',Actualidad:'Actualidad',Turismo:'Turismo',Economía:'Economía',Regionales:'Regionales',Política:'Política'},
- de:{Salud:'Gesundheit',Ciencia:'Wissenschaft',Educación:'Bildung',Seguridad:'Sicherheit',Tránsito:'Verkehr','Gaming y tecnología':'Gaming & Technik',Deportes:'Sport',Actualidad:'Aktuelles',Turismo:'Tourismus',Economía:'Wirtschaft',Regionales:'Regionales',Política:'Politik'},
- en:{Salud:'Health',Ciencia:'Science',Educación:'Education',Seguridad:'Public safety',Tránsito:'Traffic','Gaming y tecnología':'Gaming & Tech',Deportes:'Sports',Actualidad:'News',Turismo:'Tourism',Economía:'Economy',Regionales:'Regional',Política:'Politics'},
- fr:{Salud:'Santé',Ciencia:'Sciences',Educación:'Éducation',Seguridad:'Sécurité',Tránsito:'Circulation','Gaming y tecnología':'Jeux vidéo & tech',Deportes:'Sport',Actualidad:'Actualités',Turismo:'Tourisme',Economía:'Économie',Regionales:'Régional',Política:'Politique'},
- ht:{Salud:'Sante',Ciencia:'Syans',Educación:'Edikasyon',Seguridad:'Sekirite',Tránsito:'Trafik','Gaming y tecnología':'Jwèt videyo & teknoloji',Deportes:'Espò',Actualidad:'Aktyalite',Turismo:'Touris',Economía:'Ekonomi',Regionales:'Rejyonal',Política:'Politik'}
+ es:{Salud:'Salud',Ciencia:'Ciencia',Educación:'Educación',Seguridad:'Seguridad',Tránsito:'Tránsito','Gaming y tecnología':'Gaming y tecnología',Cultura:'Cultura',Medioambiente:'Medioambiente',Vivienda:'Vivienda',Mundo:'Mundo',Deportes:'Deportes',Actualidad:'Actualidad',Turismo:'Turismo',Economía:'Economía',Regionales:'Regionales',Política:'Política'},
+ de:{Salud:'Gesundheit',Ciencia:'Wissenschaft',Educación:'Bildung',Seguridad:'Sicherheit',Tránsito:'Verkehr','Gaming y tecnología':'Gaming & Technik',Cultura:'Kultur',Medioambiente:'Umwelt',Vivienda:'Wohnen',Mundo:'Welt',Deportes:'Sport',Actualidad:'Aktuelles',Turismo:'Tourismus',Economía:'Wirtschaft',Regionales:'Regionales',Política:'Politik'},
+ en:{Salud:'Health',Ciencia:'Science',Educación:'Education',Seguridad:'Public safety',Tránsito:'Traffic','Gaming y tecnología':'Gaming & Tech',Cultura:'Culture',Medioambiente:'Environment',Vivienda:'Housing',Mundo:'World',Deportes:'Sports',Actualidad:'News',Turismo:'Tourism',Economía:'Economy',Regionales:'Regional',Política:'Politics'},
+ fr:{Salud:'Santé',Ciencia:'Sciences',Educación:'Éducation',Seguridad:'Sécurité',Tránsito:'Circulation','Gaming y tecnología':'Jeux vidéo & tech',Cultura:'Culture',Medioambiente:'Environnement',Vivienda:'Logement',Mundo:'Monde',Deportes:'Sport',Actualidad:'Actualités',Turismo:'Tourisme',Economía:'Économie',Regionales:'Régional',Política:'Politique'},
+ ht:{Salud:'Sante',Ciencia:'Syans',Educación:'Edikasyon',Seguridad:'Sekirite',Tránsito:'Trafik','Gaming y tecnología':'Jwèt videyo & teknoloji',Cultura:'Kilti',Medioambiente:'Anviwònman',Vivienda:'Lojman',Mundo:'Mond',Deportes:'Espò',Actualidad:'Aktyalite',Turismo:'Touris',Economía:'Ekonomi',Regionales:'Rejyonal',Política:'Politik'}
 };
 function newsCategoryLabel(c){return newsCategoryLabels[lang]?.[c]||c}
 function renderNewsPortal(){
@@ -787,7 +789,7 @@ function renderNewsPortal(){
    if(licensedNewsImageSources.has(n.source)){
      try{const u=new URL(n.image||'');if(u.protocol==='https:'&& !/\.(svg|gif)$/i.test(u.pathname))photo=u.href;}catch(e){}
    }
-   const art='<span class="news-illustration">'+newsIllustration(n)+'</span>';
+   const art='<span class="news-illustration">'+newsIllustration(n,i)+'</span>';
    const photoMarkup=photo?'<img src="'+esc(photo)+'" alt="" loading="lazy" decoding="async" onload="this.parentNode.classList.add(\'has-image\')" onerror="this.remove()" />':'';
    const visualCaption='<span class="news-caption">'+esc(newsVisualLabel())+'</span>';
 
