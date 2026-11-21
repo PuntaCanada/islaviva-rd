@@ -14,7 +14,7 @@ import urllib.parse
 import uuid
 import urllib.request
 import xml.etree.ElementTree as ET
-from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news
+from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news, cached_title_translations
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 UTC = dt.timezone.utc
@@ -157,7 +157,7 @@ if out.exists():
         existing=json.loads(out.read_text(encoding="utf-8"))
         for old in existing.get("items",[]):
             if isinstance(old.get("translations"),dict):
-                translations_by_url[old["url"]]=old["translations"]
+                translations_by_url[old["url"]]=(old.get("title", ""), old["translations"])
             if isinstance(old.get("preview_translations"),dict) and old.get("preview")==next((e.get("preview") for e in items.values() if e["url"]==old["url"]),""):
                 previews_by_url[old["url"]]=old["preview_translations"]
     except (ValueError,KeyError,OSError):
@@ -208,7 +208,8 @@ else:
     # Only translate new stories, reusing existing translations.
     for entry in latest:
         if entry["url"] in translations_by_url:
-            entry["translations"]=translations_by_url[entry["url"]]
+            old_title, saved_translations=translations_by_url[entry["url"]]
+            entry["translations"]=cached_title_translations(old_title, entry["title"], saved_translations)
     for entry in latest:
         if entry["url"] in previews_by_url:
             entry["preview_translations"]=previews_by_url[entry["url"]]
