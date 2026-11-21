@@ -12,6 +12,12 @@ on:
       - "tests/**"
       - "data/local_context.json"
       - ".github/workflows/check-site.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - "tests/**"
+      - ".github/workflows/**"
   workflow_dispatch:
 permissions:
   contents: read
