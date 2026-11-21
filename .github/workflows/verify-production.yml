@@ -1,0 +1,22 @@
+name: Verify actual Cloudflare Production bytes
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'assets/home-app.js'
+      - 'scripts/verify-production.mjs'
+      - '.github/workflows/verify-production.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-public-bytes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Compare independently fetched Cloudflare bytes with GitHub checkout
+        run: node scripts/verify-production.mjs
