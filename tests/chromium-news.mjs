@@ -49,7 +49,12 @@ try{
    await page.goto(base+'/',{waitUntil:'domcontentloaded',timeout:30000});
    await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
    let cards=page.locator('#news-grid a.story');
-   ensure(await cards.count()===4,'expected four fixture news cards');
+   const actualCount=await cards.count();
+   if(actualCount!==4){
+     console.error('DEBUG '+test.name+' visible='+actualCount+' titles='+JSON.stringify(await cards.locator('h3').allTextContents()));
+     console.error('DEBUG newsGrid='+String(await page.locator('#news-grid').innerText()).slice(0,1200));
+   }
+   ensure(actualCount===4,'expected four fixture news cards, got '+actualCount);
    ensure(await page.locator('#news-grid time[datetime]').count()===4,'accessible publication timestamps missing');
    ensure(await page.locator('#news-grid .news-illustration svg').count()===4,'licensed-free SVG fallback missing');
    ensure(await page.locator('#news-grid img').count()===0,'unlicensed publisher images were shown');
