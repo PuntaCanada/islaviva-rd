@@ -31,7 +31,7 @@ function renderRoadNotices(){
    })();
    const title=(lang==='es'?n.title:n.translations?.[lang])||n.title;
    // Never present an un-translated Spanish preview as if it were in the chosen language.
-   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
+   const preview=(lang==='es'?n.preview:(safeTranslation?n.preview_translations?.[lang]:''))||'';
    const region=Array.isArray(n.regions)&&n.regions.length?n.regions.join(' / '):'República Dominicana';
    const date=n.published?new Date(n.published).toLocaleDateString(lang,{year:'numeric',month:'short',day:'numeric',timeZone:'America/Santo_Domingo'}):(n.effective_from||'');
    const status=n.kind==='official_announcement'?t.notice:t.media;
@@ -833,7 +833,7 @@ function renderNewsPortal(){
    // Check protected movie titles and local place names even for old cached RSS
    // snapshots. An unsafe machine translation is never shown as verified text.
    const proposedTitle=lang!=='es'?n.translations?.[lang]:'';
-   const normalizeNewsText=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
+   const normalizeNewsText=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
    const originalNorm=normalizeNewsText(n.title);
    const translatedNorm=normalizeNewsText(proposedTitle);
    const mediaGuards=[
