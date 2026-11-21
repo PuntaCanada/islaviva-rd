@@ -292,6 +292,6 @@ body.city-chooser-open{overflow:hidden}
 .news-feed-health strong{font-size:13px;font-weight:850}
 .news-feed-health span{font-variant-numeric:tabular-nums}
 .news-feed-health small{flex-basis:100%;font-size:11px;color:#526a5e}
-.news-feed-health[data-status="partial"],.news-feed-health[data-status="unknown"],.news-feed-health[data-status="empty"]{background:#fff8ea;border-color:#e9d6ae;color:#775522}
+.news-feed-health[data-status="stale"],.news-feed-health[data-status="partial"],.news-feed-health[data-status="unknown"],.news-feed-health[data-status="empty"]{background:#fff8ea;border-color:#e9d6ae;color:#775522}
 .news-feed-health[data-status="partial"] small,.news-feed-health[data-status="unknown"] small,.news-feed-health[data-status="empty"] small{color:#756345}
 @media(max-width:540px){.news-feed-health{align-items:flex-start;flex-direction:column;padding:12px;gap:3px}.news-feed-health small{flex-basis:auto}}
