@@ -127,6 +127,20 @@ try{
    await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
    await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
    ensure(await page.locator('#news-grid a.story').count()===4,'headlines did not recover after fresh import');
+   // A successful HTTP 200 RSS response with zero items must clear old cards.
+   // This differs from an unavailable RSS endpoint, which is an error.
+   const savedItems=fixture.items;
+   fixture.items=[];
+   fixture.source_status='no_recent_articles';
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid .news-empty').waitFor({timeout:20000});
+   ensure(await page.locator('#news-grid a.story').count()===0,'valid zero-item RSS left stale news visible');
+   ensure(await page.locator('#news-controls').isHidden(),'zero-item RSS left irrelevant filters visible');
+   fixture.items=savedItems;
+   fixture.source_status='partial';
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
+   ensure(await page.locator('#news-grid a.story').count()===4,'zero-item RSS recovery failed');
    const links=await page.locator('#news-grid a.story').evaluateAll(nodes=>nodes.map(x=>({
       target:x.getAttribute('target'),rel:x.getAttribute('rel'),href:x.href
    })));
