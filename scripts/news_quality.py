@@ -175,11 +175,18 @@ def trustworthy_regions(title, preview="", source=""):
     that prefix. A narrow dateline fallback only permits Higüey/Puerto Plata.
     """
     direct = region_mentions(title)
+    # The unqualified name "Santiago" can also name a person or a city in
+    # another country. Only an explicit province/municipality in a headline
+    # or an "SANTIAGO, RD" dateline qualifies as a Dominican locality.
+    headline = normalize(title)
+    if re.search(r"(?<!\\w)(?:provincia|municipio|ayuntamiento|alcaldia) de santiago(?!\\w)", headline):
+        direct.append("Santiago")
     if direct:
-        return direct
+        return list(dict.fromkeys(direct))
     start = normalize(preview[:85])
     for place, prefix in (("Higüey", "higuey la altagracia"),
-                          ("Puerto Plata", "puerto plata")):
+                          ("Puerto Plata", "puerto plata"),
+                          ("Santiago", "santiago rd")):
         if re.match(r"^" + prefix + r"\b", start):
             return [place]
     return []
@@ -246,6 +253,12 @@ def news_diagnostics(items, successful, total):
         "publishers": dict(sorted(Counter(x["source"] for x in items).items())),
         "with_image_url": sum(bool(x.get("image")) for x in items),
         "with_region": sum(bool(x.get("regions")) for x in items),
+        # Counts reflect explicit article metadata. Publisher headquarters
+        # must never be used as a substitute for story geography.
+        "by_region": dict(sorted(Counter(region for item in items
+            for region in set(item.get("regions") or []) if isinstance(region, str)).items())),
+        "regional_publishers": dict(sorted(Counter(item["source"] for item in items
+            if item.get("regions")).items())),
     }
 
 

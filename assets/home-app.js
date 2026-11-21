@@ -629,6 +629,13 @@ const newsUi={
  ht:{all:'🌎 Tout RD',local:'📍 Vil mwen',topics:'Tout sijè',sources:'Tout sous',empty:'Pa gen nouvèl resan ki verifye pou filtè sa yo.',localNote:'Se sèlman atik ki mansyone zòn nan klèman; se pa tout nouvèl lokal.',translated:'Tit yo tradui otomatikman. Verifye detay yo nan atik orijinal yo.',original:'Tit orijinal an panyòl, ak lyen sous yo.',read:'Li atik orijinal la',latest:'Mizajou',minutes:'sa gen'}
 };
 let newsFeedMetadata=null;
+const regionalCoverageText={
+ es:{tagged:'titulares con lugar explícito',city:'De tu ciudad',none:'Ninguna mención explícita de tu ciudad'},
+ de:{tagged:'Schlagzeilen mit eindeutigem Ortsbezug',city:'Deine Stadt',none:'Keine eindeutige Meldung aus deiner Stadt'},
+ en:{tagged:'headlines with explicit location',city:'Your city',none:'No explicitly located stories for your city'},
+ fr:{tagged:'titres avec un lieu explicite',city:'Votre ville',none:'Aucun titre situé explicitement dans votre ville'},
+ ht:{tagged:'tit ki site yon kote klèman',city:'Vil ou',none:'Pa gen nouvèl ki site vil ou klèman'}
+};
 const feedHealthText={
  es:{complete:'Fuentes RSS disponibles',partial:'Fuentes RSS parcialmente disponibles',empty:'Sin titulares recientes',stale:'Actualización RSS retrasada',unknown:'Estado RSS no confirmado',feeds:'feeds',publishers:'medios con artículos',items:'titulares',updated:'Última recopilación',unavailable:'No respondieron',note:'Cobertura RSS, no verificación editorial de cada noticia.'},
  de:{complete:'RSS-Quellen erreichbar',partial:'RSS-Quellen teilweise erreichbar',empty:'Keine aktuellen Schlagzeilen',stale:'RSS-Aktualisierung verspätet',unknown:'RSS-Status nicht bestätigt',feeds:'Feeds',publishers:'Medien mit Artikeln',items:'Schlagzeilen',updated:'Letzter Import',unavailable:'Nicht erreichbar',note:'RSS-Abdeckung, keine redaktionelle Prüfung jeder Meldung.'},
@@ -676,6 +683,15 @@ function renderNewsFeedHealth(){
  if(publishers!==null)terms.push(publishers+' '+l.publishers);
  if(Array.isArray(meta.items))terms.push(meta.items.length+' '+l.items);
  if(timestamp)terms.push(l.updated+': '+timestamp);
+ // Only count locations explicitly attached to articles. Never infer a
+ // publisher's region or promise comprehensive local coverage.
+ const regionalLabels=regionalCoverageText[lang]||regionalCoverageText.es;
+ if(Array.isArray(meta.items)){
+   const located=meta.items.filter(item=>Array.isArray(item.regions)&&item.regions.length).length;
+   terms.push(located+'/'+meta.items.length+' '+regionalLabels.tagged);
+   const local=meta.items.filter(item=>Array.isArray(item.regions)&&item.regions.includes(city)).length;
+   terms.push(local?regionalLabels.city+' ('+city+'): '+local:regionalLabels.none);
+ }
  details.textContent=terms.join(' · ');
  const note=document.createElement('small');
  note.textContent=(reported.length?l.unavailable+': '+reported.join(', ')+'. ':'')+l.note;
