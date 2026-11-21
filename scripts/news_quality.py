@@ -35,10 +35,10 @@ GAMING_FEED_RE = re.compile(
 # Only unambiguous film/series headlines; do not classify general 'juegos'
 # (sports matches) or cinematic descriptions of real crime as entertainment.
 FILM_TITLE_RE = re.compile(
-    r"\\b(?:precuela|secuelas? de (?:la )?pelicula|peliculas?|"
+    r"\b(?:precuela|secuelas? de (?:la )?pelicula|peliculas?|"
     r"estreno cinematografico|taquilla|cine|"
     r"mi pobre angelito|home alone|juegos del hambre|hunger games|"
-    r"actores? (?:de cine|protagoniza)|actrices? (?:de cine|protagoniza))\\b"
+    r"actores? (?:de cine|protagoniza)|actrices? (?:de cine|protagoniza))\b"
 )
 
 SPECIAL_TOPIC_RULES = (
