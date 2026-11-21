@@ -7,7 +7,7 @@ import unittest
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from news_quality import (category_for, region_mentions, canonical_url,
-                          is_near_duplicate, select_stories, validate_news, quality_rank, cached_title_translations)
+                          is_near_duplicate, select_stories, validate_news, quality_rank, cached_title_translations, trustworthy_regions, reliable_title_translation, filter_title_translations)
 
 class NewsQualityTests(unittest.TestCase):
     def test_subjects(self):
@@ -169,6 +169,41 @@ class NewsQualityTests(unittest.TestCase):
         self.assertEqual(cached_title_translations("Noticia original", "Noticia original", old), old)
         self.assertEqual(cached_title_translations("Noticia original", "Noticia corregida", old), {})
         self.assertEqual(cached_title_translations("Noticia", "Noticia", {"en":"", "xx":"bad"}), {})
+
+    def test_dateline_does_not_mislabel_regional_newswire(self):
+        self.assertEqual(trustworthy_regions(
+            "Putin se reúne con dirigentes internacionales",
+            "Punta Cana. El presidente viajó a China", "El Tiempo"), [])
+        self.assertEqual(trustworthy_regions(
+            "Abren hospital en Nisibón",
+            "HIGÜEY, LA ALTAGRACIA. Después de años de espera", "Bávaro Digital"),
+            ["Higüey"])
+        self.assertEqual(trustworthy_regions(
+            "Migración reporta ataque",
+            "PUERTO PLATA.– Agentes fueron atacados", "Diario Libre"),
+            ["Puerto Plata"])
+        self.assertEqual(trustworthy_regions("Obras en Bávaro", "Punta Cana. Las obras"),
+                         ["Punta Cana"])
+
+    def test_protected_media_names_and_places_in_translations(self):
+        original="Macaulay Culkin podría volver a Mi pobre angelito en Higüey"
+        self.assertFalse(reliable_title_translation(original,
+                        "Macaulay Culkin returns to My Poor Angel"))
+        self.assertTrue(reliable_title_translation(original,
+                       "Macaulay Culkin could return to Home Alone in Higüey"))
+        self.assertFalse(reliable_title_translation(original,
+                        "Macaulay Culkin could return to Home Alone"))
+        self.assertFalse(reliable_title_translation(
+            "La precuela de los juegos del hambre", "Die Tribute von Pabunem"))
+        self.assertTrue(reliable_title_translation(
+            "La precuela de los juegos del hambre", "The Hunger Games prequel"))
+        self.assertEqual(filter_title_translations(
+            "Mi pobre angelito", {"de":"Mein armer Engel",
+                                  "en":"Home Alone", "xx":"irrelevant"}),
+                         {"en":"Home Alone"})
+        self.assertEqual(cached_title_translations(
+            "Mi pobre angelito", "Mi pobre angelito",
+            {"de":"Mein armer Engel", "en":"Home Alone"}), {"en":"Home Alone"})
 
     def test_cached_news_structure(self):
         data=json.loads((ROOT/"data"/"news.json").read_text(encoding="utf-8"))
