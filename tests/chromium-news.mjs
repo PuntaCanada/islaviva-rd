@@ -141,6 +141,21 @@ try{
    await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
    await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
    ensure(await page.locator('#news-grid a.story').count()===4,'zero-item RSS recovery failed');
+   // A publisher based in Puerto Plata must not cause its international
+   // stories to appear in the Puerto Plata-only feed without an explicit place.
+   fixture.items.push({
+     title:'Gobiernos internacionales debaten un acuerdo bilateral',
+     source:'Diario Norte RD',url:'https://diarionorterd.com/pruebas/acuerdo-internacional',
+     category:'Mundo',regions:[],published:now,image:'',
+     preview:'Una reunión de diplomacia internacional.'
+   });
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
+   ensure(await page.locator('#news-grid a.story').count()===5,'approved Puerto Plata publisher URL not accepted');
+   await page.locator('#news-tabs [data-scope="local"]').click();
+   ensure(await page.locator('#news-grid a.story').count()===1,'publisher headquarters incorrectly overrides geographic article tags');
+   fixture.items.pop();
+   await page.locator('#news-tabs [data-scope="all"]').click();
    const links=await page.locator('#news-grid a.story').evaluateAll(nodes=>nodes.map(x=>({
       target:x.getAttribute('target'),rel:x.getAttribute('rel'),href:x.href
    })));
@@ -149,6 +164,7 @@ try{
    ensure(!overflow,'horizontal viewport overflow on '+test.name);
    ensure(runtimeErrors.length===0,'browser JS errors: '+runtimeErrors.join('; '));
    const timings=await page.evaluate(()=>{const p=performance.getEntriesByType('navigation')[0];return {domContentLoadedMs:Math.round(p?.domContentLoadedEventEnd||0),bodyScrollWidth:document.body.scrollWidth,viewportWidth:innerWidth};});
+   ensure(timings.domContentLoadedMs>0 && timings.domContentLoadedMs<15000,'slow or missing initial DOM navigation');
    console.log('METRICS '+test.name+' '+JSON.stringify(timings));
    await page.screenshot({path:'artifacts/chromium/'+test.name+'-news.png',fullPage:true,animations:'disabled'});
    console.log('PASS '+test.name+': news cards, illustrations, filters, local order, timestamps, viewport and JS errors');
