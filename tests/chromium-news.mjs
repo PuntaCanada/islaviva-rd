@@ -89,6 +89,30 @@ try{
    ensure((await page.locator('#news-grid').innerText()).includes('Krankenhaus in Higüey'),'German translated headline missing');
    ensure((await page.locator('#news-feed-health').innerText()).includes('teilweise'),'German RSS health text missing');
    ensure(await page.locator('#news-grid time[datetime]').count()===4,'German article publication timestamp missing');
+   for(const locale of ['en','fr','ht']){
+     await page.goto(base+'/'+locale+'/',{waitUntil:'domcontentloaded'});
+     await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
+     ensure(await page.locator('html').getAttribute('lang')===locale,'wrong document locale '+locale);
+     ensure(await page.locator('#news-grid a.story').count()===4,'news cards missing in '+locale);
+     ensure(await page.locator('#news-feed-health').getAttribute('data-status')==='partial','feed-health missing in '+locale);
+     ensure((await page.locator('#news-feed-health').innerText()).includes('3/4'),'feed statistics missing in '+locale);
+     ensure(await page.locator('#news-category').getAttribute('aria-label')!==null,'topic filter lacks accessible label');
+     ensure(await page.locator('#news-source').getAttribute('aria-label')!==null,'source filter lacks accessible label');
+   }
+   // Simulate an interrupted updater without altering any on-disk news data.
+   fixture.updated=new Date(Date.now()-8*3600000).toISOString();
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-feed-health').waitFor();
+   await page.waitForFunction(()=>document.querySelector('#news-feed-health')?.dataset.status==='stale');
+   ensure((await page.locator('#news-feed-health').innerText()).includes('verspätet'),'old RSS snapshot not flagged in German');
+   fixture.updated=new Date().toISOString();
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
+   ensure(await page.locator('#news-feed-health').getAttribute('data-status')==='partial','fresh RSS status did not recover');
+   const links=await page.locator('#news-grid a.story').evaluateAll(nodes=>nodes.map(x=>({
+      target:x.getAttribute('target'),rel:x.getAttribute('rel'),href:x.href
+   })));
+   ensure(links.every(x=>x.target==='_blank'&&x.rel.includes('noopener')&&x.rel.includes('noreferrer')),'source link safety attributes missing');
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+3);
    ensure(!overflow,'horizontal viewport overflow on '+test.name);
    ensure(runtimeErrors.length===0,'browser JS errors: '+runtimeErrors.join('; '));
