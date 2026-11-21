@@ -226,6 +226,29 @@ def region_mentions(title):
     return [region for region, pats in REGION_PATTERNS.items()
             if any(p.search(t) for p in pats)]
 
+def feed_health(successful, total, article_count):
+    """Distinguish complete, partial and empty imports truthfully."""
+    if not 0 <= successful <= total or total < 1 or article_count < 0:
+        raise ValueError("Invalid RSS counts")
+    if successful == 0:
+        return "unavailable"
+    if article_count == 0:
+        return "no_recent_articles"
+    return "ok" if successful == total else "partial"
+
+
+def news_diagnostics(items, successful, total):
+    """Small factual coverage summary for the public JSON snapshot."""
+    from collections import Counter
+    return {
+        "feeds_successful": successful,
+        "feeds_configured": total,
+        "publishers": dict(sorted(Counter(x["source"] for x in items).items())),
+        "with_image_url": sum(bool(x.get("image")) for x in items),
+        "with_region": sum(bool(x.get("regions")) for x in items),
+    }
+
+
 def canonical_url(url):
     parts = urlsplit(url)
     # Tracking query parameters do not identify a distinct news story.
