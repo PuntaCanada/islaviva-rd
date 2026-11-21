@@ -38,6 +38,10 @@ FEEDS = [
     ("Punta Cana Post", "https://puntacanapost.com/feed/", "Regionales", "puntacanapost.com"),
     ("El Tiempo", "https://eltiempo.com.do/feed/", "Regionales", "eltiempo.com.do"),
     ("Bávaro Digital", "https://bavarodigital.net/feed/", "Regionales", "bavarodigital.net"),
+    # Independently verified RSS/2.0 XML with ten recent same-domain HTTPS
+    # articles per publisher in the CI candidate audit on 2026-11-21.
+    ("Diario 55", "https://diario55.com/feed/", "Regionales", "diario55.com"),
+    ("Noticia.do", "https://noticia.do/feed/", "Regionales", "noticia.do"),
 ]
 
 class _PreviewParser(HTMLParser):
