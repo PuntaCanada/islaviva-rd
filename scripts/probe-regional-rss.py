@@ -39,7 +39,7 @@ def evaluate_rss(data, now=None):
         raw = item.findtext("pubDate") or item.findtext("{http://www.w3.org/2005/Atom}updated")
         if raw:
             try:
-                published = email.utils.parsedate_to_datetime(raw) if "T" not in raw else dt.datetime.fromisoformat(raw.replace("Z","+00:00"))
+                published = email.utils.parsedate_to_datetime(raw) if "," in raw else dt.datetime.fromisoformat(raw.replace("Z","+00:00"))
                 if published.tzinfo is None:
                     published = published.replace(tzinfo=dt.timezone.utc)
                 if dt.timedelta(minutes=-30) <= now-published <= dt.timedelta(hours=72):
