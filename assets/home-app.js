@@ -630,11 +630,11 @@ const newsUi={
 };
 let newsFeedMetadata=null;
 const feedHealthText={
- es:{complete:'Fuentes RSS disponibles',partial:'Fuentes RSS parcialmente disponibles',empty:'Sin titulares recientes',unknown:'Estado RSS no confirmado',feeds:'feeds',publishers:'medios con artículos',items:'titulares',updated:'Última recopilación',unavailable:'No respondieron',note:'Cobertura RSS, no verificación editorial de cada noticia.'},
- de:{complete:'RSS-Quellen erreichbar',partial:'RSS-Quellen teilweise erreichbar',empty:'Keine aktuellen Schlagzeilen',unknown:'RSS-Status nicht bestätigt',feeds:'Feeds',publishers:'Medien mit Artikeln',items:'Schlagzeilen',updated:'Letzter Import',unavailable:'Nicht erreichbar',note:'RSS-Abdeckung, keine redaktionelle Prüfung jeder Meldung.'},
- en:{complete:'RSS feeds available',partial:'RSS feeds partly available',empty:'No recent headlines',unknown:'RSS status unconfirmed',feeds:'feeds',publishers:'publishers with articles',items:'headlines',updated:'Last collection',unavailable:'Unavailable',note:'RSS coverage, not editorial verification of every article.'},
- fr:{complete:'Flux RSS disponibles',partial:'Flux RSS partiellement disponibles',empty:'Aucun titre récent',unknown:'État RSS non confirmé',feeds:'flux',publishers:'éditeurs avec articles',items:'titres',updated:'Dernière collecte',unavailable:'Indisponibles',note:'Couverture RSS, sans vérification éditoriale de chaque article.'},
- ht:{complete:'Sous RSS yo disponib',partial:'Kèk sous RSS pa disponib',empty:'Pa gen nouvèl resan',unknown:'Eta RSS la pa konfime',feeds:'fil RSS',publishers:'medya ki gen atik',items:'tit',updated:'Dènye koleksyon',unavailable:'Pa disponib',note:'Se eta sous RSS yo, pa yon verifikasyon chak nouvèl.'}
+ es:{complete:'Fuentes RSS disponibles',partial:'Fuentes RSS parcialmente disponibles',empty:'Sin titulares recientes',stale:'Actualización RSS retrasada',unknown:'Estado RSS no confirmado',feeds:'feeds',publishers:'medios con artículos',items:'titulares',updated:'Última recopilación',unavailable:'No respondieron',note:'Cobertura RSS, no verificación editorial de cada noticia.'},
+ de:{complete:'RSS-Quellen erreichbar',partial:'RSS-Quellen teilweise erreichbar',empty:'Keine aktuellen Schlagzeilen',stale:'RSS-Aktualisierung verspätet',unknown:'RSS-Status nicht bestätigt',feeds:'Feeds',publishers:'Medien mit Artikeln',items:'Schlagzeilen',updated:'Letzter Import',unavailable:'Nicht erreichbar',note:'RSS-Abdeckung, keine redaktionelle Prüfung jeder Meldung.'},
+ en:{complete:'RSS feeds available',partial:'RSS feeds partly available',empty:'No recent headlines',stale:'RSS update delayed',unknown:'RSS status unconfirmed',feeds:'feeds',publishers:'publishers with articles',items:'headlines',updated:'Last collection',unavailable:'Unavailable',note:'RSS coverage, not editorial verification of every article.'},
+ fr:{complete:'Flux RSS disponibles',partial:'Flux RSS partiellement disponibles',empty:'Aucun titre récent',stale:'Mise à jour RSS en retard',unknown:'État RSS non confirmé',feeds:'flux',publishers:'éditeurs avec articles',items:'titres',updated:'Dernière collecte',unavailable:'Indisponibles',note:'Couverture RSS, sans vérification éditoriale de chaque article.'},
+ ht:{complete:'Sous RSS yo disponib',partial:'Kèk sous RSS pa disponib',empty:'Pa gen nouvèl resan',stale:'Mizajou RSS anreta',unknown:'Eta RSS la pa konfime',feeds:'fil RSS',publishers:'medya ki gen atik',items:'tit',updated:'Dènye koleksyon',unavailable:'Pa disponib',note:'Se eta sous RSS yo, pa yon verifikasyon chak nouvèl.'}
 };
 function renderNewsFeedHealth(){
  const meta=newsFeedMetadata;
@@ -653,7 +653,13 @@ function renderNewsFeedHealth(){
  const ok=Number.isInteger(diag.feeds_successful)?diag.feeds_successful:null;
  const total=Number.isInteger(diag.feeds_configured)?diag.feeds_configured:null;
  const validCounts=ok!==null&&total!==null&&total>0&&ok>=0&&ok<=total;
- const status=meta.source_status==='ok'&&validCounts&&ok===total?'complete':
+ const importedAt=Date.parse(meta.updated||'');
+ // The scheduled RSS importer runs every three hours. Six hours is enough
+ // grace for a delayed run; never label an old snapshot as a live healthy feed.
+ const stale=!Number.isFinite(importedAt)||importedAt>Date.now()+30*60*1000||
+             Date.now()-importedAt>6*60*60*1000;
+ const status=stale?'stale':
+              meta.source_status==='ok'&&validCounts&&ok===total?'complete':
               meta.source_status==='partial'&&validCounts?'partial':
               meta.source_status==='no_recent_articles'?'empty':'unknown';
  node.dataset.status=status;
@@ -663,7 +669,7 @@ function renderNewsFeedHealth(){
  const timestamp=Number.isFinite(date)?new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short',timeZone:'America/Santo_Domingo'}).format(new Date(date)):null;
  const reported=Array.isArray(meta.failed_feeds)?[...new Set(meta.failed_feeds.map(x=>x&&x.source).filter(x=>typeof x==='string'&&x.length<70))].slice(0,3):[];
  const heading=document.createElement('strong');
- heading.textContent=(status==='complete'?l.complete:status==='partial'?l.partial:status==='empty'?l.empty:l.unknown);
+ heading.textContent=(status==='complete'?l.complete:status==='partial'?l.partial:status==='empty'?l.empty:status==='stale'?l.stale:l.unknown);
  const details=document.createElement('span');
  const terms=[];
  if(validCounts)terms.push(ok+'/'+total+' '+l.feeds);
