@@ -83,7 +83,7 @@ def probe(candidate):
         return {"source":source,"region":region,"url":url,"status":"not_verified","error":type(exc).__name__+": "+str(exc)[:130]}
 
 def selftest():
-    now=dt.datetime(2026,11,21,tzinfo=dt.timezone.utc)
+    now=dt.datetime(2026,11,21,20,0,tzinfo=dt.timezone.utc)
     rss=b"""<rss version="2.0"><channel><item><title>Sample</title><link>https://diario55.com/story</link><pubDate>Sat, 21 Nov 2026 18:00:00 GMT</pubDate></item></channel></rss>"""
     assert evaluate_rss(rss,now)=={"entries_sampled":1,"recent_72h":1,"https_links":1}
     try:
