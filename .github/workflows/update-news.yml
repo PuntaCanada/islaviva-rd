@@ -41,14 +41,14 @@ jobs:
           entries=data.get("items", [])
           images=sum(bool(x.get("image")) for x in entries)
           categories=collections.Counter(x.get("category", "Unbekannt") for x in entries)
-          report=(f"### RSS quality snapshot\\n"
-                  f"- Captured articles: {len(entries)}\\n"
+          report=(f"### RSS quality snapshot\n"
+                  f"- Captured articles: {len(entries)}\n"
                   f"- RSS image URLs: {images}/{len(entries)} "
-                  f"({images / len(entries) * 100:.1f}% if available)\\n"
-                  f"- Missing RSS image URLs: {len(entries) - images}\\n"
-                  f"- Categories: {', '.join(f'{k}: {v}' for k, v in sorted(categories.items()))}\\n"
+                  f"({images / len(entries) * 100:.1f}%)\n"
+                  f"- Missing RSS image URLs: {len(entries) - images}\n"
+                  f"- Categories: {', '.join(f'{k}: {v}' for k, v in sorted(categories.items()))}\n"
                   "- Images are publisher-declared metadata, not a license to copy them. "
-                  "This report does not verify image delivery or reuse rights.\\n")
+                  "This report does not verify image delivery or reuse rights.\n")
           print(report)
           import os
           summary=os.environ.get("GITHUB_STEP_SUMMARY")
