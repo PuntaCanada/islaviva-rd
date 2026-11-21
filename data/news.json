@@ -1,15 +1,17 @@
 {
-  "updated": "2026-11-21T21:09:45.210738+00:00",
+  "updated": "2026-11-21T21:35:31.053648+00:00",
   "source_status": "partial",
   "source_diagnostics": {
-    "feeds_successful": 14,
-    "feeds_configured": 15,
+    "feeds_successful": 16,
+    "feeds_configured": 17,
     "publishers": {
-      "AlMomento": 17,
+      "AlMomento": 14,
       "Bávaro Digital": 8,
+      "Diario 55": 1,
       "Diario Libre": 12,
       "El Día": 15,
-      "El Tiempo": 5,
+      "El Tiempo": 4,
+      "Noticia.do": 3,
       "Noticias SIN": 10,
       "Punta Cana Post": 5
     },
@@ -24,6 +26,72 @@
     }
   ],
   "items": [
+    {
+      "title": "Los líderes deben poner las tecnologías al servicio de la gente, dice canciller dominicano",
+      "url": "https://noticiassin.com/mundo/america/2026/11/21/bisono-pide-poner-la-tecnologia-al-servicio-de-la-gente-2174696/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Bisonó pidió liderazgo para poner la tecnología al servicio de las personas y preparar a la gente para los cambios.",
+      "image": "",
+      "published": "2026-11-21T21:15:31+00:00",
+      "translations": {
+        "de": "Die Führungskräfte müssen Technologien in den Dienst des Volkes stellen, sagt der dominikanische Außenminister",
+        "en": "Leaders must put technologies at the service of the people, says Dominican foreign minister",
+        "fr": "Les dirigeants doivent mettre les technologies au service du peuple, affirme le ministre dominicain des Affaires étrangères",
+        "ht": "Lidè yo dwe mete teknoloji yo nan sèvis pèp la, dapre minis afè etranjè dominiken an"
+      },
+      "preview_translations": {
+        "de": "Bisonó forderte Führung, Technologie in den Dienst der Menschen zu stellen und sie auf Veränderungen vorzubereiten.",
+        "en": "Bisonó called for leadership to put technology at the service of people and prepare them for change.",
+        "fr": "Bisonó a appelé à un leadership pour mettre la technologie au service des gens et les préparer au changement.",
+        "ht": "Bisonó te mande lidèchip pou mete teknoloji nan sèvis pèp la epi prepare yo pou chanjman."
+      }
+    },
+    {
+      "title": "Un Paso por mi Familia lleva mensaje de fe al Estadio Quisqueya",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/21/un-paso-por-mi-familia-lleva-mensaje-de-fe-al-quisqueya-2174695/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La Iglesia católica impulsa desde el Quisqueya un llamado a la fe, la unidad y la esperanza para las familias dominicanas.",
+      "image": "",
+      "published": "2026-11-21T21:11:58+00:00",
+      "translations": {
+        "de": "Un Paso por mi Familia bringt eine Botschaft des Glaubens ins Quisqueya-Stadion",
+        "en": "Un Paso por mi Familia brings a message of faith to Quisqueya Stadium",
+        "fr": "Un Paso por mi Familia apporte un message de foi au stade Quisqueya",
+        "ht": "Un Paso por mi Familia pote yon mesaj lafwa nan Quisqueya Stadium"
+      },
+      "preview_translations": {
+        "de": "Die katholische Kirche fördert von Quisqueya aus einen Ruf zum Glauben, zur Einheit und zu Hoffnung für dominikanische Familien.",
+        "en": "The Catholic Church promotes from Quisqueya a call to faith, unity, and hope for Dominican families.",
+        "fr": "L’Église catholique promeut depuis Quisqueya un appel à la foi, à l’unité et à l’espoir pour les familles dominicaines.",
+        "ht": "Legliz Katolik la ankouraje soti nan Quisqueya yon apèl pou lafwa, inite, ak espwa pou fanmi Dominiken yo."
+      }
+    },
+    {
+      "title": "Reconocen a cuatro periodistas durante encuentro del Pabellón de la Fama de Barahona",
+      "url": "https://noticiassin.com/pais/provincias/2026/11/21/pabellon-de-la-fama-de-barahona-reconoce-a-cuatro-periodistas-2174688/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Reconocen a cuatro periodistas por su trayectoria y aporte a la comunicación en Barahona.",
+      "image": "",
+      "published": "2026-11-21T21:01:33+00:00",
+      "translations": {
+        "de": "Vier Journalisten, die während des Barahona Hall of Fame-Treffens geehrt wurden",
+        "en": "Four journalists recognized during the Barahona Hall of Fame meeting",
+        "fr": "Quatre journalistes honorés lors de la réunion du Barahona Hall of Fame",
+        "ht": "Katriyèm jounalis rekonèt pandan reyinyon Barahona Hall of Fame"
+      },
+      "preview_translations": {
+        "de": "Sie würdigen vier Journalisten für ihre Karrieren und ihre Beiträge zur Kommunikation in Barahona.",
+        "en": "They recognize four journalists for their careers and contributions to communication in Barahona.",
+        "fr": "Ils reconnaissent quatre journalistes pour leurs carrières et leurs contributions à la communication à Barahona.",
+        "ht": "Yo rekonèt kat jounalis pou karyè yo ak kontribisyon yo nan kominikasyon nan Barahona."
+      }
+    },
     {
       "title": "Paz en liquidación",
       "url": "https://noticiassin.com/me-lo-dijo-adela/2026/11/21/paz-en-liquidacion-la-estabilidad-dominicana-en-riesgo-2174690/",
@@ -44,6 +112,28 @@
         "en": "Dominican stability is neglected while outrage and the fabrication of enemies generate audience and profit.",
         "fr": "La stabilité dominicaine est négligée tandis que l’indignation et la fabrication d’ennemis génèrent audience et profit.",
         "ht": "Estabilite Dominiken neglije pandan kòlè ak fabrikasyon lènmi jenere odyans ak pwofi."
+      }
+    },
+    {
+      "title": "Presidentes auténticos o creaciones robóticas de redes",
+      "url": "https://diario55.com/presidentes-autenticos-o-creaciones-roboticas-de-redes/",
+      "source": "Diario 55",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Reynaldo Peguero rpeguero@strategius.org En la política contemporánea ha comenzado a imponerse una peligrosa confusión: creer que la popularidad digital equivale a…",
+      "image": "",
+      "published": "2026-11-21T20:54:44+00:00",
+      "translations": {
+        "de": "Authentische Präsidenten oder robotische Netzwerk-Kreationen",
+        "en": "Authentic presidents or robotic network creations",
+        "fr": "Présidents authentiques ou créations de réseaux robotiques",
+        "ht": "Prezidan otantik oswa kreyasyon rezo robotik"
+      },
+      "preview_translations": {
+        "de": "Reynaldo Peguero rpeguero@strategius.org In der zeitgenössischen Politik hat sich eine gefährliche Verwirrung ausgebreitet: Der Glaube, dass digitale Popularität bedeutet...",
+        "en": "Reynaldo Peguero rpeguero@strategius.org In contemporary politics, a dangerous confusion has begun to take hold: believing that digital popularity means...",
+        "fr": "Reynaldo Peguero rpeguero@strategius.org Dans la politique contemporaine, une dangereuse confusion commence à s’installer : croire que la popularité numérique signifie...",
+        "ht": "Reynaldo Peguero rpeguero@strategius.org Nan politik modèn, yon konfizyon danjere kòmanse pran plas: kwè ke popilarite dijital vle di..."
       }
     },
     {
@@ -223,28 +313,6 @@
       }
     },
     {
-      "title": "Trump busca acuerdo permanente para impedir que Irán obtenga armas nucleares",
-      "url": "https://noticiassin.com/estados-unidos/2026/11/21/trump-busca-un-acuerdo-permanente-con-iran-para-frenar-su-programa-nuclear-2174663/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Trump busca un pacto duradero con Irán para impedir que alcance armas nucleares, mientras Teherán condiciona avances en Ormuz.",
-      "image": "",
-      "published": "2026-11-21T20:00:11+00:00",
-      "translations": {
-        "de": "Trump strebt eine dauerhafte Vereinbarung an, um zu verhindern, dass Iran Atomwaffen erlangt",
-        "en": "Trump seeks permanent agreement to prevent Iran from obtaining nuclear weapons",
-        "fr": "Trump cherche un accord permanent pour empêcher l’Iran d’obtenir des armes nucléaires",
-        "ht": "Trump ap chèche yon akò pèmanan pou anpeche Iran jwenn zam nikleyè"
-      },
-      "preview_translations": {
-        "de": "Trump strebt einen dauerhaften Pakt mit dem Iran an, um dessen Erwerb von Atomwaffen zu verhindern, während Teheran in Hormus Fortschritte macht.",
-        "en": "Trump seeks a lasting pact with Iran to prevent it from acquiring nuclear weapons, while Tehran conditions advances in Hormuz.",
-        "fr": "Trump cherche à conclure un pacte durable avec l’Iran pour l’empêcher d’acquérir des armes nucléaires, tandis que les conditions de Téhéran progressent à Hormuz.",
-        "ht": "Trump ap chèche yon akò dirab ak Iran pou anpeche li achte zam nikleyè, pandan kondisyon Tehran ap avanse nan Hormuz."
-      }
-    },
-    {
       "title": "Carlos Peña reclama pago de deuda a productores de San Juan",
       "url": "https://almomento.net/carlos-pena-reclama-pago-de-deuda-a-productores-de-san-juan/",
       "source": "AlMomento",
@@ -376,28 +444,6 @@
       }
     },
     {
-      "title": "Arrestan a hombre acusado de agredir sexualmente a adolescente de 17 años en Barahona",
-      "url": "https://noticiassin.com/pais/justicia/2026/11/21/arrestan-a-hombre-acusado-de-agredir-a-adolescente-en-barahona-2174657/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Policía arresta a Yassel Pérez, investigado por agredir sexualmente a una adolescente de 17 años en Enriquillo.",
-      "image": "",
-      "published": "2026-11-21T19:41:29+00:00",
-      "translations": {
-        "de": "Mann festgenommen, angeklagt, ein 17-jähriges Mädchen in Barahona sexuell missbraucht zu haben",
-        "en": "Man arrested accused of sexually assaulting a 17-year-old girl in Barahona",
-        "fr": "Homme arrêté pour avoir agressé sexuellement une jeune fille de 17 ans à Barahona",
-        "ht": "Gason arete akize pou agresyon seksyèl sou yon tifi 17 an nan Barahona"
-      },
-      "preview_translations": {
-        "de": "Die Polizei nimmt Yassel Pérez fest, der wegen sexueller Belästigung eines 17-jährigen Mädchens in Enriquillo untersucht wird.",
-        "en": "Police arrest Yassel Pérez, under investigation for sexually assaulting a 17-year-old girl in Enriquillo.",
-        "fr": "La police arrête Yassel Pérez, qui fait l’objet d’une enquête pour agression sexuelle sur une fille de 17 ans à Enriquillo.",
-        "ht": "Lapolis arete Yassel Pérez, ki anba ankèt pou agresyon seksyèl sou yon tifi 17 an nan Enriquillo."
-      }
-    },
-    {
       "title": "Jair Bolsonaro está en cuidados intensivos y sin previsión de alta pero estable",
       "url": "https://eldia.com.do/jair-bolsonaro-esta-en-cuidados-intensivos-y-sin-prevision-de-alta-pero-estable/",
       "source": "El Día",
@@ -417,28 +463,6 @@
         "en": "This article was originally published in El Día. Rio de Janeiro.- Former Brazilian president Jair Bolsonaro, who is serving a sentence under house arrest...",
         "fr": "Cet article a été initialement publié dans El Día. Rio de Janeiro. - L’ancien président brésilien Jair Bolsonaro, qui purge une peine assignée à résidence...",
         "ht": "Atik sa a te pibliye orijinalman nan El Día. Rio de Janeiro. - Ansyen prezidan brezilyen Jair Bolsonaro, k ap sèvi yon santans anba arestasyon kay..."
-      }
-    },
-    {
-      "title": "Paliza presenta Meta RD 2036 como modelo de desarrollo para América Latina y el Caribe",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/21/paliza-propone-meta-rd-2036-como-modelo-regional-de-desarrollo-2174648/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La iniciativa busca duplicar el PIB real del país, generar 1.7 millones de empleos y eliminar la pobreza extrema para 2036.",
-      "image": "",
-      "published": "2026-11-21T19:33:21+00:00",
-      "translations": {
-        "de": "Paliza stellt das RD 2036-Ziel als Entwicklungsmodell für Lateinamerika und die Karibik vor",
-        "en": "Paliza presents RD 2036 Goal as a development model for Latin America and the Caribbean",
-        "fr": "Paliza présente l’objectif RD 2036 comme modèle de développement pour l’Amérique latine et les Caraïbes",
-        "ht": "Paliza prezante Objektif RD 2036 kòm yon modèl devlopman pou Amerik Latin ak Karayib la"
-      },
-      "preview_translations": {
-        "de": "Die Initiative zielt darauf ab, das reale BIP des Landes zu verdoppeln, 1,7 Millionen Arbeitsplätze zu schaffen und extreme Armut bis 2036 zu beseitigen.",
-        "en": "The initiative aims to double the country's real GDP, generate 1.7 million jobs, and eliminate extreme poverty by 2036.",
-        "fr": "L’initiative vise à doubler le PIB réel du pays, à générer 1,7 million d’emplois et à éliminer l’extrême pauvreté d’ici 2036.",
-        "ht": "Inisyativ la vize double PIB reyèl peyi a, jenere 1.7 milyon djòb, epi elimine povrete ekstrèm an 2036."
       }
     },
     {
@@ -866,6 +890,72 @@
       }
     },
     {
+      "title": "Carmen de la Rosa pide al NYPD aclarar su papel ante ICE",
+      "url": "https://www.diariolibre.com/usa/actualidad/2026/11/21/carmen-de-la-rosa-pide-al-nypd-aclarar-su-papel-ante-ice/3727768",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La concejala de Nueva York de origen dominicano Carmen de la Rosa pidió al Departamento de Policía de Nueva York (NYPD) que explique a los residentes, en el momento…",
+      "image": "https://resources.diariolibre.com/images/2026/10/11/miedo-se-apodera-de-marble-hill-tras-disparo-ice-a-oscar-belgal-3dac7a1b-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T17:00:00+00:00",
+      "translations": {
+        "de": "Carmen de la Rosa bittet die NYPD, ihre Rolle vor ICE zu klären",
+        "en": "Carmen de la Rosa asks the NYPD to clarify its role before ICE",
+        "fr": "Carmen de la Rosa demande au NYPD de clarifier son rôle devant ICE",
+        "ht": "Carmen de la Rosa mande NYPD pou klarifye wòl li devan ICE"
+      },
+      "preview_translations": {
+        "de": "Die Stadträtin von New York City dominikanischer Herkunft, Carmen de la Rosa, bat das New Yorker Polizeidepartment (NYPD), den Bewohnern momentan zu erklären...",
+        "en": "New York City Councilwoman of Dominican origin, Carmen de la Rosa, asked the New York Police Department (NYPD) to explain to residents, at the moment...",
+        "fr": "La conseillère municipale de New York d’origine dominicaine, Carmen de la Rosa, a demandé au service de police de New York (NYPD) d’expliquer aux habitants, pour l’instant...",
+        "ht": "Konsèyè Vil New York ki gen orijin Dominiken, Carmen de la Rosa, te mande Depatman Polis New York (NYPD) pou eksplike bay rezidan yo, kounye a..."
+      }
+    },
+    {
+      "title": "Procuraduría amplía investigación por muerte de Melissa Medina en Piantini",
+      "url": "https://noticia.do/5investigacion-muerte-melissa-medina/",
+      "source": "Noticia.do",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Noticia.do Procuraduría amplía investigación por muerte de Melissa Medina en Piantini La Procuraduría amplía la investigación por la muerte de Melissa Medina en…",
+      "image": "",
+      "published": "2026-11-21T16:55:23+00:00",
+      "translations": {
+        "de": "Staatsanwaltschaft erweitert die Ermittlungen zum Tod von Melissa Medina in Piantini",
+        "en": "Prosecutor's Office expands investigation into the death of Melissa Medina in Piantini",
+        "fr": "Le parquet étend l’enquête sur la mort de Melissa Medina à Piantini",
+        "ht": "Biwo Pwokirè a elaji ankèt sou lanmò Melissa Medina nan Piantini"
+      },
+      "preview_translations": {
+        "de": "Noticia.do Staatsanwaltschaft weitet die Ermittlungen zum Tod von Melissa Medina in Piantini aus Die Staatsanwaltschaft weitet die Ermittlungen zum Tod von Melissa Medina aus...",
+        "en": "Noticia.do Prosecutor's Office expands investigation into the death of Melissa Medina in Piantini The Prosecutor's Office expands the investigation into the death of Melissa Medina in...",
+        "fr": "Noticia.do Bureau du procureur étend l’enquête sur la mort de Melissa Medina à Piantini Le bureau du procureur étend l’enquête sur la mort de Melissa Medina dans...",
+        "ht": "Noticia.do Biwo Pwokirè a elaji ankèt sou lanmò Melissa Medina nan Piantini Biwo Pwokirè a elaji ankèt sou lanmò Melissa Medina nan..."
+      }
+    },
+    {
+      "title": "Venezuela derrota 9-6 a RD en el Panamericano de Béisbol Sub-12",
+      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/21/venezuela-derrota-9-6-a-rd-en-el-panamericano-de-beisbol-sub-12/3727779",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "La selección de Venezuela derrotó 9 carreras por 6 a República Dominicana en la continuación del Campeonato Panamericano de Béisbol Sub-12, que se celebra en el IPL…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/venezuela-derrota-9-6-a-rd-en-el-panamericano-de-beisbol-sub-12-fef25798-focus-0.1-0.5-400-300.png",
+      "published": "2026-11-21T16:49:00+00:00",
+      "translations": {
+        "de": "Venezuela besiegt DR mit 9:6 bei der Panamerikanischen Baseballmeisterschaft der U-12",
+        "en": "Venezuela defeats DR 9-6 in the U-12 Pan American Baseball Championship",
+        "fr": "Le Venezuela bat DR 9-6 lors du Championnat panaméricain de baseball U-12",
+        "ht": "Venezyela bat DR 9-6 nan Chanpyona Pan Ameriken Bezbòl U-12 la"
+      },
+      "preview_translations": {
+        "de": "Die venezolanische Nationalmannschaft besiegte die Dominikanische Republik mit 9:6 im Rahmen der Fortsetzung der Panamerikanischen U-12-Baseballmeisterschaft, die bei der IPL ausgetragen wurde...",
+        "en": "The Venezuelan national team defeated the Dominican Republic 9 to 6 in the continuation of the Pan American U-12 Baseball Championship, held at the IPL...",
+        "fr": "L’équipe nationale vénézuélienne a battu la République dominicaine 9 à 6 dans la continuation du Championnat panaméricain U-12 de baseball, organisé à l’IPL...",
+        "ht": "Ekip nasyonal Venezyelyen an te bat Repiblik Dominikèn 9 a 6 nan kontinyasyon Chanpyona Panameriken U-12 Baseball la, ki te fèt nan IPL..."
+      }
+    },
+    {
       "title": "Policía arresta a dos hombres e incauta bebidas y herramientas tras robo en Capotillo",
       "url": "https://eldia.com.do/policia-arresta-a-dos-hombres-e-incauta-bebidas-y-herramientas-tras-robo-en-capotillo/",
       "source": "El Día",
@@ -956,6 +1046,28 @@
       }
     },
     {
+      "title": "Alcaldía de Santiago firma convenio con EUDE para ofrecer becas de posgrado y maestrías",
+      "url": "https://noticia.do/alcaldia-santiago-becas-maestrias-eude/",
+      "source": "Noticia.do",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Noticia.do Alcaldía de Santiago firma convenio con EUDE para ofrecer becas de posgrado y maestrías La Alcaldía de Santiago y EUDE firmaron un convenio para ofrecer…",
+      "image": "",
+      "published": "2026-11-21T16:30:06+00:00",
+      "translations": {
+        "de": "Das Rathaus von Santiago unterzeichnet eine Vereinbarung mit EUDE zur Vergabe von Postgraduierten- und Masterstipendien",
+        "en": "Santiago City Hall signs agreement with EUDE to offer postgraduate and master's scholarships",
+        "fr": "L’Hôtel de Ville de Santiago signe un accord avec l’EUDE pour offrir des bourses de troisième cycle et de master",
+        "ht": "Sal Vil Santiago siyen yon akò ak EUDE pou ofri bous etid aprè gradye ak metriz"
+      },
+      "preview_translations": {
+        "de": "Noticia.do Das Rathaus von Santiago unterzeichnet eine Vereinbarung mit EUDE zur Vergabe von Postgraduierten- und Masterstipendien Das Rathaus von Santiago und EUDE unterzeichneten eine Vereinbarung, um ...",
+        "en": "Noticia.do Santiago City Hall signs agreement with EUDE to offer postgraduate and master's scholarships The Santiago City Hall and EUDE signed an agreement to offer...",
+        "fr": "Noticia.do l’Hôtel de Ville de Santiago signe un accord avec l’EUDE pour offrir des bourses de troisième cycle et de master L’Hôtel de Ville de Santiago et l’EUDE ont signé un accord pour proposer...",
+        "ht": "Noticia.do Otorite Vil Santiago siyen yon akò ak EUDE pou ofri bousdetid pou gradye ak metriz Mairi Santiago ak EUDE siyen yon akò pou ofri..."
+      }
+    },
+    {
       "title": "Hackers atacan sistemas de FBI y Departamento de Agricultura",
       "url": "https://almomento.net/hackers-atacan-sistemas-de-fbi-y-departamento-de-agricultura/",
       "source": "AlMomento",
@@ -1021,6 +1133,28 @@
         "en": "\"The character Scarface, associated with drug trafficking in the fiction, now appears on a card reported right in the tourist area of Punta Cana for his...",
         "fr": "« Le personnage Scarface, associé au trafic de drogue dans la fiction, apparaît désormais sur une carte signalée directement dans la zone touristique de Punta Cana pour son...",
         "ht": "\"Pèsonaj Scarface, ki asosye ak trafik dwòg nan fiksyon an, kounye a parèt sou yon kat ki rapòte dirèkteman nan zòn touris Punta Cana pou..."
+      }
+    },
+    {
+      "title": "Familias de Pedro García reclaman soluciones un mes después de los derrumbes",
+      "url": "https://noticia.do/derrumbes-pedro-garcia-familias-reclaman-solucion/",
+      "source": "Noticia.do",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Noticia.do Familias de Pedro García reclaman soluciones un mes después de los derrumbes Familias de Los Pichinis denuncian que siguen afectadas por derrumbes en…",
+      "image": "",
+      "published": "2026-11-21T16:17:36+00:00",
+      "translations": {
+        "de": "Familien von Pedro García fordern Lösungen einen Monat nach dem Zusammenbruch",
+        "en": "Families of Pedro García demand solutions one month after the collapses",
+        "fr": "Les familles de Pedro García exigent des solutions un mois après les effondrements",
+        "ht": "Fanmi Pedro García mande solisyon yon mwa apre efondreman yo"
+      },
+      "preview_translations": {
+        "de": "Noticia.do Familien von Pedro García fordern Lösungen einen Monat nach dem Einsturz Familien von Los Pichinis berichten, dass sie weiterhin von Erdrutschen betroffen sind...",
+        "en": "Noticia.do Families of Pedro García demand solutions one month after the collapses Families of Los Pichinis report that they remain affected by landslides in...",
+        "fr": "Noticia.do Les familles de Pedro García réclament des solutions un mois après les effondrements Les familles de Los Pichinis rapportent qu’elles restent touchées par des glissements de terrain dans...",
+        "ht": "Noticia.do Fanmi Pedro García mande solisyon yon mwa apre efondreman yo Fanmi Los Pichinis rapòte ke yo toujou afekte pa glisman tè nan..."
       }
     },
     {
@@ -1251,6 +1385,28 @@
       }
     },
     {
+      "title": "El cómico guiño de Google a Robert Pattinson",
+      "url": "https://www.diariolibre.com/revista/cine/2026/11/21/el-comico-guino-de-google-a-robert-pattinson/3727738",
+      "source": "Diario Libre",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "El pasado 16 de noviembre se anunció que Robert Pattinson será la nueva cara del famoso agente británico James Bond. La noticia puso los reflectores sobre el actor…",
+      "image": "https://resources.diariolibre.com/images/2022/05/17/shutterstock200809400-6c1d818f-focus-0.03-0.39-400-300.jpg",
+      "published": "2026-11-21T15:39:00+00:00",
+      "translations": {
+        "de": "Googles Comic-Anspielung auf Robert Pattinson",
+        "en": "Google's comic nod to Robert Pattinson",
+        "fr": "Clin d’œil de Google à Robert Pattinson",
+        "ht": "Referans komik Google bay Robert Pattinson"
+      },
+      "preview_translations": {
+        "de": "Am 16. November wurde bekannt gegeben, dass Robert Pattinson das neue Gesicht des berühmten britischen Agenten James Bond sein wird. Die Nachricht rückte den Schauspieler ins Rampenlicht...",
+        "en": "On November 16, it was announced that Robert Pattinson will be the new face of the famous British agent James Bond. The news put the spotlight on the actor...",
+        "fr": "Le 16 novembre, il fut annoncé que Robert Pattinson serait le nouveau visage du célèbre agent britannique James Bond. La nouvelle mit en lumière l’acteur...",
+        "ht": "Sou 16 novanm, yo te anonse ke Robert Pattinson pral nouvo figi ajan Britanik popilè James Bond. Nouvèl la mete limyè sou aktè a..."
+      }
+    },
+    {
       "title": "La denuncia de usuarios en el corredor Independencia: \"No devuelven\"",
       "url": "https://www.diariolibre.com/actualidad/ciudad/2026/11/21/la-denuncia-de-usuarios-en-el-corredor-independencia-no-devuelven/3727724",
       "source": "Diario Libre",
@@ -1433,6 +1589,28 @@
       }
     },
     {
+      "title": "Juez deniega solicitud de liberación del dominicano Oscar Belgal",
+      "url": "https://www.diariolibre.com/usa/actualidad/2026/11/21/juez-deniega-solicitud-de-liberacion-del-dominicano-oscar-belgal/3727679",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El dominicano Oscar Belgal, de 28 años, permanecerá bajo custodia del Servicio de Inmigración y Control de Aduanas (ICE) mientras se tramita su caso migratorio…",
+      "image": "https://resources.diariolibre.com/images/2026/10/09/identifican-como-oscar-belgal-al-dominicano-herido-por-ice-4382d9a4-focus-min0.19-0.48-400-300.jpg",
+      "published": "2026-11-21T13:58:00+00:00",
+      "translations": {
+        "de": "Richter lehnt den Antrag auf Freilassung des Dominikaners Oscar Belgal ab",
+        "en": "Judge denies request for release of Dominican Oscar Belgal",
+        "fr": "Le juge rejette la demande de libération du Dominican Oscar Belgal",
+        "ht": "Jij la refize demann pou lage Dominiken Oscar Belgal"
+      },
+      "preview_translations": {
+        "de": "Der Dominikaner Oscar Belgal, 28, bleibt in Gewahrsam des Einwanderungs- und Zollbehördes (ICE), während sein Einwanderungsfall bearbeitet wird...",
+        "en": "Dominican Oscar Belgal, 28, will remain in custody of the Immigration and Customs Enforcement Service (ICE) while his immigration case is processed...",
+        "fr": "Le Dominicain Oscar Belgal, 28 ans, restera en détention par le Service d’immigration et de contrôle des douanes (ICE) pendant que son dossier d’immigration sera traité...",
+        "ht": "Dominiken Oscar Belgal, 28 an, ap rete nan gad Sèvis Imigrasyon ak Ladwàn (ICE) pandan ka imigrasyon li a ap trete..."
+      }
+    },
+    {
       "title": "Se desata la violencia tras arresto del capo Fausto Isidro Meza",
       "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/21/se-desata-la-violencia-tras-arresto-del-capo-fausto-isidro-meza/3727659",
       "source": "Diario Libre",
@@ -1452,182 +1630,6 @@
         "en": "Mexican authorities reported this Saturday the arrest of one of the most wanted drug lords by the United States, which unleashed a wave of violence by...",
         "fr": "Les autorités mexicaines ont rapporté ce samedi l’arrestation de l’un des barons de la drogue les plus recherchés par les États-Unis, qui a déclenché une vague de violence par...",
         "ht": "Otorite Meksiken yo rapòte samdi sa a arestasyon youn nan chèf dwòg ki pi chache pa Etazini, ki te lage yon vag vyolans pa..."
-      }
-    },
-    {
-      "title": "¿Regresará el uso del macuto? pronto las fundas plásticas costarán",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/21/regresara-el-uso-del-macuto-pronto-las-fundas-plasticas-costaran/3727643",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "A partir del próximo 15 de diciembre de 2026, las fundas plásticas dejarán de ser gratuitas y tendrán un costo para los consumidores, como consecuencia de la…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/regresara-el-uso-del-macuto-pronto-las-fundas-plasticas-costaran-5b80f6be-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T13:04:00+00:00",
-      "translations": {
-        "de": "Wird die Nutzung des Rucksacks zurückkehren? Bald werden Plastikabdeckungen teuer sein",
-        "en": "Will the use of the backpack return? Soon plastic covers will cost",
-        "fr": "L’utilisation du sac à dos reviendra-t-elle ? Bientôt, les couvertures en plastique coûteront cher",
-        "ht": "Èske itilizasyon sakado a ap retounen? Byento kouvèti plastik yo ap koute"
-      },
-      "preview_translations": {
-        "de": "Ab dem 15. Dezember 2026 werden Plastikabdeckungen nicht mehr kostenlos sein und Kosten für die Verbraucher verursachen, als Folge der...",
-        "en": "Starting December 15, 2026, plastic covers will no longer be free and will have a cost for consumers, as a consequence of the...",
-        "fr": "À partir du 15 décembre 2026, les couvertures en plastique ne seront plus gratuites et auront un coût pour les consommateurs, en raison du...",
-        "ht": "Apati 15 desanm 2026, kouvèti plastik pap gratis ankò e sa pral gen yon pri pou konsomatè yo, kòm yon konsekans..."
-      }
-    },
-    {
-      "title": "Celebran en Nueva York la Noche de Cultura Dominicana",
-      "url": "https://almomento.net/celebran-en-nueva-york-la-noche-de-cultura-dominicana/",
-      "source": "AlMomento",
-      "category": "Cultura",
-      "regions": [],
-      "preview": "NUEVA YORK.- Con el lema Cultura, Comunidad y Futuro, la Dirección de Cultura Dominicana en el Exterior celebró la Noche de Cultura Dominicana, una oportunidad para…",
-      "image": "",
-      "published": "2026-11-21T13:00:57+00:00",
-      "translations": {
-        "de": "Sie feiern die Dominican Culture Night in New York",
-        "en": "They celebrate the Dominican Culture Night in New York",
-        "fr": "Ils célèbrent la Nuit de la culture dominicaine à New York",
-        "ht": "Yo selebre Sware Kiltirèl Dominiken an nan New York"
-      },
-      "preview_translations": {
-        "de": "NEW YORK.- Unter dem Motto Kultur, Gemeinschaft und Zukunft feierte die Direktion für dominikanische Kultur im Ausland die Nacht der dominikanischen Kultur – eine Gelegenheit zu...",
-        "en": "NEW YORK.- Under the motto Culture, Community, and Future, the Directorate of Dominican Culture Abroad celebrated the Night of Dominican Culture, an opportunity to...",
-        "fr": "NEW YORK.- Sous la devise Culture, Communauté et Avenir, la Direction de la Culture Dominicaine à l’Étranger a célébré la Nuit de la Culture Dominicaine, une occasion de...",
-        "ht": "NEW YORK.- Anba deviz Kilti, Kominote, ak Lavni, Direksyon Kilti Dominiken Aletranje te selebre Nwit Kilti Dominiken an, yon opòtinite pou..."
-      }
-    },
-    {
-      "title": "Predomina el sol este sábado en Dominicana; hay lluvias aisladas",
-      "url": "https://almomento.net/predominara-el-sol-este-sabado-y-lluvias-aisladas-en-varias-zonas/",
-      "source": "AlMomento",
-      "category": "Medioambiente",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- La República Dominicana tendrá este sábado un ambiente mayormente soleado y con escasas precipitaciones durante las horas de la mañana, debido a la…",
-      "image": "",
-      "published": "2026-11-21T13:00:35+00:00",
-      "translations": {
-        "de": "Die Sonne ist an diesem Samstag in der Dominikanischen Republik vorherrschend; es gibt vereinzelte Schauer",
-        "en": "The sun is predominant this Saturday in the Dominican Republic; there are isolated showers",
-        "fr": "Le soleil prédomine ce samedi en République dominicaine ; il y a des averses isolées",
-        "ht": "Soleil la domine samdi sa a nan Repiblik Dominikèn; gen lapli izole"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Die Dominikanische Republik wird an diesem Samstag überwiegend sonniges Wetter haben, mit wenig Niederschlag in den Morgenstunden, wegen der...",
-        "en": "SANTO DOMINGO.- The Dominican Republic will have mostly sunny weather this Saturday with little precipitation during the morning hours, due to the...",
-        "fr": "SANTO DOMINGO.- La République dominicaine aura un temps majoritairement ensoleillé ce samedi avec peu de précipitations durant les heures matinales, en raison du...",
-        "ht": "SANTO DOMINGO.- Repiblik Dominikèn ap gen plis solèy samdi sa a ak ti kras lapli pandan lè maten yo, akoz..."
-      }
-    },
-    {
-      "title": "Irán exhibe ciudad subterránea de misiles y advierte adversarios",
-      "url": "https://almomento.net/iran-exhibe-ciudad-subterranea-de-misiles-y-advierte-adversarios/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "TEHERAN.- Los principales jefes militares de Irán visitaron este viernes 21 de noviembre una nueva ciudad subterránea de misiles, en una demostración de sus…",
-      "image": "",
-      "published": "2026-11-21T13:00:23+00:00",
-      "translations": {
-        "de": "Iran zeigt unterirdische Raketenstadt und warnt Gegner",
-        "en": "Iran displays underground missile city and warns adversaries",
-        "fr": "L’Iran expose une ville souterraine de missiles et avertit ses adversaires",
-        "ht": "Iran montre yon vil misil anba tè epi avèti advèsè li yo"
-      },
-      "preview_translations": {
-        "de": "TEHERAN.- Irans oberste Militärführer besuchten am vergangenen Freitag, den 21. November, eine neue unterirdische Raketenstadt bei einer Demonstration ihrer...",
-        "en": "TEHRAN.- Iran's top military leaders visited a new underground missile city this Friday, November 21, in a demonstration of their...",
-        "fr": "TÉHÉRAN.- Les principaux dirigeants militaires iraniens ont visité une nouvelle ville souterraine spécialisée dans les missiles ce vendredi 21 novembre, lors d’une manifestation de leurs...",
-        "ht": "TEHRAN.- Pi gwo lidè militè Iran yo te vizite yon nouvo vil misil anba tè vandredi sa a, 21 novanm, nan yon demonstrasyon yo..."
-      }
-    },
-    {
-      "title": "Papa León XIV promueve una mayor conciencia ambiental en la Iglesia",
-      "url": "https://eltiempo.com.do/variedades/papa-leon-xiv-promueve-una-mayor-conciencia-ambiental-en-la-iglesia/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Punta Cana. El papa León XIV ha reafirmado el compromiso de la Iglesia católica con... La entrada Papa León XIV promueve una mayor conciencia ambiental en la…",
-      "image": "",
-      "published": "2026-11-21T13:00:00+00:00",
-      "translations": {
-        "de": "Papst Leo XIV. fördert ein größeres Umweltbewusstsein in der Kirche",
-        "en": "Pope Leo XIV promotes greater environmental awareness in the Church",
-        "fr": "Le pape Léon XIV promeut une plus grande sensibilisation environnementale au sein de l’Église",
-        "ht": "Pap Leo XIV ankouraje plis konsyantizasyon anviwònman nan Legliz la"
-      },
-      "preview_translations": {
-        "de": "Punta Cana. Papst Leo XIV. hat das Engagement der katholischen Kirche für ... bekräftigt. Nach Papst Leo XIV. fördert es ein größeres Umweltbewusstsein in der...",
-        "en": "Punta Cana. Pope Leo XIV has reaffirmed the Catholic Church's commitment to... The post Pope Leo XIV promotes greater environmental awareness in the...",
-        "fr": "Punta Cana. Le pape Léon XIV a réaffirmé l’engagement de l’Église catholique à... L’après-pape Léon XIV promeut une plus grande sensibilisation environnementale dans le...",
-        "ht": "Punta Cana. Pap Leo XIV konfime angajman Legliz Katolik la pou... Apre Pap Leo XIV ankouraje plis konsyans anviwònman nan..."
-      }
-    },
-    {
-      "title": "Salud Pública clausuró centro médico sin habilitación sanitaria",
-      "url": "https://www.diariolibre.com/actualidad/salud/2026/11/21/salud-publica-clausuro-centro-medico-sin-habilitacion-sanitaria/3727636",
-      "source": "Diario Libre",
-      "category": "Salud",
-      "regions": [],
-      "preview": "El Ministerio de Salud Pública clausuró un centro médico que operaba en el sector Rafey, al suroeste de Santiago, por carecer de la habilitación sanitaria requerida…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/clausura-de-centro-medico-en-rafey-por-ministerio-de-salud-publica-46b41258-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T12:58:00+00:00",
-      "translations": {
-        "de": "Public Health schloss das medizinische Zentrum ohne medizinische Genehmigung",
-        "en": "Public Health closed medical center without health authorization",
-        "fr": "Centre médical de santé publique fermé sans autorisation sanitaire",
-        "ht": "Sant medikal sante piblik fèmen san otorizasyon sante"
-      },
-      "preview_translations": {
-        "de": "Das Gesundheitsministerium schloss ein medizinisches Zentrum im Rafey-Sektor südwestlich von Santiago, weil es nicht über die erforderliche Gesundheitsgenehmigung verfügte...",
-        "en": "The Ministry of Public Health closed a medical center operating in the Rafey sector, southwest of Santiago, for lacking the required health authorization...",
-        "fr": "Le ministère de la Santé Publique a fermé un centre médical opérant dans le secteur de Rafey, au sud-ouest de Santiago, faute de l’autorisation sanitaire requise...",
-        "ht": "Ministè Sante Piblik la te fèmen yon sant medikal ki t ap fonksyone nan sektè Rafey, nan sidwès Santiago, paske li pa t gen otorizasyon sante ki nesesè..."
-      }
-    },
-    {
-      "title": "Zelenski responde tras críticas por ataque a Puente de Crimea",
-      "url": "https://www.diariolibre.com/mundo/europa/2026/11/21/zelenski-responde-tras-criticas-por-ataque-a-puente-de-crimea/3727625",
-      "source": "Diario Libre",
-      "category": "Mundo",
-      "regions": [],
-      "preview": "El presidente de Ucrania, Volodímir Zelenski, dijo este sábado que antes de que las Fuerzas Armadas de su país lanzaran sus ataques contra el puente de Crimea…",
-      "image": "https://resources.diariolibre.com/images/2026/07/04/volodimir-zelenski-agradecio-eeuu-su-apoyo-en-guerra-contra-rusia-b4a39c23-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T12:55:00+00:00",
-      "translations": {
-        "de": "Selenskyj reagiert nach Kritik wegen des Angriffs auf die Krimbrücke",
-        "en": "Zelensky responds after criticism over attack on the Crimean Bridge",
-        "fr": "Zelensky réagit après les critiques concernant l’attaque contre le pont de Crimée",
-        "ht": "Zelensky reponn apre kritik sou atak sou Pon Krim nan"
-      },
-      "preview_translations": {
-        "de": "Der ukrainische Präsident Wolodymyr Selenskyj sagte an diesem Samstag, dass bevor die Streitkräfte seines Landes ihre Angriffe auf die Krimbrücke starteten...",
-        "en": "Ukrainian President Volodymyr Zelensky said this Saturday that before his country's Armed Forces launched their attacks on the Crimean bridge...",
-        "fr": "Le président ukrainien Volodymyr Zelensky a déclaré ce samedi qu’avant que les forces armées de son pays ne lancent leurs attaques contre le pont de Crimée...",
-        "ht": "Prezidan Ikrèn Volodymyr Zelensky te di samdi sa a ke anvan Fòs Ame peyi li a te lanse atak sou pon Krim nan..."
-      }
-    },
-    {
-      "title": "Muere el joyero italiano Paolo Bulgari a los 89 años",
-      "url": "https://www.diariolibre.com/revista/moda/2026/11/21/muere-el-joyero-italiano-paolo-bulgari-a-los-89-anos/3727630",
-      "source": "Diario Libre",
-      "category": "Cultura",
-      "regions": [],
-      "preview": "Paolo Bulgari, que llevó la joyería de familia a ser uno de los símbolos del lujo mundial, falleció este sábado a los 89 años, informó su familia en una nota. Su…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/muere-el-joyero-italiano-paolo-bulgari-a-los-89-anos-1c156e6d-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T12:47:00+00:00",
-      "translations": {
-        "de": "Der italienische Juwelier Paolo Bulgari stirbt im Alter von 89 Jahren",
-        "en": "Italian jeweler Paolo Bulgari dies at 89",
-        "fr": "Le bijoutier italien Paolo Bulgari meurt à 89 ans",
-        "ht": "Bijoutye Italyen Paolo Bulgari mouri a laj 89 an"
-      },
-      "preview_translations": {
-        "de": "Paolo Bulgari, der den Familienschmuck zu einem der Symbole des globalen Luxus machte, ist diesen Samstag im Alter von 89 Jahren verstorben, berichtete seine Familie in einer Erklärung. Es...",
-        "en": "Paolo Bulgari, who made the family jewelry one of the symbols of global luxury, passed away this Saturday at the age of 89, his family reported in a statement. Its...",
-        "fr": "Paolo Bulgari, qui a fait de ces bijoux familiaux l’un des symboles du luxe mondial, est décédé ce samedi à l’âge de 89 ans, a rapporté sa famille dans un communiqué. C’est...",
-        "ht": "Paolo Bulgari, ki te fè bijou fanmi an youn nan senbòl liks mondyal, mouri samdi sa a nan laj 89 an, fanmi li rapòte nan yon deklarasyon. Se..."
       }
     }
   ]
