@@ -885,7 +885,8 @@ async function loadAutoNews(){
   newsFeedMetadata=feed;
   renderNewsFeedHealth();
   liveNews=feed.items;
-  if(!newsActive().length)return;
+  // Rendering an empty-but-valid snapshot removes articles that have aged
+  // beyond the 48-hour limit instead of leaving stale cards on screen.
   window.islaRenderNews=renderNewsPortal;
   renderNewsPortal();
  }catch(error){console.warn('News feed unavailable, demo remains labeled',error)}
@@ -925,3 +926,9 @@ loadFuelExchangeRate();
 setInterval(renderIslandWeather,5*60*1000);
 // Pick up newly published forecast data without forcing a page refresh.
 setInterval(loadIslandWeather,30*60*1000);
+// Long-open tabs should not show frozen headlines after the scheduled importer
+// has updated the JSON. Skip background-tab network requests.
+setInterval(()=>{if(document.visibilityState==='visible')loadAutoNews()},30*60*1000);
+// Refresh age labels, the 48-hour cutoff and the six-hour RSS-health warning
+// without extra network traffic.
+setInterval(()=>{if(document.visibilityState==='visible'&&newsFeedMetadata)renderNewsPortal()},5*60*1000);
