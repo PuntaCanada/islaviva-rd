@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T21:40:41.396338+00:00",
+  "updated": "2026-11-21T21:49:09.022845+00:00",
   "source_status": "partial",
   "source_diagnostics": {
     "feeds_successful": 17,
@@ -8,16 +8,28 @@
       "AlMomento": 14,
       "Bávaro Digital": 8,
       "Diario 55": 1,
-      "Diario Libre": 11,
+      "Diario Libre": 12,
       "Diario Norte RD": 1,
       "El Día": 15,
-      "El Tiempo": 4,
+      "El Tiempo": 3,
       "Noticia.do": 3,
       "Noticias SIN": 10,
       "Punta Cana Post": 5
     },
-    "with_image_url": 11,
-    "with_region": 11
+    "with_image_url": 12,
+    "with_region": 12,
+    "by_region": {
+      "Higüey": 2,
+      "Puerto Plata": 1,
+      "Punta Cana": 9,
+      "Santiago": 1
+    },
+    "regional_publishers": {
+      "AlMomento": 1,
+      "Bávaro Digital": 5,
+      "Noticia.do": 1,
+      "Punta Cana Post": 5
+    }
   },
   "failed_feeds": [
     {
@@ -891,6 +903,22 @@
       }
     },
     {
+      "title": "Condonan deudas por uso de música a empresas de Santiago",
+      "url": "https://www.diariolibre.com/revista/cultura/2026/11/21/condonan-deudas-por-uso-de-musica-a-empresas-de-santiago/3727795",
+      "source": "Diario Libre",
+      "category": "Economía",
+      "regions": [],
+      "preview": "Las empresas afiliadas a la Asociación de Comerciantes e Industriales de Santiago (ACIS) tendrán un plazo de ocho meses para formalizar las licencias por el uso de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/condonan-deudas-por-uso-de-musica-a-empresas-de-santiago-0856d367-focus-min0.09-0.43-400-300.jpg",
+      "published": "2026-11-21T17:13:00+00:00",
+      "translations": {
+        "de": "Schulden, die für Musiknutzung an Unternehmen in Santiago erlassen wurden",
+        "en": "Debts forgiven for music use to companies in Santiago",
+        "fr": "Dettes annulées pour usage musical à des entreprises de Santiago",
+        "ht": "Dèt ki te padone pou itilizasyon mizik bay konpayi nan Santiago"
+      }
+    },
+    {
       "title": "\"Tu sueño era ser militar\": el dolor de los familiares de los tres soldados salvadoreños fallecidos en Haití",
       "url": "https://eldia.com.do/tu-sueno-era-ser-militar-el-dolor-de-los-familiares-de-los-tres-soldados-salvadorenos-fallecidos-en-haiti/",
       "source": "El Día",
@@ -1047,6 +1075,22 @@
       }
     },
     {
+      "title": "Raquel Peña anuncia coordinación de obras en 14 sectores en Santiago",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/21/raquel-pena-anuncia-coordinacion-de-obras-en-14-sectores-en-santiago/3727772",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Representantes de 14 sectores de Santiago solicitaron mayor patrullaje policial, iluminación de espacios públicos, asfaltado de calles y construcción de aceras y…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/raquel-pena-anuncia-coordinacion-de-obras-tras-demandas-de-14-sectores-en-santiago-56be2018-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T16:35:00+00:00",
+      "translations": {
+        "de": "Raquel Peña kündigt die Koordination der Arbeiten in 14 Sektoren in Santiago an",
+        "en": "Raquel Peña announces coordination of works in 14 sectors in Santiago",
+        "fr": "Raquel Peña annonce la coordination des travaux dans 14 secteurs à Santiago",
+        "ht": "Raquel Peña anonse kowòdinasyon travay nan 14 sektè nan Santiago"
+      }
+    },
+    {
       "title": "Shohei Ohtani firma un acuerdo millonario con New Balance hasta su retirada",
       "url": "https://eldia.com.do/shohei-ohtani-firma-un-acuerdo-millonario-con-new-balance-hasta-su-retirada/",
       "source": "El Día",
@@ -1073,7 +1117,9 @@
       "url": "https://noticia.do/alcaldia-santiago-becas-maestrias-eude/",
       "source": "Noticia.do",
       "category": "Regionales",
-      "regions": [],
+      "regions": [
+        "Santiago"
+      ],
       "preview": "Noticia.do Alcaldía de Santiago firma convenio con EUDE para ofrecer becas de posgrado y maestrías La Alcaldía de Santiago y EUDE firmaron un convenio para ofrecer…",
       "image": "",
       "published": "2026-11-21T16:30:06+00:00",
@@ -1587,50 +1633,6 @@
         "en": "BARAHONA.— Agents from the National Directorate of Drug Control (DNCD), in coordination with the Public Prosecutor's Office, seized three AR-15 rifles, a pistol...",
         "fr": "BARAHONA.— Des agents de la Direction nationale du contrôle des drogues (DNCD), en coordination avec le parquet, ont saisi trois fusils AR-15, un pistolet...",
         "ht": "BARAHONA.— Ajan Direksyon Nasyonal Kontwòl Dwòg (DNCD), an kowòdinasyon ak Biwo Pwokirè Piblik la, te sezi twa zam AR-15, yon pistolè..."
-      }
-    },
-    {
-      "title": "Nagua fortalece la atención comunitaria con jornada médica gratuita",
-      "url": "https://eltiempo.com.do/nacionales/nagua-fortalece-la-atencion-comunitaria-con-jornada-medica-gratuita/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Punta Cana. Las familias del municipio de Nagua cuentan con una importante oportunidad para cuidar... La entrada Nagua fortalece la atención comunitaria con jornada…",
-      "image": "",
-      "published": "2026-11-21T14:00:00+00:00",
-      "translations": {
-        "de": "Nagua stärkt die Gemeinschaftsversorgung mit einem kostenlosen medizinischen Tag",
-        "en": "Nagua strengthens community care with a free medical day",
-        "fr": "Nagua renforce les soins communautaires grâce à une journée médicale gratuite",
-        "ht": "Nagua ranfòse swen kominotè ak yon jounen medikal gratis"
-      },
-      "preview_translations": {
-        "de": "Punta Cana. Familien in der Gemeinde Nagua haben eine wichtige Gelegenheit, sich um ... zu kümmern... Der Eingang nach Nagua stärkt die gemeinschaftliche Betreuung mit einem Tag...",
-        "en": "Punta Cana. Families in the municipality of Nagua have an important opportunity to care for... The Nagua entrance strengthens community care with a day...",
-        "fr": "Punta Cana. Les familles de la municipalité de Nagua ont une opportunité importante de prendre soin de... L’entrée de Nagua renforce les soins communautaires avec une journée...",
-        "ht": "Punta Cana. Fanmi nan minisipalite Nagua gen yon opòtinite enpòtan pou pran swen... Antre Nagua a ranfòse swen kominotè ak yon jou..."
-      }
-    },
-    {
-      "title": "Juez deniega solicitud de liberación del dominicano Oscar Belgal",
-      "url": "https://www.diariolibre.com/usa/actualidad/2026/11/21/juez-deniega-solicitud-de-liberacion-del-dominicano-oscar-belgal/3727679",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El dominicano Oscar Belgal, de 28 años, permanecerá bajo custodia del Servicio de Inmigración y Control de Aduanas (ICE) mientras se tramita su caso migratorio…",
-      "image": "https://resources.diariolibre.com/images/2026/10/09/identifican-como-oscar-belgal-al-dominicano-herido-por-ice-4382d9a4-focus-min0.19-0.48-400-300.jpg",
-      "published": "2026-11-21T13:58:00+00:00",
-      "translations": {
-        "de": "Richter lehnt den Antrag auf Freilassung des Dominikaners Oscar Belgal ab",
-        "en": "Judge denies request for release of Dominican Oscar Belgal",
-        "fr": "Le juge rejette la demande de libération du Dominican Oscar Belgal",
-        "ht": "Jij la refize demann pou lage Dominiken Oscar Belgal"
-      },
-      "preview_translations": {
-        "de": "Der Dominikaner Oscar Belgal, 28, bleibt in Gewahrsam des Einwanderungs- und Zollbehördes (ICE), während sein Einwanderungsfall bearbeitet wird...",
-        "en": "Dominican Oscar Belgal, 28, will remain in custody of the Immigration and Customs Enforcement Service (ICE) while his immigration case is processed...",
-        "fr": "Le Dominicain Oscar Belgal, 28 ans, restera en détention par le Service d’immigration et de contrôle des douanes (ICE) pendant que son dossier d’immigration sera traité...",
-        "ht": "Dominiken Oscar Belgal, 28 an, ap rete nan gad Sèvis Imigrasyon ak Ladwàn (ICE) pandan ka imigrasyon li a ap trete..."
       }
     }
   ]
