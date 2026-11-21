@@ -126,6 +126,15 @@ class NewsQualityTests(unittest.TestCase):
         self.assertEqual(region_mentions("Santiago es el apellido del atleta"), [])
         self.assertEqual(region_mentions("Playa Macao estrena nueva vía"), ["Punta Cana"])
 
+    def test_santiago_requires_explicit_locality_context(self):
+        self.assertEqual(trustworthy_regions("Obras en la provincia de Santiago"), ["Santiago"])
+        self.assertEqual(trustworthy_regions("Santiago firma un nuevo contrato"), [])
+        self.assertEqual(trustworthy_regions("Debate en Santiago de Chile"), [])
+        self.assertEqual(trustworthy_regions("Abren un hospital",
+            "SANTIAGO, RD. La iniciativa beneficiará a familias"), ["Santiago"])
+        self.assertEqual(trustworthy_regions("Gobierno se reúne en Punta Cana",
+            "SANTIAGO, RD. Reportan detalles"), ["Punta Cana"])
+
     def test_duplicates(self):
         now = dt.datetime.now(dt.timezone.utc).isoformat()
         def article(title, url, source="Diario Libre", **more):
@@ -223,6 +232,8 @@ class NewsQualityTests(unittest.TestCase):
             "feeds_successful":9, "feeds_configured":15,
             "publishers":{"Diario Libre":1,"El Día":2},
             "with_image_url":1, "with_region":1,
+            "by_region":{"Higüey":1},
+            "regional_publishers":{"El Día":1},
         })
 
     def test_cached_news_structure(self):
