@@ -16,7 +16,8 @@ const url='https://www.diariolibre.com/pruebas/islaviva-demo';
 const fixture={updated:new Date().toISOString(),source_status:'partial',source_diagnostics:{feeds_successful:3,feeds_configured:4,publishers:{'Diario Libre':1,'El Día':1,'Noticias SIN':1,'AlMomento':1},with_image_url:0,with_region:2},failed_feeds:[{source:'Hoy',url:'https://hoy.com.do/feed/',reason:'HTTPError'}],items:[
   {title:'Hospital de Higüey amplía atención médica',source:'Diario Libre',url,
    category:'Salud',regions:['Higüey'],published:now,image:'',preview:'Se amplía la atención médica en la ciudad.',
-   translations:{de:'Krankenhaus in Higüey erweitert medizinische Versorgung'}},
+   translations:{de:'Krankenhaus in Higüey erweitert medizinische Versorgung',en:'Hospital expands medical services'},
+   preview_translations:{de:'Die medizinische Versorgung wird ausgeweitet.',en:'Hospital is undergoing expansion.'}},
   {title:'Turismo en Punta Cana impulsa la economía',source:'El Día',
    url:'https://eldia.com.do/pruebas/turismo-isla',category:'Turismo',regions:['Punta Cana'],
    published:now,image:'',preview:'El turismo crece en la región.'},
@@ -87,6 +88,7 @@ try{
    await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
    ensure(await page.locator('html').getAttribute('lang')==='de','German locale is missing');
    ensure((await page.locator('#news-grid').innerText()).includes('Krankenhaus in Higüey'),'German translated headline missing');
+   ensure((await page.locator('#news-grid').innerText()).includes('Die medizinische Versorgung wird ausgeweitet.'),'Valid German teaser missing');
    ensure((await page.locator('#news-feed-health').innerText()).includes('teilweise'),'German RSS health text missing');
    ensure(await page.locator('#news-grid time[datetime]').count()===4,'German article publication timestamp missing');
    for(const locale of ['en','fr','ht']){
@@ -94,6 +96,11 @@ try{
      await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
      ensure(await page.locator('html').getAttribute('lang')===locale,'wrong document locale '+locale);
      ensure(await page.locator('#news-grid a.story').count()===4,'news cards missing in '+locale);
+     if(locale==='en'){
+       const text=await page.locator('#news-grid').innerText();
+       ensure(text.includes('Hospital de Higüey amplía atención médica'),'Broken English translation losing Higüey was incorrectly accepted');
+       ensure(!text.includes('Hospital is undergoing expansion.'),'English teaser shown under an untrusted translation');
+     }
      ensure(await page.locator('#news-feed-health').getAttribute('data-status')==='partial','feed-health missing in '+locale);
      ensure((await page.locator('#news-feed-health').innerText()).includes('3/4'),'feed statistics missing in '+locale);
      ensure(await page.locator('#news-category').getAttribute('aria-label')!==null,'topic filter lacks accessible label');

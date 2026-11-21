@@ -17,6 +17,11 @@ CANDIDATES = (
     ("Diario 55", "Santiago", "https://diario55.com/feed/", "diario55.com"),
     ("Noticia.do", "Santiago", "https://noticia.do/feed/", "noticia.do"),
     ("República News", "Cibao / Puerto Plata", "https://republicanews.com/feed/", "republicanews.com"),
+    # Site names are sourced from the original public news publishers. These
+    # possible feed paths are HYPOTHESES, not approved production RSS feeds.
+    ("Diario Norte RD", "Puerto Plata", "https://diarionorterd.com/feed/", "diarionorterd.com"),
+    ("G Micheli al Día", "La Romana", "https://gmichelialdia.com/feed/", "gmichelialdia.com"),
+    ("La Voz de Samaná", "Samaná", "https://www.lavozdesamana.net/feeds/posts/default?alt=rss", "lavozdesamana.net"),
 )
 MAX_SIZE = 1_500_000
 

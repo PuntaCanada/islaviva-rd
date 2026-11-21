@@ -681,7 +681,7 @@ function renderNewsFeedHealth(){
  note.textContent=(reported.length?l.unavailable+': '+reported.join(', ')+'. ':'')+l.note;
  node.replaceChildren(heading,details,note);
 }
-const sourceHosts={'diariolibre.com':'Diario Libre','hoy.com.do':'Hoy','eldia.com.do':'El Día','almomento.net':'AlMomento','noticiassin.com':'Noticias SIN','puntacanapost.com':'Punta Cana Post','eltiempo.com.do':'El Tiempo','bavarodigital.net':'Bávaro Digital','diario55.com':'Diario 55','noticia.do':'Noticia.do'};
+const sourceHosts={'diariolibre.com':'Diario Libre','hoy.com.do':'Hoy','eldia.com.do':'El Día','almomento.net':'AlMomento','noticiassin.com':'Noticias SIN','puntacanapost.com':'Punta Cana Post','eltiempo.com.do':'El Tiempo','bavarodigital.net':'Bávaro Digital','diario55.com':'Diario 55','noticia.do':'Noticia.do','diarionorterd.com':'Diario Norte RD'};
 // Every illustration is original inline SVG, NOT a photograph of the reported event.
 // Real publisher photos must be explicitly licensed before their source is enabled here.
 const licensedNewsImageSources=new Set([]);
@@ -833,7 +833,7 @@ function renderNewsPortal(){
    // Check protected movie titles and local place names even for old cached RSS
    // snapshots. An unsafe machine translation is never shown as verified text.
    const proposedTitle=lang!=='es'?n.translations?.[lang]:'';
-   const normalizeNewsText=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
+   const normalizeNewsText=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'');
    const originalNorm=normalizeNewsText(n.title);
    const translatedNorm=normalizeNewsText(proposedTitle);
    const mediaGuards=[
@@ -847,7 +847,7 @@ function renderNewsPortal(){
    const unsafeName=/(my poor angel|mon pauvre ange|mein armer engel|pabunem)/.test(translatedNorm);
    const safeTranslation=Boolean(proposedTitle)&&!unsafeMovie&&!missingPlace&&!unsafeName;
    const title=safeTranslation?proposedTitle:n.title;
-   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
+   const preview=(lang==='es'?n.preview:(safeTranslation?n.preview_translations?.[lang]:''))||'';
    const hasTranslation=lang!=='es'&&safeTranslation;
    const translatedLabel={es:'EN ESPAÑOL',de:'ÜBERSETZT',en:'TRANSLATED',fr:'TRADUIT',ht:'TRADUI'};
    const t=Date.parse(n.published);const hours=Math.max(0,Math.floor((Date.now()-t)/3600000));
