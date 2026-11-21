@@ -28,6 +28,19 @@ class NewsQualityTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertEqual(category_for(title, default), expected)
 
+    def test_cinema_headlines_vs_games_and_real_events(self):
+        examples = [
+            ("Macaulay Culkin podría regresar a Mi pobre angelito después de 35 años", "Cultura"),
+            ("La nueva precuela de Los juegos del hambre genera 56 millones", "Cultura"),
+            ("Nueva película de acción llega al cine", "Cultura"),
+            ("Los Toros vencen en los juegos del fin de semana", "Deportes"),
+            ("GTA VI será el videojuego del año", "Gaming y tecnología"),
+            ("Policía investiga homicidio en Santo Domingo", "Seguridad"),
+        ]
+        for title, expected in examples:
+            with self.subTest(title=title):
+                self.assertEqual(category_for(title, "Actualidad"), expected)
+
     def test_gaming_and_technology_metadata(self):
         # Specific game names and unambiguous title signals override generic feed.
         cases = [
