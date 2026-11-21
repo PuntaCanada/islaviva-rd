@@ -14,7 +14,7 @@ import urllib.parse
 import uuid
 import urllib.request
 import xml.etree.ElementTree as ET
-from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news, cached_title_translations
+from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news, cached_title_translations, trustworthy_regions, filter_title_translations
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 UTC = dt.timezone.utc
@@ -125,7 +125,7 @@ for source, feed_url, category, allowed_domain in FEEDS:
             # Source's headline and summary are for location tagging only; do not republish full body.
             entry = {"title": title, "url": url, "source": source,
                      "category": category_for(title,category,preview,feed_tags),
-                     "regions": region_mentions(title),
+                     "regions": trustworthy_regions(title, preview, source),
                      "preview": preview,
                      "image": image_url,
                      "published": published.isoformat()}
@@ -224,7 +224,7 @@ else:
             translated=translate_batch([x["title"] for x in batch])
             if translated:
                 for idx,languages in translated.items():
-                    batch[idx]["translations"]=languages
+                    batch[idx]["translations"]=filter_title_translations(batch[idx]["title"],languages)
                 accounting["characters"]+=budget_cost
     preview_pending=[entry for entry in latest if entry.get("preview") and len(entry.get("preview_translations",{}))!=len(LANGUAGES)]
     if API_KEY and preview_pending:

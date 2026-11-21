@@ -31,7 +31,7 @@ function renderRoadNotices(){
    })();
    const title=(lang==='es'?n.title:n.translations?.[lang])||n.title;
    // Never present an un-translated Spanish preview as if it were in the chosen language.
-   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
+   const preview=(lang==='es'?n.preview:(safeTranslation?n.preview_translations?.[lang]:''))||'';
    const region=Array.isArray(n.regions)&&n.regions.length?n.regions.join(' / '):'República Dominicana';
    const date=n.published?new Date(n.published).toLocaleDateString(lang,{year:'numeric',month:'short',day:'numeric',timeZone:'America/Santo_Domingo'}):(n.effective_from||'');
    const status=n.kind==='official_announcement'?t.notice:t.media;
@@ -776,9 +776,25 @@ function renderNewsPortal(){
  const grid=document.getElementById('news-grid');
  if(!picked.length)grid.innerHTML='<div class="news-empty">'+esc(visibleNewsInterests.size?ui.empty:(interestUi[lang]||interestUi.es).hidden)+'</div>';
  else grid.innerHTML=picked.map((n,i)=>{
-   const title=(lang!=='es'&&n.translations?.[lang])||n.title;
+   // Check protected movie titles and local place names even for old cached RSS
+   // snapshots. An unsafe machine translation is never shown as verified text.
+   const proposedTitle=lang!=='es'?n.translations?.[lang]:'';
+   const normalizeNewsText=s=>(s||'').toLowerCase().normalize('NFD').replace(/[\\u0300-\\u036f]/g,'');
+   const originalNorm=normalizeNewsText(n.title);
+   const translatedNorm=normalizeNewsText(proposedTitle);
+   const mediaGuards=[
+    ['mi pobre angelito',['mi pobre angelito','home alone','kevin allein zu haus','maman j ai rate l avion']],
+    ['juegos del hambre',['juegos del hambre','hunger games','tribute von panem']]
+   ];
+   const unsafeMovie=mediaGuards.some(([original,accepted])=>originalNorm.includes(original)&&
+      !accepted.some(t=>translatedNorm.includes(t)));
+   const missingPlace=['higuey','punta cana','bavaro','la romana','puerto plata'].some(place=>
+      originalNorm.includes(place)&&!translatedNorm.includes(place));
+   const unsafeName=/(my poor angel|mon pauvre ange|mein armer engel|pabunem)/.test(translatedNorm);
+   const safeTranslation=Boolean(proposedTitle)&&!unsafeMovie&&!missingPlace&&!unsafeName;
+   const title=safeTranslation?proposedTitle:n.title;
    const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
-   const hasTranslation=lang!=='es'&&Boolean(n.translations?.[lang]);
+   const hasTranslation=lang!=='es'&&safeTranslation;
    const translatedLabel={es:'EN ESPAÑOL',de:'ÜBERSETZT',en:'TRANSLATED',fr:'TRADUIT',ht:'TRADUI'};
    const t=Date.parse(n.published);const hours=Math.max(0,Math.floor((Date.now()-t)/3600000));
    const date=hours<1?new Intl.DateTimeFormat(lang,{hour:'2-digit',minute:'2-digit',timeZone:'America/Santo_Domingo'}).format(new Date(t)):(lang==='es'?'Hace ':lang==='de'?'Vor ':lang==='en'?'':lang==='fr'?'Il y a ':'Sa gen ')+hours+' h';
