@@ -798,6 +798,9 @@ function renderNewsPortal(){
    const translatedLabel={es:'EN ESPAÑOL',de:'ÜBERSETZT',en:'TRANSLATED',fr:'TRADUIT',ht:'TRADUI'};
    const t=Date.parse(n.published);const hours=Math.max(0,Math.floor((Date.now()-t)/3600000));
    const date=hours<1?new Intl.DateTimeFormat(lang,{hour:'2-digit',minute:'2-digit',timeZone:'America/Santo_Domingo'}).format(new Date(t)):(lang==='es'?'Hace ':lang==='de'?'Vor ':lang==='en'?'':lang==='fr'?'Il y a ':'Sa gen ')+hours+' h';
+   // Relative hours alone lose the calendar day; expose the original instant
+   // to mouse, keyboard and assistive-technology users alike.
+   const absolutePublished=new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short',timeZone:'America/Santo_Domingo'}).format(new Date(t));
    const places=Array.isArray(n.regions)?n.regions.filter(x=>typeof x==='string').slice(0,2):[];
    // Publisher photos are disabled until a valid reuse permission is documented.
    // Once licensed, enable a named source above. A failed load keeps the SVG.
@@ -810,7 +813,7 @@ function renderNewsPortal(){
    const visualCaption='<span class="news-caption">'+esc(newsVisualLabel())+'</span>';
 
    const teaser=preview?'<div class="news-teaser">'+esc(preview)+'</div>':'';
-   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+art+photoMarkup+visualCaption+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(newsCategoryLabel(effectiveNewsCategory(n)))+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · '+esc(date)+' · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
+   return '<a class="story '+(!i?'featured':'')+'" href="'+esc(n.url)+'" target="_blank" rel="noopener noreferrer"><div class="news-image">'+art+photoMarkup+visualCaption+(photo?'<span class="news-photo-credit">'+esc(n.source)+'</span>':'')+'</div><div class="story-content"><div class="story-meta"><span class="tag">📰 '+esc(newsCategoryLabel(effectiveNewsCategory(n)))+'</span>'+(places.length?'<span class="story-local">📍 '+esc(places.join(' · '))+'</span>':'')+'</div><h3>'+esc(title)+'</h3>'+teaser+'<p class="news-byline">'+esc(n.source)+' · <time datetime="'+esc(n.published)+'" title="'+esc(absolutePublished)+'" aria-label="'+esc(absolutePublished)+'">'+esc(date)+'</time> · '+esc(hasTranslation?translatedLabel[lang]:'ES')+'</p><span class="source">'+esc(ui.read)+' <span aria-hidden="true">↗</span></span></div></a>';
 
  }).join('');
  const notice=document.querySelector('[data-t="newsdisclaimer"]');
