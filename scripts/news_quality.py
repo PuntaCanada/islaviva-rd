@@ -165,8 +165,60 @@ def cached_title_translations(previous_title, current_title, translations):
     """Reuse a machine translation only if its Spanish source title is identical."""
     if previous_title != current_title or not isinstance(translations, dict):
         return {}
-    return {key: value for key, value in translations.items()
-            if key in ("de", "en", "fr", "ht") and isinstance(value, str) and value.strip()}
+    return filter_title_translations(current_title, translations)
+
+def trustworthy_regions(title, preview="", source=""):
+    """Accept explicit headline locations; conservative dateline fallback.
+
+    Many regional publishers use 'Punta Cana.' as a generic newsroom prefix
+    even for foreign/world stories. Never infer the article's location from
+    that prefix. A narrow dateline fallback only permits Higüey/Puerto Plata.
+    """
+    direct = region_mentions(title)
+    if direct:
+        return direct
+    start = normalize(preview[:85])
+    for place, prefix in (("Higüey", "higuey la altagracia"),
+                          ("Puerto Plata", "puerto plata")):
+        if re.match(r"^" + prefix + r"\\b", start):
+            return [place]
+    return []
+
+
+# Reject demonstrably misleading media-title translations without generating
+# replacement editorial text. The original Spanish remains visible on the site.
+_PROTECTED_MEDIA = (
+    ("mi pobre angelito", ("mi pobre angelito", "home alone", "kevin allein zu haus",
+                           "maman j ai rate l avion")),
+    ("juegos del hambre", ("juegos del hambre", "hunger games",
+                            "tribute von panem")),
+)
+_BAD_TRANSLATIONS = ("my poor angel", "mon pauvre ange", "mein armer engel",
+                     "pabunem")
+
+def reliable_title_translation(original, translated):
+    if not isinstance(translated, str) or not translated.strip():
+        return False
+    normalized = normalize(translated)
+    if any(bad in normalized for bad in _BAD_TRANSLATIONS):
+        return False
+    original_normalized = normalize(original)
+    for term, accepted in _PROTECTED_MEDIA:
+        if term in original_normalized and not any(name in normalized for name in accepted):
+            return False
+    # Important place names must not silently vanish from machine translations.
+    for name in ("higuey", "punta cana", "bavaro", "la romana", "puerto plata"):
+        if re.search(r"(?<!\\w)" + re.escape(name) + r"(?!\\w)", original_normalized) and not re.search(
+            r"(?<!\\w)" + re.escape(name) + r"(?!\\w)", normalized
+        ):
+            return False
+    return True
+
+def filter_title_translations(original, translations):
+    if not isinstance(translations, dict):
+        return {}
+    return {lang: text for lang, text in translations.items()
+            if lang in ("de", "en", "fr", "ht") and reliable_title_translation(original, text)}
 
 def region_mentions(title):
     t = normalize(title)
