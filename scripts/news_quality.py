@@ -182,7 +182,7 @@ def trustworthy_regions(title, preview="", source=""):
     if re.search(r"(?<!\\w)(?:provincia|municipio|ayuntamiento|alcaldia) de santiago(?!\\w)", headline):
         direct.append("Santiago")
     if direct:
-        return list(dict.fromkeys(direct)
+        return list(dict.fromkeys(direct))
     start = normalize(preview[:85])
     for place, prefix in (("Higüey", "higuey la altagracia"),
                           ("Puerto Plata", "puerto plata"),
