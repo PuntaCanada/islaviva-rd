@@ -180,7 +180,7 @@ def trustworthy_regions(title, preview="", source=""):
     start = normalize(preview[:85])
     for place, prefix in (("Higüey", "higuey la altagracia"),
                           ("Puerto Plata", "puerto plata")):
-        if re.match(r"^" + prefix + r"\\b", start):
+        if re.match(r"^" + prefix + r"\b", start):
             return [place]
     return []
 
@@ -208,8 +208,8 @@ def reliable_title_translation(original, translated):
             return False
     # Important place names must not silently vanish from machine translations.
     for name in ("higuey", "punta cana", "bavaro", "la romana", "puerto plata"):
-        if re.search(r"(?<!\\w)" + re.escape(name) + r"(?!\\w)", original_normalized) and not re.search(
-            r"(?<!\\w)" + re.escape(name) + r"(?!\\w)", normalized
+        if re.search(r"(?<!\w)" + re.escape(name) + r"(?!\w)", original_normalized) and not re.search(
+            r"(?<!\w)" + re.escape(name) + r"(?!\w)", normalized
         ):
             return False
     return True
