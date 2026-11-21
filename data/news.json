@@ -1,21 +1,22 @@
 {
-  "updated": "2026-11-21T21:35:31.053648+00:00",
+  "updated": "2026-11-21T21:40:41.396338+00:00",
   "source_status": "partial",
   "source_diagnostics": {
-    "feeds_successful": 16,
-    "feeds_configured": 17,
+    "feeds_successful": 17,
+    "feeds_configured": 18,
     "publishers": {
       "AlMomento": 14,
       "Bávaro Digital": 8,
       "Diario 55": 1,
-      "Diario Libre": 12,
+      "Diario Libre": 11,
+      "Diario Norte RD": 1,
       "El Día": 15,
       "El Tiempo": 4,
       "Noticia.do": 3,
       "Noticias SIN": 10,
       "Punta Cana Post": 5
     },
-    "with_image_url": 12,
+    "with_image_url": 11,
     "with_region": 11
   },
   "failed_feeds": [
@@ -551,6 +552,28 @@
         "en": "This article was originally published in El Día. Port-au-Prince.- At least 20 alleged members of Haitian armed gangs have died in a new operation...",
         "fr": "Cet article a été initialement publié dans El Día. Port-au-Prince. - Au moins 20 membres présumés de gangs armés haïtiens sont morts lors d’une nouvelle opération...",
         "ht": "Atik sa a te pibliye okòmansman nan El Día. Pòtoprens. - Omwen 20 swadizan manm gang ame ayisyen mouri nan yon nouvo operasyon..."
+      }
+    },
+    {
+      "title": "Abinader propone vuelo directo entre Dubái y RD durante cumbre internacional",
+      "url": "https://diarionorterd.com/abinader-propone-vuelo-directo-entre-dubai-y-rd-durante-cumbre-internacional/",
+      "source": "Diario Norte RD",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Abinader impulsa un vuelo directo Dubái-RD para fortalecer turismo, inversiones y comercio. Santo Domingo.– El presidente Luis Abinader propuso gestionar un vuelo…",
+      "image": "",
+      "published": "2026-11-21T19:06:53+00:00",
+      "translations": {
+        "de": "Abinader schlägt während des internationalen Gipfels einen Direktflug zwischen Dubai und der DR vor",
+        "en": "Abinader proposes direct flight between Dubai and the DR during international summit",
+        "fr": "Abinader propose un vol direct entre Dubaï et la RD lors d’un sommet international",
+        "ht": "Abinader pwopoze vòl dirèk ant Doubay ak RD pandan somè entènasyonal la"
+      },
+      "preview_translations": {
+        "de": "Abinader fördert einen direkten Dubai-DR-Flug, um Tourismus, Investitionen und Handel zu stärken. Santo Domingo.– Präsident Luis Abinader schlug vor, einen Flug zu organisieren...",
+        "en": "Abinader is promoting a direct Dubai-DR flight to strengthen tourism, investment, and commerce. Santo Domingo.– President Luis Abinader proposed arranging a flight...",
+        "fr": "Abinader promeut un vol direct Dubaï-RD pour renforcer le tourisme, l’investissement et le commerce. Saint-Domingue.– Le président Luis Abinader a proposé d’organiser un vol...",
+        "ht": "Abinader ap ankouraje yon vòl dirèk ant Dubai-DR pou ranfòse touris, envestisman, ak komès. Santo Domingo.– Prezidan Luis Abinader te pwopoze òganize yon vòl..."
       }
     },
     {
@@ -1608,28 +1631,6 @@
         "en": "Dominican Oscar Belgal, 28, will remain in custody of the Immigration and Customs Enforcement Service (ICE) while his immigration case is processed...",
         "fr": "Le Dominicain Oscar Belgal, 28 ans, restera en détention par le Service d’immigration et de contrôle des douanes (ICE) pendant que son dossier d’immigration sera traité...",
         "ht": "Dominiken Oscar Belgal, 28 an, ap rete nan gad Sèvis Imigrasyon ak Ladwàn (ICE) pandan ka imigrasyon li a ap trete..."
-      }
-    },
-    {
-      "title": "Se desata la violencia tras arresto del capo Fausto Isidro Meza",
-      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/21/se-desata-la-violencia-tras-arresto-del-capo-fausto-isidro-meza/3727659",
-      "source": "Diario Libre",
-      "category": "Mundo",
-      "regions": [],
-      "preview": "Las autoridades mexicanas informaron este sábado la detención de uno de los capos más buscados por Estados Unidos, lo que desató una ola de violencia por parte de…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/se-desata-la-violencia-tras-arresto-del-capo-fausto-isidro-meza-9d0183ad-focus-0.05-0.14-400-300.jpg",
-      "published": "2026-11-21T13:22:00+00:00",
-      "translations": {
-        "de": "Nach der Festnahme des Anführers Fausto Isidro Meza bricht Gewalt aus",
-        "en": "Violence erupts following the arrest of leader Fausto Isidro Meza",
-        "fr": "La violence éclate après l’arrestation du dirigeant Fausto Isidro Meza",
-        "ht": "Vyolans pete apre arestasyon lidè Fausto Isidro Meza"
-      },
-      "preview_translations": {
-        "de": "Mexikanische Behörden berichteten diesen Samstag über die Festnahme eines der meistgesuchten Drogenbosse durch die Vereinigten Staaten, was eine Welle der Gewalt auslöste durch...",
-        "en": "Mexican authorities reported this Saturday the arrest of one of the most wanted drug lords by the United States, which unleashed a wave of violence by...",
-        "fr": "Les autorités mexicaines ont rapporté ce samedi l’arrestation de l’un des barons de la drogue les plus recherchés par les États-Unis, qui a déclenché une vague de violence par...",
-        "ht": "Otorite Meksiken yo rapòte samdi sa a arestasyon youn nan chèf dwòg ki pi chache pa Etazini, ki te lage yon vag vyolans pa..."
       }
     }
   ]
