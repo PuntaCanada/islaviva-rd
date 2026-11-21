@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-21T21:01:27.151627+00:00",
+  "updated": "2026-11-21T21:07:30.510336+00:00",
   "source_status": "ok",
   "items": [
     {
@@ -320,7 +320,6 @@
       "image": "",
       "published": "2026-11-21T19:46:34+00:00",
       "translations": {
-        "de": "Das neue Prequel zu 'Die Tribute von Pabunem' generiert in Nordamerika 56 Millionen Dollar",
         "en": "The new prequel to 'The Hunger Games' generates 56 million dollars in North America",
         "fr": "Le nouveau préquel de « Les Hunger Games » génère 56 millions de dollars en Amérique du Nord",
         "ht": "Nouvo prekwèl 'The Hunger Games' jenere 56 milyon dola nan Amerik di Nò"
@@ -333,7 +332,7 @@
       }
     },
     {
-      "title": "NUEVA YORK: CODEX celebrará misa Día Dominicano Exterior",
+      "title": "NUEVA YORK: Celebrarán misa por el Día Dominicano Exterior",
       "url": "https://almomento.net/nueva-york-codex-celebrara-misa-dia-dominicano-exterior/",
       "source": "AlMomento",
       "category": "Actualidad",
@@ -342,10 +341,10 @@
       "image": "",
       "published": "2026-11-21T19:44:41+00:00",
       "translations": {
-        "de": "NEW YORK: CODEX wird die Messe im Freien zum Dominikanischen Tag feiern",
-        "en": "NEW YORK: CODEX will celebrate Dominican Day Outdoor Mass",
-        "fr": "NEW YORK : CODEX célébrera la messe en plein air de la Journée dominicaine",
-        "ht": "NEW YORK: CODEX pral selebre Mès Deyò Jou Dominiken an"
+        "de": "NEW YORK: Zum Dominikanischen Tag im Ausland wird eine Messe gefeiert",
+        "en": "NEW YORK: Mass will be celebrated for Dominican Day Abroad",
+        "fr": "NEW YORK : La messe sera célébrée pour la Journée dominicaine à l’étranger",
+        "ht": "NEW YORK: Mès ap selebre pou Jou Dominiken Aletranje"
       },
       "preview_translations": {
         "de": "NEW YORK.– Das Komitee der Dominikanischen Ausland (CODEX) wird am kommenden Sonntag, dem 20. Dezember, anlässlich des 39., eine Dankmesse abhalten.",
@@ -601,7 +600,9 @@
       "url": "https://bavarodigital.net/abinader-inaugura-hospital-de-nisibon-tras-25-anos-de-espera-con-inversion-superior-a-rd1200-millones/",
       "source": "Bávaro Digital",
       "category": "Economía",
-      "regions": [],
+      "regions": [
+        "Higüey"
+      ],
       "preview": "HIGÜEY, LA ALTAGRACIA. — Después de 25 años de espera, el presidente de la República, Luis Abinader, junto al ministro de Vivienda y Edificaciones, Jean Luis…",
       "image": "",
       "published": "2026-11-21T18:40:27+00:00",
@@ -1346,7 +1347,9 @@
       "url": "https://almomento.net/haitianos-atacan-a-tiros-y-pedradas-agentes-de-migracion/",
       "source": "AlMomento",
       "category": "Actualidad",
-      "regions": [],
+      "regions": [
+        "Puerto Plata"
+      ],
       "preview": "PUERTO PLATA.– Miembros de la Dirección General de Migración (DGM) fueron atacados a tiros y pedradas por un grupo de haitianos durante un operativo de interdicción…",
       "image": "",
       "published": "2026-11-21T14:30:04+00:00",
