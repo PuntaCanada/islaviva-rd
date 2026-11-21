@@ -749,7 +749,18 @@ const newsCategoryLabels={
 function newsCategoryLabel(c){return newsCategoryLabels[lang]?.[c]||c}
 function renderNewsPortal(){
  renderNewsFeedHealth();
- if(!liveNews.length)return;
+ if(!liveNews.length){
+  // A valid empty RSS snapshot is not an error: remove old articles, filters
+  // and local-priority announcements instead of leaving stale news in place.
+  const grid=document.getElementById('news-grid');
+  const ui=newsUi[lang]||newsUi.es;
+  grid.innerHTML='<div class="news-empty">'+esc(ui.empty)+'</div>';
+  document.getElementById('news-controls').hidden=true;
+  document.getElementById('news-local-priority').hidden=true;
+  const disclaimer=document.querySelector('[data-t="newsdisclaimer"]');
+  if(disclaimer)disclaimer.textContent=ui.original;
+  return;
+ }
  const ui=newsUi[lang]||newsUi.es;
  const controls=document.getElementById('news-controls');
  controls.hidden=false;
