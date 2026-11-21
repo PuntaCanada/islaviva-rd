@@ -230,7 +230,8 @@ else:
             translated=translate_batch([x["title"] for x in batch])
             if translated:
                 for idx,languages in translated.items():
-                    batch[idx]["translations"]=filter_title_translations(batch[idx]["title"],languages)
+                    batch[idx]["translations"]={**batch[idx].get("translations",{}),
+                                                **filter_title_translations(batch[idx]["title"],languages)}
                 accounting["characters"]+=budget_cost
     preview_pending=[entry for entry in latest if entry.get("preview") and len(entry.get("preview_translations",{}))!=len(LANGUAGES)]
     if API_KEY and preview_pending:
