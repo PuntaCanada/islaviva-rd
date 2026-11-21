@@ -1,51 +1,1200 @@
 {
-  "updated": "2026-11-21T10:58:39.137302+00:00",
+  "updated": "2026-11-21T19:13:21.470998+00:00",
   "source_status": "ok",
   "items": [
     {
-      "title": "Profundizarán la investigación sobre muerte Melissa Medina",
-      "url": "https://almomento.net/profundizaran-la-investigacion-sobre-muerte-melissa-medina/",
-      "source": "AlMomento",
-      "category": "Actualidad",
+      "title": "Extraditan a dos dominicanos acusados de homicidio y narcotráfico en Nueva York",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/21/extraditan-a-nueva-york-a-dos-dominicanos-por-homicidio-y-droga-2174639/",
+      "source": "Noticias SIN",
+      "category": "Seguridad",
       "regions": [],
-      "preview": "Santo Domingo, 21 nov (EFE).- La procuradora general de la República, Yeni Berenice Reynoso, instruyó a la Dirección General de Persecución del Ministerio Público…",
+      "preview": "Los imputados, de 63 y 48 años, fueron capturados en Villa Riva e Higüey y entregados a oficiales estadounidenses en el Aeropuerto Internacional de Las Américas.",
       "image": "",
-      "published": "2026-11-21T10:51:47+00:00",
+      "published": "2026-11-21T19:09:34+00:00",
       "translations": {
-        "de": "Sie werden die Ermittlungen zum Tod von Melissa Medina vertiefen",
-        "en": "They will deepen the investigation into Melissa Medina's death",
-        "fr": "Ils approfondiront l’enquête sur la mort de Melissa Medina",
-        "ht": "Yo pral apwofondi ankèt sou lanmò Melissa Medina"
+        "de": "Zwei Dominikaner, die in New York wegen Mordes und Drogenhandels beschuldigt wurden",
+        "en": "Two Dominicans extradited accused of homicide and drug trafficking in New York",
+        "fr": "Deux Dominicains extradés accusés d’homicide et de trafic de drogue à New York",
+        "ht": "De Dominiken ekstrade akize pou asasinay ak trafik dwòg nan New York"
       },
       "preview_translations": {
-        "de": "Santo Domingo, 21. November (EFE).- Die Generalstaatsanwältin der Republik, Yeni Berenice Reynoso, beauftragte die Generaldirektion für Strafverfolgung des öffentlichen Ministeriums...",
-        "en": "Santo Domingo, Nov 21 (EFE).- The Attorney General of the Republic, Yeni Berenice Reynoso, instructed the General Directorate of Prosecution of the Public Ministry...",
-        "fr": "Saint-Domingue, 21 nov. (EFE).- La procureure générale de la République, Yeni Berenice Reynoso, a chargé la direction générale du ministère public...",
-        "ht": "Santo Domingo, 21 Novanm (EFE).- Avoka Jeneral Repiblik la, Yeni Berenice Reynoso, bay Direksyon Jeneral Pwokirè Ministè Piblik la enkrè..."
+        "de": "Die Angeklagten, 63 und 48 Jahre alt, wurden in Villa Riva und Higüey festgenommen und am internationalen Flughafen Las Américas an US-Beamte übergeben.",
+        "en": "The accused, aged 63 and 48, were captured in Villa Riva and Higüey and handed over to U.S. officers at Las Américas International Airport.",
+        "fr": "Les accusés, âgés de 63 et 48 ans, ont été capturés à Villa Riva et Higüey et remis à des officiers américains à l’aéroport international des Américas.",
+        "ht": "Akize yo, ki gen 63 ak 48 an, te arete nan Villa Riva ak Higüey epi remèt bay ofisye ameriken nan Ayewopò Entènasyonal Las Américas."
       }
     },
     {
-      "title": "Punta Cana tendrá un sábado caluroso con sol en la mañana y posibles aguaceros en la tarde",
-      "url": "https://bavarodigital.net/punta-cana-tendra-un-sabado-caluroso-con-sol-en-la-manana-y-posibles-aguaceros-en-la-tarde/",
+      "title": "El talento dominicano conquista el escenario mundial a través de la educación digital",
+      "url": "https://eltiempo.com.do/variedades/el-talento-dominicano-conquista-el-escenario-mundial-a-traves-de-la-educacion-digital/",
+      "source": "El Tiempo",
+      "category": "Educación",
+      "regions": [],
+      "preview": "Punta Cana. El interés de los jóvenes dominicanos por aprender nuevas tecnologías está llevando al... La entrada El talento dominicano conquista el escenario…",
+      "image": "",
+      "published": "2026-11-21T19:00:00+00:00",
+      "translations": {
+        "de": "Dominikanisches Talent erobert die globale Bühne durch digitale Bildung",
+        "en": "Dominican talent conquers the global stage through digital education",
+        "fr": "Le talent dominicain conquiert la scène mondiale grâce à l’éducation numérique",
+        "ht": "Talan Dominiken ap konkeri sèn mondyal la atravè edikasyon dijital"
+      },
+      "preview_translations": {
+        "de": "Punta Cana. Das Interesse junger Dominikaner am Erlernen neuer Technologien führt zu... Das postdominikanische Talent erobert die Bühne...",
+        "en": "Punta Cana. The interest of young Dominicans in learning new technologies is leading to... The post Dominican talent conquers the stage...",
+        "fr": "Punta Cana. L’intérêt des jeunes Dominicains pour l’apprentissage des nouvelles technologies mène à... Le talent post-dominicain conquiert la scène...",
+        "ht": "Punta Cana. Enterè jèn Dominiken yo nan aprann nouvo teknoloji ap mennen nan... Talan post-Dominiken an konkeri sèn nan..."
+      }
+    },
+    {
+      "title": "Macaulay Culkin podría regresar a ‘Mi pobre angelito’ después de 35 años",
+      "url": "https://noticiassin.com/vida-y-estilo/cine/2026/11/21/macaulay-culkin-podria-volver-a-mi-pobre-angelito-con-disney-2174631/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Culkin podría volver como Kevin McCallister en una nueva película de ‘Mi pobre angelito’, en desarrollo por Disney.",
+      "image": "",
+      "published": "2026-11-21T18:56:22+00:00",
+      "translations": {
+        "de": "Macaulay Culkin könnte nach 35 Jahren zu 'My Poor Angel' zurückkehren",
+        "en": "Macaulay Culkin could return to 'My Poor Angel' after 35 years",
+        "fr": "Macaulay Culkin pourrait revenir dans 'My Poor Angel' après 35 ans",
+        "ht": "Macaulay Culkin ta ka retounen nan 'My Poor Angel' apre 35 ane"
+      },
+      "preview_translations": {
+        "de": "Culkin könnte als Kevin McCallister in einem neuen 'My Poor Angel'-Film zurückkehren, der von Disney entwickelt wird.",
+        "en": "Culkin could return as Kevin McCallister in a new 'My Poor Angel' film, being developed by Disney.",
+        "fr": "Culkin pourrait revenir dans le rôle de Kevin McCallister dans un nouveau film « My Poor Angel », développé par Disney.",
+        "ht": "Culkin ta ka retounen kòm Kevin McCallister nan yon nouvo fim 'My Poor Angel', ke Disney ap devlope."
+      }
+    },
+    {
+      "title": "La nueva precuela de ‘Los juegos del hambre’ genera 56 millones de dólares en Norteamérica",
+      "url": "https://noticiassin.com/vida-y-estilo/cine/2026/11/21/los-juegos-del-hambre-amanecer-en-la-cosecha-arrasa-con-56-millones-en-norteamerica-2174629/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La precuela de 'Los juegos del hambre' recaudó 56 millones de dólares en Norteamérica y apunta a superar los 120 millones este fin de",
+      "image": "",
+      "published": "2026-11-21T18:54:02+00:00",
+      "translations": {
+        "de": "Das neue Prequel zu 'Die Tribute von Pabunem' generiert in Nordamerika 56 Millionen Dollar",
+        "en": "The new prequel to 'The Hunger Games' generates 56 million dollars in North America",
+        "fr": "Le nouveau préquel de « Les Hunger Games » génère 56 millions de dollars en Amérique du Nord",
+        "ht": "Nouvo prekwèl 'The Hunger Games' jenere 56 milyon dola nan Amerik di Nò"
+      },
+      "preview_translations": {
+        "de": "Das Prequel zu 'Die Tribute von Panem' brachte in Nordamerika 56 Millionen Dollar ein und will an diesem Wochenende 120 Millionen überschreiten.",
+        "en": "The prequel to 'The Hunger Games' grossed 56 million dollars in North America and aims to surpass 120 million this weekend.",
+        "fr": "Le préquel de « The Hunger Games » a rapporté 56 millions de dollars en Amérique du Nord et vise à dépasser les 120 millions ce week-end.",
+        "ht": "Prequel 'The Hunger Games' te fè 56 milyon dola nan Amerik di Nò epi li vize depase 120 milyon fen semèn sa a."
+      }
+    },
+    {
+      "title": "Autorizan visitas diarias de los hijos de Bolsonaro durante su hospitalización",
+      "url": "https://noticiassin.com/mundo/america/2026/11/21/stf-autoriza-visitas-diarias-a-bolsonaro-en-hospital-de-brasilia-2174630/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El STF autorizó visitas diarias de sus hijos a Bolsonaro durante su internación en Brasilia.",
+      "image": "",
+      "published": "2026-11-21T18:51:17+00:00",
+      "translations": {
+        "de": "Tägliche Besuche von Bolsonaros Kindern sind während seiner Krankenhausaufenthalte erlaubt",
+        "en": "Daily visits from Bolsonaro's children are authorized during his hospitalization",
+        "fr": "Des visites quotidiennes des enfants de Bolsonaro sont autorisées pendant son hospitalisation",
+        "ht": "Vizit chak jou pitit Bolsonaro yo otorize pandan li nan lopital"
+      },
+      "preview_translations": {
+        "de": "Der STF genehmigte tägliche Besuche seiner Kinder bei Bolsonaro während seines Krankenhausaufenthalts in Brasília.",
+        "en": "The STF authorized daily visits by his children to Bolsonaro during his hospitalization in Brasília.",
+        "fr": "La STF autorisa des visites quotidiennes de ses enfants à Bolsonaro pendant son hospitalisation à Brasília.",
+        "ht": "STF te otorize vizit chak jou pitit li yo nan Bolsonaro pandan li te nan lopital nan Brasília."
+      }
+    },
+    {
+      "title": "Abinader inaugura hospital de Nisibón tras 25 años de espera con inversión superior a RD$1,200 millones",
+      "url": "https://bavarodigital.net/abinader-inaugura-hospital-de-nisibon-tras-25-anos-de-espera-con-inversion-superior-a-rd1200-millones/",
+      "source": "Bávaro Digital",
+      "category": "Economía",
+      "regions": [],
+      "preview": "HIGÜEY, LA ALTAGRACIA. — Después de 25 años de espera, el presidente de la República, Luis Abinader, junto al ministro de Vivienda y Edificaciones, Jean Luis…",
+      "image": "",
+      "published": "2026-11-21T18:40:27+00:00",
+      "translations": {
+        "de": "Abinader eröffnet das Krankenhaus Nisibón nach 25 Jahren Wartezeit mit einer Investition von über 1,2 Milliarden RD$",
+        "en": "Abinader inaugurates Nisibón hospital after 25 years of waiting with an investment exceeding RD$1.2 billion",
+        "fr": "Abinader inaugure l’hôpital de Nisibón après 25 ans d’attente avec un investissement dépassant 1,2 milliard de RD $",
+        "ht": "Abinader inogire lopital Nisibón apre 25 ane ap tann ak yon envestisman ki depase RD$1.2 milya"
+      },
+      "preview_translations": {
+        "de": "HIGÜEY, LA ALTAGRACIA. — Nach 25 Jahren des Wartens haben der Präsident der Republik, Luis Abinader, zusammen mit dem Minister für Wohnungsbau und Bauwesen, Jean Luis...",
+        "en": "HIGÜEY, LA ALTAGRACIA. — After 25 years of waiting, the President of the Republic, Luis Abinader, together with the Minister of Housing and Buildings, Jean Luis...",
+        "fr": "HIGÜEY, LA ALTAGRACIA. — Après 25 ans d’attente, le président de la République, Luis Abinader, accompagné du ministre du Logement et des Bâtiments, Jean Luis...",
+        "ht": "HIGÜEY, LA ALTAGRACIA. — Apre 25 ane ap tann, Prezidan Repiblik la, Luis Abinader, ansanm ak Minis Lojman ak Bilding, Jean Luis..."
+      }
+    },
+    {
+      "title": "Cuba entrega 131,000 hectáreas para producir alimentos en medio de la crisis económica",
+      "url": "https://noticiassin.com/mundo/cuba/2026/11/21/cuba-entrega-131-000-hectareas-para-producir-alimentos-2174625/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Cuba entregó 131.000 hectáreas a cooperativas y privados para elevar la producción de alimentos en plena crisis económica.",
+      "image": "",
+      "published": "2026-11-21T18:38:53+00:00",
+      "translations": {
+        "de": "Kuba übergibt 131.000 Hektar zur Nahrungsmittelproduktion inmitten der Wirtschaftskrise",
+        "en": "Cuba hands over 131,000 hectares to produce food amid the economic crisis",
+        "fr": "Cuba remet 131 000 hectares pour produire de la nourriture en pleine crise économique",
+        "ht": "Kiba bay 131,000 ekta pou pwodui manje nan mitan kriz ekonomik la"
+      },
+      "preview_translations": {
+        "de": "Kuba übergab 131.000 Hektar an Genossenschaften und private Unternehmen, um die Nahrungsmittelproduktion inmitten der Wirtschaftskrise zu steigern.",
+        "en": "Cuba handed over 131,000 hectares to cooperatives and private entities to increase food production amid the economic crisis.",
+        "fr": "Cuba a cédé 131 000 hectares à des coopératives et à des entités privées pour accroître la production alimentaire en pleine crise économique.",
+        "ht": "Kiba te remèt 131,000 ekta bay koperativ ak antite prive pou ogmante pwodiksyon manje nan mitan kriz ekonomik la."
+      }
+    },
+    {
+      "title": "Estalla violencia en Sinaloa tras captura de “El Chapo Isidro”, uno de los más buscados del FBI",
+      "url": "https://eldia.com.do/estalla-violencia-en-sinaloa-tras-captura-de-el-chapo-isidro-uno-de-los-mas-buscados-del-fbi/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. CIUDAD DE MÉXICO- Ráfagas de disparos, camiones incendiados y enfrentamientos de las fuerzas mexicanas con…",
+      "image": "",
+      "published": "2026-11-21T18:36:47+00:00",
+      "translations": {
+        "de": "Nach der Festnahme von \"El Chapo Isidro\", einem der meistgesuchten FBI-Personen, bricht Gewalt in Sinaloa aus",
+        "en": "Violence erupts in Sinaloa after the capture of \"El Chapo Isidro,\" one of the FBI's most wanted individuals",
+        "fr": "La violence éclate à Sinaloa après la capture d'« El Chapo Isidro », l’une des personnes les plus recherchées par le FBI",
+        "ht": "Vyolans pete nan Sinaloa apre arestasyon \"El Chapo Isidro,\" youn nan moun FBI ki pi chache"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. MEXIKO-STADT – Schüsse, brennende Lastwagen und Zusammenstöße zwischen mexikanischen Streitkräften mit...",
+        "en": "This article was originally published in El Día. MEXICO CITY - Bursts of gunfire, trucks set on fire, and clashes between Mexican forces with...",
+        "fr": "Cet article a été initialement publié dans El Día. MEXICO - Rafales de coups de feu, camions incendiés, et affrontements entre forces mexicaines avec...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. MEXICO CITY - Kout zam, kamyon ki pran dife, ak konfli ant fòs Meksiken ak..."
+      }
+    },
+    {
+      "title": "Salud Pública consulta propuesta para actualizar el reglamento de vigilancia epidemiológica",
+      "url": "https://eldia.com.do/salud-publica-consulta-propuesta-para-actualizar-el-reglamento-de-vigilancia-epidemiologica/",
+      "source": "El Día",
+      "category": "Salud",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. -El Ministerio de Salud Pública realizó un taller intersectorial para revisar y validar los…",
+      "image": "",
+      "published": "2026-11-21T18:20:13+00:00",
+      "translations": {
+        "de": "Public Health konsultiert den Vorschlag zur Aktualisierung der epidemiologischen Überwachungsregelung",
+        "en": "Public Health consults proposal to update the epidemiological surveillance regulation",
+        "fr": "Santé publique consulte la proposition de mise à jour du règlement sur la surveillance épidémiologique",
+        "ht": "Sante Piblik konsilte pwopozisyon pou mete ajou règleman siveyans epidemyolojik la"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. -Das Gesundheitsministerium veranstaltete einen sektorübergreifenden Workshop zur Überprüfung und Validierung des...",
+        "en": "This article was originally published in El Día. Santo Domingo. -The Ministry of Public Health held an intersectoral workshop to review and validate the...",
+        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. -Le ministère de la Santé publique a organisé un atelier intersectoriel pour examiner et valider le...",
+        "ht": "Atik sa a te pibliye okòmansman nan El Día. Santo Domingo. -Ministè Sante Piblik te òganize yon atelye entèsektoryèl pou revize ak valide..."
+      }
+    },
+    {
+      "title": "Jair Bolsonaro está en cuidados intensivos y sin previsión de alta pero estable",
+      "url": "https://noticiassin.com/mundo/america/2026/11/21/bolsonaro-sigue-en-uci-estable-y-sin-prevision-de-alta-2174621/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Bolsonaro sigue en UCI por obstrucción abdominal, estable y sin previsión de alta médica.",
+      "image": "",
+      "published": "2026-11-21T18:11:03+00:00",
+      "translations": {
+        "de": "Jair Bolsonaro liegt auf der Intensivstation, ohne erwartete Entlassung, ist aber stabil",
+        "en": "Jair Bolsonaro is in intensive care with no expected discharge but stable",
+        "fr": "Jair Bolsonaro est en soins intensifs sans sortie attendue mais stable",
+        "ht": "Jair Bolsonaro nan swen entansif san okenn sòti espere men ki estab"
+      },
+      "preview_translations": {
+        "de": "Bolsonaro liegt wegen Bauchverstopfung weiterhin auf der Intensivstation, stabil und ohne erwartete medizinische Entlassung.",
+        "en": "Bolsonaro remains in the ICU due to abdominal obstruction, stable and with no expected medical discharge.",
+        "fr": "Bolsonaro reste en soins intensifs en raison d’une obstruction abdominale, stable et sans sortie médicale prévue.",
+        "ht": "Bolsonaro rete nan ICU akoz yon blokaj nan vant, li estab e li pa gen okenn sòti medikal prevwa."
+      }
+    },
+    {
+      "title": "FIVB aprueba cambios en reglas del voleibol durante congreso en Punta Cana",
+      "url": "https://noticiassin.com/deportes/voleibol/2026/11/21/fivb-aprueba-cambios-en-reglas-del-voleibol-en-punta-cana-2174612/",
+      "source": "Noticias SIN",
+      "category": "Deportes",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "La FIVB aprobó cambios en el voleibol y el voleibol de playa durante su congreso en Punta Cana.",
+      "image": "",
+      "published": "2026-11-21T18:00:19+00:00",
+      "translations": {
+        "de": "FIVB genehmigt Änderungen der Volleyballregeln während des Kongresses in Punta Cana",
+        "en": "FIVB approves changes to volleyball rules during congress in Punta Cana",
+        "fr": "La FIVB approuve des modifications aux règles de volley-ball lors du congrès à Punta Cana",
+        "ht": "FIVB apwouve chanjman nan règ volebòl pandan kongrè nan Punta Cana"
+      },
+      "preview_translations": {
+        "de": "Der FIVB genehmigte Änderungen im Volleyball und Beachvolleyball auf seinem Kongress in Punta Cana.",
+        "en": "The FIVB approved changes in volleyball and beach volleyball during its congress in Punta Cana.",
+        "fr": "La FIVB a approuvé des changements dans le volley-ball et le beach-volleyball lors de son congrès à Punta Cana.",
+        "ht": "FIVB te apwouve chanjman nan volebol ak volebòl plaj pandan kongrè li nan Punta Cana."
+      }
+    },
+    {
+      "title": "Los jugadores de Serie A lucen una marca roja en la cara en contra del abuso a las mujeres",
+      "url": "https://noticiassin.com/deportes/futbol/2026/11/21/serie-a-pinta-de-rojo-el-rostro-contra-la-violencia-machista-2174610/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La Serie A y sus aliados muestran una marca roja para apoyar la lucha contra la violencia hacia las mujeres.",
+      "image": "",
+      "published": "2026-11-21T17:55:39+00:00",
+      "translations": {
+        "de": "Serie-A-Spieler tragen ein rotes Zeichen im Gesicht gegen den Missbrauch von Frauen",
+        "en": "Serie A players wear a red mark on their faces against the abuse of women",
+        "fr": "Les joueurs de Serie A portent une marque rouge sur leur visage contre les abus envers les femmes",
+        "ht": "Jwè Serie A yo mete yon mak wouj sou figi yo kont abi sou fanm"
+      },
+      "preview_translations": {
+        "de": "Die Serie A und ihre Verbündeten zeigen eine rote Flagge, um den Kampf gegen Gewalt gegen Frauen zu unterstützen.",
+        "en": "Serie A and its allies show a red flag to support the fight against violence towards women.",
+        "fr": "La Serie A et ses alliés montrent un drapeau rouge pour soutenir la lutte contre la violence envers les femmes.",
+        "ht": "Serie A ak alye li yo montre yon drapo wouj pou sipòte batay kont vyolans kont fanm."
+      }
+    },
+    {
+      "title": "Israel mata en Gaza al menos a cuatro personas este sábado, según hospitales",
+      "url": "https://eldia.com.do/israel-mata-en-gaza-al-menos-a-cuatro-personas-este-sabado-segun-hospitales/",
+      "source": "El Día",
+      "category": "Salud",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Jerusalén.- Cuatro palestinos murieron este sábado en dos ataques de Israel en la Franja de Gaza, uno de ellos…",
+      "image": "",
+      "published": "2026-11-21T17:53:14+00:00",
+      "translations": {
+        "de": "Israel tötet an diesem Samstag mindestens vier Menschen in Gaza, so Krankenhäuser",
+        "en": "Israel kills at least four people in Gaza this Saturday, according to hospitals",
+        "fr": "Israël tue au moins quatre personnes à Gaza ce samedi, selon les hôpitaux",
+        "ht": "Izrayèl touye omwen kat moun nan Gaza samdi sa a, dapre lopital yo"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Jerusalem. - Vier Palästinenser sind an diesem Samstag bei zwei israelischen Anschlägen im Gazastreifen ums Leben gekommen, einer davon...",
+        "en": "This article was originally published in El Día. Jerusalem.- Four Palestinians died this Saturday in two Israeli attacks in the Gaza Strip, one of them...",
+        "fr": "Cet article a été initialement publié dans El Día. Jérusalem. - Quatre Palestiniens sont morts ce samedi lors de deux attaques israéliennes dans la bande de Gaza, dont l’une...",
+        "ht": "Atik sa a te pibliye orijinalman nan El Día. Jerizalèm. - Katre Palestinyen mouri samdi sa a nan de atak Izrayelyen nan Gaza, youn ladan yo..."
+      }
+    },
+    {
+      "title": "Otros 20 pandilleros mueren en operación policial en Haití y sube a 54 el número de bajas",
+      "url": "https://noticiassin.com/mundo/haiti/2026/11/21/54-pandilleros-abatidos-en-dos-dias-operacion-policial-en-haiti-2174598/",
+      "source": "Noticias SIN",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "La institución indicó que la nueva operación tuvo lugar el viernes y que los 20 abatidos se suman a los 34 que cayeron el jueves en la misma localidad.",
+      "image": "",
+      "published": "2026-11-21T17:51:04+00:00",
+      "translations": {
+        "de": "Weitere 20 Bandenmitglieder sterben bei Polizeieinsätzen in Haiti, und die Zahl der Opfer steigt auf 54",
+        "en": "Another 20 gang members die in police operation in Haiti, and the number of casualties rises to 54",
+        "fr": "Vingt autres membres de gangs meurent lors d’opérations policières en Haïti, et le nombre de victimes grimpe à 54",
+        "ht": "Yon lòt 20 manm gang mouri nan operasyon polis ann Ayiti, epi kantite viktim yo monte a 54"
+      },
+      "preview_translations": {
+        "de": "Die Einrichtung gab mit, dass die neue Operation am Freitag stattfand und dass die 20 Toten zu den 34 zählen, die am Donnerstag in derselben Stadt ums Leben kamen.",
+        "en": "The institution indicated that the new operation took place on Friday and that the 20 dead add to the 34 who fell on Thursday in the same town.",
+        "fr": "L’institution a indiqué que la nouvelle opération avait eu lieu vendredi et que les 20 victimes s’ajoutaient aux 34 tombées jeudi dans la même ville.",
+        "ht": "Enstitisyon an te endike ke nouvo operasyon an te fèt vandredi e ke 20 mò yo ajoute nan 34 ki te mouri jedi nan menm vil la."
+      }
+    },
+    {
+      "title": "Salud Pública busca fortalecer detección de brotes y enfermedades infecciosas",
+      "url": "https://noticiassin.com/salud/2026/11/21/salud-publica-revisa-el-sinave-para-detectar-brotes-a-tiempo-2174602/",
+      "source": "Noticias SIN",
+      "category": "Salud",
+      "regions": [],
+      "preview": "MISPAS revisa el SINAVE para mejorar la detección temprana y la respuesta ante brotes y epidemias en el país.",
+      "image": "",
+      "published": "2026-11-21T17:48:57+00:00",
+      "translations": {
+        "de": "Die öffentliche Gesundheit strebt an, die Erkennung von Ausbrüchen und Infektionskrankheiten zu stärken",
+        "en": "Public Health seeks to strengthen the detection of outbreaks and infectious diseases",
+        "fr": "La Santé publique vise à renforcer la détection des épidémies et des maladies infectieuses",
+        "ht": "Sante Piblik ap chèche ranfòse deteksyon epidemi ak maladi enfektye"
+      },
+      "preview_translations": {
+        "de": "MISPAS überprüft SINAVE, um die Früherkennung und Reaktion auf Ausbrüche und Epidemien im Land zu verbessern.",
+        "en": "MISPAS reviews SINAVE to improve early detection and response to outbreaks and epidemics in the country.",
+        "fr": "MISPAS examine SINAVE afin d’améliorer la détection précoce et la réponse aux épidémies et aux épidémies dans le pays.",
+        "ht": "MISPAS revize SINAVE pou amelyore deteksyon bonè ak repons a epidemi ak epidemi nan peyi a."
+      }
+    },
+    {
+      "title": "¿Qué se sabe de ARTEX, la herramienta de IA que automatiza los ciberataques y deja sin margen de reacción?",
+      "url": "https://eldia.com.do/que-se-sabe-de-artex-la-herramienta-de-ia-que-automatiza-los-ciberataques-y-deja-sin-margen-de-reaccion/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Nueva York.- La irrupción de ARTEX, una plataforma de código abierto basada en agentes autónomos de…",
+      "image": "",
+      "published": "2026-11-21T17:39:19+00:00",
+      "translations": {
+        "de": "Was ist über ARTEX bekannt, das KI-Tool, das Cyberangriffe automatisiert und keinen Reaktionsspielraum lässt?",
+        "en": "What is known about ARTEX, the AI tool that automates cyberattacks and leaves no room for reaction?",
+        "fr": "Que sait-on d’ARTEX, l’outil d’IA qui automatise les cyberattaques et ne laisse aucune place à la réaction ?",
+        "ht": "Kisa nou konnen sou ARTEX, zouti AI ki otomatize atak sou entènèt epi ki pa kite okenn plas pou reyaksyon?"
+      },
+      "preview_translations": {
+        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. New York. - Das Aufkommen von ARTEX, einer Open-Source-Plattform auf Basis autonomer Agenten von...",
+        "en": "This article was originally published in El Día. New York.- The emergence of ARTEX, an open-source platform based on autonomous agents of...",
+        "fr": "Cet article a été initialement publié dans El Día. New York. - L’émergence d’ARTEX, une plateforme open source basée sur des agents autonomes de...",
+        "ht": "Atik sa a te pibliye okòmansman nan El Día. New York.- Parèt ARTEX, yon platfòm sous ouvè ki baze sou ajan otonòm..."
+      }
+    },
+    {
+      "title": "Hombre cae en manos de POLITUR con presunta marihuana y cocaína en Bávaro–Punta Cana",
+      "url": "https://bavarodigital.net/215279-2/",
       "source": "Bávaro Digital",
       "category": "Regionales",
       "regions": [
         "Punta Cana"
       ],
-      "preview": "PUNTA CANA, LA ALTAGRACIA.— Este sábado 21 de noviembre de 2026, Punta Cana tendrá una jornada marcada por temperaturas calurosas, cielos mayormente despejados…",
+      "preview": "BÁVARO–PUNTA CANA.— Agentes de la Dirección Central de Policía de Turismo (POLITUR) arrestaron la madrugada de este sábado 21 de noviembre a un hombre de…",
       "image": "",
-      "published": "2026-11-21T09:22:28+00:00",
+      "published": "2026-11-21T17:38:47+00:00",
       "translations": {
-        "de": "Punta Cana wird einen heißen Samstag mit Sonne am Morgen und möglichen Schauern am Nachmittag erleben",
-        "en": "Punta Cana will have a hot Saturday with sun in the morning and possible showers in the afternoon",
-        "fr": "Punta Cana aura un samedi chaud avec du soleil le matin et possibles averses l’après-midi",
-        "ht": "Punta Cana ap gen yon samdi cho ak solèy nan maten epi posib lapli nan apremidi"
-      },
-      "preview_translations": {
-        "de": "PUNTA CANA, LA ALTAGRACIA.— An diesem Samstag, dem 21. November 2026, wird Punta Cana einen Tag erleben, der von heißen Temperaturen und überwiegend klarem Himmel geprägt ist...",
-        "en": "PUNTA CANA, LA ALTAGRACIA.— This Saturday, November 21, 2026, Punta Cana will have a day marked by hot temperatures, mostly clear skies...",
-        "fr": "PUNTA CANA, LA ALTAGRACIA.— Ce samedi 21 novembre 2026, Punta Cana aura une journée marquée par des températures chaudes, un ciel principalement dégagé...",
-        "ht": "PUNTA CANA, LA ALTAGRACIA.— Samdi sa a, 21 novanm 2026, Punta Cana pral gen yon jou ki make pa tanperati cho, sitou syèl klè..."
+        "de": "Mann fällt mit mutmaßlichem Marihuana und Kokain in Bávaro–Punta Cana in die Hände von POLITUR",
+        "en": "Man falls into the hands of POLITUR with alleged marijuana and cocaine in Bávaro–Punta Cana",
+        "fr": "Un homme tombe entre les mains de POLITUR avec des présumés de marijuana et de cocaïne à Bávaro–Punta Cana",
+        "ht": "Yon nonm tonbe nan men POLITUR ak akizasyon marigwana ak kokayin nan Bávaro–Punta Cana"
+      }
+    },
+    {
+      "title": "Altos mandos militares alertan a Trump por desgaste ante Irán",
+      "url": "https://almomento.net/altos-mandos-militares-alertan-a-trump-por-desgaste-ante-iran/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "WASHINGTON.-Los altos mandos militares de Estados Unidos han advertido a la Administración del presidente Donald Trump sobre los elevados costos financieros y el…",
+      "image": "",
+      "published": "2026-11-21T17:30:01+00:00",
+      "translations": {
+        "de": "Hochrangige Militärbeamte warnen Trump vor seiner Müdigkeit gegenüber dem Iran",
+        "en": "Senior military officials warn Trump about weariness towards Iran",
+        "fr": "Des hauts responsables militaires mettent Trump en garde contre la lassitude envers l’Iran",
+        "ht": "Ofisyèl militè wo nivo avèti Trump sou fatig li anvè Iran"
+      }
+    },
+    {
+      "title": "ADP responde a Raquel Peña: \"Los paros son consecuencia de los incumplimientos del Minerd\"",
+      "url": "https://eldia.com.do/adp-responde-a-raquel-pena-los-paros-son-consecuencia-de-los-incumplimientos-del-minerd/",
+      "source": "El Día",
+      "category": "Educación",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.- La Asociación Dominicana de Profesores (ADP) le respondió a la vicepresidenta Raquel Peña que…",
+      "image": "",
+      "published": "2026-11-21T17:24:21+00:00",
+      "translations": {
+        "de": "ADP antwortet auf Raquel Peña: \"Die Streiks sind eine Folge von Minerds Verstößen.\"",
+        "en": "ADP responds to Raquel Peña: \"The strikes are a consequence of Minerd's breaches\"",
+        "fr": "ADP répond à Raquel Peña : « Les grèves sont une conséquence des violations de Minerd »",
+        "ht": "ADP reponn Raquel Peña: \"Grèv yo se yon konsekans vyolasyon Minerd yo\""
+      }
+    },
+    {
+      "title": "Realizan vistas públicas del proyecto Punta Cana Distrito",
+      "url": "https://puntacanapost.com/realizan-vistas-publicas-del-proyecto-punta-cana-distrito/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«La Cámara de Diputados trasladó su Comisión de Asuntos Municipales hasta Verón–Punta Cana para escuchar a comunitarios, empresarios y autoridades sobre una…",
+      "image": "",
+      "published": "2026-11-21T17:23:36+00:00",
+      "translations": {
+        "de": "Öffentliche Anhörungen zum Projekt des Bezirks Punta Cana finden statt",
+        "en": "Public hearings of the Punta Cana District project are held",
+        "fr": "Des audiences publiques du projet du district de Punta Cana sont organisées",
+        "ht": "Odyans piblik sou pwojè Distri Punta Cana a fèt"
+      }
+    },
+    {
+      "title": "\"Tu sueño era ser militar\": el dolor de los familiares de los tres soldados salvadoreños fallecidos en Haití",
+      "url": "https://eldia.com.do/tu-sueno-era-ser-militar-el-dolor-de-los-familiares-de-los-tres-soldados-salvadorenos-fallecidos-en-haiti/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. La muerte de tres soldados salvadoreños tras la explosión de material militar en una base instalada en Haití ha…",
+      "image": "",
+      "published": "2026-11-21T17:11:52+00:00",
+      "translations": {
+        "de": "\"Dein Traum war es, Soldat zu werden\": die Trauer der Familien der drei salvadorianischen Soldaten, die in Haiti starben",
+        "en": "\"Your dream was to be a soldier\": the grief of the families of the three Salvadoran soldiers who died in Haiti",
+        "fr": "« Ton rêve était de devenir soldat » : le chagrin des familles des trois soldats salvadoriens décédés en Haïti",
+        "ht": "\"Rèv ou se te vin yon sòlda\": lapenn fanmi twa sòlda Salvadoren ki mouri nan Ayiti"
+      }
+    },
+    {
+      "title": "Policía arresta a dos hombres e incauta bebidas y herramientas tras robo en Capotillo",
+      "url": "https://eldia.com.do/policia-arresta-a-dos-hombres-e-incauta-bebidas-y-herramientas-tras-robo-en-capotillo/",
+      "source": "El Día",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – La Policía Nacional informó sobre el arresto de dos hombres y la ocupación de numerosas…",
+      "image": "",
+      "published": "2026-11-21T16:46:41+00:00",
+      "translations": {
+        "de": "Die Polizei nimmt zwei Männer fest und beschlagnahmt Getränke und Werkzeuge nach einem Raub in Capotillo",
+        "en": "Police arrest two men and seize drinks and tools after robbery in Capotillo",
+        "fr": "La police arrête deux hommes et saisit des boissons et des outils après un vol à Capotillo",
+        "ht": "Lapolis arete de gason epi sezi bwason ak zouti apre vòl nan Capotillo"
+      }
+    },
+    {
+      "title": "Cholitín revela NO fue invitado a Vista Pública del proyecto Punta Cana Distrito",
+      "url": "https://puntacanapost.com/cholitin-revela-no-fue-invitado-a-vistas-publicas-del-proyecto-punta-cana-distrito/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«Me hubiese gustado participar en las vistas públicas de ayer, pero lamentablemente no fui invitado», expresó Cholitín, al cuestionar que no se convocara a todos…",
+      "image": "",
+      "published": "2026-11-21T16:38:46+00:00",
+      "translations": {
+        "de": "Cholitín enthüllt, dass er NICHT zur öffentlichen Anhörung des Projekts im Distrikt Punta Cana eingeladen wurde",
+        "en": "Cholitín reveals he was NOT invited to the Public Hearing of the Punta Cana District project",
+        "fr": "Cholitín révèle qu’il n’a PAS été invité à l’audience publique du projet du district de Punta Cana",
+        "ht": "Cholitín revele li PA t envite nan Odyans Piblik pwojè Distri Punta Cana a"
+      }
+    },
+    {
+      "title": "Shohei Ohtani firma un acuerdo millonario con New Balance hasta su retirada",
+      "url": "https://eldia.com.do/shohei-ohtani-firma-un-acuerdo-millonario-con-new-balance-hasta-su-retirada/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Miami (EE.UU.).- El japonés Shohei Ohtani, jugador de Los Angeles Dodgers, extendió su contrato con la firma…",
+      "image": "",
+      "published": "2026-11-21T16:33:34+00:00",
+      "translations": {
+        "de": "Shohei Ohtani unterzeichnet einen Multimillionen-Dollar-Vertrag mit New Balance bis zu seinem Ruhestand",
+        "en": "Shohei Ohtani signs a multimillion-dollar deal with New Balance until his retirement",
+        "fr": "Shohei Ohtani signe un contrat de plusieurs millions de dollars avec New Balance jusqu’à sa retraite",
+        "ht": "Shohei Ohtani siyen yon kontra plizyè milyon dola ak New Balance jiskaske li pran retrèt li"
+      }
+    },
+    {
+      "title": "Hackers atacan sistemas de FBI y Departamento de Agricultura",
+      "url": "https://almomento.net/hackers-atacan-sistemas-de-fbi-y-departamento-de-agricultura/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "WASHINGTON.– El Departamento de Agricultura de Estados Unidos (USDA) y el Buró Federal de Investigaciones (FBI) fueron víctimas de ataques cibernéticos, según…",
+      "image": "",
+      "published": "2026-11-21T16:26:28+00:00",
+      "translations": {
+        "de": "Hacker greifen FBI- und Landwirtschaftssysteme an",
+        "en": "Hackers attack FBI and Department of Agriculture systems",
+        "fr": "Des hackers attaquent les systèmes du FBI et du Département de l’Agriculture",
+        "ht": "Pirat atake sistèm FBI ak Depatman Agrikilti"
+      }
+    },
+    {
+      "title": "Revelan al PCP tarjeta de presentación utilizada por “deliverys” de drogas en Bávaro",
+      "url": "https://puntacanapost.com/revelan-al-pcp-tarjeta-de-presentacion-utilizada-por-deliverys-de-drogas-en-bavaro/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«El personaje de Scarface, asociado al narcotráfico en la ficción, aparece ahora en una tarjeta reportada en plena zona turística de Punta Cana por su supuesto…",
+      "image": "",
+      "published": "2026-11-21T16:24:29+00:00",
+      "translations": {
+        "de": "Visitenkarte von Arzneimittellieferunternehmen in Bávaro dem PCP enthüllt",
+        "en": "Business card used by drug delivery companies in Bávaro revealed to the PCP",
+        "fr": "Carte de visite utilisée par les entreprises de livraison de médicaments à Bávaro révélée au PCP",
+        "ht": "Kat biznis konpayi livrezon medikaman nan Bávaro te itilize bay PCP a"
+      }
+    },
+    {
+      "title": "La misión BepiColombo se insertará en la órbita de Mercurio tras ocho años de viaje",
+      "url": "https://eldia.com.do/la-mision-bepicolombo-se-insertara-en-la-orbita-de-mercurio-tras-ocho-anos-de-viaje/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Redacción Ciencia.- La misión europea-japonesa Bepi Colombo ha viajado 10.000 millones de kilómetros durante…",
+      "image": "",
+      "published": "2026-11-21T16:22:17+00:00",
+      "translations": {
+        "de": "Die BepiColombo-Mission wird nach acht Jahren Reise in die Umlaufbahn des Merkur eintreten",
+        "en": "The BepiColombo mission will enter Mercury's orbit after eight years of travel",
+        "fr": "La mission BepiColombo entrera en orbite de Mercury après huit ans de voyage",
+        "ht": "Misyon BepiColombo a pral antre nan òbit Mèki apre uit ane vwayaj"
+      }
+    },
+    {
+      "title": "Hackers atacan el Departamento de Agricultura de Estados Unidos y el FBI",
+      "url": "https://eldia.com.do/hackers-atacan-el-departamento-de-agricultura-de-estados-unidos-y-el-fbi/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. El Departamento de Agricultura de Estados Unidos y el Buró Federal de Investigaciones (FBI) fueron víctimas de…",
+      "image": "",
+      "published": "2026-11-21T16:19:39+00:00",
+      "translations": {
+        "de": "Hacker greifen das US-Landwirtschaftsministerium und das FBI an",
+        "en": "Hackers attack the United States Department of Agriculture and the FBI",
+        "fr": "Des hackers attaquent le Département de l’Agriculture des États-Unis et le FBI",
+        "ht": "Hackers atake Depatman Agrikilti Etazini ak FBI"
+      }
+    },
+    {
+      "title": "Putin gana protagonismo internacional tras reunirse con Trump y Xi Jinping en China",
+      "url": "https://eltiempo.com.do/internacionales/putin-gana-protagonismo-internacional-tras-reunirse-con-trump-y-xi-jinping-en-china/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Punta Cana. El presidente de Rusia, Vladímir Putin, logró una importante exposición internacional al participar... La entrada Putin gana protagonismo internacional…",
+      "image": "",
+      "published": "2026-11-21T16:10:00+00:00",
+      "translations": {
+        "de": "Putin gewinnt internationale Bekanntheit, nachdem er Trump und Xi Jinping in China getroffen hat",
+        "en": "Putin gains international prominence after meeting with Trump and Xi Jinping in China",
+        "fr": "Poutine acquiert une notoriété internationale après avoir rencontré Trump et Xi Jinping en Chine",
+        "ht": "Putin vin gen enpòtans entènasyonal apre li te rankontre ak Trump ak Xi Jinping nan Lachin"
+      }
+    },
+    {
+      "title": "Condenan a 15 años de prisión hombre que mató a otro por defender mujer en Cabeza de Toro, Punta Cana",
+      "url": "https://bavarodigital.net/condenan-a-15-anos-de-prision-hombre-que-mato-a-otro-por-defender-mujer-en-cabeza-de-toro-punta-cana/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "CABEZA DE TORO, VERÓN–PUNTA CANA.— El Tribunal Colegiado del Distrito Judicial de La Altagracia condenó a 15 años de prisión a Víctor Manuel Méndez, tras…",
+      "image": "",
+      "published": "2026-11-21T16:07:36+00:00",
+      "translations": {
+        "de": "Mann zu 15 Jahren Haft verurteilt, weil er einen anderen getötet hat, der eine Frau in Cabeza de Toro, Punta Cana, verteidigt hat",
+        "en": "Man sentenced to 15 years in prison for killing another for defending a woman in Cabeza de Toro, Punta Cana",
+        "fr": "Homme condamné à 15 ans de prison pour avoir tué une autre personne pour avoir défendu une femme à Cabeza de Toro, Punta Cana",
+        "ht": "Nonm kondane a 15 ane prizon pou touye yon lòt moun paske li t ap defann yon fanm nan Cabeza de Toro, Punta Cana"
+      }
+    },
+    {
+      "title": "Tesla llega a Argentina con dos modelos eléctricos y apuesta por la infraestructura de carga",
+      "url": "https://eldia.com.do/tesla-llega-a-argentina-con-dos-modelos-electricos-y-apuesta-por-la-infraestructura-de-carga/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Buenos Aires.- El fabricante de automóviles estadounidense Tesla inició este viernes sus operaciones…",
+      "image": "",
+      "published": "2026-11-21T16:07:00+00:00",
+      "translations": {
+        "de": "Tesla kommt mit zwei Elektromodellen in Argentinien an und setzt auf Ladeinfrastruktur",
+        "en": "Tesla arrives in Argentina with two electric models and bets on charging infrastructure",
+        "fr": "Tesla arrive en Argentine avec deux modèles électriques et parie sur l’infrastructure de recharge",
+        "ht": "Tesla rive Ajantin ak de modèl elektrik epi li parye sou enfrastrikti chajman"
+      }
+    },
+    {
+      "title": "Ayuntamiento de Verón promueve relaciones saludables y respeto entre los hombres durante taller en Macao",
+      "url": "https://bavarodigital.net/ayuntamiento-de-veron-promueve-relaciones-saludables-y-respeto-entre-los-hombres-durante-taller-en-macao/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "VERÓN–PUNTA CANA.— El Ayuntamiento del Distrito Municipal Verón–Punta Cana, a través de su Departamento de Género, participó en el taller “Hombres: Más allá de la…",
+      "image": "",
+      "published": "2026-11-21T16:05:24+00:00",
+      "translations": {
+        "de": "Der Stadtrat von Verón fördert gesunde Beziehungen und Respekt unter Männern während eines Workshops in Macau",
+        "en": "Verón City Council promotes healthy relationships and respect among men during workshop in Macau",
+        "fr": "Le conseil municipal de Verón promeut des relations saines et le respect entre les hommes lors d’un atelier à Macao",
+        "ht": "Konsèy Vil Verón ankouraje relasyon ki an sante ak respè ant gason pandan atelye nan Macau"
+      }
+    },
+    {
+      "title": "Registran temblor de magnitud 4.7 al suroeste de Higüey",
+      "url": "https://eldia.com.do/registran-temblor-de-magnitud-4-7-al-suroeste-de-higuey/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [
+        "Higüey"
+      ],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – Un temblor de magnitud 4.7 se registró la mañana de este sábado 21 de noviembre en la…",
+      "image": "",
+      "published": "2026-11-21T16:03:42+00:00",
+      "translations": {
+        "de": "Erdbeben der Magnitude 4,7 südwestlich von Higüey aufgezeichnet",
+        "en": "Magnitude 4.7 tremor recorded southwest of Higüey",
+        "fr": "Tremblement de magnitude 4,7 enregistré au sud-ouest de Higüey",
+        "ht": "Tremè magnitid 4.7 anrejistre nan sidwès Higüey"
+      }
+    },
+    {
+      "title": "Las 7 posibles desventajas de convertir La Ceiba del Salado en distrito municipal",
+      "url": "https://bavarodigital.net/las-7-posibles-desventajas-de-convertir-la-ceiba-del-salado-en-distrito-municipal/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "LA CEIBA DEL SALADO.— Aunque convertir La Ceiba del Salado en distrito municipal podría representar nuevas oportunidades de desarrollo, la propuesta también plantea…",
+      "image": "",
+      "published": "2026-11-21T16:01:02+00:00",
+      "translations": {
+        "de": "Die 7 möglichen Nachteile der Umwandlung von La Ceiba del Salado in einen Gemeindebezirk",
+        "en": "The 7 possible disadvantages of turning La Ceiba del Salado into a municipal district",
+        "fr": "Les 7 inconvénients possibles de transformer La Ceiba del Salado en district municipal",
+        "ht": "7 dezavantaj posib pou tounen La Ceiba del Salado yon distri minisipal"
+      }
+    },
+    {
+      "title": "Rafael Barias conquista quinto campeonato baloncesto distrital",
+      "url": "https://almomento.net/rafael-barias-conquista-quinto-campeonato-baloncesto-distrital/",
+      "source": "AlMomento",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "SANTO DOMINGO.– El club Rafael Barias se proclamó campeón del 50 Torneo de Baloncesto Superior del Distrito Nacional (TBS Distrito 2026), tras derrotar 83-76 al…",
+      "image": "",
+      "published": "2026-11-21T16:00:47+00:00",
+      "translations": {
+        "de": "Rafael Barias gewinnt die fünfte Bezirks-Basketballmeisterschaft",
+        "en": "Rafael Barias wins fifth district basketball championship",
+        "fr": "Rafael Barias remporte le cinquième championnat de basketball de district",
+        "ht": "Rafael Barias ranpòte senkyèm chanpyona baskètbòl distri a"
+      }
+    },
+    {
+      "title": "Sismo de magnitud 4.8 sacude zonas del este RD este sábado",
+      "url": "https://almomento.net/sismo-de-magnitud-4-8-afecta-zona-de-higuey-este-sabado/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La Altagracia, República Dominicana.-Un movimiento sísmico de magnitud 4.8 sacudió la mañana de este sábado 21 de noviembre distintas zonas del este de la República…",
+      "image": "",
+      "published": "2026-11-21T16:00:35+00:00",
+      "translations": {
+        "de": "Ein Erdbeben der Stärke 4,8 erschüttert an diesem Samstag Gebiete im östlichen DR",
+        "en": "Magnitude 4.8 earthquake shakes areas of eastern DR this Saturday",
+        "fr": "Un tremblement de terre de magnitude 4,8 secoue des zones de l’est de la RD ce samedi",
+        "ht": "Tranblemanntè ak magnitid 4.8 ap souke zòn nan lès DR samdi sa a"
+      }
+    },
+    {
+      "title": "La Ceiba del Salado podría convertirse en distrito municipal y estas serían sus ventajas",
+      "url": "https://bavarodigital.net/la-ceiba-del-salado-podria-convertirse-en-distrito-municipal-y-estas-serian-sus-ventajas/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "LA CEIBA DEL SALADO.— La comunidad de La Ceiba del Salado, en Verón–Punta Cana, podría experimentar importantes cambios administrativos si se aprueba el proyecto…",
+      "image": "",
+      "published": "2026-11-21T15:58:04+00:00",
+      "translations": {
+        "de": "La Ceiba del Salado könnte ein Gemeindebezirk werden, und das wären seine Vorteile",
+        "en": "La Ceiba del Salado could become a municipal district, and these would be its advantages",
+        "fr": "La Ceiba del Salado pourrait devenir un district municipal, et ce seraient ses avantages",
+        "ht": "La Ceiba del Salado ta ka vin yon distri minisipal, e sa yo ta avantaj li yo"
+      }
+    },
+    {
+      "title": "Reportan sismo de magnitud 4.6 cerca de Higüey que se habría sentido en Punta Cana",
+      "url": "https://bavarodigital.net/reportan-sismo-de-magnitud-4-6-cerca-de-higuey-que-se-habria-sentido-en-punta-cana/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [
+        "Higüey",
+        "Punta Cana"
+      ],
+      "preview": "HIGÜEY, LA ALTAGRACIA.— Un movimiento sísmico de magnitud preliminar 4.6 fue reportado la mañana de este sábado 21 de noviembre de 2026, con una ubicación estimada…",
+      "image": "",
+      "published": "2026-11-21T15:41:41+00:00",
+      "translations": {
+        "de": "Erdbeben der Stärke 4,6 wurde in der Nähe von Higüey gemeldet, das in Punta Cana zu spüren war",
+        "en": "Magnitude 4.6 earthquake reported near Higüey that was felt in Punta Cana",
+        "fr": "Séisme de magnitude 4,6 signalé près de Higüey, ressenti à Punta Cana",
+        "ht": "Tranblemanntè magnitid 4.6 te rapòte toupre Higüey ki te santi nan Punta Cana"
+      }
+    },
+    {
+      "title": "Noche histórica para James Harden anotando 51 puntos, para superar marca de Kobe Bryant",
+      "url": "https://eldia.com.do/james-harden-marca-50-puntos-por-vigesima-ocasion/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. CLEVELAND. –James Harden anotó 51 puntos en la victoria de los Cleveland Cavaliers por 128-119 sobre los…",
+      "image": "",
+      "published": "2026-11-21T15:30:56+00:00",
+      "translations": {
+        "de": "Ein historischer Abend für James Harden, der 51 Punkte erzielte und damit Kobe Bryants Rekord brach",
+        "en": "A historic night for James Harden scoring 51 points, breaking Kobe Bryant's record",
+        "fr": "Une soirée historique pour James Harden, qui a marqué 51 points, battant le record de Kobe Bryant",
+        "ht": "Yon swa istorik pou James Harden ki make 51 pwen, kraze rekò Kobe Bryant"
+      }
+    },
+    {
+      "title": "Estudio evalúa mosquitos con Wolbachia contra el dengue",
+      "url": "https://eldia.com.do/estudio-evalua-mosquitos-con-wolbachia-contra-el-dengue/",
+      "source": "El Día",
+      "category": "Salud",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. WASHINGTON – Los niños que vivían en barrios brasileños plagados de un tipo especial de mosquito tenían muchas…",
+      "image": "",
+      "published": "2026-11-21T15:13:51+00:00",
+      "translations": {
+        "de": "Studie bewertet Mücken mit Wolbachia gegen Dengue",
+        "en": "Study evaluates mosquitoes with Wolbachia against dengue",
+        "fr": "Une étude évalue les moustiques atteints de Wolbachia contre la dengue",
+        "ht": "Etid la evalye moustik ki gen Wolbachia kont deng"
+      }
+    },
+    {
+      "title": "Apresan dominicano que traficaba haitianos indocumentados en Verón",
+      "url": "https://puntacanapost.com/apresan-dominicano-que-traficaba-haitianos-indocumentados-en-veron/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«Un camión que intentó evadir un puesto de control terminó bajo inspección, dejando al descubierto a cinco extranjeros sin documentación y a un conductor que ahora…",
+      "image": "",
+      "published": "2026-11-21T15:03:10+00:00",
+      "translations": {
+        "de": "Dominikaner verhaftet wegen Menschenhandels mit undokumentierten Haitianern in Verón",
+        "en": "Dominican man arrested for trafficking undocumented Haitians in Verón",
+        "fr": "Homme dominicain arrêté pour trafic d’Haïtiens sans papiers à Verón",
+        "ht": "Yon nonm Dominiken arete pou trafik Ayisyen san papye nan Verón"
+      }
+    },
+    {
+      "title": "México detiene al capo del cártel 'El Chapo Isidro', uno de los 10 fugitivos más buscados por el FBI",
+      "url": "https://eldia.com.do/mexico-detiene-al-capo-del-cartel-el-chapo-isidro-uno-de-los-10-fugitivos-mas-buscados-por-el-fbi/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. CIUDAD DE MÉXICO – Las autoridades mexicanas capturaron durante la noche en el estado mexicano de Sinaloa al…",
+      "image": "",
+      "published": "2026-11-21T14:59:40+00:00",
+      "translations": {
+        "de": "Mexiko verhaftet den Kartellboss 'El Chapo Isidro', einen der zehn meistgesuchten Flüchtigen des FBI",
+        "en": "Mexico arrests cartel boss 'El Chapo Isidro', one of the 10 most wanted fugitives by the FBI",
+        "fr": "Le Mexique arrête le chef du cartel 'El Chapo Isidro', l’un des 10 fugitifs les plus recherchés par le FBI",
+        "ht": "Meksik arete chèf kartèl 'El Chapo Isidro', youn nan 10 moun FBI ap chèche plis"
+      }
+    },
+    {
+      "title": "Arrestan hombre que penetró de madrugada a hotel de Bávaro con presuntas drogas",
+      "url": "https://puntacanapost.com/arrestan-hombre-que-penetro-de-madrugada-a-hotel-de-bavaro-con-presuntas-drogas/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«Un bolso con presuntas drogas y brazaletes de distintos hoteles terminó convirtiéndose en el centro de una intervención policial dentro de uno de los principales…",
+      "image": "",
+      "published": "2026-11-21T14:40:54+00:00",
+      "translations": {
+        "de": "Mann festgenommen, weil er bei Tagesanbruch mit mutmaßlichen Drogen in ein Hotel in Bávaro eingebrochen ist",
+        "en": "Man arrested for breaking into a hotel in Bávaro at dawn with alleged drugs",
+        "fr": "Homme arrêté pour effraction dans un hôtel à Bávaro à l’aube avec des drogues présumées",
+        "ht": "Nonm arete pou antre nan yon otèl nan Bávaro nan dimanch maten ak dwòg sipoze"
+      }
+    },
+    {
+      "title": "Haitianos atacan a tiros y pedradas agentes de Migración",
+      "url": "https://almomento.net/haitianos-atacan-a-tiros-y-pedradas-agentes-de-migracion/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "PUERTO PLATA.– Miembros de la Dirección General de Migración (DGM) fueron atacados a tiros y pedradas por un grupo de haitianos durante un operativo de interdicción…",
+      "image": "",
+      "published": "2026-11-21T14:30:04+00:00",
+      "translations": {
+        "de": "Haitianer greifen Migrationsagenten mit Gewehrfeuern und Steinen an",
+        "en": "Haitians attack Migration agents with gunfire and stones",
+        "fr": "Les Haïtiens attaquent les agents de la migration avec des coups de feu et des pierres",
+        "ht": "Ayisyen atake ajan migrasyon yo ak kout zam ak wòch"
+      }
+    },
+    {
+      "title": "DNCD ocupa tres fusiles, una pistola y drogas en Barahona; cae alias “Viguay”",
+      "url": "https://bavarodigital.net/dncd-ocupa-tres-fusiles-una-pistola-y-drogas-en-barahona-cae-alias-viguay/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "BARAHONA.— Agentes de la Dirección Nacional de Control de Drogas (DNCD), en coordinación con el Ministerio Público, ocuparon tres fusiles tipo AR-15, una pistola…",
+      "image": "",
+      "published": "2026-11-21T14:17:57+00:00",
+      "translations": {
+        "de": "DNCD beschlagnahmt drei Gewehre, eine Pistole und Drogen in Barahona; alias \"Viguay\" fällt",
+        "en": "DNCD seizes three rifles, a pistol, and drugs in Barahona; alias \"Viguay\" falls",
+        "fr": "Le DNCD saisit trois fusils, un pistolet et de la drogue à Barahona ; alias « Viguay » tombe",
+        "ht": "DNCD sezi twa fizi, yon pistolè, ak dwòg nan Barahona; non \"Viguay\" tonbe"
+      }
+    },
+    {
+      "title": "Nagua fortalece la atención comunitaria con jornada médica gratuita",
+      "url": "https://eltiempo.com.do/nacionales/nagua-fortalece-la-atencion-comunitaria-con-jornada-medica-gratuita/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Punta Cana. Las familias del municipio de Nagua cuentan con una importante oportunidad para cuidar... La entrada Nagua fortalece la atención comunitaria con jornada…",
+      "image": "",
+      "published": "2026-11-21T14:00:00+00:00",
+      "translations": {
+        "de": "Nagua stärkt die Gemeinschaftsversorgung mit einem kostenlosen medizinischen Tag",
+        "en": "Nagua strengthens community care with a free medical day",
+        "fr": "Nagua renforce les soins communautaires grâce à une journée médicale gratuite",
+        "ht": "Nagua ranfòse swen kominotè ak yon jounen medikal gratis"
+      }
+    },
+    {
+      "title": "Se desata la violencia tras arresto del capo Fausto Isidro Meza",
+      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/21/se-desata-la-violencia-tras-arresto-del-capo-fausto-isidro-meza/3727659",
+      "source": "Diario Libre",
+      "category": "Mundo",
+      "regions": [],
+      "preview": "Las autoridades mexicanas informaron este sábado la detención de uno de los capos más buscados por Estados Unidos, lo que desató una ola de violencia por parte de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/se-desata-la-violencia-tras-arresto-del-capo-fausto-isidro-meza-9d0183ad-focus-0.05-0.14-400-300.jpg",
+      "published": "2026-11-21T13:22:00+00:00",
+      "translations": {
+        "de": "Nach der Festnahme des Anführers Fausto Isidro Meza bricht Gewalt aus",
+        "en": "Violence erupts following the arrest of leader Fausto Isidro Meza",
+        "fr": "La violence éclate après l’arrestation du dirigeant Fausto Isidro Meza",
+        "ht": "Vyolans pete apre arestasyon lidè Fausto Isidro Meza"
+      }
+    },
+    {
+      "title": "¿Regresará el uso del macuto? pronto las fundas plásticas costarán",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/21/regresara-el-uso-del-macuto-pronto-las-fundas-plasticas-costaran/3727643",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "A partir del próximo 15 de diciembre de 2026, las fundas plásticas dejarán de ser gratuitas y tendrán un costo para los consumidores, como consecuencia de la…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/regresara-el-uso-del-macuto-pronto-las-fundas-plasticas-costaran-5b80f6be-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T13:04:00+00:00",
+      "translations": {
+        "de": "Wird die Nutzung des Rucksacks zurückkehren? Bald werden Plastikabdeckungen teuer sein",
+        "en": "Will the use of the backpack return? Soon plastic covers will cost",
+        "fr": "L’utilisation du sac à dos reviendra-t-elle ? Bientôt, les couvertures en plastique coûteront cher",
+        "ht": "Èske itilizasyon sakado a ap retounen? Byento kouvèti plastik yo ap koute"
+      }
+    },
+    {
+      "title": "Celebran en Nueva York la Noche de Cultura Dominicana",
+      "url": "https://almomento.net/celebran-en-nueva-york-la-noche-de-cultura-dominicana/",
+      "source": "AlMomento",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "NUEVA YORK.- Con el lema Cultura, Comunidad y Futuro, la Dirección de Cultura Dominicana en el Exterior celebró la Noche de Cultura Dominicana, una oportunidad para…",
+      "image": "",
+      "published": "2026-11-21T13:00:57+00:00",
+      "translations": {
+        "de": "Sie feiern die Dominican Culture Night in New York",
+        "en": "They celebrate the Dominican Culture Night in New York",
+        "fr": "Ils célèbrent la Nuit de la culture dominicaine à New York",
+        "ht": "Yo selebre Sware Kiltirèl Dominiken an nan New York"
+      }
+    },
+    {
+      "title": "Predomina el sol este sábado en Dominicana; hay lluvias aisladas",
+      "url": "https://almomento.net/predominara-el-sol-este-sabado-y-lluvias-aisladas-en-varias-zonas/",
+      "source": "AlMomento",
+      "category": "Medioambiente",
+      "regions": [],
+      "preview": "SANTO DOMINGO.- La República Dominicana tendrá este sábado un ambiente mayormente soleado y con escasas precipitaciones durante las horas de la mañana, debido a la…",
+      "image": "",
+      "published": "2026-11-21T13:00:35+00:00",
+      "translations": {
+        "de": "Die Sonne ist an diesem Samstag in der Dominikanischen Republik vorherrschend; es gibt vereinzelte Schauer",
+        "en": "The sun is predominant this Saturday in the Dominican Republic; there are isolated showers",
+        "fr": "Le soleil prédomine ce samedi en République dominicaine ; il y a des averses isolées",
+        "ht": "Soleil la domine samdi sa a nan Repiblik Dominikèn; gen lapli izole"
+      }
+    },
+    {
+      "title": "Irán exhibe ciudad subterránea de misiles y advierte adversarios",
+      "url": "https://almomento.net/iran-exhibe-ciudad-subterranea-de-misiles-y-advierte-adversarios/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "TEHERAN.- Los principales jefes militares de Irán visitaron este viernes 21 de noviembre una nueva ciudad subterránea de misiles, en una demostración de sus…",
+      "image": "",
+      "published": "2026-11-21T13:00:23+00:00",
+      "translations": {
+        "de": "Iran zeigt unterirdische Raketenstadt und warnt Gegner",
+        "en": "Iran displays underground missile city and warns adversaries",
+        "fr": "L’Iran expose une ville souterraine de missiles et avertit ses adversaires",
+        "ht": "Iran montre yon vil misil anba tè epi avèti advèsè li yo"
+      }
+    },
+    {
+      "title": "Papa León XIV promueve una mayor conciencia ambiental en la Iglesia",
+      "url": "https://eltiempo.com.do/variedades/papa-leon-xiv-promueve-una-mayor-conciencia-ambiental-en-la-iglesia/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Punta Cana. El papa León XIV ha reafirmado el compromiso de la Iglesia católica con... La entrada Papa León XIV promueve una mayor conciencia ambiental en la…",
+      "image": "",
+      "published": "2026-11-21T13:00:00+00:00",
+      "translations": {
+        "de": "Papst Leo XIV. fördert ein größeres Umweltbewusstsein in der Kirche",
+        "en": "Pope Leo XIV promotes greater environmental awareness in the Church",
+        "fr": "Le pape Léon XIV promeut une plus grande sensibilisation environnementale au sein de l’Église",
+        "ht": "Pap Leo XIV ankouraje plis konsyantizasyon anviwònman nan Legliz la"
+      }
+    },
+    {
+      "title": "Salud Pública clausuró centro médico sin habilitación sanitaria",
+      "url": "https://www.diariolibre.com/actualidad/salud/2026/11/21/salud-publica-clausuro-centro-medico-sin-habilitacion-sanitaria/3727636",
+      "source": "Diario Libre",
+      "category": "Salud",
+      "regions": [],
+      "preview": "El Ministerio de Salud Pública clausuró un centro médico que operaba en el sector Rafey, al suroeste de Santiago, por carecer de la habilitación sanitaria requerida…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/clausura-de-centro-medico-en-rafey-por-ministerio-de-salud-publica-46b41258-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T12:58:00+00:00",
+      "translations": {
+        "de": "Public Health schloss das medizinische Zentrum ohne medizinische Genehmigung",
+        "en": "Public Health closed medical center without health authorization",
+        "fr": "Centre médical de santé publique fermé sans autorisation sanitaire",
+        "ht": "Sant medikal sante piblik fèmen san otorizasyon sante"
+      }
+    },
+    {
+      "title": "Zelenski responde tras críticas por ataque a Puente de Crimea",
+      "url": "https://www.diariolibre.com/mundo/europa/2026/11/21/zelenski-responde-tras-criticas-por-ataque-a-puente-de-crimea/3727625",
+      "source": "Diario Libre",
+      "category": "Mundo",
+      "regions": [],
+      "preview": "El presidente de Ucrania, Volodímir Zelenski, dijo este sábado que antes de que las Fuerzas Armadas de su país lanzaran sus ataques contra el puente de Crimea…",
+      "image": "https://resources.diariolibre.com/images/2026/07/04/volodimir-zelenski-agradecio-eeuu-su-apoyo-en-guerra-contra-rusia-b4a39c23-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T12:55:00+00:00",
+      "translations": {
+        "de": "Selenskyj reagiert nach Kritik wegen des Angriffs auf die Krimbrücke",
+        "en": "Zelensky responds after criticism over attack on the Crimean Bridge",
+        "fr": "Zelensky réagit après les critiques concernant l’attaque contre le pont de Crimée",
+        "ht": "Zelensky reponn apre kritik sou atak sou Pon Krim nan"
+      }
+    },
+    {
+      "title": "Muere el joyero italiano Paolo Bulgari a los 89 años",
+      "url": "https://www.diariolibre.com/revista/moda/2026/11/21/muere-el-joyero-italiano-paolo-bulgari-a-los-89-anos/3727630",
+      "source": "Diario Libre",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "Paolo Bulgari, que llevó la joyería de familia a ser uno de los símbolos del lujo mundial, falleció este sábado a los 89 años, informó su familia en una nota. Su…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/muere-el-joyero-italiano-paolo-bulgari-a-los-89-anos-1c156e6d-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T12:47:00+00:00",
+      "translations": {
+        "de": "Der italienische Juwelier Paolo Bulgari stirbt im Alter von 89 Jahren",
+        "en": "Italian jeweler Paolo Bulgari dies at 89",
+        "fr": "Le bijoutier italien Paolo Bulgari meurt à 89 ans",
+        "ht": "Bijoutye Italyen Paolo Bulgari mouri a laj 89 an"
+      }
+    },
+    {
+      "title": "Solemnidad de Cristo Rey y un Paso por mi Familia",
+      "url": "https://almomento.net/solemnidad-de-cristo-rey-y-un-paso-por-mi-familia/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El próximo domingo 22 de noviembre, la Iglesia celebrará con gran gozo la Solemnidad de Cristo Rey. Es un momento especial que marca el cierre del año litúrgico, en…",
+      "image": "",
+      "published": "2026-11-21T12:28:16+00:00",
+      "translations": {
+        "de": "Feierlichkeit Christi des Königs und eine Passage für meine Familie",
+        "en": "Solemnity of Christ the King and a Passage for My Family",
+        "fr": "Solennité du Christ Roi et un passage pour ma famille",
+        "ht": "Solanèlite Kris Wa a ak yon Pasaj pou Fanmi Mwen"
+      }
+    },
+    {
+      "title": "Sismo en Perú deja 15 heridos y daños a viviendas",
+      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/21/sismo-en-peru-deja-15-heridos-y-danos-a-viviendas/3727612",
+      "source": "Diario Libre",
+      "category": "Vivienda",
+      "regions": [],
+      "preview": "Un sismo de magnitud 6.7 que sacudió el viernes el centro de Perú causó al menos 15 heridos, según el primer reporte oficial difundido este sábado por el estatal…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/sismo-en-peru-deja-15-heridos-2c4989c1-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T12:21:00+00:00",
+      "translations": {
+        "de": "Erdbeben in Peru hinterlässt 15 Verletzte und Schäden an Häusern",
+        "en": "Earthquake in Peru leaves 15 injured and damage to homes",
+        "fr": "Un tremblement de terre au Pérou fait 15 blessés et des dégâts dans des habitations",
+        "ht": "Tranbleman tè nan Pewou kite 15 blese ak domaj nan kay yo"
+      }
+    },
+    {
+      "title": "Mundial Sub-17: Dominicana empata ante Montenegro",
+      "url": "https://www.diariolibre.com/deportes/futbol/2026/11/21/mundial-sub-17-dominicana-empata-ante-montenegro/3727615",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "La selección de fútbol sub-17 de República Dominicana inició su participación en la Copa Mundial de la FIFA Catar 2026 con un empate 1-1 frente a Montenegro, en un…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/mundial-sub-17-dominicana-empata-ante-montenegro-2cef7543-focus-min0.02-0.3-400-300.png",
+      "published": "2026-11-21T12:14:00+00:00",
+      "translations": {
+        "de": "U-17-Weltmeisterschaft: Dominikanische Republik spielt gegen Montenegro unentschieden",
+        "en": "U-17 World Cup: Dominican Republic draws against Montenegro",
+        "fr": "Coupe du monde U-17 : la République dominicaine fait match nul contre le Monténégro",
+        "ht": "Koup di Mond U-17: Repiblik Dominikèn fè yon match nul kont Montenegwo"
+      }
+    },
+    {
+      "title": "Realizan vista pública con comisión de diputados para convertir La Ceiba del Salado en distrito municipal",
+      "url": "https://bavarodigital.net/realizan-vista-publica-con-comision-de-diputados-para-convertir-la-ceiba-del-salado-en-distrito-municipal/",
+      "source": "Bávaro Digital",
+      "category": "Política",
+      "regions": [],
+      "preview": "LA CEIBA DEL SALADO.— La comunidad de La Ceiba del Salado dio un paso importante en sus aspiraciones de convertirse en distrito municipal, luego de que este viernes…",
+      "image": "",
+      "published": "2026-11-21T12:06:03+00:00",
+      "translations": {
+        "de": "Öffentliche Anhörung mit einer Kommission von Abgeordneten zur Umwandlung von La Ceiba del Salado in einen Gemeindebezirk",
+        "en": "Public hearing held with a commission of deputies to turn La Ceiba del Salado into a municipal district",
+        "fr": "Audience publique tenue avec une commission de députés pour transformer La Ceiba del Salado en district municipal",
+        "ht": "Odyans piblik te fèt ak yon komisyon depite pou transfòme La Ceiba del Salado an yon distri minisipal"
+      }
+    },
+    {
+      "title": "Trasladan a Higüey a los detenidos por red de narcotráfico",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/21/trasladan-a-higuey-a-los-detenidos-por-red-de-narcotrafico/3727602",
+      "source": "Diario Libre",
+      "category": "Seguridad",
+      "regions": [
+        "Higüey"
+      ],
+      "preview": "Un total de 22 personas vinculadas a la Operación Rompeolas fueron trasladadas a la jurisdicción de Higüey, donde se espera que les sea conocida una medida de…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/trasladan-a-higuey-a-los-detenidos-por-red-de-narcotrafico-d8737321-focus-0-0-400-300.jpg",
+      "published": "2026-11-21T12:03:00+00:00",
+      "translations": {
+        "de": "Festgenommene wegen Drogenhandelsnetzwerke, die nach Higüey überstellt wurden",
+        "en": "Detainees for drug trafficking networks transferred to Higüey",
+        "fr": "Détenus pour réseaux de trafic de drogue transférés à Higüey",
+        "ht": "Detni pou rezo trafik dwòg yo te transfere nan Higüey"
+      }
+    },
+    {
+      "title": "Cuando amas tu país, pero no puedes volver (OPINION)",
+      "url": "https://almomento.net/cuando-amas-tu-pais-pero-no-puedes-volver-opinion/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Hay un dominicano en Nueva York que lleva veinte años soñando con volver. Tiene su casita en Santiago casi terminada, un terrenito en Baní, un negocio en mente…",
+      "image": "",
+      "published": "2026-11-21T12:00:11+00:00",
+      "translations": {
+        "de": "Wenn du dein Land liebst, aber nicht zurückkehren kannst (MEINUNG)",
+        "en": "When you love your country, but can't go back (OPINION)",
+        "fr": "Quand on aime son pays, mais qu’on ne peut pas revenir en arrière (OPINION)",
+        "ht": "Lè ou renmen peyi ou, men ou pa ka retounen (OPINYON)"
+      }
+    },
+    {
+      "title": "El NAD+, la molécula clave para la longevidad",
+      "url": "https://www.diariolibre.com/revista/belleza/2026/11/21/el-nad-la-molecula-clave-para-la-longevidad/3726619",
+      "source": "Diario Libre",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "Durante años, la conversación sobre el cuidado facial ha girado en torno al retinol, la vitamina C o el ácido hialurónico. Ahora, una nueva sigla empieza a abrirse…",
+      "image": "https://resources.diariolibre.com/images/2026/11/20/el-nad-la-molecula-clave-para-la-longevidad-f88ee167-focus-0-0-400-300.png",
+      "published": "2026-11-21T12:00:00+00:00",
+      "translations": {
+        "de": "NAD+, das Schlüsselmolekül für eine Langlebigkeit",
+        "en": "NAD+, the key molecule for longevity",
+        "fr": "NAD+, la molécule clé de la longévité",
+        "ht": "NAD+, molekil kle pou lonjevite"
+      }
+    },
+    {
+      "title": "Heridas psicológicas en los hijos víctimas de violencia vicaria",
+      "url": "https://almomento.net/heridas-psicologicas-en-los-hijos-victimas-de-violencia-vicaria/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La violencia vicaria constituye una de las expresiones más crueles de la violencia de género, porque utiliza a los hijos como instrumentos para provocar…",
+      "image": "",
+      "published": "2026-11-21T11:58:19+00:00",
+      "translations": {
+        "de": "Psychische Wunden bei Kindern, die Opfer von indirekter Gewalt sind",
+        "en": "Psychological wounds in children who are victims of vicarious violence",
+        "fr": "Blessures psychologiques chez les enfants victimes de violence par procuration",
+        "ht": "Blesi sikolojik nan timoun ki viktim vyolans vikè"
+      }
+    },
+    {
+      "title": "Fútbol: El City no sale de su crisis y empata en casa ante el Fulham",
+      "url": "https://www.diariolibre.com/deportes/futbol/2026/11/21/futbol-el-city-no-sale-de-su-crisis-y-empata-en-casa-ante-el-fulham/3727594",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "En profunda racha negativa, el Manchester City empató ante el Fulham (1-1), este sábado en la apertura de la 11ª jornada del campeonato inglés, y le brinda así al…",
+      "image": "https://resources.diariolibre.com/images/2026/10/17/premier-league-haaland-firma-ante-el-ipswich-otro-doblete-76e94acb-focus-0.11-0.53-400-300.jpg",
+      "published": "2026-11-21T11:54:00+00:00",
+      "translations": {
+        "de": "Fußball: City kommt aus der Krise nicht heraus und spielt zu Hause gegen Fulham unentschieden",
+        "en": "Football: City can't get out of their crisis and draws at home against Fulham",
+        "fr": "Football : City ne parvient pas à sortir de sa crise et fait des matchs nuls à domicile contre Fulham",
+        "ht": "Foutbòl: City pa ka sòti nan kriz yo ak fè match nil lakay kont Fulham"
+      }
+    },
+    {
+      "title": "Presidentes, vicepresidentes y primeros ministros llegan a Punta Cana para encuentro internacional",
+      "url": "https://bavarodigital.net/presidentes-vicepresidentes-y-primeros-ministros-llegan-al-aeropuerto-de-punta-cana-para-encuentro-internacional/",
+      "source": "Bávaro Digital",
+      "category": "Política",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "PUNTA CANA, LA ALTAGRACIA.— El Aeropuerto Internacional de Punta Cana recibió a importantes autoridades de América Latina y el Caribe, entre ellas presidentes…",
+      "image": "",
+      "published": "2026-11-21T11:49:59+00:00",
+      "translations": {
+        "de": "Präsidenten, Vizepräsidenten und Premierminister treffen in Punta Cana zu einem internationalen Treffen ein",
+        "en": "Presidents, vice presidents, and prime ministers arrive in Punta Cana for international meeting",
+        "fr": "Présidents, vice-présidents et premiers ministres arrivent à Punta Cana pour une réunion internationale",
+        "ht": "Prezidan, vis-prezidan, ak premye minis rive nan Punta Cana pou yon rankont entènasyonal"
+      }
+    },
+    {
+      "title": "Lo que dijo Raquel Peña sobre la muerte de Melissa Medina",
+      "url": "https://www.diariolibre.com/actualidad/ciudad/2026/11/21/lo-que-dijo-raquel-pena-sobre-la-muerte-de-melissa-medina/3727571",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La vicepresidenta Raquel Peña calificó de penosa y dolorosa la muerte de la joven Melissa Medina, de 22 años, y llamó a las familias a orientar a sus hijos para…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/lo-que-dijo-raquel-pena-sobre-la-muerte-de-melissa-medina-edd56a82-focus-min0.05-0.49-400-300.png",
+      "published": "2026-11-21T11:16:00+00:00",
+      "translations": {
+        "de": "Was Raquel Peña über den Tod von Melissa Medina gesagt hat",
+        "en": "What Raquel Peña said about Melissa Medina's death",
+        "fr": "Ce que Raquel Peña a dit à propos de la mort de Melissa Medina",
+        "ht": "Sa Raquel Peña te di sou lanmò Melissa Medina"
+      }
+    },
+    {
+      "title": "COLOMBIA: Detienen a uno de la RD acusado de narcotrafico",
+      "url": "https://almomento.net/colombia-detienen-a-uno-de-la-rd-acusado-de-narcotrafico/",
+      "source": "AlMomento",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "BOGOTÁ, 21 nov (EFE).- El dominicano César Augusto Rodríguez Severino, alias Dondy, con notificación roja de Interpol por narcotráfico, lavado de activos y otros…",
+      "image": "",
+      "published": "2026-11-21T11:00:58+00:00",
+      "translations": {
+        "de": "KOLUMBIEN: Ein Mitglied der DR wurde wegen Drogenhandels beschuldigt festgenommen",
+        "en": "COLOMBIA: A member of the DR arrested accused of drug trafficking",
+        "fr": "COLOMBIE : Un membre de la RD arrêté accusé de trafic de drogue",
+        "ht": "KOLONBI: Yon manm DR arete akize pou trafik dwòg"
       }
     },
     {
@@ -56,7 +1205,7 @@
       "regions": [],
       "preview": "SANTO DOMINGO.- El Partido Revolucionario Moderno (PRM) iniciará el próximo 26 de noviembre jornadas de cedulación en los principales municipios del país, en…",
       "image": "",
-      "published": "2026-11-21T09:00:54+00:00",
+      "published": "2026-11-21T11:00:54+00:00",
       "translations": {
         "de": "PRM wird Aktivitäten starten, um die Lizenzerneuerung zu fördern",
         "en": "PRM will launch operations to promote license renewal",
@@ -71,1347 +1220,73 @@
       }
     },
     {
-      "title": "EU: ICE arresta dominicano cumplió condena por agresión",
-      "url": "https://almomento.net/eu-ice-arresta-dominicano-cumplio-condena-por-agresion/",
+      "title": "Profundizarán la investigación sobre muerte Melissa Medina",
+      "url": "https://almomento.net/profundizaran-la-investigacion-sobre-muerte-melissa-medina/",
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
-      "preview": "BOSTON.- Agentes del Servicio de Inmigración y Control de Aduanas (ICE) arrestaron a un dominicano indocumentado que había sido liberado tras una condena de nueve…",
+      "preview": "Santo Domingo, 21 nov (EFE).- La procuradora general de la República, Yeni Berenice Reynoso, instruyó a la Dirección General de Persecución del Ministerio Público…",
       "image": "",
-      "published": "2026-11-21T09:00:50+00:00",
+      "published": "2026-11-21T11:00:47+00:00",
       "translations": {
-        "de": "EU: ICE verhaftet Dominikaner nach Verbüßung seiner Strafe wegen Körperverletzung",
-        "en": "EU: ICE arrests Dominican after serving sentence for assault",
-        "fr": "UE : ICE arrête un dominicain après avoir purgé une peine pour agression",
-        "ht": "Inyon Ewopeyen an: ICE arete Dominiken apre li fin sèvi santans pou agresyon"
+        "de": "Sie werden die Ermittlungen zum Tod von Melissa Medina vertiefen",
+        "en": "They will deepen the investigation into Melissa Medina's death",
+        "fr": "Ils approfondiront l’enquête sur la mort de Melissa Medina",
+        "ht": "Yo pral apwofondi ankèt sou lanmò Melissa Medina"
       },
       "preview_translations": {
-        "de": "BOSTON.— Beamte der Immigration and Customs Enforcement (ICE) nahmen einen undokumentierten Dominikaner fest, der nach neun ...",
-        "en": "BOSTON.— Agents from the Immigration and Customs Enforcement (ICE) arrested an undocumented Dominican who had been released after a nine...",
-        "fr": "BOSTON.— Des agents de l’Immigration et des Douanes (ICE) ont arrêté un Dominicain sans papiers qui avait été libéré après une enquête de neuf...",
-        "ht": "BOSTON.— Ajan Imigrasyon ak Ladwàn (ICE) arete yon Dominiken san papye ki te lage apre nèf..."
+        "de": "Santo Domingo, 21. November (EFE).- Die Generalstaatsanwältin der Republik, Yeni Berenice Reynoso, beauftragte die Generaldirektion für Strafverfolgung des öffentlichen Ministeriums...",
+        "en": "Santo Domingo, Nov 21 (EFE).- The Attorney General of the Republic, Yeni Berenice Reynoso, instructed the General Directorate of Prosecution of the Public Ministry...",
+        "fr": "Saint-Domingue, 21 nov. (EFE).- La procureure générale de la République, Yeni Berenice Reynoso, a chargé la direction générale du ministère public...",
+        "ht": "Santo Domingo, 21 Novanm (EFE).- Avoka Jeneral Repiblik la, Yeni Berenice Reynoso, bay Direksyon Jeneral Pwokirè Ministè Piblik la enkrè..."
       }
     },
     {
-      "title": "La RD ocupa 6to lugar de países de AL con más transparencia",
-      "url": "https://almomento.net/rd-ocupa-el-6to-lugar-entre-los-paises-al-con-mas-transparencia/",
+      "title": "Kerch cayó, y con él se cayó una mentira",
+      "url": "https://almomento.net/kerch-cayo-y-con-el-se-cayo-una-mentira/",
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
-      "preview": "SANTO DOMINGO.- La República Dominicana ocupa, junto a Colombia, el 6to lugar entre los países de América Latina con más transparencia, de acuerdo con el Índice de…",
+      "preview": "Putin cruzó ese puente al volante de un camión para demostrar que Crimea era suya. Hoy, un arco de 227 metros descansa en el fondo del estrecho. Que nadie venga con…",
       "image": "",
-      "published": "2026-11-21T09:00:09+00:00",
+      "published": "2026-11-21T11:00:23+00:00",
       "translations": {
-        "de": "Die DR belegt den 6. Platz unter den AL-Ländern mit der größten Transparenz",
-        "en": "The DR ranks 6th among AL countries with the most transparency",
-        "fr": "La RD se classe 6e parmi les pays de l’AL ayant la plus grande transparence",
-        "ht": "DR klase 6yèm pami peyi AL ki gen plis transparans"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Die Dominikanische Republik belegt zusammen mit Kolumbien den 6. Platz unter den lateinamerikanischen Ländern mit der größten Transparenz, laut dem Index of...",
-        "en": "SANTO DOMINGO.- The Dominican Republic, along with Colombia, ranks 6th among Latin American countries with the most transparency, according to the Index of...",
-        "fr": "SANTO DOMINGO.- La République dominicaine, avec la Colombie, se classe 6e parmi les pays latino-américains ayant la plus grande transparence, selon l’Indice de...",
-        "ht": "SANTO DOMINGO.- Repiblik Dominikèn, ansanm ak Kolonbi, klase 6yèm pami peyi Amerik Latin ki gen plis transparans, dapre Endèks la..."
+        "de": "Kerch fiel, und mit ihm fiel eine Lüge",
+        "en": "Kerch fell, and with him fell a lie",
+        "fr": "Kerch tomba, et avec lui tomba un mensonge",
+        "ht": "Kerch tonbe, epi avèk li tonbe yon manti"
       }
     },
     {
-      "title": "Abinader proyecta a RD como puente AL y Medio Oriente",
-      "url": "https://almomento.net/abinader-proyecta-a-rd-como-puente-al-y-medio-oriente/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "LA ALTAGRACIA, República Dominicana.- El presidente Luis Abinader inauguró el Diálogo Regional del World Governments Summit con un mensaje claro: la confianza entre…",
-      "image": "",
-      "published": "2026-11-21T08:00:56+00:00",
-      "translations": {
-        "de": "Abinader projiziert die DR als Brücke zwischen der AL und dem Nahen Osten",
-        "en": "Abinader projects DR as a bridge to the AL and the Middle East",
-        "fr": "Abinader présente la RD comme un pont vers l’AL et le Moyen-Orient",
-        "ht": "Abinader pwopoze DR kòm yon pon pou AL ak Mwayen Oryan an"
-      },
-      "preview_translations": {
-        "de": "LA ALTAGRACIA, Dominikanische Republik. – Präsident Luis Abinader eröffnete den Gipfel des Regionalen Dialogs der Weltregierungen mit einer klaren Botschaft: Vertrauen unter...",
-        "en": "LA ALTAGRACIA, Dominican Republic.- President Luis Abinader inaugurated the Regional Dialogue of the World Governments Summit with a clear message: trust between...",
-        "fr": "LA ALTAGRACIA, République dominicaine. - Le président Luis Abinader a inauguré le Dialogue régional du Sommet mondial des gouvernements avec un message clair : confiance entre...",
-        "ht": "LA ALTAGRACIA, Repiblik Dominikèn.- Prezidan Luis Abinader te inogire Somè Dyalòg Rejyonal Gouvènman Mondyal la ak yon mesaj klè: konfyans ant..."
-      }
-    },
-    {
-      "title": "Gonzalo Castillo propone rescatar la agricultura en el sur",
-      "url": "https://almomento.net/gonzalo-castillo-propone-rescatar-la-agricultura-en-el-sur/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- El aspirante presidencial del Partido de la Liberación Dominicana (PLD), Gonzalo Castillo, propuso rehabilitar los canales de riego y caminos…",
-      "image": "",
-      "published": "2026-11-21T08:00:16+00:00",
-      "translations": {
-        "de": "Gonzalo Castillo schlägt die Rettung der Landwirtschaft im Süden vor",
-        "en": "Gonzalo Castillo proposes rescuing agriculture in the south",
-        "fr": "Gonzalo Castillo propose de sauver l’agriculture dans le sud",
-        "ht": "Gonzalo Castillo pwopoze sove agrikilti nan sid la"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Der Präsidentschaftskandidat der Dominikanischen Befreiungspartei (PLD), Gonzalo Castillo, schlug die Sanierung von Bewässerungskanälen und Straßen vor...",
-        "en": "SANTO DOMINGO.- The presidential candidate of the Dominican Liberation Party (PLD), Gonzalo Castillo, proposed rehabilitating irrigation canals and roads...",
-        "fr": "SANTO DOMINGO.- Le candidat présidentiel du Parti de libération dominicaine (PLD), Gonzalo Castillo, a proposé la réhabilitation des canaux d’irrigation et des routes...",
-        "ht": "SANTO DOMINGO.- Kandida prezidansyèl Pati Liberasyon Dominiken (PLD), Gonzalo Castillo, te pwopoze pou reabilite kanal irigasyon ak wout..."
-      }
-    },
-    {
-      "title": "RD recibirá este año récord de más de 12,3 mm de turistas",
-      "url": "https://almomento.net/rdrecibira-este-ano-record-de-mas-de-123-mm-de-turistas/",
-      "source": "AlMomento",
-      "category": "Turismo",
-      "regions": [],
-      "preview": "Punta Cana (República Dominicana), 21 de noviembre (EFE).- El presidente de la República Dominicana, Luis Abinader, aseguró este viernes que su país recibirá este…",
-      "image": "",
-      "published": "2026-11-21T07:30:42+00:00",
-      "translations": {
-        "de": "Die Dominikanische Republik wird in diesem Jahr einen Rekord von mehr als 12,3 Millionen Touristen empfangen",
-        "en": "The Dominican Republic will receive a record of more than 12.3 million tourists this year",
-        "fr": "La République dominicaine accueillera un record de plus de 12,3 millions de touristes cette année",
-        "ht": "Repiblik Dominikèn ap resevwa yon rekò plis pase 12.3 milyon touris ane sa a"
-      },
-      "preview_translations": {
-        "de": "Punta Cana (Dominikanische Republik), 21. November (EFE).- Der Präsident der Dominikanischen Republik, Luis Abinader, erklärte an diesem Freitag, dass sein Land dieses...",
-        "en": "Punta Cana (Dominican Republic), November 21 (EFE).- The President of the Dominican Republic, Luis Abinader, stated this Friday that his country will receive this...",
-        "fr": "Punta Cana (République dominicaine), 21 novembre (EFE).- Le président de la République dominicaine, Luis Abinader, a déclaré ce vendredi que son pays recevra cela...",
-        "ht": "Punta Cana (Repiblik Dominikèn), 21 novanm (EFE).- Prezidan Repiblik Dominikèn, Luis Abinader, deklare vandredi sa a ke peyi li pral resevwa sa a..."
-      }
-    },
-    {
-      "title": "El PRSC busca presentar candidaturas propias en 2028",
-      "url": "https://almomento.net/el-prsc-busca-presentar-candidaturas-propias-en-2028/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- El presidente del Partido Reformista Social Cristiano (PRSC), Federico “Quique” Antún Batlle, afirmó que esa organización trabaja para fortalecerse…",
-      "image": "",
-      "published": "2026-11-21T07:00:54+00:00",
-      "translations": {
-        "de": "Die PRSC strebt an, im Jahr 2028 eigene Kandidaturen vorzulegen",
-        "en": "The PRSC seeks to present its own candidacies in 2028",
-        "fr": "Le PRSC cherche à présenter ses propres candidatures en 2028",
-        "ht": "PRSC ap chèche prezante pwòp kandida li yo an 2028"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Der Präsident der Sozialchristlichen Reformpartei (PRSC), Federico \"Quique\" Antún Batlle, erklärte, dass diese Organisation daran arbeitet, ...",
-        "en": "SANTO DOMINGO.- The president of the Social Christian Reformist Party (PRSC), Federico \"Quique\" Antún Batlle, stated that this organization is working to strengthen...",
-        "fr": "SANTO DOMINGO.- Le président du Parti réformiste social-chrétien (PRSC), Federico « Quique » Antún Batlle, a déclaré que cette organisation œuvre à renforcer...",
-        "ht": "SANTO DOMINGO.- Prezidan Pati Refòmis Sosyal Kretyen (PRSC), Federico \"Quique\" Antún Batlle, te deklare ke òganizasyon sa a ap travay pou ranfòse..."
-      }
-    },
-    {
-      "title": "FMI ve economía de RD cerraría 2026 con crecimiento de 4.6%",
-      "url": "https://almomento.net/fmi-proyecta-crecimiento-de-4-6-economia-rd-cierre-2026/",
-      "source": "AlMomento",
-      "category": "Economía",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– El Fondo Monetario Internacional (FMI) proyectó que la economía dominicana crecerá alrededor de un 4.6 % al finalizar 2026, destacando su capacidad…",
-      "image": "",
-      "published": "2026-11-21T07:00:54+00:00",
-      "translations": {
-        "de": "IWF prognostiziert, dass die DR-Wirtschaft mit einem Wachstum von 4,6 % schließt",
-        "en": "IMF projects DR economy closes with 4.6% growth",
-        "fr": "Le FMI prévoit que l’économie DR clôture avec une croissance de 4,6 %",
-        "ht": "FMI prevwa ekonomi DR ap fèmen ak yon kwasans 4.6%"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.– Der Internationale Währungsfonds (IWF) prognostiziert, dass die dominikanische Wirtschaft bis Ende 2026 um rund 4,6 % wachsen wird, was ihre Kapazität hervorhebt...",
-        "en": "SANTO DOMINGO.– The International Monetary Fund (IMF) projected that the Dominican economy will grow by around 4.6% by the end of 2026, highlighting its capacity...",
-        "fr": "SANTO DOMINGO. – Le Fonds monétaire international (FMI) a projeté que l’économie dominicaine croîtra d’environ 4,6 % d’ici la fin 2026, mettant en lumière sa capacité...",
-        "ht": "SANTO DOMINGO.– Fon Monetè Entènasyonal (FMI) prevwa ke ekonomi Dominikèn nan ap grandi anviwon 4.6% anvan fen ane 2026, sa ki mete aksan sou kapasite li..."
-      }
-    },
-    {
-      "title": "Club Rafael Barias conquista quinto título de su historia en el Torneo de Baloncesto Superior del Distrito",
-      "url": "https://eldia.com.do/club-rafae-barias-monarca-basket-dn/",
-      "source": "El Día",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. El club Rafael Barias conquistó este viernes el quinto título de campeón de su historia de…",
-      "image": "",
-      "published": "2026-11-21T06:33:00+00:00",
-      "translations": {
-        "de": "Der Rafael Barias Club gewinnt seinen fünften Titel in seiner Geschichte beim Superior District Basketball Tournament",
-        "en": "Rafael Barias Club wins fifth title in its history in the Superior District Basketball Tournament",
-        "fr": "Le club Rafael Barias remporte son cinquième titre dans son histoire lors du tournoi de basket-ball du district supérieur",
-        "ht": "Rafael Barias Club ranpòte senkyèm nan istwa li nan Tounwa Baskètbòl Distri Siperyè a"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. Der Rafael Barias Club gewann an diesem Freitag den fünften Meistertitel in seiner Geschichte von...",
-        "en": "This article was originally published in El Día. Santo Domingo. The Rafael Barias club won this Friday the fifth championship title in its history of...",
-        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. Le club Rafael Barias a remporté ce vendredi, le cinquième titre de champion de son histoire de...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo. Klèb Rafael Barias la te genyen vandredi sa a, senkyèm chanpyona nan istwa li..."
-      }
-    },
-    {
-      "title": "Participación Ciudadana propone paridad electoral 50-50",
-      "url": "https://almomento.net/participacion-ciudadana-propone-paridad-electoral-50-50/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- Participación Ciudadana propuso establecer una distribución paritaria de 50 % de mujeres y 50 % de hombres en las candidaturas a diputaciones…",
-      "image": "",
-      "published": "2026-11-21T06:00:52+00:00",
-      "translations": {
-        "de": "Bürgerbeteiligung schlägt eine 50:50-Wahlparität vor",
-        "en": "Citizen Participation proposes 50-50 electoral parity",
-        "fr": "La participation citoyenne propose une parité électorale 50-50",
-        "ht": "Patisipasyon Sitwayen pwopoze yon parite elektoral 50-50"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Die Bürgerbeteiligung schlug vor, eine gleiche Verteilung von 50 % Frauen und 50 % Männern bei den Kandidaten für Abgeordnete einzuführen...",
-        "en": "SANTO DOMINGO.- Citizen Participation proposed establishing an equal distribution of 50% women and 50% men in the candidacies for deputies...",
-        "fr": "SANTO DOMINGO.- La Participation citoyenne a proposé d’établir une répartition égale de 50 % de femmes et 50 % d’hommes dans les candidatures aux députés...",
-        "ht": "SANTO DOMINGO.- Patisipasyon Sitwayen te pwopoze etabli yon distribisyon egal 50% fanm ak 50% gason nan kandida depite yo..."
-      }
-    },
-    {
-      "title": "Bajan precios 4 combustibles; los de cinco se quedan iguales",
-      "url": "https://almomento.net/1168659-2/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- El Gobierno de la República Dominicana rebajó los precios de cuatro combustibles y dejó los demás en el mismo nivel que han tenido durante la semana…",
-      "image": "",
-      "published": "2026-11-21T06:00:47+00:00",
-      "translations": {
-        "de": "Die Preise fallen für vier Kraftstoffe; die für fünf bleiben gleich",
-        "en": "Prices drop for 4 fuels; those for five remain the same",
-        "fr": "Les prix baissent pour 4 carburants ; ceux pour cinq restent les mêmes",
-        "ht": "Pri pou 4 gaz bese; pri pou senk yo rete menm jan an"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Die Regierung der Dominikanischen Republik hat die Preise für vier Kraftstoffe gesenkt und die anderen auf dem Niveau gehalten, das sie in der Woche hatten...",
-        "en": "SANTO DOMINGO.- The Government of the Dominican Republic lowered the prices of four fuels and left the others at the same level they had during the week...",
-        "fr": "SANTO DOMINGO.- Le gouvernement de la République dominicaine a baissé les prix de quatre carburants et a maintenu les autres au même niveau qu’au cours de la semaine...",
-        "ht": "SANTO DOMINGO.- Gouvènman Repiblik Dominikèn nan bese pri kat gaz epi kite lòt yo nan menm nivo yo te genyen pandan semèn nan..."
-      }
-    },
-    {
-      "title": "Licey, Gigantes y Estrellas salen victoriosos en béisbol de la RD",
-      "url": "https://almomento.net/licey-gigantes-y-estrellas-salen-victoriosos-en-beisbol-de-la-rd/",
-      "source": "AlMomento",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- Los Tigres del Licey, Gigantes del Cibao y Estrellas Orientales consiguieron triunfos este viernes en la continuación del campeonato de béisbol…",
-      "image": "",
-      "published": "2026-11-21T06:00:30+00:00",
-      "translations": {
-        "de": "Licey, Giants und Stars gehen im Baseball in der DR als Sieger hervor",
-        "en": "Licey, Giants, and Stars emerge victorious in baseball in the DR",
-        "fr": "Licey, Giants et Stars sortent victorieux du baseball en RD",
-        "ht": "Licey, Giants, ak Stars sòti viktorye nan bezbòl nan DR"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Die Tigres del Licey, Gigantes del Cibao und Estrellas Orientales feierten an diesem Freitag Siege im Rahmen der Fortsetzung der Baseball-Meisterschaft...",
-        "en": "SANTO DOMINGO.- The Tigres del Licey, Gigantes del Cibao, and Estrellas Orientales achieved victories this Friday in the continuation of the baseball championship...",
-        "fr": "SANTO DOMINGO.- Les Tigres del Licey, Gigantes del Cibao et Estrellas Orientales ont remporté des victoires ce vendredi dans la poursuite du championnat de baseball...",
-        "ht": "SANTO DOMINGO.- Tigres del Licey, Gigantes del Cibao, ak Estrellas Orientales yo reyalize viktwa vandredi sa a nan kontinyasyon chanpyona bezbòl la..."
-      }
-    },
-    {
-      "title": "R.Dominicana aplasta Argentina Panamericano Sub-12 Beisbol",
-      "url": "https://almomento.net/r-dominicana-aplasta-argentina-panamericano-sub-12-beisbol/",
-      "source": "AlMomento",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "EL TORO, San Antonio de Guerra.– La selección de República Dominicana debutó con una contundente victoria 26-1 sobre Argentina, en cuatro entradas, durante la…",
-      "image": "",
-      "published": "2026-11-21T05:00:29+00:00",
-      "translations": {
-        "de": "Die Republik Dominikanische Republik vernichtet Argentinien Panamerikanische U-12 Baseball",
-        "en": "R. Dominican Republic crushes Argentina Pan American U-12 Baseball",
-        "fr": "La République dominicaine écrase l’équipe panaméricaine argentine U-12",
-        "ht": "R. Repiblik Dominikèn kraze Ajantin Pan Ameriken U-12 Baseball"
-      },
-      "preview_translations": {
-        "de": "EL TORO, San Antonio de Guerra.– Die Nationalmannschaft der Dominikanischen Republik debütierte mit einem überwältigenden 26:1-Sieg über Argentinien in vier Innings, während der...",
-        "en": "EL TORO, San Antonio de Guerra.– The Dominican Republic national team debuted with a resounding 26-1 victory over Argentina, in four innings, during the...",
-        "fr": "EL TORO, San Antonio de Guerra.– L’équipe nationale de la République dominicaine a fait ses débuts avec une victoire éclatante 26-1 contre l’Argentine, en quatre manches, durant le...",
-        "ht": "EL TORO, San Antonio de Guerra.– Ekip nasyonal Repiblik Dominikèn nan te fè premye aparisyon li ak yon viktwa klè 26-1 kont Ajantin, nan kat innings, pandan..."
-      }
-    },
-    {
-      "title": "RD prevé alcanzar 800 MW de almacenamiento eléctrico 2028",
-      "url": "https://almomento.net/rd-preve-alcanzar-800-mw-de-almacenamiento-electrico-2028/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– La República Dominicana prevé alcanzar al menos 800 megavatios (MW) de capacidad de almacenamiento de energía en baterías antes de 2028, como parte…",
-      "image": "",
-      "published": "2026-11-21T05:00:15+00:00",
-      "translations": {
-        "de": "RD plant, bis 2028 eine Stromspeicherkapazität von 800 MW zu erreichen",
-        "en": "RD plans to reach 800 MW of electricity storage by 2028",
-        "fr": "RD prévoit d’atteindre 800 MW de stockage d’électricité d’ici 2028",
-        "ht": "RD planifye pou rive nan 800 MW depo elektrisite an 2028"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.– Die Dominikanische Republik erwartet, bis 2028 mindestens 800 Megawatt (MW) Batteriespeicherkapazität zu erreichen, im Rahmen von...",
-        "en": "SANTO DOMINGO.– The Dominican Republic expects to reach at least 800 megawatts (MW) of battery energy storage capacity before 2028, as part of...",
-        "fr": "SANTO DOMINGO.– La République dominicaine prévoit d’atteindre au moins 800 mégawatts (MW) de capacité de stockage d’énergie par batterie d’ici 2028, dans le cadre de...",
-        "ht": "SANTO DOMINGO.– Repiblik Dominikèn espere rive nan omwen 800 megawatt (MW) kapasite depo enèji batri anvan 2028, kòm yon pati nan..."
-      }
-    },
-    {
-      "title": "Milagros Ortiz Bosch pide convención de ideas en el PRM",
-      "url": "https://almomento.net/milagros-ortiz-bosch-pide-convencion-de-ideas-en-el-prm/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- La dirigente del Partido Revolucionario Moderno (PRM), Milagros Ortiz Bosch, abogó por que la próxima convención de esa organización sea un espacio…",
-      "image": "",
-      "published": "2026-11-21T05:00:01+00:00",
-      "translations": {
-        "de": "Milagros Ortiz Bosch fordert eine Ideenkonvention bei der PRM",
-        "en": "Milagros Ortiz Bosch calls for a convention of ideas at the PRM",
-        "fr": "Milagros Ortiz Bosch appelle à une convention d’idées au PRM",
-        "ht": "Milagros Ortiz Bosch rele pou yon konvansyon ide nan PRM"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Der Vorsitzende der Modernen Revolutionären Partei (PRM), Milagros Ortiz Bosch, setzte sich dafür ein, dass der nächste Kongress dieser Organisation ein Raum werden sollte...",
-        "en": "SANTO DOMINGO.- The leader of the Modern Revolutionary Party (PRM), Milagros Ortiz Bosch, advocated for the next convention of that organization to be a space...",
-        "fr": "SANTO DOMINGO.- Le leader du Parti révolutionnaire moderne (PRM), Milagros Ortiz Bosch, a plaidé pour que la prochaine convention de cette organisation soit une convention...",
-        "ht": "SANTO DOMINGO.- Lidè Pati Revolisyonè Modèn (PRM), Milagros Ortiz Bosch, te defann pou pwochen konvansyon òganizasyon sa a ta dwe yon espas..."
-      }
-    },
-    {
-      "title": "Licey vence 8-4 a los Toros y consigue su segunda victoria consecutiva",
-      "url": "https://noticiassin.com/deportes/beisbol/2026/11/21/licey-vence-8-4-a-los-toros-y-suma-su-segunda-victoria-seguida-2174422/",
-      "source": "Noticias SIN",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Licey superó 8-4 a los Toros con 12 hits y sumó su segunda victoria seguida en la temporada.",
-      "image": "",
-      "published": "2026-11-21T04:33:22+00:00",
-      "translations": {
-        "de": "Licey besiegt die Toros mit 8:4 und sichert sich den zweiten Sieg in Folge",
-        "en": "Licey beats the Toros 8-4 and secures its second consecutive victory",
-        "fr": "Licey bat les Toros 8-4 et assure sa deuxième victoire consécutive",
-        "ht": "Licey bat Toros yo 8-4 epi asire dezyèm viktwa konsekitif li"
-      },
-      "preview_translations": {
-        "de": "Licey besiegte die Toros mit 8:4 mit 12 Hits und erzielte seinen zweiten Sieg in Folge der Saison.",
-        "en": "Licey defeated the Toros 8-4 with 12 hits and recorded his second consecutive win of the season.",
-        "fr": "Licey a battu les Toros 8-4 avec 12 coups sûrs et a enregistré sa deuxième victoire consécutive de la saison.",
-        "ht": "Licey bat Toros yo 8-4 ak 12 frape epi li anrejistre dezyèm viktwa konsekitif li nan sezon an."
-      }
-    },
-    {
-      "title": "Estrellas vencen 9-2 a las Águilas y suman cinco victorias consecutivas",
-      "url": "https://noticiassin.com/deportes/beisbol/2026/11/21/estrellas-vencen-9-2-a-aguilas-y-encadenan-cinco-triunfos-2174419/",
-      "source": "Noticias SIN",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Estrellas dominan 9-2 a las Águilas y alcanzan su quinta victoria seguida.",
-      "image": "",
-      "published": "2026-11-21T04:13:13+00:00",
-      "translations": {
-        "de": "Estrellas besiegte die Águilas mit 9:2 und hat fünf Spiele in Folge gewonnen",
-        "en": "Estrellas beat the Águilas 9-2 and have won five consecutive games",
-        "fr": "Estrellas a battu les Águilas 9-2 et a remporté cinq matchs consécutifs",
-        "ht": "Estrellas bat Águilas yo 9-2 epi yo genyen senk match youn apre lòt"
-      },
-      "preview_translations": {
-        "de": "Estrellas dominieren die Eagles mit 9:2 und erringen ihren fünften Sieg in Folge.",
-        "en": "Estrellas dominate the Eagles 9-2 and achieve their fifth consecutive win.",
-        "fr": "Les Estrellas dominent les Eagles 9-2 et décrochent leur cinquième victoire consécutive.",
-        "ht": "Estrellas domine Eagles yo 9-2 epi reyalize senkyèm viktwa youn apre lòt."
-      }
-    },
-    {
-      "title": "Valdez, Younan y Franco listos en noche combates en Teo Cruz",
-      "url": "https://almomento.net/valdez-younan-y-franco-listos-en-noche-combates-en-teo-cruz/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– Los boxeadores Pablo Valdez, Junior Younan y el dominicano Feudri Franco superaron satisfactoriamente el pesaje oficial y se declararon listos para…",
-      "image": "",
-      "published": "2026-11-21T04:03:26+00:00",
-      "translations": {
-        "de": "Valdez, Younan und Franco bereit für Kämpfe in Teo Cruz bei Nacht",
-        "en": "Valdez, Younan, and Franco ready for fights in Teo Cruz at night",
-        "fr": "Valdez, Younan et Franco prêts pour les combats à Teo Cruz la nuit",
-        "ht": "Valdez, Younan, ak Franco pare pou batay nan Teo Cruz nan mitan lannwit"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.– Die Boxer Pablo Valdez, Junior Younan und der Dominikaner Feudri Franco bestanden das offizielle Wiegen erfolgreich und erklärten sich bereit für...",
-        "en": "SANTO DOMINGO.– Boxers Pablo Valdez, Junior Younan, and Dominican Feudri Franco successfully passed the official weigh-in and declared themselves ready for...",
-        "fr": "SANTO DOMINGO.– Les boxeurs Pablo Valdez, Junior Younan et le Dominican Feudri Franco ont réussi la pesée officielle et se sont déclarés prêts pour...",
-        "ht": "SANTO DOMINGO.– Boksè Pablo Valdez, Junior Younan, ak Dominiken Feudri Franco te pase pwa ofisyèl la avèk siksè epi yo te deklare yo pare pou..."
-      }
-    },
-    {
-      "title": "El FBI investiga un nuevo ataque informático contra base de datos nacional, según CNN",
-      "url": "https://noticiassin.com/mundo/2026/11/21/el-fbi-investiga-un-nuevo-ataque-a-su-base-de-datos-criminal-2174414/",
-      "source": "Noticias SIN",
-      "category": "Gaming y tecnología",
-      "regions": [],
-      "preview": "El FBI investiga una aparente intrusión en su base de datos criminal, segundo incidente similar en meses.",
-      "image": "",
-      "published": "2026-11-21T03:46:11+00:00",
-      "translations": {
-        "de": "Das FBI untersucht einen neuen Cyberangriff auf eine nationale Datenbank, so CNN",
-        "en": "The FBI investigates a new cyberattack against a national database, according to CNN",
-        "fr": "Le FBI enquête sur une nouvelle cyberattaque visant une base de données nationale, selon CNN",
-        "ht": "FBI ap mennen ankèt sou yon nouvo atak cyber kont yon baz done nasyonal, dapre CNN"
-      },
-      "preview_translations": {
-        "de": "Das FBI ermittelt gegen einen scheinbaren Zugriff auf seine kriminelle Datenbank, den zweiten ähnlichen Vorfall seit Monaten.",
-        "en": "The FBI is investigating an apparent breach of its criminal database, the second similar incident in months.",
-        "fr": "Le FBI enquête sur une violation apparente de sa base de données criminelle, le deuxième incident similaire depuis des mois.",
-        "ht": "FBI ap mennen ankèt sou yon vyolasyon ki sanble nan baz done kriminèl li, dezyèm ensidan menm jan an depi plizyè mwa."
-      }
-    },
-    {
-      "title": "Rafael Barias conquista su quinto título en el TBS Distrito",
-      "url": "https://noticiassin.com/deportes/baloncesto/2026/11/21/rafael-barias-gana-su-quinto-titulo-en-el-tbs-distrito-2174409/",
-      "source": "Noticias SIN",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Rafael Barias sumó su quinto campeonato del TBS Distrito al vencer 4-2 al Mauricio Báez en la final de 2026.",
-      "image": "",
-      "published": "2026-11-21T03:38:07+00:00",
-      "translations": {
-        "de": "Rafael Barias gewinnt seinen fünften Titel im TBS Distrito",
-        "en": "Rafael Barias wins his fifth title in the TBS Distrito",
-        "fr": "Rafael Barias remporte son cinquième titre dans le TBS Distrito",
-        "ht": "Rafael Barias ranpòte senkyèm li nan TBS Distrito"
-      },
-      "preview_translations": {
-        "de": "Rafael Barias sicherte sich seinen fünften TBS Distrito Titel, indem er Mauricio Báez im Finale 2026 mit 4:2 besiegte.",
-        "en": "Rafael Barias added his fifth TBS Distrito championship by defeating Mauricio Báez 4-2 in the 2026 final.",
-        "fr": "Rafael Barias a ajouté son cinquième titre de champion TBS Distrito en battant Mauricio Báez 4-2 en finale 2026.",
-        "ht": "Rafael Barias te ajoute senkyèm chanpyona TBS Distrito li lè li te bat Mauricio Báez 4-2 nan final 2026 la."
-      }
-    },
-    {
-      "title": "Muere uno de los dos soldados salvadoreños heridos al manipular explosivo en Haití",
-      "url": "https://noticiassin.com/mundo/2026/11/21/muere-otro-soldado-salvadoreno-herido-al-manipular-explosivo-en-haiti-2174406/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Muere un segundo soldado salvadoreño herido en una detonación en Haití; ya son tres los militares fallecidos.",
-      "image": "",
-      "published": "2026-11-21T03:29:43+00:00",
-      "translations": {
-        "de": "Einer der beiden salvadorianischen Soldaten, die beim Umgang mit Sprengstoff verletzt wurden, stirbt in Haiti",
-        "en": "One of the two Salvadoran soldiers injured in handling explosives dies in Haiti",
-        "fr": "L’un des deux soldats salvadoriens blessés en manipulant des explosifs meurt en Haïti",
-        "ht": "Youn nan de sòlda Salvadoren ki blese pandan y ap manyen eksplozif mouri nan Ayiti"
-      },
-      "preview_translations": {
-        "de": "Ein zweiter salvadorianischer Soldat stirbt bei einer Detonation in Haiti verletzt; drei Soldaten sind inzwischen gestorben.",
-        "en": "A second Salvadoran soldier dies injured in a detonation in Haiti; three soldiers have now died.",
-        "fr": "Un second soldat salvadorien meurt blessé lors d’une explosion en Haïti ; trois soldats sont maintenant morts.",
-        "ht": "Yon dezyèm sòlda Salvadoren mouri blese nan yon eksplozyon nan Ayiti; twa sòlda mouri kounye a."
-      }
-    },
-    {
-      "title": "Abinader inaugura hospital en Nisibón; invierte 1,200 millones",
-      "url": "https://almomento.net/abinader-inaugura-hospital-en-nisibon-invierte-1200-millones/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "LA ALTAGRACIA.– El presidente Luis Abinader inauguró el Hospital de Las Lagunas de Nisibón, construido y equipado con una inversión superior a RD$1,200 millones…",
-      "image": "",
-      "published": "2026-11-21T03:00:08+00:00",
-      "translations": {
-        "de": "Abinader eröffnet Krankenhaus in Nisibon; investiert 1,2 Milliarden",
-        "en": "Abinader inaugurates hospital in Nisibon; invests 1.2 billion",
-        "fr": "Abinader inaugure un hôpital à Nisibon ; investit 1,2 milliard",
-        "ht": "Abinader inogire lopital nan Nisibon; envesti 1.2 milya dola"
-      },
-      "preview_translations": {
-        "de": "LA ALTAGRACIA.– Präsident Luis Abinader weihte das Krankenhaus von Las Lagunas de Nisibón ein, das mit einer Investition von über 1.200 Millionen RD$ gebaut und ausgestattet wurde...",
-        "en": "LA ALTAGRACIA.– President Luis Abinader inaugurated the Hospital of Las Lagunas de Nisibón, built and equipped with an investment exceeding RD$1,200 million...",
-        "fr": "LA ALTAGRACIA.– Le président Luis Abinader a inauguré l’Hôpital de Las Lagunas de Nisibón, construit et équipé grâce à un investissement dépassant 1 200 millions de RD$...",
-        "ht": "LA ALTAGRACIA.– Prezidan Luis Abinader te inogire Lopital Las Lagunas de Nisibón, bati ak ekipe ak yon envestisman ki depase RD$1,200 milyon..."
-      }
-    },
-    {
-      "title": "Fuerza de Supresión de Pandillas lamenta muerte de dos militares salvadoreños en Haití",
-      "url": "https://noticiassin.com/mundo/haiti/2026/11/21/gsf-lamenta-muerte-de-dos-militares-salvadorenos-en-haiti-2174378/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La GSF lamentó la muerte de dos militares salvadoreños en Haití tras una detonación al manipular explosivos.",
-      "image": "",
-      "published": "2026-11-21T02:58:49+00:00",
-      "translations": {
-        "de": "Gang Suppression Force trauert um den Tod zweier salvadorianischer Soldaten in Haiti",
-        "en": "Gang Suppression Force mourns the death of two Salvadoran soldiers in Haiti",
-        "fr": "La Force de répression des gangs pleure la mort de deux soldats salvadoriens en Haïti",
-        "ht": "Fòs Repwesyon Gang ap plede lanmò de sòlda Salvadoren nan Ayiti"
-      },
-      "preview_translations": {
-        "de": "Die GSF trauerte um den Tod von zwei salvadorianischen Soldaten in Haiti nach einer Detonation beim Umgang mit Sprengstoffen.",
-        "en": "The GSF mourned the death of two Salvadoran soldiers in Haiti after a detonation while handling explosives.",
-        "fr": "Le GSF a pleuré la mort de deux soldats salvadoriens en Haïti après une explosion lors de manipulation d’explosifs.",
-        "ht": "GSF te plenyen lanmò de sòlda Salvadoren nan Ayiti apre yon eksplozyon pandan y ap manyen eksplozif."
-      }
-    },
-    {
-      "title": "Gigantes blanquean 3-0 al Escogido y se afianzan en el cuarto lugar",
-      "url": "https://noticiassin.com/deportes/beisbol/2026/11/21/gigantes-blanquean-3-0-al-escogido-y-siguen-cuartos-en-lidom-2174397/",
-      "source": "Noticias SIN",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Gigantes vencen 3-0 al Escogido y siguen en el cuarto lugar del torneo.",
-      "image": "",
-      "published": "2026-11-21T02:57:43+00:00",
-      "translations": {
-        "de": "Die Giants besiegten Escogido mit 3:0 und sichern sich damit den vierten Platz",
-        "en": "Giants shut out Escogido 3-0 and consolidate fourth place",
-        "fr": "Les Giants ont écrasé Escogido 3-0 et ont consolidé la quatrième place",
-        "ht": "Giants yo fè Escogido 3-0 san pèmèt okenn pwen epi konsolide katriyèm plas la"
-      },
-      "preview_translations": {
-        "de": "Gigantes besiegte Escogido mit 3:0 und bleibt im Turnier auf dem vierten Platz.",
-        "en": "Gigantes beat Escogido 3-0 and remain in fourth place in the tournament.",
-        "fr": "Les Gigantes ont battu Escogido 3-0 et restent à la quatrième place du tournoi.",
-        "ht": "Gigantes bat Escogido 3-0 epi yo rete katriyèm nan tounwa a."
-      }
-    },
-    {
-      "title": "MP solicitará coerción contra regidor de Higüey por presunto narcotráfico",
-      "url": "https://noticiassin.com/videos/noticias-sin-emision-estelar/2026/11/21/ministerio-publico-pedira-coercion-contra-regidor-de-higuey-por-narcotrafico-2174387/",
-      "source": "Noticias SIN",
-      "category": "Seguridad",
-      "regions": [
-        "Higüey"
-      ],
-      "preview": "La solicitud será presentada ante los tribunales de la provincia La Altagracia, donde se conocerá el proceso contra los detenidos, entre ellos el edil del Partido…",
-      "image": "",
-      "published": "2026-11-21T02:48:52+00:00",
-      "translations": {
-        "de": "Der Abgeordnete wird Zwang gegen den Bürgermeister von Higüey wegen mutmaßlichen Drogenhandels beantragen",
-        "en": "MP will request coercion against Higüey mayor for alleged drug trafficking",
-        "fr": "Le député demandera une contrainte contre le maire de Higüey pour présumé trafic de drogue",
-        "ht": "Depite a pral mande fòs kont majistra Higüey pou trafik dwòg akizasyon"
-      },
-      "preview_translations": {
-        "de": "Der Antrag wird den Gerichten der Provinz La Altagracia vorgelegt, wo der Fall gegen die Inhaftierten verhandelt wird, einschließlich des Rats des Partido...",
-        "en": "The request will be submitted to the courts of the province of La Altagracia, where the case against the detainees will be heard, including the councilor of the Partido...",
-        "fr": "La demande sera soumise aux tribunaux de la province de La Altagracia, où l’affaire contre les détenus sera entendue, y compris le conseiller du Partido...",
-        "ht": "Demann lan ap soumèt devan tribinal pwovens La Altagracia, kote ka kont detni yo ap tande, enkli konseye Partido a..."
-      }
-    },
-    {
-      "title": "Abadina reconoce al ministro de Deportes Kelvin Cruz por su gestión",
-      "url": "https://noticiassin.com/deportes/baloncesto/2026/11/21/abadina-reconoce-a-kelvin-cruz-por-su-gestion-en-deportes-2174389/",
-      "source": "Noticias SIN",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Abadina distinguió a Kelvin Cruz por su labor al frente del Ministerio de Deportes.",
-      "image": "",
-      "published": "2026-11-21T02:43:18+00:00",
-      "translations": {
-        "de": "Abadina dankt dem Sportminister Kelvin Cruz für seine Führung",
-        "en": "Abadina acknowledges the Minister of Sports Kelvin Cruz for his management",
-        "fr": "Abadina remercie le ministre des Sports, Kelvin Cruz, pour sa gestion",
-        "ht": "Abadina remèsye Minis Espò Kelvin Cruz pou jesyon li"
-      },
-      "preview_translations": {
-        "de": "Abadina ehrte Kelvin Cruz für seine Arbeit an der Spitze des Sportministeriums.",
-        "en": "Abadina honored Kelvin Cruz for his work leading the Ministry of Sports.",
-        "fr": "Abadina a honoré Kelvin Cruz pour son travail à la tête du ministère des Sports.",
-        "ht": "Abadina te onore Kelvin Cruz pou travay li nan dirije Ministè Espò a."
-      }
-    },
-    {
-      "title": "Explosión deja dos muertos y dos heridos entre militares salvadoreños en Haití",
-      "url": "https://noticiassin.com/videos/noticias-sin-emision-estelar/2026/11/21/explosion-en-haiti-deja-dos-militares-salvadorenos-muertos-y-dos-heridos-2174380/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Dos soldados salvadoreños murieron y otros dos resultaron heridos por una explosión en un campamento militar en Haití.",
-      "image": "",
-      "published": "2026-11-21T02:28:06+00:00",
-      "translations": {
-        "de": "Eine Explosion hinterlässt zwei Tote und zwei Verletzte unter salvadorianischen Soldaten in Haiti",
-        "en": "Explosion leaves two dead and two injured among Salvadoran soldiers in Haiti",
-        "fr": "L’explosion fait deux morts et deux blessés parmi les soldats salvadoriens en Haïti",
-        "ht": "Eksplozyon an kite de sòlda Salvadoren mouri ak de blese nan Ayiti"
-      },
-      "preview_translations": {
-        "de": "Zwei salvadorianische Soldaten kamen ums Leben und zwei weitere wurden bei einer Explosion in einem Militärlager in Haiti verletzt.",
-        "en": "Two Salvadoran soldiers died and two others were injured by an explosion in a military camp in Haiti.",
-        "fr": "Deux soldats salvadoriens sont morts et deux autres ont été blessés par une explosion dans un camp militaire en Haïti.",
-        "ht": "De sòlda Salvadoren mouri epi de lòt blese nan yon eksplozyon nan yon kan militè nan Ayiti."
-      }
-    },
-    {
-      "title": "Un sismo de 6,7 sacude el centro de Perú y se siente en Lima, sin daños por el momento",
-      "url": "https://eldia.com.do/un-sismo-de-67-sacude-el-centro-de-peru-y-se-siente-en-lima-sin-danos-por-el-momento/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Lima (EFE).- Un sismo de magnitud 6,7 sacudió este viernes la región peruana de Junín, limítrofe con el…",
-      "image": "",
-      "published": "2026-11-21T02:00:30+00:00",
-      "translations": {
-        "de": "Ein Erdbeben der Stärke 6,7 erschüttert Zentral-Peru und ist in Lima zu spüren, bisher ohne Schäden",
-        "en": "A 6.7 magnitude earthquake shakes central Peru and is felt in Lima, with no damage so far",
-        "fr": "Un tremblement de terre de magnitude 6,7 secoue le centre du Pérou et se fait sentir à Lima, sans dégâts jusqu’à présent",
-        "ht": "Yon tranblemanntè 6.7 magnitid tranble santral Pewou e li santi nan Lima, san okenn domaj jiskaprezan"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Lima (EFE).- Ein Erdbeben der Magnitude 6,7 erschütterte an diesem Freitag die peruanische Region Junín und grenzt an das ...",
-        "en": "This article was originally published in El Día. Lima (EFE).- An earthquake of magnitude 6.7 shook the Peruvian region of Junín this Friday, bordering the...",
-        "fr": "Cet article a été initialement publié dans El Día. Lima (EFE).- Un tremblement de terre de magnitude 6,7 a secoué la région péruvienne de Junín ce vendredi, à la frontière du...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. Lima (EFE).- Yon tranblemanntè ki gen yon magnitid 6.7 te souke rejyon Junín nan Peri vandredi sa a, ki bò fwontyè a..."
-      }
-    },
-    {
-      "title": "R. Dominicana gana 27 medallas en Centroamericano de Boliche",
-      "url": "https://almomento.net/r-dominicana-gana-27-medallas-en-centroamericano-de-boliche/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– La selección dominicana de boliche conquistó 27 medallas, distribuidas en siete de oro, siete de plata y 13 de bronce, durante su participación en…",
-      "image": "",
-      "published": "2026-11-21T02:00:19+00:00",
-      "translations": {
-        "de": "Die Dominikanische Republik gewinnt 27 Medaillen bei der Zentralamerikanischen Bowlingmeisterschaft",
-        "en": "The Dominican Republic wins 27 medals at the Central American Bowling Championship",
-        "fr": "La République dominicaine remporte 27 médailles au Championnat centraméricain de bowling",
-        "ht": "Repiblik Dominikèn genyen 27 meday nan Chanpyona Bowling Amerik Santral la"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.– Die dominikanische Bowlingnationalmannschaft gewann 27 Medaillen, verteilt auf sieben Gold-, sieben Silber- und 13 Bronzemedaillen, während ihrer Teilnahme an...",
-        "en": "SANTO DOMINGO.– The Dominican national bowling team won 27 medals, distributed as seven gold, seven silver, and 13 bronze, during their participation in...",
-        "fr": "SANTO DOMINGO.– L’équipe nationale dominicaine de bowling a remporté 27 médailles, distribuées en sept or, sept argent et 13 bronze, lors de sa participation à...",
-        "ht": "SANTO DOMINGO.– Ekip nasyonal boul Dominikèn nan te genyen 27 meday, ki te distribye kòm sèt lò, sèt ajan, ak 13 bwonz, pandan patisipasyon yo nan..."
-      }
-    },
-    {
-      "title": "La DNCD incauta 225 paquetes de cocaína en las costas de Baní",
-      "url": "https://almomento.net/la-dncd-incauta-225-paquetes-de-cocaina-en-las-costas-de-bani/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "PERAVIA.– Agentes de la Dirección Nacional de Control de Drogas (DNCD), junto a efectivos de la Armada Dominicana y la Fuerza Aérea, se incautaron 225 paquetes de…",
-      "image": "",
-      "published": "2026-11-21T02:00:14+00:00",
-      "translations": {
-        "de": "Die DNCD beschlagnahmt 225 Packungen Kokain vor der Küste von Baní",
-        "en": "The DNCD seizes 225 packages of cocaine off the coast of Baní",
-        "fr": "Le DNCD saisit 225 paquets de cocaïne au large des côtes de Baní",
-        "ht": "DNCD sezi 225 pake kokayin bò kòt Baní"
-      },
-      "preview_translations": {
-        "de": "PERAVIA.– Agenten der Nationalen Direktion für Drogenkontrolle (DNCD) beschlagnahmten zusammen mit Personal der Dominikanischen Marine und der Luftwaffe 225 Pakete von...",
-        "en": "PERAVIA.– Agents from the National Directorate of Drug Control (DNCD), together with personnel from the Dominican Navy and the Air Force, seized 225 packages of...",
-        "fr": "PERAVIA.– Des agents de la Direction nationale de contrôle de la drogue (DNCD), ainsi que du personnel de la marine dominicaine et de l’armée de l’air, ont saisi 225 colis de...",
-        "ht": "PERAVIA.– Ajan Direksyon Nasyonal Kontwòl Dwòg (DNCD), ansanm ak pèsonèl Marin Dominikèn ak Lame Ayeryen an, te sezi 225 pake..."
-      }
-    },
-    {
-      "title": "Yeni Berenice ordena investigar a fondo muerte de Melissa Medina \"sin importar quiénes sean los investigados\"",
-      "url": "https://eldia.com.do/yeni-berenice-ordena-investigar-a-fondo-muerte-de-melissa-medina-sin-importar-quienes-sean-los-investigados/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– La procuradora general de la República, Yeni Berenice Reynoso, ordenó profundizar las…",
-      "image": "",
-      "published": "2026-11-21T01:54:48+00:00",
-      "translations": {
-        "de": "Yeni Berenice ordnet eine gründliche Untersuchung des Todes von Melissa Medina an \"unabhängig davon, wer die Verdächtigen sind\"",
-        "en": "Yeni Berenice orders a thorough investigation into the death of Melissa Medina \"regardless of who the suspects are\"",
-        "fr": "Yeni Berenice ordonne une enquête approfondie sur la mort de Melissa Medina « peu importe qui sont les suspects »",
-        "ht": "Yeni Berenice bay lòd pou yon ankèt apwofondi sou lanmò Melissa Medina \"kèlkeswa kiyès sispèk yo ye\""
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo.– Die Generalstaatsanwältin der Republik, Yeni Berenice Reynoso, ordnete eine tiefere Untersuchung der ...",
-        "en": "This article was originally published in El Día. Santo Domingo.– The Attorney General of the Republic, Yeni Berenice Reynoso, ordered a deeper investigation of the...",
-        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. – La procureure générale de la République, Yeni Berenice Reynoso, a ordonné une enquête plus approfondie sur le...",
-        "ht": "Atik sa a te pibliye okòmansman nan El Día. Santo Domingo.– Avoka Jeneral Repiblik la, Yeni Berenice Reynoso, te bay lòd pou yon ankèt pi fon sou..."
-      }
-    },
-    {
-      "title": "Lizbeth de León conquista título Wellness de Fisicoculturismo",
-      "url": "https://almomento.net/lizbeth-de-leon-conquista-titulo-wellness-de-fisicoculturismo/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– La atleta dominicana Lizbeth de León se proclamó campeona de la categoría Wellness el pasado domingo 15 de noviembre, durante una competencia…",
-      "image": "",
-      "published": "2026-11-21T01:45:03+00:00",
-      "translations": {
-        "de": "Lizbeth de León gewinnt den Wellness-Titel im Bodybuilding",
-        "en": "Lizbeth de León wins the Wellness title in Bodybuilding",
-        "fr": "Lizbeth de León remporte le titre de Bien-être en culturisme",
-        "ht": "Lizbeth de León genyen Byennèt nan Kulturism"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.– Die dominikanische Athletin Lizbeth de León wurde am vergangenen Sonntag, den 15. November, während eines Wettbewerbs zur Siegerin in der Wellness-Kategorie gekrönt...",
-        "en": "SANTO DOMINGO.– The Dominican athlete Lizbeth de León was crowned champion of the Wellness category last Sunday, November 15, during a competition...",
-        "fr": "SANTO DOMINGO.– L’athlète dominicaine Lizbeth de León a été couronnée championne de la catégorie Bien-être dimanche dernier, le 15 novembre, lors d’une compétition...",
-        "ht": "SANTO DOMINGO.– Atlèt Dominiken Lizbeth de León te vin chanpyon nan kategori Byennèt dimanch pase a, 15 novanm, pandan yon konpetisyon..."
-      }
-    },
-    {
-      "title": "Nuevas imágenes revelan los últimos momentos de Melissa Medina antes de su fallecimiento",
-      "url": "https://eldia.com.do/nuevas-imagenes-revelan-los-ultimos-momentos-de-melissa-medina-antes-de-su-fallecimiento/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– Nuevas imágenes de las cámaras de seguridad de la torre Arpel 07, divulgadas por la Policía…",
-      "image": "",
-      "published": "2026-11-21T00:51:24+00:00",
-      "translations": {
-        "de": "Neue Bilder zeigen Melissa Medinas letzte Momente vor ihrem Tod",
-        "en": "New images reveal Melissa Medina's final moments before her death",
-        "fr": "De nouvelles images révèlent les derniers instants de Melissa Medina avant sa mort",
-        "ht": "Nouvo imaj revele dènye moman Melissa Medina anvan lanmò li"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo.– Neue Bilder der Überwachungskameras des Arpel-07-Turms, veröffentlicht von der Polizei...",
-        "en": "This article was originally published in El Día. Santo Domingo.– New images from the security cameras of the Arpel 07 tower, released by the Police...",
-        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo.– Nouvelles images des caméras de sécurité de la tour Arpel 07, publiées par la police...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo.– Nouvo imaj soti nan kamera sekirite gwo kay Arpel 07 la, pibliye pa Polis la..."
-      }
-    },
-    {
-      "title": "Torre de Piantini donde murió Melissa Medina es la misma en la que fallecieron una madre y su hijo en junio",
-      "url": "https://eldia.com.do/torre-de-piantini-donde-murio-melissa-medina-es-la-misma-en-la-que-fallecieron-una-madre-y-su-hijo-en-junio/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La torre Arpel 07, ubicada en el ensanche Piantini, del Distrito Nacional, donde murió la joven Melissa Medina…",
-      "image": "",
-      "published": "2026-11-21T00:19:57+00:00",
-      "translations": {
-        "de": "Der Piantini-Turm, in dem Melissa Medina starb, ist derselbe, in dem im Juni eine Mutter und ihr Sohn starben",
-        "en": "The Piantini Tower where Melissa Medina died is the same one where a mother and her son died in June",
-        "fr": "La tour Piantini où Melissa Medina est morte est la même où une mère et son fils sont morts en juin",
-        "ht": "Piantini Tower kote Melissa Medina te mouri a se menm kote yon manman ak pitit gason li te mouri nan mwa jen"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Der Turm Arpel 07, gelegen im Erweiterungsgebiet Piantini im Nationalbezirk, wo die junge Melissa Medina starb...",
-        "en": "This article was originally published in El Día. The Arpel 07 tower, located in the Piantini expansion area, in the National District, where the young Melissa Medina died...",
-        "fr": "Cet article a été initialement publié dans El Día. La tour Arpel 07, située dans la zone d’expansion de Piantini, dans le District National, où la jeune Melissa Medina est décédée...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. Gwo kay Arpel 07 la, ki chita nan zòn ekspansyon Piantini, nan Distri Nasyonal la, kote jèn Melissa Medina te mouri..."
-      }
-    },
-    {
-      "title": "El videojuego GTA VI rompe récords y genera 3.790 millones de dólares en su primer día a la venta",
-      "url": "https://eldia.com.do/el-videojuego-gta-vi-rompe-records-y-genera-3-790-millones-de-dolares-en-su-primer-dia-a-la-venta/",
-      "source": "El Día",
-      "category": "Gaming y tecnología",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Nueva York (EFE).- El videojuego ‘Grand Theft Auto VI’ alcanzó 3.790 millones de dólares en ventas durante su…",
-      "image": "",
-      "published": "2026-11-21T00:06:30+00:00",
-      "translations": {
-        "de": "Das Videospiel GTA VI bricht Rekorde und generiert am ersten Verkaufstag 3,79 Milliarden Dollar",
-        "en": "The video game GTA VI breaks records and generates 3.79 billion dollars on its first day of sales",
-        "fr": "Le jeu vidéo GTA VI bat des records et génère 3,79 milliards de dollars dès son premier jour de ventes",
-        "ht": "Jwèt videyo GTA VI bat rekò epi li jenere 3.79 milya dola nan premye jou vant li"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. New York (EFE).- Das Videospiel \"Grand Theft Auto VI\" erzielte während seiner...",
-        "en": "This article was originally published in El Día. New York (EFE).- The video game 'Grand Theft Auto VI' reached 3.79 billion dollars in sales during its...",
-        "fr": "Cet article a été initialement publié dans El Día. New York (EFE). - Le jeu vidéo « Grand Theft Auto VI » a atteint 3,79 milliards de dollars de ventes durant son...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. New York (EFE).- Jwèt videyo 'Grand Theft Auto VI' te rive vann 3.79 milya dola pandan..."
-      }
-    },
-    {
-      "title": "Caso Melissa Medina: Policía confirma que solo ha entrevistado a su acompañante y al vigilante de la torre",
-      "url": "https://eldia.com.do/caso-melissa-medina-policia-confirma-que-solo-ha-entrevistado-a-su-acompanante-y-al-vigilante-de-la-torre/",
-      "source": "El Día",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– La Policía Nacional informó que, hasta el momento, las únicas personas entrevistadas como parte…",
-      "image": "",
-      "published": "2026-11-21T00:03:43+00:00",
-      "translations": {
-        "de": "Fall Melissa Medina: Die Polizei bestätigt, dass sie nur ihren Begleiter und den Turmwächter befragt haben",
-        "en": "Melissa Medina Case: Police confirm they have only interviewed her companion and the tower guard",
-        "fr": "Affaire Melissa Medina : La police confirme qu’elle n’a interrogé que son compagnon et le garde de la tour",
-        "ht": "Ka Melissa Medina: Polis konfime yo sèlman entèvyouve konpayon li ak gad gwo kay la"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo.– Die Nationalpolizei berichtete, dass bisher die einzigen im Rahmen befragten Personen ...",
-        "en": "This article was originally published in El Día. Santo Domingo.– The National Police reported that, so far, the only people interviewed as part...",
-        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. – La Police nationale a rapporté que, jusqu’à présent, les seules personnes interrogées faisaient partie de...",
-        "ht": "Atik sa a te pibliye orijinalman nan El Día. Santo Domingo.– Polis Nasyonal la rapòte ke, jiskaprezan, sèl moun ki te entèvyouve kòm yon pati..."
-      }
-    },
-    {
-      "title": "Autopista del Ámbar abrirá nuevas oportunidades para comerciantes y trabajadores de Puerto Plata",
-      "url": "https://eltiempo.com.do/nacionales/autopista-del-ambar-abrira-nuevas-oportunidades-para-comerciantes-y-trabajadores-de-puerto-plata/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [
-        "Puerto Plata"
-      ],
-      "preview": "Punta Cana. La construcción de la Autopista del Ámbar representa una oportunidad para mejorar el... La entrada Autopista del Ámbar abrirá nuevas oportunidades para…",
-      "image": "",
-      "published": "2026-11-21T00:00:00+00:00",
-      "translations": {
-        "de": "Der Amber Highway wird neue Möglichkeiten für Händler und Arbeiter in Puerto Plata eröffnen",
-        "en": "Amber Highway will open new opportunities for merchants and workers in Puerto Plata",
-        "fr": "Amber Highway ouvrira de nouvelles opportunités aux commerçants et aux travailleurs de Puerto Plata",
-        "ht": "Amber Highway pral louvri nouvo opòtinite pou machann ak travayè nan Puerto Plata"
-      },
-      "preview_translations": {
-        "de": "Punta Cana. Der Bau des Amber Highway stellt eine Chance dar, das ... zu verbessern. Der Eingang zur Amber Highway wird neue Möglichkeiten eröffnen für...",
-        "en": "Punta Cana. The construction of the Amber Highway represents an opportunity to improve the... The Amber Highway entrance will open new opportunities for...",
-        "fr": "Punta Cana. La construction de l’Amber Highway représente une opportunité d’améliorer le... L’entrée de l’Amber Highway ouvrira de nouvelles opportunités pour...",
-        "ht": "Punta Cana. Konstriksyon Amber Highway reprezante yon opòtinite pou amelyore... Antre Amber Highway la ap louvri nouvo opòtinite pou..."
-      }
-    },
-    {
-      "title": "Estrellas vencen 9-2 a las Águilas y suman seis triunfos",
-      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/20/estrellas-vencen-9-2-a-las-aguilas-y-suman-seis-triunfos/3727323",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Las Estrellas Orientales extendieron a seis sus victorias consecutivas en el orden cronológico de sus últimos partidos, al derrotar 9-2 a las Águilas Cibaeñas, que…",
-      "image": "https://resources.diariolibre.com/images/2025/03/17/whatsapp-image-2025-03-17-at-080837-95f1f524-focus-min0.02-0.76-400-300.jpg",
-      "published": "2026-11-20T23:51:00+00:00",
-      "translations": {
-        "de": "Estrellas besiegte die Águilas mit 9:2 und hat sechs Spiele gewonnen",
-        "en": "Estrellas beat the Águilas 9-2 and have won six games",
-        "fr": "Estrellas a battu les Águilas 9-2 et a remporté six matchs",
-        "ht": "Estrellas bat Águilas yo 9-2 epi yo genyen sis match"
-      }
-    },
-    {
-      "title": "Científicos desarrollan un peine electrónico experimental que podría ayudar a combatir la calvicie",
-      "url": "https://eltiempo.com.do/variedades/cientificos-desarrollan-un-peine-electronico-experimental-que-podria-ayudar-a-combatir-la-calvicie/",
-      "source": "El Tiempo",
-      "category": "Ciencia",
-      "regions": [],
-      "preview": "Punta Cana. Una nueva investigación científica abre una posibilidad para las personas que enfrentan la... La entrada Científicos desarrollan un peine electrónico…",
-      "image": "",
-      "published": "2026-11-20T23:48:00+00:00",
-      "translations": {
-        "de": "Wissenschaftler entwickeln einen experimentellen elektronischen Kamm, der helfen könnte, Glatzkopf zu bekämpfen",
-        "en": "Scientists develop an experimental electronic comb that could help combat baldness",
-        "fr": "Les scientifiques développent un peigne électronique expérimental qui pourrait aider à combattre la calvitie",
-        "ht": "Syantis yo devlope yon peny elektwonik eksperimantal ki ta ka ede konbat kalvisi"
-      },
-      "preview_translations": {
-        "de": "Punta Cana. Eine neue wissenschaftliche Untersuchung eröffnet eine Möglichkeit für Menschen, die mit dem... konfrontiert sind. Der Beitrag Wissenschaftler entwickeln einen elektronischen Kamm...",
-        "en": "Punta Cana. A new scientific investigation opens a possibility for people facing the... The post Scientists develop an electronic comb...",
-        "fr": "Punta Cana. Une nouvelle enquête scientifique ouvre une possibilité pour les personnes confrontées à... Le post Les scientifiques développent un peigne électronique...",
-        "ht": "Punta Cana. Yon nouvo ankèt syantifik ouvè yon posiblite pou moun k ap fè fas a... Atik la Syantis devlope yon peny elektwonik..."
-      }
-    },
-    {
-      "title": "Licey supera 8-4 a los Toros y se pone a un juego del primer lugar",
-      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/20/licey-supera-8-4-a-los-toros-y-se-pone-a-un-juego-del-primer-lugar/3727315",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Los Tigres del Licey se impusieron 8-4 a los Toros del Este, luego de recuperarse de una desventaja temprana y tomar definitivamente el control del encuentro con…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/licey-supera-8-4-a-los-toros-y-se-pone-a-un-juego-del-primer-lugar-215ce2ab-focus-0.04-0.48-400-300.jpg",
-      "published": "2026-11-20T23:42:00+00:00",
-      "translations": {
-        "de": "Licey besiegt die Toros mit 8:4 und rückt damit nur ein Spiel hinter den ersten Platz vor",
-        "en": "Licey beats the Toros 8-4 and moves within one game of first place",
-        "fr": "Licey bat les Toros 8-4 et se retrouve à un match de la première place",
-        "ht": "Licey bat Toros yo 8-4 epi li pwoche a yon sèl jwèt de premye plas la"
-      }
-    },
-    {
-      "title": "Anadive inaugura su feria en la Ciudad Ganadera con motivo de su 40 aniversario",
-      "url": "https://eldia.com.do/anadive-inaugura-su-feria-en-la-ciudad-ganadera-con-motivo-de-su-40-aniversario/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- La Asociación Nacional de Agencias Distribuidoras de Vehículos (ANADIVE) con motivo de su 40…",
-      "image": "",
-      "published": "2026-11-20T23:40:38+00:00",
-      "translations": {
-        "de": "Anadive eröffnet seine Messe anlässlich ihres 40-jährigen Jubiläums in der Viehstadt",
-        "en": "Anadive inaugurates its fair in the Livestock City on the occasion of its 40th anniversary",
-        "fr": "Anadive inaugure sa foire dans la Cité du Bétail à l’occasion de son 40e anniversaire",
-        "ht": "Anadive inogire fwa li nan Vil Bèt la nan okazyon 40yèm anivèsè li"
-      },
-      "preview_translations": {
-        "de": "Dieser Artikel wurde ursprünglich in El Día veröffentlicht. Santo Domingo. - Die Nationale Vereinigung der Fahrzeugverteilungsagenturen (ANADIVE) anlässlich ihres 40. Bestehens...",
-        "en": "This article was originally published in El Día. Santo Domingo.- The National Association of Vehicle Distribution Agencies (ANADIVE) on the occasion of its 40th...",
-        "fr": "Cet article a été initialement publié dans El Día. Santo Domingo. - L’Association Nationale des Agences de Distribution de Véhicules (ANADIVE) à l’occasion de son 40e jour...",
-        "ht": "Atik sa a te pibliye okòmansman nan El Día. Santo Domingo.- Asosyasyon Nasyonal Ajans Distribisyon Machin (ANADIVE) nan okazyon 40yèm li..."
-      }
-    },
-    {
-      "title": "Filoyen inicia construcción de Emerald Towers en Santiago",
-      "url": "https://eldia.com.do/filoyen-inicia-construccion-de-emerald-towers-en-santiago/",
-      "source": "El Día",
-      "category": "Vivienda",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santiago. – Ingeniería Filoyen SRL inició la construcción de Emerald Towers by Filoyen, un proyecto residencial…",
-      "image": "",
-      "published": "2026-11-20T23:35:31+00:00",
-      "translations": {
-        "de": "Filoyen beginnt mit dem Bau der Smaragdtürme in Santiago",
-        "en": "Filoyen begins construction of Emerald Towers in Santiago",
-        "fr": "Filoyen commence la construction des Tours d’Émeraude à Santiago",
-        "ht": "Filoyen kòmanse konstriksyon Emerald Towers nan Santiago"
-      }
-    },
-    {
-      "title": "Rafael Barias conquista su quinta corona al vencer 83-76 al Mauricio",
-      "url": "https://www.diariolibre.com/deportes/baloncesto/2026/11/20/rafael-barias-conquista-su-quinta-corona-al-vencer-83-76-al-mauricio/3727329",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "La rivalidad entre Rafael Barias y Mauricio Báez escribió otro capítulo en el baloncesto superior del Distrito Nacional. El conjunto de Villa Consuelo derrotó 83-76…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/rafael-barias-conquista-su-quinta-corona-al-vencer-83-76-al-mauricio-994603a7-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T23:34:00+00:00",
-      "translations": {
-        "de": "Rafael Barias gewinnt seinen fünften Titel, indem er Mauritius mit 83:76 besiegt",
-        "en": "Rafael Barias wins his fifth crown by defeating Mauritius 83-76",
-        "fr": "Rafael Barias remporte son cinquième titre en battant Maurice 83-76",
-        "ht": "Rafael Barias ranpòte senkyèm kouwòn li lè li bat Moris 83-76"
-      }
-    },
-    {
-      "title": "Haití acuerda construir tres cárceles con empresas salvadoreñas",
-      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/20/haiti-acuerda-construir-tres-carceles-con-empresas-salvadorenas/3727303",
-      "source": "Diario Libre",
-      "category": "Economía",
-      "regions": [],
-      "preview": "El Gobierno de Haití anunció este viernes un acuerdo con El Salvador para construir tres nuevas cárceles en territorio haitiano, con la participación de una empresa…",
-      "image": "https://resources.diariolibre.com/images/2026/11/20/fuerza-antipandillas-despliega-tropas-en-haiti-93ae24c3-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T23:25:00+00:00",
-      "translations": {
-        "de": "Haiti erklärt sich bereit, drei Gefängnisse mit salvadorianischen Firmen zu bauen",
-        "en": "Haiti agrees to build three prisons with Salvadoran companies",
-        "fr": "Haïti accepte de construire trois prisons avec des entreprises salvadoriennes",
-        "ht": "Ayiti dakò bati twa prizon ak konpayi Salvadoren"
-      }
-    },
-    {
-      "title": "\"¡Que viva la bachata!\": Prince Royce y Romeo Santos ganan premio a Canción Latina en LOS40 Music Awards en Barcelona",
-      "url": "https://eldia.com.do/que-viva-la-bachataprince-royce-y-romeo-santos-ganan-premio-a-cancion-latina-en-los40-music-awards-en-barcelona/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Los artistas dominicanos Prince Royce y Romeo Santos celebraron la bachata durante su participación en LOS40…",
-      "image": "",
-      "published": "2026-11-20T23:16:20+00:00",
-      "translations": {
-        "de": "\"Lang lebe die Bachata!\": Prinz Royce und Romeo Santos gewinnen den Latin Song Award bei den LOS40 Music Awards in Barcelona",
-        "en": "\"Long live bachata!\": Prince Royce and Romeo Santos win Latin Song award at the LOS40 Music Awards in Barcelona",
-        "fr": "« Vive la bachata ! » : Le prince Royce et Romeo Santos remportent le prix de la chanson latine aux LOS40 Music Awards à Barcelone",
-        "ht": "\"Viv bachata!\": Prince Royce ak Romeo Santos genyen pri Latin Song nan LOS40 Music Awards nan Barcelona"
-      }
-    },
-    {
-      "title": "Yankees dejan libre a Luis Gil, dos años después de ser Novato del Año",
-      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/20/yankees-dejan-libre-a-luis-gil-dos-anos-despues-de-ser-novato-del-ano/3727292",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "En apenas dos años, la trayectoria de Luis Gil en los Yankees de Nueva York dio un giro drástico: de ser coronado Novato del Año de la Liga Americana en 2024 a…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/yankees-dejan-libre-a-luis-gil-dos-anos-despues-de-ser-novato-del-ano-581c0ec9-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T23:16:00+00:00",
-      "translations": {
-        "de": "Die Yankees entlassen Luis Gil, zwei Jahre nachdem sie zum Rookie des Jahres ernannt worden waren",
-        "en": "Yankees release Luis Gil, two years after being named Rookie of the Year",
-        "fr": "Les Yankees libérent Luis Gil, deux ans après avoir été nommé Rookie de l’année",
-        "ht": "Yankees lage Luis Gil, de zan apre yo te nonmen Rookie of the Year"
-      }
-    },
-    {
-      "title": "Colombiana recorre Punta Cana en motocicleta y se fascina con los piropos dominicanos",
-      "url": "https://bavarodigital.net/colombiana-recorre-punta-cana-en-motocicleta-y-se-fascina-con-los-piropos-dominicanos/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [
-        "Punta Cana"
-      ],
-      "preview": "BÁVARO–PUNTA CANA.— La creadora de contenido colombiana Isabela compartió un divertido video de su recorrido en motocicleta por distintas calles de Bávaro–Punta…",
-      "image": "",
-      "published": "2026-11-20T23:12:33+00:00",
-      "translations": {
-        "de": "Eine kolumbianische Frau fährt Motorrad durch Punta Cana und ist fasziniert von dominikanischen Komplimenten",
-        "en": "Colombian woman rides motorcycle around Punta Cana and is fascinated by Dominican compliments",
-        "fr": "Une femme colombienne fait du tour à moto à Punta Cana et est fascinée par les compliments dominicains",
-        "ht": "Yon fanm Kolonbyen ap monte motosiklèt nan Punta Cana epi li sezi pa konpliman Dominiken yo"
-      }
-    },
-    {
-      "title": "Caso Melissa Medina: las interrogantes que siguen sin respuesta",
-      "url": "https://www.diariolibre.com/actualidad/sucesos/2026/11/20/caso-melissa-medina-las-interrogantes-que-siguen-sin-respuesta/3727291",
+      "title": "Las horas por aclarar en caso de Melissa Medina",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/21/las-horas-por-aclarar-en-caso-de-melissa-medina/3727564",
       "source": "Diario Libre",
       "category": "Actualidad",
       "regions": [],
-      "preview": "La muerte de la influencer Melissa Medina, de 22 años, mantiene la atención sobre una investigación que ha llamado la atención de la sociedad por los elementos que…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/caso-melissa-medina-las-interrogantes-que-siguen-sin-respuesta-f7d21e31-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T23:12:00+00:00",
+      "preview": "A las 5:30 de la madrugada del martes 17 de noviembre, según el médico que la recibió, Melissa Medina llegó sin signos vitales a la clínica Corazones Unidos. Un…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/las-horas-por-aclarar-en-caso-de-melisa-medina-67dc8022-focus-min0.05-0.44-400-300.jpg",
+      "published": "2026-11-21T10:57:00+00:00",
       "translations": {
-        "de": "Melissa Medina Fall: Die Fragen, die noch unbeantwortet bleiben",
-        "en": "Melissa Medina Case: the questions that remain unanswered",
-        "fr": "Melissa Medina Case : les questions qui restent sans réponse",
-        "ht": "Ka Melissa Medina: kesyon ki rete san repons"
+        "de": "Die Stunden zur Klärung im Fall Melissa Medina",
+        "en": "The hours to clarify in Melissa Medina's case",
+        "fr": "Les heures à clarifier dans l’affaire Melissa Medina",
+        "ht": "Lè pou klarifye nan ka Melissa Medina a"
       }
     },
     {
-      "title": "Cuatro de cada 10 hombres ejercen violencia en el país",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/20/cuatro-de-cada-10-hombres-ejercen-violencia-en-el-pais/3727104",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El 43.8 % de los hombres que participaron en una consulta del Ministerio de la Mujer reconoció haber ejercido al menos una conducta violenta durante el último año…",
-      "image": "https://resources.diariolibre.com/images/binrepository/shutterstock-1202402896_10928730_20181122102536-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T23:01:00+00:00",
-      "translations": {
-        "de": "Vier von zehn Männern begehen Gewalt im Land",
-        "en": "Four out of ten men commit violence in the country",
-        "fr": "Quatre hommes sur dix commettent des violences dans le pays",
-        "ht": "Katriyèm sou dis gason komèt vyolans nan peyi a"
-      }
-    },
-    {
-      "title": "Desplazamiento laboral por inteligencia artificial en gobiernos",
-      "url": "https://www.diariolibre.com/politica/gobierno/2026/11/20/desplazamiento-laboral-por-inteligencia-artificial-en-gobiernos/3727109",
-      "source": "Diario Libre",
-      "category": "Gaming y tecnología",
-      "regions": [],
-      "preview": "El avance de la inteligencia artificial (IA) haría desaparecer numerosos puestos de trabajo en la administración pública, lo que plantea a los gobiernos el desafío…",
-      "image": "https://resources.diariolibre.com/images/2026/11/20/desplazamiento-laboral-por-inteligencia-artificial-en-gobiernos-b61e3ec8-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T23:00:00+00:00",
-      "translations": {
-        "de": "Arbeitsverdrängung durch künstliche Intelligenz in Regierungen",
-        "en": "Labor displacement due to artificial intelligence in governments",
-        "fr": "Suppression de la main-d’œuvre due à l’intelligence artificielle dans les gouvernements",
-        "ht": "Deplasman travayè akoz entèlijans atifisyèl nan gouvènman yo"
-      }
-    },
-    {
-      "title": "Persecución por aire, mar y tierra termina con incautación de 225 paquetes de cocaína en Baní",
-      "url": "https://eldia.com.do/persecucion-por-aire-mar-y-tierra-termina-con-incautacion-de-225-paquetes-de-droga-en-bani/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– Un cargamento de 225 paquetes de presunta cocaína fue ocupado por agentes de la Dirección…",
-      "image": "",
-      "published": "2026-11-20T22:45:34+00:00",
-      "translations": {
-        "de": "Die Verfolgung durch Luft, See und Land endet mit der Beschlagnahmung von 225 Packungen Kokain in Baní",
-        "en": "Pursuit by air, sea, and land ends with seizure of 225 packages of cocaine in Baní",
-        "fr": "La poursuite par avion, par mer et par voie terrestre se termine par la saisie de 225 paquets de cocaïne à Baní",
-        "ht": "Pouswit pa lè, lanmè, ak tè fini ak sezi 225 pake kokayin nan Baní"
-      }
-    },
-    {
-      "title": "\"¿Qué le da a la gente tanto valor en las redes?\": la dura reflexión de David Ortiz tras la muerte de Melissa Medina",
-      "url": "https://eldia.com.do/que-le-da-a-la-gente-tanto-valor-en-las-redes-la-dura-reflexion-de-david-ortiz-tras-la-muerte-de-melissa-medina/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– El expelotero dominicano David Ortiz cuestionó las críticas y comentarios que han circulado en…",
-      "image": "",
-      "published": "2026-11-20T22:21:49+00:00",
-      "translations": {
-        "de": "\"Was verleiht den Menschen in sozialen Medien so viel Wert?\": David Ortiz' harte Reflexion nach dem Tod von Melissa Medina",
-        "en": "\"What gives people so much value on social media?\": David Ortiz's harsh reflection after the death of Melissa Medina",
-        "fr": "« Qu’est-ce qui donne autant de valeur aux gens sur les réseaux sociaux ? » : la réflexion dure de David Ortiz après la mort de Melissa Medina",
-        "ht": "\"Kisa ki bay moun tèlman valè sou rezo sosyal yo?\": refleksyon sevè David Ortiz apre lanmò Melissa Medina"
-      }
-    },
-    {
-      "title": "Asesinato periodista Costa Rica genera alarma libertad de prensa",
-      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/20/asesinato-periodista-costa-rica-genera-alarma-libertad-de-prensa/3727271",
+      "title": "Los hombres más buscados por homicidios en Santiago",
+      "url": "https://www.diariolibre.com/actualidad/sucesos/2026/11/21/los-hombres-mas-buscados-por-homicidios-en-santiago/3727548",
       "source": "Diario Libre",
       "category": "Seguridad",
       "regions": [],
-      "preview": "El asesinato del periodista costarricense Camilo Rodríguez, quien denunciaba nexos entre narcotraficantes y políticos, es una \"señal de alarma\" en medio del…",
-      "image": "https://resources.diariolibre.com/images/2026/11/17/asesinato-de-periodista-en-costa-rica-por-vinculos-con-narcotrafico-e5238cb4-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T22:21:00+00:00",
+      "preview": "La Policía Nacional identificó a diez hombres que figuran entre los más buscados por su presunta vinculación con homicidios, asesinatos y otros hechos violentos en…",
+      "image": "https://resources.diariolibre.com/images/2026/11/21/los-hombres-mas-buscados-por-homicidios-en-santiago-b7fba45e-focus-min0.13-0.59-400-300.jpg",
+      "published": "2026-11-21T10:43:00+00:00",
       "translations": {
-        "de": "Mord an Costa Rica Journalist schlägt Alarm hinsichtlich der Pressefreiheit",
-        "en": "Murder of Costa Rica journalist raises alarm about press freedom",
-        "fr": "Le meurtre d’un journaliste costaricain suscite l’alarme sur la liberté de la presse",
-        "ht": "Asasinay jounalis Kosta Rika leve alèt sou libète laprès"
-      }
-    },
-    {
-      "title": "Los Gigantes blanquean al Escogido para defender la cuarta plaza",
-      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/20/los-gigantes-blanquean-al-escogido-para-defender-la-cuarta-plaza/3727276",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "El zurdo estadounidense Jake Eder limitó al Escogido a solo un hit en cinco entradas y Carlos Jorge disparó un doblete que produjo dos vueltas para ayudar a los…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/los-gigantes-blanquean-al-escogido-para-defender-la-cuarta-plaza-77b63348-focus-0.07-0.6-400-300.jpg",
-      "published": "2026-11-20T22:20:00+00:00",
-      "translations": {
-        "de": "Die Giants besiegten den Escogido ohne Gegentor und verteidigten damit den vierten Platz",
-        "en": "The Giants shut out the Escogido to defend fourth place",
-        "fr": "Les Giants ont tenu l’Escogido sans but pour défendre la quatrième place",
-        "ht": "Giants yo te fè Escogido san pwen pou defann katriyèm plas la"
-      }
-    },
-    {
-      "title": "Militares salvadoreños muertos en Haití tras explosión",
-      "url": "https://www.diariolibre.com/mundo/haiti/2026/11/20/militares-salvadorenos-muertos-en-haiti-tras-explosion/3727266",
-      "source": "Diario Libre",
-      "category": "Mundo",
-      "regions": [],
-      "preview": "La Fuerza de Supresión de Pandillas (GSF, por su sigla en inglés) expresó este viernes sus condolencias por la muerte de dos militares salvadoreños mientras…",
-      "image": "https://resources.diariolibre.com/images/2025/09/12/crisis-en-haiti-42-asesinados-por-bandas-armadas-en-puerto-principe-e0372ca8-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T22:14:00+00:00",
-      "translations": {
-        "de": "Salvadorianische Soldaten, die nach einer Explosion in Haiti getötet wurden",
-        "en": "Salvadoran soldiers killed in Haiti after explosion",
-        "fr": "Soldats salvadoriens tués en Haïti après une explosion",
-        "ht": "Sòlda Salvadoren mouri nan Ayiti apre yon eksplozyon"
-      }
-    },
-    {
-      "title": "\"Hay muchos intereses\": regidora advierte que sigue la extracción ilegal en Baní pese a denuncias",
-      "url": "https://eldia.com.do/hay-muchos-intereses-regidora-advierte-que-sigue-la-extraccion-ilegal-en-bani-pese-a-denuncias/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- La extracción de agregados en el municipio de Baní continúa siendo motivo de preocupación para…",
-      "image": "",
-      "published": "2026-11-20T22:10:00+00:00",
-      "translations": {
-        "de": "\"Es gibt viele Interessen\": Ratsmitglied warnt, dass die illegale Abbau in Baní trotz Beschwerden weitergeht",
-        "en": "\"There are many interests\": councilor warns that illegal extraction in Baní continues despite complaints",
-        "fr": "« Il y a de nombreux intérêts » : le conseiller avertit que l’extraction illégale à Baní se poursuit malgré les plaintes",
-        "ht": "\"Gen anpil enterè\": konseye a avèti ke ekstraksyon ilegal nan Baní ap kontinye malgre plent yo"
-      }
-    },
-    {
-      "title": "Regulación de robots asesinos en debate en ONU",
-      "url": "https://www.diariolibre.com/mundo/estados-unidos/2026/11/20/regulacion-de-robots-asesinos-en-debate-en-onu/3727262",
-      "source": "Diario Libre",
-      "category": "Mundo",
-      "regions": [],
-      "preview": "La conferencia de la ONU sobre los \"robots asesinos\" se extendió hasta la madrugada de este sábado en Ginebra, donde los Estados siguen buscando un acuerdo sobre el…",
-      "image": "https://resources.diariolibre.com/images/2026/09/23/milei-dice-que-la-onu-organizacion-inutil-alimenta-casta-parasitos-f325d88d-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T22:07:00+00:00",
-      "translations": {
-        "de": "Regulierung von Killerrobotern zur Debatte bei den Vereinten Nationen",
-        "en": "Regulation of killer robots under debate at the UN",
-        "fr": "Réglementation des robots tueurs en débat à l’ONU",
-        "ht": "Regilasyon robo asasen yo ap diskite nan Nasyonzini"
-      }
-    },
-    {
-      "title": "Juegos Inclusivos dejan fortalecimiento en la igualdad y la integración social",
-      "url": "https://eltiempo.com.do/deportes/juegos-inclusivos-dejan-fortalecimiento-en-la-igualdad-y-la-integracion-social/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Punta Cana. La celebración de los Primeros Juegos Inclusivos República Dominicana 2026 dejó un importante... La entrada Juegos Inclusivos dejan fortalecimiento en…",
-      "image": "",
-      "published": "2026-11-20T22:00:00+00:00",
-      "translations": {
-        "de": "Inklusive Spiele stärken Gleichheit und soziale Integration",
-        "en": "Inclusive Games strengthen equality and social integration",
-        "fr": "Les jeux inclusifs renforcent l’égalité et l’intégration sociale",
-        "ht": "Jwèt Enklizif yo ranfòse egalite ak entegrasyon sosyal"
-      }
-    },
-    {
-      "title": "Cuatro hoteles de Marriott en Punta Cana y Cap Cana se unen para reconocer la fidelidad de sus clientes",
-      "url": "https://bavarodigital.net/cuatro-hoteles-de-marriott-en-punta-cana-y-cap-cana-se-unen-para-reconocer-la-fidelidad-de-sus-clientes/",
-      "source": "Bávaro Digital",
-      "category": "Turismo",
-      "regions": [
-        "Punta Cana"
-      ],
-      "preview": "PUNTA CANA, LA ALTAGRACIA.— Cuatro importantes propiedades hoteleras de Punta Cana y Cap Cana unieron esfuerzos para celebrar una jornada especial de agradecimiento…",
-      "image": "",
-      "published": "2026-11-20T21:49:30+00:00",
-      "translations": {
-        "de": "Vier Marriott-Hotels in Punta Cana und Cap Cana bündeln ihre Kräfte, um die Loyalität ihrer Kunden zu würdigen",
-        "en": "Four Marriott hotels in Punta Cana and Cap Cana join forces to recognize their customers' loyalty",
-        "fr": "Quatre hôtels Marriott à Punta Cana et Cap Cana unissent leurs forces pour reconnaître la fidélité de leurs clients",
-        "ht": "Katre otèl Marriott nan Punta Cana ak Cap Cana mete tèt yo ansanm pou rekonèt fidelite kliyan yo"
-      }
-    },
-    {
-      "title": "Tienda Mary celebra la Navidad con su tradicional Friends and Family Appreciation Christmas Even",
-      "url": "https://eldia.com.do/tienda-mary-celebra-la-navidad-con-su-tradicional-friends-and-family-appreciation-christmas-even/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – En un ambiente lleno de alegría y espíritu navideño, Tienda Mary celebró su tradicional…",
-      "image": "",
-      "published": "2026-11-20T21:48:18+00:00",
-      "translations": {
-        "de": "Mary Store feiert Weihnachten mit seinem traditionellen Friends and Family Appreciation Christmas Even",
-        "en": "Mary Store celebrates Christmas with its traditional Friends and Family Appreciation Christmas Even",
-        "fr": "Mary Store célèbre Noël avec son traditionnel « Amis et famille » Appréciation de Noël",
-        "ht": "Mary Store selebre Nwèl ak tradisyonèl Apresyasyon Zanmi ak Fanmi Nwèl Menm"
-      }
-    },
-    {
-      "title": "Ohtani entra al club de los contratos vitalicios junto a Jordan y CR7",
-      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/20/ohtani-entra-al-club-de-los-contratos-vitalicios-junto-a-jordan-y-cr7/3727252",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Con la firma de un contrato de patrocinio vitalicio con New Balance, Shohei Ohtani ingresó oficialmente al reducido y elitista círculo de íconos globales del…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/ohtani-entra-al-club-de-los-contratos-vitalicios-junto-a-jordan-y-cr7-092caa9c-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T21:47:00+00:00",
-      "translations": {
-        "de": "Ohtani schließt sich dem Club der lebenslangen Verträge neben Jordan und CR7 an",
-        "en": "Ohtani joins the club of lifetime contracts alongside Jordan and CR7",
-        "fr": "Ohtani rejoint le club des contrats à vie aux côtés de Jordan et CR7",
-        "ht": "Ohtani rantre nan klib kontra pou tout lavi ansanm ak Jordan ak CR7"
-      }
-    },
-    {
-      "title": "Poder Judicial ampliará tribunales civiles de Santo Domingo Este para agilizar la justicia",
-      "url": "https://eldia.com.do/poder-judicial-ampliara-tribunales-civiles-de-santo-domingo-este-para-agilizar-la-justicia/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [
-        "Santo Domingo"
-      ],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El Consejo del Poder Judicial aprobó la reorganización de las salas civiles y de familia de…",
-      "image": "",
-      "published": "2026-11-20T21:40:00+00:00",
-      "translations": {
-        "de": "Die Justiz wird die Zivilgerichte in Santo Domingo Este ausweiten, um die Justiz zu beschleunigen",
-        "en": "The Judiciary will expand civil courts in Santo Domingo Este to speed up justice",
-        "fr": "La magistrature étendra les tribunaux civils à Santo Domingo Este pour accélérer la justice",
-        "ht": "Jidisyè a pral elaji tribinal sivil nan Santo Domingo Este pou akselere jistis"
-      }
-    },
-    {
-      "title": "Jóvenes europeos alzan la voz por mejores escuelas, docentes y oportunidades educativas",
-      "url": "https://eltiempo.com.do/internacionales/jovenes-europeos-alzan-la-voz-por-mejores-escuelas-docentes-y-oportunidades-educativas/",
-      "source": "El Tiempo",
-      "category": "Educación",
-      "regions": [],
-      "preview": "Punta Cana. Miles de estudiantes de España, Francia, Alemania, Italia y Grecia se movilizaron este... La entrada Jóvenes europeos alzan la voz por mejores escuelas…",
-      "image": "",
-      "published": "2026-11-20T21:40:00+00:00",
-      "translations": {
-        "de": "Junge Europäer erheben ihre Stimme für bessere Schulen, Lehrer und Bildungschancen",
-        "en": "Young Europeans raise their voices for better schools, teachers, and educational opportunities",
-        "fr": "Les jeunes Européens élèvent la voix pour de meilleures écoles, de meilleurs enseignants et de meilleures opportunités éducatives",
-        "ht": "Jèn Ewopeyen leve vwa yo pou pi bon lekòl, pwofesè, ak opòtinite edikatif"
-      }
-    },
-    {
-      "title": "Periodistas de ADOMPRETUR conocen desde dentro el corazón energético de Punta Cana durante visita a CEPM",
-      "url": "https://bavarodigital.net/periodistas-de-adompretur-conocen-desde-dentro-el-corazon-energetico-de-punta-cana-durante-visita-a-cepm/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [
-        "Punta Cana"
-      ],
-      "preview": "BÁVARO, PUNTA CANA, LA ALTAGRACIA.— Una delegación de la Asociación Dominicana de Prensa Turística (ADOMPRETUR) realizó este viernes 20 de noviembre una visita a…",
-      "image": "",
-      "published": "2026-11-20T21:32:57+00:00",
-      "translations": {
-        "de": "ADOMPRETUR-Journalisten lernen das energiegeladene Herz von Punta Cana von innen kennen während eines Besuchs beim CEPM",
-        "en": "ADOMPRETUR journalists get to know the energetic heart of Punta Cana from the inside during a visit to CEPM",
-        "fr": "Les journalistes d’ADOMPRETUR découvrent de l’intérieur le cœur énergique de Punta Cana lors d’une visite au CEPM",
-        "ht": "Jounalis ADOMPRETUR yo aprann kè enèjik Punta Cana soti anndan pandan yon vizit nan CEPM"
-      }
-    },
-    {
-      "title": "Senador Omar Fernández defiende deportaciones",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/20/senador-omar-fernandez-defiende-deportaciones/3727245",
-      "source": "Diario Libre",
-      "category": "Política",
-      "regions": [],
-      "preview": "El senador del Distrito Nacional, Omar Fernández, reiteró su posición a favor de deportar a los extranjeros que ingresen de manera irregular a República Dominicana…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/senador-omar-fernandez-defiende-deportaciones-3a9090f3-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T21:25:00+00:00",
-      "translations": {
-        "de": "Senator Omar Fernández verteidigt Abschiebungen",
-        "en": "Senator Omar Fernández defends deportations",
-        "fr": "Le sénateur Omar Fernández défend les expulsions",
-        "ht": "Senatè Omar Fernández defann depòtasyon"
-      }
-    },
-    {
-      "title": "Yeni Berenice Reynoso instruye sobre muerte de Melissa Medina",
-      "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/20/yeni-berenice-reynoso-instruye-sobre-muerte-de-melissa-medina/3727240",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La procuradora general de la República, Yeni Berenice Reynoso, instruyó este viernes a la Dirección General de Persecución y a la Fiscalía del Distrito Nacional a…",
-      "image": "https://resources.diariolibre.com/images/2025/03/05/wasacs-c929e1fe-937d-4798-b12b-63ef1d822bb5-aba8d728-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T21:12:00+00:00",
-      "translations": {
-        "de": "Yeni Berenice Reynoso untersucht den Tod von Melissa Medina",
-        "en": "Yeni Berenice Reynoso investigates the death of Melissa Medina",
-        "fr": "Yeni Berenice Reynoso enquête sur la mort de Melissa Medina",
-        "ht": "Yeni Berenice Reynoso ap mennen ankèt sou lanmò Melissa Medina"
-      }
-    },
-    {
-      "title": "Nueva herramienta de la DGII ayuda a emprendedores a formalizar sus negocios",
-      "url": "https://eltiempo.com.do/economia/nueva-herramienta-de-la-dgii-ayuda-a-emprendedores-a-formalizar-sus-negocios/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Punta Cana. La Dirección General de Impuestos Internos (DGII) cuenta con la aplicación “1,2,3,4”, una... La entrada Nueva herramienta de la DGII ayuda a…",
-      "image": "",
-      "published": "2026-11-20T21:00:00+00:00",
-      "translations": {
-        "de": "Neues DGII-Tool hilft Unternehmern, ihre Unternehmen zu formalisieren",
-        "en": "New DGII tool helps entrepreneurs formalize their businesses",
-        "fr": "Le nouvel outil DGII aide les entrepreneurs à formaliser leurs activités",
-        "ht": "Nouvo zouti DGII ede antreprenè yo fòmèlman òganize biznis yo"
-      }
-    },
-    {
-      "title": "Cooperación jurídica internacional permite arresto en Colombia de vinculado a red desmantelada con Operación Rompeolas",
-      "url": "https://eltiempo.com.do/en-el-este/cooperacion-juridica-internacional-permite-arresto-en-colombia-de-vinculado-a-red-desmantelada-con-operacion-rompeolas/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Punta Cana. Los mecanismos de cooperación jurídica internacional utilizados por el Ministerio Público permitieron el... La entrada Cooperación jurídica…",
-      "image": "",
-      "published": "2026-11-20T20:47:31+00:00",
-      "translations": {
-        "de": "Internationale rechtliche Zusammenarbeit ermöglicht in Kolumbien die Festnahme einer Person, die mit einem mit der Operation Breakwater aufgelösten Netzwerk verbunden ist",
-        "en": "International legal cooperation allows arrest in Colombia of someone linked to a network dismantled with Operation Breakwater",
-        "fr": "La coopération juridique internationale permet l’arrestation en Colombie de quelqu’un lié à un réseau démantelé lors de l’opération Digue",
-        "ht": "Koperasyon legal entènasyonal pèmèt arestasyon nan Kolonbi yon moun ki gen lyen ak yon rezo ki te demantle ak Operasyon Breakwater"
-      }
-    },
-    {
-      "title": "Video de Melissa Medina revela momentos previos a su fallecimiento",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/20/video-de-melissa-medina-revela-momentos-previos-a-su-fallecimiento/3727228",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La Policía Nacional reveló este viernes un video captado por las cámaras de seguridad que muestra los últimos momentos de Melissa Medina, quien falleció el pasado…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/video-de-melissa-medina-revela-momentos-previos-a-su-fallecimiento-af047638-focus-0-0-400-300.jpg",
-      "published": "2026-11-20T20:46:00+00:00",
-      "translations": {
-        "de": "Melissa Medinas Video zeigt Momente vor ihrem Tod",
-        "en": "Melissa Medina's video reveals moments before her death",
-        "fr": "La vidéo de Melissa Medina révèle quelques instants avant sa mort",
-        "ht": "Videyo Melissa Medina a revele kèk moman anvan lanmò li"
-      }
-    },
-    {
-      "title": "Luis Castillo busca recuperar su mejor nivel tras llegar a Colorado",
-      "url": "https://eltiempo.com.do/deportes/luis-castillo-busca-recuperar-su-mejor-nivel-tras-llegar-a-colorado/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Punta Cana. El lanzador dominicano Luis Castillo iniciará una nueva etapa en las Grandes Ligas... La entrada Luis Castillo busca recuperar su mejor nivel tras…",
-      "image": "",
-      "published": "2026-11-20T20:45:00+00:00",
-      "translations": {
-        "de": "Luis Castillo versucht, seine beste Form nach seiner Ankunft in Colorado wiederzufinden",
-        "en": "Luis Castillo seeks to regain his best form after arriving in Colorado",
-        "fr": "Luis Castillo cherche à retrouver sa meilleure forme après son arrivée au Colorado",
-        "ht": "Luis Castillo ap chèche rekipere pi bon fòm li apre li rive Colorado"
+        "de": "Die Männer, die in Santiago am meisten wegen Morddelikten gesucht werden",
+        "en": "The men most wanted for homicides in Santiago",
+        "fr": "Les hommes les plus recherchés pour des homicides à Santiago",
+        "ht": "Mesye ki pi chache pou asasinay nan Santiago"
       }
     }
   ]
