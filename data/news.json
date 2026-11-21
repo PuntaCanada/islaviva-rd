@@ -1,6 +1,28 @@
 {
-  "updated": "2026-11-21T21:07:30.510336+00:00",
-  "source_status": "ok",
+  "updated": "2026-11-21T21:09:45.210738+00:00",
+  "source_status": "partial",
+  "source_diagnostics": {
+    "feeds_successful": 14,
+    "feeds_configured": 15,
+    "publishers": {
+      "AlMomento": 17,
+      "Bávaro Digital": 8,
+      "Diario Libre": 12,
+      "El Día": 15,
+      "El Tiempo": 5,
+      "Noticias SIN": 10,
+      "Punta Cana Post": 5
+    },
+    "with_image_url": 12,
+    "with_region": 11
+  },
+  "failed_feeds": [
+    {
+      "source": "Hoy",
+      "url": "https://hoy.com.do/feed/",
+      "reason": "HTTPError"
+    }
+  ],
   "items": [
     {
       "title": "Paz en liquidación",
