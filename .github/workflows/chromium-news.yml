@@ -1,0 +1,47 @@
+name: Chromium desktop and smartphone news regression
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'assets/**'
+      - 'index.html'
+      - 'de/index.html'
+      - 'tests/chromium-news.mjs'
+      - '.github/workflows/chromium-news.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser-news:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install pinned Playwright and open-source Chromium
+        run: |
+          npm install --no-save --no-audit --no-fund playwright@1.56.1
+          npx playwright install --with-deps chromium
+      - name: Start deterministic static website
+        run: |
+          python -m http.server 8765 --bind 127.0.0.1 >/tmp/islaviva-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:8765/ >/dev/null && exit 0
+            sleep 1
+          done
+          exit 1
+      - name: Run actual Chromium desktop and smartphone checks
+        run: node tests/chromium-news.mjs
+      - name: Upload screenshots on pass or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: islaviva-chromium-screenshots
+          path: artifacts/chromium/
+          if-no-files-found: warn
+          retention-days: 7
