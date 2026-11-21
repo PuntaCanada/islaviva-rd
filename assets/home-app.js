@@ -31,7 +31,7 @@ function renderRoadNotices(){
    })();
    const title=(lang==='es'?n.title:n.translations?.[lang])||n.title;
    // Never present an un-translated Spanish preview as if it were in the chosen language.
-   const preview=(lang==='es'?n.preview:(safeTranslation?n.preview_translations?.[lang]:''))||'';
+   const preview=(lang==='es'?n.preview:n.preview_translations?.[lang])||'';
    const region=Array.isArray(n.regions)&&n.regions.length?n.regions.join(' / '):'República Dominicana';
    const date=n.published?new Date(n.published).toLocaleDateString(lang,{year:'numeric',month:'short',day:'numeric',timeZone:'America/Santo_Domingo'}):(n.effective_from||'');
    const status=n.kind==='official_announcement'?t.notice:t.media;
@@ -675,7 +675,7 @@ function newsActive(){
  const now=Date.now();
  return liveNews.filter(n=>{
   try{
-   const u=new URL(n.url);const host=u.hostname.replace(/^www\\./,'');
+   const u=new URL(n.url);const host=u.hostname.replace(/^www\./,'');
    const t=Date.parse(n.published||'');
    return Boolean(n.title) && u.protocol==='https:' && sourceHosts[host]===n.source &&
       Number.isFinite(t) && t<=now+1800000 && now-t<=48*3600000;

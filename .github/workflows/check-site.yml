@@ -40,6 +40,7 @@ jobs:
       - name: Validate shared website JavaScript and cached data
         run: |
           node --check assets/home-app.js
+          node --check scripts/verify-production.mjs
           node scripts/build-homepages.mjs --check
           node scripts/check-home-runtime.mjs
           python - <<'PY'
