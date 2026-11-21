@@ -34,6 +34,8 @@ jobs:
         run: python -m py_compile scripts/update_news.py scripts/update_weather.py scripts/news_quality.py scripts/update_roadworks.py scripts/update_local_notices.py tests/test_news_quality.py tests/test_roadworks.py tests/test_transport_fuel.py
       - name: Test news classification, duplicate removal and geographic relevance
         run: python -m unittest discover -s tests -p 'test_*.py' -v
+      - name: Verify candidate RSS parser rejects HTML (offline)
+        run: python scripts/probe-regional-rss.py --selftest
       - uses: actions/setup-node@v4
         with:
           node-version: '22'

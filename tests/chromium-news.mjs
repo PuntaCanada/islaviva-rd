@@ -109,6 +109,17 @@ try{
    await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
    await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
    ensure(await page.locator('#news-feed-health').getAttribute('data-status')==='partial','fresh RSS status did not recover');
+   // Reproduce a valid import where every original report has aged out.
+   // Stale content must NOT remain on screen when the JSON refreshes.
+   const originalDates=fixture.items.map(item=>item.published);
+   for(const item of fixture.items)item.published=new Date(Date.now()-49*3600000).toISOString();
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid .news-empty').waitFor({timeout:20000});
+   ensure(await page.locator('#news-grid a.story').count()===0,'expired reports remained visible');
+   fixture.items.forEach((item,index)=>{item.published=originalDates[index]});
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
+   ensure(await page.locator('#news-grid a.story').count()===4,'headlines did not recover after fresh import');
    const links=await page.locator('#news-grid a.story').evaluateAll(nodes=>nodes.map(x=>({
       target:x.getAttribute('target'),rel:x.getAttribute('rel'),href:x.href
    })));
