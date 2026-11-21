@@ -13,7 +13,7 @@ const cases=[
 ];
 const now=new Date(Date.now()-10*60*1000).toISOString();
 const url='https://www.diariolibre.com/pruebas/islaviva-demo';
-const fixture={updated:new Date().toISOString(),source_status:'partial',items:[
+const fixture={updated:new Date().toISOString(),source_status:'partial',source_diagnostics:{feeds_successful:3,feeds_configured:4,publishers:{'Diario Libre':1,'El Día':1,'Noticias SIN':1,'AlMomento':1},with_image_url:0,with_region:2},failed_feeds:[{source:'Hoy',url:'https://hoy.com.do/feed/',reason:'HTTPError'}],items:[
   {title:'Hospital de Higüey amplía atención médica',source:'Diario Libre',url,
    category:'Salud',regions:['Higüey'],published:now,image:'',preview:'Se amplía la atención médica en la ciudad.',
    translations:{de:'Krankenhaus in Higüey erweitert medizinische Versorgung'}},
@@ -55,6 +55,11 @@ try{
      console.error('DEBUG newsGrid='+String(await page.locator('#news-grid').innerText()).slice(0,1200));
    }
    ensure(actualCount===4,'expected four fixture news cards, got '+actualCount);
+   const health=page.locator('#news-feed-health');
+   ensure(await health.count()===1,'RSS health panel missing');
+   ensure(await health.getAttribute('data-status')==='partial','RSS partial status hidden');
+   ensure((await health.innerText()).includes('3/4') && (await health.innerText()).includes('Hoy'),'RSS counts or failed publisher missing');
+   ensure(await health.getAttribute('role')==='status','RSS source status inaccessible');
    ensure(await page.locator('#news-grid time[datetime]').count()===4,'accessible publication timestamps missing');
    ensure(await page.locator('#news-grid .news-illustration svg').count()===4,'licensed-free SVG fallback missing');
    ensure(await page.locator('#news-grid img').count()===0,'unlicensed publisher images were shown');
@@ -82,10 +87,13 @@ try{
    await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
    ensure(await page.locator('html').getAttribute('lang')==='de','German locale is missing');
    ensure((await page.locator('#news-grid').innerText()).includes('Krankenhaus in Higüey'),'German translated headline missing');
+   ensure((await page.locator('#news-feed-health').innerText()).includes('teilweise'),'German RSS health text missing');
    ensure(await page.locator('#news-grid time[datetime]').count()===4,'German article publication timestamp missing');
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+3);
    ensure(!overflow,'horizontal viewport overflow on '+test.name);
    ensure(runtimeErrors.length===0,'browser JS errors: '+runtimeErrors.join('; '));
+   const timings=await page.evaluate(()=>{const p=performance.getEntriesByType('navigation')[0];return {domContentLoadedMs:Math.round(p?.domContentLoadedEventEnd||0),bodyScrollWidth:document.body.scrollWidth,viewportWidth:innerWidth};});
+   console.log('METRICS '+test.name+' '+JSON.stringify(timings));
    await page.screenshot({path:'artifacts/chromium/'+test.name+'-news.png',fullPage:true,animations:'disabled'});
    console.log('PASS '+test.name+': news cards, illustrations, filters, local order, timestamps, viewport and JS errors');
   }catch(e){

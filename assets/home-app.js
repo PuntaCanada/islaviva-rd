@@ -628,6 +628,53 @@ const newsUi={
  fr:{all:'🌎 Toute la RD',local:'📍 Ma ville',topics:'Tous les sujets',sources:'Toutes les sources',empty:'Aucune actualité récente vérifiée pour ces filtres.',localNote:'Seulement les articles mentionnant explicitement cette région ; couverture non exhaustive.',translated:'Titres traduits automatiquement. Vérifiez les détails dans les articles originaux.',original:'Titres originaux en espagnol et liens vers les sources.',read:'Lire la source',latest:'Actualisé',minutes:'il y a'},
  ht:{all:'🌎 Tout RD',local:'📍 Vil mwen',topics:'Tout sijè',sources:'Tout sous',empty:'Pa gen nouvèl resan ki verifye pou filtè sa yo.',localNote:'Se sèlman atik ki mansyone zòn nan klèman; se pa tout nouvèl lokal.',translated:'Tit yo tradui otomatikman. Verifye detay yo nan atik orijinal yo.',original:'Tit orijinal an panyòl, ak lyen sous yo.',read:'Li atik orijinal la',latest:'Mizajou',minutes:'sa gen'}
 };
+let newsFeedMetadata=null;
+const feedHealthText={
+ es:{complete:'Fuentes RSS disponibles',partial:'Fuentes RSS parcialmente disponibles',empty:'Sin titulares recientes',unknown:'Estado RSS no confirmado',feeds:'feeds',publishers:'medios con artículos',items:'titulares',updated:'Última recopilación',unavailable:'No respondieron',note:'Cobertura RSS, no verificación editorial de cada noticia.'},
+ de:{complete:'RSS-Quellen erreichbar',partial:'RSS-Quellen teilweise erreichbar',empty:'Keine aktuellen Schlagzeilen',unknown:'RSS-Status nicht bestätigt',feeds:'Feeds',publishers:'Medien mit Artikeln',items:'Schlagzeilen',updated:'Letzter Import',unavailable:'Nicht erreichbar',note:'RSS-Abdeckung, keine redaktionelle Prüfung jeder Meldung.'},
+ en:{complete:'RSS feeds available',partial:'RSS feeds partly available',empty:'No recent headlines',unknown:'RSS status unconfirmed',feeds:'feeds',publishers:'publishers with articles',items:'headlines',updated:'Last collection',unavailable:'Unavailable',note:'RSS coverage, not editorial verification of every article.'},
+ fr:{complete:'Flux RSS disponibles',partial:'Flux RSS partiellement disponibles',empty:'Aucun titre récent',unknown:'État RSS non confirmé',feeds:'flux',publishers:'éditeurs avec articles',items:'titres',updated:'Dernière collecte',unavailable:'Indisponibles',note:'Couverture RSS, sans vérification éditoriale de chaque article.'},
+ ht:{complete:'Sous RSS yo disponib',partial:'Kèk sous RSS pa disponib',empty:'Pa gen nouvèl resan',unknown:'Eta RSS la pa konfime',feeds:'fil RSS',publishers:'medya ki gen atik',items:'tit',updated:'Dènye koleksyon',unavailable:'Pa disponib',note:'Se eta sous RSS yo, pa yon verifikasyon chak nouvèl.'}
+};
+function renderNewsFeedHealth(){
+ const meta=newsFeedMetadata;
+ if(!meta)return;
+ const controls=document.getElementById('news-controls');
+ if(!controls)return;
+ let node=document.getElementById('news-feed-health');
+ if(!node){
+  node=document.createElement('div');node.id='news-feed-health';
+  node.className='news-feed-health';node.setAttribute('role','status');
+  node.setAttribute('aria-live','polite');
+  controls.parentNode.insertBefore(node,controls);
+ }
+ const l=feedHealthText[lang]||feedHealthText.es;
+ const diag=meta.source_diagnostics||{};
+ const ok=Number.isInteger(diag.feeds_successful)?diag.feeds_successful:null;
+ const total=Number.isInteger(diag.feeds_configured)?diag.feeds_configured:null;
+ const validCounts=ok!==null&&total!==null&&total>0&&ok>=0&&ok<=total;
+ const status=meta.source_status==='ok'&&validCounts&&ok===total?'complete':
+              meta.source_status==='partial'&&validCounts?'partial':
+              meta.source_status==='no_recent_articles'?'empty':'unknown';
+ node.dataset.status=status;
+ const publishers=diag.publishers&&typeof diag.publishers==='object'&&!Array.isArray(diag.publishers)?
+                  Object.keys(diag.publishers).length:null;
+ const date=Date.parse(meta.updated||'');
+ const timestamp=Number.isFinite(date)?new Intl.DateTimeFormat(lang,{dateStyle:'medium',timeStyle:'short',timeZone:'America/Santo_Domingo'}).format(new Date(date)):null;
+ const reported=Array.isArray(meta.failed_feeds)?[...new Set(meta.failed_feeds.map(x=>x&&x.source).filter(x=>typeof x==='string'&&x.length<70))].slice(0,3):[];
+ const heading=document.createElement('strong');
+ heading.textContent=(status==='complete'?l.complete:status==='partial'?l.partial:status==='empty'?l.empty:l.unknown);
+ const details=document.createElement('span');
+ const terms=[];
+ if(validCounts)terms.push(ok+'/'+total+' '+l.feeds);
+ if(publishers!==null)terms.push(publishers+' '+l.publishers);
+ if(Array.isArray(meta.items))terms.push(meta.items.length+' '+l.items);
+ if(timestamp)terms.push(l.updated+': '+timestamp);
+ details.textContent=terms.join(' · ');
+ const note=document.createElement('small');
+ note.textContent=(reported.length?l.unavailable+': '+reported.join(', ')+'. ':'')+l.note;
+ node.replaceChildren(heading,details,note);
+}
 const sourceHosts={'diariolibre.com':'Diario Libre','hoy.com.do':'Hoy','eldia.com.do':'El Día','almomento.net':'AlMomento','noticiassin.com':'Noticias SIN','puntacanapost.com':'Punta Cana Post','eltiempo.com.do':'El Tiempo','bavarodigital.net':'Bávaro Digital'};
 // Every illustration is original inline SVG, NOT a photograph of the reported event.
 // Real publisher photos must be explicitly licensed before their source is enabled here.
@@ -695,6 +742,7 @@ const newsCategoryLabels={
 };
 function newsCategoryLabel(c){return newsCategoryLabels[lang]?.[c]||c}
 function renderNewsPortal(){
+ renderNewsFeedHealth();
  if(!liveNews.length)return;
  const ui=newsUi[lang]||newsUi.es;
  const controls=document.getElementById('news-controls');
@@ -828,6 +876,8 @@ async function loadAutoNews(){
   if(!response.ok)throw Error('news data unavailable');
   const feed=await response.json();
   if(!Array.isArray(feed.items))throw Error('news data malformed');
+  newsFeedMetadata=feed;
+  renderNewsFeedHealth();
   liveNews=feed.items;
   if(!newsActive().length)return;
   window.islaRenderNews=renderNewsPortal;
