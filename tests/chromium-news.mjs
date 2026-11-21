@@ -70,8 +70,19 @@ try{
    await page.locator('#news-tabs [data-scope="local"]').click();
    ensure(await cards.count()===1,'Higüey local-only filter failed');
    ensure((await cards.first().innerText()).includes('Higüey'),'wrong city shown in local-only filter');
-   await page.locator('#news-tabs [data-scope="all"]').click();
-   ensure(await cards.count()===4,'return to all news failed');
+   // Real keyboard navigation must activate a filter without a mouse.
+   await page.locator('#news-tabs [data-scope="all"]').focus();
+   await page.keyboard.press('Enter');
+   ensure(await cards.count()===4,'keyboard activation of all-news tab failed');
+   ensure(await page.locator('main').count()===1,'page landmark is missing');
+   ensure(await page.locator('html').getAttribute('lang')==='es','Spanish locale is missing');
+   // The German homepage reuses the same fixture but must present its translated
+   // content and retain accessible source links.
+   await page.goto(base+'/de/',{waitUntil:'domcontentloaded'});
+   await page.locator('#news-grid a.story').first().waitFor({timeout:20000});
+   ensure(await page.locator('html').getAttribute('lang')==='de','German locale is missing');
+   ensure((await page.locator('#news-grid').innerText()).includes('Krankenhaus in Higüey'),'German translated headline missing');
+   ensure(await page.locator('#news-grid time[datetime]').count()===4,'German article publication timestamp missing');
    const overflow=await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+3);
    ensure(!overflow,'horizontal viewport overflow on '+test.name);
    ensure(runtimeErrors.length===0,'browser JS errors: '+runtimeErrors.join('; '));
