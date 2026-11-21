@@ -681,7 +681,7 @@ function renderNewsFeedHealth(){
  note.textContent=(reported.length?l.unavailable+': '+reported.join(', ')+'. ':'')+l.note;
  node.replaceChildren(heading,details,note);
 }
-const sourceHosts={'diariolibre.com':'Diario Libre','hoy.com.do':'Hoy','eldia.com.do':'El Día','almomento.net':'AlMomento','noticiassin.com':'Noticias SIN','puntacanapost.com':'Punta Cana Post','eltiempo.com.do':'El Tiempo','bavarodigital.net':'Bávaro Digital'};
+const sourceHosts={'diariolibre.com':'Diario Libre','hoy.com.do':'Hoy','eldia.com.do':'El Día','almomento.net':'AlMomento','noticiassin.com':'Noticias SIN','puntacanapost.com':'Punta Cana Post','eltiempo.com.do':'El Tiempo','bavarodigital.net':'Bávaro Digital','diario55.com':'Diario 55','noticia.do':'Noticia.do'};
 // Every illustration is original inline SVG, NOT a photograph of the reported event.
 // Real publisher photos must be explicitly licensed before their source is enabled here.
 const licensedNewsImageSources=new Set([]);
