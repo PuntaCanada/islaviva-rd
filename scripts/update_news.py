@@ -14,7 +14,7 @@ import urllib.parse
 import uuid
 import urllib.request
 import xml.etree.ElementTree as ET
-from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news, cached_title_translations, trustworthy_regions, filter_title_translations
+from news_quality import category_for, region_mentions, canonical_url, select_stories, validate_news, cached_title_translations, trustworthy_regions, filter_title_translations, feed_health, news_diagnostics
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 UTC = dt.timezone.utc
@@ -89,6 +89,7 @@ def rss_image(node):
 
 items = {}
 successful_feeds = 0
+failed_feeds = []
 for source, feed_url, category, allowed_domain in FEEDS:
     try:
         req = urllib.request.Request(feed_url, headers={
@@ -134,6 +135,7 @@ for source, feed_url, category, allowed_domain in FEEDS:
             if existing is None or (existing["category"] == "Actualidad" and category != "Actualidad"):
                 items[key] = entry
     except Exception as exc:
+        failed_feeds.append({"source":source,"url":feed_url,"reason":type(exc).__name__})
         print(f"RSS feed unavailable: {feed_url}: {type(exc).__name__} {exc}")
 out = ROOT / "data" / "news.json"
 out.parent.mkdir(exist_ok=True)
@@ -241,7 +243,11 @@ else:
         USAGE_FILE.write_text(json.dumps(accounting,indent=2)+"\n",encoding="utf-8")
     totals={lang:sum(bool(entry.get("translations",{}).get(lang)) for entry in latest) for lang in LANGUAGES}
     print("Translation coverage by language:", totals, "key configured:", bool(API_KEY))
-    data = {"updated": NOW.isoformat(), "source_status": "ok" if latest else "no_recent_articles", "items": latest}
+    data = {"updated": NOW.isoformat(),
+            "source_status": feed_health(successful_feeds, len(FEEDS), len(latest)),
+            "source_diagnostics": news_diagnostics(latest, successful_feeds, len(FEEDS)),
+            "failed_feeds": failed_feeds,
+            "items": latest}
     validate_news(data["items"], NOW)
     out.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"Successfully fetched {successful_feeds}/{len(FEEDS)} feeds; {len(latest)} recent headlines")
