@@ -1,34 +1,36 @@
 {
-  "updated": "2026-11-22T11:20:33.813426+00:00",
+  "updated": "2026-11-22T19:37:06.696039+00:00",
   "source_status": "partial",
   "source_diagnostics": {
     "feeds_successful": 17,
     "feeds_configured": 18,
     "publishers": {
-      "AlMomento": 20,
-      "Bávaro Digital": 4,
-      "Diario 55": 4,
-      "Diario Libre": 9,
+      "AlMomento": 11,
+      "Bávaro Digital": 10,
+      "Diario 55": 1,
+      "Diario Libre": 18,
+      "Diario Norte RD": 3,
       "El Día": 15,
-      "El Tiempo": 1,
-      "Noticia.do": 6,
+      "Noticia.do": 1,
       "Noticias SIN": 10,
       "Punta Cana Post": 3
     },
-    "with_image_url": 9,
-    "with_region": 7,
+    "with_image_url": 18,
+    "with_region": 17,
     "by_region": {
       "Higüey": 2,
-      "Puerto Plata": 1,
-      "Punta Cana": 3,
-      "Santiago": 1
+      "Puerto Plata": 2,
+      "Punta Cana": 9,
+      "Santo Domingo": 4
     },
     "regional_publishers": {
-      "AlMomento": 1,
-      "Bávaro Digital": 3,
-      "Diario 55": 1,
+      "AlMomento": 2,
+      "Bávaro Digital": 9,
       "Diario Libre": 1,
-      "Punta Cana Post": 1
+      "Diario Norte RD": 1,
+      "El Día": 1,
+      "Noticias SIN": 1,
+      "Punta Cana Post": 2
     }
   },
   "failed_feeds": [
@@ -40,751 +42,758 @@
   ],
   "items": [
     {
-      "title": "NY: Juez niega liberación de dominicano baleado por ICE",
-      "url": "https://almomento.net/ny-juez-niega-liberacion-de-dominicano-baleado-por-ice/",
+      "title": "EL SEIBO: Abinader inaugura un hospital especializado",
+      "url": "https://almomento.net/el-seibo-abinader-inaugura-un-moderno-hospital-especializado/",
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
-      "preview": "NUEVA YORK.- El dominicano Oscar Belgal, de 28 años, permanecerá bajo custodia del Servicio de Inmigración y Control de Aduanas (ICE) mientras se tramita su caso…",
+      "preview": "EL SEIBO.– El presidente Luis Abinader inauguró este domingo el renovado Hospital Provincial Doctor Teófilo Hernández, una moderna infraestructura sanitaria que…",
       "image": "",
-      "published": "2026-11-22T11:00:15+00:00"
+      "published": "2026-11-22T19:30:20+00:00"
     },
     {
-      "title": "Moca FC y Salcedo FC empatan en inicio de las semifinales de la Liga Nacional de Fútbol",
-      "url": "https://eldia.com.do/moca-fc-y-salcedo-fc-empatan-en-inicio-de-las-semifinales-de-la-liga-nacional-de-futbol/",
+      "title": "Fiscalía polaca señala indicios de que el viernes impactaron tres misiles rusos en Polonia",
+      "url": "https://noticiassin.com/mundo/mundo-general/2026/11/22/fiscalia-polaca-ve-indicios-de-tres-misiles-rusos-kh-101-en-polonia-2174930/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La Fiscalía polaca ve indicios de que tres misiles rusos Kh-101 impactaron en varios puntos del país.",
+      "image": "",
+      "published": "2026-11-22T19:20:44+00:00"
+    },
+    {
+      "title": "El ICE detiene a dos migrantes mexicanos cuando embarcaban en un avión en Estados Unidos",
+      "url": "https://noticiassin.com/estados-unidos/2026/11/22/ice-detiene-a-dos-migrantes-mexicanos-al-abordar-un-vuelo-en-seattle-2174925/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "ICE arrestó a dos mexicanas al abordar un vuelo en Seattle; una habría agredido a un agente federal.",
+      "image": "",
+      "published": "2026-11-22T19:13:09+00:00"
+    },
+    {
+      "title": "La general Celeste Yanet Jiménez Cabral es condecorada con la Medalla al Mérito Policial",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/22/celeste-yanet-jimenez-cabral-recibe-medalla-al-merito-policial-2174924/",
+      "source": "Noticias SIN",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "La general Celeste Yanet Jiménez Cabral recibió la Medalla al Mérito Policial por su trayectoria y años de servicio en la Policía Nacional.",
+      "image": "",
+      "published": "2026-11-22T19:09:58+00:00"
+    },
+    {
+      "title": "Empresarios que fracasaron como políticos (OPINION)",
+      "url": "https://almomento.net/empresarios-a-los-cuales-no-les-fue-bien-como-politicos/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Aunque hay muchos empresarios que han llegado a ser presidentes de sus respectivos países y ejercido exitosamente estas funciones, en los últimos 30 años ha habido…",
+      "image": "",
+      "published": "2026-11-22T19:00:29+00:00"
+    },
+    {
+      "title": "Exjuez habría facilitado lavado de activos en red que movilizó más de RD$1,000 millones y US$16.4 millones",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/22/exjuez-habria-facilitado-lavado-de-activos-en-red-millonaria-2174911/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Según el Ministerio Público, Teodoro Castillo habría utilizado contratos e hipotecas simuladas para ocultar propiedades de los cabecillas de la red.",
+      "image": "",
+      "published": "2026-11-22T18:58:26+00:00"
+    },
+    {
+      "title": "Gobierno anuncia entrega de 15 millones de raciones alimenticias durante Navidad",
+      "url": "https://noticiassin.com/pais/gobierno/2026/11/22/gobierno-distribuira-15-millones-de-raciones-navidenas-en-todo-el-pais-2174910/",
+      "source": "Noticias SIN",
+      "category": "Política",
+      "regions": [],
+      "preview": "Gobierno distribuirá 15 millones de raciones navideñas y 1.5 millones de alimentos crudos en todo el país.",
+      "image": "",
+      "published": "2026-11-22T18:55:39+00:00"
+    },
+    {
+      "title": "Presidente Salvador envía más equipamiento militar a Haití",
+      "url": "https://almomento.net/el-salvador-envia-mas-equipamiento-militar-hacia-haiti/",
+      "source": "AlMomento",
+      "category": "Política",
+      "regions": [],
+      "preview": "San Salvador, 22 nov.- El presidente de El Salvador, Nayib Bukele, envió un nuevo refuerzo de equipamiento militar hacia Haití, como parte de la misión de rescate a…",
+      "image": "",
+      "published": "2026-11-22T18:30:48+00:00"
+    },
+    {
+      "title": "Operativo del INTRANT detecta a dos personas buscadas por justicia y retiene 12 vehículos",
+      "url": "https://eldia.com.do/operativo-del-intrant-detecta-a-dos-personas-buscadas-por-justicia-y-retiene-12-vehiculos/",
       "source": "El Día",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La Villa Heroica se vistió de gala para recibir las semifinales del Torneo Apertura de la Liga Dominicana de…",
-      "image": "",
-      "published": "2026-11-22T10:36:06+00:00"
-    },
-    {
-      "title": "PERU: Terremoto de magnitud 6,7 deja un muerto y 16 heridos",
-      "url": "https://almomento.net/peru-terremoto-de-magnitud-67-sacude-el-centro-sin-danos/",
-      "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
-      "preview": "LIMA.- Un hombre fallecido, 16 personas lesionadas y 853 damnificados es el saldo actualizado del terremoto de magnitud 6.7 que sacudió la zona central de los Andes…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- Dos individuos que eran buscados por las autoridades mediante órdenes de arresto fueron…",
       "image": "",
-      "published": "2026-11-22T10:30:00+00:00",
-      "translations": {}
+      "published": "2026-11-22T18:26:20+00:00"
     },
     {
-      "title": "República Dominicana pierde frente a Venezuela en el Campeonato Panamericano Sub-12",
-      "url": "https://eldia.com.do/republica-dominicana-pierde-frente-a-venezuela-en-el-campeonato-panamericano-sub-12/",
+      "title": "Ministerio Público gradúa 138 fiscales y 121 defensores de víctimas",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/22/ministerio-publico-gradua-268-fiscales-y-defensores-de-victimas-2174899/",
+      "source": "Noticias SIN",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "Ministerio Público gradúa 268 profesionales para fortalecer la atención a víctimas y la formación fiscal.",
+      "image": "",
+      "published": "2026-11-22T18:24:44+00:00"
+    },
+    {
+      "title": "Abinader inaugura hospital de RD$1,000 millones en El Seibo con 109 camas",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/22/abinader-inaugura-hospital-de-rd1000-millones-en-el-seibo-con-109-camas-2174898/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Abinader inaugura en El Seibo hospital reconstruido con más de RD$1,000 millones y 109 camas.",
+      "image": "",
+      "published": "2026-11-22T18:19:12+00:00"
+    },
+    {
+      "title": "De chofer de presunto narco a regidor: los señalamientos del MP contra Willy Pachá",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/22/ministerio-publico-vincula-red-narco-con-campanas-y-regidor-de-higuey-2174878/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El expediente revela que Willy Pachá habría pasado de ser chofer y encargado de seguridad del supuesto cabecilla de la red a ocupar un cargo electivo.",
+      "image": "",
+      "published": "2026-11-22T18:19:00+00:00"
+    },
+    {
+      "title": "Pese a la lluvia, miles participaron en la caminata «Un Paso por mi Familia 2026»",
+      "url": "https://noticiassin.com/pais/religion/2026/11/22/miles-caminan-por-el-malecon-en-jornada-catolica-familiar-2174880/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Miles participaron pese a la lluvia en una caminata de la Iglesia católica para promover la protección y convivencia familiar.",
+      "image": "",
+      "published": "2026-11-22T18:10:33+00:00"
+    },
+    {
+      "title": "Migración detiene 10,749 extranjeros en una semana; 1,032 en el Gran Santo Domingo",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/22/migracion-detiene-10749-extranjeros-irregulares-en-una-semana-2174879/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [
+        "Santo Domingo"
+      ],
+      "preview": "Migración detuvo 10,749 extranjeros irregulares en una semana, de ellos 1,032 en el Gran Santo Domingo.",
+      "image": "",
+      "published": "2026-11-22T18:02:06+00:00"
+    },
+    {
+      "title": "Fallece joven higüeyano que estaba ingresado en estado crítico en el Hospital de Verón",
+      "url": "https://bavarodigital.net/fallece-joven-higueyano-que-estaba-ingresado-en-estado-critico-en-el-hospital-de-veron/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "VERÓN–PUNTA CANA. — Falleció Dairlin Valdez Ortiz, de 24 años, el joven oriundo de Higüey que permanecía ingresado en estado crítico en el Hospital General de…",
+      "image": "",
+      "published": "2026-11-22T17:57:21+00:00"
+    },
+    {
+      "title": "Una falla técnica en la aerolínea Delta provoca retraso en miles de vuelos en aeropuerto de Atlanta",
+      "url": "https://diarionorterd.com/una-falla-tecnica-en-la-aerolinea-delta-provoca-retraso-en-miles-de-vuelos-en-aeropuerto-de-atlanta/",
+      "source": "Diario Norte RD",
+      "category": "Turismo",
+      "regions": [],
+      "preview": "“Delta está trabajando para resolver problemas con el sistema de automatización de peso y equilibrio de la aerolínea. Estos retrasos no están relacionados con…",
+      "image": "",
+      "published": "2026-11-22T17:56:41+00:00"
+    },
+    {
+      "title": "COE emite alerta verde para ocho demarcaciones por incidencia de vaguada",
+      "url": "https://eldia.com.do/coe-emite-alerta-verde-para-ocho-demarcaciones-por-incidencia-de-vaguada/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. En un encuentro que levantó expectativas y mantuvo al público en tensión hasta el último out, Venezuela venció…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El Centro de Operaciones de Emergencias (COE) emitió alerta verde para siete provincias y el…",
       "image": "",
-      "published": "2026-11-22T10:28:44+00:00"
+      "published": "2026-11-22T17:47:40+00:00"
     },
     {
-      "title": "Las Estrellas siguen imbatibles; Trevor Bauer entierra las Águilas en el sótano",
-      "url": "https://eldia.com.do/las-estrellas-siguen-imbatibles-trevor-bauer-entierra-las-aguilas-en-el-sotano/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Trevor Bauer consiguió su primera victoria de la temporada y las Estrellas Orientales extendieron a siete su…",
-      "image": "",
-      "published": "2026-11-22T10:18:45+00:00"
-    },
-    {
-      "title": "NY: Concejal origen RD pide a NYPD aclarar su papel frente ICE",
-      "url": "https://almomento.net/ny-concejal-origen-rd-pide-a-nypd-aclarar-su-papel-frente-ice/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "NUEVA YORK.- La concejal de origen dominicano Carmen de la Rosa pidió al Departamento de Policía de Nueva York (NYPD) que explique a los residentes, en el momento…",
-      "image": "",
-      "published": "2026-11-22T10:00:47+00:00"
-    },
-    {
-      "title": "Sismo de magnitud 4.8 sacudió zonas del este RD este sábado",
-      "url": "https://almomento.net/sismo-de-magnitud-4-8-afecta-zona-de-higuey-este-sabado/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La Altagracia, República Dominicana.-Un movimiento sísmico de magnitud 4.8 sacudió la mañana de este sábado 21 de noviembre distintas zonas del este de la República…",
-      "image": "",
-      "published": "2026-11-22T10:00:35+00:00"
-    },
-    {
-      "title": "Hackers atacaron sistemas FBI y Departamento de Agricultura",
-      "url": "https://almomento.net/hackers-atacan-sistemas-de-fbi-y-departamento-de-agricultura/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "WASHINGTON.– El Departamento de Agricultura de Estados Unidos (USDA) y el Buró Federal de Investigaciones (FBI) fueron víctimas de ataques cibernéticos, según…",
-      "image": "",
-      "published": "2026-11-22T10:00:28+00:00"
-    },
-    {
-      "title": "Red de narcotráfico sobornaba autoridades y financiaba campañas políticas para garantizar impunidad",
-      "url": "https://eldia.com.do/cabecilla-de-la-red-de-narcotrafico-del-caso-rompeolas-pago-sobornos-a-militares-y-policias-para-garantizar-impunidad-y-proteccion/",
+      "title": "Cabecilla de la red de narcotráfico del caso Rompeolas mantuvo nexos con las estructuras de Junior Pañales y La J",
+      "url": "https://eldia.com.do/cabecilla-de-la-red-de-narcotrafico-del-caso-rompeolas-mantuvo-nexos-con-las-estructuras-de-junior-panales-y-la-j/",
       "source": "El Día",
       "category": "Seguridad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La estructura criminal de narcotráfico internacional y lavado de activos, desmantelada mediante la operación…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- Fausto Candelario Ortiz (El Pachá), cabecilla de la estructura criminal del caso Rompeolas…",
       "image": "",
-      "published": "2026-11-22T10:00:00+00:00"
+      "published": "2026-11-22T17:33:53+00:00"
     },
     {
-      "title": "Brisas de Verón enciende la Navidad con la participación del alcalde Manolito Ramírez",
-      "url": "https://bavarodigital.net/brisas-de-veron-enciende-la-navidad-con-la-participacion-del-alcalde-manolito-ramirez/",
+      "title": "Experto español en seguridad vial propone uso obligatorio del casco para pasajeros de motocicletas en RD",
+      "url": "https://eldia.com.do/experto-espanol-en-seguridad-vial-propone-uso-obligatorio-del-casco-para-pasajeros-de-motocicletas-en-rd/",
+      "source": "El Día",
+      "category": "Tránsito",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- Además de fortalecer la educación y la concienciación vial para reducir los elevados índices de…",
+      "image": "",
+      "published": "2026-11-22T17:19:04+00:00"
+    },
+    {
+      "title": "Artista urbano denuncia presunta sustracción de una cadena valorada en RD$300,000 a bordo de Ferries del Caribe",
+      "url": "https://eldia.com.do/artista-urbano-denuncia-presunta-sustraccion-de-una-cadena-valorada-en-rd300000-a-bordo-de-ferries-del-caribe/",
+      "source": "El Día",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El artista urbano dominicano-puertorriqueño Robert La Ráfaga denunció ante el Ministerio…",
+      "image": "",
+      "published": "2026-11-22T17:15:30+00:00"
+    },
+    {
+      "title": "Tendencias de decoración navideña para balcones en 2026 dejan atrás las luces multicolores por ambientes más sobrios",
+      "url": "https://eldia.com.do/tendencias-de-decoracion-navidena-para-balcones-en-2026-dejan-atras-las-luces-multicolores-por-ambientes-mas-sobrios/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- La decoración navideña deja atrás las tradicionales luces de múltiples colores y da paso a…",
+      "image": "",
+      "published": "2026-11-22T17:04:20+00:00"
+    },
+    {
+      "title": "DNCD apresa a 11 hombres y ocupa drogas y cigarrillos electrónicos con presunto THC en Verón–Punta Cana",
+      "url": "https://bavarodigital.net/dncd-apresa-a-11-hombres-y-ocupa-drogas-y-cigarrillos-electronicos-con-presunto-thc-en-veron-punta-cana/",
       "source": "Bávaro Digital",
-      "category": "Política",
+      "category": "Regionales",
       "regions": [
         "Punta Cana"
       ],
-      "preview": "VERÓN–PUNTA CANA.— La comunidad de Brisas de Verón dio la bienvenida a la temporada navideña con el encendido de su arbolito de Navidad, una actividad organizada…",
+      "preview": "VERÓN–PUNTA CANA. — La División Verón de la Dirección Nacional de Control de Drogas (DNCD) informó sobre el apresamiento de 11 hombres durante un operativo contra…",
       "image": "",
-      "published": "2026-11-22T09:13:23+00:00"
+      "published": "2026-11-22T17:04:18+00:00"
     },
     {
-      "title": "Sol, nubes y posibles lluvias marcarán este domingo en Punta Cana",
-      "url": "https://bavarodigital.net/sol-nubes-y-posibles-lluvias-marcaran-este-domingo-en-punta-cana/",
-      "source": "Bávaro Digital",
-      "category": "Medioambiente",
+      "title": "Bukele refuerza despliegue militar en Haití con vehículos blindados",
+      "url": "https://eldia.com.do/bukele-refuerza-despliegue-militar-en-haiti-con-vehiculos-blindados/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. El presidente de El Salvador, Nayib Bukele, reforzó el despliegue militar en Haití con el envío…",
+      "image": "",
+      "published": "2026-11-22T17:03:09+00:00"
+    },
+    {
+      "title": "DGM dice amplíó operativos en el Gran Santo Domingo y el DN",
+      "url": "https://almomento.net/dgm-dice-amplia-operativos-en-el-gran-santo-domingo-y-el-dn/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [
+        "Santo Domingo"
+      ],
+      "preview": "SANTO DOMINGO.– La Dirección General de Migración (DGM) informó que amplió la cobertura de sus operaciones de interdicción y verificación migratoria en el Gran…",
+      "image": "",
+      "published": "2026-11-22T17:00:40+00:00"
+    },
+    {
+      "title": "Buque cubano continúa encallado en Puerto Plata sin explicaciones oficiales",
+      "url": "https://diarionorterd.com/buque-cubano-continua-encallado-en-puerto-plata-sin-explicaciones-oficiales/",
+      "source": "Diario Norte RD",
+      "category": "Regionales",
+      "regions": [
+        "Puerto Plata"
+      ],
+      "preview": "Nova Orion sigue encallado frente a Costambar y las autoridades dominicanas aún no informan cómo será retirado. Por: Hugo Gómez Puerto Plata.– El buque de matrícula…",
+      "image": "",
+      "published": "2026-11-22T16:46:12+00:00"
+    },
+    {
+      "title": "Muere otro soldado salvadoreño que era atendido en hospital de RD tras explosión en Haití",
+      "url": "https://diarionorterd.com/muere-otro-soldado-salvadoreno-que-era-atendido-en-hospital-de-rd-tras-explosion-en-haiti/",
+      "source": "Diario Norte RD",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Sobre la cuarta persona involucrada en el incidente expresaron que “el otro elemento herido ya está fuera de peligro”. La Fuerza Armada de El Salvador informó que…",
+      "image": "",
+      "published": "2026-11-22T16:42:40+00:00"
+    },
+    {
+      "title": "Especialista llama a planificar compras y comparar precios para evitar gastos innecesarios en Black Friday",
+      "url": "https://eldia.com.do/especialista-llama-a-planificar-compras-y-comparar-precios-para-evitar-gastos-innecesarios-en-black-friday/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– A pocos días de iniciar el Black Friday, una de las temporadas de mayor actividad comercial del…",
+      "image": "",
+      "published": "2026-11-22T16:41:48+00:00"
+    },
+    {
+      "title": "Premio Cultura VIP reconocerá el talento juvenil en pintura, dibujo y manualidades este lunes en Punta Cana",
+      "url": "https://puntacanapost.com/premio-cultura-vip-reconocera-el-talento-juvenil-en-pintura-dibujo-y-manualidades-este-lunes-en-punta-cana/",
+      "source": "Punta Cana Post",
+      "category": "Cultura",
       "regions": [
         "Punta Cana"
       ],
-      "preview": "VERÓN–PUNTA CANA.— Este domingo 22 de noviembre de 2026, la zona turística de Bávaro, Verón y Punta Cana tendrá un ambiente cálido, con períodos de sol, intervalos…",
+      "preview": "“El arte también merece una tarima, reconocimiento y oportunidades. Premio Cultura VIP apuesta por el talento de jóvenes que, a través de la pintura, el dibujo y…",
       "image": "",
-      "published": "2026-11-22T09:09:34+00:00"
+      "published": "2026-11-22T16:26:39+00:00"
     },
     {
-      "title": "Día Nacional del Merengue será celebrado con gala y homenajes",
-      "url": "https://almomento.net/dia-nacional-del-merengue-sera-celebrado-con-gala-y-homenajes/",
+      "title": "Conocerán coerción a segundo teniente y sargento del Ejército implicados en red ligada a 237 paquetes de cocaína este lunes",
+      "url": "https://eldia.com.do/conoceran-coercion-a-segundo-teniente-y-sargento-del-ejercito-implicados-en-red-ligada-a-237-paquetes-de-cocaina-este-lunes/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- A dos miembros del Ejército de República Dominicana (ERD), vinculados al decomiso de 237…",
+      "image": "",
+      "published": "2026-11-22T16:18:23+00:00"
+    },
+    {
+      "title": "Irán exhibe ciudad subterránea de misiles; advierte a sus rivales",
+      "url": "https://almomento.net/iran-exhibe-ciudad-subterranea-de-misiles-y-advierte-adversarios/",
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
-      "preview": "SANTO DOMINGO.– República Dominicana celebrará el próximo 26 de noviembre el Día Nacional del Merengue con una gala artística y un homenaje a figuras que han…",
+      "preview": "TEHERAN.- Los principales jefes militares de Irán visitaron este viernes 21 de noviembre una nueva ciudad subterránea de misiles, en una demostración de sus…",
       "image": "",
-      "published": "2026-11-22T09:00:56+00:00"
+      "published": "2026-11-22T16:00:23+00:00"
     },
     {
-      "title": "Por qué tantos dominicanos hicieron de Washington su casa?",
-      "url": "https://almomento.net/por-que-tantos-dominicanos-hicieron-de-washington-su-casa/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Mucho antes de que en Washington Heights se oyera un “¡Capicúa!” en una mesa de dominó, ya había dominicanos en el Alto Manhattan. Los registros históricos ubican…",
-      "image": "",
-      "published": "2026-11-22T09:00:46+00:00"
-    },
-    {
-      "title": "Ministerio Defensa lleva jornada médica a provincia Hato Mayor",
-      "url": "https://almomento.net/ministerio-defensa-lleva-jornada-medica-provincia-hato-mayor/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "HATO MAYOR.– Más de 2,000 personas recibieron servicios médicos, medicamentos y asistencia social durante una jornada cívico-social organizada por el Ministerio de…",
-      "image": "",
-      "published": "2026-11-22T09:00:43+00:00"
-    },
-    {
-      "title": "Raquel Peña llama a prevenir la violencia contra las mujeres",
-      "url": "https://almomento.net/raquel-pena-llama-a-prevenir-la-violencia-contra-las-mujeres/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTIAGO.– La vicepresidenta de la República, Raquel Peña, calificó de penosa la muerte de Melissa Medina, de 22 años, y llamó a las familias y a la sociedad a…",
-      "image": "",
-      "published": "2026-11-22T09:00:08+00:00"
-    },
-    {
-      "title": "Joaquín Balaguer frente a la crisis haitiana",
+      "title": "Joaquín Balaguer frente a la crisis haitiana (OPINION)",
       "url": "https://almomento.net/joaquin-balaguer-frente-a-la-crisis-haitiana/",
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
       "preview": "La crisis que atraviesa Haití obliga a la República Dominicana a reflexionar sobre su soberanía, su seguridad y el futuro de la isla. Joaquín Balaguer, en sus obras…",
       "image": "",
-      "published": "2026-11-22T09:00:05+00:00"
+      "published": "2026-11-22T16:00:05+00:00"
     },
     {
-      "title": "Grupo haitianos ataca a tiros y pedradas agentes Migración RD",
-      "url": "https://almomento.net/haitianos-atacan-a-tiros-y-pedradas-agentes-de-migracion/",
-      "source": "AlMomento",
+      "title": "Morel Diplán alerta sobre intentos de incluir ideología de género en sistema educativo",
+      "url": "https://eldia.com.do/morel-diplan-alerta-sobre-intentos-de-incluir-ideologia-de-genero-en-sistema-educativo/",
+      "source": "El Día",
+      "category": "Educación",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- La violencia intrafamiliar, los feminicidios que, según el arzobispo de Santo Domingo, Carlos…",
+      "image": "",
+      "published": "2026-11-22T15:56:13+00:00"
+    },
+    {
+      "title": "Cultura celebrará el Día Nacional del Merengue con gala y homenajes en el TN",
+      "url": "https://eldia.com.do/cultura-celebrara-el-dia-nacional-del-merengue-con-gala-y-homenajes-en-el-tn/",
+      "source": "El Día",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El Teatro Nacional Eduardo Brito será el escenario principal de la celebración del Día Nacional…",
+      "image": "",
+      "published": "2026-11-22T15:51:23+00:00"
+    },
+    {
+      "title": "Miches, Cabo Rojo y Puerto Plata son la apuesta por diversificar la oferta turística",
+      "url": "https://eldia.com.do/miches-cabo-rojo-y-puerto-plata-son-la-apuesta-por-diversificar-la-oferta-turistica/",
+      "source": "El Día",
       "category": "Actualidad",
       "regions": [
         "Puerto Plata"
       ],
-      "preview": "PUERTO PLATA.– Miembros de la Dirección General de Migración (DGM) fueron atacados a tiros y pedradas por un grupo de haitianos durante un operativo de interdicción…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El desarrollo de nuevos destinos turísticos y el resurgimiento de polos tradicionales como…",
       "image": "",
-      "published": "2026-11-22T09:00:04+00:00"
+      "published": "2026-11-22T15:49:59+00:00"
     },
     {
-      "title": "Danilo Medina afirma que PLD crece sin tener un candidato",
-      "url": "https://almomento.net/danilo-medina-afirma-que-pld-crece-sin-tener-un-candidato/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– El presidente del Partido de la Liberación Dominicana (PLD), Danilo Medina, afirmó que esa organización ha recuperado terreno en el escenario…",
-      "image": "",
-      "published": "2026-11-22T08:00:42+00:00"
-    },
-    {
-      "title": "La otra cara de la IA",
-      "url": "https://almomento.net/la-otra-cara-de-la-ia/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Con mayores ímpetus que cuando se inició la segunda Revolución Industrial (1840- 1914), con el advenimiento de la electricidad, motor de gasolina, teléfono…",
-      "image": "",
-      "published": "2026-11-22T08:00:34+00:00"
-    },
-    {
-      "title": "Otros 20 pandilleros mueren en una operación policial en Haití",
-      "url": "https://almomento.net/otros-20-pandilleros-mueren-en-una-operacion-policial-en-haiti/",
-      "source": "AlMomento",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "PUERTO PRINCIPE.- Al menos 20 presuntos integrantes de bandas armadas murieron durante una nueva operación de la Policía Nacional de Haití (PNH) en Martissant, al…",
-      "image": "",
-      "published": "2026-11-22T08:00:12+00:00"
-    },
-    {
-      "title": "Presidente PRD propone una alianza opositora para el 2028",
-      "url": "https://almomento.net/miguel-vargas-plantea-una-gran-alianza-como-demanda-la-rd/",
-      "source": "AlMomento",
-      "category": "Política",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- El presidente del Partido Revolucionario Dominicano (PRD), Miguel Vargas Maldonado, opinó que la creación de una «gran alianza nacional opositora»…",
-      "image": "",
-      "published": "2026-11-22T07:00:42+00:00",
-      "translations": {
-        "de": "PRD-Präsident schlägt ein Oppositionsbündnis für 2028 vor",
-        "en": "PRD President proposes an opposition alliance for 2028",
-        "fr": "Le président du PRD propose une alliance d’opposition pour 2028",
-        "ht": "Prezidan PRD pwopoze yon alyans opozisyon pou 2028"
-      },
-      "preview_translations": {
-        "de": "SANTO DOMINGO.- Der Präsident der Dominikanischen Revolutionären Partei (PRD), Miguel Vargas Maldonado, erklärte, dass die Schaffung eines \"großen nationalen Oppositionsbündnisses\"...",
-        "en": "SANTO DOMINGO.- The president of the Dominican Revolutionary Party (PRD), Miguel Vargas Maldonado, stated that the creation of a \"great national opposition alliance\"...",
-        "fr": "SANTO DOMINGO.- Le président du Parti révolutionnaire dominicain (PRD), Miguel Vargas Maldonado, a déclaré que la création d’une « grande alliance d’opposition nationale »...",
-        "ht": "SANTO DOMINGO.- Prezidan Pati Revolisyonè Dominiken an (PRD), Miguel Vargas Maldonado, te deklare ke kreyasyon yon \"gwo alyans opozisyon nasyonal\"..."
-      }
-    },
-    {
-      "title": "Leyes y sentencias blindan la frontera para la inversión",
-      "url": "https://almomento.net/leyes-y-sentencias-blindan-la-frontera-para-la-inversion/",
-      "source": "AlMomento",
-      "category": "Economía",
-      "regions": [],
-      "preview": "La región fronteriza se sostiene en dos pilares: la Ley 12-21, que crea la Zona Especial de Desarrollo Integral Fronterizo, y la Ley de Incentivo a la Inversión…",
-      "image": "",
-      "published": "2026-11-22T07:00:25+00:00"
-    },
-    {
-      "title": "Omar pide devolver a extranjeros que ingresen al país ilegalmente",
-      "url": "https://almomento.net/omar-pide-devolver-a-extranjeros-que-ingresen-al-pais-ilegalmente/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– El senador del Distrito Nacional, Omar Fernández, afirmó que quienes ingresen ilegalmente a República Dominicana deben ser devueltos a sus países de…",
-      "image": "",
-      "published": "2026-11-22T07:00:19+00:00"
-    },
-    {
-      "title": "Un nuevo amanecer",
-      "url": "https://almomento.net/un-nuevo-amanecer/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La vida sobre este planeta Tierra se hace cada día más difícil, debido a que somos más habitantes con las mismas necesidades naturales, mientras que los recursos…",
-      "image": "",
-      "published": "2026-11-22T06:00:50+00:00"
-    },
-    {
-      "title": "Licey empata en el primer lugar; Gigantes y Estrellas triunfan",
-      "url": "https://almomento.net/licey-empata-en-el-primer-lugar-gigantes-y-estrellas-triunfan/",
-      "source": "AlMomento",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "SANTO DOMINGO. Los Tigres del Licey, Gigantes del Cibao y Estrellas Orientales consiguieron victorias este sábado en la continuación del campeonato de béisbol…",
-      "image": "",
-      "published": "2026-11-22T06:00:47+00:00"
-    },
-    {
-      "title": "Abinader: de crisis en crisis (OPINION)",
-      "url": "https://almomento.net/abinader-de-crisis-en-crisis/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Gobernar siempre es difícil, en éste y en cualquier otro país del mundo. Alguien dijo hace años que la República Dominicana es un país como cualquier otro país del…",
-      "image": "",
-      "published": "2026-11-22T06:00:41+00:00"
-    },
-    {
-      "title": "Policía Nacional identifica a diez de los hombres más buscados por homicidios y otros hechos violentos",
-      "url": "https://diario55.com/policia-nacional-identifica-a-diez-de-los-hombres-mas-buscados-por-homicidios-y-otros-hechos-violentos/",
-      "source": "Diario 55",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Santiago, Rep. Dom. – La Policía Nacional identificó a diez hombres que figuran entre los más buscados por su presunta vinculación con homicidios, asesinatos y…",
-      "image": "",
-      "published": "2026-11-22T04:27:47+00:00"
-    },
-    {
-      "title": "Comerciantes solicitan prórroga para implementar el cobro de fundas plásticas en República Dominicana pautado para diciembre",
-      "url": "https://diario55.com/comerciantes-solicitan-prorroga-para-implementar-el-cobro-de-fundas-plasticas-en-republica-dominicana-pautado-para-diciembre/",
-      "source": "Diario 55",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Santo Domingo, Rep. Dom. – A partir del próximo 15 de diciembre, los comercios dejarán de entregar fundas plásticas de manera gratuita, por lo que los consumidores…",
-      "image": "",
-      "published": "2026-11-22T04:24:09+00:00"
-    },
-    {
-      "title": "Apresan a hombre con tres fusiles, una pistola y presunta cocaína en Barahona",
-      "url": "https://diario55.com/apresan-a-hombre-con-tres-fusiles-una-pistola-y-presunta-cocaina-en-barahona/",
-      "source": "Diario 55",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Barahona, Rep. Dom. – Agentes de la Dirección Nacional de Control de Drogas (DNCD) y representantes del Ministerio Público apresaron a un hombre de 40 años durante…",
-      "image": "",
-      "published": "2026-11-22T04:00:35+00:00"
-    },
-    {
-      "title": "AZOCIBAO plantea reformas para duplicar exportaciones hacia 2036",
-      "url": "https://noticia.do/azocibao-reformas-duplicar-exportaciones-2036/",
-      "source": "Noticia.do",
-      "category": "Economía",
-      "regions": [],
-      "preview": "Noticia.do AZOCIBAO plantea reformas para duplicar exportaciones hacia 2036 AZOCIBAO pide reformas para duplicar exportaciones a 2036. Las zonas francas crecieron…",
-      "image": "",
-      "published": "2026-11-22T02:36:48+00:00"
-    },
-    {
-      "title": "Familias de Villa Linda Tercero pierden sus ajuares por inundaciones",
-      "url": "https://noticiassin.com/videos/noticias-sin-fin-de-semana/2026/11/22/inundaciones-en-villa-linda-tercero-danan-ajuares-y-viviendas-2174713/",
-      "source": "Noticias SIN",
-      "category": "Medioambiente",
-      "regions": [],
-      "preview": "Inundaciones repetidas en Villa Linda Tercero dañan ajuares y obligan a familias a sacar agua de sus casas a diario.",
-      "image": "",
-      "published": "2026-11-22T02:26:32+00:00"
-    },
-    {
-      "title": "Albert Abreu lanza primores y Licey aplasta Toros al compás de trece indiscutibles",
-      "url": "https://eldia.com.do/licey-desata-fiero-ataque-y-derrota-a-los-toros/",
-      "source": "El Día",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. Albert Abreu volvió a lanzar una joya desde el montículo y la ofensiva azul siguió deslumbrando…",
-      "image": "",
-      "published": "2026-11-22T02:01:58+00:00"
-    },
-    {
-      "title": "Joven muere a tiros durante conflicto en sector La Cuchilla de Azua",
-      "url": "https://noticiassin.com/pais/provincias/2026/11/22/joven-muere-a-tiros-en-conflicto-en-la-cuchilla-de-azua-2174740/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Un joven murió a tiros en La Cuchilla de Azua tras un conflicto; la Policía detuvo a un presunto responsable.",
-      "image": "",
-      "published": "2026-11-22T01:49:20+00:00"
-    },
-    {
-      "title": "Mueren 4 militares y 7 presuntos delincuentes en operativo contra narcotraficante en noroeste de México",
-      "url": "https://noticia.do/captura-chapo-isidro-sinaloa/",
-      "source": "Noticia.do",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Noticia.do Mueren 4 militares y 7 presuntos delincuentes en operativo contra narcotraficante en noroeste de México El operativo para capturar a Chapo Isidro en…",
-      "image": "",
-      "published": "2026-11-22T01:39:31+00:00"
-    },
-    {
-      "title": "Fuerza del Pueblo reclama transparencia sobre fondos destinados al emprendimiento",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/22/redman-pide-explicar-destino-de-rd75-millones-para-emprendedores-2174737/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Redman exigió al Gobierno explicar el destino de RD$75 millones para el fondo de emprendimiento y publicar sus resultados.",
-      "image": "",
-      "published": "2026-11-22T01:36:39+00:00"
-    },
-    {
-      "title": "Operación Rompeolas: red movía 7,000 kilos de cocaína al año hacia Puerto Rico",
-      "url": "https://eldia.com.do/operacion-rompeolas-la-red-movia-7000-kilos-de-cocaina-al-ano-hacia-puerto-rico/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Fausto Candelario Ortiz (Pacha o El Brother), principal cabecilla de la red de narcotráfico transnacional…",
-      "image": "",
-      "published": "2026-11-22T01:33:01+00:00"
-    },
-    {
-      "title": "Los Gigantes vencen al Escogido por segundo día seguido",
-      "url": "https://eldia.com.do/gigantes-dominan-leones-en-el-julian-javier/",
-      "source": "El Día",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. San Francisco de Macorís. — Marcell Ozuna conectó el cuadrangular número 20 de su carrera en la Liga Dominicana…",
-      "image": "",
-      "published": "2026-11-22T01:24:51+00:00"
-    },
-    {
-      "title": "Melissa Núñez deslumbra en Miss Universo con un traje inspirado en los símbolos patrios y la cultura dominicana",
-      "url": "https://eldia.com.do/melissa-nunez-deslumbra-en-miss-universo-con-un-traje-inspirado-en-los-simbolos-patrios-y-la-cultura-dominicana/",
+      "title": "Merengueros el Festival será el gran evento del Día Nacional del Merengue",
+      "url": "https://eldia.com.do/merengueros-el-festival-sera-el-gran-evento-del-dia-nacional-del-merengue/",
       "source": "El Día",
       "category": "Cultura",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – Durante su participación en la presentación de trajes típicos de Miss Universo, Melissa Núñez…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- La República Dominicana se prepara para celebrar por todo lo alto el Día Nacional del Merengue…",
       "image": "",
-      "published": "2026-11-22T01:13:49+00:00"
+      "published": "2026-11-22T15:47:34+00:00"
     },
     {
-      "title": "Fallece Rafael Polanco, periodista y dirigente gremial dominicano",
-      "url": "https://noticia.do/muere-periodista-rafael-polanco/",
-      "source": "Noticia.do",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Noticia.do Fallece Rafael Polanco, periodista y dirigente gremial dominicano Rafael Polanco Peralta falleció este sábado 21 de noviembre. El Movimiento Marcelino…",
-      "image": "",
-      "published": "2026-11-22T01:10:42+00:00"
-    },
-    {
-      "title": "Lidom: Trevor Bauer logra su mejor salida ante las Águilas",
-      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/22/lidom-trevor-bauer-logra-su-mejor-salida-ante-las-aguilas/3728071",
-      "source": "Diario Libre",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "Trevor Bauer lanzó pelota de cinco entradas y dos tercios de tres hits y siete ponches para que las Estrellas lograran su sexta victoria consecutiva al derrotar 3-1…",
-      "image": "https://resources.diariolibre.com/images/2026/11/22/lidom-trevor-bauer-logra-su-mejor-salida-ante-las-aguilas-e2ffebe4-focus-min0.06-0.39-400-300.jpg",
-      "published": "2026-11-22T01:00:00+00:00"
-    },
-    {
-      "title": "Migración denuncia ataque a tiros y pedradas en Imbert; hay 15 detenidos",
-      "url": "https://noticia.do/ataque-migracion-imbert-15-detenidos/",
-      "source": "Noticia.do",
+      "title": "DNCD golpea el microtráfico con 25 detenidos y casi 14 kilos de drogas ocupadas en tres demarcaciones",
+      "url": "https://bavarodigital.net/dncd-golpea-el-microtrafico-con-25-detenidos-y-casi-14-kilos-de-drogas-ocupadas-en-tres-demarcaciones/",
+      "source": "Bávaro Digital",
       "category": "Seguridad",
       "regions": [],
-      "preview": "Noticia.do Migración denuncia ataque a tiros y pedradas en Imbert; hay 15 detenidos Migración reportó disparos y pedradas contra sus agentes en Imbert, Puerto…",
+      "preview": "SANTO DOMINGO, REPÚBLICA DOMINICANA. — La Dirección Nacional de Control de Drogas (DNCD), en coordinación con el Ministerio Público, informó este domingo 22 de…",
       "image": "",
-      "published": "2026-11-22T00:57:29+00:00"
+      "published": "2026-11-22T15:41:59+00:00"
     },
     {
-      "title": "Grupo Ramos inaugura Multiplaza Mao con inversión de RD$1,400 millones",
-      "url": "https://noticia.do/grupo-ramos-multiplaza-mao-1400-millones/",
-      "source": "Noticia.do",
-      "category": "Economía",
+      "title": "El Zafiro desmiente haber recaído en los vicios: \"No permitiré que se dañe mi reputación\"",
+      "url": "https://eldia.com.do/el-zafiro-desmiente-haya-recaido-en-los-vicios-no-permitire-que-se-dane-mi-reputacion/",
+      "source": "El Día",
+      "category": "Actualidad",
       "regions": [],
-      "preview": "Noticia.do Grupo Ramos inaugura Multiplaza Mao con inversión de RD$1,400 millones Grupo Ramos abre Multiplaza Mao con una inversión de RD$1,400 millones, 101…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El merenguero dominicano Carlos Manuel “El Zafiro” desmintió tajantemente haber recaído en el…",
       "image": "",
-      "published": "2026-11-22T00:46:49+00:00"
+      "published": "2026-11-22T15:36:54+00:00"
     },
     {
-      "title": "Operación Rompeolas: piden prisión preventiva para 22 detenidos",
-      "url": "https://noticia.do/operacion-rompeolas-prision-preventiva-22/",
-      "source": "Noticia.do",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Noticia.do Operación Rompeolas: piden prisión preventiva para 22 detenidos El Ministerio Público solicita prisión preventiva y caso complejo para 22 detenidos en la…",
-      "image": "",
-      "published": "2026-11-22T00:26:39+00:00"
-    },
-    {
-      "title": "Raquel Arbaje recibe en Cap Cana a primera dama de Panamá y otras distinguidas invitadas internacionales",
-      "url": "https://bavarodigital.net/raquel-arbaje-recibe-en-cap-cana-a-primera-dama-de-panama-y-otras-distinguidas-invitadas-internacionales/",
+      "title": "Cap Cana cierra con éxito el primer día de la Cumbre Mundial de Gobiernos",
+      "url": "https://bavarodigital.net/cap-cana-cierra-con-exito-el-primer-dia-de-la-cumbre-mundial-de-gobiernos/",
       "source": "Bávaro Digital",
       "category": "Regionales",
       "regions": [
         "Punta Cana"
       ],
-      "preview": "CAP CANA, LA ALTAGRACIA. — La primera dama de la República Dominicana, Raquel Arbaje, recibió en Cap Cana a Maricel Cohen de Mulino, primera dama de Panamá, junto a…",
+      "preview": "CAP CANA, LA ALTAGRACIA.— Con una jornada marcada por el intercambio de ideas, conversaciones de alto nivel y propuestas para fortalecer la gestión pública…",
       "image": "",
-      "published": "2026-11-22T00:16:46+00:00"
+      "published": "2026-11-22T15:36:46+00:00"
     },
     {
-      "title": "Resonancia magnética de mama: indicaciones y beneficios",
-      "url": "https://eldia.com.do/resonancia-magnetica-de-mama-indicaciones-y-beneficios/",
+      "title": "Max Verstappen gana el Gran Premio de Las Vegas por tercera vez en 4 años",
+      "url": "https://eldia.com.do/max-verstappen-ratifica-su-dominio-en-las-vegas/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. La resonancia magnética de mama es una de las herramientas más sensibles disponibles actualmente…",
+      "preview": "Este artículo fue publicado originalmente en El Día. LAS VEGAS (AP) — El rival George Russell fue el primero en desafiar a Max Verstappen, adelantándolo varias…",
       "image": "",
-      "published": "2026-11-22T00:10:50+00:00"
+      "published": "2026-11-22T15:22:12+00:00"
     },
     {
-      "title": "Detención de Willy Manuel Zorrilla y habeas corpus",
-      "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/22/detencion-de-willy-manuel-zorrilla-y-habeas-corpus/3727873",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La defensa del regidor Willy Manuel Zorrilla Domínguez, uno de los 22 detenidos durante la Operación Rompeolas, interpuso una acción constitucional de habeas corpus…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/detencion-de-willy-manuel-zorrilla-y-habeas-corpus-70ffb356-focus-0-0-400-300.jpg",
-      "published": "2026-11-22T00:01:00+00:00"
-    },
-    {
-      "title": "Abinader inaugura cárcel en Higüey para 545 internos",
-      "url": "https://www.diariolibre.com/politica/gobierno/2026/11/22/abinader-inaugura-carcel-en-higuey-para-545-internos/3727982",
-      "source": "Diario Libre",
-      "category": "Política",
-      "regions": [
-        "Higüey"
-      ],
-      "preview": "El Gobierno inauguró este sábado el Complejo de Corrección y Rehabilitación Anamuya, en Higüey, provincia La Altagracia, construido con una inversión de 793…",
-      "image": "https://resources.diariolibre.com/images/2026/11/22/complejo-rehabilitacion-anamuya-inaugurado-por-luis-abinader-aea2fe90-focus-0-0-400-300.jpg",
-      "published": "2026-11-22T00:01:00+00:00"
-    },
-    {
-      "title": "Detenido con armas y drogas en Barahona durante allanamiento",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/22/detenido-con-armas-y-drogas-en-barahona-durante-allanamiento/3727894",
-      "source": "Diario Libre",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Agentes de la Dirección Nacional de Control de Drogas (DNCD) y representantes del Ministerio Público apresaron a un hombre de 40 años durante un allanamiento en el…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/detenido-con-armas-y-drogas-en-barahona-durante-allanamiento-b8474148-focus-0-0-400-300.jpg",
-      "published": "2026-11-22T00:01:00+00:00"
-    },
-    {
-      "title": "Operativo policial en Haití deja muertos entre pandilleros",
-      "url": "https://www.diariolibre.com/mundo/haiti/2026/11/22/operativo-policial-en-haiti-deja-muertos-entre-pandilleros/3727978",
-      "source": "Diario Libre",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Más de 20 presuntos pandilleros murieron el viernes durante un operativo de la Policía Nacional de Haití (PNH) en Martissant 2A, en Puerto Príncipe, como parte de…",
-      "image": "https://resources.diariolibre.com/images/2026/11/22/operativo-policial-en-haiti-deja-muertos-entre-pandilleros-0fcb8856-focus-0-0-400-300.jpg",
-      "published": "2026-11-22T00:01:00+00:00"
-    },
-    {
-      "title": "Alcaldía de Santiago firma acuerdo con escuela de negocios de Madrid para ofrecer becas de posgrado",
-      "url": "https://diario55.com/alcaldia-de-santiago-firma-acuerdo-con-escuela-de-negocios-de-madrid-para-ofrecer-becas-de-posgrado/",
-      "source": "Diario 55",
-      "category": "Educación",
-      "regions": [
-        "Santiago"
-      ],
-      "preview": "Santiago de los Caballeros,- La Alcaldía de Santiago firmó un acuerdo de colaboración con EUDE Business School, institución académica con sede en Madrid, España…",
-      "image": "",
-      "published": "2026-11-21T23:49:09+00:00"
-    },
-    {
-      "title": "Perú reporta 1 fallecido, 16 lesionados y 850 damnificados tras sismo de 6,7 del viernes",
-      "url": "https://noticiassin.com/mundo/america/2026/11/21/peru-sismo-de-67-deja-un-fallecido-y-16-lesionados-2174732/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Un sismo de 6,7 en el centro de Perú dejó un fallecido, 16 lesionados y 853 damnificados, según las autoridades.",
-      "image": "",
-      "published": "2026-11-21T23:46:21+00:00"
-    },
-    {
-      "title": "RD suma con histórico debut en la Copa Mundial Sub-17 de la FIFA Catar 2026",
-      "url": "https://eldia.com.do/rd-historico-empate-con-montenegro-mundial-sub-17/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. -La selección dominicana de fútbol sumó un valioso punto en su estreno en la Copa Mundial Sub-17…",
-      "image": "",
-      "published": "2026-11-21T23:44:12+00:00"
-    },
-    {
-      "title": "Trump confirma el ciberataque al FBI y cree que podría destapar «engaños» contra él",
-      "url": "https://noticiassin.com/mundo/america/2026/11/21/trump-confirma-ciberataque-al-fbi-y-ve-posibles-revelaciones-2174726/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Trump confirmó el ataque al FBI y sugirió que podría revelar información que no habría salido a la luz.",
-      "image": "",
-      "published": "2026-11-21T23:39:32+00:00"
-    },
-    {
-      "title": "Ejército domina competencia de tiro de combate y obtiene primeros lugares por equipos",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/21/ejercito-gana-competencia-de-tiro-de-combate-por-equipos-2174723/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El Ejército ganó por equipos y en la clasificación individual de la competencia de tiro de combate para oficiales superiores.",
-      "image": "",
-      "published": "2026-11-21T23:37:57+00:00"
-    },
-    {
-      "title": "Cómo atraparon al \"Chapo Isidro\", uno de los 10 narcotraficantes de México más buscados por el FBI",
-      "url": "https://eldia.com.do/como-atraparon-al-chapo-isidro-uno-de-los-10-narcotraficantes-de-mexico-mas-buscados-por-el-fbi/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. El \"Chapo Isidro\", un narcotraficante mexicano que figuraba en la lista de los 10 más buscados del FBI fue…",
-      "image": "",
-      "published": "2026-11-21T23:32:34+00:00"
-    },
-    {
-      "title": "Venezuela vence 9-6 a RD y asegura pase a súper ronda del Panamericano Sub-12",
-      "url": "https://noticiassin.com/deportes/2026/11/21/venezuela-vence-a-rd-y-asegura-pase-a-super-ronda-sub-12-2174719/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La selección dominicana buscará su clasificación este domingo frente a Curazao, luego de sumar una victoria y una derrota en el torneo.",
-      "image": "",
-      "published": "2026-11-21T23:28:41+00:00"
-    },
-    {
-      "title": "Este lunes 23 premiarán a jóvenes en los renglones cuento, poesía y novela durante la Gala Premio Cultura VIP",
-      "url": "https://puntacanapost.com/este-lunes-23-premiaran-a-jovenes-en-los-renglones-cuento-poesia-y-novela-durante-la-gala-premio-cultura-vip/",
-      "source": "Punta Cana Post",
-      "category": "Cultura",
-      "regions": [],
-      "preview": "“Entre cuentos, versos y novelas, una nueva generación de escritores tendrá su espacio para demostrar que el talento joven también tiene historias que merecen ser…",
-      "image": "",
-      "published": "2026-11-21T23:27:48+00:00"
-    },
-    {
-      "title": "\"Hay una parte de mí que va aprendiendo a ser viejo, pero hay otra a la que le cuesta muchísimo\": Jorge Drexler",
-      "url": "https://eldia.com.do/hay-una-parte-de-mi-que-va-aprendiendo-a-ser-viejo-pero-hay-otra-a-la-que-le-cuesta-muchisimo-jorge-drexler/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Jorge Drexler está en la barra de un bar en Miami Beach. Se pone los lentes para leer la carta de tragos…",
-      "image": "",
-      "published": "2026-11-21T23:20:12+00:00"
-    },
-    {
-      "title": "Compradores abarrotan comercios en busca de ofertas previas al Viernes Negro",
-      "url": "https://noticiassin.com/videos/noticias-sin-fin-de-semana/2026/11/21/compradores-abarrotan-comercios-por-ofertas-previas-al-viernes-negro-2174714/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Cientos de consumidores abarrotan comercios en busca de ofertas previas al Viernes Negro y por la expectativa del doble sueldo.",
-      "image": "",
-      "published": "2026-11-21T23:11:12+00:00"
-    },
-    {
-      "title": "David Ortiz se roba el show en la boda de Cristopher Sánchez al cantar «Triste Final» junto a Sexappeal",
-      "url": "https://eldia.com.do/david-ortiz-sorprende-al-cantar-triste-final-en-la-boda-de-cristopher-sanchez/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El expelotero de Grandes Ligas David Ortiz fue uno de los protagonistas de la celebración de la…",
-      "image": "",
-      "published": "2026-11-21T23:02:57+00:00"
-    },
-    {
-      "title": "Myke Towers, Rauw Alejandro, Nicki Nicole, Estopa y Lucero se destacan en estrenos latinos",
-      "url": "https://eldia.com.do/myke-towers-rauw-alejandro-nicki-nicole-estopa-y-lucero-se-destacan-en-estrenos-latinos/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Miami, (EFE).- Una colaboración de Myke Towers y Rauw Alejandro, el regreso de Nicki Nicole y las canciones…",
-      "image": "",
-      "published": "2026-11-21T23:00:28+00:00"
-    },
-    {
-      "title": "Dominicanos extraditados a Nueva York por delitos graves",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/21/dominicanos-extraditados-a-nueva-york-por-delitos-graves/3727910",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Dos dominicanos requeridos por tribunales de Nueva York por delitos que incluyen homicidio, narcotráfico, agresión y posesión ilegal de armas fueron extraditados a…",
-      "image": "https://resources.diariolibre.com/images/2026/11/22/dominicanos-extraditados-a-nueva-york-por-delitos-graves-60c2b9da-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T22:59:00+00:00"
-    },
-    {
-      "title": "Abinader entrega Hospital en Nisibón de 1,200 millones de pesos y anuncia tomógrafo para próximos cuatro meses",
-      "url": "https://puntacanapost.com/abinader-entrega-hospital-en-nisibon-de-1200-millones-de-pesos-y-anuncia-tomografo-para-proximos-cuatro-meses/",
-      "source": "Punta Cana Post",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "«La salud está cambiando en República Dominicana, no con palabras, sino con hechos», afirmó Abinader al entregar una infraestructura que busca evitar que los…",
-      "image": "",
-      "published": "2026-11-21T22:44:44+00:00"
-    },
-    {
-      "title": "MP pide prisión preventiva contra 22 implicados en Operación Rompeolas por narcotráfico y lavado de activos",
-      "url": "https://bavarodigital.net/mp-pide-prision-preventiva-contra-22-implicados-en-operacion-rompeolas-por-narcotrafico-y-lavado-de-activos/",
+      "title": "¡Un año después! Apresan mujer señalada por incendiar vehículo frente a vivienda en Verón",
+      "url": "https://bavarodigital.net/un-ano-despues-apresan-a-mujer-senalada-por-incendiar-vehiculo-frente-a-una-vivienda-en-veron-punta-cana/",
       "source": "Bávaro Digital",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "LA ALTAGRACIA. — El Ministerio Público solicitó prisión preventiva contra 22 personas arrestadas durante la Operación Rompeolas, acusadas de integrar una presunta…",
-      "image": "",
-      "published": "2026-11-21T22:37:00+00:00"
-    },
-    {
-      "title": "El dólar registra un nuevo récord en Cuba y alcanza los 950 pesos en el mercado informal",
-      "url": "https://eldia.com.do/el-dolar-registra-un-nuevo-record-en-cuba-y-alcanza-los-950-pesos-en-el-mercado-informal/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La Habana (EFE).- El dólar estadounidense registró este sábado un nuevo récord histórico en Cuba al cotizar a…",
-      "image": "",
-      "published": "2026-11-21T22:36:52+00:00"
-    },
-    {
-      "title": "David Collado fortalece su equipo de campaña con juramentación en Azua",
-      "url": "https://noticiassin.com/pais/provincias/2026/11/21/david-collado-fortalece-su-campana-con-juramentacion-en-azua-2174708/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Miles de dirigentes del PRM en Azua juramentaron el equipo de campaña que respalda la aspiración presidencial de David Collado.",
-      "image": "",
-      "published": "2026-11-21T22:26:04+00:00"
-    },
-    {
-      "title": "Abinader inaugura nueva cárcel en Higüey con inversión 793 millones de Pesos",
-      "url": "https://puntacanapost.com/abinader-inaugura-nueva-carcel-en-higuey-con-inversion-793-millones-de-pesos/",
-      "source": "Punta Cana Post",
-      "category": "Economía",
+      "category": "Vivienda",
       "regions": [
-        "Higüey"
+        "Punta Cana"
       ],
-      "preview": "«La Altagracia se convierte en la primera provincia del país en contar con un complejo que integra ingreso, rehabilitación y egreso de personas privadas de…",
+      "preview": "VERÓN–PUNTA CANA. — Fue apresada Adiary Guerrero Paredes, señalada en una denuncia presentada en octubre de 2025 por el presunto incendio intencional de un vehículo…",
       "image": "",
-      "published": "2026-11-21T22:23:28+00:00"
+      "published": "2026-11-22T15:21:02+00:00"
     },
     {
-      "title": "Inversión de RD$793 millones permite entregar moderno complejo penitenciario en Anamuya",
-      "url": "https://eltiempo.com.do/en-el-este/inversion-de-rd793-millones-permite-entregar-moderno-complejo-penitenciario-en-anamuya/",
-      "source": "El Tiempo",
-      "category": "Economía",
-      "regions": [],
-      "preview": "La Altagracia. Con una inversión de RD$793 millones en construcción y equipamiento, el Gobierno entregó... La entrada Inversión de RD$793 millones permite entregar…",
-      "image": "",
-      "published": "2026-11-21T22:17:33+00:00"
-    },
-    {
-      "title": "Producción larimar en Barahona y su impacto en la comunidad",
-      "url": "https://www.diariolibre.com/economia/energia/2026/11/21/produccion-larimar-en-barahona-y-su-impacto-en-la-comunidad/3727956",
-      "source": "Diario Libre",
-      "category": "Economía",
-      "regions": [],
-      "preview": "El ministro de Energía y Minas, Joel Santos, informó este sábado que 778 mineros trabajan directamente en la extracción de larimar en la comunidad de Bahoruco, en…",
-      "image": "https://resources.diariolibre.com/images/2026/11/22/produccion-larimar-barahona-y-su-impacto-en-la-comunidad-e55b4ebb-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T22:16:00+00:00"
-    },
-    {
-      "title": "Fuertes lluvias en Nueva York por tormenta tropical",
-      "url": "https://www.diariolibre.com/usa/actualidad/2026/11/21/fuertes-lluvias-en-nueva-york-por-tormenta-tropical/3727854",
-      "source": "Diario Libre",
-      "category": "Medioambiente",
-      "regions": [],
-      "preview": "Nueva York se prepara para un episodio de fuertes lluvias y ráfagas de viento a partir de este domingo, debido a un sistema de tormentas que avanza hacia el área…",
-      "image": "https://resources.diariolibre.com/images/2026/11/22/fuertes-lluvias-en-nueva-york-por-tormenta-tropical-dabe8e33-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T22:00:00+00:00"
-    },
-    {
-      "title": "Policía apresa a hombre acusado de agredir a capitán del DICRIM en Sabana Grande de Boyá",
-      "url": "https://noticiassin.com/pais/provincias/2026/11/21/policia-apresa-a-hombre-por-agredir-a-capitan-del-dicrim-en-boya-2174704/",
-      "source": "Noticias SIN",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Policía detiene a José Marte por agredir a un capitán del Dicrim e impedir un arresto en Sabana Grande de Boyá.",
-      "image": "",
-      "published": "2026-11-21T21:57:54+00:00"
-    },
-    {
-      "title": "Alerta seguridad Sinaloa tras captura de El Chapo Isidro",
-      "url": "https://www.diariolibre.com/mundo/estados-unidos/2026/11/21/alerta-seguridad-sinaloa-tras-captura-de-el-chapo-isidro/3727963",
+      "title": "Pasco Perú reporta sismo de magnitud 5.1 tras terremoto",
+      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/22/pasco-peru-reporta-sismo-de-magnitud-51-tras-terremoto/3728246",
       "source": "Diario Libre",
       "category": "Mundo",
       "regions": [],
-      "preview": "La Embajada de EE. UU. en México levantó este sábado la alerta de seguridad para sus ciudadanos en el estado de Sinaloa (noroeste del país), donde se han registrado…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/se-desata-la-violencia-tras-arresto-del-capo-fausto-isidro-meza-9d0183ad-focus-0-0-400-300.jpg",
-      "published": "2026-11-21T21:49:00+00:00"
+      "preview": "Un sismo de magnitud 5,1 se sintió durante la madrugada de este domingo en la región peruana de Pasco, cercana al epicentro del terremoto de magnitud 6,7 que el…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/pasco-peru-reporta-sismo-de-magnitud-51-tras-terremoto-347b2cc0-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T15:15:00+00:00"
+    },
+    {
+      "title": "Detenido en Operación Rompeolas era representante del COBA en La Altagracia y cobraba RD$35,000 mensuales",
+      "url": "https://bavarodigital.net/detenido-en-operacion-rompeolas-era-representante-del-coba-en-la-altagracia-y-cobraba-rd35000-mensuales/",
+      "source": "Bávaro Digital",
+      "category": "Seguridad",
+      "regions": [
+        "Higüey"
+      ],
+      "preview": "HIGÜEY, LA ALTAGRACIA. — Wander Alberto Núñez Mercedes, conocido como «Philip», uno de los detenidos durante la Operación Rompeolas, figuraba como representante…",
+      "image": "",
+      "published": "2026-11-22T15:13:46+00:00"
+    },
+    {
+      "title": "Gradúan 138 nuevos fiscales y promoción de 121 abogados de víctimas",
+      "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/22/graduan-138-nuevos-fiscales-y-promocion-de-121-abogados-de-victimas/3728377",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La procuradora general, Yeni Berenice Reynoso, encabezó la graduación 138 nuevos fiscales, 121 abogados defensores de víctimas y nueve especialistas en diversas…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/graduan-138-nuevos-fiscales-y-promocion-de-121-abogados-de-victimas-133ca1e3-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T15:07:00+00:00"
+    },
+    {
+      "title": "Anuncian plan en favor de las personas privadas de libertad",
+      "url": "https://almomento.net/habra-programas-educativos-y-de-rehabilitacion-en-carceles-rd/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "SANTO DOMINGO, República Dominicana.– El Ministerio de Justicia y la Dirección General de Desarrollo de la Comunidad acordaron implementar iniciativas para mejorar…",
+      "image": "",
+      "published": "2026-11-22T15:00:58+00:00"
+    },
+    {
+      "title": "PLD denuncia retraso en siembra de ajo en Constanza",
+      "url": "https://noticia.do/pld-retraso-siembra-ajo-en-constanza/",
+      "source": "Noticia.do",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Noticia.do PLD denuncia retraso en siembra de ajo en Constanza El PLD denuncia retrasos en la entrega de semillas de ajo en Constanza y advierte que la dependencia…",
+      "image": "",
+      "published": "2026-11-22T14:51:02+00:00"
+    },
+    {
+      "title": "Abinader inaugura en Higüey nueva cárcel de Anamuya con capacidad para 545 internos",
+      "url": "https://bavarodigital.net/abinader-inaugura-en-higuey-nueva-carcel-de-anamuya-con-capacidad-para-545-internos/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [
+        "Higüey"
+      ],
+      "preview": "HIGÜEY, LA ALTAGRACIA. — El presidente Luis Abinader, junto al ministro de Vivienda y Edificaciones, Jean Luis Rodríguez, encabezó la inauguración del Complejo de…",
+      "image": "",
+      "published": "2026-11-22T14:49:23+00:00"
+    },
+    {
+      "title": "Alerta verde por lluvias y tormentas eléctricas en República Dominican",
+      "url": "https://www.diariolibre.com/planeta/clima/2026/11/22/alerta-verde-por-lluvias-y-tormentas-electricas-en-republica-dominican/3728365",
+      "source": "Diario Libre",
+      "category": "Medioambiente",
+      "regions": [],
+      "preview": "El Centro de Operaciones de Emergencias (COE) colocó ocho provincias y el Distrito Nacional en alerta verde ante el pronóstico de aguaceros moderados a fuertes…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/alerta-verde-por-lluvias-y-tormentas-electricas-en-republica-dominican-8c444c0e-focus-min0.09-min0.01-400-300.jpg",
+      "published": "2026-11-22T14:47:00+00:00"
+    },
+    {
+      "title": "Inauguran ruta directa entre Haití y Nueva York con dos vuelos semanales",
+      "url": "https://puntacanapost.com/inauguran-ruta-directa-entre-haiti-y-nueva-york-con-dos-vuelos-semanales/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "«Haití suma una conexión aérea directa con Nueva York, con capacidad para más de 2,400 pasajeros mensuales y una apuesta por acercar a su diáspora». NUEVA YORK. EE…",
+      "image": "",
+      "published": "2026-11-22T14:41:03+00:00"
+    },
+    {
+      "title": "Punta Cana reúne a más de 222 delegados en Congreso Mundial de Voleibol y anuncia importantes avances",
+      "url": "https://bavarodigital.net/punta-cana-reune-a-mas-de-222-delegados-en-congreso-mundial-de-voleibol-y-anuncia-importantes-avances/",
+      "source": "Bávaro Digital",
+      "category": "Deportes",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "PUNTA CANA, LA ALTAGRACIA. — El 40.º Congreso Mundial de la Federación Internacional de Voleibol (FIVB) concluyó su primera jornada en Punta Cana, con la…",
+      "image": "",
+      "published": "2026-11-22T14:40:22+00:00"
+    },
+    {
+      "title": "Reconocen al MICM por su compromiso con la calidad",
+      "url": "https://www.diariolibre.com/economia/consumo/2026/11/22/reconocen-al-micm-por-su-compromiso-con-la-calidad/3728375",
+      "source": "Diario Libre",
+      "category": "Economía",
+      "regions": [],
+      "preview": "El Ministerio de Industria, Comercio y Mipymes (MICM) fue reconocido por su liderazgo institucional y su compromiso con la responsabilidad, durante la vigésima…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/reconocen-al-micm-por-su-compromiso-con-la-calidad-494dbc8e-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T14:36:00+00:00"
+    },
+    {
+      "title": "Protección de familias y violencia intrafamiliar en el país",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/22/proteccion-de-familias-y-violencia-intrafamiliar-en-el-pais/3728355",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Los arzobispos de Santo Domingo y Santiago coincidieron hoy en hacer llamados por la protección de las familias y en contra de la violencia que las afecta durante…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/politicas-para-proteger-a-las-familias-y-erradicar-la-violencia-en-los-hogares-02ada80e-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T14:29:00+00:00"
+    },
+    {
+      "title": "Julio Iglesias y su esposa Miranda Rijnsburger pasarán Navidad en Punta Cana",
+      "url": "https://puntacanapost.com/julio-iglesias-y-su-esposa-miranda-rijnsburger-pasaran-navidad-en-punta-cana/",
+      "source": "Punta Cana Post",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "«Una mansión de 16,000 metros cuadrados que nunca llegó a visitar habría salido de su patrimonio, mientras Punta Cana se perfila nuevamente como escenario de sus…",
+      "image": "",
+      "published": "2026-11-22T14:15:30+00:00"
+    },
+    {
+      "title": "Melissa Medina y resultados de análisis toxicológicos",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/22/melissa-medina-y-resultados-de-analisis-toxicologicos/3728344",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Los resultados de los análisis toxicológicos constituyen una de las principales piezas pendientes en la investigación sobre la muerte de Melissa Medina, de 22 años…",
+      "image": "https://resources.diariolibre.com/images/2026/11/18/la-policia-investiga-a-dos-personas-por-muerte-de-melissa-medina-5493225b-focus-min0.09-0.71-400-300.jpg",
+      "published": "2026-11-22T14:06:00+00:00"
+    },
+    {
+      "title": "Muere en Santo Domingo el periodista Rafael Polanco",
+      "url": "https://almomento.net/muere-en-santo-domingo-el-periodista-rafael-polanco/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [
+        "Santo Domingo"
+      ],
+      "preview": "SANTO DOMINGO ESTE.- El veterano periodista Rafael Alfredo Polanco Peralta falleció la tarde de este sábado en la Unidad de Cuidados Intensivos de la Ciudad…",
+      "image": "",
+      "published": "2026-11-22T14:00:45+00:00"
+    },
+    {
+      "title": "Apoyo a Carolina Mejía por parte de PRM en Los Alcarrizos",
+      "url": "https://www.diariolibre.com/actualidad/politica/2026/11/22/apoyo-a-carolina-mejia-por-parte-de-prm-en-los-alcarrizos/3728339",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Cuatro dirigentes que aspiran a la Alcaldía de Los Alcarrizos por el Partido Revolucionario Moderno (PRM) anunciaron este domingo su respaldo al proyecto…",
+      "image": "https://resources.diariolibre.com/images/2026/11/05/carolina-mejia-lleva-a-europa-la-transformacion-de-santo-domingo-ccf37c2c-focus-0.08-0.46-400-300.jpg",
+      "published": "2026-11-22T14:00:00+00:00"
+    },
+    {
+      "title": "Programa Navidad 360 lleva asistencia alimenticia a familias",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/22/programa-navidad-360-lleva-asistencia-alimenticia-a-familias/3728337",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El Gobierno inició este domingo el programa \"Navidad 360\" que tiene por objetivos llevar asistencia alimenticia y enseres del hogar a miles de familias de todo el…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/programa-navidad-360-lleva-asistencia-alimenticia-a-familias-8ea99b2f-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T13:56:00+00:00"
+    },
+    {
+      "title": "Jair Bolsonaro en hospital por obstrucción intestinal",
+      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/22/jair-bolsonaro-en-hospital-por-obstruccion-intestinal/3728343",
+      "source": "Diario Libre",
+      "category": "Mundo",
+      "regions": [],
+      "preview": "El expresidente brasileño Jair Bolsonaro, internado en cuidados intensivos por una obstrucción intestinal, está \"clínicamente estable\", informó este domingo el…",
+      "image": "https://resources.diariolibre.com/images/2026/03/24/jair-bolsonaro-hospitalizado-tras-su-traslado-de-la-uci-e5de9cc7-focus-min0.09-0.34-400-300.jpg",
+      "published": "2026-11-22T13:56:00+00:00"
+    },
+    {
+      "title": "Protección de derechos fundamentales en República Dominicana",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/22/proteccion-de-derechos-fundamentales-en-republica-dominicana/3728334",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El Defensor del Pueblo de la República Dominicana y la Agencia Española de Cooperación Internacional para el Desarrollo (Aecid) pusieron en marcha un proyecto para…",
+      "image": "https://resources.diariolibre.com/images/2026/07/08/defensor-del-pueblo-ofrece-mediacion-por-alza-del-pasaje-en-santiago-f176e9e5-focus-min0.05-0.36-400-300.jpg",
+      "published": "2026-11-22T13:34:00+00:00"
+    },
+    {
+      "title": "Retrasos en vuelos de Delta por fallas en automatización",
+      "url": "https://www.diariolibre.com/economia/turismo/2026/11/22/retrasos-en-vuelos-de-delta-por-fallas-en-automatizacion/3728325",
+      "source": "Diario Libre",
+      "category": "Economía",
+      "regions": [],
+      "preview": "La aerolínea estadounidense Delta reportó este domingo un problema técnico que obligó a retrasar miles de vuelos con destino u origen en el Aeropuerto Internacional…",
+      "image": "https://resources.diariolibre.com/images/2024/12/27/pasajero-intenta-viajar-de-polizon-en-vuelo-de-delta-airlines-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T13:14:00+00:00"
+    },
+    {
+      "title": "Victoria en elecciones de medio mandato impulsa a Barack Obama",
+      "url": "https://www.diariolibre.com/usa/actualidad/2026/11/22/victoria-en-elecciones-de-medio-mandato-impulsa-a-barack-obama/3728316",
+      "source": "Diario Libre",
+      "category": "Política",
+      "regions": [],
+      "preview": "La histórica victoria en las elecciones de medio mandato ha impulsado el ánimo dentro del Partido Demócrata y ha erigido al expresidente de Estados Unidos, Barack…",
+      "image": "https://resources.diariolibre.com/images/2026/08/10/obama-lanzara-un-odcast-sobre-libros-el-proximo-24-de-septiembre-02116a43-focus-min0.06-0.46-400-300.jpg",
+      "published": "2026-11-22T13:05:00+00:00"
+    },
+    {
+      "title": "Preocupa en RD cifra muertes por eventos cardiovasculares",
+      "url": "https://almomento.net/ve-catalogo-seguridad-social-rd-esta-desfasado-en-cardiologia/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "SANTO DOMINGO.- El cardiólogo Pedro Ureña informó que los infartos al miocardio y los accidentes cardiovasculares siguen representando en la República Dominicana…",
+      "image": "",
+      "published": "2026-11-22T13:00:08+00:00"
+    },
+    {
+      "title": "Urge que Planeamiento Urbano, cumpla con la ley y con sus responsabilidades",
+      "url": "https://diario55.com/urge-que-planeamiento-urbano-cumpla-con-la-ley-y-con-sus-responsabilidades/",
+      "source": "Diario 55",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Estas reflexiones, de la autoría de este humilde ciudadano, fueron publicadas por este prestigioso medio de comunicación hace unos cuantos años, pero debido al…",
+      "image": "",
+      "published": "2026-11-22T12:56:25+00:00"
+    },
+    {
+      "title": "Muere en Dominicana militar salvadoreño herido en Haití",
+      "url": "https://almomento.net/muere-en-dominicana-militar-salvadoreno-herido-en-haiti/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Santo Domingo, 22 nov (Prensa Latina) – La cifra de militares salvadoreños fallecidos por una detonación en Haití ascendió a tres, luego de que uno de los heridos…",
+      "image": "",
+      "published": "2026-11-22T12:36:57+00:00"
+    },
+    {
+      "title": "Peña Guaba dijo que la confrontación forma parte de la competencia",
+      "url": "https://www.diariolibre.com/actualidad/politica/2026/11/22/pena-guaba-dijo-que-la-confrontacion-forma-parte-de-la-competencia/3728297",
+      "source": "Diario Libre",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El dirigente del Partido Revolucionario Moderno (PRM) Tony Peña Guaba afirmó que la confrontación forma parte de la competencia política, al referirse a las…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/tony-pena-guaba-anuncia-respaldo-a-david-collado-en-competencia-politica-interna-9d141a05-focus-min0.01-0.31-400-300.jpg",
+      "published": "2026-11-22T12:32:00+00:00"
+    },
+    {
+      "title": "Dejan tarjetas que promocionan presunta venta de drogas debajo de las puertas en residencial de Verón",
+      "url": "https://bavarodigital.net/dejan-tarjetas-que-promocionan-drogas-debajo-de-las-puertas-en-residencial-de-veron/",
+      "source": "Bávaro Digital",
+      "category": "Vivienda",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "VERÓN–PUNTA CANA. — Residentes de un residencial en Verón–Punta Cana, denunciaron ante Bávaro Digital la aparición de tarjetas publicitarias que aparentemente…",
+      "image": "",
+      "published": "2026-11-22T12:21:12+00:00"
+    },
+    {
+      "title": "Qik Banco Digital presenta nuevas soluciones financieras",
+      "url": "https://www.diariolibre.com/economia/negocios/2026/11/22/qik-banco-digital-presenta-nuevas-soluciones-financieras/3728280",
+      "source": "Diario Libre",
+      "category": "Economía",
+      "regions": [],
+      "preview": "Qik Banco Digital Dominicano presentó nuevas soluciones en el marco de su cuarto aniversario, que están orientadas a ofrecer mayores beneficios y facilitar la…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/qik-banco-digital-presenta-nuevas-soluciones-financieras-3c17652e-focus-0-0-400-300.png",
+      "published": "2026-11-22T12:07:00+00:00"
+    },
+    {
+      "title": "Verón continúa este domingo operativo de esterilización de perros y gatos con 200 cupos",
+      "url": "https://bavarodigital.net/veron-continua-este-domingo-operativo-de-esterilizacion-de-perros-y-gatos-con-200-cupos/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "VERÓN–PUNTA CANA, LA ALTAGRACIA. — Este domingo 22 de noviembre está programada la segunda jornada del operativo de castración y esterilización de perros y gatos…",
+      "image": "",
+      "published": "2026-11-22T12:05:33+00:00"
+    },
+    {
+      "title": "Tropas rusas toman control de otra localidad en este Ucrania",
+      "url": "https://almomento.net/tropas-rusas-toman-control-de-otra-localidad-en-este-ucrania/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "MADRID 22 Nov. (EUROPA PRESS) – El Ministerio de Defensa de Rusia ha anunciado este domingo que sus tropas han asumido el control de Sosnovi Bor, una localidad…",
+      "image": "",
+      "published": "2026-11-22T12:00:44+00:00"
+    },
+    {
+      "title": "NBA: Wembanyama destroza a Pelicans con 50 puntos",
+      "url": "https://www.diariolibre.com/deportes/baloncesto/2026/11/22/nba-wembanyama-destroza-a-pelicans-con-50-puntos/3728276",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "El francés Victor Wembanyama firmó el sábado un recital de 50 puntos y 19 rebotes en el triunfo de los San Antonio Spurs 114-91 ante los New Orleans Pelicans…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/nba-wembanyama-destroza-a-pelicans-con-50-puntos-c98984de-focus-min0.12-0.46-400-300.jpg",
+      "published": "2026-11-22T11:53:00+00:00"
+    },
+    {
+      "title": "El Banco Popular premia 11 iniciativas de emprendimientos",
+      "url": "https://www.diariolibre.com/economia/negocios/2026/11/22/el-banco-popular-premia-11-iniciativas-de-emprendimientos/3728272",
+      "source": "Diario Libre",
+      "category": "Economía",
+      "regions": [],
+      "preview": "El Banco Popular premió 11 proyectos emprendedores con 8.1 millones de pesos en capital semilla, como parte de su estrategia de apoyo al emprendimiento y al…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/el-banco-popular-premia-11-iniciativas-de-emprendimientos-df2f7645-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T11:46:00+00:00"
+    },
+    {
+      "title": "F1: Verstappen reina en caos Las Vegas y Colapinto iguala resultado",
+      "url": "https://www.diariolibre.com/deportes/motor/2026/11/22/f1-verstappen-reina-en-caos-las-vegas-y-colapinto-iguala-resultado/3728265",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "El neerlandés Max Verstappen (Red Bull) se impuso la noche del sábado en un trepidante Gran Premio de Las Vegas y consolidó su segunda posición en la clasificación…",
+      "image": "https://resources.diariolibre.com/images/2026/11/22/f1-verstappen-reina-en-caos-las-vegas-y-colapinto-iguala-resultado-40acf3f6-focus-0.38-0.31-400-300.jpg",
+      "published": "2026-11-22T11:37:00+00:00"
+    },
+    {
+      "title": "Congreso internacional hispanidad en Santo Domingo",
+      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/22/congreso-internacional-hispanidad-en-santo-domingo/3728264",
+      "source": "Diario Libre",
+      "category": "Política",
+      "regions": [
+        "Santo Domingo"
+      ],
+      "preview": "Historiadores, escritores, investigadores y académicos de España, Hispanoamérica y otras regiones participarán del 25 al 28 de noviembre en el III Congreso…",
+      "image": "https://resources.diariolibre.com/images/2026/05/11/remozaran-biblioteca-nacional-tras-anos-de-filtraciones-y-deterioro-be53983c-focus-0-0-400-300.jpg",
+      "published": "2026-11-22T11:35:00+00:00"
     }
   ]
 }
