@@ -1,56 +1,56 @@
 {
-  "updated": "2026-11-21T20:30:52.852266+00:00",
+  "updated": "2026-11-22T02:12:16.446554+00:00",
   "source": "MET Norway",
   "license": "CC BY 4.0",
   "cities": {
     "Higüey": {
-      "temperature_c": 27.6,
-      "wind_mps": 3.0,
-      "symbol": "fair_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "temperature_c": 23.9,
+      "wind_mps": 2.4,
+      "symbol": "fair_night",
+      "forecast_for": "2026-11-22T02:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     },
     "Punta Cana": {
-      "temperature_c": 28.5,
-      "wind_mps": 3.2,
-      "symbol": "partlycloudy_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "temperature_c": 24.8,
+      "wind_mps": 2.5,
+      "symbol": "fair_night",
+      "forecast_for": "2026-11-22T02:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     },
     "Santo Domingo": {
-      "temperature_c": 29.1,
-      "wind_mps": 3.1,
-      "symbol": "fair_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "temperature_c": 25.4,
+      "wind_mps": 3.0,
+      "symbol": "lightrainshowers_night",
+      "forecast_for": "2026-11-22T01:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     },
     "Santiago": {
-      "temperature_c": 30.6,
-      "wind_mps": 4.0,
-      "symbol": "lightrainshowers_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "temperature_c": 24.7,
+      "wind_mps": 3.8,
+      "symbol": "fair_night",
+      "forecast_for": "2026-11-22T02:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     },
     "La Romana": {
-      "temperature_c": 29.1,
+      "temperature_c": 24.8,
       "wind_mps": 5.9,
-      "symbol": "partlycloudy_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "symbol": "fair_night",
+      "forecast_for": "2026-11-22T02:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     },
     "Puerto Plata": {
-      "temperature_c": 28.5,
+      "temperature_c": 26.1,
       "wind_mps": 7.0,
-      "symbol": "partlycloudy_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "symbol": "partlycloudy_night",
+      "forecast_for": "2026-11-22T02:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     },
     "Samaná": {
-      "temperature_c": 28.2,
-      "wind_mps": 5.2,
-      "symbol": "lightrainshowers_day",
-      "forecast_for": "2026-11-21T20:00:00Z",
-      "updated": "2026-11-21T20:30:52.852266+00:00"
+      "temperature_c": 25.6,
+      "wind_mps": 5.3,
+      "symbol": "fair_night",
+      "forecast_for": "2026-11-22T02:00:00Z",
+      "updated": "2026-11-22T02:12:16.446554+00:00"
     }
   }
 }
