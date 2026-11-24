@@ -30,7 +30,7 @@ FEEDS = [
     ("Diario Libre", "https://www.diariolibre.com/rss/planeta.xml", "Medioambiente", "diariolibre.com"),
     ("Diario Libre", "https://www.diariolibre.com/rss/revista.xml", "Cultura", "diariolibre.com"),
     # Additional publisher RSS endpoints are best-effort, not guaranteed or licensed content feeds.
-    ("Hoy", "https://hoy.com.do/feed/", "Actualidad", "hoy.com.do"),
+    ("Hoy", "https://hoy.com.do/rss/home.xml", "Actualidad", "hoy.com.do"),
     ("El Día", "https://eldia.com.do/feed/", "Actualidad", "eldia.com.do"),
     ("AlMomento", "https://almomento.net/feed/", "Actualidad", "almomento.net"),
     ("Noticias SIN", "https://noticiassin.com/feed/", "Actualidad", "noticiassin.com"),
