@@ -108,7 +108,7 @@ def main():
    rows=get_notices(*s);results.extend(rows);successes+=1
    print(s[0],len(rows),"eligible notices")
   except (OSError,ValueError,ET.ParseError,TimeoutError) as exc:
-   print("Optional authority feed unavailable",s[0],type(exc).__name__)
+   print(f"Optional authority feed unavailable: {s[0]} ({s[2]}): {type(exc).__name__} {exc}")
  results.extend(news_source_notices())
  if not successes and not results:
   print("All feeds unavailable; preserving previous snapshot")
