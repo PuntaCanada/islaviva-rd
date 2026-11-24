@@ -78,10 +78,33 @@ def build_payload(items,now=NOW):
         "status":"unverified_current"
     }
     return {"updated":now.isoformat(),"items":reports[:24]+[official]}
+def usable_news_snapshot(news, now=NOW):
+    """Allow partial RSS coverage, never an absent or stale snapshot."""
+    if not isinstance(news, dict):
+        return False
+    if news.get("source_status") not in ("ok", "partial", "no_recent_articles"):
+        return False
+    diagnostics = news.get("source_diagnostics")
+    if not isinstance(diagnostics, dict):
+        return False
+    try:
+        successful = diagnostics["feeds_successful"]
+        configured = diagnostics["feeds_configured"]
+        updated = dt.datetime.fromisoformat(news["updated"].replace("Z", "+00:00"))
+    except (KeyError, AttributeError, TypeError, ValueError):
+        return False
+    if (not isinstance(successful, int) or isinstance(successful, bool)
+            or not isinstance(configured, int) or isinstance(configured, bool)
+            or not 0 < successful <= configured or updated.tzinfo is None):
+        return False
+    if not dt.timedelta(0) <= now - updated <= dt.timedelta(hours=6):
+        return False
+    return isinstance(news.get("items"), list)
+
 def main():
     try:
         news=json.loads(NEWS.read_text(encoding="utf-8"))
-        if news.get("source_status") not in ("ok","no_recent_articles"):
+        if not usable_news_snapshot(news):
             raise ValueError("News source unavailable")
         payload=build_payload(news.get("items",[]))
         OUT.write_text(json.dumps(payload,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
