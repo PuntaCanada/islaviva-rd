@@ -7,6 +7,8 @@ ROOT=pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT/"scripts"))
 from update_local_notices import TOPICS, SOURCES, clean, UTC
 import re
+import datetime as dt
+from update_local_notices import retain_failed_feed_notices, NOW
 from news_quality import normalize
 
 class LocalBulletinsTests(unittest.TestCase):
@@ -25,6 +27,16 @@ class LocalBulletinsTests(unittest.TestCase):
             self.assertEqual(n["status"],"published_unverified")
             self.assertTrue(n["url"].startswith("https://"))
             self.assertIn(n["kind"],("power","water","events"))
+    def test_partial_failure_retains_recent_attributable_notice(self):
+        a,b=[url for source,kind,url,domain in SOURCES if source=="INAPA"]
+        row={"source":"INAPA","kind":"water","title":"INAPA anuncia avería en acueducto","url":"https://inapa.gob.do/notice/","published":(NOW-dt.timedelta(days=1)).isoformat(),"status":"published_unverified","feed_url":a}
+        self.assertEqual(retain_failed_feed_notices([row],{a},{b}),[row])
+        self.assertEqual(retain_failed_feed_notices([row],{b},{a}),[])
+        self.assertEqual(retain_failed_feed_notices([dict(row,published=(NOW-dt.timedelta(days=8)).isoformat())],{a},{b}),[])
+        self.assertEqual(retain_failed_feed_notices([dict(row,url="https://example.org/")],{a},{b}),[])
+        legacy=dict(row);legacy.pop("feed_url")
+        self.assertEqual(retain_failed_feed_notices([legacy],{a},{b}),[])
+        self.assertEqual(retain_failed_feed_notices([legacy],{a,b},set()),[legacy])
     def test_feed_domains_https(self):
         self.assertTrue(all(url.startswith("https://") and hostname in url for _,_,url,hostname in SOURCES))
 

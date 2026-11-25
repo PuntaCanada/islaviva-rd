@@ -100,19 +100,53 @@ def news_source_notices():
   })
  return results
 
+def retain_failed_feed_notices(previous,failed,successful):
+ """Keep recent, attributable official notices only from failed endpoints.
+ Legacy items without feed provenance are retained only if every endpoint
+ for their authority failed. Never extend their original publication age.
+ """
+ retained=[]
+ allowed={url:(source,kind,domain) for source,kind,url,domain in SOURCES}
+ for item in previous:
+  if not isinstance(item,dict) or item.get("status")!="published_unverified":continue
+  source,kind=item.get("source"),item.get("kind")
+  feed=item.get("feed_url")
+  candidates=[url for url,(s,k,d) in allowed.items() if s==source and k==kind]
+  if not candidates:continue
+  if feed:
+   if feed not in candidates or feed not in failed:continue
+  elif any(url in successful for url in candidates) or not all(url in failed for url in candidates):continue
+  try:
+   published=dt.datetime.fromisoformat(item["published"])
+   if published.tzinfo is None:continue
+   parsed=urllib.parse.urlsplit(item["url"])
+   domains={allowed[url][2] for url in candidates}
+   if parsed.scheme!="https" or parsed.hostname not in domains|{"www."+d for d in domains}:continue
+   if not dt.timedelta(0)<=NOW-published<=dt.timedelta(days=7):continue
+   if not re.search(TOPICS[kind],normalize(item.get("title",""))):continue
+  except (ValueError,TypeError,KeyError):continue
+  retained.append(item)
+ return retained
+
 def main():
  results=[]
  successes=0
+ successful=set();failed=set()
  for s in SOURCES:
   try:
-   rows=get_notices(*s);results.extend(rows);successes+=1
+   rows=get_notices(*s)
+   for row in rows:row["feed_url"]=s[2]
+   results.extend(rows);successes+=1;successful.add(s[2])
    print(s[0],len(rows),"eligible notices")
   except (OSError,ValueError,ET.ParseError,TimeoutError) as exc:
+   failed.add(s[2])
    print(f"Optional authority feed unavailable: {s[0]} ({s[2]}): {type(exc).__name__} {exc}")
  results.extend(news_source_notices())
- if not successes and not results:
-  print("All feeds unavailable; preserving previous snapshot")
-  return
+ try:previous=json.loads(OUT.read_text(encoding="utf-8")).get("items",[])
+ except (OSError,ValueError,AttributeError):previous=[]
+ retained=retain_failed_feed_notices(previous if isinstance(previous,list) else [],failed,successful)
+ results.extend(retained)
+ print(f"Local notice feeds: {successes}/{len(SOURCES)} successful; retained {len(retained)} recent official notices")
  results.sort(key=lambda x:x["published"],reverse=True)
  seen=set();unique=[]
  for item in results:
@@ -120,7 +154,7 @@ def main():
   if u in seen:continue
   seen.add(u);unique.append(item)
  # No fabricated outage status; expiry is only a press publication recency limit.
- data={"updated":NOW.isoformat(),"sources_checked":successes,"status":"published_not_live","items":unique[:35]}
+ data={"updated":NOW.isoformat(),"sources_checked":successes,"sources_configured":len(SOURCES),"failed_feeds":sorted(failed),"retained_count":len(retained),"status":"published_not_live","items":unique[:35]}
  OUT.parent.mkdir(exist_ok=True)
  OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 if __name__=="__main__":main()
