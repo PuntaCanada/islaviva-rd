@@ -1,10 +1,8 @@
 {
-  "updated": "2026-11-25T18:00:43.200617+00:00",
-  "sources_checked": 3,
+  "updated": "2026-11-25T19:14:35.555336+00:00",
+  "sources_checked": 5,
   "sources_configured": 6,
   "failed_feeds": [
-    "https://ayuntamientohiguey.gob.do/category/noticias/feed/",
-    "https://ayuntamientohiguey.gob.do/feed/",
     "https://inapa.gob.do/noticias/feed/"
   ],
   "retained_count": 0,

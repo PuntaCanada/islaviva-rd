@@ -1,37 +1,361 @@
 {
-  "updated": "2026-11-25T18:00:36.186941+00:00",
+  "updated": "2026-11-25T19:14:29.397992+00:00",
   "source_status": "ok",
   "source_diagnostics": {
     "feeds_successful": 18,
     "feeds_configured": 18,
     "publishers": {
-      "AlMomento": 4,
-      "Bávaro Digital": 9,
-      "Diario 55": 3,
-      "Diario Libre": 4,
+      "AlMomento": 8,
+      "Bávaro Digital": 6,
+      "Diario 55": 1,
+      "Diario Libre": 2,
       "El Día": 15,
-      "El Tiempo": 2,
-      "Hoy": 23,
-      "Noticia.do": 1,
-      "Noticias SIN": 10,
-      "Punta Cana Post": 1
+      "El Tiempo": 3,
+      "Hoy": 22,
+      "Noticia.do": 6,
+      "Noticias SIN": 9
     },
-    "with_image_url": 27,
-    "with_region": 6,
+    "with_image_url": 24,
+    "with_region": 5,
     "by_region": {
       "La Romana": 1,
-      "Punta Cana": 3,
-      "Samaná": 1,
-      "Santo Domingo": 1
+      "Puerto Plata": 2,
+      "Punta Cana": 2
     },
     "regional_publishers": {
-      "Bávaro Digital": 4,
-      "Noticias SIN": 1,
-      "Punta Cana Post": 1
+      "Bávaro Digital": 3,
+      "Noticia.do": 1,
+      "Noticias SIN": 1
     }
   },
   "failed_feeds": [],
   "items": [
+    {
+      "title": "Irán rechaza denuncias de Israel sobre posesión armas químicas",
+      "url": "https://almomento.net/iran-rechaza-denuncias-de-israel-sobre-posesion-armas-quimicas/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "TEHERAN 25 Nov.- El ministro de Exteriores iraní, Abbas Araqchi, ha desmentido una vez más que su país esté en posesión de armas químicas, como ha comenzado a…",
+      "image": "",
+      "published": "2026-11-25T19:14:23+00:00"
+    },
+    {
+      "title": "Rusia confirma «contactos» con UE para diálogo sobre Ucrania",
+      "url": "https://almomento.net/rusia-confirma-contactos-con-ue-para-dialogo-sobre-ucrania/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "MOSCU 25 Nov.- El Kremlin ha confirmado este miércoles la existencia de «contactos de trabajo» con representantes europeos sobre la posible participación de la…",
+      "image": "",
+      "published": "2026-11-25T19:12:53+00:00"
+    },
+    {
+      "title": "José Sirí debuta esta noche con los Gigantes del Cibao",
+      "url": "https://hoy.com.do/deportes/jose-siri-debuta-noche-gigantes-cibao_1109890.html",
+      "source": "Hoy",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "La incorporación de Sirí representa una de las más esperadas por los seguidores de la franquicia, que vuelven a contar con uno de sus jugadores más emblemáticos…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b0732d5e1172.r_d.704-530-9950.jpeg",
+      "published": "2026-11-25T19:12:24+00:00"
+    },
+    {
+      "title": "Leydi Marine llevó la inspiración de la Ciudad Colonial a la pasarela de la OEA en Washington",
+      "url": "https://bavarodigital.net/leydi-marine-llevo-la-inspiracion-de-la-ciudad-colonial-a-la-pasarela-de-la-oea-en-washington/",
+      "source": "Bávaro Digital",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "La diseñadora dominicana presentó ANEMOIA, una colección de 24 piezas inspirada en el romanticismo, la arquitectura colonial y las corrientes artísticas del…",
+      "image": "",
+      "published": "2026-11-25T19:10:52+00:00"
+    },
+    {
+      "title": "Netanyahu pide que se archiven todas sus causas por corrupción tras propuestas de jueces",
+      "url": "https://noticiassin.com/mundo/mundo-general/2026/11/25/netanyahu-pide-archivar-sus-causas-por-corrupcion-tras-fallo-judicial-2176865/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Netanyahu pide archivar sus causas tras la recomendación judicial de retirar un cargo por cohecho y dudas sobre otras pruebas.",
+      "image": "",
+      "published": "2026-11-25T19:10:15+00:00"
+    },
+    {
+      "title": "INTRANT abrirá nueva oficina en San Pedro",
+      "url": "https://eltiempo.com.do/en-el-este/san-pedro-de-macoris/intrant-abrira-nueva-oficina-en-san-pedro/",
+      "source": "El Tiempo",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "San Pedro de Macorís. Una nueva oficina para la expedición de licencias de conducir será... La entrada INTRANT abrirá nueva oficina en San Pedro se publicó primero…",
+      "image": "",
+      "published": "2026-11-25T19:07:24+00:00"
+    },
+    {
+      "title": "Un camión cisterna cargado de bombonas de gas explota en Egipto y causa 21 muertos",
+      "url": "https://noticiassin.com/mundo/mundo-general/2026/11/25/explosion-de-un-camion-de-gas-en-el-cairo-deja-21-muertos-2176861/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La explosión de un camión con bombonas de gas en El Cairo deja al menos 21 muertos y 15 heridos.",
+      "image": "",
+      "published": "2026-11-25T19:07:19+00:00"
+    },
+    {
+      "title": "Trump aprueba la declaración de desastre para Florida por las inundaciones de noviembre",
+      "url": "https://noticiassin.com/estados-unidos/2026/11/25/trump-aprueba-ayudas-por-las-inundaciones-en-florida-2176860/",
+      "source": "Noticias SIN",
+      "category": "Medioambiente",
+      "regions": [],
+      "preview": "Trump aprueba ayudas federales para damnificados por las inundaciones en seis condados de Florida.",
+      "image": "",
+      "published": "2026-11-25T19:04:27+00:00"
+    },
+    {
+      "title": "Ucrania advierte se retrasa el suministro misiles desde EEUU",
+      "url": "https://almomento.net/ucrania-advierte-se-retrasa-el-suministro-misiles-desde-eeuu/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "KIEV 25 Nov.- El presidente de Ucrania, Volodimir Zelenski, ha lamentado este miércoles que las entregas de misiles antibalísticos procedentes de Estados Unidos…",
+      "image": "",
+      "published": "2026-11-25T19:02:49+00:00"
+    },
+    {
+      "title": "CREES cuestiona Gobierno RD por manejo del gasto público",
+      "url": "https://almomento.net/crees-cuestiona-al-gobierno-por-manejo-del-gasto-publico/",
+      "source": "AlMomento",
+      "category": "Política",
+      "regions": [],
+      "preview": "SANTO DOMINGO.- Miguel Collado Di Franco, vicepresidente ejecutivo del Centro Regional de Estrategias Económicas Sostenibles (CREES), propuso establecer una…",
+      "image": "",
+      "published": "2026-11-25T19:00:43+00:00"
+    },
+    {
+      "title": "EGIPTO: Al menos 30 muertos por un incendio cerca El Cairo",
+      "url": "https://almomento.net/egipto-al-menos-30-muertos-por-el-incendio-cerca-de-el-cairo/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "EGIPTO 25 Nov.- Al menos 30 personas han muerto y decenas han resultado heridas a causa de un incendio registrado este miércoles en la gobernación de Guiza, en el…",
+      "image": "",
+      "published": "2026-11-25T18:59:27+00:00"
+    },
+    {
+      "title": "Investigan daños a arrecife de coral por encallamiento de buque en Puerto Plata",
+      "url": "https://noticiassin.com/pais/provincias/2026/11/25/medio-ambiente-evalua-danos-a-arrecife-por-encallamiento-en-puerto-plata-2176854/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [
+        "Puerto Plata"
+      ],
+      "preview": "Medio Ambiente evalúa daños a un arrecife de coral tras el encallamiento del buque cubano Nova Orion en Puerto Plata.",
+      "image": "",
+      "published": "2026-11-25T18:58:57+00:00"
+    },
+    {
+      "title": "Eliezel Salvador afirma que las autoridades no lo reciben para responder por la muerte de Melisa Medina: “No estoy prófugo ni hice nada”",
+      "url": "https://hoy.com.do/el-pais/eliezel-salvador-afirma-autoridades-reciben-responder-muerte-melisa-medina-profugo-hice_1109888.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La muerte de la también empresaria, de 22 años, ocurrió el pasado 17 de noviembre en circunstancias que aún no han sido esclarecidas.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b0732e92b0b2.r_d.619-431-0.jpeg",
+      "published": "2026-11-25T18:58:50+00:00"
+    },
+    {
+      "title": "¿Hay petróleo RD? Refidomsa espera respuestas de nuevas perforaciones",
+      "url": "https://hoy.com.do/el-pais/almuerzo-corripio/hay-petroleo-rd-refidomsa-espera-respuestas-nuevas-perforaciones_1109887.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Pereyra también señaló que, a solicitud del presidente de la República, sostuvieron un encuentro con una empresa española que ha desarrollado expediciones y…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b072d34664fe.jpeg",
+      "published": "2026-11-25T18:53:20+00:00"
+    },
+    {
+      "title": "Legisladores opositores exigen reformular el Presupuesto de 2027",
+      "url": "https://noticiassin.com/videos/noticias-sin-primera-emision/2026/11/25/oposicion-pide-reformular-el-presupuesto-2027-por-cambios-fiscales-2176844/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Oposición pide devolver el Presupuesto 2027 para ajustarlo a los cambios en ingresos, gastos y déficit de 2026.",
+      "image": "",
+      "published": "2026-11-25T18:52:02+00:00"
+    },
+    {
+      "title": "Lanzan Iniciativa Vida y llaman a pacto nacional contra la violencia de género",
+      "url": "https://noticiassin.com/videos/noticias-sin-primera-emision/2026/11/25/gobierno-lanza-iniciativa-vida-y-pide-pacto-contra-la-violencia-de-genero-2176828/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Gobierno impulsa Iniciativa Vida y autoridades piden un pacto nacional para frenar la violencia contra las mujeres.",
+      "image": "",
+      "published": "2026-11-25T18:51:25+00:00"
+    },
+    {
+      "title": "Abinader designa al obispo de Puerto Plata presidente del comité del Estadio José Briceño",
+      "url": "https://noticia.do/obispo-comite-estadio-jose-briceno/",
+      "source": "Noticia.do",
+      "category": "Política",
+      "regions": [
+        "Puerto Plata"
+      ],
+      "preview": "Noticia.do Abinader designa al obispo de Puerto Plata presidente del comité del Estadio José Briceño Abinader designa al obispo Julio César Corniel Amaro presidente…",
+      "image": "",
+      "published": "2026-11-25T18:43:34+00:00"
+    },
+    {
+      "title": "Verón–Punta Cana estrecha lazos con Chile para impulsar el desarrollo del voleibol en la zona",
+      "url": "https://bavarodigital.net/veron-punta-cana-estrecha-lazos-con-chile-para-impulsar-el-desarrollo-del-voleibol-en-la-zona/",
+      "source": "Bávaro Digital",
+      "category": "Deportes",
+      "regions": [
+        "Punta Cana"
+      ],
+      "preview": "VERÓN–PUNTA CANA. — El alcalde distrital, Ramón Antonio Ramírez (Manolito), recibió este martes 24 de noviembre a una comisión encabezada por Jorge Pino Madrid…",
+      "image": "",
+      "published": "2026-11-25T18:39:31+00:00"
+    },
+    {
+      "title": "Lomiiel lleva el dembow dominicano a la banda sonora de Grand Theft Auto VI",
+      "url": "https://hoy.com.do/vivir/alegria/musica/lomiiel-lleva-dembow-dominicano-banda-sonora-grand-theft-auto-vi_1109886.html",
+      "source": "Hoy",
+      "category": "Gaming y tecnología",
+      "regions": [],
+      "preview": "Lomiiel lleva el dembow dominicano a la banda sonora de Grand Theft Auto VI",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b072afb582be.jpeg",
+      "published": "2026-11-25T18:39:19+00:00"
+    },
+    {
+      "title": "Abinader reconoce desafíos para frenar la violencia contra las mujeres",
+      "url": "https://noticiassin.com/videos/noticias-sin-primera-emision/2026/11/25/abinader-pide-reforzar-la-prevencion-contra-la-violencia-de-genero-2176832/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Abinader admite que frenar la violencia contra las mujeres sigue siendo un reto y pide reforzar prevención y protección.",
+      "image": "",
+      "published": "2026-11-25T18:36:29+00:00"
+    },
+    {
+      "title": "Luisito Pie y Luguelín Santos motivan a más de 600 niños a perseguir sus sueños deportivos",
+      "url": "https://hoy.com.do/deportes/luisito-pie-luguelin-santos-motivan-600-ninos-perseguir-suenos-deportivos_1109885.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Luisito Pie, Luguelín Santos, Liranyi Alonso y Wellington Castillo compartieron con los niños sus experiencias y trayectorias en el deporte.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b0729c0545c1.r_d.655-525-9375.jpeg",
+      "published": "2026-11-25T18:34:01+00:00"
+    },
+    {
+      "title": "RD y Portugal acuerdan plan de cooperación contra la violencia hacia las mujeres",
+      "url": "https://noticiassin.com/diaspora/2026/11/25/rd-y-portugal-acuerdan-plan-contra-la-violencia-hacia-las-mujeres-2176812/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "RD y Portugal pactan un plan 2027-2028 para prevenir y combatir la violencia contra las mujeres.",
+      "image": "",
+      "published": "2026-11-25T18:33:17+00:00"
+    },
+    {
+      "title": "Indotel recibirá más de RD$5,560 millones por concesiones a Viettel y Claro",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/25/indotel-recibira-rd5560-millones-por-concesiones-a-viettel-y-claro-2176824/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Indotel proyecta RD$5,560 millones hasta 2032 por concesiones, para fiscalización y proyectos de conectividad, salud y educación.",
+      "image": "",
+      "published": "2026-11-25T18:30:07+00:00"
+    },
+    {
+      "title": "TSA anula cancelación de Jhonny Tavárez y ordena pagarle salarios atrasados",
+      "url": "https://noticia.do/tsa-reintegro-jhonny-tavarez/",
+      "source": "Noticia.do",
+      "category": "Economía",
+      "regions": [],
+      "preview": "Noticia.do TSA anula cancelación de Jhonny Tavárez y ordena pagarle salarios atrasados El TSA anuló la cancelación de Jhonny Tavárez y ordenó a Salud Pública…",
+      "image": "",
+      "published": "2026-11-25T18:30:06+00:00"
+    },
+    {
+      "title": "Mujeres se reunirán en RD para hablar de perdón y libertad interior",
+      "url": "https://hoy.com.do/vivir/mujeres-reuniran-rd-hablar-perdon-libertad-interior_1109884.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La iniciativa, encabezada por la dominicana Raidy García, reunirá a conferencistas nacionales e internacionales los días 29 y 30 de noviembre, con una propuesta…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b072730815f2.jpeg",
+      "published": "2026-11-25T18:22:14+00:00"
+    },
+    {
+      "title": "Negro Veras aboga por cambiar el orden social dominicano",
+      "url": "https://noticia.do/negro-veras-cambio-orden-social-dominicano/",
+      "source": "Noticia.do",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Noticia.do Negro Veras aboga por cambiar el orden social dominicano Negro Veras plantea sustituir el actual orden social dominicano ante lo que considera una crisis…",
+      "image": "",
+      "published": "2026-11-25T18:17:54+00:00"
+    },
+    {
+      "title": "La sociedad dominicana merecedora de su desaparición",
+      "url": "https://noticia.do/la-sociedad-dominicana-merecedora-desaparicion/",
+      "source": "Noticia.do",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Noticia.do La sociedad dominicana merecedora de su desaparición Por: Ramón Antonio Veras. 1.- En la medida en que una sociedad humana se descompone, la alarma se…",
+      "image": "",
+      "published": "2026-11-25T18:10:11+00:00"
+    },
+    {
+      "title": "\"No podemos honrar la memoria de las Mirabal mientras toleramos los feminicidios\", afirma padre William Arias",
+      "url": "https://eldia.com.do/no-podemos-honrar-la-memoria-de-las-mirabal-mientras-toleramos-los-feminicidios-afirma-padre-william-arias/",
+      "source": "El Día",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El padre William Antonio Arias exhortó a la sociedad dominicana a asumir un compromiso concreto…",
+      "image": "",
+      "published": "2026-11-25T18:08:56+00:00"
+    },
+    {
+      "title": "Juan Marte pide al Gobierno intervenir o cerrar la OMSA en Santiago",
+      "url": "https://noticia.do/juan-marte-omsa-santiago/",
+      "source": "Noticia.do",
+      "category": "Política",
+      "regions": [],
+      "preview": "Noticia.do Juan Marte pide al Gobierno intervenir o cerrar la OMSA en Santiago Juan Marte pide intervenir o cerrar la OMSA en Santiago y cuestiona el manejo de los…",
+      "image": "",
+      "published": "2026-11-25T18:01:52+00:00"
+    },
+    {
+      "title": "Gobierno de EU se alista para imponer aranceles a China y UE",
+      "url": "https://almomento.net/gobierno-de-eu-se-alista-para-imponer-aranceles-a-china-y-ue/",
+      "source": "AlMomento",
+      "category": "Política",
+      "regions": [],
+      "preview": "WASHINGTON.- El gobierno de Estados Unidos tiene previsto anunciar pronto planes para aumentar los aranceles a China, la Unión Europea y otras 14 economías, según…",
+      "image": "",
+      "published": "2026-11-25T18:00:32+00:00"
+    },
+    {
+      "title": "De semifinalistas a reinas: las dominicanas que han llegado más lejos en Miss Mundo",
+      "url": "https://eldia.com.do/de-semifinalistas-a-reinas-las-dominicanas-que-han-llegado-mas-lejos-en-miss-mundo/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – República Dominicana ha logrado colocar a 16 representantes entre las semifinalistas…",
+      "image": "",
+      "published": "2026-11-25T18:00:00+00:00"
+    },
+    {
+      "title": "Resultados de la lotería hoy, miércoles 25 de noviembre de 2026",
+      "url": "https://eldia.com.do/resultados-de-la-loteria-hoy-miercoles-25-de-noviembre-de-2026/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – Resultados de los principales sorteos de loterías nacionales e internacionales…",
+      "image": "",
+      "published": "2026-11-25T17:57:02+00:00"
+    },
     {
       "title": "Tony Raful asume como embajador dominicano ante Andorra",
       "url": "https://noticia.do/tony-raful-embajador-andorra/",
@@ -43,66 +367,14 @@
       "published": "2026-11-25T17:54:39+00:00"
     },
     {
-      "title": "PN ampliará la Ruta Azul con 210 agentes y 35 patrullas en Santo Domingo",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/25/pn-ampliara-la-ruta-azul-con-210-agentes-en-santo-domingo-2176783/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [
-        "Santo Domingo"
-      ],
-      "preview": "La PN sumará 210 agentes y 35 patrullas a la Ruta Azul para reforzar la vigilancia en el Gran Santo Domingo.",
-      "image": "",
-      "published": "2026-11-25T17:53:28+00:00"
-    },
-    {
-      "title": "Premios Cuqui Córdova estarán dedicados a Nelson Cruz",
-      "url": "https://noticiassin.com/deportes/beisbol/2026/11/25/premios-cuqui-cordova-seran-dedicados-a-nelson-cruz-2176780/",
-      "source": "Noticias SIN",
+      "title": "Productores porcinos denuncian importación masiva de carne de cerdo y exigen freno",
+      "url": "https://eldia.com.do/productores-porcinos-denuncian-importacion-masiva-de-carne-de-cerdo-y-exigen-freno/",
+      "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "La premiación Cuqui Córdova se dedicará esta temporada a Nelson Cruz.",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– La importación de 13 millones de libras de carne de cerdo durante noviembre, volumen que…",
       "image": "",
-      "published": "2026-11-25T17:41:07+00:00"
-    },
-    {
-      "title": "RD asumirá la presidencia del órgano de ejecución de la Convención sobre Cambio Climático",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/25/carol-franco-presidira-organo-de-la-onu-sobre-cambio-climatico-2176776/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Dominicana Carol Franco dirigirá el órgano de la ONU que sigue el cumplimiento de los compromisos climáticos.",
-      "image": "",
-      "published": "2026-11-25T17:37:32+00:00"
-    },
-    {
-      "title": "Camilo Then: cuatro años apostando por la identidad dominicana a través del larimar",
-      "url": "https://hoy.com.do/vivir/camilo-then-cuatro-anos-apostando-identidad-dominicana-traves-larimar_1109880.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El productor de espectáculos ha contribuido a la conceptualización y producción del Día Nacional del Larimar, mediante propuestas creativas que resaltan el valor de…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b071bb097769.jpeg",
-      "published": "2026-11-25T17:36:00+00:00"
-    },
-    {
-      "title": "Embraer cae en bolsa tras la propuesta de EE.UU. de aranceles a los aviones brasileños",
-      "url": "https://noticiassin.com/estados-unidos/2026/11/25/embraer-cae-en-bolsa-por-el-posible-arancel-de-ee-uu-al-avion-brasileno-2176773/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Embraer cayó en Bolsa tras la propuesta de EE.UU. de imponer un arancel del 10% a aviones hechos en Brasil.",
-      "image": "",
-      "published": "2026-11-25T17:34:28+00:00"
-    },
-    {
-      "title": "Apresan a hombre acusado de agredir físicamente a una mujer en Vicente Noble",
-      "url": "https://noticiassin.com/pais/provincias/2026/11/25/arrestan-a-hombre-por-agredir-a-una-mujer-en-vicente-noble-2176771/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Policía arresta en Vicente Noble a hombre sorprendido mientras presuntamente agredía a una mujer.",
-      "image": "",
-      "published": "2026-11-25T17:30:06+00:00"
+      "published": "2026-11-25T17:37:36+00:00"
     },
     {
       "title": "¿Qué se sabe de la primera muerte por gripe aviar tras el contacto con ganado lechero?",
@@ -115,44 +387,14 @@
       "published": "2026-11-25T17:28:24+00:00"
     },
     {
-      "title": "El Gobierno de Perú prevé entregar bonos de setenta dólares a damnificados por El Niño",
-      "url": "https://noticiassin.com/mundo/america/2026/11/25/peru-preve-bonos-de-240-soles-por-danos-de-el-nino-2176759/",
-      "source": "Noticias SIN",
-      "category": "Política",
-      "regions": [],
-      "preview": "Perú prevé bonos de 240 soles para familias damnificadas por El Niño y subsidios a pescadores y agricultores.",
-      "image": "",
-      "published": "2026-11-25T17:26:24+00:00"
-    },
-    {
-      "title": "Raful indica patrones culturales dificultan erradicar violencia contra la mujer",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/25/faride-raful-dice-que-falta-mucho-para-erradicar-la-violencia-contra-la-mujer-2176753/",
-      "source": "Noticias SIN",
+      "title": "Embajada de Estados Unidos en RD cerrará jueves 26 y viernes 27 de noviembre por el Día de Acción de Gracias",
+      "url": "https://eldia.com.do/embajada-de-estados-unidos-en-rd-cerrara-jueves-26-y-viernes-27-de-noviembre-por-el-dia-de-accion-de-gracias/",
+      "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Raful advierte que persisten patrones culturales y urge prevenir desde la infancia la violencia contra la mujer.",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- La Embajada de los Estados Unidos en la República Dominicana informó que permanecerá cerrada al…",
       "image": "",
-      "published": "2026-11-25T17:26:11+00:00"
-    },
-    {
-      "title": "Embajada de EE.UU. y agencias consulares en RD cerrarán por Acción de Gracias",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/25/embajada-de-ee-uu-en-rd-cerrara-por-accion-de-gracias-2176758/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La Embajada de EE.UU. en RD cerrará hasta el viernes por Acción de Gracias; reanudará servicios el lunes.",
-      "image": "",
-      "published": "2026-11-25T17:24:12+00:00"
-    },
-    {
-      "title": "Presidente Luis Abinader recibe al director general de la OMS, Tedros Adhanom Ghebreyesus, en el Palacio Nacional",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/25/abinader-recibe-a-tedros-de-la-oms-en-el-palacio-nacional-2176760/",
-      "source": "Noticias SIN",
-      "category": "Política",
-      "regions": [],
-      "preview": "Abinader y el director de la OMS trataron cooperación sanitaria y desafíos de la salud global.",
-      "image": "",
-      "published": "2026-11-25T17:23:35+00:00"
+      "published": "2026-11-25T17:27:12+00:00"
     },
     {
       "title": "Luis Abinader recibe al director general de la OMS en el Palacio Nacional: ¿De qué conversaron?",
@@ -175,44 +417,34 @@
       "published": "2026-11-25T17:21:01+00:00"
     },
     {
-      "title": "Lotería Nacional sorteará más de RD$134 millones y destinará beneficios a restaurar la Rectoría de la UASD",
-      "url": "https://hoy.com.do/vivir/loteria-nacional-sorteara-rd-134-millones-destinara-beneficios-restaurar-rectoria-uasd_1109878.html",
-      "source": "Hoy",
-      "category": "Actualidad",
+      "title": "Abinader encabeza reconocimiento a 151 estudiantes sobresalientes de la educación pública",
+      "url": "https://eldia.com.do/abinader-encabeza-reconocimiento-a-151-estudiantes-sobresalientes-de-la-educacion-publica/",
+      "source": "El Día",
+      "category": "Educación",
       "regions": [],
-      "preview": "El primer premio es de RD$50 millones y un apartamento. El segundo es de RD$6 millones y un apartamento, y el tercero, de RD$3 millones y un apartamento.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b0717714498d.r_d.1054-297-9622.jpeg",
-      "published": "2026-11-25T17:16:16+00:00"
-    },
-    {
-      "title": "Inmotion Hub presenta modelos de inteligencia artificial para optimizar la inversión publicitaria",
-      "url": "https://hoy.com.do/vivir/inmotion-hub-presenta-modelos-inteligencia-artificial-optimizar-inversion-publicitaria_1109877.html",
-      "source": "Hoy",
-      "category": "Gaming y tecnología",
-      "regions": [],
-      "preview": "Inmotion Hub e Inmotion Academy impulsan el uso estratégico de la inteligencia artificial para optimizar la inversión publicitaria",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b07167d101ad.jpeg",
-      "published": "2026-11-25T17:12:28+00:00"
-    },
-    {
-      "title": "Llega a Cuba el canciller de Panamá en su segunda visita oficial este año a la isla",
-      "url": "https://noticiassin.com/mundo/cuba/2026/11/25/canciller-de-panama-llega-a-cuba-por-caso-de-siete-detenidos-2176749/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El canciller de Panamá llegó a Cuba por el caso de los siete panameños detenidos y procesados en la isla.",
+      "preview": "Este artículo fue publicado originalmente en El Día. El presidente Luis Abinader encabezó este miércoles el acto de entrega del Galardón de Máxima Excelencia…",
       "image": "",
-      "published": "2026-11-25T17:09:05+00:00"
+      "published": "2026-11-25T17:17:24+00:00"
     },
     {
-      "title": "Porcicultores advierten que importaciones masivas podrían llevarlos a la quiebra",
-      "url": "https://hoy.com.do/economia/porcicultores-advierten-importaciones-masivas-podrian-llevarlos-quiebra_1109875.html",
-      "source": "Hoy",
-      "category": "Economía",
+      "title": "\"Es la segunda vez que vengo\", Eliezer Salvador va a la Fiscalía para que lo investiguen por muerte de Melissa y dice no lo quieren recibir",
+      "url": "https://eldia.com.do/es-la-segunda-vez-que-vengo-eliezer-salvador-matos-va-a-la-fiscalia-por-muerte-de-melisa-medina-y-dice-que-no-lo-reciben/",
+      "source": "El Día",
+      "category": "Actualidad",
       "regions": [],
-      "preview": "Abud Martínez cuestionó que en noviembre se hayan importado 13 millones de libras de carne de cerdo, volumen que, según afirmó, representa el 90% del consumo…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b0712b98620d.r_d.480-640-12500.jpeg",
-      "published": "2026-11-25T17:01:49+00:00"
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- Eliezer Salvador Matos (Chey) acudió este miércoles a la Fiscalía del Distrito Nacional por sus…",
+      "image": "",
+      "published": "2026-11-25T17:14:10+00:00"
+    },
+    {
+      "title": "Black Friday: cinco señales para reconocer ofertas falsas y evitar estafas en internet",
+      "url": "https://hoy.com.do/vivir/black-friday-cinco-senales-reconocer-ofertas-falsas-evitar-estafas-internet_1109874.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Los ciberdelincuentes utilizan técnicas de ingeniería social para influir en las decisiones de los consumidores y conseguir que actúen por impulso, sin comprobar si…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b071012ecc39.png",
+      "published": "2026-11-25T17:08:15+00:00"
     },
     {
       "title": "Refidomsa refina 30,000 barriles diarios para garantizar el suministro de combustibles en RD",
@@ -223,6 +455,16 @@
       "preview": "Recordó que Refidomsa es la única refinería que opera en territorio dominicano, condición que refuerza su carácter estratégico para la estabilidad energética y el…",
       "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/25/6b0712e3585d9.jpeg",
       "published": "2026-11-25T16:58:22+00:00"
+    },
+    {
+      "title": "\"Gracias pueblo dominicano por hacerme sentir reina\", Melissa Núñez agradece apoyo del país tras quedar primera finalista en Miss Universo 2026",
+      "url": "https://eldia.com.do/melissa-nunez-agradece-al-pueblo-dominicano-tras-quedar-primera-finalista-en-miss-universo-2026/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – Luego de su participación en el Miss Universo 2026, la representante Dominicana, Melissa…",
+      "image": "",
+      "published": "2026-11-25T16:51:14+00:00"
     },
     {
       "title": "Descubren mecanismo que podría mejorar la inmunoterapia contra el cáncer",
@@ -275,6 +517,16 @@
       "published": "2026-11-25T16:20:40+00:00"
     },
     {
+      "title": "Cómo el asesinato de las hermanas Mirabal en RD dio origen al Día Internacional de la Eliminación de la Violencia contra la Mujer",
+      "url": "https://eldia.com.do/como-el-asesinato-de-las-hermanas-mirabal-en-republica-dominicana-dio-origen-al-dia-internacional-de-la-eliminacion-de-la-violencia-contra-la-mujer/",
+      "source": "El Día",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Para revertir esta situación en 1999, el organismo internacional declaró el 25 de noviembre como el Día…",
+      "image": "",
+      "published": "2026-11-25T16:16:49+00:00"
+    },
+    {
       "title": "El relevo generacional pone a prueba la sostenibilidad de las empresas familiares",
       "url": "https://eldia.com.do/el-relevo-generacional-pone-a-prueba-la-sostenibilidad-de-las-empresas-familiares/",
       "source": "El Día",
@@ -285,8 +537,8 @@
       "published": "2026-11-25T16:09:16+00:00"
     },
     {
-      "title": "Tasa del dólar hoy, miércoles 25 de noviembre de 2026",
-      "url": "https://eldia.com.do/tasa-del-dolar-hoy-miercoles-25-de-noviembre-de-2026/",
+      "title": "Tasa del dólar, miércoles 25 de noviembre de 2026",
+      "url": "https://eldia.com.do/tasa-del-dolar-miercoles-25-de-noviembre-de-2026/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
@@ -419,16 +671,6 @@
       "published": "2026-11-25T15:00:20+00:00"
     },
     {
-      "title": "Isaura Taveras gana RD$200,000 como la mejor vestida de la gala de La Casa de Alofoke 3",
-      "url": "https://eldia.com.do/mejores-peores-vestidos-gala-estreno-la-casa-de-alofoke-3/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El glamour, las tendencias y la controversia marcaron la gala de estreno de La Casa de Alofoke…",
-      "image": "",
-      "published": "2026-11-25T14:55:53+00:00"
-    },
-    {
       "title": "MHE incorpora nuevos criterios para la medición del bienestar; pobreza multidimensional se redujo a menos de la mitad en una década",
       "url": "https://bavarodigital.net/mhe-incorpora-nuevos-criterios-para-la-medicion-del-bienestar-pobreza-multidimensional-se-redujo-a-menos-de-la-mitad-en-una-decada/",
       "source": "Bávaro Digital",
@@ -449,16 +691,6 @@
       "published": "2026-11-25T14:53:46+00:00"
     },
     {
-      "title": "Belleza de Navidad: el secreto para verte radiante sin dejar de ser tú",
-      "url": "https://eldia.com.do/belleza-de-navidad-el-secreto-para-verte-radiante/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Diciembre es una época de encuentros, celebraciones, fotografías y momentos inolvidables. Entre reuniones…",
-      "image": "",
-      "published": "2026-11-25T14:51:40+00:00"
-    },
-    {
       "title": "Regidor vinculado a Operación Rompeolas insiste en que es inocente",
       "url": "https://hoy.com.do/el-pais/regidor-vinculado-operacion-rompeolas-insiste-inocente_1109859.html",
       "source": "Hoy",
@@ -469,56 +701,6 @@
       "published": "2026-11-25T14:49:17+00:00"
     },
     {
-      "title": "Sanar las heridas: hacia un futuro sin violencia contra las mujeres",
-      "url": "https://eldia.com.do/sanar-las-heridas-hacia-un-futuro-sin-violencia-contra-las-mujeres/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Si queremos una cultura de paz allá afuera, en las calles, debemos empezar por construir los fundamentos de los…",
-      "image": "",
-      "published": "2026-11-25T14:39:28+00:00"
-    },
-    {
-      "title": "El día que Atenas creyó poder sostenerse sin aliados",
-      "url": "https://eldia.com.do/el-dia-que-atenas-creyo-poder-sostenerse-sin-aliados/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Hubo un tiempo en que las velas de los trirremes atenienses surcaban el Egeo como símbolo de esperanza. Tras…",
-      "image": "",
-      "published": "2026-11-25T14:36:10+00:00"
-    },
-    {
-      "title": "Carlos Vives: \"A mí me gusta ser exactamente lo que soy, hispanoamericano\"",
-      "url": "https://eldia.com.do/romeo-y-prince-royce-cerraran-su-gira-mejor-tarde-que-nunca-en-santiago/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Madrid.– El cantautor colombiano Carlos Vives, figura central del vallenato, se encuentra en uno de los mejores…",
-      "image": "",
-      "published": "2026-11-25T14:36:01+00:00"
-    },
-    {
-      "title": "Romeo Santos y Prince Royce guardan para los dominicanos el último capítulo de su gira",
-      "url": "https://hoy.com.do/vivir/alegria/romeo-santos-prince-royce-guardan-dominicanos-ultimo-capitulo-gira_1109858.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El espectáculo tendrá lugar el 12 de febrero de 2027 en el Estadio Cibao, en Santiago. Las boletas estarán a la venta a partir de este viernes 27 de noviembre a las…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b06f0aa24fe6.r_d.847-436-10118.jpeg",
-      "published": "2026-11-25T14:30:41+00:00"
-    },
-    {
-      "title": "Romeo Santos y Prince Royce llevarán su gira “Mejor Tarde Que Nunca” al Estadio Cibao",
-      "url": "https://eldia.com.do/romeo-santos-y-prince-royce-llevaran-su-gira-mejor-tarde-que-nunca-al-estadio-cibao/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. – Los artistas dominicanos Romeo Santos y Prince Royce anunciaron la venta de boletas para su…",
-      "image": "",
-      "published": "2026-11-25T14:30:41+00:00"
-    },
-    {
       "title": "Las hermanas Mirabal dieron origen a una fecha mundial, pero los feminicidios siguen siendo una deuda en RD",
       "url": "https://hoy.com.do/vivir/hermanas-mirabal-dieron-origen-fecha-mundial-feminicidios-siguen-siendo-deuda-rd_1109857.html",
       "source": "Hoy",
@@ -527,36 +709,6 @@
       "preview": "La contradicción resulta especialmente significativa en una nación que cada 25 de noviembre recuerda a las hermanas Patria, Minerva y María Teresa Mirabal…",
       "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/10/6af32621169ae.jpeg",
       "published": "2026-11-25T14:30:20+00:00"
-    },
-    {
-      "title": "DNCD emite orden de búsqueda y captura contra otro implicado en red de narcotráfico que integraban militares del Ejército",
-      "url": "https://eldia.com.do/dncd-emite-orden-de-busqueda-y-captura-contra-otro-implicado-en-red-de-narcotrafico-que-integraban-militares-del-ejercito/",
-      "source": "El Día",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La Dirección Nacional de Control de Drogas (DNCD) emitió una orden de búsqueda y captura contra Daniel Medina…",
-      "image": "",
-      "published": "2026-11-25T14:30:01+00:00"
-    },
-    {
-      "title": "RD buscará mantener hegemonía sobre Colombia en Quinta Ventana clasificatoria al Mundial de Catar 2027",
-      "url": "https://eldia.com.do/rd-va-tras-dos-triunfos-quinta-ventana-clasificatoria/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. -Encabezada por los internacionales Andrés Feliz, Ángel Delgado y Lester Quiñones, entre otras…",
-      "image": "",
-      "published": "2026-11-25T14:27:25+00:00"
-    },
-    {
-      "title": "El Cata se suma a “Merengueros, el festival” a realizarse este jueves en el Faro a Colón",
-      "url": "https://eldia.com.do/el-cata-se-suma-a-merengueros-el-festival-a-realizarse-este-jueves-en-el-faro-a-colon/",
-      "source": "El Día",
-      "category": "Cultura",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El Cata, uno de los intérpretes dominicanos que logró proyección internacional al fusionar el…",
-      "image": "",
-      "published": "2026-11-25T14:25:46+00:00"
     },
     {
       "title": "Fallece a los 93 años Noelia Valenzuela, madre del periodista Pedro Jiménez",
@@ -579,6 +731,26 @@
       "published": "2026-11-25T14:18:06+00:00"
     },
     {
+      "title": "Inteligencia artificial y estrategias disruptivas en Mercadexpo 2026",
+      "url": "https://www.diariolibre.com/actualidad/educacion/2026/11/25/inteligencia-artificial-y-estrategias-disruptivas-en-mercadexpo-2026/3731470",
+      "source": "Diario Libre",
+      "category": "Gaming y tecnología",
+      "regions": [],
+      "preview": "La inteligencia artificial, las estrategias disruptivas y la adaptación de las marcas a los cambios en los hábitos de consumo marcan la agenda de Mercadexpo 2026…",
+      "image": "https://resources.diariolibre.com/images/2026/11/25/inteligencia-artificial-y-estrategias-disruptivas-en-mercadexpo-2026-22c31c9b-focus-0-0-400-300.jpg",
+      "published": "2026-11-25T14:17:00+00:00"
+    },
+    {
+      "title": "Chef Tita rinde homenaje a las hermanas Mirabal en Aguají",
+      "url": "https://www.diariolibre.com/revista/cultura/2026/11/25/chef-tita-rinde-homenaje-a-las-hermanas-mirabal-en-aguaji/3731469",
+      "source": "Diario Libre",
+      "category": "Cultura",
+      "regions": [],
+      "preview": "Hay historias que merecen ser contadas desde todas las expresiones del arte. Inspirada en el legado de Patria, Minerva y María Teresa Mirabal, Inés Páez (Chef Tita)…",
+      "image": "https://resources.diariolibre.com/images/2026/11/25/chef-tita-rinde-homenaje-a-las-hermanas-mirabal-en-aguaji-3205dcbf-focus-0.2-0.2-400-300.jpg",
+      "published": "2026-11-25T14:14:00+00:00"
+    },
+    {
       "title": "Médicos reclaman nombramientos y tomógrafo en hospitales de San Pedro",
       "url": "https://eltiempo.com.do/en-el-este/san-pedro-de-macoris/medicos-reclaman-nombramientos-y-tomografo-en-hospitales-de-san-pedro/",
       "source": "El Tiempo",
@@ -587,182 +759,6 @@
       "preview": "SAN PEDRO DE MACORÍS. El Colegio Médico Dominicano (CMD), filial San Pedro de Macorís, reactivó... La entrada Médicos reclaman nombramientos y tomógrafo en…",
       "image": "",
       "published": "2026-11-25T14:13:24+00:00"
-    },
-    {
-      "title": "Irán acusa a EU de obstaculizar trabajo contra armas químicas",
-      "url": "https://almomento.net/iran-acusa-a-eu-de-obstaculizar-opaq-y-poner-en-riesgo-la-paz/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "TEHERAN.- El canciller iraní, Abbas Araqchi, acusó a Estados Unidos de obstaculizar el trabajo de la Organización para la Prohibición de las Armas Químicas (OPAQ) y…",
-      "image": "",
-      "published": "2026-11-25T14:00:23+00:00"
-    },
-    {
-      "title": "Ministerio Público Nacional investigue también Autoridades de Verón Punta-Cana",
-      "url": "https://puntacanapost.com/ministerio-publico-nacional-investigue-tambien-autoridades-de-veron-punta-cana/",
-      "source": "Punta Cana Post",
-      "category": "Seguridad",
-      "regions": [
-        "Punta Cana"
-      ],
-      "preview": "“¿Y si quienes deben perseguir a los delincuentes son precisamente quienes presuntamente les permiten operar? ¿Quién investiga entonces a quienes tienen la…",
-      "image": "",
-      "published": "2026-11-25T14:00:06+00:00"
-    },
-    {
-      "title": "¡Otro premio! Bávaro Digital gana un VIEW Award 2026 por su cobertura regional y comunitaria",
-      "url": "https://bavarodigital.net/otro-premio-bavaro-digital-gana-un-view-award-2026-por-su-cobertura-regional-y-comunitaria/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [
-        "Punta Cana"
-      ],
-      "preview": "SANTO DOMINGO, RD. — Bávaro Digital vuelve a brillar en el escenario nacional tras resultar ganador en los VIEW Awards 2026, en el renglón institucional, categoría…",
-      "image": "",
-      "published": "2026-11-25T13:57:23+00:00"
-    },
-    {
-      "title": "“Nunca caminé sola”: Melissa Núñez agradece el apoyo de los dominicanos en su paso por Miss Universo",
-      "url": "https://hoy.com.do/vivir/alegria/nunca-camine-sola-melissa-nunez-agradece-apoyo-dominicanos-paso-miss-universo_1109850.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Melissa Núñez consideró que uno de los mayores logros de su participación fue conseguir que República Dominicana se sintiera orgullosa de su representante, más allá…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/07/31/6a6c97d0a0712.r_d.705-572-0.png",
-      "published": "2026-11-25T13:56:13+00:00"
-    },
-    {
-      "title": "La Maratón Monumental «Primer Santiago de América» en su décima edición",
-      "url": "https://diario55.com/la-maraton-monumental-primer-santiago-de-america-en-su-decima-edicion/",
-      "source": "Diario 55",
-      "category": "Deportes",
-      "regions": [],
-      "preview": "En estos años de fructífera trayectoria, ha reunido a más de treinta mil corredores de todo el país y de más de veinte países de casi todos los continentes. Desde…",
-      "image": "",
-      "published": "2026-11-25T13:51:30+00:00"
-    },
-    {
-      "title": "El Código 29: La Orden de Matar",
-      "url": "https://diario55.com/el-codigo-29-la-orden-de-matar/",
-      "source": "Diario 55",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "En República Dominicana circula un número que no aparece en ningún manual oficial, pero que todos en los barrios conocen. Es el Código 29. Se ha difundido como la…",
-      "image": "",
-      "published": "2026-11-25T13:41:54+00:00"
-    },
-    {
-      "title": "Sobre el caso Melissa Medina: “Tengo mi conciencia tranquila\"",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/25/sobre-el-caso-melissa-medina-tengo-mi-conciencia-tranquila/3731431",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El empresario Eliezer Salvador afirmó este miércoles que tiene la conciencia tranquila y que está dispuesto a comparecer ante las autoridades cuando sea requerido…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/caso-melissa-medina-las-interrogantes-que-siguen-sin-respuesta-f7d21e31-focus-0-0-400-300.jpg",
-      "published": "2026-11-25T13:41:00+00:00"
-    },
-    {
-      "title": "TRANSSA exige al Estado dominicano acciones concretas para garantizar los derechos de las personas LGBTI+",
-      "url": "https://bavarodigital.net/transsa-exige-al-estado-dominicano-acciones-concretas-para-garantizar-los-derechos-de-las-personas-lgbti/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "La organización presentó los resultados de una encuesta nacional que revela que el 74.6 % de las personas consultadas, sufrió vulneraciones de sus derechos humanos…",
-      "image": "",
-      "published": "2026-11-25T13:35:04+00:00"
-    },
-    {
-      "title": "MODEMU realizó congreso para exigir mayor protección de las mujeres y acciones contra la violencia de género",
-      "url": "https://bavarodigital.net/modemu-realizo-congreso-para-exigir-mayor-proteccion-de-las-mujeres-y-acciones-contra-la-violencia-de-genero/",
-      "source": "Bávaro Digital",
-      "category": "Política",
-      "regions": [],
-      "preview": "La jornada reunió a organizaciones sociales y comunitarias que reclamaron respuestas efectivas de las autoridades para prevenir los feminicidios, garantizar los…",
-      "image": "",
-      "published": "2026-11-25T13:33:16+00:00"
-    },
-    {
-      "title": "Banreservas financia por US$44.4 millones Port Samaná",
-      "url": "https://bavarodigital.net/banreservas-financia-por-us44-4-millones-port-samana/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [
-        "Samaná"
-      ],
-      "preview": "El doctor Leonardo Aguilera, presidente ejecutivo de Banreservas, informó que el banco otorgó además una línea de crédito de US$1 millón para capital de trabajo y…",
-      "image": "",
-      "published": "2026-11-25T13:31:41+00:00"
-    },
-    {
-      "title": "Docente llama a convertir la lucha contra la violencia hacia la mujer en un compromiso permanente desde las aulas",
-      "url": "https://bavarodigital.net/docente-llama-a-convertir-la-lucha-contra-la-violencia-hacia-la-mujer-en-un-compromiso-permanente-desde-las-aulas/",
-      "source": "Bávaro Digital",
-      "category": "Educación",
-      "regions": [],
-      "preview": "El educador y especialista en políticas de igualdad y equidad de género Edorgers Junior Mercedes, sostiene que la prevención de la violencia contra la mujer debe…",
-      "image": "",
-      "published": "2026-11-25T13:29:58+00:00"
-    },
-    {
-      "title": "María Corina Machado: Edmundo González regresará a Venezuela",
-      "url": "https://www.diariolibre.com/mundo/america-latina/2026/11/25/maria-corina-machado-edmundo-gonzalez-regresara-a-venezuela/3731410",
-      "source": "Diario Libre",
-      "category": "Mundo",
-      "regions": [],
-      "preview": "La líder opositora María Corina Machado aseguró este miércoles que el excandidato presidencial Edmundo González Urrutia, quien se encuentra exiliado en España desde…",
-      "image": "https://resources.diariolibre.com/images/2026/11/25/maria-corina-machado-edmundo-gonzalez-regresara-a-venezuela-4c586c3f-focus-0-0-400-300.jpg",
-      "published": "2026-11-25T13:25:00+00:00"
-    },
-    {
-      "title": "Eliezer Salvador dice que todavía no ha sido interrogado",
-      "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/25/eliezer-salvador-dice-que-todavia-no-ha-sido-interrogado/3731411",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El empresario Eliezer Salvador aseguró este miércoles que ha acudido en dos ocasiones a la Fiscalía del Distrito Nacional sin que las autoridades lo hayan…",
-      "image": "https://resources.diariolibre.com/images/2026/11/23/eliezer-salvador-matos-fue-condenado-por-dos-casos-en-pr-0557b72c-focus-0-0-400-300.jpg",
-      "published": "2026-11-25T13:25:00+00:00"
-    },
-    {
-      "title": "¿Quién es Jennifer Barreto, la primera madre en ganar Miss Universo y por qué decidió competir?",
-      "url": "https://hoy.com.do/vivir/alegria/jennifer-barreto-primera-madre-ganar-miss-universo-decidio-competir_1109844.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Barreto explicó que su decisión de participar en el certamen surgió de su interés en utilizar la plataforma para promover el empoderamiento femenino.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/25/6b06dd6a555cd.r_d.646-456-9375.jpeg",
-      "published": "2026-11-25T13:20:14+00:00"
-    },
-    {
-      "title": "Así fue Elizer Salvador, involucrado en muerte de Melissa Medina",
-      "url": "https://www.diariolibre.com/actualidad/justicia/2026/11/25/asi-fue-elizer-salvador-involucrado-en-muerte-de-melissa-medina/3731393",
-      "source": "Diario Libre",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El empresario Eliezer Salvador acudió la mañana de este miércoles 25 de noviembre a una citación relacionada con la investigación sobre la muerte de la creadora de…",
-      "image": "https://resources.diariolibre.com/images/2026/11/21/las-horas-por-aclarar-en-caso-de-melisa-medina-67dc8022-focus-0-0-400-300.jpg",
-      "published": "2026-11-25T13:02:00+00:00"
-    },
-    {
-      "title": "Rusia habría perdido 490.000 militares en guerra con Ucrania",
-      "url": "https://almomento.net/rusia-habria-perdido-490-000-militares-en-guerra-con-ucrania/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "WASHINGTON.- Un pirateo a la agencia federal de estadísticas de Rusia, Rosstat, reveló que al menos 490.000 militares rusos han muerto en Ucrania desde el inicio de…",
-      "image": "",
-      "published": "2026-11-25T13:00:35+00:00"
-    },
-    {
-      "title": "España ante las urnas: entre la herencia, la vivienda y el futuro de Pedro Sánchez",
-      "url": "https://hoy.com.do/opinion/espana-urnas-herencia-vivienda-futuro-pedro-sanchez_1109841.html",
-      "source": "Hoy",
-      "category": "Vivienda",
-      "regions": [],
-      "preview": "El PSOE, de Pedro Sánchez: apuesta por mantener una presencia activa del Estado en la economía,",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/04/26/69ee050e7eb7d.jpeg",
-      "published": "2026-11-25T12:58:05+00:00"
     }
   ]
 }
