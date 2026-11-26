@@ -33,6 +33,7 @@ function build(language){
  for(const page of ['ofertas-supermercados-rd','apagones-higuey']){
   html=html.replaceAll('href="/'+page+'.html"','href="/'+language+'/'+page+'.html"');
  }
+ html=html.replace('href="/partners.html">Nuestros proyectos','href="/'+language+'/partners.html">'+({de:'Unsere Projekte',en:'Our projects',fr:'Nos projets',ht:'Pwojè nou yo'})[language]);
  return html;
 }
 let failures=0;
