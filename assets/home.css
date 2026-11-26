@@ -295,3 +295,6 @@ body.city-chooser-open{overflow:hidden}
 .news-feed-health[data-status="stale"],.news-feed-health[data-status="partial"],.news-feed-health[data-status="unknown"],.news-feed-health[data-status="empty"]{background:#fff8ea;border-color:#e9d6ae;color:#775522}
 .news-feed-health[data-status="partial"] small,.news-feed-health[data-status="unknown"] small,.news-feed-health[data-status="empty"] small{color:#756345}
 @media(max-width:540px){.news-feed-health{align-items:flex-start;flex-direction:column;padding:12px;gap:3px}.news-feed-health small{flex-basis:auto}}
+
+/* News-first editorial rhythm; preserve all services and article content. */
+#actualidad{padding-top:clamp(24px,4vw,46px);padding-bottom:32px}#actualidad .sectionhead{align-items:flex-start;flex-wrap:wrap}#actualidad .sectionhead>div{min-width:0}#actualidad .underlink{white-space:normal}#actualidad .story-content{min-width:0;overflow-wrap:anywhere}#actualidad .news-byline{line-height:1.5;font-variant-numeric:tabular-nums}#actualidad .story:focus-visible{outline:3px solid #b5743c;outline-offset:3px}@media(max-width:600px){#actualidad{padding-top:24px;padding-bottom:24px}#actualidad .sectionhead{gap:10px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
