@@ -31,11 +31,4 @@ jobs:
           exit 1
       - name: Run actual Chromium desktop and smartphone checks
         run: node tests/chromium-news.mjs
-      - name: Upload screenshots on pass or failure
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: islaviva-chromium-screenshots
-          path: artifacts/chromium/
-          if-no-files-found: warn
-          retention-days: 7
+      # Browser assertions and logs remain mandatory; screenshots stay on the runner.
