@@ -44,3 +44,15 @@ const weather=JSON.parse(load('data/weather.json')||'{}');
 if(!weather.cities?.['Higüey']||!Number.isFinite(Number(weather.cities['Higüey'].temperature_c)))fail('weather data','Higüey reading missing');
 if(errors){console.error(errors+' homepage regression errors');process.exit(1)}
 console.log('OK: all five homepages share one tested CSS and JS runtime.');
+
+for(const locale of languages){
+ const prefix=locale==='es'?'':locale+'/';
+ const page=load(prefix+'partners.html');
+ const home=load(prefix+'index.html');
+ if(!home.includes('href="/'+prefix+'partners.html"'))throw Error('Missing partner navigation '+locale);
+ const links=[...page.matchAll(/<li><a href="([^"]+)"/g)].map(x=>x[1]);
+ if(links.length!==14||new Set(links).size!==14||links.includes('https://islaviva-rd.pages.dev/'))throw Error('Invalid partner catalogue '+locale);
+ if(!/simulat|simulaci|similasyon/i.test(page))throw Error('Missing simulation disclosure '+locale);
+ if(!load('sitemap.xml').includes('<loc>https://islaviva-rd.pages.dev/'+prefix+'partners.html</loc>'))throw Error('Missing partner sitemap '+locale);
+}
+console.log('PASS: five localized partner pages and 14 distinct projects each');

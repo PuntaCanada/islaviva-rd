@@ -60,8 +60,8 @@ jobs:
           routes=json.loads(pathlib.Path('_routes.json').read_text(encoding='utf-8'))
           assert routes['include']==['/api/visitor-country']
           assert 'visitorCountry===\'US\'' in shared
-          assert 'https://comparanetrd.pages.dev/' in shared
-          assert 'https://by-maria-beauty-store.pages.dev/' in shared
-          assert 'https://github.com/PuntaCanada/recarganet-rd' in shared
+          assert 'https://vuelosrd.pages.dev/' in shared
+          assert 'https://ahorrord.pages.dev/' in shared
+          assert 'https://transporterd.pages.dev/' in shared
           assert 'https://edeeste.com.do/inicio/servicios/estado-de-circuito-y-suministro/' in shared
           PY

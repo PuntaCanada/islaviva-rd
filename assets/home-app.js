@@ -325,23 +325,18 @@ function renderCareer(){
 }
 
 const partnerUi={
- es:{kicker:'DESCUBRE TAMBIÉN',title:'Otros proyectos útiles',disclosure:'Proyectos relacionados · Promoción propia',items:[['Comparar internet','Planes de internet y telefonía'],['By María Beauty & Store','Maquillaje y belleza en Higüey'],['RecargaNet RD (prueba)','Demostración; aún sin recargas reales']]},
- de:{kicker:'AUCH INTERESSANT',title:'Weitere nützliche Angebote',disclosure:'Verwandte Projekte · Eigenwerbung',items:[['Internet vergleichen','Internet- und Mobilfunktarife'],['By María Beauty & Store','Kosmetik & Make-up in Higüey'],['RecargaNet RD (Testphase)','Demo; derzeit keine echten Aufladungen']]},
- en:{kicker:'ALSO EXPLORE',title:'More useful services',disclosure:'Related projects · Self-promotion',items:[['Compare internet','Internet and mobile plans'],['By María Beauty & Store','Makeup and beauty in Higüey'],['RecargaNet RD (demo)','Demo only; no real top-ups yet']]},
- fr:{kicker:'À DÉCOUVRIR',title:'D’autres services utiles',disclosure:'Projets liés · Autopromotion',items:[['Comparer Internet','Internet et téléphonie'],['By María Beauty & Store','Beauté et maquillage à Higüey'],['RecargaNet RD (démo)','Démo uniquement ; pas de recharge réelle']]},
- ht:{kicker:'DEKOUVRI TOU',title:'Lòt sèvis itil',disclosure:'Pwojè ki gen rapò · Piblisite pa nou',items:[['Konpare entènèt','Plan entènèt ak telefòn'],['By María Beauty & Store','Makiyaj ak bote nan Higüey'],['RecargaNet RD (tès)','Se yon demonstrasyon; pa gen rechaj reyèl']]}
+ es:{kicker:'DESCUBRE TAMBIÉN',title:'Otros proyectos útiles',disclosure:'Proyectos relacionados · Promoción propia',items:[["VuelosRD","Aeropuertos y vuelos"],["AhorroRD","Ofertas de supermercados y comparación de precios"],["TransporteRD","Transporte público en República Dominicana"]]},
+ de:{kicker:'AUCH INTERESSANT',title:'Weitere nützliche Angebote',disclosure:'Verwandte Projekte · Eigenwerbung',items:[["VuelosRD","Flughäfen und Fluginformationen"],["AhorroRD","Supermarktangebote und Preisvergleich"],["TransporteRD","Öffentliche Verkehrsmittel in der Dominikanischen Republik"]]},
+ en:{kicker:'ALSO EXPLORE',title:'More useful services',disclosure:'Related projects · Self-promotion',items:[["VuelosRD","Airports and flight information"],["AhorroRD","Supermarket offers and price comparisons"],["TransporteRD","Public transport in the Dominican Republic"]]},
+ fr:{kicker:'À DÉCOUVRIR',title:'D’autres services utiles',disclosure:'Projets liés · Autopromotion',items:[["VuelosRD","Aéroports et vols"],["AhorroRD","Offres et comparaison des prix des supermarchés"],["TransporteRD","Transports publics en République dominicaine"]]},
+ ht:{kicker:'DEKOUVRI TOU',title:'Lòt sèvis itil',disclosure:'Pwojè ki gen rapò · Piblisite pa nou',items:[["VuelosRD","Ayewopò ak enfòmasyon sou vòl"],["AhorroRD","Òf makèt ak konparezon pri"],["TransporteRD","Transpò piblik nan Repiblik Dominikèn"]]}
 };
 function renderPartners(){
  const t=partnerUi[lang]||partnerUi.es;
  document.getElementById('partner-kicker').textContent=t.kicker;
  document.getElementById('partner-title').textContent=t.title;
  document.getElementById('partner-disclosure').textContent=t.disclosure;
- const sites=[
-  {icon:'📶',href:'https://comparanetrd.pages.dev/'},
-  {icon:'💄',href:'https://by-maria-beauty-store.pages.dev/'},
-  // RecargaNet's public site URL has not been verified yet: link to the actual public project instead.
-  {icon:'📱',href:'https://github.com/PuntaCanada/recarganet-rd'}
- ];
+ const sites=[{"icon":"✈️","href":"https://vuelosrd.pages.dev/"},{"icon":"🛒","href":"https://ahorrord.pages.dev/"},{"icon":"🚌","href":"https://transporterd.pages.dev/"}];
  document.getElementById('site-partners-grid').innerHTML=sites.map((p,i)=>
   '<a class="site-partner-card" href="'+esc(p.href)+'" target="_blank" rel="noopener noreferrer"><span class="site-partner-icon" aria-hidden="true">'+p.icon+'</span><span><b>'+esc(t.items[i][0])+'</b><small>'+esc(t.items[i][1])+'</small></span><span class="site-partner-arrow" aria-hidden="true">↗</span></a>').join('');
 }
