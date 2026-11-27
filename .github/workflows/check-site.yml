@@ -31,7 +31,7 @@ jobs:
         with:
           python-version: '3.12'
       - name: Compile updater scripts
-        run: python -m py_compile scripts/update_news.py scripts/update_weather.py scripts/news_quality.py scripts/update_roadworks.py scripts/update_local_notices.py tests/test_news_quality.py tests/test_roadworks.py tests/test_transport_fuel.py
+        run: python -m py_compile scripts/update_news.py scripts/update_weather.py scripts/news_quality.py scripts/update_roadworks.py scripts/update_local_notices.py scripts/power_plans.py tests/test_power_plans.py tests/test_news_quality.py tests/test_roadworks.py tests/test_transport_fuel.py
       - name: Test news classification, duplicate removal and geographic relevance
         run: python -m unittest discover -s tests -p 'test_*.py' -v
       - name: Verify candidate RSS parser rejects HTML (offline)
@@ -42,6 +42,7 @@ jobs:
       - name: Validate shared website JavaScript and cached data
         run: |
           node --check assets/home-app.js
+          node --check assets/power-notices.js
           node --check scripts/verify-production.mjs
           node scripts/build-homepages.mjs --check
           node scripts/check-home-runtime.mjs

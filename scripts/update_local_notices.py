@@ -13,12 +13,17 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from news_quality import region_mentions, canonical_url, normalize
+from power_plans import collect as collect_power_plans
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/"data"/"local_notices.json"
 UTC=dt.timezone.utc
 NOW=dt.datetime.now(UTC)
 SOURCES=[
  ("EDEEste","power","https://edeeste.com.do/feed/","edeeste.com.do"),
+ ("EDEEste","power","https://www.edeeste.gob.do/feed/","edeeste.gob.do"),
+ ("EDENORTE","power","https://edenorte.com.do/feed/","edenorte.com.do"),
+ ("EDESUR","power","https://www.edesur.com.do/feed/","edesur.com.do"),
+ ("Atardecer","power","https://atardecer.com.do/feed/","atardecer.com.do"),
  ("EDEEste","power","https://edeeste.com.do/category/noticias/feed/","edeeste.com.do"),
  ("INAPA","water","https://inapa.gob.do/feed/","inapa.gob.do"),
  ("INAPA","water","https://inapa.gob.do/noticias/feed/","inapa.gob.do"),
@@ -26,7 +31,7 @@ SOURCES=[
  ("Ayuntamiento Higüey","events","https://ayuntamientohiguey.gob.do/category/noticias/feed/","ayuntamientohiguey.gob.do")
 ]
 TOPICS={
- "power":r"\b(?:interrupcion|apagones?|averia|mantenimiento|circuitos?|subestacion|suministro electrico)\b",
+ "power":r"\b(?:interrupcion(?:es)?|apagones?|averias?|mantenimientos?|circuitos?|subestacion|suministro electrico|cortes? de luz|sin luz|trabajos programados)\b",
  "water":r"\b(?:agua potable|acueducto|averia|suministro|interrupcion|servicio de agua|tuberia)\b",
  "events":r"\b(?:eventos?|feria|festival|concierto|celebracion|agenda cultural|actividad(?:es)?|jornada|desfile)\b"
 }
@@ -61,6 +66,7 @@ def get_notices(source,kind,url,domain):
   # first part of an item's summary can help locate a notice, but we never
   # infer that an entire utility service territory is currently affected.
   regions=region_mentions(title+" "+preview[:170])
+  if source=="Atardecer" and not regions:continue
   # Never infer locality merely from a publisher's headquarters.
   notices.append({"kind":kind,"title":title,"preview":preview,"url":link,"source":source,
    "published":published.isoformat(),"regions":regions,"status":"published_unverified"})
@@ -154,7 +160,7 @@ def main():
   if u in seen:continue
   seen.add(u);unique.append(item)
  # No fabricated outage status; expiry is only a press publication recency limit.
- data={"updated":NOW.isoformat(),"sources_checked":successes,"sources_configured":len(SOURCES),"failed_feeds":sorted(failed),"retained_count":len(retained),"status":"published_not_live","items":unique[:35]}
+ data={"updated":NOW.isoformat(),"sources_checked":successes,"sources_configured":len(SOURCES),"failed_feeds":sorted(failed),"retained_count":len(retained),"status":"published_not_live","items":unique[:35],"power_plans":collect_power_plans(NOW)}
  OUT.parent.mkdir(exist_ok=True)
  OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 if __name__=="__main__":main()

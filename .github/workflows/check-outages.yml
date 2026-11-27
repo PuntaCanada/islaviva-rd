@@ -1,0 +1,85 @@
+name: Verify outage sources and mobile guides
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/power_plans.py'
+      - 'scripts/update_local_notices.py'
+      - 'assets/power-notices.js'
+      - '**/apagones-higuey.html'
+      - 'apagones-higuey.html'
+      - '.github/workflows/check-outages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch real original sources without publishing
+        run: |
+          python -m unittest discover -s tests -p test_power_plans.py -v
+          python - <<'PY'
+          import sys, datetime, urllib.request
+          sys.path.insert(0,"scripts")
+          from power_plans import parse_press
+          url="https://atardecer.com.do/cortes-luz-edeeste-jueves-26-noviembre-2026/"
+          with urllib.request.urlopen(urllib.request.Request(url,headers={"User-Agent":"IslaVivaRD/1.0"}),timeout=20) as response:
+              raw=response.read(2000001)
+          assert len(raw)<=2000000
+          rows=parse_press(raw.decode("utf-8"),datetime.date(2026,11,26),url)
+          found={r["circuit"]:r for r in rows if r["area"].casefold()=="higüey"}
+          assert {"HI3803","HI3805"} <= found.keys(), f"Missing historical circuits: {list(found)}"
+          assert all(found[c]["start"]=="09:20" and found[c]["end"]=="15:20" for c in ("HI3803","HI3805"))
+          print("Verified original source: HI3803 and HI3805")
+          PY
+          python scripts/update_local_notices.py
+          python - <<'PY'
+          import json
+          d=json.load(open('data/local_notices.json'))
+          print(json.dumps(d,ensure_ascii=False,indent=2))
+          p=d.get('power_plans',{})
+          assert p.get('items') or p.get('schedules'), 'No current official plan imported'
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install chromium
+      - name: Mobile browser verification
+        run: |
+          python -m http.server 8765 > /tmp/outage-server.log 2>&1 &
+          mkdir -p /tmp/outage-screens
+          node --input-type=module <<'JS'
+          import {chromium} from 'playwright';
+          const browser=await chromium.launch({headless:true});
+          try {
+            for(const lang of ['es','de','en','fr','ht']){
+              const page=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:1,isMobile:true,hasTouch:true});
+              const errors=[];
+              page.on('pageerror',e=>errors.push(e.message));
+              const response=page.waitForResponse(r=>r.url().endsWith('/data/local_notices.json'));
+              await page.goto('http://127.0.0.1:8765/'+(lang==='es'?'':lang+'/')+'apagones-higuey.html');
+              if(!(await response).ok())throw Error('Data request failed');
+              const input=page.locator('input[type=search]');
+              await input.waitFor();
+              await input.fill('Higüey');
+              await page.waitForTimeout(300);
+              if(errors.length)throw Error(errors.join('; '));
+              if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))throw Error('Horizontal overflow '+lang);
+              await page.screenshot({path:'/tmp/outage-screens/'+lang+'.png',fullPage:true});
+              await page.close();
+            }
+          } finally {await browser.close()}
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: outage-mobile-screens
+          path: /tmp/outage-screens
+          retention-days: 3
