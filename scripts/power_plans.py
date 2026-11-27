@@ -58,3 +58,36 @@ def collect(now):
   except (OSError,ValueError) as exc:
    errors.append({"source":provider,"error":type(exc).__name__})
  return {"items":plans,"errors":errors,"checked":now.isoformat()}
+
+def parse_explicit_rows(html, today):
+ """Accept only self-contained table rows with explicit date, circuit and times.
+ Never propagate a weekly header date to individual outages."""
+ class Rows(HTMLParser):
+  def __init__(self):
+   super().__init__(convert_charrefs=True)
+   self.row=None; self.cell=None; self.rows=[]
+  def handle_starttag(self,tag,attrs):
+   if tag=="tr": self.row=[]
+   if tag in ("td","th") and self.row is not None: self.cell=[]
+  def handle_data(self,data):
+   if self.cell is not None: self.cell.append(data)
+  def handle_endtag(self,tag):
+   if tag in ("td","th") and self.cell is not None and self.row is not None:
+    self.row.append(" ".join(" ".join(self.cell).split())); self.cell=None
+   if tag=="tr" and self.row is not None:
+    self.rows.append(self.row); self.row=None; self.cell=None
+ parser=Rows(); parser.feed(html)
+ results=[]
+ for cells in parser.rows:
+  if len(cells)!=5: continue
+  date,circuit,area,start,end=cells
+  if not re.fullmatch(r"\d{2}/\d{2}/20\d{2}|\d{4}-\d{2}-\d{2}",date): continue
+  if not re.fullmatch(r"[A-Z]{2,5}\d{3,6}",circuit): continue
+  if not area or len(area)>500: continue
+  if not all(re.fullmatch(r"(?:[01]\d|2[0-3]):[0-5]\d",v) for v in (start,end)): continue
+  try:
+   day=dt.datetime.strptime(date,"%d/%m/%Y").date() if "/" in date else dt.date.fromisoformat(date)
+  except ValueError: continue
+  if not today<=day<=today+dt.timedelta(days=14) or start>=end: continue
+  results.append({"date":day.isoformat(),"circuit":circuit,"area":area,"start":start,"end":end,"timezone":"America/Santo_Domingo","status":"scheduled_not_live"})
+ return results
