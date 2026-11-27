@@ -13,6 +13,7 @@ import urllib.request
 import xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from news_quality import region_mentions, canonical_url, normalize
+from power_plans import collect as collect_power_plans
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 OUT=ROOT/"data"/"local_notices.json"
 UTC=dt.timezone.utc
@@ -159,7 +160,7 @@ def main():
   if u in seen:continue
   seen.add(u);unique.append(item)
  # No fabricated outage status; expiry is only a press publication recency limit.
- data={"updated":NOW.isoformat(),"sources_checked":successes,"sources_configured":len(SOURCES),"failed_feeds":sorted(failed),"retained_count":len(retained),"status":"published_not_live","items":unique[:35]}
+ data={"updated":NOW.isoformat(),"sources_checked":successes,"sources_configured":len(SOURCES),"failed_feeds":sorted(failed),"retained_count":len(retained),"status":"published_not_live","items":unique[:35],"power_plans":collect_power_plans(NOW)}
  OUT.parent.mkdir(exist_ok=True)
  OUT.write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
 if __name__=="__main__":main()
