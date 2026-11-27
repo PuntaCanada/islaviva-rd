@@ -325,6 +325,190 @@
       "hours": null,
       "coordinates": null,
       "automationAllowed": false
+    },
+    {
+      "id": "scape-park",
+      "name": "Scape Park",
+      "region": "La Altagracia",
+      "category": "park",
+      "source": "https://scapepark.com/general-rate/",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [
+        {
+          "tariff": "Full Admission",
+          "amount": 129,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        },
+        {
+          "tariff": "Full Admission + Buggy",
+          "amount": 169,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        },
+        {
+          "tariff": "Full Admission + Sunshine Cruise",
+          "amount": 169,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        },
+        {
+          "tariff": "Juanillo VIP",
+          "amount": 189,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        }
+      ],
+      "priceHistory": [
+        {
+          "tariff": "Full Admission",
+          "amount": 129,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        },
+        {
+          "tariff": "Full Admission + Buggy",
+          "amount": 169,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        },
+        {
+          "tariff": "Full Admission + Sunshine Cruise",
+          "amount": 169,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        },
+        {
+          "tariff": "Juanillo VIP",
+          "amount": 189,
+          "currency": "USD",
+          "source": "https://scapepark.com/general-rate/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false
+        }
+      ],
+      "hours": {
+        "open": "09:00",
+        "close": "17:00",
+        "attractionsClose": "16:30",
+        "observedOn": "2026-11-27",
+        "source": "https://scapepark.com/general-rate/"
+      },
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "fortaleza-san-felipe",
+      "name": "Fortaleza San Felipe",
+      "region": "Puerto Plata",
+      "category": "culture",
+      "source": "https://www.godominicanrepublic.com/destinations/puerto-plata",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "playa-dorada",
+      "name": "Playa Dorada",
+      "region": "Puerto Plata",
+      "category": "beach",
+      "source": "https://www.godominicanrepublic.com/destinations/puerto-plata",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "kahkow",
+      "name": "Kahkow Experience",
+      "region": "Distrito Nacional",
+      "category": "culture",
+      "source": "https://www.godominicanrepublic.com/en/destinations/santo-domingo",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "casas-reales",
+      "name": "Museo de las Casas Reales",
+      "region": "Distrito Nacional",
+      "category": "culture",
+      "source": "https://www.godominicanrepublic.com/en/destinations/santo-domingo",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "teatro-nacional",
+      "name": "Teatro Nacional Eduardo Brito",
+      "region": "Distrito Nacional",
+      "category": "culture",
+      "source": "https://www.godominicanrepublic.com/en/destinations/santo-domingo",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "trampolin",
+      "name": "Museo Infantil Trampolín",
+      "region": "Distrito Nacional",
+      "category": "culture",
+      "source": "https://www.godominicanrepublic.com/things-to-do/family-friendly-activities",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
+    },
+    {
+      "id": "museo-arqueologico",
+      "name": "Museo Arqueológico Regional Altos de Chavón",
+      "region": "La Romana",
+      "category": "culture",
+      "source": "https://www.godominicanrepublic.com/things-to-do/cultural-attractions-and-sightseeing",
+      "identityReviewedOn": "2026-11-27",
+      "prices": [],
+      "priceHistory": [],
+      "hours": null,
+      "coordinates": null,
+      "automationAllowed": false
     }
   ],
   "policy": "Identity sources only. No tariff, opening hours, coordinates or access conditions inferred. Automated retrieval disabled pending source-specific permission and parser review."

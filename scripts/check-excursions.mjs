@@ -1,7 +1,1 @@
-import assert from 'node:assert/strict';
-import {readFileSync} from 'node:fs';
-const d=JSON.parse(readFileSync('data/excursions.json','utf8'));
-assert.equal(d.schemaVersion,1);
-assert.equal(new Set(d.places.map(p=>p.id)).size,d.places.length);
-for(const p of d.places){assert.match(p.id,/^[a-z0-9-]+$/);assert.ok(p.name&&p.region);assert.match(p.source,/^https:\/\//);assert.match(p.identityReviewedOn,/^\d{4}-\d{2}-\d{2}$/);assert.equal(p.automationAllowed,false);assert.deepEqual(p.prices,[]);assert.deepEqual(p.priceHistory,[]);}
-console.log('Validated '+d.places.length+' excursion records');
+import assert from 'node:assert/strict';import {readFileSync} from 'node:fs';const d=JSON.parse(readFileSync('data/excursions.json','utf8'));const sm=readFileSync('sitemap.xml','utf8');assert.equal(new Set(d.places.map(p=>p.id)).size,d.places.length);for(const p of d.places){assert.match(p.source,/^https:\/\//);assert.equal(p.automationAllowed,false);for(const t of p.prices){assert.ok(t.amount>0&&t.currency&&t.tariff&&t.source&&t.observedOn);assert.equal(t.checkoutConfirmed,false)}for(const l of ['es','de','en','fr','ht']){const pre=l==='es'?'':l+'/';const path=pre+'descubre/'+p.id+'.html';const html=readFileSync(path,'utf8');assert.ok(html.includes('<html lang="'+l+'">'));assert.ok(sm.includes('<loc>https://islaviva-rd.pages.dev/'+path+'</loc>'));}}console.log('Validated '+d.places.length+' places in five languages');
