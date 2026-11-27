@@ -1,0 +1,70 @@
+name: Verify outage sources and mobile guides
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'scripts/power_plans.py'
+      - 'scripts/update_local_notices.py'
+      - 'assets/power-notices.js'
+      - '**/apagones-higuey.html'
+      - 'apagones-higuey.html'
+      - '.github/workflows/check-outages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch real original sources without publishing
+        run: |
+          python scripts/update_local_notices.py
+          python - <<'PY'
+          import json
+          d=json.load(open('data/local_notices.json'))
+          print(json.dumps(d,ensure_ascii=False,indent=2))
+          p=d.get('power_plans',{})
+          assert p.get('items') or p.get('schedules'), 'No current official plan imported'
+          PY
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: npm install --no-save --package-lock=false playwright
+      - run: npx playwright install chromium
+      - name: Mobile browser verification
+        run: |
+          python -m http.server 8765 > /tmp/outage-server.log 2>&1 &
+          mkdir -p /tmp/outage-screens
+          node --input-type=module <<'JS'
+          import {chromium} from 'playwright';
+          const browser=await chromium.launch({headless:true});
+          try {
+            for(const lang of ['es','de','en','fr','ht']){
+              const page=await browser.newPage({viewport:{width:390,height:844},deviceScaleFactor:1,isMobile:true,hasTouch:true});
+              const errors=[];
+              page.on('pageerror',e=>errors.push(e.message));
+              const response=page.waitForResponse(r=>r.url().endsWith('/data/local_notices.json'));
+              await page.goto('http://127.0.0.1:8765/'+(lang==='es'?'':lang+'/')+'apagones-higuey.html');
+              if(!(await response).ok())throw Error('Data request failed');
+              const input=page.locator('input[type=search]');
+              await input.waitFor();
+              await input.fill('Higüey');
+              await page.waitForTimeout(300);
+              if(errors.length)throw Error(errors.join('; '));
+              if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))throw Error('Horizontal overflow '+lang);
+              await page.screenshot({path:'/tmp/outage-screens/'+lang+'.png',fullPage:true});
+              await page.close();
+            }
+          } finally {await browser.close()}
+          JS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: outage-mobile-screens
+          path: /tmp/outage-screens
+          retention-days: 3
