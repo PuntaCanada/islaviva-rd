@@ -1,0 +1,31 @@
+name: Chromium excursion visual review
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    container:
+      image: mcr.microsoft.com/playwright:v1.56.1-noble
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: npm install --no-save --no-audit --no-fund playwright@1.56.1
+      - name: Start static site
+        run: |
+          python3 -m http.server 8765 --bind 127.0.0.1 >/tmp/excursion-http.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -fsS http://127.0.0.1:8765/ >/dev/null && exit 0
+            sleep 1
+          done
+          exit 1
+      - run: node tests/chromium-excursions.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: excursion-smartphone-review
+          path: visual-excursions/
+          retention-days: 3

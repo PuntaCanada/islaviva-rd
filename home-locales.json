@@ -55,7 +55,8 @@
         "regionSourcesKicker": "AMTLICHE QUELLEN",
         "regionSourcesTitle": "Lokale Informationen aus überprüfbaren Quellen",
         "regionSourcesDesc": "Direkt zu Behörden und Einrichtungen. Wähle oben deine Stadt, um passende Links zu sehen.",
-        "regionSourcesNote": "Diese Links führen zu externen Seiten. Sie sind keine Live-Warnungen und bestätigen keine Versorgung an deiner Adresse."
+        "regionSourcesNote": "Diese Links führen zu externen Seiten. Sie sind keine Live-Warnungen und bestätigen keine Versorgung an deiner Adresse.",
+        "navexcursions": "Ausflüge"
       }
     },
     "en": {
@@ -111,7 +112,8 @@
         "regionSourcesKicker": "OFFICIAL SOURCES",
         "regionSourcesTitle": "Local information from verifiable sources",
         "regionSourcesDesc": "Direct links to public agencies. Select your city above for relevant contacts.",
-        "regionSourcesNote": "Links lead to external websites. They are not live alerts and do not confirm service availability at your address."
+        "regionSourcesNote": "Links lead to external websites. They are not live alerts and do not confirm service availability at your address.",
+        "navexcursions": "Excursions"
       }
     },
     "fr": {
@@ -167,7 +169,8 @@
         "regionSourcesKicker": "SOURCES OFFICIELLES",
         "regionSourcesTitle": "Informations locales provenant de sources vérifiables",
         "regionSourcesDesc": "Accédez directement aux organismes publics. Choisissez votre ville pour voir les liens pertinents.",
-        "regionSourcesNote": "Ces liens mènent à des sites externes. Ils ne constituent ni des alertes en direct ni une confirmation de service à votre adresse."
+        "regionSourcesNote": "Ces liens mènent à des sites externes. Ils ne constituent ni des alertes en direct ni une confirmation de service à votre adresse.",
+        "navexcursions": "Excursions"
       }
     },
     "ht": {
@@ -223,7 +226,8 @@
         "regionSourcesKicker": "SOUS OFISYÈL",
         "regionSourcesTitle": "Enfòmasyon lokal nan sous ou ka verifye",
         "regionSourcesDesc": "Lyen dirèk pou sèvis piblik yo. Chwazi vil ou anlè a pou jwenn lyen ki itil.",
-        "regionSourcesNote": "Lyen yo mennen sou lòt sit. Yo pa alèt an dirèk epi yo pa konfime sèvis disponib nan adrès ou."
+        "regionSourcesNote": "Lyen yo mennen sou lòt sit. Yo pa alèt an dirèk epi yo pa konfime sèvis disponib nan adrès ou.",
+        "navexcursions": "Ekskirsyon"
       }
     }
   }

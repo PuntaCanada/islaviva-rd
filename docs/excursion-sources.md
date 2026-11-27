@@ -1,0 +1,7 @@
+# Source review — 2026-11-27
+MITUR public activity directory and destination pages establish named places; directory links are not tariff evidence. Publish only original factual metadata and links, not copied descriptions or photos. No affirmative permission for automated extraction established. Scape Park shop shows $0 placeholders, which are not admission prices. No price published from those listings. Automated requests disabled until terms, robots and extraction are reviewed per endpoint. A successful HTTP response is not field verification. Existing verified values must never be overwritten on failure.
+
+2026-11-27: MITUR Barahona, Samaná and Jarabacoa destination pages reviewed for named places. Runners Adventures Monkeyland operator page establishes tour identity, no confirmed price. El Dorado homepage and resident ticket / mobile regular ticket pages provide explicit free under-four tariffs, resident ID requirement and advertised adult/child amounts; no checkout verification. Source permission for automated extraction remains unresolved. No coordinates inferred.
+
+Natural Earth 1:110m ADM0_A3 DOM polygon, public domain, generalized mainland boundary; not suitable for navigation or detailed island geography. Source: https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_0_countries.geojson
+2026-11-27 actual audit 45925737620: P2284 and P8620 empty for all three matched entities. No price or hours confirmation from this audit.
