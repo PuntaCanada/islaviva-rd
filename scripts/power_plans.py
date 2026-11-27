@@ -101,26 +101,44 @@ def parse_explicit_rows(html, today):
  return results
 
 def parse_press(html, day, url):
- """Extract factual schedule fields from explicitly dated press reports."""
- page=Page(); page.feed(html)
- text=" ".join(" ".join(page.parts).split())
+ """Extract only explicit circuit paragraphs beneath dated locality headings."""
+ class Blocks(HTMLParser):
+  def __init__(self):
+   super().__init__(convert_charrefs=True); self.tag=None; self.parts=[]; self.blocks=[]
+  def handle_starttag(self,tag,attrs):
+   if tag in ("h1","h2","h3","p"):
+    self.tag=tag; self.parts=[]
+  def handle_data(self,data):
+   if self.tag: self.parts.append(data)
+  def handle_endtag(self,tag):
+   if tag==self.tag:
+    self.blocks.append((tag," ".join("".join(self.parts).split()))); self.tag=None
+ parser=Blocks(); parser.feed(html)
  date=f"{day.day} de {list(MONTHS)[day.month-1]} de {day.year}"
- if date not in normalize(text): return []
- rows=[]
- for section in re.split(r"Cortes de luz en ",text,flags=re.I)[1:]:
-  match=re.match(r"(.{1,100}?)\s+El horario previsto es de (\d{1,2}:\d{2})\s*([ap])\.\s*m\.\s+a\s+(\d{1,2}:\d{2})\s*([ap])\.\s*m\.",section,re.I)
-  if not match: continue
-  area,a,ap,b,bp=match.groups()
-  def clock(value,part):
-   h,m=map(int,value.split(":"))
-   if not 1<=h<=12 or not 0<=m<=59: raise ValueError()
-   return f"{h%12+(12 if part.lower()=='p' else 0):02d}:{m:02d}"
-  try: start,end=clock(a,ap),clock(b,bp)
-  except ValueError: continue
-  if start>=end: continue
-  for circuit,places in re.findall(r"En el circuito ([A-Z]{2,5}\d{2,6}), la programación incluye:\s*(.+?)(?=\.\s*(?:En el circuito|Los sectores|$))",section,re.S):
-   if len(places)>3000: continue
-   rows.append(dict(date=day.isoformat(),circuit=circuit,area=area,neighborhoods=places.rstrip("."),start=start,end=end,timezone="America/Santo_Domingo",status="scheduled_not_live",source="Atardecer (EDEEste)",url=url))
+ if not any(date in normalize(v) for tag,v in parser.blocks if tag=="p" and "edeeste" in normalize(v)): return []
+ rows=[]; area=None; window=None
+ def clock(value,part):
+  h,m=map(int,value.split(":"))
+  if not 1<=h<=12 or not 0<=m<=59: raise ValueError()
+  return f"{h%12+(12 if part.lower()=='p' else 0):02d}:{m:02d}"
+ for tag,value in parser.blocks:
+  if tag.startswith("h"):
+   heading=re.fullmatch(r"Cortes de luz en (.{1,100})",value,re.I)
+   area=heading.group(1) if heading else None; window=None
+   continue
+  if not area: continue
+  times=re.fullmatch(r"El horario previsto es de (\d{1,2}:\d{2})\s*([ap])\.?\s*m\.?\s+a\s+(\d{1,2}:\d{2})\s*([ap])\.?\s*m\.?\.?",value,re.I)
+  if times:
+   a,ap,b,bp=times.groups()
+   try:
+    start,end=clock(a,ap),clock(b,bp)
+    window=(start,end) if start<end else None
+   except ValueError: window=None
+   continue
+  circuit=re.fullmatch(r"En el circuito ([A-Z]{2,5}\d{2,6}),\s*la programación incluye:\s*(.{1,3000})",value,re.I)
+  if circuit and window:
+   code,places=circuit.groups()
+   rows.append(dict(date=day.isoformat(),circuit=code.upper(),area=area,neighborhoods=places.rstrip("."),start=window[0],end=window[1],timezone="America/Santo_Domingo",status="scheduled_not_live",source="Atardecer (EDEEste)",url=url))
  return rows
 
 def press_schedules(today):
@@ -135,6 +153,8 @@ def press_schedules(today):
     if urlsplit(response.geturl()).hostname!="atardecer.com.do": raise ValueError("redirect")
     raw=response.read(2000001)
     if len(raw)>2000000: raise ValueError("size")
-   rows.extend(parse_press(raw.decode("utf-8"),day,url))
+   parsed=parse_press(raw.decode("utf-8"),day,url)
+   if not parsed: errors.append({"source":url,"error":"NoRecognizedCircuitRows"})
+   rows.extend(parsed)
   except (OSError,ValueError) as exc: errors.append({"source":url,"error":type(exc).__name__})
  return rows,errors
