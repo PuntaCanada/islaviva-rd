@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T19:52:17.187645+00:00",
+  "updated": "2026-11-27T21:20:55.797238+00:00",
   "sources_checked": 8,
   "sources_configured": 10,
   "failed_feeds": [
@@ -29,7 +29,7 @@
         "start_date": "2026-11-21",
         "end_date": "2026-11-27",
         "status": "plan_reference_not_live",
-        "checked": "2026-11-27T19:52:17.187645+00:00"
+        "checked": "2026-11-27T21:20:55.797238+00:00"
       },
       {
         "source": "EDENORTE",
@@ -37,7 +37,7 @@
         "start_date": "2026-11-28",
         "end_date": "2026-12-04",
         "status": "plan_reference_not_live",
-        "checked": "2026-11-27T19:52:17.187645+00:00"
+        "checked": "2026-11-27T21:20:55.797238+00:00"
       },
       {
         "source": "EDESUR",
@@ -45,7 +45,7 @@
         "start_date": "2026-11-21",
         "end_date": "2026-11-27",
         "status": "plan_reference_not_live",
-        "checked": "2026-11-27T19:52:17.187645+00:00"
+        "checked": "2026-11-27T21:20:55.797238+00:00"
       }
     ],
     "schedules": [
@@ -627,6 +627,6 @@
       }
     ],
     "errors": [],
-    "checked": "2026-11-27T19:52:17.187645+00:00"
+    "checked": "2026-11-27T21:20:55.797238+00:00"
   }
 }
