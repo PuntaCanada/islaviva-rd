@@ -8,8 +8,30 @@
       "category": "island",
       "source": "https://www.godominicanrepublic.com/things-to-do/isla-saona",
       "identityReviewedOn": "2026-11-27",
-      "prices": [],
-      "priceHistory": [],
+      "prices": [
+        {
+          "tariff": "Punta Cana catamaran tour, adult (from), meals, drinks and hotel transfer",
+          "amount": 55,
+          "currency": "USD",
+          "source": "https://saonaisland.com.do/en/tour/punta-cana-saona-island-tour-and-catamaran-food-and-open-bar",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "fromPrice": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "tariff": "Punta Cana catamaran tour, adult (from), meals, drinks and hotel transfer",
+          "amount": 55,
+          "currency": "USD",
+          "source": "https://saonaisland.com.do/en/tour/punta-cana-saona-island-tour-and-catamaran-food-and-open-bar",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "fromPrice": true
+        }
+      ],
       "hours": null,
       "coordinates": null,
       "automationAllowed": false
@@ -24,7 +46,14 @@
       "prices": [],
       "priceHistory": [],
       "hours": null,
-      "coordinates": null,
+      "coordinates": {
+        "latitude": 18.481386194444443,
+        "longitude": -69.84357949999999,
+        "entity": "Q6683320",
+        "source": "https://www.wikidata.org/wiki/Q6683320",
+        "observedOn": "2026-11-27",
+        "upstreamReferences": 0
+      },
       "automationAllowed": false
     },
     {
@@ -37,7 +66,14 @@
       "prices": [],
       "priceHistory": [],
       "hours": null,
-      "coordinates": null,
+      "coordinates": {
+        "latitude": 19.734305555555558,
+        "longitude": -70.81919444444443,
+        "entity": "Q125071518",
+        "source": "https://www.wikidata.org/wiki/Q125071518",
+        "observedOn": "2026-11-27",
+        "upstreamReferences": 0
+      },
       "automationAllowed": false
     },
     {
@@ -624,7 +660,14 @@
       "prices": [],
       "priceHistory": [],
       "hours": null,
-      "coordinates": null,
+      "coordinates": {
+        "latitude": 19.16638888888889,
+        "longitude": -69.27555555555556,
+        "entity": "Q4208698",
+        "source": "https://www.wikidata.org/wiki/Q4208698",
+        "observedOn": "2026-11-27",
+        "upstreamReferences": 1
+      },
       "automationAllowed": false
     },
     {
