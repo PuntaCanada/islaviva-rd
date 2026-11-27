@@ -725,11 +725,134 @@
       "category": "park",
       "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
       "identityReviewedOn": "2026-11-27",
-      "prices": [],
-      "priceHistory": [],
+      "prices": [
+        {
+          "tariff": "With transfer / 13+",
+          "amount": 95,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "With transfer / 3–12",
+          "amount": 60,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "With transfer / 0–2",
+          "amount": 0,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": true
+        },
+        {
+          "tariff": "Without transfer / 13+",
+          "amount": 80,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "Without transfer / 3–12",
+          "amount": 50,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "Without transfer / 0–2",
+          "amount": 0,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": true
+        }
+      ],
+      "priceHistory": [
+        {
+          "tariff": "With transfer / 13+",
+          "amount": 95,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "With transfer / 3–12",
+          "amount": 60,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "With transfer / 0–2",
+          "amount": 0,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": true
+        },
+        {
+          "tariff": "Without transfer / 13+",
+          "amount": 80,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "Without transfer / 3–12",
+          "amount": 50,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": false
+        },
+        {
+          "tariff": "Without transfer / 0–2",
+          "amount": 0,
+          "currency": "USD",
+          "source": "https://www.runnersadventures.com/monkeyland/monkeyland-punta-cana/",
+          "observedOn": "2026-11-27",
+          "basis": "advertised",
+          "checkoutConfirmed": false,
+          "explicitFree": true
+        }
+      ],
       "hours": null,
       "coordinates": null,
-      "automationAllowed": false
+      "automationAllowed": false,
+      "durationHours": 5.5
     },
     {
       "id": "el-dorado",
