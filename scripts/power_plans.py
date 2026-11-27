@@ -32,6 +32,7 @@ def parse_ranges(html, today):
  result=set()
  for a,m,y,b,n,z in re.findall(pattern,text):
   try:
+   if not z: continue
    end=dt.date(int(z),MONTHS[n],int(b))
    start=dt.date(int(y or z),MONTHS[m or n],int(a))
    if not y and start>end and m: start=start.replace(year=start.year-1)
