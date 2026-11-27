@@ -3,7 +3,7 @@ import pathlib
 import sys
 import unittest
 sys.path.insert(0,str(pathlib.Path(__file__).resolve().parents[1]/"scripts"))
-from power_plans import parse_ranges, parse_explicit_rows
+from power_plans import parse_ranges, parse_explicit_rows, parse_press
 
 class PowerPlansTest(unittest.TestCase):
  def test_cross_month(self):
@@ -33,5 +33,13 @@ class ExplicitRowsTest(unittest.TestCase):
   self.assertEqual(parse_explicit_rows(self.row(start="16:00"),dt.date(2026,11,27)),[])
  def test_invalid_circuit(self):
   self.assertEqual(parse_explicit_rows(self.row(circuit="unknown"),dt.date(2026,11,27)),[])
+class PressRegression(unittest.TestCase):
+ def test_higuey(self):
+  # Minimal reconstructed markup using factual fields from the 26 November report.
+  html='<p>EDEEste: 26 de noviembre de 2026</p><h2>Cortes de luz en <strong>Higüey</strong></h2><p>El horario previsto es de <b>9:20 a. m.</b> a <b>3:20 p. m.</b>.</p><p>En el circuito <b>HI3803</b>, la programación incluye: Los Prados.</p><p>En el circuito <b>HI3805</b>, la programación incluye: Villa Nazaret.</p><h2>Otros artículos</h2><p>En el circuito ZZ1234, la programación incluye: Otro lugar.</p>'
+  rows=parse_press(html,dt.date(2026,11,26),"https://atardecer.com.do/cortes-luz-edeeste-jueves-26-noviembre-2026/")
+  self.assertEqual({r["circuit"] for r in rows},{"HI3803","HI3805"})
+  self.assertTrue(all(r["area"]=="Higüey" and r["start"]=="09:20" and r["end"]=="15:20" for r in rows))
+  self.assertEqual(parse_press(html,dt.date(2026,11,27),"https://atardecer.com.do/"),[])
 if __name__=="__main__": unittest.main()
 
