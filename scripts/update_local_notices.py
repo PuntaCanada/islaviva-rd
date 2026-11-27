@@ -19,6 +19,10 @@ UTC=dt.timezone.utc
 NOW=dt.datetime.now(UTC)
 SOURCES=[
  ("EDEEste","power","https://edeeste.com.do/feed/","edeeste.com.do"),
+ ("EDEEste","power","https://www.edeeste.gob.do/feed/","edeeste.gob.do"),
+ ("EDENORTE","power","https://edenorte.com.do/feed/","edenorte.com.do"),
+ ("EDESUR","power","https://www.edesur.com.do/feed/","edesur.com.do"),
+ ("Atardecer","power","https://atardecer.com.do/feed/","atardecer.com.do"),
  ("EDEEste","power","https://edeeste.com.do/category/noticias/feed/","edeeste.com.do"),
  ("INAPA","water","https://inapa.gob.do/feed/","inapa.gob.do"),
  ("INAPA","water","https://inapa.gob.do/noticias/feed/","inapa.gob.do"),
@@ -26,7 +30,7 @@ SOURCES=[
  ("Ayuntamiento Higüey","events","https://ayuntamientohiguey.gob.do/category/noticias/feed/","ayuntamientohiguey.gob.do")
 ]
 TOPICS={
- "power":r"\b(?:interrupcion|apagones?|averia|mantenimiento|circuitos?|subestacion|suministro electrico)\b",
+ "power":r"\b(?:interrupcion(?:es)?|apagones?|averias?|mantenimientos?|circuitos?|subestacion|suministro electrico|cortes? de luz|sin luz|trabajos programados)\b",
  "water":r"\b(?:agua potable|acueducto|averia|suministro|interrupcion|servicio de agua|tuberia)\b",
  "events":r"\b(?:eventos?|feria|festival|concierto|celebracion|agenda cultural|actividad(?:es)?|jornada|desfile)\b"
 }
@@ -61,6 +65,7 @@ def get_notices(source,kind,url,domain):
   # first part of an item's summary can help locate a notice, but we never
   # infer that an entire utility service territory is currently affected.
   regions=region_mentions(title+" "+preview[:170])
+  if source=="Atardecer" and not regions:continue
   # Never infer locality merely from a publisher's headquarters.
   notices.append({"kind":kind,"title":title,"preview":preview,"url":link,"source":source,
    "published":published.isoformat(),"regions":regions,"status":"published_unverified"})
