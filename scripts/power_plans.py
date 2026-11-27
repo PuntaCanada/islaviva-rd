@@ -43,7 +43,7 @@ def parse_ranges(html, today):
 
 def collect(now):
  today=(now-dt.timedelta(hours=4)).date()
- plans=[]; errors=[]
+ plans=[]; errors=[]; schedules=[]
  for provider,url in SOURCES.items():
   try:
    req=urllib.request.Request(url,headers={"User-Agent":"IslaVivaRD/1.0","Accept":"text/html"})
@@ -51,13 +51,18 @@ def collect(now):
     if urlsplit(response.geturl()).hostname != urlsplit(url).hostname: raise ValueError("unexpected redirect")
     raw=response.read(2000001)
     if len(raw)>2000000: raise ValueError("oversized response")
-    ranges=parse_ranges(raw.decode("utf-8"),today)
-   if not ranges: raise ValueError("no current dated plan recognized")
+    html=raw.decode("utf-8")
+    ranges=parse_ranges(html,today)
+    rows=parse_explicit_rows(html,today)
+   for row in rows:
+    row.update(source=provider,url=url,checked=now.isoformat())
+    schedules.append(row)
+   if not ranges and not rows: raise ValueError("no current dated plan recognized")
    for start,end in ranges:
     plans.append({"source":provider,"url":url,"start_date":start,"end_date":end,"status":"plan_reference_not_live","checked":now.isoformat()})
   except (OSError,ValueError) as exc:
    errors.append({"source":provider,"error":type(exc).__name__})
- return {"items":plans,"errors":errors,"checked":now.isoformat()}
+ return {"items":plans,"schedules":schedules,"errors":errors,"checked":now.isoformat()}
 
 def parse_explicit_rows(html, today):
  """Accept only self-contained table rows with explicit date, circuit and times.
