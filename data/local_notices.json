@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-27T21:20:55.797238+00:00",
+  "updated": "2026-11-28T07:45:11.419009+00:00",
   "sources_checked": 8,
   "sources_configured": 10,
   "failed_feeds": [
@@ -26,26 +26,18 @@
       {
         "source": "EDENORTE",
         "url": "https://edenorte.com.do/interrupciones-programadas/",
-        "start_date": "2026-11-21",
-        "end_date": "2026-11-27",
-        "status": "plan_reference_not_live",
-        "checked": "2026-11-27T21:20:55.797238+00:00"
-      },
-      {
-        "source": "EDENORTE",
-        "url": "https://edenorte.com.do/interrupciones-programadas/",
         "start_date": "2026-11-28",
         "end_date": "2026-12-04",
         "status": "plan_reference_not_live",
-        "checked": "2026-11-27T21:20:55.797238+00:00"
+        "checked": "2026-11-28T07:45:11.419009+00:00"
       },
       {
         "source": "EDESUR",
         "url": "https://www.edesur.com.do/enlaces-empresa/mantenimientos-programados/",
-        "start_date": "2026-11-21",
-        "end_date": "2026-11-27",
+        "start_date": "2026-11-28",
+        "end_date": "2026-12-04",
         "status": "plan_reference_not_live",
-        "checked": "2026-11-27T21:20:55.797238+00:00"
+        "checked": "2026-11-28T07:45:11.419009+00:00"
       }
     ],
     "schedules": [
@@ -432,201 +424,14 @@
         "status": "scheduled_not_live",
         "source": "Atardecer (EDEEste)",
         "url": "https://atardecer.com.do/cortes-luz-edeeste-jueves-26-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "EBRI06",
-        "area": "Santo Domingo Este y San Antonio de Guerra",
-        "neighborhoods": "Frailes II, Frailes III, INVIDOREX, San Bartolo de los Frailes, Brisas del Este",
-        "start": "09:20",
-        "end": "17:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "INVI04",
-        "area": "Santo Domingo Este y San Antonio de Guerra",
-        "neighborhoods": "Amanda I, Amanda II, Autopista de San Isidro, Bello Campo, Eugenio María de Hostos (Mendoza), Franconia, Italia, La Esperanza, La Primavera, Lotería, María Mercedes, Mirador del Este, Nuevo Sol Naciente, Oasis, Residencial Oriente, Paraíso Oriental, Residencial Delta Amarilis II, Residencial Los Ángeles, Residencial Villa Carmen, Savica, Trabajadores, Villa Carmen, Villa Esperanza (Invivienda)",
-        "start": "09:20",
-        "end": "17:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "INVI05",
-        "area": "Santo Domingo Este y San Antonio de Guerra",
-        "neighborhoods": "Invivienda, Eugenio María de Hostos, Trabajadores, Bello Campo, Residencial Villa Carmen, La Estrella, Residencial María Dolores, Residencial Charles, Residencial Oriente, Amanda I, María Mercedes, Vecinos Unidos, Los Marlin, Lotería, La Primavera, Ralma, Capotillo Villa Faro, Savica, Mi Sueño I, Mi Sueño II, Santa Lucía, Residencial Milenium, Campana, Residencial Jardines de Mendoza, La Botánica, Alpes I, Residencial Luci, El Alba, Urb. Carola, Juan Pablo Duarte, Narcisa I, Narcisa II, Los Trinitarios, Cancino I, Cancino II, Residencial Sharae, Residencial Inés II",
-        "start": "09:20",
-        "end": "17:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "INVI07",
-        "area": "Santo Domingo Este y San Antonio de Guerra",
-        "neighborhoods": "Trabajadores (parcial), Villa Carmen (parcial), Residencial Charles (parcial), Brisa de La Charles, Amanda I (parcial), Torres Millenium 20, Autopista de San Isidro (parcial), Residencial Ébano, Residencial Reyoli, Residencial Villa Oriental, Mirador del Este (parcial), Estrella del Este, Residencial Estados Unidos, Nancy Nadecha I (parcial), Residencial Nancy Nadecha IV, Residencial Flor y Vil, Residencial Shalom IV, Delta Amarilis IV, Residencial La Moneda I, Delta Amarilis III, Residencial Pradera Oriental, Residencial Josué I, Avepo, Nuevo Amanecer (parcial), Residencial Brisas del Caribe, Residencial Vista Ecológica, Brisa Oriental 6 (parcial), Brisa del Este (parcial), Prado Oriental (parcial)",
-        "start": "09:20",
-        "end": "17:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "PARR02",
-        "area": "Santo Domingo Este y San Antonio de Guerra",
-        "neighborhoods": "San Antonio de Guerra – Las Parras",
-        "start": "09:20",
-        "end": "17:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "CAPO09",
-        "area": "Distrito Nacional",
-        "neighborhoods": "24 de Abril, Ensanche Capotillo, Ensanche Espaillat, Ensanche Luperón, Ensanche Simón Bolívar, Gualey, Las Cañitas",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "CAPO11",
-        "area": "Distrito Nacional",
-        "neighborhoods": "Ensanche Capotillo, Brisa de La Isabela, La Zurza, Villa Agrícola, Los Manguitos, Ensanche Luperón",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "CNP802",
-        "area": "Distrito Nacional",
-        "neighborhoods": "Gazcue",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "DESP03",
-        "area": "Distrito Nacional",
-        "neighborhoods": "Ciudad Colonial, Ciudad Nueva, Gazcue, San Lázaro, San Miguel, Santa Bárbara, Villa Francisca",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "DESP06",
-        "area": "Distrito Nacional",
-        "neighborhoods": "Ciudad Colonial, San Antón, San Lázaro, San Miguel, Villa Francisca",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "DESP09",
-        "area": "Distrito Nacional",
-        "neighborhoods": "Ciudad Colonial, Ciudad Nueva, San Carlos, San Lázaro, San Miguel, Villa Francisca",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "BOCA02",
-        "area": "Boca Chica",
-        "neighborhoods": "Andrés, Batey Andrés, Costa Blanca, El Brisal (Brisas Caucedo), El Higo, Jerusalén, Los Unidos-La Caleta, María Estela, Miramar I, Residencial Panamericano, San Andrés Country Club, Tanquesitos",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "BOCA03",
-        "area": "Boca Chica",
-        "neighborhoods": "Batey Andrés, Brisas de Caucedo, El Brisal (Brisas Caucedo), El Higo, INVI CEA, La Ceiba, Miramar I, Monte Adentro de La Caleta, Mi Hogar INVI, Azucenas",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "RCL028",
-        "area": "La Romana",
-        "neighborhoods": "Barrio Blanco, Sinaí, Los Pica Piedras, Los Profesores, Piedra Linda, Sabaneta, Villa Deportiva, Villa Zorrilla, Vista Hermosa, Villa España, Ensanche La Paz, Los Maestros, Jardines Piedra Linda, El Centro, Villa Paraíso, La Lechoza, El Jobo, Villa Hermosa, El Higo, San Andrés, El Tamarindo, Ramón Matías Mella, Comajón, La Caoba, Villa Caoba",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "ROPU01",
-        "area": "La Romana",
-        "neighborhoods": "Los Pica Piedras, La Clínica, Los Cocos, La Lechoza, El Jobo, Villa Paraíso, La Tabacalera, La Caoba, Villa Caoba, Sabaneta, El Centro",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
-      },
-      {
-        "date": "2026-11-25",
-        "circuit": "CONS02",
-        "area": "San Pedro de Macorís",
-        "neighborhoods": "Barrio Inmaculada Concepción, Barrio Nuevo, Batey AB-4, Batey Don Juan, Batey Experimental, Batey San Juan Bautista, El INVI, El Kilombo, Filiu, George, Guachupita, Hato Mayor, INVI Villa Progreso, La Habana, La Loma, La Mina, La Palma, Libertad, Los Jardines, Los Maestros, Los Vecinos o La Carretera, Pueblo Nuevo, Puerto Príncipe, Puerto Rico, Santa Ana, Sueño Real, Villa Enriquillo, Villa Progreso (Cachipero), Villa Verde",
-        "start": "09:20",
-        "end": "15:20",
-        "timezone": "America/Santo_Domingo",
-        "status": "scheduled_not_live",
-        "source": "Atardecer (EDEEste)",
-        "url": "https://atardecer.com.do/cortes-luz-edeeste-miercoles-25-noviembre-2026/"
       }
     ],
-    "errors": [],
-    "checked": "2026-11-27T21:20:55.797238+00:00"
+    "errors": [
+      {
+        "source": "https://atardecer.com.do/cortes-luz-edeeste-sabado-28-noviembre-2026/",
+        "error": "NoRecognizedCircuitRows"
+      }
+    ],
+    "checked": "2026-11-28T07:45:11.419009+00:00"
   }
 }

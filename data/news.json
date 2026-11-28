@@ -1,770 +1,758 @@
 {
-  "updated": "2026-11-27T21:20:48.689843+00:00",
-  "source_status": "partial",
+  "updated": "2026-11-28T07:45:03.292641+00:00",
+  "source_status": "ok",
   "source_diagnostics": {
-    "feeds_successful": 16,
+    "feeds_successful": 18,
     "feeds_configured": 18,
     "publishers": {
       "AlMomento": 14,
-      "Bávaro Digital": 8,
-      "Diario Libre": 5,
+      "Bávaro Digital": 1,
+      "Diario 55": 4,
+      "Diario Libre": 4,
       "El Día": 15,
-      "El Tiempo": 5,
-      "Hoy": 12,
-      "Noticia.do": 3,
-      "Noticias SIN": 10
+      "Hoy": 24,
+      "Noticias SIN": 9,
+      "Punta Cana Post": 1
     },
-    "with_image_url": 17,
-    "with_region": 4,
+    "with_image_url": 27,
+    "with_region": 3,
     "by_region": {
-      "La Romana": 1,
-      "Punta Cana": 3
+      "Punta Cana": 2,
+      "Santo Domingo": 1
     },
     "regional_publishers": {
-      "Bávaro Digital": 3,
-      "El Tiempo": 1
+      "Bávaro Digital": 1,
+      "Hoy": 1,
+      "Punta Cana Post": 1
     }
   },
-  "failed_feeds": [
-    {
-      "source": "Diario 55",
-      "url": "https://diario55.com/feed/",
-      "reason": "HTTPError"
-    },
-    {
-      "source": "Diario Norte RD",
-      "url": "https://diarionorterd.com/feed/",
-      "reason": "HTTPError"
-    }
-  ],
+  "failed_feeds": [],
   "items": [
     {
-      "title": "Empresa denuncia presuntas irregularidades en licitación PN",
-      "url": "https://almomento.net/empresa-denuncia-presuntas-irregularidades-en-licitacion-pn/",
-      "source": "AlMomento",
-      "category": "Economía",
-      "regions": [],
-      "preview": "SANTO DOMINGO. La empresa Universal Ordenance, S.R.L. denunció presuntas irregularidades en una licitación de la Policía Nacional para la compra de botas tácticas y…",
-      "image": "",
-      "published": "2026-11-27T21:20:05+00:00"
-    },
-    {
-      "title": "UNPHU reconoce a egresados por su trayectoria y aportes",
-      "url": "https://almomento.net/unphu-reconoce-a-egresados-por-su-trayectoria-y-aportes/",
+      "title": "Unas navidades socialmente caras",
+      "url": "https://almomento.net/unas-navidades-socialmente-caras/",
       "source": "AlMomento",
       "category": "Actualidad",
       "regions": [],
-      "preview": "SANTO DOMINGO.- La Universidad Nacional Pedro Henríquez Ureña (UNPHU) reconoció a 18 de sus egresados durante la primera edición de la Gala Orgullo UNPHU 2026, una…",
+      "preview": "Entre las razones por las que la República Dominicana despierta interés más allá de sus fronteras, especialmente entre quienes buscan dónde invertir, está la…",
       "image": "",
-      "published": "2026-11-27T21:17:09+00:00"
+      "published": "2026-11-28T07:00:23+00:00"
     },
     {
-      "title": "Fuerza Aérea realiza jornada para prevenir la violencia contra la mujer",
-      "url": "https://eldia.com.do/fuerza-aerea-realiza-jornada-para-prevenir-la-violencia-contra-la-mujer/",
+      "title": "Gonzalo pide atender alertas de USA sobre seguridad tecnológica",
+      "url": "https://almomento.net/gonzalo-pide-atender-alertas-de-usa-sobre-seguridad-tecnologica/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "SANTO DOMINGO.– El aspirante presidencial del Partido de la Liberación Dominicana (PLD), Gonzalo Castillo, pidió al Gobierno atender las advertencias de Estados…",
+      "image": "",
+      "published": "2026-11-28T07:00:04+00:00"
+    },
+    {
+      "title": "Licey, Toros y Escogido obtienen victorias en béisbol dominicano",
+      "url": "https://almomento.net/licey-toros-y-escogido-obtienen-victorias-en-beisbol-dominicano/",
+      "source": "AlMomento",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "SANTO DOMINGO.– Los Tigres del Licey, Toros del Este y Leones del Escogido salieron victoriosos en la jornada de este viernes del campeonato de béisbol…",
+      "image": "",
+      "published": "2026-11-28T06:00:58+00:00"
+    },
+    {
+      "title": "Mis amigos los Baroni",
+      "url": "https://almomento.net/mis-amigos-los-baroni/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Luigi y Romano llegaron a San Cristóbal a finales de la década del cuarenta junto a sus padres, Valentino Baroni y Alicia Greggio Vachieri —nativos del Piamonte—…",
+      "image": "",
+      "published": "2026-11-28T06:00:10+00:00"
+    },
+    {
+      "title": "Cuando el deseo no llega al mismo tiempo",
+      "url": "https://hoy.com.do/opinion/deseo-llega_1109997.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Que uno de los dos tenga más ganas que el otro es una de las situaciones más comunes en la vida en pareja. No es falta de amor: es una diferencia que se puede…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/26/6b0853220112d.webp",
+      "published": "2026-11-28T05:45:00+00:00"
+    },
+    {
+      "title": "Escogido y las Águilas dejan sin efecto cambio de jugadores",
+      "url": "https://almomento.net/escogido-y-las-aguilas-dejan-sin-efecto-cambio-de-jugadores/",
+      "source": "AlMomento",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "SANTO DOMINGO.– Los Leones del Escogido y las Águilas Cibaeñas acordaron dejar sin efecto el intercambio de jugadores realizado el pasado 16 de noviembre, por lo…",
+      "image": "",
+      "published": "2026-11-28T05:05:31+00:00"
+    },
+    {
+      "title": "Puerto Rico noquea República Dominicana en Panam Softbol",
+      "url": "https://almomento.net/puerto-rico-noquea-republica-dominicana-en-panam-softbol/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "SAN SALVADOR, El Salvador.– La selección de Puerto Rico propinó una derrota por nocaut 7-0 a República Dominicana, en seis entradas, durante un partido…",
+      "image": "",
+      "published": "2026-11-28T05:02:41+00:00"
+    },
+    {
+      "title": "R. Dominicana enfrentará a Mali en el Mundial Sub-17 de Catar",
+      "url": "https://almomento.net/r-dominicana-enfrentara-a-mali-en-el-mundial-sub-17-de-catar/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "DOHA.– La selección de República Dominicana se enfrentará a Mali el próximo martes 1 de diciembre en los dieciseisavos de final del Mundial de fútbol masculino…",
+      "image": "",
+      "published": "2026-11-28T05:00:52+00:00"
+    },
+    {
+      "title": "Abinader, qué árbitro",
+      "url": "https://diario55.com/abinader-que-arbitro/",
+      "source": "Diario 55",
+      "category": "Regionales",
+      "regions": [],
+      "preview": "Ser aceptado como árbitro en una agrupación política habla de cuanta confianza y autoridad se tiene a lo interno de la organización. La aureola comprende una trampa…",
+      "image": "",
+      "published": "2026-11-28T05:00:46+00:00"
+    },
+    {
+      "title": "Rodríguez Pimentel reclama protección para porcicultores",
+      "url": "https://almomento.net/rodriguez-pimentel-reclama-proteccion-para-porcicultores/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "SANTO DOMINGO. – El exsenador Héctor Rodríguez Pimentel respaldó el reclamo de los productores de cerdo ante el Ministerio de Agricultura y exigió al Gobierno…",
+      "image": "",
+      "published": "2026-11-28T05:00:36+00:00"
+    },
+    {
+      "title": "Cabrera, Mercedes y Ramírez brillan Torneo Nacional Boxeo",
+      "url": "https://almomento.net/cabrera-mercedes-y-ramirez-brillan-torneo-nacional-boxeo/",
+      "source": "AlMomento",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "SABANA GRANDE DE BOYÁ.– Los púgiles Josué Rafael Cabrera, Edward Mercedes y Javier Ramírez protagonizaron algunas de las actuaciones más destacadas en la jornada…",
+      "image": "",
+      "published": "2026-11-28T05:00:12+00:00"
+    },
+    {
+      "title": "RD derrota a Colombia y se acerca a la clasificación para el Mundial de Baloncesto Catar 2027",
+      "url": "https://eldia.com.do/rd-se-impone-a-colombia-en-ventana-clasificatoria/",
+      "source": "El Día",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo, -El escolta Lester Quiñones tuvo un regreso en grande al equipo nacional de baloncesto masculino…",
+      "image": "",
+      "published": "2026-11-28T04:22:08+00:00"
+    },
+    {
+      "title": "LeBron James vuela a los cuartos de la NBA Cup",
+      "url": "https://noticiassin.com/deportes/baloncesto/2026/11/28/philadelphia-avanza-a-cuartos-de-la-nba-cup-con-lebron-james-2178542/",
+      "source": "Noticias SIN",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "Philadelphia superó a Indiana y avanzó a los cuartos de final de la NBA Cup.",
+      "image": "",
+      "published": "2026-11-28T04:21:57+00:00"
+    },
+    {
+      "title": "Edición impresa 28 de noviembre del 2026",
+      "url": "https://eldia.com.do/edicion-impresa-28-de-noviembre-del-2026/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. La Fuerza Aérea de República Dominicana (FARD) desarrolló una jornada de sensibilización para…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Edición impresa La publicación Edición impresa 28 de noviembre del 2026 apareció primero en El Día.",
       "image": "",
-      "published": "2026-11-27T21:07:40+00:00"
+      "published": "2026-11-28T04:21:00+00:00"
     },
     {
-      "title": "¿Qué ver este fin de semana? Películas y series para agregar a tu lista",
-      "url": "https://hoy.com.do/vivir/alegria/netflix/ver-semana-peliculas-series-agregar-lista_1110193.html",
-      "source": "Hoy",
-      "category": "Cultura",
-      "regions": [],
-      "preview": "Seis opciones de Netflix para este fin de semana: acción, suspenso, drama y crimen, desde «El Dragón» hasta «Ingobernable».",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/06/27/6a400e94989bb.png",
-      "published": "2026-11-27T20:58:49+00:00"
-    },
-    {
-      "title": "Meloni expresa su preocupación a Zelenski por ataque en Libia al amenazar el Mediterráneo",
-      "url": "https://noticiassin.com/mundo/2026/11/27/meloni-expresa-a-zelenski-su-preocupacion-por-el-ataque-en-libia-2178264/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Meloni advirtió a Zelenski que el ataque en Libia viola su soberanía y puede extender el conflicto al Mediterráneo.",
-      "image": "",
-      "published": "2026-11-27T20:58:37+00:00"
-    },
-    {
-      "title": "Justicia argentina pide identificar responsables de la gestión del oro del Banco Central",
-      "url": "https://noticiassin.com/mundo/2026/11/27/justicia-argentina-investiga-quien-manejo-el-oro-del-banco-central-2178269/",
-      "source": "Noticias SIN",
+      "title": "Seguridad Social dispara costo del salario y grandes beneficios a AFP",
+      "url": "https://eldia.com.do/seguridad-social-dispara-costo-del-salario-y-grandes-beneficios-a-afp/",
+      "source": "El Día",
       "category": "Economía",
       "regions": [],
-      "preview": "La Justicia investiga quiénes intervinieron en la gestión del oro del BCRA y si hubo comunicaciones con Economía.",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-Por cada 100 pesos que devenga un trabajador dominicano, su empleador tiene que disponer de…",
       "image": "",
-      "published": "2026-11-27T20:57:58+00:00"
+      "published": "2026-11-28T04:20:00+00:00"
     },
     {
-      "title": "(VIDEO) ¡Ni estacionado se salvó! Joven calibrando en Verón choca carro y se da a la fuga",
-      "url": "https://bavarodigital.net/video-ni-estacionado-se-salvo-joven-calibrando-en-veron-choca-carro-y-se-da-a-la-fuga/",
+      "title": "Punta Cana tendrá un sábado soleado, con ambiente cálido y posibilidades de lluvias",
+      "url": "https://bavarodigital.net/punta-cana-tendra-un-sabado-soleado-con-ambiente-calido-y-posibilidades-de-lluvias/",
       "source": "Bávaro Digital",
-      "category": "Regionales",
+      "category": "Medioambiente",
       "regions": [
         "Punta Cana"
       ],
-      "preview": "VERÓN–PUNTA CANA.– Ni estando estacionado se libró de un accidente. Un ciudadano denunció a Bávaro Digital que un joven que se desplazaba calibrando una motocicleta…",
+      "preview": "BÁVARO–VERÓN–PUNTA CANA.– Este sábado 28 de noviembre de 2026, la zona turística de Punta Cana tendrá una jornada marcada por períodos de sol, nubosidad variable y…",
       "image": "",
-      "published": "2026-11-27T20:55:37+00:00"
+      "published": "2026-11-28T04:19:43+00:00"
     },
     {
-      "title": "¿Lloverá este fin de semana?",
-      "url": "https://hoy.com.do/el-pais/llovera-semana_1110192.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "De acuerdo con el Instituto Dominicano de Meteorología (Indomet), la incidencia de una circulación anticiclónica limitará las lluvias en gran parte del territorio…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2025/11/05/690c19292efe4.png",
-      "published": "2026-11-27T20:52:08+00:00"
-    },
-    {
-      "title": "El petróleo de Texas cae un 0,72 %, hasta 83,08 dólares, y cierra otra semana a la baja",
-      "url": "https://noticiassin.com/estados-unidos/2026/11/27/el-petroleo-de-texas-baja-a-8308-dolares-y-suma-otra-semana-a-la-baja-2178263/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El WTI bajó 0,72 % y cerró la cuarta semana consecutiva a la baja.",
-      "image": "",
-      "published": "2026-11-27T20:51:05+00:00"
-    },
-    {
-      "title": "INACIF confirma que Jean André Pumarol puede enfrentar juicio por muerte de Yolanda Handal",
-      "url": "https://eldia.com.do/inacif-confirma-que-jean-andre-pumarol-puede-enfrentar-juicio-por-muerte-de-yolanda-handal/",
+      "title": "Legado de Jochy Santos queda estampado en el Bulevar de las Estrellas",
+      "url": "https://eldia.com.do/legado-de-jochy-santos-queda-estampado-en-el-bulevar-de-las-estrellas/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo. El Instituto Nacional de Ciencias Forenses (INACIF) confirmó nuevamente que Jean André Pumarol…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-El comunicador y productor Jochy Santos fue reconocido por la Fundación Bulevar de las Estrellas…",
       "image": "",
-      "published": "2026-11-27T20:50:30+00:00"
+      "published": "2026-11-28T04:19:00+00:00"
     },
     {
-      "title": "6 actividades que puedes hacer este fin de semana",
-      "url": "https://hoy.com.do/vivir/6-actividades-puedes-semana_1110191.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Para quienes disfrutan del teatro y las artes escénicas, el Festival Minutos Escénicos 2026 (FME2026) se celebra del 27 al 29 de noviembre en la Zona Colonial.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b09e8f53e44d.r_d.707-211-7812.png",
-      "published": "2026-11-27T20:45:11+00:00"
-    },
-    {
-      "title": "Develizan busto en honor a Isabel la Católica en la Ciudad Colonial",
-      "url": "https://noticiassin.com/pais/nacional/2026/11/27/develan-busto-de-isabel-la-catolica-en-la-ciudad-colonial-2178257/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Alcaldía e instituciones develizan busto de Isabel la Católica en la Ciudad Colonial, en su 522 aniversario de fallecimiento.",
-      "image": "",
-      "published": "2026-11-27T20:41:30+00:00"
-    },
-    {
-      "title": "La Asamblea Nacional cubana convoca su sesión ordinaria el próximo 17 de diciembre",
-      "url": "https://noticiassin.com/mundo/cuba/2026/11/27/asamblea-nacional-de-cuba-sesionara-el-17-de-diciembre-2178251/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La ANPP de Cuba sesionará el 17 de diciembre para aprobar nuevas leyes de inversión extranjera y educación.",
-      "image": "",
-      "published": "2026-11-27T20:40:41+00:00"
-    },
-    {
-      "title": "El brent baja 1,17 %, pero se mantiene en 95 dólares a la espera de la reunión de la OPEP+",
-      "url": "https://noticiassin.com/mundo/2026/11/27/el-brent-baja-un-117-y-aguarda-la-reunion-de-la-opep-2178254/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "El brent cayó 1,17 % y cerró en 95,44 dólares, mientras el mercado espera la reunión de la OPEP+.",
-      "image": "",
-      "published": "2026-11-27T20:36:09+00:00"
-    },
-    {
-      "title": "Periodistas de diferentes medios realizan recorrido por Call Center y el Centro de Operaciones de la Red de EDEEste",
-      "url": "https://eldia.com.do/periodistas-de-diferentes-medios-realizan-recorrido-por-call-center-y-el-centro-de-operaciones-de-la-red-de-edeeste/",
+      "title": "Seguro de salud, la cenicienta del sistema de la Seguridad Social",
+      "url": "https://eldia.com.do/seguro-de-salud-la-cenicienta-del-sistema-de-la-seguridad-social/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- Un grupo de periodistas representantes de diferentes medios de comunicación, conocieron las…",
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-El modelo de remuneración de las AFP fue modificado mediante la Ley 13-20, que estableció un…",
       "image": "",
-      "published": "2026-11-27T20:35:22+00:00"
+      "published": "2026-11-28T04:18:00+00:00"
     },
     {
-      "title": "Francesca Albanese dice que prohibición de entrada a Costa Rica es «un insulto» a la ONU",
-      "url": "https://noticiassin.com/mundo/2026/11/27/francesca-albanese-califica-de-insulto-su-veto-de-entrada-a-costa-rica-2178244/",
-      "source": "Noticias SIN",
+      "title": "La chef Tita enaltece la memoria y esencia de las hermanas Mirabal",
+      "url": "https://eldia.com.do/la-chef-tita-enaltece-la-memoria-y-esencia-de-las-hermanas-mirabal/",
+      "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Francesca Albanese calificó de \"insulto\" a la ONU la prohibición de su ingreso a Costa Rica y la tildó de difamación.",
+      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.–Las mariposas siguen inspirando 66 años después de su vil asesinato…. Hay historias que merecen…",
       "image": "",
-      "published": "2026-11-27T20:32:01+00:00"
+      "published": "2026-11-28T04:17:00+00:00"
     },
     {
-      "title": "DOMUS se posiciona como la nueva plataforma del sector inmobiliario y la construcción en República Dominicana",
-      "url": "https://eltiempo.com.do/variedades/domus-se-posiciona-como-la-nueva-plataforma-del-sector-inmobiliario-y-la-construccion-en-republica-dominicana/",
-      "source": "El Tiempo",
+      "title": "La carestía de la vida causa ira en Puerto Rico",
+      "url": "https://eldia.com.do/la-carestia-de-la-vida-causa-ira-en-puerto-rico/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. San Juan, Puerto Rico.-Miles de personas protestaron el viernes en San Juan, la capital de Puerto Rico, en una…",
+      "image": "",
+      "published": "2026-11-28T04:16:00+00:00"
+    },
+    {
+      "title": "Autopista del Ámbar finalmente se inicia tras décadas de espera",
+      "url": "https://eldia.com.do/autopista-del-ambar-finalmente-se-inicia-tras-decadas-de-espera/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-La construcción de una autopista moderna entre Santiago de los Caballeros y Puerto Plata ha sido…",
+      "image": "",
+      "published": "2026-11-28T04:15:00+00:00"
+    },
+    {
+      "title": "Incendio afecta tienda china, vivienda y taller en el Centro Histórico de Santiago",
+      "url": "https://diario55.com/incendio-afecta-tienda-china-vivienda-y-taller-en-el-centro-historico-de-santiago/",
+      "source": "Diario 55",
       "category": "Vivienda",
       "regions": [],
-      "preview": "PUNTA CANA. Con una producción elegante y la presencia de destacadas figuras del empresariado dominicano,... La entrada DOMUS se posiciona como la nueva plataforma…",
+      "preview": "Santiago, Rep. Dom. – Un incendio afectó la noche de este viernes varios inmuebles en el Centro Histórico de Santiago, entre ellos una tienda de capital chino…",
       "image": "",
-      "published": "2026-11-27T20:28:35+00:00"
+      "published": "2026-11-28T04:06:36+00:00"
     },
     {
-      "title": "Aplazan audiencia contra la exvicepresidenta de Guatemala Roxana Baldetti por corrupción",
-      "url": "https://noticiassin.com/mundo/america/2026/11/27/aplazan-audiencia-por-corrupcion-contra-roxana-baldetti-en-guatemala-2178245/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Se aplazó para el 2 de diciembre la audiencia de aceptación de cargos contra Roxana Baldetti por financiamiento electoral ilícito.",
-      "image": "",
-      "published": "2026-11-27T20:27:41+00:00"
-    },
-    {
-      "title": "Hallan una cabeza humana en un cuartel de Río en una amenaza del Comando Vermelho",
-      "url": "https://noticiassin.com/mundo/2026/11/27/hallan-una-cabeza-humana-en-un-cuartel-de-rio-en-amenaza-del-comando-vermelho-2178243/",
-      "source": "Noticias SIN",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La Policía Militar de Río halló una cabeza humana en su cuartel y lo atribuye a una intimidación del Comando Vermelho.",
-      "image": "",
-      "published": "2026-11-27T20:26:24+00:00"
-    },
-    {
-      "title": "La tensión en Ferrari y la rivalidad Verstappen-Russell marcan el regreso de la F1 a Qatar",
-      "url": "https://eldia.com.do/tension-en-ferrari-marca-retorno-f1-a-qatar/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La Fórmula 1 vuelve a Oriente Medio para cerrar una temporada alterada por la guerra con Irán, pero en el…",
-      "image": "",
-      "published": "2026-11-27T20:19:54+00:00"
-    },
-    {
-      "title": "Tormentas persisten en EE.UU. con más de 2.000 vuelos afectados y 460.000 clientes sin luz",
-      "url": "https://noticiassin.com/mundo/2026/11/27/tormentas-en-ee-uu-dejan-mas-de-2-000-vuelos-afectados-y-450-000-sin-luz-2178235/",
-      "source": "Noticias SIN",
-      "category": "Medioambiente",
-      "regions": [],
-      "preview": "Tormentas y nevadas siguen afectando EE.UU., con más de 2.000 vuelos impactados y unos 448.550 usuarios sin luz.",
-      "image": "",
-      "published": "2026-11-27T20:18:03+00:00"
-    },
-    {
-      "title": "La DNCD ha incautado más de 36 toneladas de droga a distintas redes del narcotráfico en lo que va de año",
-      "url": "https://eldia.com.do/la-dncd-ha-incautado-mas-de-36-toneladas-de-droga-a-distintas-redes-del-narcotrafico-en-lo-que-va-de-ano/",
-      "source": "El Día",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.- Más de 36 toneladas de drogas han sido incautadas por la Dirección Nacional de Control de…",
-      "image": "",
-      "published": "2026-11-27T20:15:30+00:00"
-    },
-    {
-      "title": "Haití enfrenta el desafío de garantizar el voto a 1,5 millones de desplazados",
-      "url": "https://hoy.com.do/el-mundo/haiti-enfrenta-desafio-garantizar-voto-1-5-millones-desplazados_1110182.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Esta crisis ha tenido un impacto profundo en los niveles de desplazamiento interno que se están documentando en Haití",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/24/6b0632c088a25.r_d.584-311-0.jpeg",
-      "published": "2026-11-27T20:15:00+00:00"
-    },
-    {
-      "title": "Estas comunidades de Santiago podrían sufrir interrupciones eléctricas este sábado",
-      "url": "https://hoy.com.do/el-pais/provincias/comunidades-santiago-podrian-sufrir-interrupciones-electricas-sabado_1110190.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Los trabajos se realizarán de 7:00 de la mañana a 1:00 de la tarde en la subestación Canabacoa y podrían afectar a 15 comunidades y varias empresas de la provincia.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b09e387b4c09.jpeg",
-      "published": "2026-11-27T20:11:27+00:00"
-    },
-    {
-      "title": "Domínguez Brito advierte posible tripartidismo en 2028",
-      "url": "https://almomento.net/dominguez-brito-advierte-posible-tripartidismo-en-2028/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO. – El dirigente político Francisco Domínguez Brito advirtió que el Partido Revolucionario Moderno (PRM) podría experimentar un retroceso en el…",
-      "image": "",
-      "published": "2026-11-27T20:11:26+00:00"
-    },
-    {
-      "title": "Del \"Payaso\" al \"Pastor\": figuras que trabajaban con niños y fueron acusadas de abuso sexual",
-      "url": "https://hoy.com.do/el-pais/payaso-pastor-figuras-trabajaban-ninos-acusadas-abuso-sexual_1110183.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Entre los casos figura el del productor de televisión Kelvin Francisco Núñez Morel, conocido como el payaso Kanqui, quien fue condenado a 10 años de prisión por un…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b09d5f089a39.jpeg",
-      "published": "2026-11-27T20:03:41+00:00"
-    },
-    {
-      "title": "Encuentran perro rottweiler en Vista Cana y buscan a su dueño",
-      "url": "https://bavarodigital.net/encuentran-perro-rottweiler-en-vista-cana-y-buscan-a-su-dueno/",
-      "source": "Bávaro Digital",
+      "title": "Encuentran muerto a vigilante con golpe en la cabeza cerca de pescadería en Navarrete",
+      "url": "https://diario55.com/encuentran-muerto-a-vigilante-con-golpe-en-la-cabeza-cerca-de-pescaderia-en-navarrete/",
+      "source": "Diario 55",
       "category": "Regionales",
       "regions": [],
-      "preview": "BÁVARO–PUNTA CANA, LA ALTAGRACIA.– Un perro de raza rottweiler fue encontrado en el sector de Vista Cana, donde permanece temporalmente bajo el cuidado de personas…",
+      "preview": "Navarrete, Santiago, Rep. Dom. – Un vigilante fue encontrado muerto este viernes con un golpe en la cabeza en las proximidades de la pescadería donde trabajaba…",
       "image": "",
-      "published": "2026-11-27T20:03:27+00:00"
+      "published": "2026-11-28T04:05:05+00:00"
     },
     {
-      "title": "Politur asegura que RD está preparada para mantener la seguridad y la tranquilidad en estas Navidades",
-      "url": "https://eldia.com.do/politur-asegura-que-rd-esta-preparada-para-mantener-la-seguridad-y-la-tranquilidad-en-estas-navidades/",
+      "title": "Compadre Pedro Juan ¡Siga bailando!",
+      "url": "https://hoy.com.do/opinion/editorial/compadre-pedro-juan-siga-bailando_1110212.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El Teatro Nacional acaba de presenciar otra celebración del Día Nacional del Merengue, establecido por decreto presidencial en 2005.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b0a1c457bd32.r_d.600-593-10000.jpeg",
+      "published": "2026-11-28T04:05:00+00:00"
+    },
+    {
+      "title": "Lo que también dice el FMI",
+      "url": "https://hoy.com.do/opinion/tambien-dice-fmi_1110218.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Las declaraciones del Fondo Monetario Internacional suelen divulgarse destacando los elogios y prestando menos atención a las advertencias. La declaración final de…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a2060b5b02.webp",
+      "published": "2026-11-28T04:05:00+00:00"
+    },
+    {
+      "title": "El FMI y los desafíos del modelo de desarrollo dominicano",
+      "url": "https://hoy.com.do/opinion/fmi-desafios-modelo-desarrollo-dominicano_1110217.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Lo que está detrás de la declaración final de la misión del FMI sobre la revisión del Artículo IV para República Dominicana es la necesidad de revisar el modelo de…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a1f2b56768.jpeg",
+      "published": "2026-11-28T04:05:00+00:00"
+    },
+    {
+      "title": "Actuaciones nocturnas",
+      "url": "https://hoy.com.do/opinion/actuaciones-nocturnas_1110216.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Las actuaciones institucionales nocturnas, desalojos y operativos migratorios, son expresiones de violencia estructural que aumentan la vulnerabilidad de mujeres…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a1dbf90e05.jpeg",
+      "published": "2026-11-28T04:05:00+00:00"
+    },
+    {
+      "title": "¡Fuerza, eternidad y paz en la comida libanesa!",
+      "url": "https://hoy.com.do/opinion/fuerza-eternidad-paz-comida-libanesa_1110213.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "“Siempre me ha llamado la atención que en el centro de la bandera de El Líbano se nos presente un simple cedro”-comenta Píndaro-… Herminio, que siempre está al…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a1ccba3fb3.jpeg",
+      "published": "2026-11-28T04:05:00+00:00"
+    },
+    {
+      "title": "Venimos de Azua",
+      "url": "https://hoy.com.do/opinion/venimos-azua_1110210.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Eran de un pequeño pueblo de dicha provincia. Poseían todo lo necesario para disfrutar junto a su familia: una hermosa casa que podía competir con las mejores…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a1b3dd9528.jpeg",
+      "published": "2026-11-28T04:05:00+00:00"
+    },
+    {
+      "title": "Jaque mate al mercado: La ambición económica de dueños y jugadores congelará las Grandes Ligas y cerrará la temporada 2027",
+      "url": "https://eldia.com.do/jaque-mate-al-mercado-la-ambicion-economica-de-duenos-y-jugadores-congelara-las-grandes-ligas-y-cerrara-la-temporada-2027/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El director central de la Policía de Turismo (Politur) de la República Dominicana, el general…",
+      "preview": "Este artículo fue publicado originalmente en El Día. El reloj corre en contra de las Grandes Ligas y la tensión no deja de escalar. A pocos días de que venza el…",
       "image": "",
-      "published": "2026-11-27T20:01:41+00:00"
+      "published": "2026-11-28T04:05:00+00:00"
     },
     {
-      "title": "Dólar se cambiaba este viernes para la venta a 60.83 pesos",
-      "url": "https://almomento.net/el-dolar-subio-27-centavos-y-este-jueves-era-vendido-a-rd60-79/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Santo Domingo, 27 nov (EFE).- El dólar estadounidense se cambia este viernes para la venta a 60.83 pesos, frente a los 60.79 pesos de la jornada anterior. El Banco…",
-      "image": "",
-      "published": "2026-11-27T20:00:59+00:00"
-    },
-    {
-      "title": "Afirma recomendaciones sobre Viettel no son injerencia en RD",
-      "url": "https://almomento.net/afirma-recomendaciones-sobre-viettel-no-son-injerencia-en-rd/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– La embajadora de Estados Unidos en República Dominicana, Leah Francis Campos, afirmó que las recomendaciones de su Gobierno sobre el uso de…",
-      "image": "",
-      "published": "2026-11-27T20:00:50+00:00"
-    },
-    {
-      "title": "La UE amenaza a Bulgaria con multa de 25 millones de euros",
-      "url": "https://almomento.net/la-ue-amenaza-a-bulgaria-con-multa-de-25-millones-de-euros/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La Comisión Europea amenazó a Bulgaria con imponerle una multa de aproximadamente 25 millones de euros por incumplir las normas fiscales del bloque y mantener un…",
-      "image": "",
-      "published": "2026-11-27T20:00:33+00:00"
-    },
-    {
-      "title": "Abinader reconoce a Adriano Espaillat en acto en el Palacio",
-      "url": "https://almomento.net/abinader-reeconocera-adriano-espaillat-en-acto-en-el-palacio/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.–El presidente Luis Abinader condecoró al congresista estadounidense Adriano Espaillat con la Orden del Mérito de Duarte, Sánchez y Mella, en el grado…",
-      "image": "",
-      "published": "2026-11-27T20:00:20+00:00"
-    },
-    {
-      "title": "DOMUS Awards reconoce en Punta Cana a quienes impulsan el desarrollo inmobiliario del país",
-      "url": "https://bavarodigital.net/domus-awards-reconoce-en-punta-cana-a-quienes-impulsan-el-desarrollo-inmobiliario-del-pais/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [
-        "Punta Cana"
-      ],
-      "preview": "PUNTA CANA, LA ALTAGRACIA.– Con una elegante producción y la presencia de destacadas figuras del empresariado dominicano, se celebró la primera edición de DOMUS…",
-      "image": "",
-      "published": "2026-11-27T19:59:09+00:00"
-    },
-    {
-      "title": "Cifran en 1,2 mm cantidad de dominicanos que viven en EU",
-      "url": "https://almomento.net/cifran-en-12-mm-cantidad-dedominicanos-que-viven-en-eu/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Estados Unidos se consolida como el principal destino de la emigración de República Dominicana, al albergar a más de 1,2 millones de personas nacidas en la nación…",
-      "image": "",
-      "published": "2026-11-27T19:56:34+00:00"
-    },
-    {
-      "title": "¿Cómo cobrar la \"Brisita Navideña\" que comienza a entregarse este domingo?",
-      "url": "https://eldia.com.do/como-cobrar-la-brisita-navidena-que-comienza-a-entregarse-este-domingo/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El Gobierno dominicano, a través de Supérate, iniciará este domingo 29 de noviembre la entrega…",
-      "image": "",
-      "published": "2026-11-27T19:47:51+00:00"
-    },
-    {
-      "title": "Consumidores buscan ofertas en el Viernes Negro, pero el alto costo de la vida limita sus compras",
+      "title": "Viernes Negro transcurre entre ofertas y quejas por presupuesto",
       "url": "https://eldia.com.do/consumidores-califican-el-viernes-negro-como-un-viernes-gris-por-el-alto-costo-de-la-vida/",
       "source": "El Día",
       "category": "Actualidad",
       "regions": [],
       "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- Los descuentos de este Viernes Negro no han sido suficientes para convencer a todos los…",
       "image": "",
-      "published": "2026-11-27T19:36:48+00:00"
+      "published": "2026-11-28T04:05:00+00:00"
     },
     {
-      "title": "Nueva York y Nueva Jersey refuerzan controles de tránsito",
-      "url": "https://noticia.do/controles-transito-nueva-york-nueva-jersey/",
-      "source": "Noticia.do",
-      "category": "Regionales",
+      "title": "Lester Quiñones lidera triunfo de RD sobre Colombia y la lleva al primer lugar",
+      "url": "https://noticiassin.com/deportes/baloncesto/2026/11/28/lester-quinones-guia-a-rd-al-liderato-tras-vencer-a-colombia-2178537/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
       "regions": [],
-      "preview": "Noticia.do Nueva York y Nueva Jersey refuerzan controles de tránsito Nueva York y Nueva Jersey refuerzan los patrullajes por Acción de Gracias para prevenir…",
+      "preview": "Lester Quiñones aportó 22 puntos y RD venció 110-68 a Colombia para tomar el liderato del grupo E.",
       "image": "",
-      "published": "2026-11-27T19:35:36+00:00"
+      "published": "2026-11-28T04:03:09+00:00"
     },
     {
-      "title": "¿Cómo cobrar el Bono Navideño 2026?",
-      "url": "https://hoy.com.do/el-pais/cobrar-bono-navideno-2026_1110187.html",
+      "title": "El rol del Ministerio Público: ¿a quién beneficia el silencio?",
+      "url": "https://eldia.com.do/el-rol-del-ministerio-publico-a-quien-beneficia-el-silencio-2/",
+      "source": "El Día",
+      "category": "Seguridad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. *Por Anny Guzmán El 19 de noviembre, la fiscal del Distrito Nacional, Rosalba Ramos, pedía reserva en la…",
+      "image": "",
+      "published": "2026-11-28T04:02:00+00:00"
+    },
+    {
+      "title": "Banco Central con encendido de su árbol y Belén",
+      "url": "https://eldia.com.do/banco-central-con-encendido-de-su-arbol-y-belen/",
+      "source": "El Día",
+      "category": "Economía",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.-El gobernador del Banco Central de la República Dominicana (BCRD), Héctor Valdez Albizu…",
+      "image": "",
+      "published": "2026-11-28T04:02:00+00:00"
+    },
+    {
+      "title": "Mercado 40 Under Forty 2026: cambia las reglas del juego",
+      "url": "https://eldia.com.do/mercado-40-under-forty-2026-cambia-las-reglas-del-juego/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.-La eficiencia del Estado, la transformación empresarial, el emprendimiento, la participación…",
+      "image": "",
+      "published": "2026-11-28T04:02:00+00:00"
+    },
+    {
+      "title": "La peligrosa sociedad del espectáculo",
+      "url": "https://eldia.com.do/la-peligrosa-sociedad-del-espectaculo/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Corremos el riesgo de que la sociedad del espectáculo nos arrope de tal manera que termine interesándonos más…",
+      "image": "",
+      "published": "2026-11-28T04:01:00+00:00"
+    },
+    {
+      "title": "Polanco",
+      "url": "https://eldia.com.do/polanco/",
+      "source": "El Día",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Este artículo fue publicado originalmente en El Día. Un día como hoy, 28 de noviembre de 1867, murió, a la edad de 51 años, Gaspar Polanco en La Vega, República…",
+      "image": "",
+      "published": "2026-11-28T04:01:00+00:00"
+    },
+    {
+      "title": "Más de 200 atletas competirán en el Nacional de Fisiculturismo",
+      "url": "https://almomento.net/mas-de-200-atletas-competiran-en-el-nacional-de-fisiculturismo/",
+      "source": "AlMomento",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "SANTIAGO DE LOS CABALLEROS.– Más de 200 atletas masculinos y femeninos participarán este domingo 29 de noviembre en la Copa Vitasalud Mr. Región Norte…",
+      "image": "",
+      "published": "2026-11-28T04:00:55+00:00"
+    },
+    {
+      "title": "Comercio prevé que el poco circulante frenaría venta del Viernes Negro",
+      "url": "https://hoy.com.do/el-pais/comercio-preve-poco-circulante-frenaria-venta-viernes-negro_1110222.html",
+      "source": "Hoy",
+      "category": "Economía",
+      "regions": [],
+      "preview": "Electrodomésticos muestran mayor dinamismo, mientras el comercio minorista acumulaba una caída real de 1.2 % a septiembre alertó la ONEC",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a373867967.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Lo que los españoles deciden mañana domingo cuando vayan a las urnas electorales",
+      "url": "https://hoy.com.do/el-pais/espanoles-deciden-manana-domingo-vayan-urnas-electorales_1110223.html",
       "source": "Hoy",
       "category": "Actualidad",
       "regions": [],
-      "preview": "¿Te entregaron la tarjeta azul del Bono Navideño? Debes activarla por teléfono antes de usarla y no podrás retirar el dinero en efectivo.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2025/12/01/692dc18143302.jpeg",
-      "published": "2026-11-27T19:31:04+00:00"
+      "preview": "Todo apunta a tres escenarios posibles: que PP y Vox sumen mayoría y gobiernen juntos; que nadie la alcance y se abra una larga y extenuante negociación, o que…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a399bce113.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
     },
     {
-      "title": "Refuerzan vigilancia en plazas y zonas comerciales de La Romana por Black Friday",
-      "url": "https://eltiempo.com.do/en-el-este/refuerzan-vigilancia-en-plazas-y-zonas-comerciales-de-la-romana-por-black-friday/",
-      "source": "El Tiempo",
-      "category": "Regionales",
+      "title": "ADP Santiago se moviliza y cuestiona el destino del 4%",
+      "url": "https://hoy.com.do/el-pais/adp-santiago-moviliza-cuestiona-destino-4_1110226.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "En la concentración, vigilada por un contingente policial, los docentes también reclamaron de las autoridades el cumplimiento de los compromisos relacionados con la…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b0a3baf94b80.r_d.537-356-14705.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Dos efémerides y una deuda histórica a héroes",
+      "url": "https://hoy.com.do/el-pais/dos-efemerides-deuda-historica-heroes_1110229.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Cuestionó que país preste mayor atención a figuras vinculadas a períodos dictatoriales que a sus héroes nacionales",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a3f0c5b182.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Más de 2 mil vuelos afectados en EE.UU.",
+      "url": "https://hoy.com.do/el-mundo/estados-unidos/2-mil-vuelos-afectados-ee-uu_1110238.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Cerca de 450,000 usuarios que permanecían sin electricidad por causa del mal tiempo",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a46e1087c2.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "¡Ratifican calidad! Encarnación y Cuello aseguran plata y avanzan a la final del Torneo Élite",
+      "url": "https://hoy.com.do/deportes/ratifican-calidad-encarnacion-cuello-aseguran-plata-avanzan-final-torneo-elite_1110232.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a40d406d64.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Monumento estrena imagen y renovada museografía",
+      "url": "https://hoy.com.do/el-pais/monumento-estrena-imagen-renovada-museografia_1110236.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El Gobierno dijo que la obra tuvo inversión de RD$144.5 millones y que recuperaron elementos originales del edificio.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b0a44b761485.r_d.456-267-14705.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Black Friday EU con menos compradores que en 2025",
+      "url": "https://hoy.com.do/el-mundo/black-friday-eu-compradores-2025_1110228.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Los estadounidenses gastaron unos 7,100 millones de dólares en línea el jueves, el Día de Acción de Gracias, lo que supone un 10.4 % más que hace un año",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a3d7487719.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Areíto, sábado 28 de noviembre de 2026",
+      "url": "https://hoy.com.do/suplementos/areito/areito-sabado-28-noviembre-2026_1110206.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Areíto, sábado 28 de noviembre de 2026",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a1715eb0b8.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Tradición, renovación, juventud: Premio de Arte Juan José Bellapart 2026",
+      "url": "https://hoy.com.do/vivir/tradicion-renovacion-juventud-premio-arte-juan-jose-bellapart-2026_1110204.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "No hay nada más gratificante que ver una selección de obras presentadas en un concurso de arte, con características propias y alta calidad. Así, se define el Premio…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a13b0617d7.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Las primacías de Santo Domingo: cimientos de la hispanidad en América",
+      "url": "https://hoy.com.do/suplementos/areito/primacias-santo-domingo-cimientos-hispanidad-america_1110202.html",
+      "source": "Hoy",
+      "category": "Actualidad",
       "regions": [
-        "La Romana"
+        "Santo Domingo"
       ],
-      "preview": "La Romana. Agentes de la Policía Nacional mantienen un amplio patrullaje preventivo en plazas y... La entrada Refuerzan vigilancia en plazas y zonas comerciales de…",
-      "image": "",
-      "published": "2026-11-27T19:29:19+00:00"
+      "preview": "En la alborada del 5 de diciembre de 1492, los tripulantes de las naves capitaneadas por Cristóbal Colón y los hermanos Pinzón avizoraron en lontananza una tierra…",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b0a113a66626.r_d.484-692-14563.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
     },
     {
-      "title": "Abinader condecora a Adriano Espaillat, hijo de Santiago",
-      "url": "https://noticia.do/abinader-condecora-adriano-espaillat/",
-      "source": "Noticia.do",
-      "category": "Regionales",
+      "title": "Honor al merengue",
+      "url": "https://hoy.com.do/vivir/alegria/honor-merengue_1110203.html",
+      "source": "Hoy",
+      "category": "Actualidad",
       "regions": [],
-      "preview": "Noticia.do Abinader condecora a Adriano Espaillat, hijo de Santiago Adriano Espaillat recibió la Gran Cruz Placa de Plata y dedicó la distinción a su abuela y a los…",
-      "image": "",
-      "published": "2026-11-27T19:23:18+00:00"
+      "preview": "En el Día Nacional del Merengue fueron reconocidos en el Teatro Nacional: Dionis Fernández, Juan Valdez, Lupe Valerio, Vicente Pacheco y Henry García.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a12d5a82f4.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
     },
     {
-      "title": "Corte mantiene multa de RD$7.5 millones al Ministerio Público por no devolver celular en caso Camaleón",
-      "url": "https://eldia.com.do/corte-mantiene-multa-de-rd7-5-millones-al-ministerio-publico-por-no-devolver-celular-en-caso-camaleon/",
-      "source": "El Día",
-      "category": "Seguridad",
+      "title": "Hato del Yaque y Puñal reciben proyecto hábitat",
+      "url": "https://hoy.com.do/el-pais/hato-yaque-punal-reciben-proyecto-habitat_1110234.html",
+      "source": "Hoy",
+      "category": "Actualidad",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. La Primera Sala de la Corte de Apelación del Distrito Nacional rechazó un recurso interpuesto por el Ministerio…",
-      "image": "",
-      "published": "2026-11-27T19:20:56+00:00"
+      "preview": "Según presidente, obras de mejoramiento barrial benefician a más de 2,000 familias. Abren instalaciones del cuerpo de bomberos",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a4373abc70.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
     },
     {
-      "title": "Cientos de miles personas siguen sin luz en EE. UU. tras las tormentas de Acción de Gracias",
-      "url": "https://eldia.com.do/cientos-de-miles-personas-siguen-sin-luz-en-ee-uu-tras-las-tormentas-de-accion-de-gracias/",
-      "source": "El Día",
+      "title": "“En la Navidad se debe rescatar la unidad familiar”",
+      "url": "https://hoy.com.do/el-pais/navidad-debe-rescatar-unidad-familiar_1110231.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "El arzobispo también habló de las costumbres típicas de la Navidad dominicana, como es la gastronomía en Nochebuena",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a3ff3d6af1.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Agenda País, sábado 28 de noviembre de 2026",
+      "url": "https://hoy.com.do/el-pais/agenda/agenda-pais-sabado-28-noviembre-2026_1110225.html",
+      "source": "Hoy",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "9:00 a. m. Graduación diplomado CASFL. Instituto Superior Pedro Francisco Bonó, c/Josefa Brea 65.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2025/12/03/69301f7572976.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
+    },
+    {
+      "title": "Lluvias solo en algunas provincias",
+      "url": "https://hoy.com.do/el-pais/lluvias-provincias_1110224.html",
+      "source": "Hoy",
       "category": "Medioambiente",
       "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Cientos de miles de personas se encuentran sin electricidad después de que un temporal azotara ambas costas de…",
-      "image": "",
-      "published": "2026-11-27T19:19:38+00:00"
+      "preview": "Los atribuye al transporte de humedad por el viento, los efectos locales y la leve incidencia de una vaguada.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2025/12/03/69301ba76ed5a.webp",
+      "published": "2026-11-28T04:00:00+00:00"
     },
     {
-      "title": "Pelegrín Castillo alerta sobre los riesgos de Viettel en RD",
-      "url": "https://noticia.do/pelegrin-castillo-viettel-rd/",
-      "source": "Noticia.do",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Noticia.do Pelegrín Castillo alerta sobre los riesgos de Viettel en RD Pelegrín Castillo cuestiona la concesión a Viettel y pide evaluar su impacto en la seguridad…",
-      "image": "",
-      "published": "2026-11-27T19:16:13+00:00"
-    },
-    {
-      "title": "Arajet iniciará operaciones de carga en Colombia a partir de enero de 2027",
-      "url": "https://bavarodigital.net/arajet-iniciara-operaciones-de-carga-en-colombia-a-partir-de-enero-de-2027/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Desde el FITAC 2026 en Cartagena, Arajet anuncia el inicio de operaciones de carga en Colombia a partir de enero de 2027, reafirmando su confianza en el potencial…",
-      "image": "",
-      "published": "2026-11-27T19:14:13+00:00"
-    },
-    {
-      "title": "Ministerio de la Mujer llama a medios a evitar estereotipos y prejuicios en sus contenidos",
-      "url": "https://eldia.com.do/ministerio-de-la-mujer-y-onu-mujeres-promueven-comunicacion-para-prevenir-violencia-de-genero/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. SANTO DOMINGO.- El Ministerio de la Mujer, a través de la Escuela de Igualdad Magaly Pineda y en alianza con…",
-      "image": "",
-      "published": "2026-11-27T19:10:32+00:00"
-    },
-    {
-      "title": "Indotel defiende legalidad de la licitación que escogió a Viettel",
-      "url": "https://almomento.net/indotel-defiende-legalidad-de-licitacion-frecuencias-a-viettel/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.– El Instituto Dominicano de las Telecomunicaciones (Indotel) defendió la legalidad del proceso de adjudicación de frecuencias radioeléctricas a las…",
-      "image": "",
-      "published": "2026-11-27T19:00:47+00:00"
-    },
-    {
-      "title": "David Collado anuncia que hoy entregan el Monumento de Santiago remozado.",
-      "url": "https://bavarodigital.net/david-collado-anuncia-que-hoy-entregan-el-monumento-de-santiago-remozado/",
-      "source": "Bávaro Digital",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "Santiago de los Caballeros, 27 de noviembre. -El presidente Luis Abinader y el ministro David Collado entregarán la noche de este viernes las obras de remozamiento…",
-      "image": "",
-      "published": "2026-11-27T18:52:23+00:00"
-    },
-    {
-      "title": "Gobierno de Luis Abinader nombra 10,163 enfermeras y fortalece sus condiciones laborales",
-      "url": "https://bavarodigital.net/gobierno-de-luis-abinader-nombra-10163-enfermeras-y-fortalece-sus-condiciones-laborales/",
-      "source": "Bávaro Digital",
-      "category": "Política",
-      "regions": [],
-      "preview": "El personal de enfermería ha recibido un aumento salarial de un 62 % y 19,973 enfermeras han sido beneficiadas con incentivos tras el acuerdo suscrito con el sector…",
-      "image": "",
-      "published": "2026-11-27T18:50:59+00:00"
-    },
-    {
-      "title": "Fracasa cumbre UE por ayuda a Ucrania y disputas entre países",
-      "url": "https://almomento.net/fracasa-cumbre-ue-por-ayuda-a-ucrania-y-disputas-entre-paises/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "BRUSELAS.- La cumbre extraordinaria de la Unión Europea (UE), concluyó sin acuerdo sobre el presupuesto comunitario para el período 2028-2034, tras fuertes…",
-      "image": "",
-      "published": "2026-11-27T18:43:52+00:00"
-    },
-    {
-      "title": "Indotel: informes jurídicos respaldan legalidad de adjudicaciones de espectro a Viettel y Claro",
-      "url": "https://eldia.com.do/informes-juridicos-avalan-transparencia-de-licitacion-de-espectro-del-indotel-otorgada-a-viettel-y-claro/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– Tres informes jurídicos, realizados por reconocidos juristas, respaldan la legalidad de las…",
-      "image": "",
-      "published": "2026-11-27T18:41:46+00:00"
-    },
-    {
-      "title": "Policía espera resultados de autopsia para ofrecer detalles sobre muerte de periodista Ovanny Quezada y su hijo en Los Ríos",
-      "url": "https://eldia.com.do/policia-espera-resultados-de-autopsia-para-ofrecer-detalles-sobre-muerte-de-periodista-ovanny-quezada-y-su-hijo-en-los-rios/",
-      "source": "El Día",
-      "category": "Seguridad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El vocero de la Policía Nacional, coronel Diego Pesqueira, informó que la institución aún no…",
-      "image": "",
-      "published": "2026-11-27T18:35:06+00:00"
-    },
-    {
-      "title": "La OTAN despliega aviones de combate cerca frontera de Rusia",
-      "url": "https://almomento.net/la-otan-despliega-aviones-de-combate-cerca-frontera-de-rusia/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "LETONIA 27 Nov.- La OTAN ha desplegado la madrugada de este viernes aviones de combate ante la incursión de un dron en el espacio aéreo de Letonia, episodio que…",
-      "image": "",
-      "published": "2026-11-27T18:30:45+00:00"
-    },
-    {
-      "title": "Proyecto de ley busca crear una plataforma para conocer dónde hay sangre disponible en RD",
-      "url": "https://eldia.com.do/proyecto-de-ley-busca-crear-una-plataforma-para-conocer-donde-hay-sangre-disponible-en-rd/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.– El diputado Juan José Rojas Franco presentó el proyecto de ley que crea el Sistema Nacional de…",
-      "image": "",
-      "published": "2026-11-27T18:25:40+00:00"
-    },
-    {
-      "title": "ETED realizará este sábado 28 trabajos de mantenimiento",
-      "url": "https://almomento.net/eted-realizara-este-sabado-28-trabajos-de-mantenimiento/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "SANTO DOMINGO.- La Empresa de Transmisión Eléctrica Dominicana (ETED) informa que este sábado 28 de noviembre realizará trabajos de mantenimiento preventivo a barra…",
-      "image": "",
-      "published": "2026-11-27T18:00:04+00:00"
-    },
-    {
-      "title": "Al menos ocho migrantes mueren en embarcación rescatada cerca de las Islas Canarias",
-      "url": "https://eltiempo.com.do/internacionales/al-menos-ocho-migrantes-mueren-en-embarcacion-rescatada-cerca-de-las-islas-canarias/",
-      "source": "El Tiempo",
-      "category": "Regionales",
-      "regions": [],
-      "preview": "España. Al menos ocho migrantes fueron encontrados muertos a bordo de una embarcación que transportaba... La entrada Al menos ocho migrantes mueren en embarcación…",
-      "image": "",
-      "published": "2026-11-27T17:47:39+00:00"
-    },
-    {
-      "title": "Una noche no fue suficiente: Romeo Santos y Prince Royce anuncian segunda función en RD",
-      "url": "https://hoy.com.do/vivir/alegria/noche-suficiente-romeo-santos-prince-royce-anuncian-segunda-funcion-rd_1110170.html",
+      "title": "Adviento, vigila tus deseos profundos",
+      "url": "https://hoy.com.do/opinion/adviento-vigila-tus-deseos-profundos_1110221.html",
       "source": "Hoy",
       "category": "Actualidad",
       "regions": [],
-      "preview": "La nueva presentación será el sábado 13 de febrero de 2027 en el Estadio Cibao, en Santiago. Las boletas estarán disponibles desde hoy a las 3:00 p. m.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b09bfbd713b5.jpeg",
-      "published": "2026-11-27T17:39:04+00:00"
+      "preview": "Lo malo de la comercialización de la Navidad es que nos pone a codiciar productos mientras descuidamos nuestros deseos profundos.",
+      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b0a368ff389b.jpeg",
+      "published": "2026-11-28T04:00:00+00:00"
     },
     {
-      "title": "Romeo Santos y Prince Royce logran sold out en dos horas y anuncian segunda función en Santiago",
-      "url": "https://eldia.com.do/romeo-santos-y-prince-royce-logran-sold-out-en-dos-horas-y-anuncian-segunda-funcion-en-santiago/",
-      "source": "El Día",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "Este artículo fue publicado originalmente en El Día. Santo Domingo.- El productor artístico Gamal Haché anunció la apertura de una segunda función del concierto de…",
-      "image": "",
-      "published": "2026-11-27T17:33:08+00:00"
-    },
-    {
-      "title": "Mundial Sub-17: República Dominicana cae ante Argelia, pero avanza a dieciseisavos",
-      "url": "https://hoy.com.do/deportes/mundial-sub-17-republica-dominicana-cae-1-0-argelia-avanza-dieciseisavos_1110169.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "RD terminó la fase de grupos con cuatro puntos.",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b09bd4f961b0.jpeg",
-      "published": "2026-11-27T17:29:29+00:00"
-    },
-    {
-      "title": "¿Qué hicieron los famosos en Acción de Gracias? Así compartieron su celebración",
-      "url": "https://hoy.com.do/vivir/alegria/hicieron-famosos-accion-gracias-asi-compartieron-celebracion_1110164.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La celebración de Acción de Gracias tiene una larga tradición en Estados Unidos y está asociada con el agradecimiento por las bendiciones recibidas, las cosechas y…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b09b6ab61c50.r_d.447-240-14580.png",
-      "published": "2026-11-27T17:11:31+00:00"
-    },
-    {
-      "title": "Un romance, un embarazo y un crimen: exgobernador recibe 25 años de prisión",
-      "url": "https://hoy.com.do/el-mundo/un-romance-un-embarazo-y-un-crimen_1110163.html",
-      "source": "Hoy",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "La magistrada consideró que las circunstancias agravantes del caso prevalecen sobre los factores atenuantes alegados por la defensa",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/uploads/2026/11/27/6b09b838b0644.jpeg",
-      "published": "2026-11-27T17:08:26+00:00"
-    },
-    {
-      "title": "Claudia Sheinbaum exige EEUU respetar la soberanía de México",
-      "url": "https://almomento.net/claudia-sheinbaum-exige-eeuu-respetar-la-soberania-de-mexico/",
-      "source": "AlMomento",
-      "category": "Actualidad",
-      "regions": [],
-      "preview": "CIUDAD DE MÉXICO, (Prensa Latina).- La presidenta de México, Claudia Sheinbaum, reiteró este viernes la defensa de la soberanía nacional y afirmó que la relación…",
-      "image": "",
-      "published": "2026-11-27T17:00:15+00:00"
-    },
-    {
-      "title": "Argentina prohíbe la publicidad de apuestas virtuales y toca al fútbol",
-      "url": "https://www.diariolibre.com/deportes/futbol/2026/11/27/argentina-prohibe-la-publicidad-de-apuestas-virtuales-y-toca-al-futbol/3733693",
-      "source": "Diario Libre",
+      "title": "El Licey vence a los Gigantes y comparte la cima del torneo",
+      "url": "https://noticiassin.com/deportes/beisbol/2026/11/28/licey-vence-a-gigantes-y-comparte-la-cima-del-torneo-2178531/",
+      "source": "Noticias SIN",
       "category": "Deportes",
       "regions": [],
-      "preview": "El Senado argentino sancionó por unanimidad una ley de prevención de la ludopatía que prohíbe la publicidad de las apuestas virtuales, mientras avanza con otra…",
-      "image": "https://resources.diariolibre.com/images/2026/11/27/argentina-prohibe-la-publicidad-de-apuestas-virtuales-y-toca-al-futbol-f38450f8-focus-0-0-400-300.jpg",
-      "published": "2026-11-27T16:33:00+00:00"
+      "preview": "Casas debutó con grand slam y el Licey venció 7-1 a Gigantes para compartir la cima del torneo.",
+      "image": "",
+      "published": "2026-11-28T03:49:06+00:00"
     },
     {
-      "title": "Tormentas persisten en EE. UU. con más de 2,000 vuelos afectados",
-      "url": "https://www.diariolibre.com/actualidad/nacional/2026/11/27/tormentas-persisten-en-ee-uu-con-mas-de-2000-vuelos-afectados/3733691",
-      "source": "Diario Libre",
-      "category": "Medioambiente",
-      "regions": [],
-      "preview": "Las tormentas y nevadas en ambas costas de Estados Unidos, con heladas desde el sur hasta el norte del país, persistían este viernes en el país tras el Día de…",
-      "image": "https://resources.diariolibre.com/images/2026/11/27/tormentas-persisten-en-ee-uu-con-mas-de-2000-vuelos-afectados-10324f40-focus-0-0-400-300.png",
-      "published": "2026-11-27T16:31:00+00:00"
-    },
-    {
-      "title": "Marc Márquez anuncia su retirada y conmociona al mundo de la MotoGP",
-      "url": "https://www.diariolibre.com/deportes/motor/2026/11/27/marc-marquez-anuncia-su-retirada-y-conmociona-al-mundo-de-la-motogp/3733685",
-      "source": "Diario Libre",
+      "title": "Polanco guía triunfo del Escogido sobre Águilas y pone fin a racha de derrotas",
+      "url": "https://noticiassin.com/deportes/beisbol/2026/11/28/polanco-lidera-triunfo-del-escogido-sobre-aguilas-y-corta-racha-2178527/",
+      "source": "Noticias SIN",
       "category": "Deportes",
       "regions": [],
-      "preview": "Campeón de MotoGP por octava vez hace cinco días en Portugal, Marc Márquez anunció por sorpresa su retirada este viernes previo a los ensayos del Gran Premio de…",
-      "image": "https://resources.diariolibre.com/images/2026/11/27/f840c84afa6c35505bec74dd044881f066a6fc58w-957e40f3-focus-0-0-400-300.jpg",
-      "published": "2026-11-27T16:25:00+00:00"
-    },
-    {
-      "title": "Fuerte tormenta impide la celebración del desfile de Acción de Gracias en Nueva York",
-      "url": "https://bavarodigital.net/fuerte-tormenta-impide-la-celebracion-del-desfile-de-accion-de-gracias-en-nueva-york/",
-      "source": "Bávaro Digital",
-      "category": "Medioambiente",
-      "regions": [],
-      "preview": "NUEVA YORK, ESTADOS UNIDOS.– Una poderosa tormenta acompañada de fuertes vientos y lluvias intensas obligó a aplazar el tradicional desfile de Acción de Gracias de…",
+      "preview": "Polanco lideró el triunfo del Escogido sobre Águilas y cortó una racha de seis derrotas consecutivas.",
       "image": "",
-      "published": "2026-11-27T16:22:46+00:00"
+      "published": "2026-11-28T03:36:46+00:00"
     },
     {
-      "title": "Hato Mayor tiene nuevo comandante policial",
-      "url": "https://eltiempo.com.do/en-el-este/hato-mayor-tiene-nuevo-comandante-policial/",
-      "source": "El Tiempo",
-      "category": "Seguridad",
+      "title": "Abinader y Raquel Peña inauguran Villa Navidad 2026 en Santiago",
+      "url": "https://diario55.com/abinader-y-raquel-pena-inauguran-villa-navidad-2026-en-santiago/",
+      "source": "Diario 55",
+      "category": "Regionales",
       "regions": [],
-      "preview": "Hato Mayor. La Policía Nacional designó al coronel Franklin Eduardo Santana Martínez como nuevo comandante... La entrada Hato Mayor tiene nuevo comandante policial…",
+      "preview": "El presidente Luis Abinader y la vicepresidenta Raquel Peña encabezaron este viernes la inauguración de Villa Navidad 2026, que por quinto año consecutivo convierte…",
       "image": "",
-      "published": "2026-11-27T16:21:36+00:00"
+      "published": "2026-11-28T03:21:24+00:00"
     },
     {
-      "title": "Elecciones en España: los 5 momentos más calientes del debate a 4 entre Sánchez, Colau, Abascal y Feijóo",
-      "url": "https://hoy.com.do/el-mundo/espana/elecciones-espana-5-momentos-calientes-debate-4-sanchez-colau-abascal-feijoo_1110158.html",
-      "source": "Hoy",
-      "category": "Política",
-      "regions": [],
-      "preview": "Los enfrentamientos entre Pedro Sánchez, Alberto Núñez Feijóo, Santiago Abascal y Ada Colau estuvieron marcados por ataques personales, ironías sobre las…",
-      "image": "https://imagenes.hoy.com.do/files/og_thumbnail/files/fp/uploads/2026/11/27/6b099a3f8596d.r_d.794-578-10000.webp",
-      "published": "2026-11-27T16:09:09+00:00"
-    },
-    {
-      "title": "Prominsa lleva a cabo Encuentro Empresarial 2026",
-      "url": "https://www.diariolibre.com/revista/sociales/2026/11/27/prominsa-lleva-a-cabo-encuentro-empresarial-2026/3733673",
-      "source": "Diario Libre",
-      "category": "Cultura",
-      "regions": [],
-      "preview": "Prominsa, empresa especializada en la fabricación, importación, reconstrucción y mantenimiento de transformadores eléctricos, celebró su Encuentro Empresarial 2026…",
-      "image": "https://resources.diariolibre.com/images/2026/11/27/prominsa-lleva-a-cabo-encuentro-empresarial-2026-13336b1f-focus-0.08-0.37-400-300.jpg",
-      "published": "2026-11-27T16:02:00+00:00"
-    },
-    {
-      "title": "EEUU: Temporal deja un millón de personas sin electricidad",
-      "url": "https://almomento.net/eeuu-temporal-deja-un-millon-de-personas-sin-electricidad/",
-      "source": "AlMomento",
+      "title": "Bomberos controlan incendio que afectó varios comercios en Santiago",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/28/bomberos-controlan-incendio-en-varios-comercios-de-santiago-2178524/",
+      "source": "Noticias SIN",
       "category": "Actualidad",
       "regions": [],
-      "preview": "WASHINGTON 27 Nov.- El temporal de lluvia y nieve que azota Estados Unidos ha dejado a un millón de personas sin luz en medio de las celebraciones de Acción de…",
+      "preview": "Bomberos controlan incendio en varios comercios de Santiago; se desconocen daños, causas y si hubo heridos.",
       "image": "",
-      "published": "2026-11-27T16:01:55+00:00"
+      "published": "2026-11-28T03:10:17+00:00"
     },
     {
-      "title": "Dominicana cayó ante Argelia y Malí será su rival en la segunda fase",
-      "url": "https://www.diariolibre.com/deportes/futbol/2026/11/27/dominicana-cayo-ante-argelia-y-mali-sera-su-rival-en-la-segunda-fase/3733668",
-      "source": "Diario Libre",
-      "category": "Deportes",
+      "title": "Santiago recupera espacios históricos con remozamiento del Monumento a los Héroes",
+      "url": "https://noticiassin.com/videos/noticias-sin-emision-estelar/2026/11/28/santiago-recupera-el-monumento-a-los-heroes-de-la-restauracion-2178467/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
       "regions": [],
-      "preview": "La República Dominicana cayó ante Argelia por 1-0 en el cierre de la fase de grupos de la Copa del Mundo sub-17 masculino que tiene lugar en Catar. No obstante, se…",
-      "image": "https://resources.diariolibre.com/images/2026/11/27/dominicana-cayo-anter-argelia-y-mali-sera-su-rival-en-la-segunda-fase-0e65704f-focus-0-0-400-300.jpg",
-      "published": "2026-11-27T16:01:00+00:00"
-    },
-    {
-      "title": "Desarrollan inteligencia artificial capaz de predecir arritmias cardíacas",
-      "url": "https://eltiempo.com.do/salud/desarrollan-inteligencia-artificial-capaz-de-predecir-arritmias-cardiacas/",
-      "source": "El Tiempo",
-      "category": "Gaming y tecnología",
-      "regions": [],
-      "preview": "Punta Cana. Una nueva herramienta basada en inteligencia artificial promete mejorar la detección temprana de... La entrada Desarrollan inteligencia artificial capaz…",
+      "preview": "El Monumento a los Héroes de la Restauración fue remozado para rescatar su valor histórico, cultural y museográfico.",
       "image": "",
-      "published": "2026-11-27T15:58:21+00:00"
+      "published": "2026-11-28T03:02:42+00:00"
     },
     {
-      "title": "ALETA reúne expertos a debatir sobre riesgo sísmico y seguridad de las construcciones en Punta Cana",
-      "url": "https://bavarodigital.net/aleta-reune-expertos-a-debatir-sobre-riesgo-sismico-y-seguridad-de-las-construcciones-en-punta-cana/",
-      "source": "Bávaro Digital",
+      "title": "Suprema ratifica condena de tres años por desfalco millonario en Agricultura",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/28/suprema-ratifica-3-anos-por-desfalco-millonario-en-agricultura-2178510/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "La Suprema dejó firme la condena de 3 años contra un exfuncionario por malversar RD$3,810,000 en Agricultura.",
+      "image": "",
+      "published": "2026-11-28T02:51:53+00:00"
+    },
+    {
+      "title": "Incendio afecta varios establecimientos comerciales en Santiago",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/28/incendio-afecta-varios-comercios-en-santiago-y-causa-danos-2178498/",
+      "source": "Noticias SIN",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "Incendio en Santiago afecta varios comercios; aún se desconocen las causas y la magnitud de los daños.",
+      "image": "",
+      "published": "2026-11-28T02:51:05+00:00"
+    },
+    {
+      "title": "Incendio afecta tienda china Casa Yea Yea tras propagarse desde una vivienda",
+      "url": "https://noticiassin.com/pais/nacional/2026/11/28/incendio-en-tienda-china-casa-yea-yea-tras-propagarse-desde-vivienda-2178505/",
+      "source": "Noticias SIN",
+      "category": "Vivienda",
+      "regions": [],
+      "preview": "Un incendio se propagó desde una vivienda vecina y afectó la tienda china Casa Yea Yea en Santo Domingo.",
+      "image": "",
+      "published": "2026-11-28T02:44:42+00:00"
+    },
+    {
+      "title": "¡Ya van dos subastas! Nadie quiere comprar Air Cocaine incautado con 700 kilos de cocaína en Punta Cana.",
+      "url": "https://puntacanapost.com/ya-van-dos-subastas-nadie-quiere-comprar-air-cocaine-incautado-con-700-kilos-de-cocaina-en-punta-cana/",
+      "source": "Punta Cana Post",
       "category": "Regionales",
       "regions": [
         "Punta Cana"
       ],
-      "preview": "PUNTA CANA, LA ALTAGRACIA.– Ante el acelerado crecimiento inmobiliario y la construcción de edificaciones cada vez más altas en Punta Cana, especialistas analizaron…",
+      "preview": "«El avión incautado hace más de 13 años no logra encontrar comprador ni siquiera después de reducir su precio de salida, mientras la última subasta estatal recauda…",
       "image": "",
-      "published": "2026-11-27T15:57:25+00:00"
+      "published": "2026-11-28T02:12:36+00:00"
+    },
+    {
+      "title": "Yaxel Lendeborg lidera ofensiva de Golden State",
+      "url": "https://www.diariolibre.com/deportes/baloncesto/2026/11/28/yaxel-lendeborg-lidera-ofensiva-de-golden-state/3733970",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "El dominicano Yaxel Lendeborg encabezó la ofensiva de los Golden State Warriors con 18 puntos, aunque su actuación no fue suficiente para evitar la derrota de su…",
+      "image": "https://resources.diariolibre.com/images/2026/11/28/afp202611202305984274v1highresgoldenstatewarriorsvmemphisgrizzlies-5899bd75-focus-0.33-0.38-400-300.jpg",
+      "published": "2026-11-28T01:01:00+00:00"
+    },
+    {
+      "title": "Zelenski reprocha Trump llame amigo a Putin: «Es un asesino»",
+      "url": "https://almomento.net/zelenski-reprocha-trump-llame-amigo-a-putin-es-un-asesino/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "KIEV.-El presidente de Ucrania, Volodímir Zelenski, reprochó a su homólogo estadounidense, Donald Trump, que se refiera al mandatario ruso, Vladímir Putin, como su…",
+      "image": "",
+      "published": "2026-11-28T01:00:02+00:00"
+    },
+    {
+      "title": "Romeo y Prince Royce anuncian tercera función en Santiago",
+      "url": "https://almomento.net/romeo-y-prince-royce-anuncian-tercera-funcion-en-santiago/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "SANTIAGO.– Romeo Santos y Prince Royce anunciaron una tercera y última función de su espectáculo «Mejor tarde que nunca» en República Dominicana, pautada para el 14…",
+      "image": "",
+      "published": "2026-11-28T00:54:12+00:00"
+    },
+    {
+      "title": "Mundial FIBA 2027: RD arrolla 110-68 a Colombia y lidera Grupo E",
+      "url": "https://www.diariolibre.com/deportes/baloncesto/2026/11/28/mundial-fiba-2027-rd-arrolla-110-68-a-colombia-y-lidera-grupo-e/3733978",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "La República Dominicana desplegó una ofensiva combinada entre Lester Quiñones, en su retorno a la selección nacional, y Andrés Feliz para derrotar ampliamente…",
+      "image": "https://resources.diariolibre.com/images/2026/11/28/mundial-fiba-2027-rd-arrolla-110-68-a-colombia-y-lidera-grupo-f-691cf12c-focus-min0.01-0.4-400-300.jpg",
+      "published": "2026-11-28T00:12:00+00:00"
+    },
+    {
+      "title": "Feria inmobiliaria en Madrid genera RD$2,330 millones",
+      "url": "https://almomento.net/feria-inmobiliaria-en-madrid-genera-rd2330-millones/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "MADRID.- La primera edición de la feria inmobiliaria Más Cerca de Casa, organizada por la Asociación Dominicana de Constructores y Promotores de Viviendas…",
+      "image": "",
+      "published": "2026-11-28T00:06:31+00:00"
+    },
+    {
+      "title": "Karl-Anthony Towns encadena su doble-doble número 18 de forma seguida",
+      "url": "https://www.diariolibre.com/deportes/baloncesto/2026/11/28/karl-anthony-towns-encadena-su-doble-doble-numero-18-de-forma-seguida/3733956",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "El centro dominicano Karl-Anthony Towns hilvanó su doble-doble número 18 consecutivo al registrar 19 puntos y 10 rebotes, pero su destacada actuación no fue…",
+      "image": "",
+      "published": "2026-11-28T00:02:00+00:00"
+    },
+    {
+      "title": "El Torito brilla en los Premios Luna de Colombia con éxito viral",
+      "url": "https://almomento.net/el-torito-brilla-en-los-premios-luna-de-colombia-con-exito-viral/",
+      "source": "AlMomento",
+      "category": "Actualidad",
+      "regions": [],
+      "preview": "BARRANQUILLA.– El merenguero dominicano Héctor Acosta, El Torito, brilló en el escenario de los Premios Luna con su éxito viral «La Nena del Jean», en una…",
+      "image": "",
+      "published": "2026-11-28T00:00:27+00:00"
+    },
+    {
+      "title": "Triston Casas regresa a la Lidom con grand slam y el Licey aplastó",
+      "url": "https://www.diariolibre.com/deportes/beisbol/2026/11/27/triston-casas-regresa-a-la-lidom-con-grand-slam-y-el-licey-aplasto/3733954",
+      "source": "Diario Libre",
+      "category": "Deportes",
+      "regions": [],
+      "preview": "Si en su paso previo y fugaz por La Lidom (2022) Triston Casas dejó al público liceista esperando más de ese prospecto 16 que era de todo el béisbol en su vuelta…",
+      "image": "https://resources.diariolibre.com/images/2026/11/28/triston-casas-regresa-a-la-lidom-con-grand-slam-y-el-licey-aplasto-cf30a483-focus-0-0-400-300.jpg",
+      "published": "2026-11-27T23:56:00+00:00"
     }
   ]
 }
